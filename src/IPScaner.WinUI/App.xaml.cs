@@ -1,1 +1,51 @@
-dXNpbmcgSVBTY2FuZXIuQ29yZS5Mb2dnaW5nOwp1c2luZyBJUFNjYW5lci5XaW5VSS5TZXJ2aWNlczsKdXNpbmcgTWljcm9zb2Z0LlVJLlhhbWw7CgpuYW1lc3BhY2UgSVBTY2FuZXIuV2luVUk7CgovLy8gPHN1bW1hcnk+Ci8vLyBBcHBsaWNhdGlvbiBlbnRyeSBwb2ludC4gVGhlIFdpbmRvd3MgQXBwIFNESyBnZW5lcmF0ZXMgdGhlIDxjPk1haW48L2M+IGFuZAovLy8gYm9vdHN0cmFwcyB0aGUgcnVudGltZSBmb3IgdGhpcyB1bnBhY2thZ2VkIGFwcCwgc28gdGhpcyBjbGFzcyBvbmx5IGhhbmRsZXMKLy8vIGxpZmV0aW1lIGFuZCB1bmhhbmRsZWQtZXJyb3IgcmVwb3J0aW5nLgovLy8gPC9zdW1tYXJ5PgpwdWJsaWMgcGFydGlhbCBjbGFzcyBBcHAgOiBBcHBsaWNhdGlvbgp7CiAgICAvLy8gPHN1bW1hcnk+VGhlIHNpbmdsZSBtYWluIHdpbmRvdzsga2VwdCBmb3IgZGlhbG9nIHBhcmVudGluZyBhbmQgYWN0aXZhdGlvbi48L3N1bW1hcnk+CiAgICBwdWJsaWMgc3RhdGljIE1haW5XaW5kb3c/IE1haW5XaW5kb3cgeyBnZXQ7IHByaXZhdGUgc2V0OyB9CgogICAgcHVibGljIEFwcCgpCiAgICB7CiAgICAgICAgSW5pdGlhbGl6ZUNvbXBvbmVudCgpOwoKICAgICAgICBVbmhhbmRsZWRFeGNlcHRpb24gKz0gT25VbmhhbmRsZWRFeGNlcHRpb247CiAgICAgICAgQXBwRG9tYWluLkN1cnJlbnREb21haW4uVW5oYW5kbGVkRXhjZXB0aW9uICs9IChfLCBlKSA9PgogICAgICAgICAgICBBcHBMb2cuSW5zdGFuY2UuTG9nKCJBcHBEb21haW4iLCAi5pyq5aSE55CG5byC5bi4OiAiICsgZS5FeGNlcHRpb25PYmplY3QpOwogICAgICAgIFRhc2tTY2hlZHVsZXIuVW5vYnNlcnZlZFRhc2tFeGNlcHRpb24gKz0gKF8sIGUpID0+CiAgICAgICAgewogICAgICAgICAgICBBcHBMb2cuSW5zdGFuY2UuTG9nKCJUYXNrIiwgIuacquinguWvn+eahOS7u+WKoeW8guW4uDogIiArIGUuRXhjZXB0aW9uLk1lc3NhZ2UpOwogICAgICAgICAgICBlLlNldE9ic2VydmVkKCk7CiAgICAgICAgfTsKICAgIH0KCiAgICBwcm90ZWN0ZWQgb3ZlcnJpZGUgdm9pZCBPbkxhdW5jaGVkKExhdW5jaEFjdGl2YXRlZEV2ZW50QXJncyBhcmdzKQogICAgewogICAgICAgIEFwcFNlcnZpY2VzLkluaXRpYWxpemUoKTsKCiAgICAgICAgTWFpbldpbmRvdyA9IG5ldyBNYWluV2luZG93KCk7CiAgICAgICAgTWFpbldpbmRvdy5BY3RpdmF0ZSgpOwoKICAgICAgICBBcHBMb2cuSW5zdGFuY2UuTG9nKG5hbWVvZihBcHApLCAkIklQU2NhbmVyIFdpblVJIOWQr+WKqCAo566h55CG5ZGYPXtBcHBTZXJ2aWNlcy5DdXJyZW50LklzRWxldmF0ZWR9KSIpOwogICAgfQoKICAgIHByaXZhdGUgdm9pZCBPblVuaGFuZGxlZEV4Y2VwdGlvbihvYmplY3Qgc2VuZGVyLCBNaWNyb3NvZnQuVUkuWGFtbC5VbmhhbmRsZWRFeGNlcHRpb25FdmVudEFyZ3MgZSkKICAgIHsKICAgICAgICBBcHBMb2cuSW5zdGFuY2UuTG9nKG5hbWVvZihBcHApLCAiVUkg5pyq5aSE55CG5byC5bi4OiAiICsgZS5FeGNlcHRpb24pOwogICAgICAgIC8vIEtlZXAgdGhlIHdpbmRvdyBhbGl2ZSB3aGVyZSBwb3NzaWJsZTsgbG9nLW9ubHkgbWF0Y2hlcyB0aGUgb3JpZ2luYWwncwogICAgICAgIC8vIHNpbGVudCBoYW5kbGVycyB3aGlsZSBzdGlsbCBsZWF2aW5nIGEgdHJhY2Ugb24gZGlzay4KICAgICAgICBlLkhhbmRsZWQgPSB0cnVlOwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT5GbHVzaGVzIHRoZSBsb2cgd3JpdGVyIGR1cmluZyBzaHV0ZG93bi48L3N1bW1hcnk+CiAgICBwdWJsaWMgc3RhdGljIHZvaWQgU2h1dGRvd25Mb2dnaW5nKCkgPT4gQXBwTG9nLkluc3RhbmNlLlNodXRkb3duKCk7Cn0K
+using IPScaner.Core.Logging;
+using IPScaner.WinUI.Services;
+using Microsoft.UI.Xaml;
+
+namespace IPScaner.WinUI;
+
+/// <summary>
+/// Application entry point. The Windows App SDK generates the <c>Main</c> and
+/// bootstraps the runtime for this unpackaged app, so this class only handles
+/// lifetime and unhandled-error reporting.
+/// </summary>
+public partial class App : Application
+{
+    /// <summary>The single main window; kept for dialog parenting and activation.</summary>
+    public static MainWindow? MainWindow { get; private set; }
+
+    public App()
+    {
+        InitializeComponent();
+
+        UnhandledException += OnUnhandledException;
+        AppDomain.CurrentDomain.UnhandledException += (_, e) =>
+            AppLog.Instance.Log("AppDomain", "未处理异常: " + e.ExceptionObject);
+        TaskScheduler.UnobservedTaskException += (_, e) =>
+        {
+            AppLog.Instance.Log("Task", "未观察的任务异常: " + e.Exception.Message);
+            e.SetObserved();
+        };
+    }
+
+    protected override void OnLaunched(LaunchActivatedEventArgs args)
+    {
+        AppServices.Initialize();
+
+        MainWindow = new MainWindow();
+        MainWindow.Activate();
+
+        AppLog.Instance.Log(nameof(App), $"IPScaner WinUI 启动 (管理员={AppServices.Current.IsElevated})");
+    }
+
+    private void OnUnhandledException(object sender, Microsoft.UI.Xaml.UnhandledExceptionEventArgs e)
+    {
+        AppLog.Instance.Log(nameof(App), "UI 未处理异常: " + e.Exception);
+        // Keep the window alive where possible; log-only matches the original's
+        // silent handlers while still leaving a trace on disk.
+        e.Handled = true;
+    }
+
+    /// <summary>Flushes the log writer during shutdown.</summary>
+    public static void ShutdownLogging() => AppLog.Instance.Shutdown();
+}

@@ -1,1 +1,148 @@
-dXNpbmcgWHVuaXQ7DQp1c2luZyBTeXN0ZW0uVGV4dDsKdXNpbmcgSVBTY2FuZXIuQ29yZS5TdG9yYWdlOwoKbmFtZXNwYWNlIElQU2NhbmVyLkNvcmUuVGVzdHM7CgovLy8gPHN1bW1hcnk+Ci8vLyBDb3ZlcmFnZSBmb3IgPHNlZSBjcmVmPSJUZXh0RmlsZUVuY29kaW5nIi8+IOKAlCBCT00gZGV0ZWN0aW9uIHBsdXMgdGhlIGxlZ2FjeQovLy8gIkFOU0kiIChHQkspIGhldXJpc3RpYyB0aGUgb3JpZ2luYWwgdG9vbCByZWxpZWQgb24uCi8vLyA8L3N1bW1hcnk+CnB1YmxpYyBjbGFzcyBUZXh0RmlsZUVuY29kaW5nVGVzdHMKewogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBEZXRlY3RfUmVjb2duaXNlc1RoZVV0ZjhCb20oKQogICAgewogICAgICAgIHZhciBkZXRlY3RlZCA9IFRleHRGaWxlRW5jb2RpbmcuRGV0ZWN0KFsweEVGLCAweEJCLCAweEJGLCAoYnl0ZSknYScsIChieXRlKSdiJ10pOwoKICAgICAgICBBc3NlcnQuRXF1YWwoNjUwMDEsIGRldGVjdGVkLkNvZGVQYWdlKTsKICAgICAgICBBc3NlcnQuRXF1YWwoMywgZGV0ZWN0ZWQuR2V0UHJlYW1ibGUoKS5MZW5ndGgpOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgRGV0ZWN0X1JlY29nbmlzZXNVdGYxNkxpdHRsZUVuZGlhbigpCiAgICB7CiAgICAgICAgdmFyIGRldGVjdGVkID0gVGV4dEZpbGVFbmNvZGluZy5EZXRlY3QoWzB4RkYsIDB4RkUsIChieXRlKSdhJywgMHgwMF0pOwoKICAgICAgICBBc3NlcnQuRXF1YWwoMTIwMCwgZGV0ZWN0ZWQuQ29kZVBhZ2UpOwogICAgICAgIEFzc2VydC5FcXVhbCgidXRmLTE2IiwgZGV0ZWN0ZWQuV2ViTmFtZSk7CiAgICB9CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBEZXRlY3RfUmVjb2duaXNlc1V0ZjE2QmlnRW5kaWFuKCkKICAgIHsKICAgICAgICB2YXIgZGV0ZWN0ZWQgPSBUZXh0RmlsZUVuY29kaW5nLkRldGVjdChbMHhGRSwgMHhGRiwgMHgwMCwgKGJ5dGUpJ2EnXSk7CgogICAgICAgIEFzc2VydC5FcXVhbCgxMjAxLCBkZXRlY3RlZC5Db2RlUGFnZSk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKCJ1dGYtMTZCRSIsIGRldGVjdGVkLldlYk5hbWUpOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgRGV0ZWN0X0JvbVdpbnNfRXZlbldoZW5UaGVSZXN0TG9va3NMaWtlR2JrKCkKICAgIHsKICAgICAgICAvLyAweEQ2IDB4RDAgaXMgdGhlIEdCSyBlbmNvZGluZyBvZiDkuK0sIGJ1dCB0aGUgQk9NIGRlY2lkZXMuCiAgICAgICAgdmFyIGRldGVjdGVkID0gVGV4dEZpbGVFbmNvZGluZy5EZXRlY3QoWzB4RUYsIDB4QkIsIDB4QkYsIDB4RDYsIDB4RDBdKTsKCiAgICAgICAgQXNzZXJ0LkVxdWFsKDY1MDAxLCBkZXRlY3RlZC5Db2RlUGFnZSk7CiAgICB9CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBEZXRlY3RfR2JrSGV1cmlzdGljX1BpY2tzQ29kZVBhZ2U5MzYoKQogICAgewogICAgICAgIC8vICLkuK3mlociIGFzIEdCSzogRDYgRDAgQ0UgQzQg4oCUIG5vIEJPTSwgbGVhZCBieXRlID49IDE2MS4KICAgICAgICB2YXIgZGV0ZWN0ZWQgPSBUZXh0RmlsZUVuY29kaW5nLkRldGVjdChbMHhENiwgMHhEMCwgMHhDRSwgMHhDNF0pOwoKICAgICAgICBBc3NlcnQuRXF1YWwoOTM2LCBkZXRlY3RlZC5Db2RlUGFnZSk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKFRleHRGaWxlRW5jb2RpbmcuR2JrLkNvZGVQYWdlLCBkZXRlY3RlZC5Db2RlUGFnZSk7CiAgICB9CgogICAgW1RoZW9yeV0KICAgIFtJbmxpbmVEYXRhKDE2MSwgOTM2KV0gIC8vIGZpcnN0IGJ5dGUgaW4gdGhlIGhldXJpc3RpYyB3aW5kb3cKICAgIFtJbmxpbmVEYXRhKDIwMCwgOTM2KV0KICAgIFtJbmxpbmVEYXRhKDI0NywgOTM2KV0gIC8vIGxhc3QgYnl0ZSBpbiB0aGUgd2luZG93IChpbmNsdXNpdmUpCiAgICBbSW5saW5lRGF0YSgxNjAsIDY1MDAxKV0KICAgIFtJbmxpbmVEYXRhKDI0OCwgNjUwMDEpXQogICAgW0lubGluZURhdGEoMjU1LCA2NTAwMSldCiAgICBwdWJsaWMgdm9pZCBEZXRlY3RfR2JrSGV1cmlzdGljX1VzZXNUaGUxNjFUbzI0N1dpbmRvdyhieXRlIHByb2JlLCBpbnQgZXhwZWN0ZWRDb2RlUGFnZSkKICAgICAgICA9PiBBc3NlcnQuRXF1YWwoZXhwZWN0ZWRDb2RlUGFnZSwgVGV4dEZpbGVFbmNvZGluZy5EZXRlY3QoWyhieXRlKSdhJywgcHJvYmVdKS5Db2RlUGFnZSk7CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBEZXRlY3RfUGxhaW5Bc2NpaV9Jc1V0ZjhXaXRob3V0Qm9tKCkKICAgIHsKICAgICAgICB2YXIgZGV0ZWN0ZWQgPSBUZXh0RmlsZUVuY29kaW5nLkRldGVjdChFbmNvZGluZy5BU0NJSS5HZXRCeXRlcygiMTkyLjE2OC4xLjEwPXByaW50ZXJcclxuIikpOwoKICAgICAgICBBc3NlcnQuRXF1YWwoNjUwMDEsIGRldGVjdGVkLkNvZGVQYWdlKTsKICAgICAgICBBc3NlcnQuRW1wdHkoZGV0ZWN0ZWQuR2V0UHJlYW1ibGUoKSk7CiAgICB9CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBEZXRlY3RfRW1wdHlJbnB1dF9Jc1V0ZjhXaXRob3V0Qm9tKCkKICAgICAgICA9PiBBc3NlcnQuRXF1YWwoNjUwMDEsIFRleHRGaWxlRW5jb2RpbmcuRGV0ZWN0KFtdKS5Db2RlUGFnZSk7CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBEZXRlY3RfVXRmOENoaW5lc2VXaXRob3V0Qm9tX0lzTWlzZGV0ZWN0ZWRBc0diaygpCiAgICB7CiAgICAgICAgLy8gRElTQ1JFUEFOQ1kgLyBkb2N1bWVudGVkIGxpbWl0YXRpb24gKHJlcG9ydGVkOyBsaWJyYXJ5IG5vdCBtb2RpZmllZCk6CiAgICAgICAgLy8gdGhlICJsZWFkIGJ5dGUgPj0gMTYxIiBoZXVyaXN0aWMgaXMgdGhlIG9yaWdpbmFsJ3MsIGFuZCBpdCBjYW5ub3QgdGVsbCBhCiAgICAgICAgLy8gQk9NLWxlc3MgVVRGLTggQ2hpbmVzZSBmaWxlIGZyb20gR0JLIOKAlCB0aGUgZmlyc3QgYnl0ZSBvZiDkuK0gKDB4RTQpIGlzCiAgICAgICAgLy8gaW5zaWRlIHRoZSB3aW5kb3csIHNvIHN1Y2ggYSBmaWxlIGlzIGRlY29kZWQgYXMgR0JLIGFuZCByZW5kZXJzIGFzCiAgICAgICAgLy8gbW9qaWJha2UuIE9ubHkgZmlsZXMgKndpdGgqIGEgQk9NLCBvciBwdXJlIEFTQ0lJLCBhcmUgc2FmZS4KICAgICAgICB2YXIgdXRmOENoaW5lc2UgPSBFbmNvZGluZy5VVEY4LkdldEJ5dGVzKCLkuK3mloflpIfms6giKTsKCiAgICAgICAgQXNzZXJ0LkVxdWFsKDkzNiwgVGV4dEZpbGVFbmNvZGluZy5EZXRlY3QodXRmOENoaW5lc2UpLkNvZGVQYWdlKTsKICAgIH0KCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIERldGVjdF9GaWxlUGF0aF9SZWFkc1RoZUZpbGUoKQogICAgewogICAgICAgIHVzaW5nIHZhciB3b3Jrc3BhY2UgPSBuZXcgVGVtcFdvcmtzcGFjZSgpOwogICAgICAgIHZhciBwYXRoID0gd29ya3NwYWNlLlBhdGhGb3IoIm1lbW8uZGF0Iik7CiAgICAgICAgRmlsZS5Xcml0ZUFsbFRleHQocGF0aCwgIjE5Mi4xNjguMS4xMD3miZPljbDmnLoiLCBUZXh0RmlsZUVuY29kaW5nLlV0ZjhCb20pOwoKICAgICAgICBBc3NlcnQuRXF1YWwoNjUwMDEsIFRleHRGaWxlRW5jb2RpbmcuRGV0ZWN0KHBhdGgpLkNvZGVQYWdlKTsKICAgICAgICBBc3NlcnQuRXF1YWwoMywgVGV4dEZpbGVFbmNvZGluZy5EZXRlY3QocGF0aCkuR2V0UHJlYW1ibGUoKS5MZW5ndGgpOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgRGV0ZWN0X01pc3NpbmdGaWxlX0ZhbGxzQmFja0luc3RlYWRPZlRocm93aW5nKCkKICAgIHsKICAgICAgICB1c2luZyB2YXIgd29ya3NwYWNlID0gbmV3IFRlbXBXb3Jrc3BhY2UoKTsKCiAgICAgICAgdmFyIGRldGVjdGVkID0gVGV4dEZpbGVFbmNvZGluZy5EZXRlY3Qod29ya3NwYWNlLlBhdGhGb3IoImFic2VudC5kYXQiKSk7CgogICAgICAgIEFzc2VydC5Ob3ROdWxsKGRldGVjdGVkKTsKICAgICAgICBBc3NlcnQuRXF1YWwoRW5jb2RpbmcuRGVmYXVsdC5Db2RlUGFnZSwgZGV0ZWN0ZWQuQ29kZVBhZ2UpOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgUmVhZEFsbExpbmVzX1VzZXNUaGVEZXRlY3RlZEVuY29kaW5nKCkKICAgIHsKICAgICAgICB1c2luZyB2YXIgd29ya3NwYWNlID0gbmV3IFRlbXBXb3Jrc3BhY2UoKTsKICAgICAgICB2YXIgcGF0aCA9IHdvcmtzcGFjZS5QYXRoRm9yKCJtZW1vLmRhdCIpOwogICAgICAgIEZpbGUuV3JpdGVBbGxUZXh0KHBhdGgsICIxOTIuMTY4LjEuMTA95omT5Y2w5py6XHJcbjAwLTFBLTJCLTNDLTRELTVFPeacuuaIvyIsIFRleHRGaWxlRW5jb2RpbmcuVXRmOEJvbSk7CgogICAgICAgIHZhciBsaW5lcyA9IFRleHRGaWxlRW5jb2RpbmcuUmVhZEFsbExpbmVzKHBhdGgpOwoKICAgICAgICBBc3NlcnQuRXF1YWwoWyIxOTIuMTY4LjEuMTA95omT5Y2w5py6IiwgIjAwLTFBLTJCLTNDLTRELTVFPeacuuaIvyJdLCBsaW5lcyk7CiAgICB9CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBSZWFkQWxsTGluZXNfUmVhZHNBR2JrRmlsZSgpCiAgICB7CiAgICAgICAgdXNpbmcgdmFyIHdvcmtzcGFjZSA9IG5ldyBUZW1wV29ya3NwYWNlKCk7CiAgICAgICAgdmFyIHBhdGggPSB3b3Jrc3BhY2UuUGF0aEZvcigiZ2JrLmRhdCIpOwogICAgICAgIEZpbGUuV3JpdGVBbGxUZXh0KHBhdGgsICIxOTIuMTY4LjEuMTA95omT5Y2w5py6IiwgVGV4dEZpbGVFbmNvZGluZy5HYmspOwoKICAgICAgICB2YXIgbGluZXMgPSBUZXh0RmlsZUVuY29kaW5nLlJlYWRBbGxMaW5lcyhwYXRoKTsKCiAgICAgICAgQXNzZXJ0LkVxdWFsKFsiMTkyLjE2OC4xLjEwPeaJk+WNsOacuiJdLCBsaW5lcyk7CiAgICB9CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBVdGY4RW5jb2RpbmdzX0hhdmVUaGVFeHBlY3RlZFByZWFtYmxlcygpCiAgICB7CiAgICAgICAgQXNzZXJ0LkVxdWFsKG5ldyBieXRlW10geyAweEVGLCAweEJCLCAweEJGIH0sIFRleHRGaWxlRW5jb2RpbmcuVXRmOEJvbS5HZXRQcmVhbWJsZSgpKTsKICAgICAgICBBc3NlcnQuRW1wdHkoVGV4dEZpbGVFbmNvZGluZy5VdGY4Tm9Cb20uR2V0UHJlYW1ibGUoKSk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKDkzNiwgVGV4dEZpbGVFbmNvZGluZy5HYmsuQ29kZVBhZ2UpOwogICAgfQp9Cg==
+using Xunit;
+using System.Text;
+using IPScaner.Core.Storage;
+
+namespace IPScaner.Core.Tests;
+
+/// <summary>
+/// Coverage for <see cref="TextFileEncoding"/> — BOM detection plus the legacy
+/// "ANSI" (GBK) heuristic the original tool relied on.
+/// </summary>
+public class TextFileEncodingTests
+{
+    [Fact]
+    public void Detect_RecognisesTheUtf8Bom()
+    {
+        var detected = TextFileEncoding.Detect([0xEF, 0xBB, 0xBF, (byte)'a', (byte)'b']);
+
+        Assert.Equal(65001, detected.CodePage);
+        Assert.Equal(3, detected.GetPreamble().Length);
+    }
+
+    [Fact]
+    public void Detect_RecognisesUtf16LittleEndian()
+    {
+        var detected = TextFileEncoding.Detect([0xFF, 0xFE, (byte)'a', 0x00]);
+
+        Assert.Equal(1200, detected.CodePage);
+        Assert.Equal("utf-16", detected.WebName);
+    }
+
+    [Fact]
+    public void Detect_RecognisesUtf16BigEndian()
+    {
+        var detected = TextFileEncoding.Detect([0xFE, 0xFF, 0x00, (byte)'a']);
+
+        Assert.Equal(1201, detected.CodePage);
+        Assert.Equal("utf-16BE", detected.WebName);
+    }
+
+    [Fact]
+    public void Detect_BomWins_EvenWhenTheRestLooksLikeGbk()
+    {
+        // 0xD6 0xD0 is the GBK encoding of 中, but the BOM decides.
+        var detected = TextFileEncoding.Detect([0xEF, 0xBB, 0xBF, 0xD6, 0xD0]);
+
+        Assert.Equal(65001, detected.CodePage);
+    }
+
+    [Fact]
+    public void Detect_GbkHeuristic_PicksCodePage936()
+    {
+        // "中文" as GBK: D6 D0 CE C4 — no BOM, lead byte >= 161.
+        var detected = TextFileEncoding.Detect([0xD6, 0xD0, 0xCE, 0xC4]);
+
+        Assert.Equal(936, detected.CodePage);
+        Assert.Equal(TextFileEncoding.Gbk.CodePage, detected.CodePage);
+    }
+
+    [Theory]
+    [InlineData(161, 936)]  // first byte in the heuristic window
+    [InlineData(200, 936)]
+    [InlineData(247, 936)]  // last byte in the window (inclusive)
+    [InlineData(160, 65001)]
+    [InlineData(248, 65001)]
+    [InlineData(255, 65001)]
+    public void Detect_GbkHeuristic_UsesThe161To247Window(byte probe, int expectedCodePage)
+        => Assert.Equal(expectedCodePage, TextFileEncoding.Detect([(byte)'a', probe]).CodePage);
+
+    [Fact]
+    public void Detect_PlainAscii_IsUtf8WithoutBom()
+    {
+        var detected = TextFileEncoding.Detect(Encoding.ASCII.GetBytes("192.168.1.10=printer\r\n"));
+
+        Assert.Equal(65001, detected.CodePage);
+        Assert.Empty(detected.GetPreamble());
+    }
+
+    [Fact]
+    public void Detect_EmptyInput_IsUtf8WithoutBom()
+        => Assert.Equal(65001, TextFileEncoding.Detect([]).CodePage);
+
+    [Fact]
+    public void Detect_Utf8ChineseWithoutBom_IsMisdetectedAsGbk()
+    {
+        // DISCREPANCY / documented limitation (reported; library not modified):
+        // the "lead byte >= 161" heuristic is the original's, and it cannot tell a
+        // BOM-less UTF-8 Chinese file from GBK — the first byte of 中 (0xE4) is
+        // inside the window, so such a file is decoded as GBK and renders as
+        // mojibake. Only files *with* a BOM, or pure ASCII, are safe.
+        var utf8Chinese = Encoding.UTF8.GetBytes("中文备注");
+
+        Assert.Equal(936, TextFileEncoding.Detect(utf8Chinese).CodePage);
+    }
+
+    [Fact]
+    public void Detect_FilePath_ReadsTheFile()
+    {
+        using var workspace = new TempWorkspace();
+        var path = workspace.PathFor("memo.dat");
+        File.WriteAllText(path, "192.168.1.10=打印机", TextFileEncoding.Utf8Bom);
+
+        Assert.Equal(65001, TextFileEncoding.Detect(path).CodePage);
+        Assert.Equal(3, TextFileEncoding.Detect(path).GetPreamble().Length);
+    }
+
+    [Fact]
+    public void Detect_MissingFile_FallsBackInsteadOfThrowing()
+    {
+        using var workspace = new TempWorkspace();
+
+        var detected = TextFileEncoding.Detect(workspace.PathFor("absent.dat"));
+
+        Assert.NotNull(detected);
+        Assert.Equal(Encoding.Default.CodePage, detected.CodePage);
+    }
+
+    [Fact]
+    public void ReadAllLines_UsesTheDetectedEncoding()
+    {
+        using var workspace = new TempWorkspace();
+        var path = workspace.PathFor("memo.dat");
+        File.WriteAllText(path, "192.168.1.10=打印机\r\n00-1A-2B-3C-4D-5E=机房", TextFileEncoding.Utf8Bom);
+
+        var lines = TextFileEncoding.ReadAllLines(path);
+
+        Assert.Equal(["192.168.1.10=打印机", "00-1A-2B-3C-4D-5E=机房"], lines);
+    }
+
+    [Fact]
+    public void ReadAllLines_ReadsAGbkFile()
+    {
+        using var workspace = new TempWorkspace();
+        var path = workspace.PathFor("gbk.dat");
+        File.WriteAllText(path, "192.168.1.10=打印机", TextFileEncoding.Gbk);
+
+        var lines = TextFileEncoding.ReadAllLines(path);
+
+        Assert.Equal(["192.168.1.10=打印机"], lines);
+    }
+
+    [Fact]
+    public void Utf8Encodings_HaveTheExpectedPreambles()
+    {
+        Assert.Equal(new byte[] { 0xEF, 0xBB, 0xBF }, TextFileEncoding.Utf8Bom.GetPreamble());
+        Assert.Empty(TextFileEncoding.Utf8NoBom.GetPreamble());
+        Assert.Equal(936, TextFileEncoding.Gbk.CodePage);
+    }
+}

@@ -1,1 +1,349 @@
-dXNpbmcgU3lzdGVtLkRpYWdub3N0aWNzOwp1c2luZyBTeXN0ZW0uR2xvYmFsaXphdGlvbjsKdXNpbmcgU3lzdGVtLk5ldDsKdXNpbmcgU3lzdGVtLk5ldC5Tb2NrZXRzOwp1c2luZyBTeXN0ZW0uUmVmbGVjdGlvbjsKdXNpbmcgU3lzdGVtLlJ1bnRpbWUuSW50ZXJvcFNlcnZpY2VzOwp1c2luZyBTeXN0ZW0uU2VjdXJpdHkuUHJpbmNpcGFsOwp1c2luZyBJUFNjYW5lci5Db3JlLk1vZGVsczsKdXNpbmcgSVBTY2FuZXIuQ29yZS5OZXQ7CgovLyBTY3JhdGNoIHZlcmlmaWNhdGlvbiBoYXJuZXNzIGZvciBJUFNjYW5lci5Db3JlLk5ldC5Mb2NhbFBvcnRUYWJsZS4KLy8gQ29tcGlsZXMgdGhlIHJlYWwgc291cmNlIGZpbGUgYWdhaW5zdCB0aGUgYWxyZWFkeS1idWlsdCBJUFNjYW5lci5Db3JlLmRsbCBzbyB0aGUKLy8gcmVhbCBJUFNjYW5lci5Db3JlLmNzcHJvaiBpcyBuZXZlciB0b3VjaGVkLgoKdHJ5IHsgQ29uc29sZS5PdXRwdXRFbmNvZGluZyA9IFN5c3RlbS5UZXh0LkVuY29kaW5nLlVURjg7IH0gY2F0Y2ggeyAvKiBubyBjb25zb2xlICovIH0KCmNvbnN0IHN0cmluZyBGYWxsYmFja1ZhcmlhYmxlID0gIklQU0NBTkVSX0xPQ0FMUE9SVF9GT1JDRV9GQUxMQkFDSyI7Cgp2YXIgZmFpbHVyZXMgPSAwOwp2YXIgdGFibGUgPSBuZXcgTG9jYWxQb3J0VGFibGUoKTsKCnZvaWQgQ2hlY2soYm9vbCBvaywgc3RyaW5nIGxhYmVsKQp7CiAgICBDb25zb2xlLldyaXRlTGluZSgkInsob2sgPyAiUEFTUyAgIiA6ICJGQUlMICAiKX17bGFiZWx9Iik7CiAgICBpZiAoIW9rKSBmYWlsdXJlcysrOwp9Cgp2b2lkIFNlY3Rpb24oc3RyaW5nIHRpdGxlKQp7CiAgICBDb25zb2xlLldyaXRlTGluZSgpOwogICAgQ29uc29sZS5Xcml0ZUxpbmUoJCI9PT0ge3RpdGxlfSA9PT0iKTsKfQoKdm9pZCBTdGF0cyhzdHJpbmcgbGFiZWwsIElSZWFkT25seUxpc3Q8TG9jYWxQb3J0SW5mbz4gcm93cykKewogICAgdmFyIHRjcCA9IHJvd3MuQ291bnQociA9PiByLlByb3RvY29sID09ICJUQ1AiKTsKICAgIHZhciB1ZHAgPSByb3dzLkNvdW50KHIgPT4gci5Qcm90b2NvbCA9PSAiVURQIik7CiAgICB2YXIgdjYgPSByb3dzLkNvdW50KHIgPT4gci5Mb2NhbEFkZHJlc3MuQ29udGFpbnMoJzonKSk7CiAgICB2YXIgbWlzc2luZ1Jvd3MgPSByb3dzLkNvdW50KHIgPT4gci5Qcm9jZXNzTWlzc2luZyk7CiAgICB2YXIgZGlzdGluY3RQaWRzID0gcm93cy5TZWxlY3QociA9PiByLlBpZCkuRGlzdGluY3QoKS5Db3VudCgpOwogICAgdmFyIHJlc29sdmVkUGlkcyA9IHJvd3MuV2hlcmUociA9PiAhci5Qcm9jZXNzTWlzc2luZykuU2VsZWN0KHIgPT4gci5QaWQpLkRpc3RpbmN0KCkuQ291bnQoKTsKICAgIHZhciBtaXNzaW5nUGlkcyA9IHJvd3MuV2hlcmUociA9PiByLlByb2Nlc3NNaXNzaW5nKS5TZWxlY3QociA9PiByLlBpZCkuRGlzdGluY3QoKS5Db3VudCgpOwogICAgdmFyIHN0YXRlcyA9IHN0cmluZy5Kb2luKCIsICIsIHJvd3MKICAgICAgICAuV2hlcmUociA9PiByLlByb3RvY29sID09ICJUQ1AiKQogICAgICAgIC5Hcm91cEJ5KHIgPT4gci5TdGF0ZSkKICAgICAgICAuT3JkZXJCeURlc2NlbmRpbmcoZyA9PiBnLkNvdW50KCkpCiAgICAgICAgLlNlbGVjdChnID0+ICQie2cuS2V5fT17Zy5Db3VudCgpfSIpKTsKCiAgICBDb25zb2xlLldyaXRlTGluZSgkIntsYWJlbH06IHJvd3M9e3Jvd3MuQ291bnR9ICBUQ1A9e3RjcH0gIFVEUD17dWRwfSAgSVB2ND17cm93cy5Db3VudCAtIHY2fSAgSVB2Nj17djZ9Iik7CiAgICBDb25zb2xlLldyaXRlTGluZSgkIiAgICBkaXN0aW5jdCBQSURzPXtkaXN0aW5jdFBpZHN9ICAgcmVzb2x2ZWQtYnktbmFtZSBQSURzPXtyZXNvbHZlZFBpZHN9ICAgdW5yZXNvbHZlZCBQSURzPXttaXNzaW5nUGlkc30gICByb3dzIHdpdGggUHJvY2Vzc01pc3Npbmc9dHJ1ZToge21pc3NpbmdSb3dzfSIpOwogICAgQ29uc29sZS5Xcml0ZUxpbmUoJCIgICAgVENQIHN0YXRlczoge3N0YXRlc30iKTsKfQoKdm9pZCBQcmludFJvd3MoSVJlYWRPbmx5TGlzdDxMb2NhbFBvcnRJbmZvPiByb3dzLCBpbnQgbWF4KQp7CiAgICBmb3JlYWNoICh2YXIgciBpbiByb3dzLlRha2UobWF4KSkKICAgIHsKICAgICAgICB2YXIgbG9jYWwgPSByLkxvY2FsQWRkcmVzcy5Db250YWlucygnOicpCiAgICAgICAgICAgID8gJCJbe3IuTG9jYWxBZGRyZXNzfV06e3IuTG9jYWxQb3J0fSIKICAgICAgICAgICAgOiAkIntyLkxvY2FsQWRkcmVzc306e3IuTG9jYWxQb3J0fSI7CiAgICAgICAgdmFyIHJlbW90ZSA9IHIuUmVtb3RlQWRkcmVzcy5Db250YWlucygnOicpCiAgICAgICAgICAgID8gJCJbe3IuUmVtb3RlQWRkcmVzc31dOntyLlJlbW90ZVBvcnR9IgogICAgICAgICAgICA6ICQie3IuUmVtb3RlQWRkcmVzc306e3IuUmVtb3RlUG9ydH0iOwogICAgICAgIHZhciBtaXNzaW5nID0gci5Qcm9jZXNzTWlzc2luZyA/ICIgIDxQcm9jZXNzTWlzc2luZz4iIDogc3RyaW5nLkVtcHR5OwogICAgICAgIENvbnNvbGUuV3JpdGVMaW5lKCQiICAgIHtyLlByb3RvY29sLC0zfSB7bG9jYWwsLTQ2fSB7cmVtb3RlLC0zMn0ge3IuU3RhdGUsLTEwfSBwaWQ9e3IuUGlkLC03fSB7ci5Qcm9jZXNzTmFtZSwtMjJ9IHtyLlByb2Nlc3NQYXRofXttaXNzaW5nfSIpOwogICAgfQp9CgpTZWN0aW9uKCJlbnZpcm9ubWVudCIpOwpDb25zb2xlLldyaXRlTGluZSgkIk9TICAgICAgICAgICAgOiB7UnVudGltZUluZm9ybWF0aW9uLk9TRGVzY3JpcHRpb259Iik7CkNvbnNvbGUuV3JpdGVMaW5lKCQiUnVudGltZSAgICAgICA6IHtSdW50aW1lSW5mb3JtYXRpb24uRnJhbWV3b3JrRGVzY3JpcHRpb259ICh7UnVudGltZUluZm9ybWF0aW9uLlByb2Nlc3NBcmNoaXRlY3R1cmV9KSIpOwpDb25zb2xlLldyaXRlTGluZSgkIkVsZXZhdGVkICAgICAgOiB7SXNFbGV2YXRlZCgpfSIpOwpDb25zb2xlLldyaXRlTGluZSgkIk9FTSBjb2RlcGFnZSAgOiB7Q3VsdHVyZUluZm8uQ3VycmVudEN1bHR1cmUuVGV4dEluZm8uT0VNQ29kZVBhZ2V9Iik7CgpTZWN0aW9uKCJQL0ludm9rZSBzdHJ1Y3Qgc2l6ZXMgKHJlZmxlY3Rpb24gb3ZlciB0aGUgcHJpdmF0ZSBuZXN0ZWQgc3RydWN0cykiKTsKZm9yZWFjaCAodmFyIChuYW1lLCBleHBlY3RlZCkgaW4gbmV3W10KICAgICAgICAgewogICAgICAgICAgICAgKCJNSUJfVENQUk9XX09XTkVSX1BJRCIsIDI0KSwKICAgICAgICAgICAgICgiTUlCX1RDUDZST1dfT1dORVJfUElEIiwgNTYpLAogICAgICAgICAgICAgKCJNSUJfVURQUk9XX09XTkVSX1BJRCIsIDEyKSwKICAgICAgICAgICAgICgiTUlCX1VEUDZST1dfT1dORVJfUElEIiwgMjgpLAogICAgICAgICB9KQp7CiAgICB2YXIgdHlwZSA9IHR5cGVvZihMb2NhbFBvcnRUYWJsZSkuR2V0TmVzdGVkVHlwZShuYW1lLCBCaW5kaW5nRmxhZ3MuTm9uUHVibGljKTsKICAgIGlmICh0eXBlIGlzIG51bGwpCiAgICB7CiAgICAgICAgQ2hlY2soZmFsc2UsICQie25hbWV9OiBuZXN0ZWQgdHlwZSBub3QgZm91bmQiKTsKICAgICAgICBjb250aW51ZTsKICAgIH0KCiAgICB2YXIgc2l6ZSA9IE1hcnNoYWwuU2l6ZU9mKHR5cGUpOwogICAgQ2hlY2soc2l6ZSA9PSBleHBlY3RlZCwgJCJ7bmFtZX0gPSB7c2l6ZX0gYnl0ZXMgKGV4cGVjdGVkIHtleHBlY3RlZH0pIik7Cn0KClNlY3Rpb24oIlF1ZXJ5QXN5bmMoKSDigJQgbmF0aXZlIElQIEhlbHBlciBwYXRoLCBUQ1AgKyBVRFAsIElQdjQgb25seSIpOwp2YXIgbmF0aXZlID0gYXdhaXQgdGFibGUuUXVlcnlBc3luYygpOwpTdGF0cygibmF0aXZlIiwgbmF0aXZlKTsKQ29uc29sZS5Xcml0ZUxpbmUoIiAgICBmaXJzdCAxNSByb3dzOiIpOwpQcmludFJvd3MobmF0aXZlLCAxNSk7CgpDaGVjayhuYXRpdmUuQ291bnQgPiAwLCAibmF0aXZlIGVudW1lcmF0aW9uIHJldHVybmVkIHJvd3MiKTsKQ2hlY2sobmF0aXZlLkNvdW50KHIgPT4gci5Qcm90b2NvbCA9PSAiVENQIiAmJiByLlN0YXRlID09ICLkvqblkKwiKSA+PSAzLAogICAgJCJhdCBsZWFzdCAzIFRDUCDkvqblkKwgKExJU1RFTklORykgcm93cyAoZm91bmQge25hdGl2ZS5Db3VudChyID0+IHIuUHJvdG9jb2wgPT0gIlRDUCIgJiYgci5TdGF0ZSA9PSAi5L6m5ZCsIil9KSIpOwpDaGVjayhuYXRpdmUuQWxsKHIgPT4gci5Qcm90b2NvbCBpcyAiVENQIiBvciAiVURQIiksICJldmVyeSByb3cgY2FycmllcyBwcm90b2NvbCBUQ1Agb3IgVURQIik7CkNoZWNrKG5hdGl2ZS5BbGwociA9PiByLkxvY2FsUG9ydCBpcyA+PSAwIGFuZCA8PSA2NTUzNSksICJldmVyeSBsb2NhbCBwb3J0IGlzIGluIDAuLjY1NTM1Iik7CkNoZWNrKG5hdGl2ZS5BbGwociA9PiByLlJlbW90ZVBvcnQgaXMgPj0gMCBhbmQgPD0gNjU1MzUpLCAiZXZlcnkgcmVtb3RlIHBvcnQgaXMgaW4gMC4uNjU1MzUiKTsKQ2hlY2sobmF0aXZlLkFsbChyID0+IHIuUGlkID49IDApLCAiZXZlcnkgUElEIGlzIG5vbi1uZWdhdGl2ZSIpOwpDaGVjayhuYXRpdmUuQWxsKHIgPT4gIXN0cmluZy5Jc051bGxPckVtcHR5KHIuU3RhdGUpKSwgImV2ZXJ5IHJvdyBoYXMgbm9uLWVtcHR5IHN0YXRlIHRleHQiKTsKQ2hlY2sobmF0aXZlLldoZXJlKHIgPT4gci5Qcm90b2NvbCA9PSAiVURQIikuQWxsKHIgPT4gci5TdGF0ZSA9PSBMb2NhbFBvcnRJbmZvLlVkcFN0YXRlKSwKICAgICQiVURQIHJvd3MgdXNlIExvY2FsUG9ydEluZm8uVWRwU3RhdGUgKCd7TG9jYWxQb3J0SW5mby5VZHBTdGF0ZX0nKSIpOwpDaGVjayhuYXRpdmUuQWxsKHIgPT4gci5Mb2NhbEFkZHJlc3MuQ29udGFpbnMoJzonKSB8fCBJc0lQdjQoci5Mb2NhbEFkZHJlc3MpKSwgImV2ZXJ5IElQdjQgbG9jYWwgYWRkcmVzcyBpcyBhIGRvdHRlZCBxdWFkIik7CkNoZWNrKG5hdGl2ZS5XaGVyZShyID0+IHIuUHJvdG9jb2wgPT0gIlRDUCIpLkFsbChyID0+IHIuUmVtb3RlQWRkcmVzcy5Db250YWlucygnOicpIHx8IElzSVB2NChyLlJlbW90ZUFkZHJlc3MpKSwKICAgICJldmVyeSBUQ1AgcmVtb3RlIGFkZHJlc3MgaXMgYSBkb3R0ZWQgcXVhZCIpOwpDaGVjayhuYXRpdmUuV2hlcmUociA9PiByLlByb3RvY29sID09ICJVRFAiKS5BbGwociA9PiByLlJlbW90ZUFkZHJlc3MgPT0gIioiICYmIHIuUmVtb3RlUG9ydCA9PSAwKSwKICAgICJldmVyeSBVRFAgcm93IHVzZXMgbmV0c3RhdCdzICcqOionIHJlbW90ZSBlbmRwb2ludCIpOwpDaGVjayhuYXRpdmUuQWxsKHIgPT4gci5Qcm9jZXNzTWlzc2luZyB8fCByLlByb2Nlc3NOYW1lLkxlbmd0aCA+IDApLCAicmVzb2x2ZWQgcm93cyBoYXZlIGEgcHJvY2VzcyBuYW1lIik7CkNoZWNrKG5hdGl2ZS5BbGwociA9PiAhci5Qcm9jZXNzTWlzc2luZyB8fCAoci5Qcm9jZXNzTmFtZS5MZW5ndGggPT0gMCAmJiByLlByb2Nlc3NQYXRoLkxlbmd0aCA9PSAwKSksCiAgICAiUHJvY2Vzc01pc3Npbmcgcm93cyBoYXZlIGVtcHR5IG5hbWUgYW5kIHBhdGgiKTsKQ2hlY2soSXNTb3J0ZWQobmF0aXZlKSwgInJvd3MgYXJlIHNvcnRlZCBieSBwcm90b2NvbCwgbG9jYWwgcG9ydCwgUElEIik7Cgp2YXIgdGNwT25seSA9IGF3YWl0IHRhYmxlLlF1ZXJ5QXN5bmMoaW5jbHVkZVRjcDogdHJ1ZSwgaW5jbHVkZVVkcDogZmFsc2UpOwpDaGVjayh0Y3BPbmx5LkNvdW50ID4gMCAmJiB0Y3BPbmx5LkFsbChyID0+IHIuUHJvdG9jb2wgPT0gIlRDUCIpLCAkImluY2x1ZGVVZHA6ZmFsc2UgcmV0dXJucyBvbmx5IFRDUCAoe3RjcE9ubHkuQ291bnR9IHJvd3MpIik7CnZhciB1ZHBPbmx5ID0gYXdhaXQgdGFibGUuUXVlcnlBc3luYyhpbmNsdWRlVGNwOiBmYWxzZSwgaW5jbHVkZVVkcDogdHJ1ZSwgaW5jbHVkZUlwdjY6IHRydWUpOwpDaGVjayh1ZHBPbmx5LkNvdW50ID4gMCAmJiB1ZHBPbmx5LkFsbChyID0+IHIuUHJvdG9jb2wgPT0gIlVEUCIpLCAkImluY2x1ZGVUY3A6ZmFsc2UgcmV0dXJucyBvbmx5IFVEUCAoe3VkcE9ubHkuQ291bnR9IHJvd3MpIik7CnZhciBub3RoaW5nID0gYXdhaXQgdGFibGUuUXVlcnlBc3luYyhpbmNsdWRlVGNwOiBmYWxzZSwgaW5jbHVkZVVkcDogZmFsc2UpOwpDaGVjayhub3RoaW5nLkNvdW50ID09IDAsICQiYm90aCBwcm90b2NvbHMgZGlzYWJsZWQgcmV0dXJucyBhbiBlbXB0eSB0YWJsZSAoe25vdGhpbmcuQ291bnR9IHJvd3MpIik7CgpTZWN0aW9uKCJRdWVyeUFzeW5jKGluY2x1ZGVJcHY2OiB0cnVlKSDigJQgSVB2NiBtdXN0IG5vdCBkaXN0dXJiIHRoZSBJUHY0IHJvd3MiKTsKdmFyIHdpdGhWNiA9IGF3YWl0IHRhYmxlLlF1ZXJ5QXN5bmMoaW5jbHVkZUlwdjY6IHRydWUpOwpTdGF0cygibmF0aXZlK0lQdjYiLCB3aXRoVjYpOwp2YXIgdjRTdWJzZXQgPSB3aXRoVjYuV2hlcmUociA9PiAhci5Mb2NhbEFkZHJlc3MuQ29udGFpbnMoJzonKSkuVG9MaXN0KCk7CnZhciB2NlJvd3MgPSB3aXRoVjYuV2hlcmUociA9PiByLkxvY2FsQWRkcmVzcy5Db250YWlucygnOicpKS5Ub0xpc3QoKTsKdmFyIG5ldHN0YXRBZnRlclY2ID0gQ291bnROZXRzdGF0Um93cygpOwpDb25zb2xlLldyaXRlTGluZSgkIiAgICBJUHY2IHJvd3M6IHt2NlJvd3MuQ291bnR9OyBJUHY0IHJvd3Mgd2l0aCBmbGFnIG9uOiB7djRTdWJzZXQuQ291bnR9LCBmbGFnIG9mZjoge25hdGl2ZS5Db3VudH07IGZyZXNoIG5ldHN0YXQgSVB2NCByb3dzOiB7bmV0c3RhdEFmdGVyVjYuVGNwNCArIG5ldHN0YXRBZnRlclY2LlVkcDR9Iik7Ci8vIFRoZSBlbmRwb2ludCB0YWJsZSBpcyBsaXZlLCBzbyBjcm9zcy1xdWVyeSBjb3VudHMgYXJlIGNvbXBhcmVkIHdpdGggYSBzbWFsbCB0b2xlcmFuY2U7Ci8vIGEgInNhbWUgcXVlcnkgdnMgZnJlc2ggbmV0c3RhdCIgY29tcGFyaXNvbiBpcyB3aGF0IGFjdHVhbGx5IHByb3ZlcyBJUHY0IGNvbXBsZXRlbmVzcy4KQ2hlY2soTWF0aC5BYnModjRTdWJzZXQuQ291bnQgLSBuYXRpdmUuQ291bnQpIDw9IDMsICQiSVB2NCByb3cgY291bnQgdW5jaGFuZ2VkIGJ5IGluY2x1ZGVJcHY2ICjCsTM6IHt2NFN1YnNldC5Db3VudH0gdnMge25hdGl2ZS5Db3VudH0pIik7CkNoZWNrKE1hdGguQWJzKHY0U3Vic2V0LkNvdW50IC0gKG5ldHN0YXRBZnRlclY2LlRjcDQgKyBuZXRzdGF0QWZ0ZXJWNi5VZHA0KSkgPD0gNiwKICAgICQiSVB2NCByb3dzIGNvbXBsZXRlIHdoZW4gaW5jbHVkZUlwdjY6dHJ1ZSAowrE2IHZzIGZyZXNoIG5ldHN0YXQ6IHt2NFN1YnNldC5Db3VudH0gdnMge25ldHN0YXRBZnRlclY2LlRjcDQgKyBuZXRzdGF0QWZ0ZXJWNi5VZHA0fSkiKTsKQ2hlY2sodjZSb3dzLkNvdW50ID4gMCwgJCJpbmNsdWRlSXB2Njp0cnVlIGFjdHVhbGx5IHJldHVybnMgSVB2NiByb3dzICh7djZSb3dzLkNvdW50fSkiKTsKQ2hlY2sodjZSb3dzLkFsbChyID0+IElzSVB2NihyLkxvY2FsQWRkcmVzcykpLCAiZXZlcnkgSVB2NiBsb2NhbCBhZGRyZXNzIHBhcnNlcyBhcyBJUHY2Iik7CkNoZWNrKHY2Um93cy5BbGwociA9PiByLlN0YXRlLkxlbmd0aCA+IDApLCAiSVB2NiByb3dzIGNhcnJ5IHN0YXRlIHRleHQiKTsKQ2hlY2soSXNTb3J0ZWQod2l0aFY2KSwgIklQdjYtZW5hYmxlZCByZXN1bHQgaXMgc3RpbGwgc29ydGVkIik7CkNoZWNrKG5hdGl2ZS5BbGwociA9PiAhci5Mb2NhbEFkZHJlc3MuQ29udGFpbnMoJzonKSksICJpbmNsdWRlSXB2NjpmYWxzZSByZXR1cm5zIG5vIElQdjYgcm93cyIpOwpDb25zb2xlLldyaXRlTGluZSgiICAgIGZpcnN0IDEwIElQdjYgcm93czoiKTsKUHJpbnRSb3dzKHY2Um93cywgMTApOwoKU2VjdGlvbigiaW5kZXBlbmRlbnQgbmV0c3RhdCAtYW5vIGNyb3NzLWNoZWNrICh2YWxpZGF0ZXMgdGhlIHN0cnVjdCBzaXplcyAvIHJvdyBzdHJpZGUpIik7CnZhciBuZXRzdGF0ID0gQ291bnROZXRzdGF0Um93cygpOwp2YXIgbmF0aXZlVGNwNCA9IG5hdGl2ZS5Db3VudChyID0+IHIuUHJvdG9jb2wgPT0gIlRDUCIpOwp2YXIgbmF0aXZlVWRwNCA9IG5hdGl2ZS5Db3VudChyID0+IHIuUHJvdG9jb2wgPT0gIlVEUCIpOwpDb25zb2xlLldyaXRlTGluZSgkIiAgICBuZXRzdGF0OiBUQ1AvSVB2ND17bmV0c3RhdC5UY3A0fSAgVURQL0lQdjQ9e25ldHN0YXQuVWRwNH0gIFRDUC9JUHY2PXtuZXRzdGF0LlRjcDZ9ICBVRFAvSVB2Nj17bmV0c3RhdC5VZHA2fSIpOwpDb25zb2xlLldyaXRlTGluZSgkIiAgICBuYXRpdmUgOiBUQ1AvSVB2ND17bmF0aXZlVGNwNH0gIFVEUC9JUHY0PXtuYXRpdmVVZHA0fSIpOwpDaGVjayhNYXRoLkFicyhuYXRpdmVUY3A0IC0gbmV0c3RhdC5UY3A0KSA8PSA1LCAkIm5hdGl2ZSBUQ1AvSVB2NCBjb3VudCB3aXRoaW4gwrE1IG9mIG5ldHN0YXQgKHtuYXRpdmVUY3A0fSB2cyB7bmV0c3RhdC5UY3A0fSkiKTsKQ2hlY2soTWF0aC5BYnMobmF0aXZlVWRwNCAtIG5ldHN0YXQuVWRwNCkgPD0gMywgJCJuYXRpdmUgVURQL0lQdjQgY291bnQgd2l0aGluIMKxMyBvZiBuZXRzdGF0ICh7bmF0aXZlVWRwNH0gdnMge25ldHN0YXQuVWRwNH0pIik7CgpTZWN0aW9uKCQiZmFsbGJhY2sgcGF0aCDigJQge0ZhbGxiYWNrVmFyaWFibGV9PTEgZm9yY2VzIG5ldHN0YXQiKTsKRW52aXJvbm1lbnQuU2V0RW52aXJvbm1lbnRWYXJpYWJsZShGYWxsYmFja1ZhcmlhYmxlLCAiMSIpOwp2YXIgZmFsbGJhY2sgPSBhd2FpdCB0YWJsZS5RdWVyeUFzeW5jKCk7CnZhciBmYWxsYmFja1dpdGhWNiA9IGF3YWl0IHRhYmxlLlF1ZXJ5QXN5bmMoaW5jbHVkZUlwdjY6IHRydWUpOwpFbnZpcm9ubWVudC5TZXRFbnZpcm9ubWVudFZhcmlhYmxlKEZhbGxiYWNrVmFyaWFibGUsIG51bGwpOwoKU3RhdHMoImZhbGxiYWNrKG5ldHN0YXQpIiwgZmFsbGJhY2spOwpDb25zb2xlLldyaXRlTGluZSgiICAgIGZpcnN0IDE1IGZhbGxiYWNrIHJvd3M6Iik7ClByaW50Um93cyhmYWxsYmFjaywgMTUpOwoKdmFyIGZhbGxiYWNrVGNwNCA9IGZhbGxiYWNrLkNvdW50KHIgPT4gci5Qcm90b2NvbCA9PSAiVENQIik7CnZhciBmYWxsYmFja1VkcDQgPSBmYWxsYmFjay5Db3VudChyID0+IHIuUHJvdG9jb2wgPT0gIlVEUCIpOwp2YXIgZnJlc2hOZXRzdGF0ID0gQ291bnROZXRzdGF0Um93cygpOwpDb25zb2xlLldyaXRlTGluZSgkIiAgICBmcmVzaCBuZXRzdGF0IHJpZ2h0IGFmdGVyIHRoZSBmYWxsYmFjayBydW46IFRDUC9JUHY0PXtmcmVzaE5ldHN0YXQuVGNwNH0gIFVEUC9JUHY0PXtmcmVzaE5ldHN0YXQuVWRwNH0iKTsKQ2hlY2soZmFsbGJhY2suQ291bnQgPiAwLCAibmV0c3RhdCBmYWxsYmFjayByZXR1cm5lZCByb3dzIik7CkNoZWNrKE1hdGguQWJzKGZhbGxiYWNrVGNwNCAtIGZyZXNoTmV0c3RhdC5UY3A0KSA8PSAyLCAkImZhbGxiYWNrIFRDUC9JUHY0IGNvdW50IHdpdGhpbiDCsTIgb2YgbmV0c3RhdCAoe2ZhbGxiYWNrVGNwNH0gdnMge2ZyZXNoTmV0c3RhdC5UY3A0fSkiKTsKQ2hlY2soTWF0aC5BYnMoZmFsbGJhY2tVZHA0IC0gZnJlc2hOZXRzdGF0LlVkcDQpIDw9IDIsICQiZmFsbGJhY2sgVURQL0lQdjQgY291bnQgd2l0aGluIMKxMiBvZiBuZXRzdGF0ICh7ZmFsbGJhY2tVZHA0fSB2cyB7ZnJlc2hOZXRzdGF0LlVkcDR9KSIpOwpDaGVjayhmYWxsYmFjay5Db3VudChyID0+IHIuUHJvdG9jb2wgPT0gIlRDUCIgJiYgci5TdGF0ZSA9PSAi5L6m5ZCsIikgPj0gMywKICAgICQiZmFsbGJhY2sgZm91bmQgVENQIOS+puWQrCByb3dzICh7ZmFsbGJhY2suQ291bnQociA9PiByLlByb3RvY29sID09ICJUQ1AiICYmIHIuU3RhdGUgPT0gIuS+puWQrCIpfSkiKTsKQ2hlY2soTWF0aC5BYnMoZmFsbGJhY2tUY3A0IC0gbmF0aXZlVGNwNCkgPD0gNSwgJCJmYWxsYmFjayBUQ1AvSVB2NCBjb3VudCB3aXRoaW4gwrE1IG9mIG5hdGl2ZSAoe2ZhbGxiYWNrVGNwNH0gdnMge25hdGl2ZVRjcDR9KSIpOwpDaGVjayhNYXRoLkFicyhmYWxsYmFja1VkcDQgLSBuYXRpdmVVZHA0KSA8PSAzLCAkImZhbGxiYWNrIFVEUC9JUHY0IGNvdW50IHdpdGhpbiDCsTMgb2YgbmF0aXZlICh7ZmFsbGJhY2tVZHA0fSB2cyB7bmF0aXZlVWRwNH0pIik7CkNoZWNrKGZhbGxiYWNrLkFsbChyID0+ICFyLkxvY2FsQWRkcmVzcy5Db250YWlucygnOicpKSwgImZhbGxiYWNrIGhvbm91cnMgaW5jbHVkZUlwdjY6ZmFsc2UiKTsKQ2hlY2soZmFsbGJhY2suQWxsKHIgPT4gci5Mb2NhbFBvcnQgaXMgPj0gMCBhbmQgPD0gNjU1MzUpLCAiZmFsbGJhY2sgbG9jYWwgcG9ydHMgYXJlIGluIHJhbmdlIik7CkNoZWNrKGZhbGxiYWNrLldoZXJlKHIgPT4gci5Qcm90b2NvbCA9PSAiVURQIikuQWxsKHIgPT4gci5TdGF0ZSA9PSBMb2NhbFBvcnRJbmZvLlVkcFN0YXRlKSwgImZhbGxiYWNrIFVEUCByb3dzIHVzZSBVZHBTdGF0ZSIpOwpDaGVjayhmYWxsYmFjay5BbGwociA9PiByLlByb2Nlc3NNaXNzaW5nIHx8IHIuUHJvY2Vzc05hbWUuTGVuZ3RoID4gMCksICJmYWxsYmFjayByZXNvbHZlZCByb3dzIGhhdmUgYSBwcm9jZXNzIG5hbWUiKTsKQ2hlY2soSXNTb3J0ZWQoZmFsbGJhY2spLCAiZmFsbGJhY2sgcm93cyBhcmUgc29ydGVkIik7CkNoZWNrKGZhbGxiYWNrV2l0aFY2LkNvdW50KHIgPT4gci5Mb2NhbEFkZHJlc3MuQ29udGFpbnMoJzonKSkgPiAwLCAiZmFsbGJhY2sgcmV0dXJucyBJUHY2IHJvd3Mgd2hlbiBhc2tlZCIpOwpDaGVjayhmYWxsYmFja1dpdGhWNi5BbGwociA9PiAhci5Mb2NhbEFkZHJlc3MuQ29udGFpbnMoJzonKSB8fCBJc0lQdjYoci5Mb2NhbEFkZHJlc3MpKSwgImZhbGxiYWNrIElQdjYgYWRkcmVzc2VzIHBhcnNlIGFzIElQdjYiKTsKdmFyIGZhbGxiYWNrV2l0aFY2VjQgPSBmYWxsYmFja1dpdGhWNi5Db3VudChyID0+ICFyLkxvY2FsQWRkcmVzcy5Db250YWlucygnOicpKTsKdmFyIGZyZXNoTmV0c3RhdFY2ID0gQ291bnROZXRzdGF0Um93cygpOwpDaGVjayhNYXRoLkFicyhmYWxsYmFja1dpdGhWNlY0IC0gZnJlc2hOZXRzdGF0VjYuVGNwNCAtIGZyZXNoTmV0c3RhdFY2LlVkcDQpIDw9IDYsCiAgICAkImZhbGxiYWNrIGtlZXBzIGl0cyBJUHY0IHJvd3Mgd2hlbiBpbmNsdWRlSXB2Njp0cnVlICjCsTYgdnMgZnJlc2ggbmV0c3RhdDoge2ZhbGxiYWNrV2l0aFY2VjR9IHZzIHtmcmVzaE5ldHN0YXRWNi5UY3A0ICsgZnJlc2hOZXRzdGF0VjYuVWRwNH0pIik7CgpTZWN0aW9uKCJjYW5jZWxsYXRpb24iKTsKdXNpbmcgKHZhciBjdHMgPSBuZXcgQ2FuY2VsbGF0aW9uVG9rZW5Tb3VyY2UoKSkKewogICAgY3RzLkNhbmNlbCgpOwogICAgdmFyIGNhbmNlbGxlZCA9IGZhbHNlOwogICAgdHJ5CiAgICB7CiAgICAgICAgYXdhaXQgdGFibGUuUXVlcnlBc3luYyh0cnVlLCB0cnVlLCBmYWxzZSwgY3RzLlRva2VuKTsKICAgIH0KICAgIGNhdGNoIChPcGVyYXRpb25DYW5jZWxlZEV4Y2VwdGlvbikKICAgIHsKICAgICAgICBjYW5jZWxsZWQgPSB0cnVlOwogICAgfQoKICAgIENoZWNrKGNhbmNlbGxlZCwgImFuIGFscmVhZHktY2FuY2VsbGVkIHRva2VuIHRocm93cyBPcGVyYXRpb25DYW5jZWxlZEV4Y2VwdGlvbiIpOwp9CgpFbnZpcm9ubWVudC5TZXRFbnZpcm9ubWVudFZhcmlhYmxlKEZhbGxiYWNrVmFyaWFibGUsICIxIik7CnVzaW5nICh2YXIgY3RzTWlkID0gbmV3IENhbmNlbGxhdGlvblRva2VuU291cmNlKDQwKSkKewogICAgdmFyIGNhbmNlbGxlZE1pZCA9IGZhbHNlOwogICAgSVJlYWRPbmx5TGlzdDxMb2NhbFBvcnRJbmZvPj8gbWlkUm93cyA9IG51bGw7CiAgICB0cnkKICAgIHsKICAgICAgICBtaWRSb3dzID0gYXdhaXQgdGFibGUuUXVlcnlBc3luYyh0cnVlLCB0cnVlLCBmYWxzZSwgY3RzTWlkLlRva2VuKTsKICAgIH0KICAgIGNhdGNoIChPcGVyYXRpb25DYW5jZWxlZEV4Y2VwdGlvbikKICAgIHsKICAgICAgICBjYW5jZWxsZWRNaWQgPSB0cnVlOwogICAgfQoKICAgIENoZWNrKGNhbmNlbGxlZE1pZCB8fCBtaWRSb3dzIGlzIG5vdCBudWxsLAogICAgICAgICQibWlkLWZsaWdodCBjYW5jZWxsYXRpb24gZHVyaW5nIHRoZSBuZXRzdGF0IGZhbGxiYWNrIHNldHRsZXMgY2xlYW5seSAoY2FuY2VsbGVkPXtjYW5jZWxsZWRNaWR9LCByb3dzPXttaWRSb3dzPy5Db3VudH0pIik7Cn0KCkVudmlyb25tZW50LlNldEVudmlyb25tZW50VmFyaWFibGUoRmFsbGJhY2tWYXJpYWJsZSwgbnVsbCk7CgpTZWN0aW9uKCJUcnlLaWxsUHJvY2VzcyIpOwp1c2luZyAodmFyIHZpY3RpbSA9IFN0YXJ0VmljdGltKCkpCnsKICAgIHZhciBkcmFpbiA9IFRhc2suUnVuKCgpID0+IHsgdHJ5IHsgdmljdGltLlN0YW5kYXJkT3V0cHV0LlJlYWRUb0VuZCgpOyB9IGNhdGNoIHsgLyoga2lsbGVkICovIH0gfSk7CiAgICB2YXIgdmljdGltUGlkID0gdmljdGltLklkOwogICAgdmFyIGtpbGxlZCA9IExvY2FsUG9ydFRhYmxlLlRyeUtpbGxQcm9jZXNzKHZpY3RpbVBpZCwgb3V0IHZhciBraWxsRXJyb3IpOwogICAgQ2hlY2soa2lsbGVkLCAkIlRyeUtpbGxQcm9jZXNzKHt2aWN0aW1QaWR9KSA9PiB0cnVlICAoZXJyb3I9J3traWxsRXJyb3J9JykiKTsKICAgIGF3YWl0IFRhc2suRGVsYXkoMzAwKTsKICAgIENoZWNrKElzR29uZSh2aWN0aW1QaWQpLCAkInZpY3RpbSBwcm9jZXNzIHt2aWN0aW1QaWR9IG5vIGxvbmdlciBleGlzdHMiKTsKICAgIF8gPSBkcmFpbjsKfQoKdmFyIGJvZ3VzT2sgPSBMb2NhbFBvcnRUYWJsZS5UcnlLaWxsUHJvY2VzcyhpbnQuTWF4VmFsdWUsIG91dCB2YXIgYm9ndXNFcnJvcik7CkNoZWNrKCFib2d1c09rICYmIGJvZ3VzRXJyb3IuTGVuZ3RoID4gMCwgJCIobm9uZXhpc3RlbnQgcGlkKSA9PiBmYWxzZSwgZXJyb3I9J3tib2d1c0Vycm9yfSciKTsKdmFyIHNlbGZPayA9IExvY2FsUG9ydFRhYmxlLlRyeUtpbGxQcm9jZXNzKEVudmlyb25tZW50LlByb2Nlc3NJZCwgb3V0IHZhciBzZWxmRXJyb3IpOwpDaGVjayghc2VsZk9rICYmIHNlbGZFcnJvci5MZW5ndGggPiAwLCAkIihvd24gcGlkKSA9PiBmYWxzZSwgZXJyb3I9J3tzZWxmRXJyb3J9JyIpOwp2YXIgemVyb09rID0gTG9jYWxQb3J0VGFibGUuVHJ5S2lsbFByb2Nlc3MoMCwgb3V0IHZhciB6ZXJvRXJyb3IpOwpDaGVjayghemVyb09rICYmIHplcm9FcnJvci5MZW5ndGggPiAwLCAkIihwaWQgMCkgPT4gZmFsc2UsIGVycm9yPSd7emVyb0Vycm9yfSciKTsKCkNvbnNvbGUuV3JpdGVMaW5lKCk7CkNvbnNvbGUuV3JpdGVMaW5lKGZhaWx1cmVzID09IDAgPyAiQUxMIENIRUNLUyBQQVNTRUQiIDogJCJ7ZmFpbHVyZXN9IENIRUNLKFMpIEZBSUxFRCIpOwpyZXR1cm4gZmFpbHVyZXM7CgpzdGF0aWMgYm9vbCBJc0VsZXZhdGVkKCkKewogICAgdHJ5CiAgICB7CiAgICAgICAgdXNpbmcgdmFyIGlkZW50aXR5ID0gV2luZG93c0lkZW50aXR5LkdldEN1cnJlbnQoKTsKICAgICAgICByZXR1cm4gbmV3IFdpbmRvd3NQcmluY2lwYWwoaWRlbnRpdHkpLklzSW5Sb2xlKFdpbmRvd3NCdWlsdEluUm9sZS5BZG1pbmlzdHJhdG9yKTsKICAgIH0KICAgIGNhdGNoCiAgICB7CiAgICAgICAgcmV0dXJuIGZhbHNlOwogICAgfQp9CgpzdGF0aWMgYm9vbCBJc0lQdjQoc3RyaW5nIHRleHQpID0+CiAgICBJUEFkZHJlc3MuVHJ5UGFyc2UodGV4dCwgb3V0IHZhciBpcCkgJiYgaXAuQWRkcmVzc0ZhbWlseSA9PSBBZGRyZXNzRmFtaWx5LkludGVyTmV0d29yazsKCnN0YXRpYyBib29sIElzSVB2NihzdHJpbmcgdGV4dCkgPT4KICAgIElQQWRkcmVzcy5UcnlQYXJzZSh0ZXh0LCBvdXQgdmFyIGlwKSAmJiBpcC5BZGRyZXNzRmFtaWx5ID09IEFkZHJlc3NGYW1pbHkuSW50ZXJOZXR3b3JrVjY7CgpzdGF0aWMgYm9vbCBJc1NvcnRlZChJUmVhZE9ubHlMaXN0PExvY2FsUG9ydEluZm8+IHJvd3MpCnsKICAgIGZvciAodmFyIGkgPSAxOyBpIDwgcm93cy5Db3VudDsgaSsrKQogICAgewogICAgICAgIHZhciBhID0gcm93c1tpIC0gMV07CiAgICAgICAgdmFyIGIgPSByb3dzW2ldOwogICAgICAgIHZhciBjID0gc3RyaW5nLkNvbXBhcmVPcmRpbmFsKGEuUHJvdG9jb2wsIGIuUHJvdG9jb2wpOwogICAgICAgIGlmIChjID4gMCkgcmV0dXJuIGZhbHNlOwogICAgICAgIGlmIChjIDwgMCkgY29udGludWU7CiAgICAgICAgaWYgKGEuTG9jYWxQb3J0ID4gYi5Mb2NhbFBvcnQpIHJldHVybiBmYWxzZTsKICAgICAgICBpZiAoYS5Mb2NhbFBvcnQgPT0gYi5Mb2NhbFBvcnQgJiYgYS5QaWQgPiBiLlBpZCkgcmV0dXJuIGZhbHNlOwogICAgfQoKICAgIHJldHVybiB0cnVlOwp9CgpzdGF0aWMgUHJvY2VzcyBTdGFydFZpY3RpbSgpCnsKICAgIHZhciBzdGFydEluZm8gPSBuZXcgUHJvY2Vzc1N0YXJ0SW5mbygicGluZyIsICItbiAxMjAgMTI3LjAuMC4xIikKICAgIHsKICAgICAgICBSZWRpcmVjdFN0YW5kYXJkT3V0cHV0ID0gdHJ1ZSwKICAgICAgICBVc2VTaGVsbEV4ZWN1dGUgPSBmYWxzZSwKICAgICAgICBDcmVhdGVOb1dpbmRvdyA9IHRydWUsCiAgICB9OwogICAgcmV0dXJuIFByb2Nlc3MuU3RhcnQoc3RhcnRJbmZvKSA/PyB0aHJvdyBuZXcgSW52YWxpZE9wZXJhdGlvbkV4Y2VwdGlvbigiY2Fubm90IHN0YXJ0IHZpY3RpbSBwcm9jZXNzIik7Cn0KCnN0YXRpYyBib29sIElzR29uZShpbnQgcGlkKQp7CiAgICB0cnkKICAgIHsKICAgICAgICB1c2luZyB2YXIgcHJvY2VzcyA9IFByb2Nlc3MuR2V0UHJvY2Vzc0J5SWQocGlkKTsKICAgICAgICByZXR1cm4gcHJvY2Vzcy5IYXNFeGl0ZWQ7CiAgICB9CiAgICBjYXRjaCAoQXJndW1lbnRFeGNlcHRpb24pCiAgICB7CiAgICAgICAgcmV0dXJuIHRydWU7CiAgICB9CiAgICBjYXRjaCAoSW52YWxpZE9wZXJhdGlvbkV4Y2VwdGlvbikKICAgIHsKICAgICAgICByZXR1cm4gdHJ1ZTsKICAgIH0KfQoKc3RhdGljIChpbnQgVGNwNCwgaW50IFVkcDQsIGludCBUY3A2LCBpbnQgVWRwNikgQ291bnROZXRzdGF0Um93cygpCnsKICAgIHZhciBzdGFydEluZm8gPSBuZXcgUHJvY2Vzc1N0YXJ0SW5mbygibmV0c3RhdCIsICItYW5vIikKICAgIHsKICAgICAgICBSZWRpcmVjdFN0YW5kYXJkT3V0cHV0ID0gdHJ1ZSwKICAgICAgICBVc2VTaGVsbEV4ZWN1dGUgPSBmYWxzZSwKICAgICAgICBDcmVhdGVOb1dpbmRvdyA9IHRydWUsCiAgICB9OwoKICAgIHVzaW5nIHZhciBwcm9jZXNzID0gUHJvY2Vzcy5TdGFydChzdGFydEluZm8pID8/IHRocm93IG5ldyBJbnZhbGlkT3BlcmF0aW9uRXhjZXB0aW9uKCJjYW5ub3Qgc3RhcnQgbmV0c3RhdCIpOwogICAgdmFyIHRleHQgPSBwcm9jZXNzLlN0YW5kYXJkT3V0cHV0LlJlYWRUb0VuZCgpOwogICAgcHJvY2Vzcy5XYWl0Rm9yRXhpdCgxNTAwMCk7CgogICAgaW50IHRjcDQgPSAwLCB1ZHA0ID0gMCwgdGNwNiA9IDAsIHVkcDYgPSAwOwogICAgZm9yZWFjaCAodmFyIGxpbmUgaW4gdGV4dC5TcGxpdCgnXG4nKSkKICAgIHsKICAgICAgICB2YXIgcGFydHMgPSBsaW5lLlNwbGl0KChjaGFyW10/KW51bGwsIFN0cmluZ1NwbGl0T3B0aW9ucy5SZW1vdmVFbXB0eUVudHJpZXMpOwogICAgICAgIGlmIChwYXJ0cy5MZW5ndGggPCA0KSBjb250aW51ZTsKCiAgICAgICAgdmFyIHByb3RvY29sID0gcGFydHNbMF0uVG9VcHBlckludmFyaWFudCgpOwogICAgICAgIGlmIChwcm90b2NvbCBpcyBub3QgKCJUQ1AiIG9yICJVRFAiKSkgY29udGludWU7CgogICAgICAgIHZhciBpc1Y2ID0gcGFydHNbMV0uU3RhcnRzV2l0aCgnWycpOwogICAgICAgIGlmIChwcm90b2NvbCA9PSAiVENQIikKICAgICAgICB7CiAgICAgICAgICAgIGlmIChpc1Y2KSB0Y3A2Kys7CiAgICAgICAgICAgIGVsc2UgdGNwNCsrOwogICAgICAgIH0KICAgICAgICBlbHNlCiAgICAgICAgewogICAgICAgICAgICBpZiAoaXNWNikgdWRwNisrOwogICAgICAgICAgICBlbHNlIHVkcDQrKzsKICAgICAgICB9CiAgICB9CgogICAgcmV0dXJuICh0Y3A0LCB1ZHA0LCB0Y3A2LCB1ZHA2KTsKfQo=
+using System.Diagnostics;
+using System.Globalization;
+using System.Net;
+using System.Net.Sockets;
+using System.Reflection;
+using System.Runtime.InteropServices;
+using System.Security.Principal;
+using IPScaner.Core.Models;
+using IPScaner.Core.Net;
+
+// Scratch verification harness for IPScaner.Core.Net.LocalPortTable.
+// Compiles the real source file against the already-built IPScaner.Core.dll so the
+// real IPScaner.Core.csproj is never touched.
+
+try { Console.OutputEncoding = System.Text.Encoding.UTF8; } catch { /* no console */ }
+
+const string FallbackVariable = "IPSCANER_LOCALPORT_FORCE_FALLBACK";
+
+var failures = 0;
+var table = new LocalPortTable();
+
+void Check(bool ok, string label)
+{
+    Console.WriteLine($"{(ok ? "PASS  " : "FAIL  ")}{label}");
+    if (!ok) failures++;
+}
+
+void Section(string title)
+{
+    Console.WriteLine();
+    Console.WriteLine($"=== {title} ===");
+}
+
+void Stats(string label, IReadOnlyList<LocalPortInfo> rows)
+{
+    var tcp = rows.Count(r => r.Protocol == "TCP");
+    var udp = rows.Count(r => r.Protocol == "UDP");
+    var v6 = rows.Count(r => r.LocalAddress.Contains(':'));
+    var missingRows = rows.Count(r => r.ProcessMissing);
+    var distinctPids = rows.Select(r => r.Pid).Distinct().Count();
+    var resolvedPids = rows.Where(r => !r.ProcessMissing).Select(r => r.Pid).Distinct().Count();
+    var missingPids = rows.Where(r => r.ProcessMissing).Select(r => r.Pid).Distinct().Count();
+    var states = string.Join(", ", rows
+        .Where(r => r.Protocol == "TCP")
+        .GroupBy(r => r.State)
+        .OrderByDescending(g => g.Count())
+        .Select(g => $"{g.Key}={g.Count()}"));
+
+    Console.WriteLine($"{label}: rows={rows.Count}  TCP={tcp}  UDP={udp}  IPv4={rows.Count - v6}  IPv6={v6}");
+    Console.WriteLine($"    distinct PIDs={distinctPids}   resolved-by-name PIDs={resolvedPids}   unresolved PIDs={missingPids}   rows with ProcessMissing=true: {missingRows}");
+    Console.WriteLine($"    TCP states: {states}");
+}
+
+void PrintRows(IReadOnlyList<LocalPortInfo> rows, int max)
+{
+    foreach (var r in rows.Take(max))
+    {
+        var local = r.LocalAddress.Contains(':')
+            ? $"[{r.LocalAddress}]:{r.LocalPort}"
+            : $"{r.LocalAddress}:{r.LocalPort}";
+        var remote = r.RemoteAddress.Contains(':')
+            ? $"[{r.RemoteAddress}]:{r.RemotePort}"
+            : $"{r.RemoteAddress}:{r.RemotePort}";
+        var missing = r.ProcessMissing ? "  <ProcessMissing>" : string.Empty;
+        Console.WriteLine($"    {r.Protocol,-3} {local,-46} {remote,-32} {r.State,-10} pid={r.Pid,-7} {r.ProcessName,-22} {r.ProcessPath}{missing}");
+    }
+}
+
+Section("environment");
+Console.WriteLine($"OS            : {RuntimeInformation.OSDescription}");
+Console.WriteLine($"Runtime       : {RuntimeInformation.FrameworkDescription} ({RuntimeInformation.ProcessArchitecture})");
+Console.WriteLine($"Elevated      : {IsElevated()}");
+Console.WriteLine($"OEM codepage  : {CultureInfo.CurrentCulture.TextInfo.OEMCodePage}");
+
+Section("P/Invoke struct sizes (reflection over the private nested structs)");
+foreach (var (name, expected) in new[]
+         {
+             ("MIB_TCPROW_OWNER_PID", 24),
+             ("MIB_TCP6ROW_OWNER_PID", 56),
+             ("MIB_UDPROW_OWNER_PID", 12),
+             ("MIB_UDP6ROW_OWNER_PID", 28),
+         })
+{
+    var type = typeof(LocalPortTable).GetNestedType(name, BindingFlags.NonPublic);
+    if (type is null)
+    {
+        Check(false, $"{name}: nested type not found");
+        continue;
+    }
+
+    var size = Marshal.SizeOf(type);
+    Check(size == expected, $"{name} = {size} bytes (expected {expected})");
+}
+
+Section("QueryAsync() — native IP Helper path, TCP + UDP, IPv4 only");
+var native = await table.QueryAsync();
+Stats("native", native);
+Console.WriteLine("    first 15 rows:");
+PrintRows(native, 15);
+
+Check(native.Count > 0, "native enumeration returned rows");
+Check(native.Count(r => r.Protocol == "TCP" && r.State == "侦听") >= 3,
+    $"at least 3 TCP 侦听 (LISTENING) rows (found {native.Count(r => r.Protocol == "TCP" && r.State == "侦听")})");
+Check(native.All(r => r.Protocol is "TCP" or "UDP"), "every row carries protocol TCP or UDP");
+Check(native.All(r => r.LocalPort is >= 0 and <= 65535), "every local port is in 0..65535");
+Check(native.All(r => r.RemotePort is >= 0 and <= 65535), "every remote port is in 0..65535");
+Check(native.All(r => r.Pid >= 0), "every PID is non-negative");
+Check(native.All(r => !string.IsNullOrEmpty(r.State)), "every row has non-empty state text");
+Check(native.Where(r => r.Protocol == "UDP").All(r => r.State == LocalPortInfo.UdpState),
+    $"UDP rows use LocalPortInfo.UdpState ('{LocalPortInfo.UdpState}')");
+Check(native.All(r => r.LocalAddress.Contains(':') || IsIPv4(r.LocalAddress)), "every IPv4 local address is a dotted quad");
+Check(native.Where(r => r.Protocol == "TCP").All(r => r.RemoteAddress.Contains(':') || IsIPv4(r.RemoteAddress)),
+    "every TCP remote address is a dotted quad");
+Check(native.Where(r => r.Protocol == "UDP").All(r => r.RemoteAddress == "*" && r.RemotePort == 0),
+    "every UDP row uses netstat's '*:*' remote endpoint");
+Check(native.All(r => r.ProcessMissing || r.ProcessName.Length > 0), "resolved rows have a process name");
+Check(native.All(r => !r.ProcessMissing || (r.ProcessName.Length == 0 && r.ProcessPath.Length == 0)),
+    "ProcessMissing rows have empty name and path");
+Check(IsSorted(native), "rows are sorted by protocol, local port, PID");
+
+var tcpOnly = await table.QueryAsync(includeTcp: true, includeUdp: false);
+Check(tcpOnly.Count > 0 && tcpOnly.All(r => r.Protocol == "TCP"), $"includeUdp:false returns only TCP ({tcpOnly.Count} rows)");
+var udpOnly = await table.QueryAsync(includeTcp: false, includeUdp: true, includeIpv6: true);
+Check(udpOnly.Count > 0 && udpOnly.All(r => r.Protocol == "UDP"), $"includeTcp:false returns only UDP ({udpOnly.Count} rows)");
+var nothing = await table.QueryAsync(includeTcp: false, includeUdp: false);
+Check(nothing.Count == 0, $"both protocols disabled returns an empty table ({nothing.Count} rows)");
+
+Section("QueryAsync(includeIpv6: true) — IPv6 must not disturb the IPv4 rows");
+var withV6 = await table.QueryAsync(includeIpv6: true);
+Stats("native+IPv6", withV6);
+var v4Subset = withV6.Where(r => !r.LocalAddress.Contains(':')).ToList();
+var v6Rows = withV6.Where(r => r.LocalAddress.Contains(':')).ToList();
+var netstatAfterV6 = CountNetstatRows();
+Console.WriteLine($"    IPv6 rows: {v6Rows.Count}; IPv4 rows with flag on: {v4Subset.Count}, flag off: {native.Count}; fresh netstat IPv4 rows: {netstatAfterV6.Tcp4 + netstatAfterV6.Udp4}");
+// The endpoint table is live, so cross-query counts are compared with a small tolerance;
+// a "same query vs fresh netstat" comparison is what actually proves IPv4 completeness.
+Check(Math.Abs(v4Subset.Count - native.Count) <= 3, $"IPv4 row count unchanged by includeIpv6 (±3: {v4Subset.Count} vs {native.Count})");
+Check(Math.Abs(v4Subset.Count - (netstatAfterV6.Tcp4 + netstatAfterV6.Udp4)) <= 6,
+    $"IPv4 rows complete when includeIpv6:true (±6 vs fresh netstat: {v4Subset.Count} vs {netstatAfterV6.Tcp4 + netstatAfterV6.Udp4})");
+Check(v6Rows.Count > 0, $"includeIpv6:true actually returns IPv6 rows ({v6Rows.Count})");
+Check(v6Rows.All(r => IsIPv6(r.LocalAddress)), "every IPv6 local address parses as IPv6");
+Check(v6Rows.All(r => r.State.Length > 0), "IPv6 rows carry state text");
+Check(IsSorted(withV6), "IPv6-enabled result is still sorted");
+Check(native.All(r => !r.LocalAddress.Contains(':')), "includeIpv6:false returns no IPv6 rows");
+Console.WriteLine("    first 10 IPv6 rows:");
+PrintRows(v6Rows, 10);
+
+Section("independent netstat -ano cross-check (validates the struct sizes / row stride)");
+var netstat = CountNetstatRows();
+var nativeTcp4 = native.Count(r => r.Protocol == "TCP");
+var nativeUdp4 = native.Count(r => r.Protocol == "UDP");
+Console.WriteLine($"    netstat: TCP/IPv4={netstat.Tcp4}  UDP/IPv4={netstat.Udp4}  TCP/IPv6={netstat.Tcp6}  UDP/IPv6={netstat.Udp6}");
+Console.WriteLine($"    native : TCP/IPv4={nativeTcp4}  UDP/IPv4={nativeUdp4}");
+Check(Math.Abs(nativeTcp4 - netstat.Tcp4) <= 5, $"native TCP/IPv4 count within ±5 of netstat ({nativeTcp4} vs {netstat.Tcp4})");
+Check(Math.Abs(nativeUdp4 - netstat.Udp4) <= 3, $"native UDP/IPv4 count within ±3 of netstat ({nativeUdp4} vs {netstat.Udp4})");
+
+Section($"fallback path — {FallbackVariable}=1 forces netstat");
+Environment.SetEnvironmentVariable(FallbackVariable, "1");
+var fallback = await table.QueryAsync();
+var fallbackWithV6 = await table.QueryAsync(includeIpv6: true);
+Environment.SetEnvironmentVariable(FallbackVariable, null);
+
+Stats("fallback(netstat)", fallback);
+Console.WriteLine("    first 15 fallback rows:");
+PrintRows(fallback, 15);
+
+var fallbackTcp4 = fallback.Count(r => r.Protocol == "TCP");
+var fallbackUdp4 = fallback.Count(r => r.Protocol == "UDP");
+var freshNetstat = CountNetstatRows();
+Console.WriteLine($"    fresh netstat right after the fallback run: TCP/IPv4={freshNetstat.Tcp4}  UDP/IPv4={freshNetstat.Udp4}");
+Check(fallback.Count > 0, "netstat fallback returned rows");
+Check(Math.Abs(fallbackTcp4 - freshNetstat.Tcp4) <= 2, $"fallback TCP/IPv4 count within ±2 of netstat ({fallbackTcp4} vs {freshNetstat.Tcp4})");
+Check(Math.Abs(fallbackUdp4 - freshNetstat.Udp4) <= 2, $"fallback UDP/IPv4 count within ±2 of netstat ({fallbackUdp4} vs {freshNetstat.Udp4})");
+Check(fallback.Count(r => r.Protocol == "TCP" && r.State == "侦听") >= 3,
+    $"fallback found TCP 侦听 rows ({fallback.Count(r => r.Protocol == "TCP" && r.State == "侦听")})");
+Check(Math.Abs(fallbackTcp4 - nativeTcp4) <= 5, $"fallback TCP/IPv4 count within ±5 of native ({fallbackTcp4} vs {nativeTcp4})");
+Check(Math.Abs(fallbackUdp4 - nativeUdp4) <= 3, $"fallback UDP/IPv4 count within ±3 of native ({fallbackUdp4} vs {nativeUdp4})");
+Check(fallback.All(r => !r.LocalAddress.Contains(':')), "fallback honours includeIpv6:false");
+Check(fallback.All(r => r.LocalPort is >= 0 and <= 65535), "fallback local ports are in range");
+Check(fallback.Where(r => r.Protocol == "UDP").All(r => r.State == LocalPortInfo.UdpState), "fallback UDP rows use UdpState");
+Check(fallback.All(r => r.ProcessMissing || r.ProcessName.Length > 0), "fallback resolved rows have a process name");
+Check(IsSorted(fallback), "fallback rows are sorted");
+Check(fallbackWithV6.Count(r => r.LocalAddress.Contains(':')) > 0, "fallback returns IPv6 rows when asked");
+Check(fallbackWithV6.All(r => !r.LocalAddress.Contains(':') || IsIPv6(r.LocalAddress)), "fallback IPv6 addresses parse as IPv6");
+var fallbackWithV6V4 = fallbackWithV6.Count(r => !r.LocalAddress.Contains(':'));
+var freshNetstatV6 = CountNetstatRows();
+Check(Math.Abs(fallbackWithV6V4 - freshNetstatV6.Tcp4 - freshNetstatV6.Udp4) <= 6,
+    $"fallback keeps its IPv4 rows when includeIpv6:true (±6 vs fresh netstat: {fallbackWithV6V4} vs {freshNetstatV6.Tcp4 + freshNetstatV6.Udp4})");
+
+Section("cancellation");
+using (var cts = new CancellationTokenSource())
+{
+    cts.Cancel();
+    var cancelled = false;
+    try
+    {
+        await table.QueryAsync(true, true, false, cts.Token);
+    }
+    catch (OperationCanceledException)
+    {
+        cancelled = true;
+    }
+
+    Check(cancelled, "an already-cancelled token throws OperationCanceledException");
+}
+
+Environment.SetEnvironmentVariable(FallbackVariable, "1");
+using (var ctsMid = new CancellationTokenSource(40))
+{
+    var cancelledMid = false;
+    IReadOnlyList<LocalPortInfo>? midRows = null;
+    try
+    {
+        midRows = await table.QueryAsync(true, true, false, ctsMid.Token);
+    }
+    catch (OperationCanceledException)
+    {
+        cancelledMid = true;
+    }
+
+    Check(cancelledMid || midRows is not null,
+        $"mid-flight cancellation during the netstat fallback settles cleanly (cancelled={cancelledMid}, rows={midRows?.Count})");
+}
+
+Environment.SetEnvironmentVariable(FallbackVariable, null);
+
+Section("TryKillProcess");
+using (var victim = StartVictim())
+{
+    var drain = Task.Run(() => { try { victim.StandardOutput.ReadToEnd(); } catch { /* killed */ } });
+    var victimPid = victim.Id;
+    var killed = LocalPortTable.TryKillProcess(victimPid, out var killError);
+    Check(killed, $"TryKillProcess({victimPid}) => true  (error='{killError}')");
+    await Task.Delay(300);
+    Check(IsGone(victimPid), $"victim process {victimPid} no longer exists");
+    _ = drain;
+}
+
+var bogusOk = LocalPortTable.TryKillProcess(int.MaxValue, out var bogusError);
+Check(!bogusOk && bogusError.Length > 0, $"(nonexistent pid) => false, error='{bogusError}'");
+var selfOk = LocalPortTable.TryKillProcess(Environment.ProcessId, out var selfError);
+Check(!selfOk && selfError.Length > 0, $"(own pid) => false, error='{selfError}'");
+var zeroOk = LocalPortTable.TryKillProcess(0, out var zeroError);
+Check(!zeroOk && zeroError.Length > 0, $"(pid 0) => false, error='{zeroError}'");
+
+Console.WriteLine();
+Console.WriteLine(failures == 0 ? "ALL CHECKS PASSED" : $"{failures} CHECK(S) FAILED");
+return failures;
+
+static bool IsElevated()
+{
+    try
+    {
+        using var identity = WindowsIdentity.GetCurrent();
+        return new WindowsPrincipal(identity).IsInRole(WindowsBuiltInRole.Administrator);
+    }
+    catch
+    {
+        return false;
+    }
+}
+
+static bool IsIPv4(string text) =>
+    IPAddress.TryParse(text, out var ip) && ip.AddressFamily == AddressFamily.InterNetwork;
+
+static bool IsIPv6(string text) =>
+    IPAddress.TryParse(text, out var ip) && ip.AddressFamily == AddressFamily.InterNetworkV6;
+
+static bool IsSorted(IReadOnlyList<LocalPortInfo> rows)
+{
+    for (var i = 1; i < rows.Count; i++)
+    {
+        var a = rows[i - 1];
+        var b = rows[i];
+        var c = string.CompareOrdinal(a.Protocol, b.Protocol);
+        if (c > 0) return false;
+        if (c < 0) continue;
+        if (a.LocalPort > b.LocalPort) return false;
+        if (a.LocalPort == b.LocalPort && a.Pid > b.Pid) return false;
+    }
+
+    return true;
+}
+
+static Process StartVictim()
+{
+    var startInfo = new ProcessStartInfo("ping", "-n 120 127.0.0.1")
+    {
+        RedirectStandardOutput = true,
+        UseShellExecute = false,
+        CreateNoWindow = true,
+    };
+    return Process.Start(startInfo) ?? throw new InvalidOperationException("cannot start victim process");
+}
+
+static bool IsGone(int pid)
+{
+    try
+    {
+        using var process = Process.GetProcessById(pid);
+        return process.HasExited;
+    }
+    catch (ArgumentException)
+    {
+        return true;
+    }
+    catch (InvalidOperationException)
+    {
+        return true;
+    }
+}
+
+static (int Tcp4, int Udp4, int Tcp6, int Udp6) CountNetstatRows()
+{
+    var startInfo = new ProcessStartInfo("netstat", "-ano")
+    {
+        RedirectStandardOutput = true,
+        UseShellExecute = false,
+        CreateNoWindow = true,
+    };
+
+    using var process = Process.Start(startInfo) ?? throw new InvalidOperationException("cannot start netstat");
+    var text = process.StandardOutput.ReadToEnd();
+    process.WaitForExit(15000);
+
+    int tcp4 = 0, udp4 = 0, tcp6 = 0, udp6 = 0;
+    foreach (var line in text.Split('\n'))
+    {
+        var parts = line.Split((char[]?)null, StringSplitOptions.RemoveEmptyEntries);
+        if (parts.Length < 4) continue;
+
+        var protocol = parts[0].ToUpperInvariant();
+        if (protocol is not ("TCP" or "UDP")) continue;
+
+        var isV6 = parts[1].StartsWith('[');
+        if (protocol == "TCP")
+        {
+            if (isV6) tcp6++;
+            else tcp4++;
+        }
+        else
+        {
+            if (isV6) udp6++;
+            else udp4++;
+        }
+    }
+
+    return (tcp4, udp4, tcp6, udp6);
+}

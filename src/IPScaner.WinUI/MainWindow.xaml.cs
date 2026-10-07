@@ -1,1 +1,288 @@
-dXNpbmcgSVBTY2FuZXIuV2luVUkuU2VydmljZXM7CnVzaW5nIElQU2NhbmVyLldpblVJLlZpZXdzOwp1c2luZyBNaWNyb3NvZnQuVUkuWGFtbDsKdXNpbmcgTWljcm9zb2Z0LlVJLlhhbWwuQ29udHJvbHM7CnVzaW5nIE1pY3Jvc29mdC5VSS5YYW1sLk1lZGlhLkFuaW1hdGlvbjsKdXNpbmcgTWljcm9zb2Z0LlVJLldpbmRvd2luZzsKdXNpbmcgV2luZG93cy5HcmFwaGljczsKCm5hbWVzcGFjZSBJUFNjYW5lci5XaW5VSTsKCi8vLyA8c3VtbWFyeT4KLy8vIFNoZWxsIHdpbmRvdzogbmF2aWdhdGlvbiBwYW5lLCBjdXN0b20gdGl0bGUgYmFyIGFuZCB0aGUgc3RhdHVzIHN0cmlwIHRoYXQKLy8vIHJlcGxhY2VzIHRoZSBvcmlnaW5hbCdzIDxjPlN0YXR1c1N0cmlwPC9jPiAoc3RhdHVzIHRleHQsIHJvdGF0aW5nIHRpcCwgY2xvY2spLgovLy8gPC9zdW1tYXJ5PgpwdWJsaWMgc2VhbGVkIHBhcnRpYWwgY2xhc3MgTWFpbldpbmRvdyA6IFdpbmRvdwp7CiAgICBwcml2YXRlIHJlYWRvbmx5IERpc3BhdGNoZXJUaW1lciBfY2xvY2tUaW1lciA9IG5ldygpOwogICAgcHJpdmF0ZSByZWFkb25seSBEaXNwYXRjaGVyVGltZXIgX3RpcFRpbWVyID0gbmV3KCk7CiAgICBwcml2YXRlIHJlYWRvbmx5IERpc3BhdGNoZXJUaW1lciBfb3ZlcmxheVRpbWVyID0gbmV3KCk7CiAgICBwcml2YXRlIHJlYWRvbmx5IFF1ZXVlPHN0cmluZz4gX3RpcHMgPSBuZXcoKTsKICAgIHByaXZhdGUgVHJheUljb24/IF90cmF5SWNvbjsKICAgIHByaXZhdGUgRGVza3RvcE92ZXJsYXk/IF9kZXNrdG9wT3ZlcmxheTsKICAgIHByaXZhdGUgSW50UHRyIF9od25kOwoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBSb3RhdGluZyBoaW50cywgY2FycmllZCBvdmVyIHZlcmJhdGltIGZyb20gdGhlIG9yaWdpbmFsCiAgICAvLy8gPGM+Rm9ybU1haW4uSW5pdFRpcExpc3Q8L2M+IHNvIGxvbmctdGltZSB1c2VycyBzZWUgdGhlIHNhbWUgZ3VpZGFuY2UuCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgcHJpdmF0ZSBzdGF0aWMgcmVhZG9ubHkgc3RyaW5nW10gVGlwTGlzdCA9CiAgICBbCiAgICAgICAgIlRpcDrlj7Plh7vmn5DkuIDkuKpJUOWwj+iJsuWdl++8jOWPr+iwg+WHunBpbmflkb3ku6Tnqpflj6MiLAogICAgICAgICJUaXA65Y+z5Ye75p+Q5LiA5LiqSVDlsI/oibLlnZfvvIzlj6/lpI3liLZJUOOAgeiuoeeul+acuuWQjeOAgU1BQ+WcsOWdgCIsCiAgICAgICAgIuazqOaEjzrlvIDlkK/jgJDkuLvmnLrlkI3mn6Xor6LjgJHlip/og70s5bCG5Lya6ZmN5L2O5p+l6K+i5pWI546HIiwKICAgICAgICAiVGlwOueCueWHu+OAkOS4jemAmuOAkeWbvuS+iyzlj6/lpI3liLbmiYDmnInpgJrorq/jgJDlvILluLjjgJHnmoRJUOWcsOWdgCIsCiAgICAgICAgIlRpcDrngrnlh7vjgJDmraPluLjjgJHlm77kvoss5Y+v5aSN5Yi25omA5pyJ6YCa6K6v44CQ5q2j5bi444CR55qESVDlnLDlnYAiLAogICAgICAgICJUaXA654K55Ye744CQSVDlsI/oibLlnZfjgJEs5Y+v5b+r6YCf5aSN5Yi2SVDlnLDlnYAiLAogICAgICAgICJUaXA654K55Ye76aG26YOoSVDkuIvmi4nmoYYs5Y+v5YiH5o2iSVDmiavmj4/mrrUiLAogICAgICAgICJUaXA65oOz5omr5o+PQeexu+eahOWkmuautUlQLOWPr+S7peS9v+eUqOOAkElQ5om56YeP5omr5o+P44CRIiwKICAgICAgICAiVGlwOuOAkOS/ruaUueacrOWcsElQ44CR5pSv5oyB5Y6G5Y+ySVDlv6vpgJ/liIfmjaIiLAogICAgICAgICJUaXA644CQ56uv5Y+j5omr5o+P44CR5Y+v5Lul5p+l55yL6K6h566X5py65byA5pS+5LqG5ZOq5Lqb56uv5Y+jIiwKICAgICAgICAiVGlwOum8oOagh+aCrOWBnOWcqOOAkElQ5bCP6Imy5Z2X44CR5LiKLOS8muaYvuekuuiuoeeul+acuuWQjeensOWSjE1BQ+WcsOWdgCIsCiAgICAgICAgIlRpcDrmnKzlt6Xlhbflj6rmlK/mjIHmn6Xor6Ig5b2T5YmN55S16ISR5omA5Zyo572R5q615LiL55qE5omA5pyJTUFD5Zyw5Z2AIiwKICAgICAgICAiVGlwOuWwj+iJsuWdl+eahOWPjOWHu+WKn+iDveaUr+aMgeiHquWumuS5iSIsCiAgICAgICAgIlRpcDrmjInkvY8gQ3RybCDngrnlh7vlsI/oibLlnZfvvIzlj6/nm7TmjqXmiZPlvIDor6bmg4UiLAogICAgXTsKCiAgICBwdWJsaWMgTWFpbldpbmRvdygpCiAgICB7CiAgICAgICAgSW5pdGlhbGl6ZUNvbXBvbmVudCgpOwoKICAgICAgICBUaXRsZSA9ICLlsYDln5/nvZFJUOaJq+aPj+W3peWFtyBJUFNjYW5lciI7CiAgICAgICAgRXh0ZW5kc0NvbnRlbnRJbnRvVGl0bGVCYXIgPSB0cnVlOwogICAgICAgIFNldFRpdGxlQmFyKEFwcFRpdGxlQmFyKTsKCiAgICAgICAgQ29uZmlndXJlV2luZG93KCk7CiAgICAgICAgSW5pdGlhbGl6ZVN0YXR1c0JhcigpOwogICAgICAgIEluaXRpYWxpemVUcmF5QW5kT3ZlcmxheSgpOwogICAgICAgIFVwZGF0ZUVsZXZhdGlvbkJhZGdlKCk7CgogICAgICAgIC8vIExhbmQgb24gdGhlIHNjYW4gcGFnZSwgbGlrZSB0aGUgb3JpZ2luYWwgZGlkLgogICAgICAgIE5hdi5TZWxlY3RlZEl0ZW0gPSBOYXYuTWVudUl0ZW1zLk9mVHlwZTxOYXZpZ2F0aW9uVmlld0l0ZW0+KCkuRmlyc3RPckRlZmF1bHQoKTsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+U2V0IHRoZSBsZWZ0LWhhbmQgc3RhdHVzIHRleHQgKHRoZSBvcmlnaW5hbCdzIHN0YXR1c1RpcCkuPC9zdW1tYXJ5PgogICAgcHVibGljIHZvaWQgU2V0U3RhdHVzKHN0cmluZyB0ZXh0KSA9PiBTdGF0dXNUZXh0LlRleHQgPSB0ZXh0OwoKICAgIC8vLyA8c3VtbWFyeT5OYXZpZ2F0ZSB0byBhIHBhZ2UgYnkgdGFnLCB1c2VkIGJ5IHBhZ2VzIHRoYXQgY3Jvc3MtbGluay48L3N1bW1hcnk+CiAgICBwdWJsaWMgYm9vbCBOYXZpZ2F0ZVRvKHN0cmluZyB0YWcpCiAgICB7CiAgICAgICAgZm9yZWFjaCAodmFyIGl0ZW0gaW4gTmF2Lk1lbnVJdGVtcy5Db25jYXQoTmF2LkZvb3Rlck1lbnVJdGVtcykuT2ZUeXBlPE5hdmlnYXRpb25WaWV3SXRlbT4oKSkKICAgICAgICB7CiAgICAgICAgICAgIGlmIChpdGVtLlRhZyBhcyBzdHJpbmcgPT0gdGFnKQogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICBOYXYuU2VsZWN0ZWRJdGVtID0gaXRlbTsKICAgICAgICAgICAgICAgIHJldHVybiB0cnVlOwogICAgICAgICAgICB9CiAgICAgICAgfQogICAgICAgIHJldHVybiBmYWxzZTsKICAgIH0KCiAgICBwcml2YXRlIHZvaWQgQ29uZmlndXJlV2luZG93KCkKICAgIHsKICAgICAgICB0cnkKICAgICAgICB7CiAgICAgICAgICAgIF9od25kID0gV2luUlQuSW50ZXJvcC5XaW5kb3dOYXRpdmUuR2V0V2luZG93SGFuZGxlKHRoaXMpOwogICAgICAgICAgICB2YXIgaWQgPSBNaWNyb3NvZnQuVUkuV2luMzJJbnRlcm9wLkdldFdpbmRvd0lkRnJvbVdpbmRvdyhfaHduZCk7CiAgICAgICAgICAgIHZhciBhcHBXaW5kb3cgPSBBcHBXaW5kb3cuR2V0RnJvbVdpbmRvd0lkKGlkKTsKCiAgICAgICAgICAgIC8vIEEgLzI0IGdyaWQgbmVlZHMgcm9vbTsgdGhlIG9yaWdpbmFsIGdyZXcgaXRzZWxmIHVudGlsIHRoZSBmbG93IHBhbmVsCiAgICAgICAgICAgIC8vIHN0b3BwZWQgc2Nyb2xsaW5nLCB3aGljaCB1c3VhbGx5IGxhbmRlZCBhcm91bmQgdGhpcyBzaXplLgogICAgICAgICAgICBhcHBXaW5kb3cuUmVzaXplKG5ldyBTaXplSW50MzIoMTE4MCwgODIwKSk7CiAgICAgICAgICAgIGFwcFdpbmRvdy5TZXRJY29uKFBhdGguQ29tYmluZShBcHBDb250ZXh0LkJhc2VEaXJlY3RvcnksICJBc3NldHMiLCAiYXBwLmljbyIpKTsKCiAgICAgICAgICAgIGlmIChhcHBXaW5kb3cuUHJlc2VudGVyIGlzIE92ZXJsYXBwZWRQcmVzZW50ZXIgcHJlc2VudGVyKQogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICBwcmVzZW50ZXIuUHJlZmVycmVkTWluaW11bVdpZHRoID0gOTAwOwogICAgICAgICAgICAgICAgcHJlc2VudGVyLlByZWZlcnJlZE1pbmltdW1IZWlnaHQgPSA2MjA7CiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICAgICAgY2F0Y2ggKEV4Y2VwdGlvbiBleCkKICAgICAgICB7CiAgICAgICAgICAgIENvcmUuTG9nZ2luZy5BcHBMb2cuSW5zdGFuY2UuTG9nKG5hbWVvZihNYWluV2luZG93KSwgIumFjee9rueql+WPo+Wksei0pTogIiArIGV4Lk1lc3NhZ2UpOwogICAgICAgIH0KICAgIH0KCiAgICBwcml2YXRlIHZvaWQgSW5pdGlhbGl6ZVN0YXR1c0JhcigpCiAgICB7CiAgICAgICAgX3RpcHMuQ2xlYXIoKTsKICAgICAgICBmb3JlYWNoICh2YXIgdGlwIGluIFRpcExpc3QpIF90aXBzLkVucXVldWUodGlwKTsKICAgICAgICBUaXBUZXh0LlRleHQgPSBUaXBMaXN0W1JhbmRvbS5TaGFyZWQuTmV4dChUaXBMaXN0Lkxlbmd0aCldOwoKICAgICAgICBDbG9ja1RleHQuVGV4dCA9IERhdGVUaW1lLk5vdy5Ub1N0cmluZygieXl5eS1NTS1kZCBISDptbTpzcyIpOwogICAgICAgIF9jbG9ja1RpbWVyLkludGVydmFsID0gVGltZVNwYW4uRnJvbVNlY29uZHMoMSk7CiAgICAgICAgX2Nsb2NrVGltZXIuVGljayArPSAoXywgXykgPT4gQ2xvY2tUZXh0LlRleHQgPSBEYXRlVGltZS5Ob3cuVG9TdHJpbmcoInl5eXktTU0tZGQgSEg6bW06c3MiKTsKICAgICAgICBfY2xvY2tUaW1lci5TdGFydCgpOwoKICAgICAgICAvLyBUaGUgb3JpZ2luYWwgcm90YXRlZCBhIHRpcCBldmVyeSAxMCBzZWNvbmRzLgogICAgICAgIF90aXBUaW1lci5JbnRlcnZhbCA9IFRpbWVTcGFuLkZyb21TZWNvbmRzKDEwKTsKICAgICAgICBfdGlwVGltZXIuVGljayArPSAoXywgXykgPT4KICAgICAgICB7CiAgICAgICAgICAgIGlmIChfdGlwcy5Db3VudCA9PSAwKSBmb3JlYWNoICh2YXIgdCBpbiBUaXBMaXN0KSBfdGlwcy5FbnF1ZXVlKHQpOwogICAgICAgICAgICBUaXBUZXh0LlRleHQgPSBfdGlwcy5EZXF1ZXVlKCk7CiAgICAgICAgfTsKICAgICAgICBfdGlwVGltZXIuU3RhcnQoKTsKCiAgICAgICAgQ2xvc2VkICs9IChfLCBfKSA9PgogICAgICAgIHsKICAgICAgICAgICAgX2Nsb2NrVGltZXIuU3RvcCgpOwogICAgICAgICAgICBfdGlwVGltZXIuU3RvcCgpOwogICAgICAgICAgICBfb3ZlcmxheVRpbWVyLlN0b3AoKTsKICAgICAgICAgICAgX2Rlc2t0b3BPdmVybGF5Py5EaXNwb3NlKCk7CiAgICAgICAgICAgIF90cmF5SWNvbj8uRGlzcG9zZSgpOwogICAgICAgICAgICBBcHAuU2h1dGRvd25Mb2dnaW5nKCk7CiAgICAgICAgfTsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+CiAgICAvLy8gQ3JlYXRlcyB0aGUgdHJheSBpY29uIGFuZCB0aGUgZGVza3RvcCBvdmVybGF5LCBhbmQga2VlcHMgdGhlIG92ZXJsYXkgaW4KICAgIC8vLyBzdGVwIHdpdGggY29uZmlndXJhdGlvbiBjaGFuZ2VzLgogICAgLy8vIDwvc3VtbWFyeT4KICAgIC8vLyA8cmVtYXJrcz4KICAgIC8vLyBUaGUgb3ZlcmxheSB3aW5kb3cgaXMgY3JlYXRlZCBsYXppbHkgYnkgPHNlZSBjcmVmPSJEZXNrdG9wT3ZlcmxheS5TaG93Ii8+LAogICAgLy8vIHNvIHdpdGggdGhlIGZhY3RvcnkgZGVmYXVsdCAoPGM+RGVza3RvcE92ZXJsYXlFbmFibGVkID0gZmFsc2U8L2M+KSBub3RoaW5nCiAgICAvLy8gaXMgZGlzcGxheWVkIGF0IGFsbCDigJQgaXQgb25seSBhcHBlYXJzIG9uY2UgdGhlIHVzZXIgZW5hYmxlcyDmoYzpnaLmmL7npLrmnKzmnLpJUC4KICAgIC8vLyBUaGUgb3JpZ2luYWwgaGFkIHRoZSBzYW1lIHNoYXBlOiBhIE5vdGlmeUljb24gdGhhdCB3YXMgYWx3YXlzIHByZXNlbnQsIGFuZAogICAgLy8vIGFuIG92ZXJsYXkgZm9ybSBjcmVhdGVkIG9uIGRlbWFuZC4KICAgIC8vLyA8L3JlbWFya3M+CiAgICBwcml2YXRlIHZvaWQgSW5pdGlhbGl6ZVRyYXlBbmRPdmVybGF5KCkKICAgIHsKICAgICAgICB0cnkKICAgICAgICB7CiAgICAgICAgICAgIF90cmF5SWNvbiA9IG5ldyBUcmF5SWNvbigKICAgICAgICAgICAgICAgICLlsYDln5/nvZFJUOaJq+aPj+W3peWFtyIsCiAgICAgICAgICAgICAgICBvbkFjdGl2YXRlOiBPblRyYXlBY3RpdmF0ZSwKICAgICAgICAgICAgICAgIG9uRXhpdDogT25UcmF5RXhpdCk7CiAgICAgICAgICAgIF90cmF5SWNvbi5TaG93KCk7CiAgICAgICAgICAgIF90cmF5SWNvbi5BdHRhY2hNYWluV2luZG93KHRoaXMsICgpID0+IEFwcFNlcnZpY2VzLkN1cnJlbnQuQ29uZmlnLkhpZGVNYWluRW5hYmxlZCk7CiAgICAgICAgfQogICAgICAgIGNhdGNoIChFeGNlcHRpb24gZXgpCiAgICAgICAgewogICAgICAgICAgICBDb3JlLkxvZ2dpbmcuQXBwTG9nLkluc3RhbmNlLkxvZyhuYW1lb2YoTWFpbldpbmRvdyksICLliJ3lp4vljJbmiZjnm5jlm77moIflpLHotKU6ICIgKyBleC5NZXNzYWdlKTsKICAgICAgICB9CgogICAgICAgIHRyeQogICAgICAgIHsKICAgICAgICAgICAgX2Rlc2t0b3BPdmVybGF5ID0gbmV3IERlc2t0b3BPdmVybGF5KCk7CiAgICAgICAgICAgIEFwcGx5RGVza3RvcE92ZXJsYXkoKTsKICAgICAgICAgICAgQXBwU2VydmljZXMuQ3VycmVudC5Db25maWdDaGFuZ2VkICs9IChfLCBfKSA9PiBBcHBseURlc2t0b3BPdmVybGF5KCk7CgogICAgICAgICAgICAvLyBUaGUgYmFkZ2Ugc2hvd3MgdGhlIG1hY2hpbmUncyAqbGl2ZSogYWRkcmVzcywgYW5kIOS/ruaUueacrOWcsElQIGNhbiBjaGFuZ2UKICAgICAgICAgICAgLy8gaXQgd2l0aG91dCBhbnkgY29uZmlndXJhdGlvbiBjaGFuZ2UsIHNvIHBvbGwgZ2VudGx5IHdoaWxlIGl0IGlzIHZpc2libGUuCiAgICAgICAgICAgIC8vIFVwZGF0ZSgpIGlzIGEgbm8tb3Agd2hlbiBoaWRkZW4gYW5kIG9ubHkgdG91Y2hlcyB0aGUgd2luZG93IHdoZW4gdGhlCiAgICAgICAgICAgIC8vIHRleHQsIGNvbG91ciBvciBwb3NpdGlvbiBhY3R1YWxseSBjaGFuZ2VkLgogICAgICAgICAgICBfb3ZlcmxheVRpbWVyLkludGVydmFsID0gVGltZVNwYW4uRnJvbVNlY29uZHMoMTApOwogICAgICAgICAgICBfb3ZlcmxheVRpbWVyLlRpY2sgKz0gKF8sIF8pID0+CiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIGlmIChfZGVza3RvcE92ZXJsYXk/LklzVmlzaWJsZSA9PSB0cnVlKSBfZGVza3RvcE92ZXJsYXkuVXBkYXRlKEFwcFNlcnZpY2VzLkN1cnJlbnQuQ29uZmlnKTsKICAgICAgICAgICAgfTsKICAgICAgICAgICAgX292ZXJsYXlUaW1lci5TdGFydCgpOwogICAgICAgIH0KICAgICAgICBjYXRjaCAoRXhjZXB0aW9uIGV4KQogICAgICAgIHsKICAgICAgICAgICAgQ29yZS5Mb2dnaW5nLkFwcExvZy5JbnN0YW5jZS5Mb2cobmFtZW9mKE1haW5XaW5kb3cpLCAi5Yid5aeL5YyW5qGM6Z2i5Y+g5Yqg56qX5aSx6LSlOiAiICsgZXguTWVzc2FnZSk7CiAgICAgICAgfQogICAgfQoKICAgIC8vLyA8c3VtbWFyeT5TaG93cywgcmVmcmVzaGVzIG9yIGhpZGVzIHRoZSBkZXNrdG9wIG92ZXJsYXkgdG8gbWF0Y2ggdGhlIGNvbmZpZy48L3N1bW1hcnk+CiAgICBwcml2YXRlIHZvaWQgQXBwbHlEZXNrdG9wT3ZlcmxheSgpCiAgICB7CiAgICAgICAgaWYgKF9kZXNrdG9wT3ZlcmxheSBpcyBudWxsKSByZXR1cm47CiAgICAgICAgdHJ5CiAgICAgICAgewogICAgICAgICAgICB2YXIgY29uZmlnID0gQXBwU2VydmljZXMuQ3VycmVudC5Db25maWc7CiAgICAgICAgICAgIGlmIChjb25maWcuRGVza3RvcE92ZXJsYXlFbmFibGVkKSBfZGVza3RvcE92ZXJsYXkuU2hvdyhjb25maWcpOwogICAgICAgICAgICBlbHNlIF9kZXNrdG9wT3ZlcmxheS5IaWRlKCk7CiAgICAgICAgfQogICAgICAgIGNhdGNoIChFeGNlcHRpb24gZXgpCiAgICAgICAgewogICAgICAgICAgICBDb3JlLkxvZ2dpbmcuQXBwTG9nLkluc3RhbmNlLkxvZyhuYW1lb2YoTWFpbldpbmRvdyksICLmm7TmlrDmoYzpnaLlj6DliqDnqpflpLHotKU6ICIgKyBleC5NZXNzYWdlKTsKICAgICAgICB9CiAgICB9CgogICAgLy8vIDxzdW1tYXJ5PgogICAgLy8vIFRyYXkgaWNvbiBhY3RpdmF0ZWQgKGRvdWJsZS1jbGljaykuIFVzZXMgdGhlIHRyYXkncyBvd24gcmVzdG9yZSBwYXRoIHJhdGhlcgogICAgLy8vIHRoYW4gPHNlZSBjcmVmPSJVaUtpdC5BY3RpdmF0ZU1haW5XaW5kb3ciLz4gYmVjYXVzZSDmnIDlsI/ljJbml7bpmpDol4/liLDmiZjnm5gKICAgIC8vLyByZW1vdmVzIHRoZSB3aW5kb3cgb3V0cmlnaHQsIGFuZCB0aGF0IG5lZWRzIGEgU1dfU0hPVyBiZWZvcmUgQWN0aXZhdGUuCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgcHJpdmF0ZSB2b2lkIE9uVHJheUFjdGl2YXRlKCkgPT4gX3RyYXlJY29uPy5SZXN0b3JlTWFpbldpbmRvdygpOwoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBUcmF5IOmAgOWHui4gUmVzdG9yZXMgdGhlIHdpbmRvdyBmaXJzdCBzbyB0aGUgcHJvbXB0IGlzIGFjdHVhbGx5IG9uIHNjcmVlbiwKICAgIC8vLyB0aGVuIGFza3Mg4oCUIHRoZSBvcmlnaW5hbCBjb25maXJtZWQgd2l0aCDmmK/lkKbnoa7orqTpgIDlh7rnqIvluo/vvJ8gYW5kIGNhbmNlbGxpbmcKICAgIC8vLyBsZWZ0IHRoZSBhcHAgcnVubmluZy4KICAgIC8vLyA8L3N1bW1hcnk+CiAgICBwcml2YXRlIGFzeW5jIHZvaWQgT25UcmF5RXhpdCgpCiAgICB7CiAgICAgICAgX3RyYXlJY29uPy5SZXN0b3JlTWFpbldpbmRvdygpOwoKICAgICAgICB2YXIgcm9vdCA9IFVpS2l0Lk1haW5YYW1sUm9vdDsKICAgICAgICBpZiAocm9vdCBpcyBub3QgbnVsbCAmJiAhYXdhaXQgVWlLaXQuQ29uZmlybUFzeW5jKHJvb3QsICLpgIDlh7oiLCAi5piv5ZCm56Gu6K6k6YCA5Ye656iL5bqP77yfIikpIHJldHVybjsKCiAgICAgICAgQ2xvc2UoKTsKICAgIH0KCiAgICBwcml2YXRlIHZvaWQgVXBkYXRlRWxldmF0aW9uQmFkZ2UoKQogICAgewogICAgICAgIGlmIChBcHBTZXJ2aWNlcy5DdXJyZW50LklzRWxldmF0ZWQpCiAgICAgICAgewogICAgICAgICAgICBFbGV2YXRpb25UZXh0LlRleHQgPSAi566h55CG5ZGYIjsKICAgICAgICAgICAgRWxldmF0aW9uQmFkZ2UuQmFja2dyb3VuZCA9IChNaWNyb3NvZnQuVUkuWGFtbC5NZWRpYS5CcnVzaClBcHBsaWNhdGlvbi5DdXJyZW50LlJlc291cmNlc1siU3lzdGVtRmlsbENvbG9yU3VjY2Vzc0JhY2tncm91bmRCcnVzaCJdOwogICAgICAgICAgICBFbGV2YXRpb25CYWRnZS5WaXNpYmlsaXR5ID0gVmlzaWJpbGl0eS5WaXNpYmxlOwogICAgICAgICAgICBFbGV2YXRlQnV0dG9uLlZpc2liaWxpdHkgPSBWaXNpYmlsaXR5LkNvbGxhcHNlZDsKICAgICAgICB9CiAgICAgICAgZWxzZQogICAgICAgIHsKICAgICAgICAgICAgRWxldmF0aW9uVGV4dC5UZXh0ID0gIuacquaPkOadgyI7CiAgICAgICAgICAgIEVsZXZhdGlvbkJhZGdlLlZpc2liaWxpdHkgPSBWaXNpYmlsaXR5LlZpc2libGU7CiAgICAgICAgICAgIEVsZXZhdGVCdXR0b24uVmlzaWJpbGl0eSA9IFZpc2liaWxpdHkuVmlzaWJsZTsKICAgICAgICB9CiAgICB9CgogICAgcHJpdmF0ZSB2b2lkIE9uUmVzdGFydEVsZXZhdGVkKG9iamVjdCBzZW5kZXIsIFJvdXRlZEV2ZW50QXJncyBlKSA9PiBVaUtpdC5SZXN0YXJ0RWxldmF0ZWQoKTsKCiAgICBwcml2YXRlIHZvaWQgT25OYXZTZWxlY3Rpb25DaGFuZ2VkKE5hdmlnYXRpb25WaWV3IHNlbmRlciwgTmF2aWdhdGlvblZpZXdTZWxlY3Rpb25DaGFuZ2VkRXZlbnRBcmdzIGFyZ3MpCiAgICB7CiAgICAgICAgaWYgKGFyZ3MuU2VsZWN0ZWRJdGVtIGlzIG5vdCBOYXZpZ2F0aW9uVmlld0l0ZW0geyBUYWc6IHN0cmluZyB0YWcgfSkgcmV0dXJuOwogICAgICAgIHZhciBwYWdlVHlwZSA9IFJlc29sdmVQYWdlKHRhZyk7CgogICAgICAgIGlmIChDb250ZW50RnJhbWUuQ29udGVudD8uR2V0VHlwZSgpICE9IHBhZ2VUeXBlKQogICAgICAgIHsKICAgICAgICAgICAgQ29udGVudEZyYW1lLk5hdmlnYXRlKHBhZ2VUeXBlLCB0YWcsIG5ldyBFbnRyYW5jZU5hdmlnYXRpb25UcmFuc2l0aW9uSW5mbygpKTsKICAgICAgICB9CgogICAgICAgIFNldFN0YXR1cyh0YWcgc3dpdGNoCiAgICAgICAgewogICAgICAgICAgICAic2NhbiIgPT4gIklQ5q615omr5o+PIiwKICAgICAgICAgICAgImJhdGNoIiA9PiAiSVDmibnph4/miavmj48iLAogICAgICAgICAgICAicG9ydHNjYW4iID0+ICLnm67moIfnq6/lj6Pmiavmj48iLAogICAgICAgICAgICAibG9jYWxwb3J0IiA9PiAi5pys5py656uv5Y+j5Y2g55SoIiwKICAgICAgICAgICAgImxvY2FsaXAiID0+ICLkv67mlLnmnKzlnLBJUCIsCiAgICAgICAgICAgICJ3aWZpIiA9PiAiV2lGaeWvhueggeafpeeciyIsCiAgICAgICAgICAgICJjYWxjIiA9PiAiSVDlnLDlnYDorqHnrpflmagiLAogICAgICAgICAgICAibWVtbyIgPT4gIuWkh+azqOeuoeeQhiIsCiAgICAgICAgICAgICJjb25maWciID0+ICLpgInpobnphY3nva4iLAogICAgICAgICAgICAiYWJvdXQiID0+ICLlhbPkuo4iLAogICAgICAgICAgICBfID0+ICLlsLHnu6oiLAogICAgICAgIH0pOwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBNYXBzIGEgbmF2aWdhdGlvbiB0YWcgdG8gaXRzIHBhZ2UgdHlwZS4gVGFncyB3aG9zZSBwYWdlIGhhcyBub3QgYmVlbiBidWlsdAogICAgLy8vIHlldCByZXNvbHZlIHRvIDxzZWUgY3JlZj0iUGxhY2Vob2xkZXJQYWdlIi8+IHNvIHRoZSBzaGVsbCBhbHdheXMgcnVucy4KICAgIC8vLyA8L3N1bW1hcnk+CiAgICBwcml2YXRlIHN0YXRpYyBUeXBlIFJlc29sdmVQYWdlKHN0cmluZyB0YWcpID0+IHRhZyBzd2l0Y2gKICAgIHsKICAgICAgICAic2NhbiIgPT4gdHlwZW9mKFNjYW5QYWdlKSwKICAgICAgICAiYWJvdXQiID0+IHR5cGVvZihBYm91dFBhZ2UpLAogICAgICAgICJjYWxjIiA9PiB0eXBlb2YoQ2FsY3VsYXRvclBhZ2UpLAogICAgICAgICJiYXRjaCIgPT4gdHlwZW9mKEJhdGNoU2NhblBhZ2UpLAogICAgICAgICJwb3J0c2NhbiIgPT4gdHlwZW9mKFBvcnRTY2FuUGFnZSksCiAgICAgICAgImxvY2FscG9ydCIgPT4gdHlwZW9mKExvY2FsUG9ydFBhZ2UpLAogICAgICAgICJsb2NhbGlwIiA9PiB0eXBlb2YoTG9jYWxJcFBhZ2UpLAogICAgICAgICJ3aWZpIiA9PiB0eXBlb2YoV2lmaVBhZ2UpLAogICAgICAgICJtZW1vIiA9PiB0eXBlb2YoTWVtb1BhZ2UpLAogICAgICAgICJjb25maWciID0+IHR5cGVvZihDb25maWdQYWdlKSwKICAgICAgICBfID0+IHR5cGVvZihQbGFjZWhvbGRlclBhZ2UpLAogICAgfTsKfQo=
+using IPScaner.WinUI.Services;
+using IPScaner.WinUI.Views;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Media.Animation;
+using Microsoft.UI.Windowing;
+using Windows.Graphics;
+
+namespace IPScaner.WinUI;
+
+/// <summary>
+/// Shell window: navigation pane, custom title bar and the status strip that
+/// replaces the original's <c>StatusStrip</c> (status text, rotating tip, clock).
+/// </summary>
+public sealed partial class MainWindow : Window
+{
+    private readonly DispatcherTimer _clockTimer = new();
+    private readonly DispatcherTimer _tipTimer = new();
+    private readonly DispatcherTimer _overlayTimer = new();
+    private readonly Queue<string> _tips = new();
+    private TrayIcon? _trayIcon;
+    private DesktopOverlay? _desktopOverlay;
+    private IntPtr _hwnd;
+
+    /// <summary>
+    /// Rotating hints, carried over verbatim from the original
+    /// <c>FormMain.InitTipList</c> so long-time users see the same guidance.
+    /// </summary>
+    private static readonly string[] TipList =
+    [
+        "Tip:右击某一个IP小色块，可调出ping命令窗口",
+        "Tip:右击某一个IP小色块，可复制IP、计算机名、MAC地址",
+        "注意:开启【主机名查询】功能,将会降低查询效率",
+        "Tip:点击【不通】图例,可复制所有通讯【异常】的IP地址",
+        "Tip:点击【正常】图例,可复制所有通讯【正常】的IP地址",
+        "Tip:点击【IP小色块】,可快速复制IP地址",
+        "Tip:点击顶部IP下拉框,可切换IP扫描段",
+        "Tip:想扫描A类的多段IP,可以使用【IP批量扫描】",
+        "Tip:【修改本地IP】支持历史IP快速切换",
+        "Tip:【端口扫描】可以查看计算机开放了哪些端口",
+        "Tip:鼠标悬停在【IP小色块】上,会显示计算机名称和MAC地址",
+        "Tip:本工具只支持查询 当前电脑所在网段下的所有MAC地址",
+        "Tip:小色块的双击功能支持自定义",
+        "Tip:按住 Ctrl 点击小色块，可直接打开详情",
+    ];
+
+    public MainWindow()
+    {
+        InitializeComponent();
+
+        Title = "局域网IP扫描工具 IPScaner";
+        ExtendsContentIntoTitleBar = true;
+        SetTitleBar(AppTitleBar);
+
+        ConfigureWindow();
+        InitializeStatusBar();
+        InitializeTrayAndOverlay();
+        UpdateElevationBadge();
+
+        // Land on the scan page, like the original did.
+        Nav.SelectedItem = Nav.MenuItems.OfType<NavigationViewItem>().FirstOrDefault();
+    }
+
+    /// <summary>Set the left-hand status text (the original's statusTip).</summary>
+    public void SetStatus(string text) => StatusText.Text = text;
+
+    /// <summary>Navigate to a page by tag, used by pages that cross-link.</summary>
+    public bool NavigateTo(string tag)
+    {
+        foreach (var item in Nav.MenuItems.Concat(Nav.FooterMenuItems).OfType<NavigationViewItem>())
+        {
+            if (item.Tag as string == tag)
+            {
+                Nav.SelectedItem = item;
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private void ConfigureWindow()
+    {
+        try
+        {
+            _hwnd = WinRT.Interop.WindowNative.GetWindowHandle(this);
+            var id = Microsoft.UI.Win32Interop.GetWindowIdFromWindow(_hwnd);
+            var appWindow = AppWindow.GetFromWindowId(id);
+
+            // A /24 grid needs room; the original grew itself until the flow panel
+            // stopped scrolling, which usually landed around this size.
+            appWindow.Resize(new SizeInt32(1180, 820));
+            appWindow.SetIcon(Path.Combine(AppContext.BaseDirectory, "Assets", "app.ico"));
+
+            if (appWindow.Presenter is OverlappedPresenter presenter)
+            {
+                presenter.PreferredMinimumWidth = 900;
+                presenter.PreferredMinimumHeight = 620;
+            }
+        }
+        catch (Exception ex)
+        {
+            Core.Logging.AppLog.Instance.Log(nameof(MainWindow), "配置窗口失败: " + ex.Message);
+        }
+    }
+
+    private void InitializeStatusBar()
+    {
+        _tips.Clear();
+        foreach (var tip in TipList) _tips.Enqueue(tip);
+        TipText.Text = TipList[Random.Shared.Next(TipList.Length)];
+
+        ClockText.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+        _clockTimer.Interval = TimeSpan.FromSeconds(1);
+        _clockTimer.Tick += (_, _) => ClockText.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+        _clockTimer.Start();
+
+        // The original rotated a tip every 10 seconds.
+        _tipTimer.Interval = TimeSpan.FromSeconds(10);
+        _tipTimer.Tick += (_, _) =>
+        {
+            if (_tips.Count == 0) foreach (var t in TipList) _tips.Enqueue(t);
+            TipText.Text = _tips.Dequeue();
+        };
+        _tipTimer.Start();
+
+        Closed += (_, _) =>
+        {
+            _clockTimer.Stop();
+            _tipTimer.Stop();
+            _overlayTimer.Stop();
+            _desktopOverlay?.Dispose();
+            _trayIcon?.Dispose();
+            App.ShutdownLogging();
+        };
+    }
+
+    /// <summary>
+    /// Creates the tray icon and the desktop overlay, and keeps the overlay in
+    /// step with configuration changes.
+    /// </summary>
+    /// <remarks>
+    /// The overlay window is created lazily by <see cref="DesktopOverlay.Show"/>,
+    /// so with the factory default (<c>DesktopOverlayEnabled = false</c>) nothing
+    /// is displayed at all — it only appears once the user enables 桌面显示本机IP.
+    /// The original had the same shape: a NotifyIcon that was always present, and
+    /// an overlay form created on demand.
+    /// </remarks>
+    private void InitializeTrayAndOverlay()
+    {
+        try
+        {
+            _trayIcon = new TrayIcon(
+                "局域网IP扫描工具",
+                onActivate: OnTrayActivate,
+                onExit: OnTrayExit);
+            _trayIcon.Show();
+            _trayIcon.AttachMainWindow(this, () => AppServices.Current.Config.HideMainEnabled);
+        }
+        catch (Exception ex)
+        {
+            Core.Logging.AppLog.Instance.Log(nameof(MainWindow), "初始化托盘图标失败: " + ex.Message);
+        }
+
+        try
+        {
+            _desktopOverlay = new DesktopOverlay();
+            ApplyDesktopOverlay();
+            AppServices.Current.ConfigChanged += (_, _) => ApplyDesktopOverlay();
+
+            // The badge shows the machine's *live* address, and 修改本地IP can change
+            // it without any configuration change, so poll gently while it is visible.
+            // Update() is a no-op when hidden and only touches the window when the
+            // text, colour or position actually changed.
+            _overlayTimer.Interval = TimeSpan.FromSeconds(10);
+            _overlayTimer.Tick += (_, _) =>
+            {
+                if (_desktopOverlay?.IsVisible == true) _desktopOverlay.Update(AppServices.Current.Config);
+            };
+            _overlayTimer.Start();
+        }
+        catch (Exception ex)
+        {
+            Core.Logging.AppLog.Instance.Log(nameof(MainWindow), "初始化桌面叠加窗失败: " + ex.Message);
+        }
+    }
+
+    /// <summary>Shows, refreshes or hides the desktop overlay to match the config.</summary>
+    private void ApplyDesktopOverlay()
+    {
+        if (_desktopOverlay is null) return;
+        try
+        {
+            var config = AppServices.Current.Config;
+            if (config.DesktopOverlayEnabled) _desktopOverlay.Show(config);
+            else _desktopOverlay.Hide();
+        }
+        catch (Exception ex)
+        {
+            Core.Logging.AppLog.Instance.Log(nameof(MainWindow), "更新桌面叠加窗失败: " + ex.Message);
+        }
+    }
+
+    /// <summary>
+    /// Tray icon activated (double-click). Uses the tray's own restore path rather
+    /// than <see cref="UiKit.ActivateMainWindow"/> because 最小化时隐藏到托盘
+    /// removes the window outright, and that needs a SW_SHOW before Activate.
+    /// </summary>
+    private void OnTrayActivate() => _trayIcon?.RestoreMainWindow();
+
+    /// <summary>
+    /// Tray 退出. Restores the window first so the prompt is actually on screen,
+    /// then asks — the original confirmed with 是否确认退出程序？ and cancelling
+    /// left the app running.
+    /// </summary>
+    private async void OnTrayExit()
+    {
+        _trayIcon?.RestoreMainWindow();
+
+        var root = UiKit.MainXamlRoot;
+        if (root is not null && !await UiKit.ConfirmAsync(root, "退出", "是否确认退出程序？")) return;
+
+        Close();
+    }
+
+    private void UpdateElevationBadge()
+    {
+        if (AppServices.Current.IsElevated)
+        {
+            ElevationText.Text = "管理员";
+            ElevationBadge.Background = (Microsoft.UI.Xaml.Media.Brush)Application.Current.Resources["SystemFillColorSuccessBackgroundBrush"];
+            ElevationBadge.Visibility = Visibility.Visible;
+            ElevateButton.Visibility = Visibility.Collapsed;
+        }
+        else
+        {
+            ElevationText.Text = "未提权";
+            ElevationBadge.Visibility = Visibility.Visible;
+            ElevateButton.Visibility = Visibility.Visible;
+        }
+    }
+
+    private void OnRestartElevated(object sender, RoutedEventArgs e) => UiKit.RestartElevated();
+
+    private void OnNavSelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
+    {
+        if (args.SelectedItem is not NavigationViewItem { Tag: string tag }) return;
+        var pageType = ResolvePage(tag);
+
+        if (ContentFrame.Content?.GetType() != pageType)
+        {
+            ContentFrame.Navigate(pageType, tag, new EntranceNavigationTransitionInfo());
+        }
+
+        SetStatus(tag switch
+        {
+            "scan" => "IP段扫描",
+            "batch" => "IP批量扫描",
+            "portscan" => "目标端口扫描",
+            "localport" => "本机端口占用",
+            "localip" => "修改本地IP",
+            "wifi" => "WiFi密码查看",
+            "calc" => "IP地址计算器",
+            "memo" => "备注管理",
+            "config" => "选项配置",
+            "about" => "关于",
+            _ => "就绪",
+        });
+    }
+
+    /// <summary>
+    /// Maps a navigation tag to its page type. Tags whose page has not been built
+    /// yet resolve to <see cref="PlaceholderPage"/> so the shell always runs.
+    /// </summary>
+    private static Type ResolvePage(string tag) => tag switch
+    {
+        "scan" => typeof(ScanPage),
+        "about" => typeof(AboutPage),
+        "calc" => typeof(CalculatorPage),
+        "batch" => typeof(BatchScanPage),
+        "portscan" => typeof(PortScanPage),
+        "localport" => typeof(LocalPortPage),
+        "localip" => typeof(LocalIpPage),
+        "wifi" => typeof(WifiPage),
+        "memo" => typeof(MemoPage),
+        "config" => typeof(ConfigPage),
+        _ => typeof(PlaceholderPage),
+    };
+}

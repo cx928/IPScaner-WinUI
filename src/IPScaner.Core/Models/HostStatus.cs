@@ -1,1 +1,54 @@
-bmFtZXNwYWNlIElQU2NhbmVyLkNvcmUuTW9kZWxzOwoKLy8vIDxzdW1tYXJ5PlJlYWNoYWJpbGl0eSBzdGF0ZSBvZiBhIGhvc3QsIHVzaW5nIHRoZSBvcmlnaW5hbCB0b29sJ3Mgdm9jYWJ1bGFyeS48L3N1bW1hcnk+CnB1YmxpYyBlbnVtIEhvc3RTdGF0dXMKewogICAgLy8vIDxzdW1tYXJ5PuW+heajgOa1iyDigJQgbm90IHByb2JlZCB5ZXQuPC9zdW1tYXJ5PgogICAgUGVuZGluZyA9IDAsCgogICAgLy8vIDxzdW1tYXJ5Puato+W4uCDigJQgY29uZmlybWVkIHJlYWNoYWJsZS48L3N1bW1hcnk+CiAgICBPbmxpbmUgPSAxLAoKICAgIC8vLyA8c3VtbWFyeT7kuI3pgJog4oCUIGFsbCBwcm9iZXMgZmFpbGVkLjwvc3VtbWFyeT4KICAgIE9mZmxpbmUgPSAyLAp9CgovLy8gPHN1bW1hcnk+Ci8vLyBIb3cgYSBob3N0IHdhcyBkZXRlcm1pbmVkIHRvIGJlIG9ubGluZS4gU3VyZmFjZWQgaW4gdGhlIFVJIHNvIHRoZSBvcGVyYXRvciBjYW4KLy8vIHRlbGwgYSByZWFsIElDTVAgYW5zd2VyIGFwYXJ0IGZyb20gYW4gQVJQLWNhY2hlIGhpdCBvciBhbiBvcGVuIFRDUCBwb3J0IOKAlCB0aGUKLy8vIGRpc3RpbmN0aW9uIHRoZSB2MS4yOCBjaGFuZ2Vsb2cgd2FzIGFib3V0LgovLy8gPC9zdW1tYXJ5PgpwdWJsaWMgZW51bSBMaXZlbmVzc1NvdXJjZQp7CiAgICBOb25lID0gMCwKICAgIEljbXAgPSAxLAogICAgQXJwID0gMiwKICAgIFRjcFBvcnQgPSAzLAp9CgpwdWJsaWMgc3RhdGljIGNsYXNzIEhvc3RTdGF0dXNUZXh0CnsKICAgIC8vLyA8c3VtbWFyeT7nn63moIfnrb4sIHVzZWQgb24gdGhlIGNvbG91ciBibG9ja3MgYW5kIGluIGxlZ2VuZHMuPC9zdW1tYXJ5PgogICAgcHVibGljIHN0YXRpYyBzdHJpbmcgU2hvcnQoSG9zdFN0YXR1cyBzKSA9PiBzIHN3aXRjaAogICAgewogICAgICAgIEhvc3RTdGF0dXMuT25saW5lID0+ICLmraPluLgiLAogICAgICAgIEhvc3RTdGF0dXMuT2ZmbGluZSA9PiAi5LiN6YCaIiwKICAgICAgICBfID0+ICLlvoXmo4DmtYsiLAogICAgfTsKCiAgICAvLy8gPHN1bW1hcnk+QmF0Y2gtc2NhbiBncmlkIHN0YXR1cyBjb2x1bW46ICJPSyIgLyAiTkciLjwvc3VtbWFyeT4KICAgIHB1YmxpYyBzdGF0aWMgc3RyaW5nIENvZGUoSG9zdFN0YXR1cyBzKSA9PiBzIHN3aXRjaAogICAgewogICAgICAgIEhvc3RTdGF0dXMuT25saW5lID0+ICJPSyIsCiAgICAgICAgSG9zdFN0YXR1cy5PZmZsaW5lID0+ICJORyIsCiAgICAgICAgXyA9PiAi5b6F5qOA5rWLIiwKICAgIH07CgogICAgcHVibGljIHN0YXRpYyBzdHJpbmcgU291cmNlKExpdmVuZXNzU291cmNlIHMpID0+IHMgc3dpdGNoCiAgICB7CiAgICAgICAgTGl2ZW5lc3NTb3VyY2UuSWNtcCA9PiAiUGluZyIsCiAgICAgICAgTGl2ZW5lc3NTb3VyY2UuQXJwID0+ICJBUlAiLAogICAgICAgIExpdmVuZXNzU291cmNlLlRjcFBvcnQgPT4gIlRDUCIsCiAgICAgICAgXyA9PiBzdHJpbmcuRW1wdHksCiAgICB9Owp9Cg==
+namespace IPScaner.Core.Models;
+
+/// <summary>Reachability state of a host, using the original tool's vocabulary.</summary>
+public enum HostStatus
+{
+    /// <summary>待检测 — not probed yet.</summary>
+    Pending = 0,
+
+    /// <summary>正常 — confirmed reachable.</summary>
+    Online = 1,
+
+    /// <summary>不通 — all probes failed.</summary>
+    Offline = 2,
+}
+
+/// <summary>
+/// How a host was determined to be online. Surfaced in the UI so the operator can
+/// tell a real ICMP answer apart from an ARP-cache hit or an open TCP port — the
+/// distinction the v1.28 changelog was about.
+/// </summary>
+public enum LivenessSource
+{
+    None = 0,
+    Icmp = 1,
+    Arp = 2,
+    TcpPort = 3,
+}
+
+public static class HostStatusText
+{
+    /// <summary>短标签, used on the colour blocks and in legends.</summary>
+    public static string Short(HostStatus s) => s switch
+    {
+        HostStatus.Online => "正常",
+        HostStatus.Offline => "不通",
+        _ => "待检测",
+    };
+
+    /// <summary>Batch-scan grid status column: "OK" / "NG".</summary>
+    public static string Code(HostStatus s) => s switch
+    {
+        HostStatus.Online => "OK",
+        HostStatus.Offline => "NG",
+        _ => "待检测",
+    };
+
+    public static string Source(LivenessSource s) => s switch
+    {
+        LivenessSource.Icmp => "Ping",
+        LivenessSource.Arp => "ARP",
+        LivenessSource.TcpPort => "TCP",
+        _ => string.Empty,
+    };
+}

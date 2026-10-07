@@ -1,1 +1,150 @@
-dXNpbmcgU3lzdGVtLlhtbC5TZXJpYWxpemF0aW9uOwoKbmFtZXNwYWNlIElQU2NhbmVyLkNvcmUuQ29uZmlndXJhdGlvbjsKCi8vLyA8c3VtbWFyeT4KLy8vIEFwcGxpY2F0aW9uIHNldHRpbmdzLCBwZXJzaXN0ZWQgYXMgPGM+SVBTY2FuZXIuY2ZnPC9jPi4KLy8vIDwvc3VtbWFyeT4KLy8vIDxyZW1hcmtzPgovLy8gVGhpcyB0eXBlIGlzIGEgZGVsaWJlcmF0ZSwgbGluZS1mb3ItbGluZSBzdHJ1Y3R1cmFsIHBvcnQgb2YgdGhlIG9yaWdpbmFsCi8vLyA8Yz5JUFNjYW5lci5Db25maWdJbmZvPC9jPiBjbGFzcy4gVGhlIFhNTCBhdHRyaWJ1dGUgb3JkZXIgZW1pdHRlZCBieQovLy8gPHNlZSBjcmVmPSJYbWxTZXJpYWxpemVyIi8+IGZvbGxvd3MgcHJvcGVydHkgZGVjbGFyYXRpb24gb3JkZXIsIHNvIHRoZQovLy8gZGVjbGFyYXRpb24gb3JkZXIgYmVsb3cgTVVTVCBOT1QgYmUgcmVzaHVmZmxlZDogZG9pbmcgc28gd291bGQgcmV3cml0ZSBhCi8vLyB1c2VyJ3MgZXhpc3RpbmcgSVBTY2FuZXIuY2ZnIHdpdGggYSBkaWZmZXJlbnQgYXR0cmlidXRlIG9yZGVyLgovLy8gPHBhcmE+Ci8vLyBDb2xvdXJzIGFyZSBzdG9yZWQgYXMgc2lnbmVkIDMyLWJpdCBBUkdCIHZhbHVlcyBleGFjdGx5IGxpa2UgV2luRm9ybXMKLy8vIDxjPkNvbG9yLlRvQXJnYigpPC9jPiAoYWxwaGEgaW4gdGhlIGhpZ2ggYnl0ZSksIGUuZy4gU2t5Qmx1ZSA9IC03ODc2ODg1LgovLy8gPC9wYXJhPgovLy8gPC9yZW1hcmtzPgpbWG1sUm9vdCgicm9vdCIpXQpwdWJsaWMgY2xhc3MgQXBwQ29uZmlnCnsKICAgIC8vIC0tLS0gd2VsbC1rbm93biBXaW5Gb3JtcyBjb2xvdXIgdmFsdWVzLCBhcyBzaWduZWQgQVJHQiAtLS0tLS0tLS0tLS0tLS0tLS0tCiAgICBwdWJsaWMgY29uc3QgaW50IFNreUJsdWVBcmdiID0gLTc4NzY4ODU7ICAgICAgLy8gI0ZGODdDRUVCCiAgICBwdWJsaWMgY29uc3QgaW50IExpbWVHcmVlbkFyZ2IgPSAtMTM0NDc4ODY7ICAgLy8gI0ZGMzJDRDMyCiAgICBwdWJsaWMgY29uc3QgaW50IEluZGlhblJlZEFyZ2IgPSAtMzMxODY5MjsgICAgLy8gI0ZGQ0Q1QzVDCiAgICBwdWJsaWMgY29uc3QgaW50IEJsdWVBcmdiID0gLTE2Nzc2OTYxOyAgICAgICAgLy8gI0ZGMDAwMEZGCiAgICBwdWJsaWMgY29uc3QgaW50IEJsYWNrQXJnYiA9IC0xNjc3NzIxNjsgICAgICAgLy8gI0ZGMDAwMDAwCiAgICBwdWJsaWMgY29uc3QgaW50IFllbGxvd0FyZ2IgPSAtMjU2OyAgICAgICAgICAgLy8gI0ZGRkZGRjAwCgogICAgW1htbEF0dHJpYnV0ZV0gcHVibGljIHN0cmluZyBWZXJzaW9uIHsgZ2V0OyBzZXQ7IH0gPSAiMS4wIjsKICAgIFtYbWxBdHRyaWJ1dGVdIHB1YmxpYyBib29sIFF1ZXJ5SG9zdE5hbWVFbmFibGVkIHsgZ2V0OyBzZXQ7IH0KICAgIFtYbWxBdHRyaWJ1dGVdIHB1YmxpYyBpbnQgUGluZ1RpbWVvdXQgeyBnZXQ7IHNldDsgfQogICAgW1htbEF0dHJpYnV0ZV0gcHVibGljIGludCBQaW5nQ291bnQgeyBnZXQ7IHNldDsgfQogICAgW1htbEF0dHJpYnV0ZV0gcHVibGljIGJvb2wgQVJQSW5zdGVhZFBpbmdFbmFibGVkIHsgZ2V0OyBzZXQ7IH0KICAgIFtYbWxBdHRyaWJ1dGVdIHB1YmxpYyBib29sIFBvcnRJbnN0ZWFkUGluZ0VuYWJsZWQgeyBnZXQ7IHNldDsgfQogICAgW1htbEF0dHJpYnV0ZV0gcHVibGljIHN0cmluZyBQcmVQb3J0QXJyYXkgeyBnZXQ7IHNldDsgfSA9ICI4MCwxMzUsNDQ1LDUwMCI7CiAgICBbWG1sQXR0cmlidXRlXSBwdWJsaWMgaW50IFBvcnRUaW1lb3V0IHsgZ2V0OyBzZXQ7IH0KICAgIFtYbWxBdHRyaWJ1dGVdIHB1YmxpYyBpbnQgRG91YmxlQ2xpY2tUaW1lIHsgZ2V0OyBzZXQ7IH0KICAgIFtYbWxBdHRyaWJ1dGVdIHB1YmxpYyBpbnQgQnRuRm9udFNpemUgeyBnZXQ7IHNldDsgfQogICAgW1htbEF0dHJpYnV0ZV0gcHVibGljIGJvb2wgTWVudUF1dG9PcGVuIHsgZ2V0OyBzZXQ7IH0KICAgIFtYbWxBdHRyaWJ1dGVdIHB1YmxpYyBpbnQgRGVmYXVsdENvbG9yQXJnYiB7IGdldDsgc2V0OyB9CiAgICBbWG1sQXR0cmlidXRlXSBwdWJsaWMgaW50IE5ldHdvcmtPS0NvbG9yQXJnYiB7IGdldDsgc2V0OyB9CiAgICBbWG1sQXR0cmlidXRlXSBwdWJsaWMgaW50IE5ldHdvcmtOR0NvbG9yQXJnYiB7IGdldDsgc2V0OyB9CiAgICBbWG1sQXR0cmlidXRlXSBwdWJsaWMgaW50IE1lbW9Db2xvckFyZ2IgeyBnZXQ7IHNldDsgfQogICAgW1htbEF0dHJpYnV0ZV0gcHVibGljIEV2ZW50TmFtZSBEb3VibGVFdmVudCB7IGdldDsgc2V0OyB9CiAgICBbWG1sQXR0cmlidXRlXSBwdWJsaWMgYm9vbCBEZXNrdG9wT3ZlcmxheUVuYWJsZWQgeyBnZXQ7IHNldDsgfQogICAgW1htbEF0dHJpYnV0ZV0gcHVibGljIHN0cmluZyBEZXNrdG9wT3ZlcmxheVByZSB7IGdldDsgc2V0OyB9ID0gIuacrOWcsElQ5Zyw5Z2A77yaIjsKICAgIFtYbWxBdHRyaWJ1dGVdIHB1YmxpYyBpbnQgRGVza3RvcE92ZXJsYXlPZmZzZXRYIHsgZ2V0OyBzZXQ7IH0KICAgIFtYbWxBdHRyaWJ1dGVdIHB1YmxpYyBpbnQgRGVza3RvcE92ZXJsYXlPZmZzZXRZIHsgZ2V0OyBzZXQ7IH0KICAgIFtYbWxBdHRyaWJ1dGVdIHB1YmxpYyBpbnQgRGVza3RvcE92ZXJsYXlPcGFjaXR5IHsgZ2V0OyBzZXQ7IH0KICAgIFtYbWxBdHRyaWJ1dGVdIHB1YmxpYyBpbnQgRGVza3RvcE92ZXJsYXlMb2NhdGlvbiB7IGdldDsgc2V0OyB9CiAgICBbWG1sQXR0cmlidXRlXSBwdWJsaWMgaW50IERlc2t0b3BGb3JlQ29sb3JBcmdiIHsgZ2V0OyBzZXQ7IH0KICAgIFtYbWxBdHRyaWJ1dGVdIHB1YmxpYyBpbnQgRGVza3RvcEJnQ29sb3JBcmdiIHsgZ2V0OyBzZXQ7IH0KICAgIFtYbWxBdHRyaWJ1dGVdIHB1YmxpYyBib29sIExvZ0VuYWJsZWQgeyBnZXQ7IHNldDsgfQoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBQYXRoIG9mIGEgbWVudSBpdGVtIHBpbm5lZCB0byB0aGUgdG9wLWxldmVsICJzdGFyIiBtZW51ICh2MS4yNiBmZWF0dXJlKS4KICAgIC8vLyBMZWZ0IG51bGwgYnkgZGVmYXVsdCBzbyB0aGUgYXR0cmlidXRlIGlzIG9taXR0ZWQgZnJvbSB0aGUgZmlsZSwgbWF0Y2hpbmcKICAgIC8vLyB0aGUgb3JpZ2luYWwgd3JpdGVyLgogICAgLy8vIDwvc3VtbWFyeT4KICAgIFtYbWxBdHRyaWJ1dGVdIHB1YmxpYyBzdHJpbmc/IFN0YXJNZW51IHsgZ2V0OyBzZXQ7IH0KCiAgICAvLy8gPHN1bW1hcnk+5pyA5bCP5YyW5pe26ZqQ6JeP5Yiw5omY55uYICh2MS4yOCBvcHRpb247IHRoZSBjb25maWcgVUkgbGFiZWxzIHRoaXMgY2hrSGlkZU1haW4pLjwvc3VtbWFyeT4KICAgIFtYbWxBdHRyaWJ1dGVdIHB1YmxpYyBib29sIEhpZGVNYWluRW5hYmxlZCB7IGdldDsgc2V0OyB9CgogICAgcHVibGljIEFwcENvbmZpZygpID0+IFJlc2V0VG9EZWZhdWx0cygpOwoKICAgIC8vLyA8c3VtbWFyeT5SZXN0b3JlcyBldmVyeSBzZXR0aW5nIHRvIHRoZSBvcmlnaW5hbCBhcHBsaWNhdGlvbidzIGZhY3RvcnkgZGVmYXVsdC48L3N1bW1hcnk+CiAgICBwdWJsaWMgdm9pZCBSZXNldFRvRGVmYXVsdHMoKQogICAgewogICAgICAgIFZlcnNpb24gPSAiMS4wIjsKICAgICAgICBRdWVyeUhvc3ROYW1lRW5hYmxlZCA9IGZhbHNlOwogICAgICAgIFBpbmdUaW1lb3V0ID0gNTAwOwogICAgICAgIFBpbmdDb3VudCA9IDQ7CiAgICAgICAgQVJQSW5zdGVhZFBpbmdFbmFibGVkID0gZmFsc2U7CiAgICAgICAgUG9ydEluc3RlYWRQaW5nRW5hYmxlZCA9IGZhbHNlOwogICAgICAgIFByZVBvcnRBcnJheSA9ICI4MCwxMzUsNDQ1LDUwMCI7CiAgICAgICAgUG9ydFRpbWVvdXQgPSA1MDsKICAgICAgICBEb3VibGVDbGlja1RpbWUgPSAyMDA7CiAgICAgICAgQnRuRm9udFNpemUgPSA5OwogICAgICAgIE1lbnVBdXRvT3BlbiA9IGZhbHNlOwogICAgICAgIERlZmF1bHRDb2xvckFyZ2IgPSBTa3lCbHVlQXJnYjsKICAgICAgICBOZXR3b3JrT0tDb2xvckFyZ2IgPSBMaW1lR3JlZW5BcmdiOwogICAgICAgIE5ldHdvcmtOR0NvbG9yQXJnYiA9IEluZGlhblJlZEFyZ2I7CiAgICAgICAgTWVtb0NvbG9yQXJnYiA9IEJsdWVBcmdiOwogICAgICAgIERvdWJsZUV2ZW50ID0gRXZlbnROYW1lLlBpbmc7CiAgICAgICAgRGVza3RvcE92ZXJsYXlFbmFibGVkID0gZmFsc2U7CiAgICAgICAgRGVza3RvcE92ZXJsYXlQcmUgPSAi5pys5ZywSVDlnLDlnYDvvJoiOwogICAgICAgIERlc2t0b3BPdmVybGF5T2Zmc2V0WCA9IDEwMDsKICAgICAgICBEZXNrdG9wT3ZlcmxheU9mZnNldFkgPSAxMDA7CiAgICAgICAgRGVza3RvcE92ZXJsYXlPcGFjaXR5ID0gNzA7CiAgICAgICAgRGVza3RvcE92ZXJsYXlMb2NhdGlvbiA9IDI7CiAgICAgICAgRGVza3RvcEZvcmVDb2xvckFyZ2IgPSBCbGFja0FyZ2I7CiAgICAgICAgRGVza3RvcEJnQ29sb3JBcmdiID0gWWVsbG93QXJnYjsKICAgICAgICBMb2dFbmFibGVkID0gZmFsc2U7CiAgICAgICAgU3Rhck1lbnUgPSBudWxsOwogICAgICAgIEhpZGVNYWluRW5hYmxlZCA9IGZhbHNlOwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT5DcmVhdGVzIGEgZGV0YWNoZWQgZGVlcCBjb3B5ICh0aGUgY29uZmlnIHdpbmRvdyBlZGl0cyBhIGNsb25lLCB0aGVuIGNvbW1pdHMpLjwvc3VtbWFyeT4KICAgIHB1YmxpYyBBcHBDb25maWcgQ2xvbmUoKQogICAgewogICAgICAgIHZhciBjID0gbmV3IEFwcENvbmZpZygpOwogICAgICAgIGMuVmVyc2lvbiA9IFZlcnNpb247CiAgICAgICAgYy5RdWVyeUhvc3ROYW1lRW5hYmxlZCA9IFF1ZXJ5SG9zdE5hbWVFbmFibGVkOwogICAgICAgIGMuUGluZ1RpbWVvdXQgPSBQaW5nVGltZW91dDsKICAgICAgICBjLlBpbmdDb3VudCA9IFBpbmdDb3VudDsKICAgICAgICBjLkFSUEluc3RlYWRQaW5nRW5hYmxlZCA9IEFSUEluc3RlYWRQaW5nRW5hYmxlZDsKICAgICAgICBjLlBvcnRJbnN0ZWFkUGluZ0VuYWJsZWQgPSBQb3J0SW5zdGVhZFBpbmdFbmFibGVkOwogICAgICAgIGMuUHJlUG9ydEFycmF5ID0gUHJlUG9ydEFycmF5OwogICAgICAgIGMuUG9ydFRpbWVvdXQgPSBQb3J0VGltZW91dDsKICAgICAgICBjLkRvdWJsZUNsaWNrVGltZSA9IERvdWJsZUNsaWNrVGltZTsKICAgICAgICBjLkJ0bkZvbnRTaXplID0gQnRuRm9udFNpemU7CiAgICAgICAgYy5NZW51QXV0b09wZW4gPSBNZW51QXV0b09wZW47CiAgICAgICAgYy5EZWZhdWx0Q29sb3JBcmdiID0gRGVmYXVsdENvbG9yQXJnYjsKICAgICAgICBjLk5ldHdvcmtPS0NvbG9yQXJnYiA9IE5ldHdvcmtPS0NvbG9yQXJnYjsKICAgICAgICBjLk5ldHdvcmtOR0NvbG9yQXJnYiA9IE5ldHdvcmtOR0NvbG9yQXJnYjsKICAgICAgICBjLk1lbW9Db2xvckFyZ2IgPSBNZW1vQ29sb3JBcmdiOwogICAgICAgIGMuRG91YmxlRXZlbnQgPSBEb3VibGVFdmVudDsKICAgICAgICBjLkRlc2t0b3BPdmVybGF5RW5hYmxlZCA9IERlc2t0b3BPdmVybGF5RW5hYmxlZDsKICAgICAgICBjLkRlc2t0b3BPdmVybGF5UHJlID0gRGVza3RvcE92ZXJsYXlQcmU7CiAgICAgICAgYy5EZXNrdG9wT3ZlcmxheU9mZnNldFggPSBEZXNrdG9wT3ZlcmxheU9mZnNldFg7CiAgICAgICAgYy5EZXNrdG9wT3ZlcmxheU9mZnNldFkgPSBEZXNrdG9wT3ZlcmxheU9mZnNldFk7CiAgICAgICAgYy5EZXNrdG9wT3ZlcmxheU9wYWNpdHkgPSBEZXNrdG9wT3ZlcmxheU9wYWNpdHk7CiAgICAgICAgYy5EZXNrdG9wT3ZlcmxheUxvY2F0aW9uID0gRGVza3RvcE92ZXJsYXlMb2NhdGlvbjsKICAgICAgICBjLkRlc2t0b3BGb3JlQ29sb3JBcmdiID0gRGVza3RvcEZvcmVDb2xvckFyZ2I7CiAgICAgICAgYy5EZXNrdG9wQmdDb2xvckFyZ2IgPSBEZXNrdG9wQmdDb2xvckFyZ2I7CiAgICAgICAgYy5Mb2dFbmFibGVkID0gTG9nRW5hYmxlZDsKICAgICAgICBjLlN0YXJNZW51ID0gU3Rhck1lbnU7CiAgICAgICAgYy5IaWRlTWFpbkVuYWJsZWQgPSBIaWRlTWFpbkVuYWJsZWQ7CiAgICAgICAgcmV0dXJuIGM7CiAgICB9CgogICAgLy8gLS0tLSBjb252ZW5pZW5jZSAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgogICAgLy8vIDxzdW1tYXJ5PlNwbGl0cyA8c2VlIGNyZWY9IlByZVBvcnRBcnJheSIvPiBpbnRvIHBvcnRzLCBpZ25vcmluZyBlbXB0eSB0b2tlbnMuPC9zdW1tYXJ5PgogICAgcHVibGljIElSZWFkT25seUxpc3Q8aW50PiBHZXRQcmVQb3J0cygpCiAgICB7CiAgICAgICAgdmFyIGxpc3QgPSBuZXcgTGlzdDxpbnQ+KCk7CiAgICAgICAgaWYgKHN0cmluZy5Jc051bGxPcldoaXRlU3BhY2UoUHJlUG9ydEFycmF5KSkgcmV0dXJuIGxpc3Q7CiAgICAgICAgZm9yZWFjaCAodmFyIHRva2VuIGluIFByZVBvcnRBcnJheS5TcGxpdCgnLCcsIFN0cmluZ1NwbGl0T3B0aW9ucy5SZW1vdmVFbXB0eUVudHJpZXMpKQogICAgICAgIHsKICAgICAgICAgICAgaWYgKGludC5UcnlQYXJzZSh0b2tlbi5UcmltKCksIG91dCB2YXIgcCkgJiYgcCBpcyA+IDAgYW5kIDw9IDY1NTM1KSBsaXN0LkFkZChwKTsKICAgICAgICB9CiAgICAgICAgcmV0dXJuIGxpc3Q7CiAgICB9CgogICAgLy8vIDxzdW1tYXJ5PlRydWUgd2hlbiBuYW1lIGxvb2t1cCBpcyBvbiDigJQgdGhlIFVJIHdhcm5zIHRoYXQgdGhpcyBpcyBzbG93Ljwvc3VtbWFyeT4KICAgIHB1YmxpYyBib29sIElzSG9zdE5hbWVMb29rdXBFbmFibGVkID0+IFF1ZXJ5SG9zdE5hbWVFbmFibGVkOwp9Cg==
+using System.Xml.Serialization;
+
+namespace IPScaner.Core.Configuration;
+
+/// <summary>
+/// Application settings, persisted as <c>IPScaner.cfg</c>.
+/// </summary>
+/// <remarks>
+/// This type is a deliberate, line-for-line structural port of the original
+/// <c>IPScaner.ConfigInfo</c> class. The XML attribute order emitted by
+/// <see cref="XmlSerializer"/> follows property declaration order, so the
+/// declaration order below MUST NOT be reshuffled: doing so would rewrite a
+/// user's existing IPScaner.cfg with a different attribute order.
+/// <para>
+/// Colours are stored as signed 32-bit ARGB values exactly like WinForms
+/// <c>Color.ToArgb()</c> (alpha in the high byte), e.g. SkyBlue = -7876885.
+/// </para>
+/// </remarks>
+[XmlRoot("root")]
+public class AppConfig
+{
+    // ---- well-known WinForms colour values, as signed ARGB -------------------
+    public const int SkyBlueArgb = -7876885;      // #FF87CEEB
+    public const int LimeGreenArgb = -13447886;   // #FF32CD32
+    public const int IndianRedArgb = -3318692;    // #FFCD5C5C
+    public const int BlueArgb = -16776961;        // #FF0000FF
+    public const int BlackArgb = -16777216;       // #FF000000
+    public const int YellowArgb = -256;           // #FFFFFF00
+
+    [XmlAttribute] public string Version { get; set; } = "1.0";
+    [XmlAttribute] public bool QueryHostNameEnabled { get; set; }
+    [XmlAttribute] public int PingTimeout { get; set; }
+    [XmlAttribute] public int PingCount { get; set; }
+    [XmlAttribute] public bool ARPInsteadPingEnabled { get; set; }
+    [XmlAttribute] public bool PortInsteadPingEnabled { get; set; }
+    [XmlAttribute] public string PrePortArray { get; set; } = "80,135,445,500";
+    [XmlAttribute] public int PortTimeout { get; set; }
+    [XmlAttribute] public int DoubleClickTime { get; set; }
+    [XmlAttribute] public int BtnFontSize { get; set; }
+    [XmlAttribute] public bool MenuAutoOpen { get; set; }
+    [XmlAttribute] public int DefaultColorArgb { get; set; }
+    [XmlAttribute] public int NetworkOKColorArgb { get; set; }
+    [XmlAttribute] public int NetworkNGColorArgb { get; set; }
+    [XmlAttribute] public int MemoColorArgb { get; set; }
+    [XmlAttribute] public EventName DoubleEvent { get; set; }
+    [XmlAttribute] public bool DesktopOverlayEnabled { get; set; }
+    [XmlAttribute] public string DesktopOverlayPre { get; set; } = "本地IP地址：";
+    [XmlAttribute] public int DesktopOverlayOffsetX { get; set; }
+    [XmlAttribute] public int DesktopOverlayOffsetY { get; set; }
+    [XmlAttribute] public int DesktopOverlayOpacity { get; set; }
+    [XmlAttribute] public int DesktopOverlayLocation { get; set; }
+    [XmlAttribute] public int DesktopForeColorArgb { get; set; }
+    [XmlAttribute] public int DesktopBgColorArgb { get; set; }
+    [XmlAttribute] public bool LogEnabled { get; set; }
+
+    /// <summary>
+    /// Path of a menu item pinned to the top-level "star" menu (v1.26 feature).
+    /// Left null by default so the attribute is omitted from the file, matching
+    /// the original writer.
+    /// </summary>
+    [XmlAttribute] public string? StarMenu { get; set; }
+
+    /// <summary>最小化时隐藏到托盘 (v1.28 option; the config UI labels this chkHideMain).</summary>
+    [XmlAttribute] public bool HideMainEnabled { get; set; }
+
+    public AppConfig() => ResetToDefaults();
+
+    /// <summary>Restores every setting to the original application's factory default.</summary>
+    public void ResetToDefaults()
+    {
+        Version = "1.0";
+        QueryHostNameEnabled = false;
+        PingTimeout = 500;
+        PingCount = 4;
+        ARPInsteadPingEnabled = false;
+        PortInsteadPingEnabled = false;
+        PrePortArray = "80,135,445,500";
+        PortTimeout = 50;
+        DoubleClickTime = 200;
+        BtnFontSize = 9;
+        MenuAutoOpen = false;
+        DefaultColorArgb = SkyBlueArgb;
+        NetworkOKColorArgb = LimeGreenArgb;
+        NetworkNGColorArgb = IndianRedArgb;
+        MemoColorArgb = BlueArgb;
+        DoubleEvent = EventName.Ping;
+        DesktopOverlayEnabled = false;
+        DesktopOverlayPre = "本地IP地址：";
+        DesktopOverlayOffsetX = 100;
+        DesktopOverlayOffsetY = 100;
+        DesktopOverlayOpacity = 70;
+        DesktopOverlayLocation = 2;
+        DesktopForeColorArgb = BlackArgb;
+        DesktopBgColorArgb = YellowArgb;
+        LogEnabled = false;
+        StarMenu = null;
+        HideMainEnabled = false;
+    }
+
+    /// <summary>Creates a detached deep copy (the config window edits a clone, then commits).</summary>
+    public AppConfig Clone()
+    {
+        var c = new AppConfig();
+        c.Version = Version;
+        c.QueryHostNameEnabled = QueryHostNameEnabled;
+        c.PingTimeout = PingTimeout;
+        c.PingCount = PingCount;
+        c.ARPInsteadPingEnabled = ARPInsteadPingEnabled;
+        c.PortInsteadPingEnabled = PortInsteadPingEnabled;
+        c.PrePortArray = PrePortArray;
+        c.PortTimeout = PortTimeout;
+        c.DoubleClickTime = DoubleClickTime;
+        c.BtnFontSize = BtnFontSize;
+        c.MenuAutoOpen = MenuAutoOpen;
+        c.DefaultColorArgb = DefaultColorArgb;
+        c.NetworkOKColorArgb = NetworkOKColorArgb;
+        c.NetworkNGColorArgb = NetworkNGColorArgb;
+        c.MemoColorArgb = MemoColorArgb;
+        c.DoubleEvent = DoubleEvent;
+        c.DesktopOverlayEnabled = DesktopOverlayEnabled;
+        c.DesktopOverlayPre = DesktopOverlayPre;
+        c.DesktopOverlayOffsetX = DesktopOverlayOffsetX;
+        c.DesktopOverlayOffsetY = DesktopOverlayOffsetY;
+        c.DesktopOverlayOpacity = DesktopOverlayOpacity;
+        c.DesktopOverlayLocation = DesktopOverlayLocation;
+        c.DesktopForeColorArgb = DesktopForeColorArgb;
+        c.DesktopBgColorArgb = DesktopBgColorArgb;
+        c.LogEnabled = LogEnabled;
+        c.StarMenu = StarMenu;
+        c.HideMainEnabled = HideMainEnabled;
+        return c;
+    }
+
+    // ---- convenience -------------------------------------------------------
+
+    /// <summary>Splits <see cref="PrePortArray"/> into ports, ignoring empty tokens.</summary>
+    public IReadOnlyList<int> GetPrePorts()
+    {
+        var list = new List<int>();
+        if (string.IsNullOrWhiteSpace(PrePortArray)) return list;
+        foreach (var token in PrePortArray.Split(',', StringSplitOptions.RemoveEmptyEntries))
+        {
+            if (int.TryParse(token.Trim(), out var p) && p is > 0 and <= 65535) list.Add(p);
+        }
+        return list;
+    }
+
+    /// <summary>True when name lookup is on — the UI warns that this is slow.</summary>
+    public bool IsHostNameLookupEnabled => QueryHostNameEnabled;
+}

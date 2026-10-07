@@ -1,1 +1,312 @@
-dXNpbmcgWHVuaXQ7DQp1c2luZyBTeXN0ZW0uSU8uQ29tcHJlc3Npb247CnVzaW5nIFN5c3RlbS5UZXh0Owp1c2luZyBTeXN0ZW0uVGV4dC5SZWd1bGFyRXhwcmVzc2lvbnM7CnVzaW5nIFN5c3RlbS5YbWwuTGlucTsKdXNpbmcgSVBTY2FuZXIuQ29yZS5FeHBvcnQ7CgpuYW1lc3BhY2UgSVBTY2FuZXIuQ29yZS5UZXN0czsKCi8vLyA8c3VtbWFyeT4KLy8vIENvdmVyYWdlIGZvciA8c2VlIGNyZWY9IlRhYmxlRXhwb3J0ZXIiLz4g4oCUIENTViBlc2NhcGluZywgdGhlIG9yaWdpbmFsIGZpbGUtbmFtZQovLy8gY29udmVudGlvbiwgYW5kIHRoZSBoYW5kLWJ1aWx0IC54bHN4IHBhY2thZ2UuCi8vLyA8L3N1bW1hcnk+CnB1YmxpYyBjbGFzcyBUYWJsZUV4cG9ydGVyVGVzdHMKewogICAgLy8vIDxzdW1tYXJ5Pk5hbWUgb2YgdGhlIHdvcmtib29rIGtlcHQgaW4gdGhlIHRlc3Qgb3V0cHV0IGZvbGRlciBmb3IgdGhlIG9wZW5weXhsIGNoZWNrLjwvc3VtbWFyeT4KICAgIHB1YmxpYyBjb25zdCBzdHJpbmcgT3BlbnB5eGxTYW1wbGVOYW1lID0gImV4cG9ydC1zYW1wbGUueGxzeCI7CgogICAgLy8gLS0tLSBFc2NhcGUgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgogICAgW1RoZW9yeV0KICAgIFtJbmxpbmVEYXRhKCJhYmMiLCAiYWJjIildCiAgICBbSW5saW5lRGF0YSgiIiwgIiIpXQogICAgW0lubGluZURhdGEobnVsbCwgIiIpXQogICAgW0lubGluZURhdGEoIjE5Mi4xNjguMS4xMCIsICIxOTIuMTY4LjEuMTAiKV0KICAgIFtJbmxpbmVEYXRhKCLmnIks6YCX5Y+3IiwgIlwi5pyJLOmAl+WPt1wiIildCiAgICBbSW5saW5lRGF0YSgic2F5IFwiaGlcIiIsICJcInNheSBcIlwiaGlcIlwiXCIiKV0KICAgIFtJbmxpbmVEYXRhKCJsaW5lMVxubGluZTIiLCAiXCJsaW5lMVxubGluZTJcIiIpXQogICAgW0lubGluZURhdGEoImxpbmUxXHJcbmxpbmUyIiwgIlwibGluZTFcclxubGluZTJcIiIpXQogICAgW0lubGluZURhdGEoInRyYWlsaW5nXHIiLCAiXCJ0cmFpbGluZ1xyXCIiKV0KICAgIFtJbmxpbmVEYXRhKCIgbGVhZGluZyBhbmQgdHJhaWxpbmcgIiwgIiBsZWFkaW5nIGFuZCB0cmFpbGluZyAiKV0KICAgIHB1YmxpYyB2b2lkIEVzY2FwZV9RdW90ZXNQZXJSZmM0MTgwKHN0cmluZz8gdmFsdWUsIHN0cmluZyBleHBlY3RlZCkKICAgICAgICA9PiBBc3NlcnQuRXF1YWwoZXhwZWN0ZWQsIFRhYmxlRXhwb3J0ZXIuRXNjYXBlKHZhbHVlKSk7CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBFc2NhcGVfT25seURvdWJsZXNRdW90ZXNJbnNpZGVBUXVvdGVkRmllbGQoKQogICAgewogICAgICAgIEFzc2VydC5FcXVhbCgiXCJhXCJcImJcIiIsIFRhYmxlRXhwb3J0ZXIuRXNjYXBlKCJhXCJiIikpOwogICAgICAgIEFzc2VydC5FcXVhbCgiYSdiIiwgVGFibGVFeHBvcnRlci5Fc2NhcGUoImEnYiIpKTsKICAgICAgICBBc3NlcnQuRXF1YWwoIlwiYSdiLGNcIiIsIFRhYmxlRXhwb3J0ZXIuRXNjYXBlKCJhJ2IsYyIpKTsKICAgICAgICBBc3NlcnQuRXF1YWwoIlwiYVwiXCJiLGNcIiIsIFRhYmxlRXhwb3J0ZXIuRXNjYXBlKCJhXCJiLGMiKSk7CiAgICB9CgogICAgLy8gLS0tLSBDb2x1bW4gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgogICAgW1RoZW9yeV0KICAgIFtJbmxpbmVEYXRhKDAsICJBIildCiAgICBbSW5saW5lRGF0YSgxLCAiQiIpXQogICAgW0lubGluZURhdGEoMjUsICJaIildCiAgICBbSW5saW5lRGF0YSgyNiwgIkFBIildCiAgICBbSW5saW5lRGF0YSgyNywgIkFCIildCiAgICBbSW5saW5lRGF0YSg1MSwgIkFaIildCiAgICBbSW5saW5lRGF0YSg1MiwgIkJBIildCiAgICBbSW5saW5lRGF0YSg3MDEsICJaWiIpXQogICAgW0lubGluZURhdGEoNzAyLCAiQUFBIildCiAgICBwdWJsaWMgdm9pZCBDb2x1bW5fTWFwc0luZGV4VG9FeGNlbENvbHVtbk5hbWUoaW50IGluZGV4LCBzdHJpbmcgZXhwZWN0ZWQpCiAgICAgICAgPT4gQXNzZXJ0LkVxdWFsKGV4cGVjdGVkLCBUYWJsZUV4cG9ydGVyLkNvbHVtbihpbmRleCkpOwoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgQ29sdW1uX1Byb2R1Y2VzVW5pcXVlTmFtZXNGb3JUaGVGaXJzdFRob3VzYW5kQ29sdW1ucygpCiAgICB7CiAgICAgICAgdmFyIG5hbWVzID0gRW51bWVyYWJsZS5SYW5nZSgwLCAxMDAwKS5TZWxlY3QoVGFibGVFeHBvcnRlci5Db2x1bW4pLlRvQXJyYXkoKTsKCiAgICAgICAgQXNzZXJ0LkVxdWFsKG5hbWVzLkxlbmd0aCwgbmFtZXMuRGlzdGluY3QoU3RyaW5nQ29tcGFyZXIuT3JkaW5hbCkuQ291bnQoKSk7CiAgICB9CgogICAgLy8gLS0tLSBTYWZlU2hlZXROYW1lIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgogICAgW1RoZW9yeV0KICAgIFtJbmxpbmVEYXRhKCJTaGVldDEiLCAiU2hlZXQxIildCiAgICBbSW5saW5lRGF0YSgi5omr5o+P57uT5p6cIiwgIuaJq+aPj+e7k+aenCIpXQogICAgW0lubGluZURhdGEoImE6YlxcYy9kP2UqZltnXWgiLCAiYWJjZGVmZ2giKV0KICAgIFtJbmxpbmVEYXRhKCIyMDI2OjA4OjEyIiwgIjIwMjYwODEyIildCiAgICBbSW5saW5lRGF0YSgiIiwgIlNoZWV0MSIpXQogICAgW0lubGluZURhdGEoIiAgICIsICJTaGVldDEiKV0KICAgIFtJbmxpbmVEYXRhKCI6IiwgIlNoZWV0MSIpXQogICAgW0lubGluZURhdGEoIltdPyoiLCAiU2hlZXQxIildCiAgICBbSW5saW5lRGF0YShudWxsLCAiU2hlZXQxIildCiAgICBwdWJsaWMgdm9pZCBTYWZlU2hlZXROYW1lX1N0cmlwc0ZvcmJpZGRlbkNoYXJhY3RlcnMoc3RyaW5nPyBuYW1lLCBzdHJpbmcgZXhwZWN0ZWQpCiAgICAgICAgPT4gQXNzZXJ0LkVxdWFsKGV4cGVjdGVkLCBUYWJsZUV4cG9ydGVyLlNhZmVTaGVldE5hbWUobmFtZSkpOwoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgU2FmZVNoZWV0TmFtZV9UcnVuY2F0ZXNUbzMxQ2hhcmFjdGVycygpCiAgICB7CiAgICAgICAgdmFyIGV4YWN0bHkzMSA9IG5ldyBzdHJpbmcoJ+WtlycsIDMxKTsKICAgICAgICB2YXIgdG9vTG9uZyA9IG5ldyBzdHJpbmcoJ+WtlycsIDQwKTsKCiAgICAgICAgQXNzZXJ0LkVxdWFsKDMxLCBUYWJsZUV4cG9ydGVyLlNhZmVTaGVldE5hbWUoZXhhY3RseTMxKS5MZW5ndGgpOwogICAgICAgIEFzc2VydC5FcXVhbChleGFjdGx5MzEsIFRhYmxlRXhwb3J0ZXIuU2FmZVNoZWV0TmFtZShleGFjdGx5MzEpKTsKICAgICAgICBBc3NlcnQuRXF1YWwoMzEsIFRhYmxlRXhwb3J0ZXIuU2FmZVNoZWV0TmFtZSh0b29Mb25nKS5MZW5ndGgpOwogICAgICAgIEFzc2VydC5FcXVhbChuZXcgc3RyaW5nKCflrZcnLCAzMSksIFRhYmxlRXhwb3J0ZXIuU2FmZVNoZWV0TmFtZSh0b29Mb25nKSk7CiAgICB9CgogICAgLy8gLS0tLSBCdWlsZEZpbGVOYW1lIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBCdWlsZEZpbGVOYW1lX1VzZXNUaGVPcmlnaW5hbFRpbWVzdGFtcGVkQ29udmVudGlvbigpCiAgICB7CiAgICAgICAgdmFyIHN0YW1wID0gbmV3IERhdGVUaW1lKDIwMjYsIDgsIDEyLCAxNywgNDgsIDI4KTsKCiAgICAgICAgQXNzZXJ0LkVxdWFsKCJJUOaJuemHj+aJq+aPjy0yMDI2MDgxMjE3NDgyOC5jc3YiLCBUYWJsZUV4cG9ydGVyLkJ1aWxkRmlsZU5hbWUoIklQ5om56YeP5omr5o+PIiwgIi5jc3YiLCBzdGFtcCkpOwogICAgICAgIEFzc2VydC5FcXVhbCgi5a+85Ye6LTIwMjYwODEyMTc0ODI4Lnhsc3giLCBUYWJsZUV4cG9ydGVyLkJ1aWxkRmlsZU5hbWUoIuWvvOWHuiIsICJ4bHN4Iiwgc3RhbXApKTsKICAgICAgICBBc3NlcnQuRXF1YWwoIuebruagh+err+WPo+aJq+aPjy0yMDI2MDgxMjE3NDgyOC5jc3YiLCBUYWJsZUV4cG9ydGVyLkJ1aWxkRmlsZU5hbWUoIuebruagh+err+WPo+aJq+aPjyIsICIuY3N2Iiwgc3RhbXApKTsKICAgIH0KCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIEJ1aWxkRmlsZU5hbWVfRGVmYXVsdHNUb05vdygpCiAgICB7CiAgICAgICAgdmFyIG5hbWUgPSBUYWJsZUV4cG9ydGVyLkJ1aWxkRmlsZU5hbWUoIklQ5om56YeP5omr5o+PIiwgIi5jc3YiKTsKCiAgICAgICAgQXNzZXJ0Lk1hdGNoZXMobmV3IFJlZ2V4KEAiXklQ5om56YeP5omr5o+PLVxkezE0fVwuY3N2JCIpLCBuYW1lKTsKICAgIH0KCiAgICAvLyAtLS0tIFdyaXRlQ3N2IC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIFdyaXRlQ3N2X1dyaXRlc1V0ZjhCb21IZWFkZXJzQW5kRXNjYXBlZFJvd3MoKQogICAgewogICAgICAgIHVzaW5nIHZhciB3b3Jrc3BhY2UgPSBuZXcgVGVtcFdvcmtzcGFjZSgpOwogICAgICAgIHZhciBwYXRoID0gd29ya3NwYWNlLlBhdGhGb3IoIm91dC5jc3YiKTsKICAgICAgICB2YXIgaGVhZGVycyA9IG5ld1tdIHsgIklQ5Zyw5Z2AIiwgIuWkh+azqCIgfTsKICAgICAgICB2YXIgcm93cyA9IG5ldyBMaXN0PElSZWFkT25seUxpc3Q8c3RyaW5nPj4KICAgICAgICB7CiAgICAgICAgICAgIG5ld1tdIHsgIjE5Mi4xNjguMS4xMCIsICLmnIks6YCX5Y+3IiB9LAogICAgICAgICAgICBuZXdbXSB7ICIxOTIuMTY4LjEuMTEiLCAic2F5IFwiaGlcIiIgfSwKICAgICAgICB9OwoKICAgICAgICBUYWJsZUV4cG9ydGVyLldyaXRlQ3N2KHBhdGgsIGhlYWRlcnMsIHJvd3MpOwoKICAgICAgICB2YXIgYnl0ZXMgPSBGaWxlLlJlYWRBbGxCeXRlcyhwYXRoKTsKICAgICAgICBBc3NlcnQuRXF1YWwobmV3IGJ5dGVbXSB7IDB4RUYsIDB4QkIsIDB4QkYgfSwgYnl0ZXMuVGFrZSgzKSk7CgogICAgICAgIHZhciBsaW5lcyA9IEZpbGUuUmVhZEFsbFRleHQocGF0aCwgRW5jb2RpbmcuVVRGOCkuU3BsaXQoIlxyXG4iLCBTdHJpbmdTcGxpdE9wdGlvbnMuUmVtb3ZlRW1wdHlFbnRyaWVzKTsKICAgICAgICBBc3NlcnQuRXF1YWwoMywgbGluZXMuTGVuZ3RoKTsKICAgICAgICBBc3NlcnQuRXF1YWwoIklQ5Zyw5Z2ALOWkh+azqCIsIGxpbmVzWzBdKTsKICAgICAgICBBc3NlcnQuRXF1YWwoIjE5Mi4xNjguMS4xMCxcIuaciSzpgJflj7dcIiIsIGxpbmVzWzFdKTsKICAgICAgICBBc3NlcnQuRXF1YWwoIjE5Mi4xNjguMS4xMSxcInNheSBcIlwiaGlcIlwiXCIiLCBsaW5lc1syXSk7CiAgICB9CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBXcml0ZUNzdl9DYW5PbWl0VGhlQm9tKCkKICAgIHsKICAgICAgICB1c2luZyB2YXIgd29ya3NwYWNlID0gbmV3IFRlbXBXb3Jrc3BhY2UoKTsKICAgICAgICB2YXIgcGF0aCA9IHdvcmtzcGFjZS5QYXRoRm9yKCJuby1ib20uY3N2Iik7CgogICAgICAgIFRhYmxlRXhwb3J0ZXIuV3JpdGVDc3YocGF0aCwgWyJJUOWcsOWdgCJdLCBbXSwgd2l0aEJvbTogZmFsc2UpOwoKICAgICAgICB2YXIgYnl0ZXMgPSBGaWxlLlJlYWRBbGxCeXRlcyhwYXRoKTsKICAgICAgICBBc3NlcnQuTm90RXF1YWwoKGJ5dGUpMHhFRiwgYnl0ZXNbMF0pOwogICAgICAgIEFzc2VydC5FcXVhbCgoYnl0ZSknSScsIGJ5dGVzWzBdKTsKICAgIH0KCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIFdyaXRlQ3N2X0NyZWF0ZXNNaXNzaW5nRGlyZWN0b3JpZXMoKQogICAgewogICAgICAgIHVzaW5nIHZhciB3b3Jrc3BhY2UgPSBuZXcgVGVtcFdvcmtzcGFjZSgpOwogICAgICAgIHZhciBwYXRoID0gUGF0aC5Db21iaW5lKHdvcmtzcGFjZS5Sb290LCAiZXhwb3J0cyIsICIyMDI2IiwgIm91dC5jc3YiKTsKCiAgICAgICAgVGFibGVFeHBvcnRlci5Xcml0ZUNzdihwYXRoLCBbIkEiXSwgW10pOwoKICAgICAgICBBc3NlcnQuVHJ1ZShGaWxlLkV4aXN0cyhwYXRoKSk7CiAgICB9CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBXcml0ZUNzdl9OZXdsaW5lc0luc2lkZUFWYWx1ZV9Eb05vdEJyZWFrVGhlUXVvdGluZygpCiAgICB7CiAgICAgICAgdXNpbmcgdmFyIHdvcmtzcGFjZSA9IG5ldyBUZW1wV29ya3NwYWNlKCk7CiAgICAgICAgdmFyIHBhdGggPSB3b3Jrc3BhY2UuUGF0aEZvcigibXVsdGlsaW5lLmNzdiIpOwoKICAgICAgICBUYWJsZUV4cG9ydGVyLldyaXRlQ3N2KHBhdGgsIFsi5aSH5rOoIl0sIFtuZXdbXSB7ICLkuIpcbuS4iyIgfV0pOwoKICAgICAgICBBc3NlcnQuQ29udGFpbnMoIlwi5LiKXG7kuItcIiIsIEZpbGUuUmVhZEFsbFRleHQocGF0aCwgRW5jb2RpbmcuVVRGOCkpOwogICAgfQoKICAgIC8vIC0tLS0gV3JpdGVYbHN4IC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgV3JpdGVYbHN4X1Byb2R1Y2VzQVZhbGlkUGFja2FnZVdpdGhUaGVFeHBlY3RlZFBhcnRzKCkKICAgIHsKICAgICAgICB1c2luZyB2YXIgd29ya3NwYWNlID0gbmV3IFRlbXBXb3Jrc3BhY2UoKTsKICAgICAgICB2YXIgcGF0aCA9IHdvcmtzcGFjZS5QYXRoRm9yKCJzYW1wbGUueGxzeCIpOwoKICAgICAgICBXcml0ZVNhbXBsZVdvcmtib29rKHBhdGgpOwoKICAgICAgICB1c2luZyB2YXIgemlwID0gWmlwRmlsZS5PcGVuUmVhZChwYXRoKTsKICAgICAgICB2YXIgbmFtZXMgPSB6aXAuRW50cmllcy5TZWxlY3QoZSA9PiBlLkZ1bGxOYW1lKS5Ub0xpc3QoKTsKCiAgICAgICAgQXNzZXJ0LkNvbnRhaW5zKCJbQ29udGVudF9UeXBlc10ueG1sIiwgbmFtZXMpOwogICAgICAgIEFzc2VydC5Db250YWlucygiX3JlbHMvLnJlbHMiLCBuYW1lcyk7CiAgICAgICAgQXNzZXJ0LkNvbnRhaW5zKCJ4bC93b3JrYm9vay54bWwiLCBuYW1lcyk7CiAgICAgICAgQXNzZXJ0LkNvbnRhaW5zKCJ4bC9fcmVscy93b3JrYm9vay54bWwucmVscyIsIG5hbWVzKTsKICAgICAgICBBc3NlcnQuQ29udGFpbnMoInhsL3dvcmtzaGVldHMvc2hlZXQxLnhtbCIsIG5hbWVzKTsKICAgIH0KCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIFdyaXRlWGxzeF9TaGVldFhtbENvbnRhaW5zSGVhZGVyc1ZhbHVlc0FuZE51bWJlcnMoKQogICAgewogICAgICAgIHVzaW5nIHZhciB3b3Jrc3BhY2UgPSBuZXcgVGVtcFdvcmtzcGFjZSgpOwogICAgICAgIHZhciBwYXRoID0gd29ya3NwYWNlLlBhdGhGb3IoInNhbXBsZS54bHN4Iik7CgogICAgICAgIFdyaXRlU2FtcGxlV29ya2Jvb2socGF0aCk7CgogICAgICAgIHZhciBzaGVldCA9IFJlYWRFbnRyeShwYXRoLCAieGwvd29ya3NoZWV0cy9zaGVldDEueG1sIik7CgogICAgICAgIC8vIEhlYWRlcnMsIGlubGluZSBzdHJpbmdzIGFuZCBhIHJlYWwgbnVtZXJpYyBjZWxsLgogICAgICAgIEFzc2VydC5Db250YWlucygidD1cImlubGluZVN0clwiIiwgc2hlZXQpOwogICAgICAgIEFzc2VydC5Db250YWlucygiPklQ5Zyw5Z2APCIsIHNoZWV0KTsKICAgICAgICBBc3NlcnQuQ29udGFpbnMoIj5NQUPlnLDlnYA8Iiwgc2hlZXQpOwogICAgICAgIEFzc2VydC5Db250YWlucygiPuWkh+azqDwiLCBzaGVldCk7CiAgICAgICAgQXNzZXJ0LkNvbnRhaW5zKCI+MTkyLjE2OC4xLjEwPCIsIHNoZWV0KTsKICAgICAgICBBc3NlcnQuQ29udGFpbnMoIjxjIHI9XCJCMlwiPjx2PjgwPC92PjwvYz4iLCBzaGVldCk7CiAgICAgICAgQXNzZXJ0LkNvbnRhaW5zKCImbHQ75pyN5YqhJmd0OyIsIHNoZWV0KTsgICAvLyBYTUwtZXNjYXBlZCB2YWx1ZQogICAgICAgIEFzc2VydC5Db250YWlucygicj1cIkExXCIiLCBzaGVldCk7CgogICAgICAgIC8vIFRoZSBwYXJ0IG11c3QgYmUgd2VsbC1mb3JtZWQgWE1MLCBub3QganVzdCBhIHN0cmluZyB0aGF0IGxvb2tzIGxpa2UgaXQuCiAgICAgICAgdmFyIGRvY3VtZW50ID0gWERvY3VtZW50LlBhcnNlKHNoZWV0KTsKICAgICAgICBBc3NlcnQuRXF1YWwoIndvcmtzaGVldCIsIGRvY3VtZW50LlJvb3QhLk5hbWUuTG9jYWxOYW1lKTsKICAgICAgICBBc3NlcnQuRXF1YWwoNCwgZG9jdW1lbnQuUm9vdCEuRWxlbWVudChYTmFtZS5HZXQoInNoZWV0RGF0YSIsIGRvY3VtZW50LlJvb3QuTmFtZS5OYW1lc3BhY2VOYW1lKSkhLkVsZW1lbnRzKCkuQ291bnQoKSk7CiAgICB9CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBXcml0ZVhsc3hfUGFydHNBcmVBbGxXZWxsRm9ybWVkWG1sKCkKICAgIHsKICAgICAgICB1c2luZyB2YXIgd29ya3NwYWNlID0gbmV3IFRlbXBXb3Jrc3BhY2UoKTsKICAgICAgICB2YXIgcGF0aCA9IHdvcmtzcGFjZS5QYXRoRm9yKCJzYW1wbGUueGxzeCIpOwoKICAgICAgICBXcml0ZVNhbXBsZVdvcmtib29rKHBhdGgpOwoKICAgICAgICBmb3JlYWNoICh2YXIgcGFydCBpbiBuZXdbXSB7ICJbQ29udGVudF9UeXBlc10ueG1sIiwgIl9yZWxzLy5yZWxzIiwgInhsL3dvcmtib29rLnhtbCIsICJ4bC9fcmVscy93b3JrYm9vay54bWwucmVscyIgfSkKICAgICAgICB7CiAgICAgICAgICAgIHZhciBkb2N1bWVudCA9IFhEb2N1bWVudC5QYXJzZShSZWFkRW50cnkocGF0aCwgcGFydCkpOwogICAgICAgICAgICBBc3NlcnQuTm90TnVsbChkb2N1bWVudC5Sb290KTsKICAgICAgICB9CiAgICB9CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBXcml0ZVhsc3hfV29ya2Jvb2tTaGVldE5hbWVJc1Nhbml0aXNlZCgpCiAgICB7CiAgICAgICAgdXNpbmcgdmFyIHdvcmtzcGFjZSA9IG5ldyBUZW1wV29ya3NwYWNlKCk7CiAgICAgICAgdmFyIHBhdGggPSB3b3Jrc3BhY2UuUGF0aEZvcigic2FtcGxlLnhsc3giKTsKCiAgICAgICAgVGFibGVFeHBvcnRlci5Xcml0ZVhsc3gocGF0aCwgIuaJq+aPj+e7k+aenDoyMDI2Kls/XSIsIFsiSVDlnLDlnYAiXSwgW10pOwoKICAgICAgICB2YXIgd29ya2Jvb2sgPSBSZWFkRW50cnkocGF0aCwgInhsL3dvcmtib29rLnhtbCIpOwogICAgICAgIEFzc2VydC5Db250YWlucygibmFtZT1cIuaJq+aPj+e7k+aenDIwMjZcIiIsIHdvcmtib29rKTsKICAgIH0KCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIFdyaXRlWGxzeF9PdmVyd3JpdGVzQW5FeGlzdGluZ0ZpbGUoKQogICAgewogICAgICAgIHVzaW5nIHZhciB3b3Jrc3BhY2UgPSBuZXcgVGVtcFdvcmtzcGFjZSgpOwogICAgICAgIHZhciBwYXRoID0gd29ya3NwYWNlLlBhdGhGb3IoInNhbXBsZS54bHN4Iik7CiAgICAgICAgRmlsZS5Xcml0ZUFsbFRleHQocGF0aCwgIm5vdCBhIHdvcmtib29rIik7CgogICAgICAgIFdyaXRlU2FtcGxlV29ya2Jvb2socGF0aCk7CgogICAgICAgIHVzaW5nIHZhciB6aXAgPSBaaXBGaWxlLk9wZW5SZWFkKHBhdGgpOwogICAgICAgIEFzc2VydC5Db250YWlucyh6aXAuRW50cmllcywgZSA9PiBlLkZ1bGxOYW1lID09ICJ4bC93b3Jrc2hlZXRzL3NoZWV0MS54bWwiKTsKICAgIH0KCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIFdyaXRlWGxzeF9DcmVhdGVzTWlzc2luZ0RpcmVjdG9yaWVzKCkKICAgIHsKICAgICAgICB1c2luZyB2YXIgd29ya3NwYWNlID0gbmV3IFRlbXBXb3Jrc3BhY2UoKTsKICAgICAgICB2YXIgcGF0aCA9IFBhdGguQ29tYmluZSh3b3Jrc3BhY2UuUm9vdCwgImV4cG9ydHMiLCAib3V0Lnhsc3giKTsKCiAgICAgICAgVGFibGVFeHBvcnRlci5Xcml0ZVhsc3gocGF0aCwgIlNoZWV0MSIsIFsiQSJdLCBbXSk7CgogICAgICAgIEFzc2VydC5UcnVlKEZpbGUuRXhpc3RzKHBhdGgpKTsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+CiAgICAvLy8gS2VlcHMgYSBjYW5vbmljYWwgd29ya2Jvb2sgaW4gdGhlIHRlc3Qgb3V0cHV0IGZvbGRlciBzbyB0aGUgYnVuZGxlZCBQeXRob24KICAgIC8vLyArIG9wZW5weXhsIGNhbiBiZSBwb2ludGVkIGF0IHRoZSBleGFjdCBieXRlcyB0aGUgbGlicmFyeSB3cm90ZS4gVGhpcyBpcyB0aGUKICAgIC8vLyBvdXQtb2YtcHJvY2VzcyBwcm9vZiB0aGF0IEV4Y2VsIGNhbiBvcGVuIHRoZSBmaWxlLgogICAgLy8vIDwvc3VtbWFyeT4KICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgV3JpdGVYbHN4X0xlYXZlc0FTYW1wbGVGb3JUaGVPcGVucHl4bFJvdW5kVHJpcCgpCiAgICB7CiAgICAgICAgdmFyIGFydGlmYWN0ID0gUGF0aC5Db21iaW5lKFRlbXBXb3Jrc3BhY2UuQXJ0aWZhY3RzRGlyLCBPcGVucHl4bFNhbXBsZU5hbWUpOwoKICAgICAgICBXcml0ZVNhbXBsZVdvcmtib29rKGFydGlmYWN0KTsKCiAgICAgICAgQXNzZXJ0LlRydWUoRmlsZS5FeGlzdHMoYXJ0aWZhY3QpKTsKICAgIH0KCiAgICAvLyAtLS0tIGhlbHBlcnMgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCiAgICBwcml2YXRlIHN0YXRpYyB2b2lkIFdyaXRlU2FtcGxlV29ya2Jvb2soc3RyaW5nIHBhdGgpCiAgICB7CiAgICAgICAgdmFyIGhlYWRlcnMgPSBuZXdbXSB7ICJJUOWcsOWdgCIsICJNQUPlnLDlnYAiLCAi5aSH5rOoIiB9OwogICAgICAgIHZhciByb3dzID0gbmV3IExpc3Q8SVJlYWRPbmx5TGlzdDxzdHJpbmc+PgogICAgICAgIHsKICAgICAgICAgICAgbmV3W10geyAiMTkyLjE2OC4xLjEwIiwgIjgwIiwgIkhUVFAiIH0sCiAgICAgICAgICAgIG5ld1tdIHsgIjE5Mi4xNjguMS4xMSIsICI0NDUiLCAiTWljcm9zb2Z0LURTIiB9LAogICAgICAgICAgICBuZXdbXSB7ICIxOTIuMTY4LjEuMTIiLCAiMCIsICLmnKrnn6UgPOacjeWKoT4iIH0sCiAgICAgICAgfTsKCiAgICAgICAgVGFibGVFeHBvcnRlci5Xcml0ZVhsc3gocGF0aCwgIuaJq+aPj+e7k+aenCIsIGhlYWRlcnMsIHJvd3MpOwogICAgfQoKICAgIHByaXZhdGUgc3RhdGljIHN0cmluZyBSZWFkRW50cnkoc3RyaW5nIHhsc3hQYXRoLCBzdHJpbmcgZW50cnlOYW1lKQogICAgewogICAgICAgIHVzaW5nIHZhciB6aXAgPSBaaXBGaWxlLk9wZW5SZWFkKHhsc3hQYXRoKTsKICAgICAgICB2YXIgZW50cnkgPSB6aXAuR2V0RW50cnkoZW50cnlOYW1lKTsKICAgICAgICBBc3NlcnQuTm90TnVsbChlbnRyeSk7CgogICAgICAgIHVzaW5nIHZhciBzdHJlYW0gPSBlbnRyeSEuT3BlbigpOwogICAgICAgIHVzaW5nIHZhciByZWFkZXIgPSBuZXcgU3RyZWFtUmVhZGVyKHN0cmVhbSwgRW5jb2RpbmcuVVRGOCk7CiAgICAgICAgcmV0dXJuIHJlYWRlci5SZWFkVG9FbmQoKTsKICAgIH0KfQo=
+using Xunit;
+using System.IO.Compression;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Xml.Linq;
+using IPScaner.Core.Export;
+
+namespace IPScaner.Core.Tests;
+
+/// <summary>
+/// Coverage for <see cref="TableExporter"/> — CSV escaping, the original file-name
+/// convention, and the hand-built .xlsx package.
+/// </summary>
+public class TableExporterTests
+{
+    /// <summary>Name of the workbook kept in the test output folder for the openpyxl check.</summary>
+    public const string OpenpyxlSampleName = "export-sample.xlsx";
+
+    // ---- Escape ------------------------------------------------------------
+
+    [Theory]
+    [InlineData("abc", "abc")]
+    [InlineData("", "")]
+    [InlineData(null, "")]
+    [InlineData("192.168.1.10", "192.168.1.10")]
+    [InlineData("有,逗号", "\"有,逗号\"")]
+    [InlineData("say \"hi\"", "\"say \"\"hi\"\"\"")]
+    [InlineData("line1\nline2", "\"line1\nline2\"")]
+    [InlineData("line1\r\nline2", "\"line1\r\nline2\"")]
+    [InlineData("trailing\r", "\"trailing\r\"")]
+    [InlineData(" leading and trailing ", " leading and trailing ")]
+    public void Escape_QuotesPerRfc4180(string? value, string expected)
+        => Assert.Equal(expected, TableExporter.Escape(value));
+
+    [Fact]
+    public void Escape_OnlyDoublesQuotesInsideAQuotedField()
+    {
+        Assert.Equal("\"a\"\"b\"", TableExporter.Escape("a\"b"));
+        Assert.Equal("a'b", TableExporter.Escape("a'b"));
+        Assert.Equal("\"a'b,c\"", TableExporter.Escape("a'b,c"));
+        Assert.Equal("\"a\"\"b,c\"", TableExporter.Escape("a\"b,c"));
+    }
+
+    // ---- Column ------------------------------------------------------------
+
+    [Theory]
+    [InlineData(0, "A")]
+    [InlineData(1, "B")]
+    [InlineData(25, "Z")]
+    [InlineData(26, "AA")]
+    [InlineData(27, "AB")]
+    [InlineData(51, "AZ")]
+    [InlineData(52, "BA")]
+    [InlineData(701, "ZZ")]
+    [InlineData(702, "AAA")]
+    public void Column_MapsIndexToExcelColumnName(int index, string expected)
+        => Assert.Equal(expected, TableExporter.Column(index));
+
+    [Fact]
+    public void Column_ProducesUniqueNamesForTheFirstThousandColumns()
+    {
+        var names = Enumerable.Range(0, 1000).Select(TableExporter.Column).ToArray();
+
+        Assert.Equal(names.Length, names.Distinct(StringComparer.Ordinal).Count());
+    }
+
+    // ---- SafeSheetName -----------------------------------------------------
+
+    [Theory]
+    [InlineData("Sheet1", "Sheet1")]
+    [InlineData("扫描结果", "扫描结果")]
+    [InlineData("a:b\\c/d?e*f[g]h", "abcdefgh")]
+    [InlineData("2026:08:12", "20260812")]
+    [InlineData("", "Sheet1")]
+    [InlineData("   ", "Sheet1")]
+    [InlineData(":", "Sheet1")]
+    [InlineData("[]?*", "Sheet1")]
+    [InlineData(null, "Sheet1")]
+    public void SafeSheetName_StripsForbiddenCharacters(string? name, string expected)
+        => Assert.Equal(expected, TableExporter.SafeSheetName(name));
+
+    [Fact]
+    public void SafeSheetName_TruncatesTo31Characters()
+    {
+        var exactly31 = new string('字', 31);
+        var tooLong = new string('字', 40);
+
+        Assert.Equal(31, TableExporter.SafeSheetName(exactly31).Length);
+        Assert.Equal(exactly31, TableExporter.SafeSheetName(exactly31));
+        Assert.Equal(31, TableExporter.SafeSheetName(tooLong).Length);
+        Assert.Equal(new string('字', 31), TableExporter.SafeSheetName(tooLong));
+    }
+
+    // ---- BuildFileName -----------------------------------------------------
+
+    [Fact]
+    public void BuildFileName_UsesTheOriginalTimestampedConvention()
+    {
+        var stamp = new DateTime(2026, 8, 12, 17, 48, 28);
+
+        Assert.Equal("IP批量扫描-20260812174828.csv", TableExporter.BuildFileName("IP批量扫描", ".csv", stamp));
+        Assert.Equal("导出-20260812174828.xlsx", TableExporter.BuildFileName("导出", "xlsx", stamp));
+        Assert.Equal("目标端口扫描-20260812174828.csv", TableExporter.BuildFileName("目标端口扫描", ".csv", stamp));
+    }
+
+    [Fact]
+    public void BuildFileName_DefaultsToNow()
+    {
+        var name = TableExporter.BuildFileName("IP批量扫描", ".csv");
+
+        Assert.Matches(new Regex(@"^IP批量扫描-\d{14}\.csv$"), name);
+    }
+
+    // ---- WriteCsv ----------------------------------------------------------
+
+    [Fact]
+    public void WriteCsv_WritesUtf8BomHeadersAndEscapedRows()
+    {
+        using var workspace = new TempWorkspace();
+        var path = workspace.PathFor("out.csv");
+        var headers = new[] { "IP地址", "备注" };
+        var rows = new List<IReadOnlyList<string>>
+        {
+            new[] { "192.168.1.10", "有,逗号" },
+            new[] { "192.168.1.11", "say \"hi\"" },
+        };
+
+        TableExporter.WriteCsv(path, headers, rows);
+
+        var bytes = File.ReadAllBytes(path);
+        Assert.Equal(new byte[] { 0xEF, 0xBB, 0xBF }, bytes.Take(3));
+
+        var lines = File.ReadAllText(path, Encoding.UTF8).Split("\r\n", StringSplitOptions.RemoveEmptyEntries);
+        Assert.Equal(3, lines.Length);
+        Assert.Equal("IP地址,备注", lines[0]);
+        Assert.Equal("192.168.1.10,\"有,逗号\"", lines[1]);
+        Assert.Equal("192.168.1.11,\"say \"\"hi\"\"\"", lines[2]);
+    }
+
+    [Fact]
+    public void WriteCsv_CanOmitTheBom()
+    {
+        using var workspace = new TempWorkspace();
+        var path = workspace.PathFor("no-bom.csv");
+
+        TableExporter.WriteCsv(path, ["IP地址"], [], withBom: false);
+
+        var bytes = File.ReadAllBytes(path);
+        Assert.NotEqual((byte)0xEF, bytes[0]);
+        Assert.Equal((byte)'I', bytes[0]);
+    }
+
+    [Fact]
+    public void WriteCsv_CreatesMissingDirectories()
+    {
+        using var workspace = new TempWorkspace();
+        var path = Path.Combine(workspace.Root, "exports", "2026", "out.csv");
+
+        TableExporter.WriteCsv(path, ["A"], []);
+
+        Assert.True(File.Exists(path));
+    }
+
+    [Fact]
+    public void WriteCsv_NewlinesInsideAValue_DoNotBreakTheQuoting()
+    {
+        using var workspace = new TempWorkspace();
+        var path = workspace.PathFor("multiline.csv");
+
+        TableExporter.WriteCsv(path, ["备注"], [new[] { "上\n下" }]);
+
+        Assert.Contains("\"上\n下\"", File.ReadAllText(path, Encoding.UTF8));
+    }
+
+    // ---- WriteXlsx ---------------------------------------------------------
+
+    [Fact]
+    public void WriteXlsx_ProducesAValidPackageWithTheExpectedParts()
+    {
+        using var workspace = new TempWorkspace();
+        var path = workspace.PathFor("sample.xlsx");
+
+        WriteSampleWorkbook(path);
+
+        using var zip = ZipFile.OpenRead(path);
+        var names = zip.Entries.Select(e => e.FullName).ToList();
+
+        Assert.Contains("[Content_Types].xml", names);
+        Assert.Contains("_rels/.rels", names);
+        Assert.Contains("xl/workbook.xml", names);
+        Assert.Contains("xl/_rels/workbook.xml.rels", names);
+        Assert.Contains("xl/worksheets/sheet1.xml", names);
+    }
+
+    [Fact]
+    public void WriteXlsx_SheetXmlContainsHeadersValuesAndNumbers()
+    {
+        using var workspace = new TempWorkspace();
+        var path = workspace.PathFor("sample.xlsx");
+
+        WriteSampleWorkbook(path);
+
+        var sheet = ReadEntry(path, "xl/worksheets/sheet1.xml");
+
+        // Headers, inline strings and a real numeric cell.
+        Assert.Contains("t=\"inlineStr\"", sheet);
+        Assert.Contains(">IP地址<", sheet);
+        Assert.Contains(">MAC地址<", sheet);
+        Assert.Contains(">备注<", sheet);
+        Assert.Contains(">192.168.1.10<", sheet);
+        Assert.Contains("<c r=\"B2\"><v>80</v></c>", sheet);
+        Assert.Contains("&lt;服务&gt;", sheet);   // XML-escaped value
+        Assert.Contains("r=\"A1\"", sheet);
+
+        // The part must be well-formed XML, not just a string that looks like it.
+        var document = XDocument.Parse(sheet);
+        Assert.Equal("worksheet", document.Root!.Name.LocalName);
+        Assert.Equal(4, document.Root!.Element(XName.Get("sheetData", document.Root.Name.NamespaceName))!.Elements().Count());
+    }
+
+    [Fact]
+    public void WriteXlsx_PartsAreAllWellFormedXml()
+    {
+        using var workspace = new TempWorkspace();
+        var path = workspace.PathFor("sample.xlsx");
+
+        WriteSampleWorkbook(path);
+
+        foreach (var part in new[] { "[Content_Types].xml", "_rels/.rels", "xl/workbook.xml", "xl/_rels/workbook.xml.rels" })
+        {
+            var document = XDocument.Parse(ReadEntry(path, part));
+            Assert.NotNull(document.Root);
+        }
+    }
+
+    [Fact]
+    public void WriteXlsx_WorkbookSheetNameIsSanitised()
+    {
+        using var workspace = new TempWorkspace();
+        var path = workspace.PathFor("sample.xlsx");
+
+        TableExporter.WriteXlsx(path, "扫描结果:2026*[?]", ["IP地址"], []);
+
+        var workbook = ReadEntry(path, "xl/workbook.xml");
+        Assert.Contains("name=\"扫描结果2026\"", workbook);
+    }
+
+    [Fact]
+    public void WriteXlsx_OverwritesAnExistingFile()
+    {
+        using var workspace = new TempWorkspace();
+        var path = workspace.PathFor("sample.xlsx");
+        File.WriteAllText(path, "not a workbook");
+
+        WriteSampleWorkbook(path);
+
+        using var zip = ZipFile.OpenRead(path);
+        Assert.Contains(zip.Entries, e => e.FullName == "xl/worksheets/sheet1.xml");
+    }
+
+    [Fact]
+    public void WriteXlsx_CreatesMissingDirectories()
+    {
+        using var workspace = new TempWorkspace();
+        var path = Path.Combine(workspace.Root, "exports", "out.xlsx");
+
+        TableExporter.WriteXlsx(path, "Sheet1", ["A"], []);
+
+        Assert.True(File.Exists(path));
+    }
+
+    /// <summary>
+    /// Keeps a canonical workbook in the test output folder so the bundled Python
+    /// + openpyxl can be pointed at the exact bytes the library wrote. This is the
+    /// out-of-process proof that Excel can open the file.
+    /// </summary>
+    [Fact]
+    public void WriteXlsx_LeavesASampleForTheOpenpyxlRoundTrip()
+    {
+        var artifact = Path.Combine(TempWorkspace.ArtifactsDir, OpenpyxlSampleName);
+
+        WriteSampleWorkbook(artifact);
+
+        Assert.True(File.Exists(artifact));
+    }
+
+    // ---- helpers -----------------------------------------------------------
+
+    private static void WriteSampleWorkbook(string path)
+    {
+        var headers = new[] { "IP地址", "MAC地址", "备注" };
+        var rows = new List<IReadOnlyList<string>>
+        {
+            new[] { "192.168.1.10", "80", "HTTP" },
+            new[] { "192.168.1.11", "445", "Microsoft-DS" },
+            new[] { "192.168.1.12", "0", "未知 <服务>" },
+        };
+
+        TableExporter.WriteXlsx(path, "扫描结果", headers, rows);
+    }
+
+    private static string ReadEntry(string xlsxPath, string entryName)
+    {
+        using var zip = ZipFile.OpenRead(xlsxPath);
+        var entry = zip.GetEntry(entryName);
+        Assert.NotNull(entry);
+
+        using var stream = entry!.Open();
+        using var reader = new StreamReader(stream, Encoding.UTF8);
+        return reader.ReadToEnd();
+    }
+}

@@ -1,1 +1,163 @@
-IiIiQ2FwdHVyZSBhIHRvcC1sZXZlbCB3aW5kb3cgdG8gYSBQTkcuCgpJTVBPUlRBTlQg4oCUIGRvIG5vdCB1c2UgUHJpbnRXaW5kb3cgb24gV2luVUkgMyAvIFdpbmRvd3MgQXBwIFNESyB3aW5kb3dzLgpNZWFzdXJlZCBkdXJpbmcgdGhpcyBwcm9qZWN0OiBgUHJpbnRXaW5kb3coaHduZCwgZGMsIFBXX1JFTkRFUkZVTExDT05URU5UKWAgb24gYQpXaW5VSSAzIHdpbmRvdyByZWxpYWJseSBraWxscyB0aGUgcHJvY2VzcyB3aXRoCgogICAgRmF0YWwgZXJyb3IuIFN5c3RlbS5BY2Nlc3NWaW9sYXRpb25FeGNlcHRpb24KCnJhaXNlZCBhdCB0aGUgbmV4dCBmcmFtZXdvcmsgZGlzcGF0Y2ggKHR5cGljYWxseSBgRnJhbWUuTmF2aWdhdGVgKSwgb2Z0ZW4gbWFueQpzZWNvbmRzIGFmdGVyIHRoZSBjYXB0dXJlLCB3aGljaCBtYWtlcyBpdCBsb29rIGxpa2UgYW4gdW5yZWxhdGVkIHBhZ2UgYnVnLiBUaGUKV2luVUkgY29tcG9zaXRvciBkb2VzIG5vdCBzdXBwb3J0IGJlaW5nIGFza2VkIHRvIHJlbmRlciBpbnRvIGEgZm9yZWlnbiBEQyB0aGlzCndheS4gSXQgd2FzIG1pc2RpYWdub3NlZCBhcyBhIHBhZ2UgZGVmZWN0IGF0IGxlYXN0IHR3aWNlIGJlZm9yZSBiZWluZyBpc29sYXRlZC4KClRoaXMgdG9vbCB0aGVyZWZvcmUgcmFpc2VzIHRoZSB3aW5kb3cgYW5kIGdyYWJzIGl0IG9mZiB0aGUgc2NyZWVuIHdpdGggQml0Qmx0LAp3aGljaCBpcyBzYWZlIHdoaWxlIHRoZSBkZXNrdG9wIGlzIHVubG9ja2VkIGFuZCBubyBvdGhlciB3aW5kb3cgY292ZXJzIGl0LiBQYXNzCi0tcHJpbnR3aW5kb3cgb25seSBmb3IgY2xhc3NpYyBHREkvSFdORCBhcHBzIChXaW4zMiwgV2luRm9ybXMpLCBuZXZlciBmb3IgV2luVUkuCgpVc2FnZToKICAgIHB5dGhvbiBncmFiX3dpbmRvdy5weSA8dGl0bGUtc3Vic3RyaW5nPiA8b3V0cHV0LnBuZz4gWy0tcHJpbnR3aW5kb3ddCiIiIgppbXBvcnQgY3R5cGVzCmltcG9ydCBjdHlwZXMud2ludHlwZXMgYXMgd3QKaW1wb3J0IHN5cwppbXBvcnQgdGltZQoKZnJvbSBQSUwgaW1wb3J0IEltYWdlLCBJbWFnZUdyYWIKCnVzZXIzMiA9IGN0eXBlcy53aW5kbGwudXNlcjMyCmdkaTMyID0gY3R5cGVzLndpbmRsbC5nZGkzMgp1c2VyMzIuU2V0UHJvY2Vzc0RQSUF3YXJlKCkKClNXX1JFU1RPUkUgPSA5ClBXX1JFTkRFUkZVTExDT05URU5UID0gMHgwMDAwMDAwMgpTUkNDT1BZID0gMHgwMENDMDAyMApESUJfUkdCX0NPTE9SUyA9IDAKCgpjbGFzcyBCSVRNQVBJTkZPSEVBREVSKGN0eXBlcy5TdHJ1Y3R1cmUpOgogICAgX2ZpZWxkc18gPSBbCiAgICAgICAgKCJiaVNpemUiLCB3dC5EV09SRCksCiAgICAgICAgKCJiaVdpZHRoIiwgY3R5cGVzLmNfbG9uZyksCiAgICAgICAgKCJiaUhlaWdodCIsIGN0eXBlcy5jX2xvbmcpLAogICAgICAgICgiYmlQbGFuZXMiLCB3dC5XT1JEKSwKICAgICAgICAoImJpQml0Q291bnQiLCB3dC5XT1JEKSwKICAgICAgICAoImJpQ29tcHJlc3Npb24iLCB3dC5EV09SRCksCiAgICAgICAgKCJiaVNpemVJbWFnZSIsIHd0LkRXT1JEKSwKICAgICAgICAoImJpWFBlbHNQZXJNZXRlciIsIGN0eXBlcy5jX2xvbmcpLAogICAgICAgICgiYmlZUGVsc1Blck1ldGVyIiwgY3R5cGVzLmNfbG9uZyksCiAgICAgICAgKCJiaUNsclVzZWQiLCB3dC5EV09SRCksCiAgICAgICAgKCJiaUNsckltcG9ydGFudCIsIHd0LkRXT1JEKSwKICAgIF0KCgpjbGFzcyBCSVRNQVBJTkZPKGN0eXBlcy5TdHJ1Y3R1cmUpOgogICAgX2ZpZWxkc18gPSBbKCJibWlIZWFkZXIiLCBCSVRNQVBJTkZPSEVBREVSKSwgKCJibWlDb2xvcnMiLCB3dC5EV09SRCAqIDMpXQoKCmRlZiBmaW5kX3dpbmRvdyhzdWJzdHI6IHN0cik6CiAgICBtYXRjaGVzID0gW10KCiAgICBAY3R5cGVzLldJTkZVTkNUWVBFKGN0eXBlcy5jX2Jvb2wsIHd0LkhXTkQsIHd0LkxQQVJBTSkKICAgIGRlZiBlbnVtX3Byb2MoaHduZCwgXyk6CiAgICAgICAgaWYgbm90IHVzZXIzMi5Jc1dpbmRvd1Zpc2libGUoaHduZCk6CiAgICAgICAgICAgIHJldHVybiBUcnVlCiAgICAgICAgbGVuZ3RoID0gdXNlcjMyLkdldFdpbmRvd1RleHRMZW5ndGhXKGh3bmQpCiAgICAgICAgaWYgbGVuZ3RoID09IDA6CiAgICAgICAgICAgIHJldHVybiBUcnVlCiAgICAgICAgYnVmID0gY3R5cGVzLmNyZWF0ZV91bmljb2RlX2J1ZmZlcihsZW5ndGggKyAxKQogICAgICAgIHVzZXIzMi5HZXRXaW5kb3dUZXh0Vyhod25kLCBidWYsIGxlbmd0aCArIDEpCiAgICAgICAgaWYgc3Vic3RyLmxvd2VyKCkgaW4gYnVmLnZhbHVlLmxvd2VyKCk6CiAgICAgICAgICAgIG1hdGNoZXMuYXBwZW5kKChod25kLCBidWYudmFsdWUpKQogICAgICAgIHJldHVybiBUcnVlCgogICAgdXNlcjMyLkVudW1XaW5kb3dzKGVudW1fcHJvYywgMCkKICAgIHJldHVybiBtYXRjaGVzCgoKZGVmIHdpbmRvd19yZWN0KGh3bmQpOgogICAgcmVjdCA9IHd0LlJFQ1QoKQogICAgaWYgbm90IHVzZXIzMi5HZXRXaW5kb3dSZWN0KGh3bmQsIGN0eXBlcy5ieXJlZihyZWN0KSk6CiAgICAgICAgcmV0dXJuIE5vbmUKICAgIGlmIHJlY3QucmlnaHQgPD0gcmVjdC5sZWZ0IG9yIHJlY3QuYm90dG9tIDw9IHJlY3QudG9wOgogICAgICAgIHJldHVybiBOb25lCiAgICByZXR1cm4gKHJlY3QubGVmdCwgcmVjdC50b3AsIHJlY3QucmlnaHQsIHJlY3QuYm90dG9tKQoKCmRlZiBjYXB0dXJlX3dpdGhfcHJpbnR3aW5kb3coaHduZCwgYm94LCBvdXRfcGF0aCk6CiAgICAiIiJHREkgY2FwdHVyZS4gU2FmZSBmb3IgV2luMzIvV2luRm9ybXMsIFVOU0FGRSBmb3IgV2luVUkgMyAoc2VlIG1vZHVsZSBkb2NzdHJpbmcpLiIiIgogICAgbGVmdCwgdG9wLCByaWdodCwgYm90dG9tID0gYm94CiAgICB3aWR0aCwgaGVpZ2h0ID0gcmlnaHQgLSBsZWZ0LCBib3R0b20gLSB0b3AKCiAgICB3aW5kb3dfZGMgPSB1c2VyMzIuR2V0V2luZG93REMoaHduZCkKICAgIG1lbV9kYyA9IGdkaTMyLkNyZWF0ZUNvbXBhdGlibGVEQyh3aW5kb3dfZGMpCiAgICBiaXRtYXAgPSBnZGkzMi5DcmVhdGVDb21wYXRpYmxlQml0bWFwKHdpbmRvd19kYywgd2lkdGgsIGhlaWdodCkKICAgIGdkaTMyLlNlbGVjdE9iamVjdChtZW1fZGMsIGJpdG1hcCkKCiAgICB1c2VyMzIuUHJpbnRXaW5kb3coaHduZCwgbWVtX2RjLCBQV19SRU5ERVJGVUxMQ09OVEVOVCkKCiAgICBpbmZvID0gQklUTUFQSU5GTygpCiAgICBpbmZvLmJtaUhlYWRlci5iaVNpemUgPSBjdHlwZXMuc2l6ZW9mKEJJVE1BUElORk9IRUFERVIpCiAgICBpbmZvLmJtaUhlYWRlci5iaVdpZHRoID0gd2lkdGgKICAgIGluZm8uYm1pSGVhZGVyLmJpSGVpZ2h0ID0gLWhlaWdodAogICAgaW5mby5ibWlIZWFkZXIuYmlQbGFuZXMgPSAxCiAgICBpbmZvLmJtaUhlYWRlci5iaUJpdENvdW50ID0gMzIKICAgIGluZm8uYm1pSGVhZGVyLmJpQ29tcHJlc3Npb24gPSAwCgogICAgYnVmZmVyID0gY3R5cGVzLmNyZWF0ZV9zdHJpbmdfYnVmZmVyKHdpZHRoICogaGVpZ2h0ICogNCkKICAgIGdkaTMyLkdldERJQml0cyhtZW1fZGMsIGJpdG1hcCwgMCwgaGVpZ2h0LCBidWZmZXIsIGN0eXBlcy5ieXJlZihpbmZvKSwgRElCX1JHQl9DT0xPUlMpCiAgICBJbWFnZS5mcm9tYnVmZmVyKCJSR0JBIiwgKHdpZHRoLCBoZWlnaHQpLCBidWZmZXIsICJyYXciLCAiQkdSQSIsIDAsIDEpLmNvbnZlcnQoIlJHQiIpLnNhdmUob3V0X3BhdGgpCgogICAgZ2RpMzIuRGVsZXRlT2JqZWN0KGJpdG1hcCkKICAgIGdkaTMyLkRlbGV0ZURDKG1lbV9kYykKICAgIHVzZXIzMi5SZWxlYXNlREMoaHduZCwgd2luZG93X2RjKQoKCmRlZiBjYXB0dXJlX2Zyb21fc2NyZWVuKGh3bmQsIGJveCwgb3V0X3BhdGgpOgogICAgIiIiUmFpc2UgdGhlIHdpbmRvdywgdGhlbiBncmFiIGl0cyBzY3JlZW4gcmVnaW9uLiBTYWZlIGZvciBXaW5VSSAzLiIiIgogICAgdXNlcjMyLlNob3dXaW5kb3coaHduZCwgU1dfUkVTVE9SRSkKICAgIHVzZXIzMi5TZXRGb3JlZ3JvdW5kV2luZG93KGh3bmQpCiAgICB0aW1lLnNsZWVwKDEuMikKCiAgICAjIFJlLXJlYWQgdGhlIHJlY3QgYWZ0ZXIgcmVzdG9yaW5nOiBhIG1pbmltaXNlZCB3aW5kb3cncyByZWN0IGlzIGJvZ3VzLgogICAgYm94ID0gd2luZG93X3JlY3QoaHduZCkgb3IgYm94CiAgICBJbWFnZUdyYWIuZ3JhYihiYm94PWJveCwgYWxsX3NjcmVlbnM9VHJ1ZSkuc2F2ZShvdXRfcGF0aCkKICAgIHJldHVybiBib3gKCgpkZWYgbWFpbigpIC0+IGludDoKICAgIGFyZ3MgPSBbYSBmb3IgYSBpbiBzeXMuYXJndlsxOl0gaWYgbm90IGEuc3RhcnRzd2l0aCgiLS0iKV0KICAgIHVzZV9wcmludHdpbmRvdyA9ICItLXByaW50d2luZG93IiBpbiBzeXMuYXJndgoKICAgIGlmIGxlbihhcmdzKSA8IDI6CiAgICAgICAgcHJpbnQoX19kb2NfXykKICAgICAgICByZXR1cm4gMgoKICAgIHRhcmdldCwgb3V0X3BhdGggPSBhcmdzWzBdLCBhcmdzWzFdCiAgICBtYXRjaGVzID0gZmluZF93aW5kb3codGFyZ2V0KQogICAgaWYgbm90IG1hdGNoZXM6CiAgICAgICAgcHJpbnQoZiJubyB2aXNpYmxlIHdpbmRvdyBtYXRjaGluZyB7dGFyZ2V0IXJ9IikKICAgICAgICByZXR1cm4gMQoKICAgIGh3bmQsIHRpdGxlID0gbWF0Y2hlc1swXQogICAgYm94ID0gd2luZG93X3JlY3QoaHduZCkKICAgIGlmIGJveCBpcyBOb25lOgogICAgICAgIHByaW50KCJjb3VsZCBub3QgcmVhZCB0aGUgd2luZG93IHJlY3QiKQogICAgICAgIHJldHVybiAxCgogICAgcHJpbnQoZiJ3aW5kb3cge3RpdGxlIXJ9IGh3bmQ9e2h3bmR9IHJlY3Q9e2JveH0iKQoKICAgIGlmIHVzZV9wcmludHdpbmRvdzoKICAgICAgICBwcmludCgiV0FSTklORzogUHJpbnRXaW5kb3cgY2FuIGNyYXNoIFdpblVJIDMgLyBXaW5kb3dzIEFwcCBTREsgd2luZG93cy4iKQogICAgICAgIGNhcHR1cmVfd2l0aF9wcmludHdpbmRvdyhod25kLCBib3gsIG91dF9wYXRoKQogICAgICAgIHdpZHRoLCBoZWlnaHQgPSBib3hbMl0gLSBib3hbMF0sIGJveFszXSAtIGJveFsxXQogICAgZWxzZToKICAgICAgICBnb3QgPSBjYXB0dXJlX2Zyb21fc2NyZWVuKGh3bmQsIGJveCwgb3V0X3BhdGgpCiAgICAgICAgd2lkdGgsIGhlaWdodCA9IGdvdFsyXSAtIGdvdFswXSwgZ290WzNdIC0gZ290WzFdCgogICAgcHJpbnQoZiJzYXZlZCB7b3V0X3BhdGh9ICh7d2lkdGh9eHtoZWlnaHR9KSIpCiAgICByZXR1cm4gMAoKCmlmIF9fbmFtZV9fID09ICJfX21haW5fXyI6CiAgICByYWlzZSBTeXN0ZW1FeGl0KG1haW4oKSkK
+"""Capture a top-level window to a PNG.
+
+IMPORTANT — do not use PrintWindow on WinUI 3 / Windows App SDK windows.
+Measured during this project: `PrintWindow(hwnd, dc, PW_RENDERFULLCONTENT)` on a
+WinUI 3 window reliably kills the process with
+
+    Fatal error. System.AccessViolationException
+
+raised at the next framework dispatch (typically `Frame.Navigate`), often many
+seconds after the capture, which makes it look like an unrelated page bug. The
+WinUI compositor does not support being asked to render into a foreign DC this
+way. It was misdiagnosed as a page defect at least twice before being isolated.
+
+This tool therefore raises the window and grabs it off the screen with BitBlt,
+which is safe while the desktop is unlocked and no other window covers it. Pass
+--printwindow only for classic GDI/HWND apps (Win32, WinForms), never for WinUI.
+
+Usage:
+    python grab_window.py <title-substring> <output.png> [--printwindow]
+"""
+import ctypes
+import ctypes.wintypes as wt
+import sys
+import time
+
+from PIL import Image, ImageGrab
+
+user32 = ctypes.windll.user32
+gdi32 = ctypes.windll.gdi32
+user32.SetProcessDPIAware()
+
+SW_RESTORE = 9
+PW_RENDERFULLCONTENT = 0x00000002
+SRCCOPY = 0x00CC0020
+DIB_RGB_COLORS = 0
+
+
+class BITMAPINFOHEADER(ctypes.Structure):
+    _fields_ = [
+        ("biSize", wt.DWORD),
+        ("biWidth", ctypes.c_long),
+        ("biHeight", ctypes.c_long),
+        ("biPlanes", wt.WORD),
+        ("biBitCount", wt.WORD),
+        ("biCompression", wt.DWORD),
+        ("biSizeImage", wt.DWORD),
+        ("biXPelsPerMeter", ctypes.c_long),
+        ("biYPelsPerMeter", ctypes.c_long),
+        ("biClrUsed", wt.DWORD),
+        ("biClrImportant", wt.DWORD),
+    ]
+
+
+class BITMAPINFO(ctypes.Structure):
+    _fields_ = [("bmiHeader", BITMAPINFOHEADER), ("bmiColors", wt.DWORD * 3)]
+
+
+def find_window(substr: str):
+    matches = []
+
+    @ctypes.WINFUNCTYPE(ctypes.c_bool, wt.HWND, wt.LPARAM)
+    def enum_proc(hwnd, _):
+        if not user32.IsWindowVisible(hwnd):
+            return True
+        length = user32.GetWindowTextLengthW(hwnd)
+        if length == 0:
+            return True
+        buf = ctypes.create_unicode_buffer(length + 1)
+        user32.GetWindowTextW(hwnd, buf, length + 1)
+        if substr.lower() in buf.value.lower():
+            matches.append((hwnd, buf.value))
+        return True
+
+    user32.EnumWindows(enum_proc, 0)
+    return matches
+
+
+def window_rect(hwnd):
+    rect = wt.RECT()
+    if not user32.GetWindowRect(hwnd, ctypes.byref(rect)):
+        return None
+    if rect.right <= rect.left or rect.bottom <= rect.top:
+        return None
+    return (rect.left, rect.top, rect.right, rect.bottom)
+
+
+def capture_with_printwindow(hwnd, box, out_path):
+    """GDI capture. Safe for Win32/WinForms, UNSAFE for WinUI 3 (see module docstring)."""
+    left, top, right, bottom = box
+    width, height = right - left, bottom - top
+
+    window_dc = user32.GetWindowDC(hwnd)
+    mem_dc = gdi32.CreateCompatibleDC(window_dc)
+    bitmap = gdi32.CreateCompatibleBitmap(window_dc, width, height)
+    gdi32.SelectObject(mem_dc, bitmap)
+
+    user32.PrintWindow(hwnd, mem_dc, PW_RENDERFULLCONTENT)
+
+    info = BITMAPINFO()
+    info.bmiHeader.biSize = ctypes.sizeof(BITMAPINFOHEADER)
+    info.bmiHeader.biWidth = width
+    info.bmiHeader.biHeight = -height
+    info.bmiHeader.biPlanes = 1
+    info.bmiHeader.biBitCount = 32
+    info.bmiHeader.biCompression = 0
+
+    buffer = ctypes.create_string_buffer(width * height * 4)
+    gdi32.GetDIBits(mem_dc, bitmap, 0, height, buffer, ctypes.byref(info), DIB_RGB_COLORS)
+    Image.frombuffer("RGBA", (width, height), buffer, "raw", "BGRA", 0, 1).convert("RGB").save(out_path)
+
+    gdi32.DeleteObject(bitmap)
+    gdi32.DeleteDC(mem_dc)
+    user32.ReleaseDC(hwnd, window_dc)
+
+
+def capture_from_screen(hwnd, box, out_path):
+    """Raise the window, then grab its screen region. Safe for WinUI 3."""
+    user32.ShowWindow(hwnd, SW_RESTORE)
+    user32.SetForegroundWindow(hwnd)
+    time.sleep(1.2)
+
+    # Re-read the rect after restoring: a minimised window's rect is bogus.
+    box = window_rect(hwnd) or box
+    ImageGrab.grab(bbox=box, all_screens=True).save(out_path)
+    return box
+
+
+def main() -> int:
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    use_printwindow = "--printwindow" in sys.argv
+
+    if len(args) < 2:
+        print(__doc__)
+        return 2
+
+    target, out_path = args[0], args[1]
+    matches = find_window(target)
+    if not matches:
+        print(f"no visible window matching {target!r}")
+        return 1
+
+    hwnd, title = matches[0]
+    box = window_rect(hwnd)
+    if box is None:
+        print("could not read the window rect")
+        return 1
+
+    print(f"window {title!r} hwnd={hwnd} rect={box}")
+
+    if use_printwindow:
+        print("WARNING: PrintWindow can crash WinUI 3 / Windows App SDK windows.")
+        capture_with_printwindow(hwnd, box, out_path)
+        width, height = box[2] - box[0], box[3] - box[1]
+    else:
+        got = capture_from_screen(hwnd, box, out_path)
+        width, height = got[2] - got[0], got[3] - got[1]
+
+    print(f"saved {out_path} ({width}x{height})")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

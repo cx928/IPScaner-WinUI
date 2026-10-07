@@ -1,1 +1,41 @@
-bmFtZXNwYWNlIElQU2NhbmVyLkNvcmUuQ29uZmlndXJhdGlvbjsKCi8vLyA8c3VtbWFyeT4KLy8vIFRoZSBkb3VibGUtY2xpY2sgYWN0aW9uIGJvdW5kIHRvIGFuIElQIGNvbG91ciBibG9jay4KLy8vIE1pcnJvcnMgdGhlIG9yaWdpbmFsIDxjPkV2ZW50TmFtZTwvYz4gZW51bSBieXRlLWZvci1ieXRlIHNvIHRoYXQKLy8vIDxjPkRvdWJsZUV2ZW50PSJQaW5nIjwvYz4gaW4gYW4gZXhpc3RpbmcgSVBTY2FuZXIuY2ZnIHN0aWxsIHJvdW5kLXRyaXBzLgovLy8gPC9zdW1tYXJ5PgpwdWJsaWMgZW51bSBFdmVudE5hbWUKewogICAgUGluZyA9IDAsCiAgICBWaWV3V2ViID0gMSwKICAgIFRyYWNlcnQgPSAyLAogICAgVGVsbmV0ID0gMywKICAgIE5ldHN0YXQgPSA0LAogICAgQVJQID0gNSwKICAgIFNoYXJlID0gNiwKfQoKLy8vIDxzdW1tYXJ5PkxvY2FsaXNlZCBkaXNwbGF5IG5hbWVzIGZvciA8c2VlIGNyZWY9IkV2ZW50TmFtZSIvPiAoY29tYm8gYm94IGJpbmRpbmcpLjwvc3VtbWFyeT4KcHVibGljIHN0YXRpYyBjbGFzcyBFdmVudE5hbWVUZXh0CnsKICAgIHB1YmxpYyBzdGF0aWMgcmVhZG9ubHkgKEV2ZW50TmFtZSBWYWx1ZSwgc3RyaW5nIFRleHQpW10gQWxsID0KICAgIFsKICAgICAgICAoRXZlbnROYW1lLlBpbmcsICJQaW5n5ZG95LukIiksCiAgICAgICAgKEV2ZW50TmFtZS5WaWV3V2ViLCAi5rWP6KeI572R6aG1IiksCiAgICAgICAgKEV2ZW50TmFtZS5UcmFjZXJ0LCAiVHJhY2VydOWRveS7pCIpLAogICAgICAgIChFdmVudE5hbWUuVGVsbmV0LCAiVGVsbmV05ZG95LukIiksCiAgICAgICAgKEV2ZW50TmFtZS5OZXRzdGF0LCAiTmV0c3RhdOWRveS7pCIpLAogICAgICAgIChFdmVudE5hbWUuQVJQLCAiQVJQ5ZG95LukIiksCiAgICAgICAgKEV2ZW50TmFtZS5TaGFyZSwgIuiuv+mXruWFseS6q+ebruW9lSIpLAogICAgXTsKCiAgICBwdWJsaWMgc3RhdGljIHN0cmluZyBEZXNjcmliZShFdmVudE5hbWUgdmFsdWUpCiAgICB7CiAgICAgICAgZm9yZWFjaCAodmFyICh2LCB0KSBpbiBBbGwpCiAgICAgICAgewogICAgICAgICAgICBpZiAodiA9PSB2YWx1ZSkgcmV0dXJuIHQ7CiAgICAgICAgfQogICAgICAgIHJldHVybiB2YWx1ZS5Ub1N0cmluZygpOwogICAgfQp9Cg==
+namespace IPScaner.Core.Configuration;
+
+/// <summary>
+/// The double-click action bound to an IP colour block.
+/// Mirrors the original <c>EventName</c> enum byte-for-byte so that
+/// <c>DoubleEvent="Ping"</c> in an existing IPScaner.cfg still round-trips.
+/// </summary>
+public enum EventName
+{
+    Ping = 0,
+    ViewWeb = 1,
+    Tracert = 2,
+    Telnet = 3,
+    Netstat = 4,
+    ARP = 5,
+    Share = 6,
+}
+
+/// <summary>Localised display names for <see cref="EventName"/> (combo box binding).</summary>
+public static class EventNameText
+{
+    public static readonly (EventName Value, string Text)[] All =
+    [
+        (EventName.Ping, "Ping命令"),
+        (EventName.ViewWeb, "浏览网页"),
+        (EventName.Tracert, "Tracert命令"),
+        (EventName.Telnet, "Telnet命令"),
+        (EventName.Netstat, "Netstat命令"),
+        (EventName.ARP, "ARP命令"),
+        (EventName.Share, "访问共享目录"),
+    ];
+
+    public static string Describe(EventName value)
+    {
+        foreach (var (v, t) in All)
+        {
+            if (v == value) return t;
+        }
+        return value.ToString();
+    }
+}

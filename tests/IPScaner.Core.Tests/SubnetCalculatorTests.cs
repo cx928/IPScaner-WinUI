@@ -1,1 +1,353 @@
-dXNpbmcgWHVuaXQ7DQp1c2luZyBJUFNjYW5lci5Db3JlLk5ldDsKCm5hbWVzcGFjZSBJUFNjYW5lci5Db3JlLlRlc3RzOwoKLy8vIDxzdW1tYXJ5PgovLy8gQ292ZXJhZ2UgZm9yIDxzZWUgY3JlZj0iU3VibmV0Q2FsY3VsYXRvciIvPiDigJQgdGhlIOe9kee7nOWSjElQ5Zyw5Z2A6K6h566X5ZmoIGVuZ2luZS4KLy8vIDwvc3VtbWFyeT4KcHVibGljIGNsYXNzIFN1Ym5ldENhbGN1bGF0b3JUZXN0cwp7CiAgICAvLyAtLS0tIENhbGN1bGF0ZTogdGFibGUgYWNyb3NzIG1hc2sgYml0cyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCiAgICAvLy8gPHN1bW1hcnk+CiAgICAvLy8gRml4ZWQgaG9zdCAxOTIuMTY4LjEuMTAgYWdhaW5zdCBldmVyeSBpbnRlcmVzdGluZyBwcmVmaXggbGVuZ3RoLiBBbGwgcm93cwogICAgLy8vIGFyZSBjb21wbGV0ZSAoYSBmdWxsIG5ldHdvcmsvYnJvYWRjYXN0L2ZpcnN0L2xhc3QgcXVhZHJ1cGxlIGV4aXN0cykuCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgW1RoZW9yeV0KICAgIFtJbmxpbmVEYXRhKDgsICIxOTIuMC4wLjAiLCAiMTkyLjI1NS4yNTUuMjU1IiwgIjE5Mi4wLjAuMSIsICIxOTIuMjU1LjI1NS4yNTQiLCAiMTY3NzcyMTQiKV0KICAgIFtJbmxpbmVEYXRhKDEyLCAiMTkyLjE2MC4wLjAiLCAiMTkyLjE3NS4yNTUuMjU1IiwgIjE5Mi4xNjAuMC4xIiwgIjE5Mi4xNzUuMjU1LjI1NCIsICIxMDQ4NTc0IildCiAgICBbSW5saW5lRGF0YSgxNiwgIjE5Mi4xNjguMC4wIiwgIjE5Mi4xNjguMjU1LjI1NSIsICIxOTIuMTY4LjAuMSIsICIxOTIuMTY4LjI1NS4yNTQiLCAiNjU1MzQiKV0KICAgIFtJbmxpbmVEYXRhKDIwLCAiMTkyLjE2OC4wLjAiLCAiMTkyLjE2OC4xNS4yNTUiLCAiMTkyLjE2OC4wLjEiLCAiMTkyLjE2OC4xNS4yNTQiLCAiNDA5NCIpXQogICAgW0lubGluZURhdGEoMjIsICIxOTIuMTY4LjAuMCIsICIxOTIuMTY4LjMuMjU1IiwgIjE5Mi4xNjguMC4xIiwgIjE5Mi4xNjguMy4yNTQiLCAiMTAyMiIpXQogICAgW0lubGluZURhdGEoMjMsICIxOTIuMTY4LjAuMCIsICIxOTIuMTY4LjEuMjU1IiwgIjE5Mi4xNjguMC4xIiwgIjE5Mi4xNjguMS4yNTQiLCAiNTEwIildCiAgICBbSW5saW5lRGF0YSgyNCwgIjE5Mi4xNjguMS4wIiwgIjE5Mi4xNjguMS4yNTUiLCAiMTkyLjE2OC4xLjEiLCAiMTkyLjE2OC4xLjI1NCIsICIyNTQiKV0KICAgIFtJbmxpbmVEYXRhKDI1LCAiMTkyLjE2OC4xLjAiLCAiMTkyLjE2OC4xLjEyNyIsICIxOTIuMTY4LjEuMSIsICIxOTIuMTY4LjEuMTI2IiwgIjEyNiIpXQogICAgW0lubGluZURhdGEoMjYsICIxOTIuMTY4LjEuMCIsICIxOTIuMTY4LjEuNjMiLCAiMTkyLjE2OC4xLjEiLCAiMTkyLjE2OC4xLjYyIiwgIjYyIildCiAgICBbSW5saW5lRGF0YSgyNywgIjE5Mi4xNjguMS4wIiwgIjE5Mi4xNjguMS4zMSIsICIxOTIuMTY4LjEuMSIsICIxOTIuMTY4LjEuMzAiLCAiMzAiKV0KICAgIFtJbmxpbmVEYXRhKDI4LCAiMTkyLjE2OC4xLjAiLCAiMTkyLjE2OC4xLjE1IiwgIjE5Mi4xNjguMS4xIiwgIjE5Mi4xNjguMS4xNCIsICIxNCIpXQogICAgW0lubGluZURhdGEoMjksICIxOTIuMTY4LjEuOCIsICIxOTIuMTY4LjEuMTUiLCAiMTkyLjE2OC4xLjkiLCAiMTkyLjE2OC4xLjE0IiwgIjYiKV0KICAgIFtJbmxpbmVEYXRhKDMwLCAiMTkyLjE2OC4xLjgiLCAiMTkyLjE2OC4xLjExIiwgIjE5Mi4xNjguMS45IiwgIjE5Mi4xNjguMS4xMCIsICIyIildCiAgICBwdWJsaWMgdm9pZCBDYWxjdWxhdGVfTWF0Y2hlc1RhYmxlX0ZvckV2ZXJ5TWFza0JpdCgKICAgICAgICBpbnQgYml0cywgc3RyaW5nIG5ldHdvcmssIHN0cmluZyBicm9hZGNhc3QsIHN0cmluZyBmaXJzdCwgc3RyaW5nIGxhc3QsIHN0cmluZyBjb3VudCkKICAgIHsKICAgICAgICB2YXIgcmVzdWx0ID0gU3VibmV0Q2FsY3VsYXRvci5DYWxjdWxhdGUoIjE5Mi4xNjguMS4xMCIsIGJpdHMpOwoKICAgICAgICBBc3NlcnQuRmFsc2UocmVzdWx0Lkhhc0Vycm9yKTsKICAgICAgICBBc3NlcnQuRXF1YWwoc3RyaW5nLkVtcHR5LCByZXN1bHQuRXJyb3IpOwogICAgICAgIEFzc2VydC5FcXVhbChiaXRzLCByZXN1bHQuQml0cyk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKFN1Ym5ldENhbGN1bGF0b3IuTWFza1N0cmluZyhiaXRzKSwgcmVzdWx0Lk1hc2spOwogICAgICAgIEFzc2VydC5FcXVhbChuZXR3b3JrLCByZXN1bHQuTmV0d29yayk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKGJyb2FkY2FzdCwgcmVzdWx0LkJyb2FkY2FzdCk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKGZpcnN0LCByZXN1bHQuRmlyc3RVc2FibGUpOwogICAgICAgIEFzc2VydC5FcXVhbChsYXN0LCByZXN1bHQuTGFzdFVzYWJsZSk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKGNvdW50LCByZXN1bHQuVXNhYmxlQ291bnQpOwogICAgICAgIEFzc2VydC5FcXVhbChsb25nLlBhcnNlKGNvdW50KSwgcmVzdWx0LlVzYWJsZUNvdW50VmFsdWUpOwogICAgICAgIEFzc2VydC5UcnVlKHJlc3VsdC5Jc0NvbXBsZXRlKTsKICAgICAgICBBc3NlcnQuRXF1YWwoJCJ7bmV0d29ya30ve2JpdHN9IiwgcmVzdWx0LkNpZHIpOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgQ2FsY3VsYXRlX1NsYXNoMjRfTWF0Y2hlc1RoZURvY3VtZW50ZWRBbmNob3JzKCkKICAgIHsKICAgICAgICB2YXIgcmVzdWx0ID0gU3VibmV0Q2FsY3VsYXRvci5DYWxjdWxhdGUoIjE5Mi4xNjguMS4xMCIsIDI0KTsKCiAgICAgICAgQXNzZXJ0LkVxdWFsKCIxOTIuMTY4LjEuMCIsIHJlc3VsdC5OZXR3b3JrKTsKICAgICAgICBBc3NlcnQuRXF1YWwoIjE5Mi4xNjguMS4yNTUiLCByZXN1bHQuQnJvYWRjYXN0KTsKICAgICAgICBBc3NlcnQuRXF1YWwoIjE5Mi4xNjguMS4xIiwgcmVzdWx0LkZpcnN0VXNhYmxlKTsKICAgICAgICBBc3NlcnQuRXF1YWwoIjE5Mi4xNjguMS4yNTQiLCByZXN1bHQuTGFzdFVzYWJsZSk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKCIyNTQiLCByZXN1bHQuVXNhYmxlQ291bnQpOwogICAgICAgIEFzc2VydC5FcXVhbCgyNTQsIHJlc3VsdC5Vc2FibGVDb3VudFZhbHVlKTsKICAgICAgICBBc3NlcnQuVHJ1ZShyZXN1bHQuSXNDb21wbGV0ZSk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKCIxOTIuMTY4LjEuMC8yNCIsIHJlc3VsdC5DaWRyKTsKICAgIH0KCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIENhbGN1bGF0ZV9TbGFzaDMxX1JlcG9ydHNUd29Ib3N0c0FuZElzSW5jb21wbGV0ZSgpCiAgICB7CiAgICAgICAgdmFyIHJlc3VsdCA9IFN1Ym5ldENhbGN1bGF0b3IuQ2FsY3VsYXRlKCIxOTIuMTY4LjEuMTAiLCAzMSk7CgogICAgICAgIEFzc2VydC5FcXVhbCgidHdvIGhvc3RzIiwgcmVzdWx0LlVzYWJsZUNvdW50KTsKICAgICAgICBBc3NlcnQuRmFsc2UocmVzdWx0LklzQ29tcGxldGUpOwogICAgICAgIEFzc2VydC5FcXVhbCgiMjU1LjI1NS4yNTUuMjU0IiwgcmVzdWx0Lk1hc2spOwogICAgICAgIEFzc2VydC5FcXVhbCgiMTkyLjE2OC4xLjEwIiwgcmVzdWx0Lk5ldHdvcmspOwogICAgICAgIEFzc2VydC5FcXVhbCgiMTkyLjE2OC4xLjEwIiwgcmVzdWx0LkZpcnN0VXNhYmxlKTsKICAgICAgICBBc3NlcnQuRXF1YWwoIjE5Mi4xNjguMS4xMSIsIHJlc3VsdC5MYXN0VXNhYmxlKTsKICAgICAgICBBc3NlcnQuTnVsbChyZXN1bHQuVXNhYmxlQ291bnRWYWx1ZSk7CiAgICAgICAgLy8gVGhlIC8zMSBicmFuY2ggbmV2ZXIgcG9wdWxhdGVzIEJyb2FkY2FzdCAoa2VwdCBleGFjdGx5IGFzIHRoZSBvcmlnaW5hbCkuCiAgICAgICAgQXNzZXJ0LkVxdWFsKHN0cmluZy5FbXB0eSwgcmVzdWx0LkJyb2FkY2FzdCk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKCIxOTIuMTY4LjEuMTAvMzEiLCByZXN1bHQuQ2lkcik7CiAgICB9CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBDYWxjdWxhdGVfU2xhc2gzMV9Ob3JtYWxpc2VzQW5PZGRIb3N0VG9UaGVQYWlyQmFzZSgpCiAgICB7CiAgICAgICAgdmFyIHJlc3VsdCA9IFN1Ym5ldENhbGN1bGF0b3IuQ2FsY3VsYXRlKCIxOTIuMTY4LjEuMTEiLCAzMSk7CgogICAgICAgIEFzc2VydC5FcXVhbCgiMTkyLjE2OC4xLjEwIiwgcmVzdWx0Lk5ldHdvcmspOwogICAgICAgIEFzc2VydC5FcXVhbCgiMTkyLjE2OC4xLjExIiwgcmVzdWx0Lkxhc3RVc2FibGUpOwogICAgICAgIEFzc2VydC5FcXVhbCgidHdvIGhvc3RzIiwgcmVzdWx0LlVzYWJsZUNvdW50KTsKICAgIH0KCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIENhbGN1bGF0ZV9TbGFzaDMyX1JlcG9ydHNPbmVIb3N0QW5kSXNJbmNvbXBsZXRlKCkKICAgIHsKICAgICAgICB2YXIgcmVzdWx0ID0gU3VibmV0Q2FsY3VsYXRvci5DYWxjdWxhdGUoIjE5Mi4xNjguMS4xMCIsIDMyKTsKCiAgICAgICAgQXNzZXJ0LkVxdWFsKCJvbmUgaG9zdCIsIHJlc3VsdC5Vc2FibGVDb3VudCk7CiAgICAgICAgQXNzZXJ0LkZhbHNlKHJlc3VsdC5Jc0NvbXBsZXRlKTsKICAgICAgICBBc3NlcnQuRXF1YWwoIjI1NS4yNTUuMjU1LjI1NSIsIHJlc3VsdC5NYXNrKTsKICAgICAgICBBc3NlcnQuRXF1YWwoIjE5Mi4xNjguMS4xMCIsIHJlc3VsdC5OZXR3b3JrKTsKICAgICAgICBBc3NlcnQuRXF1YWwoIjE5Mi4xNjguMS4xMCIsIHJlc3VsdC5GaXJzdFVzYWJsZSk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKHN0cmluZy5FbXB0eSwgcmVzdWx0Lkxhc3RVc2FibGUpOwogICAgICAgIEFzc2VydC5FcXVhbChzdHJpbmcuRW1wdHksIHJlc3VsdC5Ccm9hZGNhc3QpOwogICAgICAgIEFzc2VydC5OdWxsKHJlc3VsdC5Vc2FibGVDb3VudFZhbHVlKTsKICAgICAgICBBc3NlcnQuRXF1YWwoIjE5Mi4xNjguMS4xMC8zMiIsIHJlc3VsdC5DaWRyKTsKICAgIH0KCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIENhbGN1bGF0ZV9TbGFzaDBfQ292ZXJzVGhlV2hvbGVBZGRyZXNzU3BhY2UoKQogICAgewogICAgICAgIHZhciByZXN1bHQgPSBTdWJuZXRDYWxjdWxhdG9yLkNhbGN1bGF0ZSgiMTkyLjE2OC4xLjEwIiwgMCk7CgogICAgICAgIEFzc2VydC5GYWxzZShyZXN1bHQuSGFzRXJyb3IpOwogICAgICAgIEFzc2VydC5FcXVhbCgiMC4wLjAuMCIsIHJlc3VsdC5NYXNrKTsKICAgICAgICBBc3NlcnQuRXF1YWwoIjAuMC4wLjAiLCByZXN1bHQuTmV0d29yayk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKCIyNTUuMjU1LjI1NS4yNTUiLCByZXN1bHQuQnJvYWRjYXN0KTsKICAgICAgICBBc3NlcnQuRXF1YWwoIjAuMC4wLjEiLCByZXN1bHQuRmlyc3RVc2FibGUpOwogICAgICAgIEFzc2VydC5FcXVhbCgiMjU1LjI1NS4yNTUuMjU0IiwgcmVzdWx0Lkxhc3RVc2FibGUpOwogICAgICAgIEFzc2VydC5FcXVhbCgiNDI5NDk2NzI5NCIsIHJlc3VsdC5Vc2FibGVDb3VudCk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKDQyOTQ5NjcyOTRMLCByZXN1bHQuVXNhYmxlQ291bnRWYWx1ZSk7CiAgICAgICAgQXNzZXJ0LlRydWUocmVzdWx0LklzQ29tcGxldGUpOwogICAgICAgIEFzc2VydC5FcXVhbCgiMC4wLjAuMC8wIiwgcmVzdWx0LkNpZHIpOwogICAgfQoKICAgIC8vIC0tLS0gQ2FsY3VsYXRlOiBlcnJvciBwYXRocyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBDYWxjdWxhdGVfT3V0T2ZSYW5nZU9jdGV0X1lpZWxkc1RoZU9yaWdpbmFsRXJyb3JNYXJrZXIoKQogICAgewogICAgICAgIHZhciByZXN1bHQgPSBTdWJuZXRDYWxjdWxhdG9yLkNhbGN1bGF0ZShbMTkyLCAxNjgsIDEsIDMwMF0sIDI0KTsKCiAgICAgICAgQXNzZXJ0LkVxdWFsKCLplJnor68iLCByZXN1bHQuRXJyb3IpOwogICAgICAgIEFzc2VydC5FcXVhbCgi6ZSZ6K+vIiwgcmVzdWx0LlVzYWJsZUNvdW50KTsKICAgICAgICBBc3NlcnQuVHJ1ZShyZXN1bHQuSGFzRXJyb3IpOwogICAgICAgIEFzc2VydC5GYWxzZShyZXN1bHQuSXNDb21wbGV0ZSk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKHN0cmluZy5FbXB0eSwgcmVzdWx0Lk1hc2spOwogICAgICAgIEFzc2VydC5FcXVhbChzdHJpbmcuRW1wdHksIHJlc3VsdC5OZXR3b3JrKTsKICAgICAgICBBc3NlcnQuRXF1YWwoc3RyaW5nLkVtcHR5LCByZXN1bHQuQ2lkcik7CiAgICB9CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBDYWxjdWxhdGVfVG9vRmV3T2N0ZXRzX1lpZWxkc1RoZUVycm9yTWFya2VyKCkKICAgIHsKICAgICAgICAvLyBBIHNob3J0IGxpc3QgbWVhbnMgIm5vIG9jdGV0IHN1cHBsaWVkIiBmb3IgdGhlIG1pc3NpbmcgcG9zaXRpb25zLgogICAgICAgIHZhciByZXN1bHQgPSBTdWJuZXRDYWxjdWxhdG9yLkNhbGN1bGF0ZShbMTkyLCAxNjhdLCAyNCk7CgogICAgICAgIEFzc2VydC5FcXVhbCgi6ZSZ6K+vIiwgcmVzdWx0LkVycm9yKTsKICAgICAgICBBc3NlcnQuRmFsc2UocmVzdWx0LklzQ29tcGxldGUpOwogICAgfQoKICAgIFtUaGVvcnldCiAgICBbSW5saW5lRGF0YSgzMyldCiAgICBbSW5saW5lRGF0YSgzNCldCiAgICBbSW5saW5lRGF0YSgtMSldCiAgICBbSW5saW5lRGF0YShpbnQuTWF4VmFsdWUpXQogICAgcHVibGljIHZvaWQgQ2FsY3VsYXRlX01hc2tCaXRPdXRPZlJhbmdlX1B1dHNFcnJvckluTWFza0ZpZWxkKGludCBiaXRzKQogICAgewogICAgICAgIHZhciByZXN1bHQgPSBTdWJuZXRDYWxjdWxhdG9yLkNhbGN1bGF0ZShbMTkyLCAxNjgsIDEsIDEwXSwgYml0cyk7CgogICAgICAgIEFzc2VydC5FcXVhbCgi6ZSZ6K+vIiwgcmVzdWx0LkVycm9yKTsKICAgICAgICBBc3NlcnQuRXF1YWwoIumUmeivryIsIHJlc3VsdC5NYXNrKTsKICAgICAgICBBc3NlcnQuVHJ1ZShyZXN1bHQuSGFzRXJyb3IpOwogICAgICAgIEFzc2VydC5GYWxzZShyZXN1bHQuSXNDb21wbGV0ZSk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKGJpdHMsIHJlc3VsdC5CaXRzKTsKICAgIH0KCiAgICBbVGhlb3J5XQogICAgW0lubGluZURhdGEoIjk5OS4xLjEuMSIpXQogICAgW0lubGluZURhdGEoIjEwLjAuMC4xYWJjIildCiAgICBbSW5saW5lRGF0YSgiMS4yLjMiKV0KICAgIFtJbmxpbmVEYXRhKCIiKV0KICAgIHB1YmxpYyB2b2lkIENhbGN1bGF0ZV9Gcm9tU3RyaW5nX1JlamVjdHNNYWxmb3JtZWRBZGRyZXNzZXMoc3RyaW5nIGlwKQogICAgewogICAgICAgIHZhciByZXN1bHQgPSBTdWJuZXRDYWxjdWxhdG9yLkNhbGN1bGF0ZShpcCwgMjQpOwoKICAgICAgICBBc3NlcnQuRXF1YWwoIumUmeivryIsIHJlc3VsdC5FcnJvcik7CiAgICAgICAgQXNzZXJ0LkVxdWFsKCLplJnor68iLCByZXN1bHQuVXNhYmxlQ291bnQpOwogICAgICAgIEFzc2VydC5FcXVhbCgyNCwgcmVzdWx0LkJpdHMpOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgQ2FsY3VsYXRlX1N0cmluZ092ZXJsb2FkX0FncmVlc1dpdGhUaGVPY3RldE92ZXJsb2FkKCkKICAgIHsKICAgICAgICB2YXIgZnJvbVN0cmluZyA9IFN1Ym5ldENhbGN1bGF0b3IuQ2FsY3VsYXRlKCIxOTIuMTY4LjEuMTAiLCAyNik7CiAgICAgICAgdmFyIGZyb21PY3RldHMgPSBTdWJuZXRDYWxjdWxhdG9yLkNhbGN1bGF0ZShbMTkyLCAxNjgsIDEsIDEwXSwgMjYpOwoKICAgICAgICBBc3NlcnQuRXF1YWwoZnJvbU9jdGV0cy5OZXR3b3JrLCBmcm9tU3RyaW5nLk5ldHdvcmspOwogICAgICAgIEFzc2VydC5FcXVhbChmcm9tT2N0ZXRzLkJyb2FkY2FzdCwgZnJvbVN0cmluZy5Ccm9hZGNhc3QpOwogICAgICAgIEFzc2VydC5FcXVhbChmcm9tT2N0ZXRzLkZpcnN0VXNhYmxlLCBmcm9tU3RyaW5nLkZpcnN0VXNhYmxlKTsKICAgICAgICBBc3NlcnQuRXF1YWwoZnJvbU9jdGV0cy5MYXN0VXNhYmxlLCBmcm9tU3RyaW5nLkxhc3RVc2FibGUpOwogICAgICAgIEFzc2VydC5FcXVhbChmcm9tT2N0ZXRzLlVzYWJsZUNvdW50LCBmcm9tU3RyaW5nLlVzYWJsZUNvdW50KTsKICAgICAgICBBc3NlcnQuRXF1YWwoZnJvbU9jdGV0cy5DaWRyLCBmcm9tU3RyaW5nLkNpZHIpOwogICAgfQoKICAgIC8vIC0tLS0gTWFza09jdGV0cyAvIE1hc2tTdHJpbmcgLyBXaWxkY2FyZFN0cmluZyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIFtUaGVvcnldCiAgICBbSW5saW5lRGF0YSgwLCAiMC4wLjAuMCIpXQogICAgW0lubGluZURhdGEoMSwgIjEyOC4wLjAuMCIpXQogICAgW0lubGluZURhdGEoOCwgIjI1NS4wLjAuMCIpXQogICAgW0lubGluZURhdGEoOSwgIjI1NS4xMjguMC4wIildCiAgICBbSW5saW5lRGF0YSgxNiwgIjI1NS4yNTUuMC4wIildCiAgICBbSW5saW5lRGF0YSgyMywgIjI1NS4yNTUuMjU0LjAiKV0KICAgIFtJbmxpbmVEYXRhKDI0LCAiMjU1LjI1NS4yNTUuMCIpXQogICAgW0lubGluZURhdGEoMjUsICIyNTUuMjU1LjI1NS4xMjgiKV0KICAgIFtJbmxpbmVEYXRhKDI2LCAiMjU1LjI1NS4yNTUuMTkyIildCiAgICBbSW5saW5lRGF0YSgyNywgIjI1NS4yNTUuMjU1LjIyNCIpXQogICAgW0lubGluZURhdGEoMjgsICIyNTUuMjU1LjI1NS4yNDAiKV0KICAgIFtJbmxpbmVEYXRhKDMwLCAiMjU1LjI1NS4yNTUuMjUyIildCiAgICBbSW5saW5lRGF0YSgzMSwgIjI1NS4yNTUuMjU1LjI1NCIpXQogICAgW0lubGluZURhdGEoMzIsICIyNTUuMjU1LjI1NS4yNTUiKV0KICAgIHB1YmxpYyB2b2lkIE1hc2tTdHJpbmdfUmV0dXJuc0RvdHRlZFF1YWRNYXNrKGludCBiaXRzLCBzdHJpbmcgZXhwZWN0ZWQpCiAgICB7CiAgICAgICAgQXNzZXJ0LkVxdWFsKGV4cGVjdGVkLCBTdWJuZXRDYWxjdWxhdG9yLk1hc2tTdHJpbmcoYml0cykpOwogICAgICAgIEFzc2VydC5FcXVhbChleHBlY3RlZC5TcGxpdCgnLicpLlNlbGVjdChpbnQuUGFyc2UpLCBTdWJuZXRDYWxjdWxhdG9yLk1hc2tPY3RldHMoYml0cykpOwogICAgfQoKICAgIFtUaGVvcnldCiAgICBbSW5saW5lRGF0YSgwLCAiMjU1LjI1NS4yNTUuMjU1IildCiAgICBbSW5saW5lRGF0YSg4LCAiMC4yNTUuMjU1LjI1NSIpXQogICAgW0lubGluZURhdGEoMjQsICIwLjAuMC4yNTUiKV0KICAgIFtJbmxpbmVEYXRhKDI2LCAiMC4wLjAuNjMiKV0KICAgIFtJbmxpbmVEYXRhKDMwLCAiMC4wLjAuMyIpXQogICAgW0lubGluZURhdGEoMzIsICIwLjAuMC4wIildCiAgICBwdWJsaWMgdm9pZCBXaWxkY2FyZFN0cmluZ19Jc1RoZUludmVyc2VPZlRoZU1hc2soaW50IGJpdHMsIHN0cmluZyBleHBlY3RlZCkKICAgICAgICA9PiBBc3NlcnQuRXF1YWwoZXhwZWN0ZWQsIFN1Ym5ldENhbGN1bGF0b3IuV2lsZGNhcmRTdHJpbmcoYml0cykpOwoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgV2lsZGNhcmRTdHJpbmdfSXNDb21wbGVtZW50YXJ5Rm9yRXZlcnlQcmVmaXhMZW5ndGgoKQogICAgewogICAgICAgIGZvciAodmFyIGJpdHMgPSAwOyBiaXRzIDw9IDMyOyBiaXRzKyspCiAgICAgICAgewogICAgICAgICAgICB2YXIgbWFzayA9IFN1Ym5ldENhbGN1bGF0b3IuTWFza09jdGV0cyhiaXRzKTsKICAgICAgICAgICAgdmFyIHdpbGRjYXJkID0gU3VibmV0Q2FsY3VsYXRvci5XaWxkY2FyZFN0cmluZyhiaXRzKS5TcGxpdCgnLicpLlNlbGVjdChpbnQuUGFyc2UpLlRvQXJyYXkoKTsKCiAgICAgICAgICAgIGZvciAodmFyIGkgPSAwOyBpIDwgNDsgaSsrKSBBc3NlcnQuRXF1YWwoMjU1LCBtYXNrW2ldICsgd2lsZGNhcmRbaV0pOwogICAgICAgIH0KICAgIH0KCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIE1hc2tPY3RldHNfSXNBbHdheXNDb250aWd1b3VzKCkKICAgIHsKICAgICAgICBmb3IgKHZhciBiaXRzID0gMDsgYml0cyA8PSAzMjsgYml0cysrKQogICAgICAgIHsKICAgICAgICAgICAgdmFyIG1hc2sgPSBzdHJpbmcuSm9pbigiLiIsIFN1Ym5ldENhbGN1bGF0b3IuTWFza09jdGV0cyhiaXRzKSk7CiAgICAgICAgICAgIEFzc2VydC5FcXVhbChiaXRzLCBTdWJuZXRDYWxjdWxhdG9yLkJpdHNGcm9tTWFzayhtYXNrKSk7CiAgICAgICAgfQogICAgfQoKICAgIC8vIC0tLS0gQml0c0Zyb21NYXNrIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIFtUaGVvcnldCiAgICBbSW5saW5lRGF0YSgiMjU1LjI1NS4yNTUuMCIsIDI0KV0KICAgIFtJbmxpbmVEYXRhKCIvMjYiLCAyNildCiAgICBbSW5saW5lRGF0YSgiMjYiLCAyNildCiAgICBbSW5saW5lRGF0YSgiLzAiLCAwKV0KICAgIFtJbmxpbmVEYXRhKCIwIiwgMCldCiAgICBbSW5saW5lRGF0YSgiMC4wLjAuMCIsIDApXQogICAgW0lubGluZURhdGEoIjI1NS4yNTUuMjU1LjI1NSIsIDMyKV0KICAgIFtJbmxpbmVEYXRhKCIyNTUuMjU1LjI1NS4yNTQiLCAzMSldCiAgICBbSW5saW5lRGF0YSgiMjU1LjI1NS4yNTUuMTI4IiwgMjUpXQogICAgW0lubGluZURhdGEoIiAyNTUuMjU1LjI1NS4wICIsIDI0KV0gLy8gdHJpbW1lZAogICAgW0lubGluZURhdGEoIjI1NS4wLjI1NS4wIiwgLTEpXSAgICAgLy8gbm9uLWNvbnRpZ3VvdXMKICAgIFtJbmxpbmVEYXRhKCIyNTUuMjU1LjAuMjU1IiwgLTEpXQogICAgW0lubGluZURhdGEoIjAuMjU1LjI1NS4yNTUiLCAtMSldCiAgICBbSW5saW5lRGF0YSgiZ2FyYmFnZSIsIC0xKV0KICAgIFtJbmxpbmVEYXRhKCI5OTkuMS4xLjEiLCAtMSldCiAgICBbSW5saW5lRGF0YSgiIiwgLTEpXQogICAgW0lubGluZURhdGEoIiAgICIsIC0xKV0KICAgIFtJbmxpbmVEYXRhKG51bGwsIC0xKV0KICAgIFtJbmxpbmVEYXRhKCIvMzMiLCAtMSldCiAgICBbSW5saW5lRGF0YSgiMzMiLCAtMSldCiAgICBbSW5saW5lRGF0YSgiLTEiLCAtMSldCiAgICBwdWJsaWMgdm9pZCBCaXRzRnJvbU1hc2tfQ29udmVydHNPclJlamVjdHMoc3RyaW5nPyBtYXNrVGV4dCwgaW50IGV4cGVjdGVkKQogICAgICAgID0+IEFzc2VydC5FcXVhbChleHBlY3RlZCwgU3VibmV0Q2FsY3VsYXRvci5CaXRzRnJvbU1hc2sobWFza1RleHQpKTsKCiAgICAvLyAtLS0tIEhvc3RzRm9yTWFzayAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIEhvc3RzRm9yTWFza19TbGFzaDI0X1JldHVybnMyNTRIb3N0cygpCiAgICB7CiAgICAgICAgdmFyIGhvc3RzID0gU3VibmV0Q2FsY3VsYXRvci5Ib3N0c0Zvck1hc2soIjE5Mi4xNjguMS4xMCIsIDI0KTsKCiAgICAgICAgQXNzZXJ0LkVxdWFsKDI1NCwgaG9zdHMuQ291bnQpOwogICAgICAgIEFzc2VydC5FcXVhbCgiMTkyLjE2OC4xLjEiLCBob3N0c1swXSk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKCIxOTIuMTY4LjEuMjU0IiwgaG9zdHNbXjFdKTsKICAgICAgICBBc3NlcnQuRG9lc05vdENvbnRhaW4oIjE5Mi4xNjguMS4wIiwgaG9zdHMpOwogICAgICAgIEFzc2VydC5Eb2VzTm90Q29udGFpbigiMTkyLjE2OC4xLjI1NSIsIGhvc3RzKTsKICAgIH0KCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIEhvc3RzRm9yTWFza19TbGFzaDMxX1JldHVybnNFeGFjdGx5VHdvSG9zdHMoKQogICAgewogICAgICAgIHZhciBob3N0cyA9IFN1Ym5ldENhbGN1bGF0b3IuSG9zdHNGb3JNYXNrKCIxOTIuMTY4LjEuMTAiLCAzMSk7CgogICAgICAgIEFzc2VydC5FcXVhbCgyLCBob3N0cy5Db3VudCk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKFsiMTkyLjE2OC4xLjEwIiwgIjE5Mi4xNjguMS4xMSJdLCBob3N0cyk7CiAgICB9CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBIb3N0c0Zvck1hc2tfU2xhc2gzMl9SZXR1cm5zRXhhY3RseU9uZUhvc3QoKQogICAgewogICAgICAgIHZhciBob3N0cyA9IFN1Ym5ldENhbGN1bGF0b3IuSG9zdHNGb3JNYXNrKCIxOTIuMTY4LjEuMTAiLCAzMik7CgogICAgICAgIEFzc2VydC5TaW5nbGUoaG9zdHMpOwogICAgICAgIEFzc2VydC5FcXVhbCgiMTkyLjE2OC4xLjEwIiwgaG9zdHNbMF0pOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgSG9zdHNGb3JNYXNrX1NsYXNoMzBfUmV0dXJuc1RoZVR3b1VzYWJsZUhvc3RzKCkKICAgIHsKICAgICAgICB2YXIgaG9zdHMgPSBTdWJuZXRDYWxjdWxhdG9yLkhvc3RzRm9yTWFzaygiMTkyLjE2OC4xLjEwIiwgMzApOwoKICAgICAgICBBc3NlcnQuRXF1YWwoWyIxOTIuMTY4LjEuOSIsICIxOTIuMTY4LjEuMTAiXSwgaG9zdHMpOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgSG9zdHNGb3JNYXNrX1NsYXNoMjNfS2VlcHNEb3RaZXJvQW5kRG90MjU1SG9zdHMoKQogICAgewogICAgICAgIC8vIERvY3VtZW50ZWQgaW1wcm92ZW1lbnQgb3ZlciB0aGUgb3JpZ2luYWwsIHdoaWNoIGRyb3BwZWQgZXZlcnkgLjAvLjI1NQogICAgICAgIC8vIGFkZHJlc3MgZXZlbiB3aGVuIGl0IHdhcyBhIGxlZ2l0aW1hdGUgaG9zdCBvZiBhIC8yMyBvciBzaG9ydGVyIHByZWZpeC4KICAgICAgICB2YXIgaG9zdHMgPSBTdWJuZXRDYWxjdWxhdG9yLkhvc3RzRm9yTWFzaygiMTkyLjE2OC4xLjEwIiwgMjMpOwoKICAgICAgICBBc3NlcnQuRXF1YWwoNTEwLCBob3N0cy5Db3VudCk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKCIxOTIuMTY4LjAuMSIsIGhvc3RzWzBdKTsKICAgICAgICBBc3NlcnQuRXF1YWwoIjE5Mi4xNjguMS4yNTQiLCBob3N0c1teMV0pOwogICAgICAgIEFzc2VydC5Db250YWlucygiMTkyLjE2OC4xLjAiLCBob3N0cyk7CiAgICAgICAgQXNzZXJ0LkNvbnRhaW5zKCIxOTIuMTY4LjAuMjU1IiwgaG9zdHMpOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgSG9zdHNGb3JNYXNrX1NsYXNoMTZfUmV0dXJuczY1NTM0SG9zdHMoKQogICAgewogICAgICAgIHZhciBob3N0cyA9IFN1Ym5ldENhbGN1bGF0b3IuSG9zdHNGb3JNYXNrKCIxOTIuMTY4LjEuMTAiLCAxNik7CgogICAgICAgIEFzc2VydC5FcXVhbCg2NTUzNCwgaG9zdHMuQ291bnQpOwogICAgICAgIEFzc2VydC5FcXVhbCgiMTkyLjE2OC4wLjEiLCBob3N0c1swXSk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKCIxOTIuMTY4LjI1NS4yNTQiLCBob3N0c1teMV0pOwogICAgfQoKICAgIFtUaGVvcnldCiAgICBbSW5saW5lRGF0YSgzMyldCiAgICBbSW5saW5lRGF0YSgtMSldCiAgICBwdWJsaWMgdm9pZCBIb3N0c0Zvck1hc2tfUmVqZWN0c091dE9mUmFuZ2VCaXRzKGludCBiaXRzKQogICAgICAgID0+IEFzc2VydC5FbXB0eShTdWJuZXRDYWxjdWxhdG9yLkhvc3RzRm9yTWFzaygiMTkyLjE2OC4xLjEwIiwgYml0cykpOwoKICAgIFtUaGVvcnldCiAgICBbSW5saW5lRGF0YSgiOTk5LjEuMS4xIildCiAgICBbSW5saW5lRGF0YSgiMTkyLjE2OC4xIildCiAgICBbSW5saW5lRGF0YSgiIildCiAgICBwdWJsaWMgdm9pZCBIb3N0c0Zvck1hc2tfUmVqZWN0c01hbGZvcm1lZFNlZWQoc3RyaW5nIHNlZWQpCiAgICAgICAgPT4gQXNzZXJ0LkVtcHR5KFN1Ym5ldENhbGN1bGF0b3IuSG9zdHNGb3JNYXNrKHNlZWQsIDI0KSk7Cn0K
+using Xunit;
+using IPScaner.Core.Net;
+
+namespace IPScaner.Core.Tests;
+
+/// <summary>
+/// Coverage for <see cref="SubnetCalculator"/> — the 网络和IP地址计算器 engine.
+/// </summary>
+public class SubnetCalculatorTests
+{
+    // ---- Calculate: table across mask bits ---------------------------------
+
+    /// <summary>
+    /// Fixed host 192.168.1.10 against every interesting prefix length. All rows
+    /// are complete (a full network/broadcast/first/last quadruple exists).
+    /// </summary>
+    [Theory]
+    [InlineData(8, "192.0.0.0", "192.255.255.255", "192.0.0.1", "192.255.255.254", "16777214")]
+    [InlineData(12, "192.160.0.0", "192.175.255.255", "192.160.0.1", "192.175.255.254", "1048574")]
+    [InlineData(16, "192.168.0.0", "192.168.255.255", "192.168.0.1", "192.168.255.254", "65534")]
+    [InlineData(20, "192.168.0.0", "192.168.15.255", "192.168.0.1", "192.168.15.254", "4094")]
+    [InlineData(22, "192.168.0.0", "192.168.3.255", "192.168.0.1", "192.168.3.254", "1022")]
+    [InlineData(23, "192.168.0.0", "192.168.1.255", "192.168.0.1", "192.168.1.254", "510")]
+    [InlineData(24, "192.168.1.0", "192.168.1.255", "192.168.1.1", "192.168.1.254", "254")]
+    [InlineData(25, "192.168.1.0", "192.168.1.127", "192.168.1.1", "192.168.1.126", "126")]
+    [InlineData(26, "192.168.1.0", "192.168.1.63", "192.168.1.1", "192.168.1.62", "62")]
+    [InlineData(27, "192.168.1.0", "192.168.1.31", "192.168.1.1", "192.168.1.30", "30")]
+    [InlineData(28, "192.168.1.0", "192.168.1.15", "192.168.1.1", "192.168.1.14", "14")]
+    [InlineData(29, "192.168.1.8", "192.168.1.15", "192.168.1.9", "192.168.1.14", "6")]
+    [InlineData(30, "192.168.1.8", "192.168.1.11", "192.168.1.9", "192.168.1.10", "2")]
+    public void Calculate_MatchesTable_ForEveryMaskBit(
+        int bits, string network, string broadcast, string first, string last, string count)
+    {
+        var result = SubnetCalculator.Calculate("192.168.1.10", bits);
+
+        Assert.False(result.HasError);
+        Assert.Equal(string.Empty, result.Error);
+        Assert.Equal(bits, result.Bits);
+        Assert.Equal(SubnetCalculator.MaskString(bits), result.Mask);
+        Assert.Equal(network, result.Network);
+        Assert.Equal(broadcast, result.Broadcast);
+        Assert.Equal(first, result.FirstUsable);
+        Assert.Equal(last, result.LastUsable);
+        Assert.Equal(count, result.UsableCount);
+        Assert.Equal(long.Parse(count), result.UsableCountValue);
+        Assert.True(result.IsComplete);
+        Assert.Equal($"{network}/{bits}", result.Cidr);
+    }
+
+    [Fact]
+    public void Calculate_Slash24_MatchesTheDocumentedAnchors()
+    {
+        var result = SubnetCalculator.Calculate("192.168.1.10", 24);
+
+        Assert.Equal("192.168.1.0", result.Network);
+        Assert.Equal("192.168.1.255", result.Broadcast);
+        Assert.Equal("192.168.1.1", result.FirstUsable);
+        Assert.Equal("192.168.1.254", result.LastUsable);
+        Assert.Equal("254", result.UsableCount);
+        Assert.Equal(254, result.UsableCountValue);
+        Assert.True(result.IsComplete);
+        Assert.Equal("192.168.1.0/24", result.Cidr);
+    }
+
+    [Fact]
+    public void Calculate_Slash31_ReportsTwoHostsAndIsIncomplete()
+    {
+        var result = SubnetCalculator.Calculate("192.168.1.10", 31);
+
+        Assert.Equal("two hosts", result.UsableCount);
+        Assert.False(result.IsComplete);
+        Assert.Equal("255.255.255.254", result.Mask);
+        Assert.Equal("192.168.1.10", result.Network);
+        Assert.Equal("192.168.1.10", result.FirstUsable);
+        Assert.Equal("192.168.1.11", result.LastUsable);
+        Assert.Null(result.UsableCountValue);
+        // The /31 branch never populates Broadcast (kept exactly as the original).
+        Assert.Equal(string.Empty, result.Broadcast);
+        Assert.Equal("192.168.1.10/31", result.Cidr);
+    }
+
+    [Fact]
+    public void Calculate_Slash31_NormalisesAnOddHostToThePairBase()
+    {
+        var result = SubnetCalculator.Calculate("192.168.1.11", 31);
+
+        Assert.Equal("192.168.1.10", result.Network);
+        Assert.Equal("192.168.1.11", result.LastUsable);
+        Assert.Equal("two hosts", result.UsableCount);
+    }
+
+    [Fact]
+    public void Calculate_Slash32_ReportsOneHostAndIsIncomplete()
+    {
+        var result = SubnetCalculator.Calculate("192.168.1.10", 32);
+
+        Assert.Equal("one host", result.UsableCount);
+        Assert.False(result.IsComplete);
+        Assert.Equal("255.255.255.255", result.Mask);
+        Assert.Equal("192.168.1.10", result.Network);
+        Assert.Equal("192.168.1.10", result.FirstUsable);
+        Assert.Equal(string.Empty, result.LastUsable);
+        Assert.Equal(string.Empty, result.Broadcast);
+        Assert.Null(result.UsableCountValue);
+        Assert.Equal("192.168.1.10/32", result.Cidr);
+    }
+
+    [Fact]
+    public void Calculate_Slash0_CoversTheWholeAddressSpace()
+    {
+        var result = SubnetCalculator.Calculate("192.168.1.10", 0);
+
+        Assert.False(result.HasError);
+        Assert.Equal("0.0.0.0", result.Mask);
+        Assert.Equal("0.0.0.0", result.Network);
+        Assert.Equal("255.255.255.255", result.Broadcast);
+        Assert.Equal("0.0.0.1", result.FirstUsable);
+        Assert.Equal("255.255.255.254", result.LastUsable);
+        Assert.Equal("4294967294", result.UsableCount);
+        Assert.Equal(4294967294L, result.UsableCountValue);
+        Assert.True(result.IsComplete);
+        Assert.Equal("0.0.0.0/0", result.Cidr);
+    }
+
+    // ---- Calculate: error paths -------------------------------------------
+
+    [Fact]
+    public void Calculate_OutOfRangeOctet_YieldsTheOriginalErrorMarker()
+    {
+        var result = SubnetCalculator.Calculate([192, 168, 1, 300], 24);
+
+        Assert.Equal("错误", result.Error);
+        Assert.Equal("错误", result.UsableCount);
+        Assert.True(result.HasError);
+        Assert.False(result.IsComplete);
+        Assert.Equal(string.Empty, result.Mask);
+        Assert.Equal(string.Empty, result.Network);
+        Assert.Equal(string.Empty, result.Cidr);
+    }
+
+    [Fact]
+    public void Calculate_TooFewOctets_YieldsTheErrorMarker()
+    {
+        // A short list means "no octet supplied" for the missing positions.
+        var result = SubnetCalculator.Calculate([192, 168], 24);
+
+        Assert.Equal("错误", result.Error);
+        Assert.False(result.IsComplete);
+    }
+
+    [Theory]
+    [InlineData(33)]
+    [InlineData(34)]
+    [InlineData(-1)]
+    [InlineData(int.MaxValue)]
+    public void Calculate_MaskBitOutOfRange_PutsErrorInMaskField(int bits)
+    {
+        var result = SubnetCalculator.Calculate([192, 168, 1, 10], bits);
+
+        Assert.Equal("错误", result.Error);
+        Assert.Equal("错误", result.Mask);
+        Assert.True(result.HasError);
+        Assert.False(result.IsComplete);
+        Assert.Equal(bits, result.Bits);
+    }
+
+    [Theory]
+    [InlineData("999.1.1.1")]
+    [InlineData("10.0.0.1abc")]
+    [InlineData("1.2.3")]
+    [InlineData("")]
+    public void Calculate_FromString_RejectsMalformedAddresses(string ip)
+    {
+        var result = SubnetCalculator.Calculate(ip, 24);
+
+        Assert.Equal("错误", result.Error);
+        Assert.Equal("错误", result.UsableCount);
+        Assert.Equal(24, result.Bits);
+    }
+
+    [Fact]
+    public void Calculate_StringOverload_AgreesWithTheOctetOverload()
+    {
+        var fromString = SubnetCalculator.Calculate("192.168.1.10", 26);
+        var fromOctets = SubnetCalculator.Calculate([192, 168, 1, 10], 26);
+
+        Assert.Equal(fromOctets.Network, fromString.Network);
+        Assert.Equal(fromOctets.Broadcast, fromString.Broadcast);
+        Assert.Equal(fromOctets.FirstUsable, fromString.FirstUsable);
+        Assert.Equal(fromOctets.LastUsable, fromString.LastUsable);
+        Assert.Equal(fromOctets.UsableCount, fromString.UsableCount);
+        Assert.Equal(fromOctets.Cidr, fromString.Cidr);
+    }
+
+    // ---- MaskOctets / MaskString / WildcardString --------------------------
+
+    [Theory]
+    [InlineData(0, "0.0.0.0")]
+    [InlineData(1, "128.0.0.0")]
+    [InlineData(8, "255.0.0.0")]
+    [InlineData(9, "255.128.0.0")]
+    [InlineData(16, "255.255.0.0")]
+    [InlineData(23, "255.255.254.0")]
+    [InlineData(24, "255.255.255.0")]
+    [InlineData(25, "255.255.255.128")]
+    [InlineData(26, "255.255.255.192")]
+    [InlineData(27, "255.255.255.224")]
+    [InlineData(28, "255.255.255.240")]
+    [InlineData(30, "255.255.255.252")]
+    [InlineData(31, "255.255.255.254")]
+    [InlineData(32, "255.255.255.255")]
+    public void MaskString_ReturnsDottedQuadMask(int bits, string expected)
+    {
+        Assert.Equal(expected, SubnetCalculator.MaskString(bits));
+        Assert.Equal(expected.Split('.').Select(int.Parse), SubnetCalculator.MaskOctets(bits));
+    }
+
+    [Theory]
+    [InlineData(0, "255.255.255.255")]
+    [InlineData(8, "0.255.255.255")]
+    [InlineData(24, "0.0.0.255")]
+    [InlineData(26, "0.0.0.63")]
+    [InlineData(30, "0.0.0.3")]
+    [InlineData(32, "0.0.0.0")]
+    public void WildcardString_IsTheInverseOfTheMask(int bits, string expected)
+        => Assert.Equal(expected, SubnetCalculator.WildcardString(bits));
+
+    [Fact]
+    public void WildcardString_IsComplementaryForEveryPrefixLength()
+    {
+        for (var bits = 0; bits <= 32; bits++)
+        {
+            var mask = SubnetCalculator.MaskOctets(bits);
+            var wildcard = SubnetCalculator.WildcardString(bits).Split('.').Select(int.Parse).ToArray();
+
+            for (var i = 0; i < 4; i++) Assert.Equal(255, mask[i] + wildcard[i]);
+        }
+    }
+
+    [Fact]
+    public void MaskOctets_IsAlwaysContiguous()
+    {
+        for (var bits = 0; bits <= 32; bits++)
+        {
+            var mask = string.Join(".", SubnetCalculator.MaskOctets(bits));
+            Assert.Equal(bits, SubnetCalculator.BitsFromMask(mask));
+        }
+    }
+
+    // ---- BitsFromMask ------------------------------------------------------
+
+    [Theory]
+    [InlineData("255.255.255.0", 24)]
+    [InlineData("/26", 26)]
+    [InlineData("26", 26)]
+    [InlineData("/0", 0)]
+    [InlineData("0", 0)]
+    [InlineData("0.0.0.0", 0)]
+    [InlineData("255.255.255.255", 32)]
+    [InlineData("255.255.255.254", 31)]
+    [InlineData("255.255.255.128", 25)]
+    [InlineData(" 255.255.255.0 ", 24)] // trimmed
+    [InlineData("255.0.255.0", -1)]     // non-contiguous
+    [InlineData("255.255.0.255", -1)]
+    [InlineData("0.255.255.255", -1)]
+    [InlineData("garbage", -1)]
+    [InlineData("999.1.1.1", -1)]
+    [InlineData("", -1)]
+    [InlineData("   ", -1)]
+    [InlineData(null, -1)]
+    [InlineData("/33", -1)]
+    [InlineData("33", -1)]
+    [InlineData("-1", -1)]
+    public void BitsFromMask_ConvertsOrRejects(string? maskText, int expected)
+        => Assert.Equal(expected, SubnetCalculator.BitsFromMask(maskText));
+
+    // ---- HostsForMask ------------------------------------------------------
+
+    [Fact]
+    public void HostsForMask_Slash24_Returns254Hosts()
+    {
+        var hosts = SubnetCalculator.HostsForMask("192.168.1.10", 24);
+
+        Assert.Equal(254, hosts.Count);
+        Assert.Equal("192.168.1.1", hosts[0]);
+        Assert.Equal("192.168.1.254", hosts[^1]);
+        Assert.DoesNotContain("192.168.1.0", hosts);
+        Assert.DoesNotContain("192.168.1.255", hosts);
+    }
+
+    [Fact]
+    public void HostsForMask_Slash31_ReturnsExactlyTwoHosts()
+    {
+        var hosts = SubnetCalculator.HostsForMask("192.168.1.10", 31);
+
+        Assert.Equal(2, hosts.Count);
+        Assert.Equal(["192.168.1.10", "192.168.1.11"], hosts);
+    }
+
+    [Fact]
+    public void HostsForMask_Slash32_ReturnsExactlyOneHost()
+    {
+        var hosts = SubnetCalculator.HostsForMask("192.168.1.10", 32);
+
+        Assert.Single(hosts);
+        Assert.Equal("192.168.1.10", hosts[0]);
+    }
+
+    [Fact]
+    public void HostsForMask_Slash30_ReturnsTheTwoUsableHosts()
+    {
+        var hosts = SubnetCalculator.HostsForMask("192.168.1.10", 30);
+
+        Assert.Equal(["192.168.1.9", "192.168.1.10"], hosts);
+    }
+
+    [Fact]
+    public void HostsForMask_Slash23_KeepsDotZeroAndDot255Hosts()
+    {
+        // Documented improvement over the original, which dropped every .0/.255
+        // address even when it was a legitimate host of a /23 or shorter prefix.
+        var hosts = SubnetCalculator.HostsForMask("192.168.1.10", 23);
+
+        Assert.Equal(510, hosts.Count);
+        Assert.Equal("192.168.0.1", hosts[0]);
+        Assert.Equal("192.168.1.254", hosts[^1]);
+        Assert.Contains("192.168.1.0", hosts);
+        Assert.Contains("192.168.0.255", hosts);
+    }
+
+    [Fact]
+    public void HostsForMask_Slash16_Returns65534Hosts()
+    {
+        var hosts = SubnetCalculator.HostsForMask("192.168.1.10", 16);
+
+        Assert.Equal(65534, hosts.Count);
+        Assert.Equal("192.168.0.1", hosts[0]);
+        Assert.Equal("192.168.255.254", hosts[^1]);
+    }
+
+    [Theory]
+    [InlineData(33)]
+    [InlineData(-1)]
+    public void HostsForMask_RejectsOutOfRangeBits(int bits)
+        => Assert.Empty(SubnetCalculator.HostsForMask("192.168.1.10", bits));
+
+    [Theory]
+    [InlineData("999.1.1.1")]
+    [InlineData("192.168.1")]
+    [InlineData("")]
+    public void HostsForMask_RejectsMalformedSeed(string seed)
+        => Assert.Empty(SubnetCalculator.HostsForMask(seed, 24));
+}

@@ -1,1 +1,371 @@
-dXNpbmcgWHVuaXQ7CnVzaW5nIFN5c3RlbS5UZXh0Owp1c2luZyBJUFNjYW5lci5Db3JlLk1lbW87CgpuYW1lc3BhY2UgSVBTY2FuZXIuQ29yZS5UZXN0czsKCi8vLyA8c3VtbWFyeT4KLy8vIENvdmVyYWdlIGZvciA8c2VlIGNyZWY9Ik1lbW9TdG9yZSIvPiDigJQg5aSH5rOo566h55CGLCBpbmNsdWRpbmcgdGhlIG9uLWRpc2sgZm9ybWF0Ci8vLyB0aGF0IGV4aXN0aW5nIElQU2NhbmVyTWVtby5kYXQgZmlsZXMgYWxyZWFkeSB1c2UuCi8vLyA8L3N1bW1hcnk+CnB1YmxpYyBjbGFzcyBNZW1vU3RvcmVUZXN0cwp7CiAgICAvLyAtLS0tIF52XiBlc2NhcGluZyByb3VuZCB0cmlwIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgU2F2ZUxvYWRfUm91bmRUcmlwc0FNdWx0aUxpbmVOb3RlX1VzaW5nQ2FyZXRWRXNjYXBpbmcoKQogICAgewogICAgICAgIHVzaW5nIHZhciB3b3Jrc3BhY2UgPSBuZXcgVGVtcFdvcmtzcGFjZSgpOwogICAgICAgIHZhciBwYXRoID0gd29ya3NwYWNlLlBhdGhGb3IoTWVtb1N0b3JlLkZpbGVOYW1lKTsKICAgICAgICB2YXIgbm90ZSA9ICLnrKzkuIDooYwiICsgRW52aXJvbm1lbnQuTmV3TGluZSArICLnrKzkuozooYwiICsgRW52aXJvbm1lbnQuTmV3TGluZSArICLnrKzkuInooYwiOwoKICAgICAgICB2YXIgc3RvcmUgPSBuZXcgTWVtb1N0b3JlKHBhdGgpOwogICAgICAgIHN0b3JlLlNldCgiMTkyLjE2OC4xLjEwIiwgbm90ZSk7CiAgICAgICAgc3RvcmUuU2F2ZSgpOwoKICAgICAgICB2YXIgcmF3ID0gRmlsZS5SZWFkQWxsVGV4dChwYXRoLCBFbmNvZGluZy5VVEY4KTsKICAgICAgICBBc3NlcnQuQ29udGFpbnMoIjE5Mi4xNjguMS4xMD3nrKzkuIDooYxedl7nrKzkuozooYxedl7nrKzkuInooYwiLCByYXcpOwogICAgICAgIC8vIE9uZSBwaHlzaWNhbCBsaW5lIHBlciBlbnRyeSwgZXZlbiB0aG91Z2ggdGhlIHZhbHVlIGhhcyB0d28gbmV3bGluZXMuCiAgICAgICAgQXNzZXJ0LlNpbmdsZShyYXcuU3BsaXQoJ1xuJywgU3RyaW5nU3BsaXRPcHRpb25zLlJlbW92ZUVtcHR5RW50cmllcykpOwoKICAgICAgICB2YXIgcmVsb2FkZWQgPSBuZXcgTWVtb1N0b3JlKHBhdGgpOwogICAgICAgIHJlbG9hZGVkLkxvYWQoKTsKCiAgICAgICAgQXNzZXJ0LkVxdWFsKG5vdGUsIHJlbG9hZGVkLkxvb2t1cChudWxsLCAiMTkyLjE2OC4xLjEwIikpOwogICAgICAgIEFzc2VydC5FcXVhbCgxLCByZWxvYWRlZC5Db3VudCk7CiAgICB9CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBTYXZlX1dyaXRlc1V0ZjhXaXRoQm9tX0xpa2VUaGVPcmlnaW5hbFdyaXRlcigpCiAgICB7CiAgICAgICAgdXNpbmcgdmFyIHdvcmtzcGFjZSA9IG5ldyBUZW1wV29ya3NwYWNlKCk7CiAgICAgICAgdmFyIHBhdGggPSB3b3Jrc3BhY2UuUGF0aEZvcihNZW1vU3RvcmUuRmlsZU5hbWUpOwoKICAgICAgICB2YXIgc3RvcmUgPSBuZXcgTWVtb1N0b3JlKHBhdGgpOwogICAgICAgIHN0b3JlLlNldCgiMTkyLjE2OC4xLjEwIiwgIuaJk+WNsOacuiIpOwogICAgICAgIHN0b3JlLlNhdmUoKTsKCiAgICAgICAgdmFyIGJ5dGVzID0gRmlsZS5SZWFkQWxsQnl0ZXMocGF0aCk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKG5ldyBieXRlW10geyAweEVGLCAweEJCLCAweEJGIH0sIGJ5dGVzLlRha2UoMykpOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgU2F2ZUxvYWRfTm9ybWFsaXNlc0xvbmVMaW5lRmVlZFRvVGhlUGxhdGZvcm1OZXdMaW5lKCkKICAgIHsKICAgICAgICB1c2luZyB2YXIgd29ya3NwYWNlID0gbmV3IFRlbXBXb3Jrc3BhY2UoKTsKICAgICAgICB2YXIgcGF0aCA9IHdvcmtzcGFjZS5QYXRoRm9yKE1lbW9TdG9yZS5GaWxlTmFtZSk7CgogICAgICAgIHZhciBzdG9yZSA9IG5ldyBNZW1vU3RvcmUocGF0aCk7CiAgICAgICAgc3RvcmUuU2V0KCIxMC4wLjAuNSIsICLkuIpcbuS4iyIpOwogICAgICAgIHN0b3JlLlNhdmUoKTsKCiAgICAgICAgdmFyIHJlbG9hZGVkID0gbmV3IE1lbW9TdG9yZShwYXRoKTsKICAgICAgICByZWxvYWRlZC5Mb2FkKCk7CgogICAgICAgIC8vIEJvdGggIlxyXG4iIGFuZCAiXG4iIGFyZSBzdG9yZWQgYXMgIl52XiIgYW5kIHJlc3RvcmVkIGFzIEVudmlyb25tZW50Lk5ld0xpbmUsCiAgICAgICAgLy8gc28gYSBub3RlIHNhdmVkIG9uIFdpbmRvd3MgcmVsb2FkcyBieXRlLWlkZW50aWNhbGx5IHRoZXJlLiBEb2N1bWVudGVkIGhlcmUKICAgICAgICAvLyBiZWNhdXNlIGEgTGludXgtYXV0aG9yZWQgIlxuIiBub3RlIGdhaW5zIGEgQ1Igd2hlbiByZS1zYXZlZCBvbiBXaW5kb3dzLgogICAgICAgIEFzc2VydC5FcXVhbCgi5LiKIiArIEVudmlyb25tZW50Lk5ld0xpbmUgKyAi5LiLIiwgcmVsb2FkZWQuTG9va3VwKG51bGwsICIxMC4wLjAuNSIpKTsKICAgIH0KCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIFNhdmVMb2FkX09ubHlUaGVGaXJzdEVxdWFsc1NpZ25TcGxpdHNLZXlBbmRWYWx1ZSgpCiAgICB7CiAgICAgICAgdXNpbmcgdmFyIHdvcmtzcGFjZSA9IG5ldyBUZW1wV29ya3NwYWNlKCk7CiAgICAgICAgdmFyIHBhdGggPSB3b3Jrc3BhY2UuUGF0aEZvcihNZW1vU3RvcmUuRmlsZU5hbWUpOwoKICAgICAgICB2YXIgc3RvcmUgPSBuZXcgTWVtb1N0b3JlKHBhdGgpOwogICAgICAgIHN0b3JlLlNldCgiMTkyLjE2OC4xLjExIiwgImE9Yj1jIik7CiAgICAgICAgc3RvcmUuU2F2ZSgpOwoKICAgICAgICB2YXIgcmVsb2FkZWQgPSBuZXcgTWVtb1N0b3JlKHBhdGgpOwogICAgICAgIHJlbG9hZGVkLkxvYWQoKTsKCiAgICAgICAgQXNzZXJ0LkVxdWFsKCJhPWI9YyIsIHJlbG9hZGVkLkxvb2t1cChudWxsLCAiMTkyLjE2OC4xLjExIikpOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgTG9hZF9Ta2lwc0NvbW1lbnRzQmxhbmtMaW5lc0FuZExpbmVzV2l0aG91dEJvdGhIYWx2ZXMoKQogICAgewogICAgICAgIHVzaW5nIHZhciB3b3Jrc3BhY2UgPSBuZXcgVGVtcFdvcmtzcGFjZSgpOwogICAgICAgIHZhciBwYXRoID0gd29ya3NwYWNlLlBhdGhGb3IoTWVtb1N0b3JlLkZpbGVOYW1lKTsKICAgICAgICBGaWxlLldyaXRlQWxsVGV4dCgKICAgICAgICAgICAgcGF0aCwKICAgICAgICAgICAgc3RyaW5nLkpvaW4oCiAgICAgICAgICAgICAgICAiXHJcbiIsCiAgICAgICAgICAgICAgICAiIyDov5nmmK/ms6jph4oiLAogICAgICAgICAgICAgICAgc3RyaW5nLkVtcHR5LAogICAgICAgICAgICAgICAgIiAgICIsCiAgICAgICAgICAgICAgICAiMTkyLjE2OC4xLjEwPeaJk+WNsOacuiIsCiAgICAgICAgICAgICAgICAiPeayoeaciemUriIsCiAgICAgICAgICAgICAgICAi5rKh5pyJ562J5Y+3IiwKICAgICAgICAgICAgICAgICIwMC0xQS0yQi0zQy00RC01RT3kuInmpbzmnLrmiL8iKSwKICAgICAgICAgICAgbmV3IFVURjhFbmNvZGluZyh0cnVlKSk7CgogICAgICAgIHZhciBzdG9yZSA9IG5ldyBNZW1vU3RvcmUocGF0aCk7CiAgICAgICAgc3RvcmUuTG9hZCgpOwoKICAgICAgICBBc3NlcnQuRXF1YWwoMiwgc3RvcmUuQ291bnQpOwogICAgICAgIEFzc2VydC5FcXVhbCgi5omT5Y2w5py6Iiwgc3RvcmUuTG9va3VwKG51bGwsICIxOTIuMTY4LjEuMTAiKSk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKCLkuInmpbzmnLrmiL8iLCBzdG9yZS5Mb29rdXAoIjAwLTFBLTJCLTNDLTRELTVFIikpOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgTG9hZF9NaXNzaW5nRmlsZV9MZWF2ZXNUaGVTdG9yZUVtcHR5KCkKICAgIHsKICAgICAgICB1c2luZyB2YXIgd29ya3NwYWNlID0gbmV3IFRlbXBXb3Jrc3BhY2UoKTsKCiAgICAgICAgdmFyIHN0b3JlID0gbmV3IE1lbW9TdG9yZSh3b3Jrc3BhY2UuUGF0aEZvcihNZW1vU3RvcmUuRmlsZU5hbWUpKTsKICAgICAgICBzdG9yZS5Mb2FkKCk7CgogICAgICAgIEFzc2VydC5FcXVhbCgwLCBzdG9yZS5Db3VudCk7CiAgICAgICAgQXNzZXJ0LkVtcHR5KHN0b3JlLkVudHJpZXMpOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgTG9hZF9NaWdyYXRlc1RoZUxlZ2FjeUZpbGVOYW1lKCkKICAgIHsKICAgICAgICB1c2luZyB2YXIgd29ya3NwYWNlID0gbmV3IFRlbXBXb3Jrc3BhY2UoKTsKICAgICAgICB2YXIgY3VycmVudCA9IHdvcmtzcGFjZS5QYXRoRm9yKE1lbW9TdG9yZS5GaWxlTmFtZSk7CiAgICAgICAgdmFyIGxlZ2FjeSA9IHdvcmtzcGFjZS5QYXRoRm9yKE1lbW9TdG9yZS5MZWdhY3lGaWxlTmFtZSk7CiAgICAgICAgRmlsZS5Xcml0ZUFsbFRleHQobGVnYWN5LCAiMTkyLjE2OC4xLjEwPeaXp+aWh+S7tiIsIG5ldyBVVEY4RW5jb2RpbmcodHJ1ZSkpOwoKICAgICAgICB2YXIgc3RvcmUgPSBuZXcgTWVtb1N0b3JlKGN1cnJlbnQpOwogICAgICAgIHN0b3JlLkxvYWQoKTsKCiAgICAgICAgQXNzZXJ0LkZhbHNlKEZpbGUuRXhpc3RzKGxlZ2FjeSkpOwogICAgICAgIEFzc2VydC5UcnVlKEZpbGUuRXhpc3RzKGN1cnJlbnQpKTsKICAgICAgICBBc3NlcnQuRXF1YWwoIuaXp+aWh+S7tiIsIHN0b3JlLkxvb2t1cChudWxsLCAiMTkyLjE2OC4xLjEwIikpOwogICAgfQoKICAgIC8vIC0tLS0gbG9va3VwIHByZWNlZGVuY2UgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgTG9va3VwX1ByZWZlcnNUaGVNYWNFbnRyeU92ZXJUaGVJcEVudHJ5KCkKICAgIHsKICAgICAgICB1c2luZyB2YXIgd29ya3NwYWNlID0gbmV3IFRlbXBXb3Jrc3BhY2UoKTsKICAgICAgICB2YXIgc3RvcmUgPSBuZXcgTWVtb1N0b3JlKHdvcmtzcGFjZS5QYXRoRm9yKE1lbW9TdG9yZS5GaWxlTmFtZSkpOwogICAgICAgIHN0b3JlLlNldCgiMTkyLjE2OC4xLjEwIiwgIklQ5aSH5rOoIik7CiAgICAgICAgc3RvcmUuU2V0KCIwMC0xQS0yQi0zQy00RC01RSIsICJNQUPlpIfms6giKTsKCiAgICAgICAgQXNzZXJ0LkVxdWFsKCJNQUPlpIfms6giLCBzdG9yZS5Mb29rdXAoIjAwLTFBLTJCLTNDLTRELTVFIiwgIjE5Mi4xNjguMS4xMCIpKTsKICAgICAgICBBc3NlcnQuRXF1YWwoIklQ5aSH5rOoIiwgc3RvcmUuTG9va3VwKCJBQS1CQi1DQy1ERC1FRS1GRiIsICIxOTIuMTY4LjEuMTAiKSk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKCJJUOWkh+azqCIsIHN0b3JlLkxvb2t1cChudWxsLCAiMTkyLjE2OC4xLjEwIikpOwogICAgICAgIEFzc2VydC5FcXVhbChzdHJpbmcuRW1wdHksIHN0b3JlLkxvb2t1cCgiMTEtMjItMzMtNDQtNTUtNjYiLCBudWxsKSk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKHN0cmluZy5FbXB0eSwgc3RvcmUuTG9va3VwKG51bGwsIG51bGwpKTsKCiAgICAgICAgLy8gU2hhcnAgZWRnZSAoa2VwdCBhcyB0aGUgb3JpZ2luYWwgYmVoYXZlZCk6IHRoZSAibWFjIiBzbG90IGlzIGEgcGxhaW4KICAgICAgICAvLyBkaWN0aW9uYXJ5IGxvb2t1cCwgc28gcGFzc2luZyBhbiBJUCB0aGVyZSBtYXRjaGVzIHRoZSBJUCBlbnRyeSB0b28uCiAgICAgICAgQXNzZXJ0LkVxdWFsKCJJUOWkh+azqCIsIHN0b3JlLkxvb2t1cCgiMTkyLjE2OC4xLjEwIiwgbnVsbCkpOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgTG9va3VwX0lzQ2FzZUluc2Vuc2l0aXZlRm9yTWFjS2V5cygpCiAgICB7CiAgICAgICAgdXNpbmcgdmFyIHdvcmtzcGFjZSA9IG5ldyBUZW1wV29ya3NwYWNlKCk7CiAgICAgICAgdmFyIHN0b3JlID0gbmV3IE1lbW9TdG9yZSh3b3Jrc3BhY2UuUGF0aEZvcihNZW1vU3RvcmUuRmlsZU5hbWUpKTsKICAgICAgICBzdG9yZS5TZXQoIjAwLTFBLTJCLTNDLTRELTVFIiwgIuacuuaIvyIpOwoKICAgICAgICBBc3NlcnQuRXF1YWwoIuacuuaIvyIsIHN0b3JlLkxvb2t1cCgiMDAtMWEtMmItM2MtNGQtNWUiKSk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKCLmnLrmiL8iLCBzdG9yZS5Mb29rdXAoIjAwOjFBOjJCOjNDOjREOjVFIikpOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgTG9va3VwX0Nhbm9uaWNhbGlzZXNEYXNoQW5kQ29sb25NYWNTaGFwZXNUb09uZUtleSgpCiAgICB7CiAgICAgICAgLy8gRklYRUQ6IHRoZSBvcmlnaW5hbCBjb21wYXJlZCByYXcgdGV4dCwgc28gYSBub3RlIHNhdmVkIGFzICIwMC0xQS0uLi4iIHdhcwogICAgICAgIC8vIE5PVCBmb3VuZCB3aGVuIHRoZSBjYWxsZXIgcGFzc2VkICIwMDoxQTouLi4iLiBBcnBUYWJsZSdzIHJvdyByZWdleCBhY2NlcHRzCiAgICAgICAgLy8gZWl0aGVyIHNlcGFyYXRvciwgc28gdGhlIHNoYXBlIGhhbmRlZCB0byBMb29rdXAgZGVwZW5kcyBvbiB3aGVyZSB0aGUgTUFDCiAgICAgICAgLy8gdGV4dCBjYW1lIGZyb20g4oCUIGEgbWVtbyBpbXBvcnRlZCB3aXRoIGNvbG9ucyBzaWxlbnRseSBzdG9wcGVkIG1hdGNoaW5nLgogICAgICAgIC8vIE1lbW9TdG9yZSBub3cgY2Fub25pY2FsaXNlcyBNQUMga2V5cyB0byB1cHBlci1jYXNlIGRhc2ggZm9ybS4KICAgICAgICB1c2luZyB2YXIgd29ya3NwYWNlID0gbmV3IFRlbXBXb3Jrc3BhY2UoKTsKICAgICAgICB2YXIgc3RvcmUgPSBuZXcgTWVtb1N0b3JlKHdvcmtzcGFjZS5QYXRoRm9yKE1lbW9TdG9yZS5GaWxlTmFtZSkpOwoKICAgICAgICBzdG9yZS5TZXQoIjAwLTFBLTJCLTNDLTRELTVFIiwgIuacuuaIvyIpOwogICAgICAgIEFzc2VydC5FcXVhbCgi5py65oi/Iiwgc3RvcmUuTG9va3VwKCIwMC0xQS0yQi0zQy00RC01RSIpKTsKICAgICAgICBBc3NlcnQuRXF1YWwoIuacuuaIvyIsIHN0b3JlLkxvb2t1cCgiMDA6MUE6MkI6M0M6NEQ6NUUiKSk7CgogICAgICAgIC8vIFdyaXRpbmcgdGhlIGNvbG9uIHNoYXBlIHVwZGF0ZXMgdGhlIHNhbWUgZW50cnkgcmF0aGVyIHRoYW4gYWRkaW5nIGEgc2Vjb25kLgogICAgICAgIHN0b3JlLlNldCgiMDA6MWE6MmI6M2M6NGQ6NWUiLCAi5py65oi/KOaUuSkiKTsKICAgICAgICBBc3NlcnQuU2luZ2xlKHN0b3JlLkVudHJpZXMpOwogICAgICAgIEFzc2VydC5FcXVhbCgi5py65oi/KOaUuSkiLCBzdG9yZS5Mb29rdXAoIjAwLTFBLTJCLTNDLTRELTVFIikpOwoKICAgICAgICAvLyBBbmQgdGhlIGNhbm9uaWNhbCBmb3JtIGlzIHdoYXQgZ2V0cyBwZXJzaXN0ZWQuCiAgICAgICAgQXNzZXJ0LlRydWUoc3RvcmUuRW50cmllcy5Db250YWluc0tleSgiMDAtMUEtMkItM0MtNEQtNUUiKSk7CiAgICB9CgogICAgLy8gLS0tLSBtdXRhdGlvbiAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBTZXRfV2l0aEVtcHR5T3JOdWxsVmFsdWVfUmVtb3Zlc1RoZUVudHJ5KCkKICAgIHsKICAgICAgICB1c2luZyB2YXIgd29ya3NwYWNlID0gbmV3IFRlbXBXb3Jrc3BhY2UoKTsKICAgICAgICB2YXIgc3RvcmUgPSBuZXcgTWVtb1N0b3JlKHdvcmtzcGFjZS5QYXRoRm9yKE1lbW9TdG9yZS5GaWxlTmFtZSkpOwoKICAgICAgICBzdG9yZS5TZXQoIjE5Mi4xNjguMS4xMCIsICLlpIfms6giKTsKICAgICAgICBBc3NlcnQuRXF1YWwoMSwgc3RvcmUuQ291bnQpOwoKICAgICAgICBzdG9yZS5TZXQoIjE5Mi4xNjguMS4xMCIsIHN0cmluZy5FbXB0eSk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKDAsIHN0b3JlLkNvdW50KTsKICAgICAgICBBc3NlcnQuRmFsc2Uoc3RvcmUuVHJ5R2V0KCIxOTIuMTY4LjEuMTAiLCBvdXQgXykpOwogICAgICAgIEFzc2VydC5FcXVhbChzdHJpbmcuRW1wdHksIHN0b3JlLkxvb2t1cChudWxsLCAiMTkyLjE2OC4xLjEwIikpOwoKICAgICAgICBzdG9yZS5TZXQoIjE5Mi4xNjguMS4xMSIsICLlpIfms6giKTsKICAgICAgICBzdG9yZS5TZXQoIjE5Mi4xNjguMS4xMSIsIG51bGwpOwogICAgICAgIEFzc2VydC5FcXVhbCgwLCBzdG9yZS5Db3VudCk7CiAgICB9CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBTZXRfVHJpbXNUaGVLZXlfQW5kSWdub3Jlc0JsYW5rS2V5cygpCiAgICB7CiAgICAgICAgdXNpbmcgdmFyIHdvcmtzcGFjZSA9IG5ldyBUZW1wV29ya3NwYWNlKCk7CiAgICAgICAgdmFyIHN0b3JlID0gbmV3IE1lbW9TdG9yZSh3b3Jrc3BhY2UuUGF0aEZvcihNZW1vU3RvcmUuRmlsZU5hbWUpKTsKCiAgICAgICAgc3RvcmUuU2V0KCIgIDE5Mi4xNjguMS4xMCAgIiwgIuWkh+azqCIpOwogICAgICAgIHN0b3JlLlNldCgiICAgIiwgIuayoeaciemUriIpOwogICAgICAgIHN0b3JlLlNldChzdHJpbmcuRW1wdHksICLmsqHmnInplK4iKTsKCiAgICAgICAgQXNzZXJ0LkVxdWFsKDEsIHN0b3JlLkNvdW50KTsKICAgICAgICBBc3NlcnQuRXF1YWwoIuWkh+azqCIsIHN0b3JlLkxvb2t1cChudWxsLCAiMTkyLjE2OC4xLjEwIikpOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgUmVtb3ZlX0NsZWFyQW5kUmVwbGFjZUFsbF9CZWhhdmVBc0RvY3VtZW50ZWQoKQogICAgewogICAgICAgIHVzaW5nIHZhciB3b3Jrc3BhY2UgPSBuZXcgVGVtcFdvcmtzcGFjZSgpOwogICAgICAgIHZhciBzdG9yZSA9IG5ldyBNZW1vU3RvcmUod29ya3NwYWNlLlBhdGhGb3IoTWVtb1N0b3JlLkZpbGVOYW1lKSk7CiAgICAgICAgc3RvcmUuU2V0KCIxOTIuMTY4LjEuMTAiLCAiQSIpOwogICAgICAgIHN0b3JlLlNldCgiMTkyLjE2OC4xLjExIiwgIkIiKTsKCiAgICAgICAgQXNzZXJ0LlRydWUoc3RvcmUuUmVtb3ZlKCIxOTIuMTY4LjEuMTAiKSk7CiAgICAgICAgQXNzZXJ0LkZhbHNlKHN0b3JlLlJlbW92ZSgiMTkyLjE2OC4xLjEwIikpOwogICAgICAgIEFzc2VydC5FcXVhbCgxLCBzdG9yZS5Db3VudCk7CgogICAgICAgIHN0b3JlLlJlcGxhY2VBbGwoTWVtb1N0b3JlLlBhcnNlQ2xpcGJvYXJkKCIxOTIuMTY4LjEuMjA956ys5LiA5Y+wXG4xOTIuMTY4LjEuMjE956ys5LqM5Y+wXG7oo7jplK4iKSk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKDIsIHN0b3JlLkNvdW50KTsKICAgICAgICBBc3NlcnQuRXF1YWwoIuesrOS4gOWPsCIsIHN0b3JlLkxvb2t1cChudWxsLCAiMTkyLjE2OC4xLjIwIikpOwoKICAgICAgICBzdG9yZS5DbGVhcigpOwogICAgICAgIEFzc2VydC5FcXVhbCgwLCBzdG9yZS5Db3VudCk7CiAgICB9CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBTYXZlVGhlbkxvYWRfS2VlcHNFdmVyeUVudHJ5KCkKICAgIHsKICAgICAgICB1c2luZyB2YXIgd29ya3NwYWNlID0gbmV3IFRlbXBXb3Jrc3BhY2UoKTsKICAgICAgICB2YXIgcGF0aCA9IHdvcmtzcGFjZS5QYXRoRm9yKE1lbW9TdG9yZS5GaWxlTmFtZSk7CiAgICAgICAgdmFyIHN0b3JlID0gbmV3IE1lbW9TdG9yZShwYXRoKTsKICAgICAgICBzdG9yZS5TZXQoIjE5Mi4xNjguMS4xMCIsICLmiZPljbDmnLoiKTsKICAgICAgICBzdG9yZS5TZXQoIjE5Mi4xNjguMS4xMSIsICLotKLliqHpg6giKTsKICAgICAgICBzdG9yZS5TZXQoIjAwLTFBLTJCLTNDLTRELTVFIiwgIuacuuaIvyIpOwogICAgICAgIHN0b3JlLlNhdmUoKTsKCiAgICAgICAgdmFyIHJlbG9hZGVkID0gbmV3IE1lbW9TdG9yZShwYXRoKTsKICAgICAgICByZWxvYWRlZC5Mb2FkKCk7CgogICAgICAgIEFzc2VydC5FcXVhbCgzLCByZWxvYWRlZC5Db3VudCk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKCLmiZPljbDmnLoiLCByZWxvYWRlZC5Mb29rdXAobnVsbCwgIjE5Mi4xNjguMS4xMCIpKTsKICAgICAgICBBc3NlcnQuRXF1YWwoIui0ouWKoemDqCIsIHJlbG9hZGVkLkxvb2t1cChudWxsLCAiMTkyLjE2OC4xLjExIikpOwogICAgICAgIEFzc2VydC5FcXVhbCgi5py65oi/IiwgcmVsb2FkZWQuTG9va3VwKCIwMC0xQS0yQi0zQy00RC01RSIpKTsKICAgIH0KCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIFNhdmVfVG9BbkV4cGxpY2l0UGF0aF9MZWF2ZXNUaGVDb25maWd1cmVkRmlsZUFsb25lKCkKICAgIHsKICAgICAgICB1c2luZyB2YXIgd29ya3NwYWNlID0gbmV3IFRlbXBXb3Jrc3BhY2UoKTsKICAgICAgICB2YXIgY29uZmlndXJlZCA9IHdvcmtzcGFjZS5QYXRoRm9yKE1lbW9TdG9yZS5GaWxlTmFtZSk7CiAgICAgICAgdmFyIGFsdGVybmF0ZSA9IHdvcmtzcGFjZS5QYXRoRm9yKCJjb3B5LmRhdCIpOwoKICAgICAgICB2YXIgc3RvcmUgPSBuZXcgTWVtb1N0b3JlKGNvbmZpZ3VyZWQpOwogICAgICAgIHN0b3JlLlNldCgiMTkyLjE2OC4xLjEwIiwgIuWkh+azqCIpOwogICAgICAgIHN0b3JlLlNhdmUoYWx0ZXJuYXRlKTsKCiAgICAgICAgQXNzZXJ0LkZhbHNlKEZpbGUuRXhpc3RzKGNvbmZpZ3VyZWQpKTsKICAgICAgICBBc3NlcnQuVHJ1ZShGaWxlLkV4aXN0cyhhbHRlcm5hdGUpKTsKICAgIH0KCiAgICAvLyAtLS0tIElzTWFjS2V5IC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCiAgICBbVGhlb3J5XQogICAgW0lubGluZURhdGEoIjAwLTFBLTJCLTNDLTRELTVFIiwgdHJ1ZSldICAgLy8gZGFzaCBzaGFwZQogICAgW0lubGluZURhdGEoIjAwOjFBOjJCOjNDOjREOjVFIiwgdHJ1ZSldICAgLy8gY29sb24gc2hhcGUKICAgIFtJbmxpbmVEYXRhKCIwMC0xYS0yYi0zYy00ZC01ZSIsIHRydWUpXQogICAgW0lubGluZURhdGEoIjE5Mi4xNjguMS4xMCIsIGZhbHNlKV0KICAgIFtJbmxpbmVEYXRhKCIxOTIuMTY4IiwgZmFsc2UpXQogICAgW0lubGluZURhdGEoIiIsIGZhbHNlKV0KICAgIFtJbmxpbmVEYXRhKCJwcmludGVyIiwgZmFsc2UpXQogICAgLy8gRklYRUQ6IHRoZSBvcmlnaW5hbCBjbGFzc2lmaWVkIGFueSBkb3QtbGVzcyB0b2tlbiBjb250YWluaW5nIGEgZGFzaCBhcyBhIE1BQywKICAgIC8vIHNvIGEgaHlwaGVuYXRlZCBob3N0IG5hbWUgd2FzIG1pc3Rha2VuIGZvciBhIE1BQyBrZXkuIFRoZSBjaGVjayBpcyBub3cgYSByZWFsCiAgICAvLyBzaXgtb2N0ZXQgTUFDIHBhdHRlcm4uCiAgICBbSW5saW5lRGF0YSgiZmlsZS1zZXJ2ZXIiLCBmYWxzZSldCiAgICBbSW5saW5lRGF0YSgiM0MtN0MtM0YiLCBmYWxzZSldICAgICAgICAgICAvLyB0cnVuY2F0ZWQsIG5vdCBhIGZ1bGwgTUFDCiAgICBbSW5saW5lRGF0YSgiMDAtMUEtMkItM0MtNEQtNUUtNkYiLCBmYWxzZSldCiAgICBwdWJsaWMgdm9pZCBJc01hY0tleV9SZXF1aXJlc0FTaXhPY3RldE1hY1NoYXBlKHN0cmluZyBrZXksIGJvb2wgZXhwZWN0ZWQpCiAgICAgICAgPT4gQXNzZXJ0LkVxdWFsKGV4cGVjdGVkLCBNZW1vU3RvcmUuSXNNYWNLZXkoa2V5KSk7CgogICAgW1RoZW9yeV0KICAgIFtJbmxpbmVEYXRhKCIwMC0xQS0yQi0zQy00RC01RSIsICIwMC0xQS0yQi0zQy00RC01RSIpXQogICAgW0lubGluZURhdGEoIjAwOjFhOjJiOjNjOjRkOjVlIiwgIjAwLTFBLTJCLTNDLTRELTVFIildCiAgICBbSW5saW5lRGF0YSgiICAxOTIuMTY4LjEuMTAgICIsICIxOTIuMTY4LjEuMTAiKV0gIC8vIG5vbi1NQUMga2V5cyBhcmUgb25seSB0cmltbWVkCiAgICBwdWJsaWMgdm9pZCBOb3JtYWxpemVLZXlfQ2Fub25pY2FsaXNlc01hY3NPbmx5KHN0cmluZyBpbnB1dCwgc3RyaW5nIGV4cGVjdGVkKQogICAgICAgID0+IEFzc2VydC5FcXVhbChleHBlY3RlZCwgTWVtb1N0b3JlLk5vcm1hbGl6ZUtleShpbnB1dCkpOwoKICAgIC8vIC0tLS0gUGFyc2VDbGlwYm9hcmQgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgUGFyc2VDbGlwYm9hcmRfQWNjZXB0c0VxdWFsc1RhYkNvbW1hQW5kU3BhY2VGb3JtcygpCiAgICB7CiAgICAgICAgdmFyIHRleHQgPSBzdHJpbmcuSm9pbigKICAgICAgICAgICAgIlxuIiwKICAgICAgICAgICAgIjE5Mi4xNjguMS41PeaJk+WNsOacuiIsICAgICAgICAvLyBLRVk9VkFMVUUKICAgICAgICAgICAgIjE5Mi4xNjguMS42XHTmlofku7bmnI3liqHlmagiLCAgIC8vIEtFWTxUQUI+VkFMVUUKICAgICAgICAgICAgIjE5Mi4xNjguMS43LOS8muiuruWupCIsICAgICAgICAvLyBLRVksVkFMVUUKICAgICAgICAgICAgIjE5Mi4xNjguMS44IOWJjeWPsCIsICAgICAgICAgIC8vIEtFWSBWQUxVRQogICAgICAgICAgICAiIyDms6jph4rooYwiLAogICAgICAgICAgICAiMTkyLjE2OC4xLjkiLCAgICAgICAgICAgICAgIC8vIG5vIHZhbHVlIC0+IHNraXBwZWQKICAgICAgICAgICAgIjE5Mi4xNjguMS4xMz0iLCAgICAgICAgICAgICAvLyBlbXB0eSB2YWx1ZSAtPiBza2lwcGVkCiAgICAgICAgICAgICI957y65bCR6ZSuIiwgICAgICAgICAgICAgICAgICAgLy8gbm8ga2V5IC0+IHNraXBwZWQKICAgICAgICAgICAgc3RyaW5nLkVtcHR5LAogICAgICAgICAgICAiMTkyLjE2OC4xLjEyPWE9YiIpOyAgICAgICAgIC8vIG9ubHkgdGhlIGZpcnN0ICc9JyBzcGxpdHMKCiAgICAgICAgdmFyIGl0ZW1zID0gTWVtb1N0b3JlLlBhcnNlQ2xpcGJvYXJkKHRleHQpOwoKICAgICAgICBBc3NlcnQuRXF1YWwoNSwgaXRlbXMuQ291bnQpOwogICAgICAgIEFzc2VydC5FcXVhbChuZXcgS2V5VmFsdWVQYWlyPHN0cmluZywgc3RyaW5nPigiMTkyLjE2OC4xLjUiLCAi5omT5Y2w5py6IiksIGl0ZW1zWzBdKTsKICAgICAgICBBc3NlcnQuRXF1YWwobmV3IEtleVZhbHVlUGFpcjxzdHJpbmcsIHN0cmluZz4oIjE5Mi4xNjguMS42IiwgIuaWh+S7tuacjeWKoeWZqCIpLCBpdGVtc1sxXSk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKG5ldyBLZXlWYWx1ZVBhaXI8c3RyaW5nLCBzdHJpbmc+KCIxOTIuMTY4LjEuNyIsICLkvJrorq7lrqQiKSwgaXRlbXNbMl0pOwogICAgICAgIEFzc2VydC5FcXVhbChuZXcgS2V5VmFsdWVQYWlyPHN0cmluZywgc3RyaW5nPigiMTkyLjE2OC4xLjgiLCAi5YmN5Y+wIiksIGl0ZW1zWzNdKTsKICAgICAgICBBc3NlcnQuRXF1YWwobmV3IEtleVZhbHVlUGFpcjxzdHJpbmcsIHN0cmluZz4oIjE5Mi4xNjguMS4xMiIsICJhPWIiKSwgaXRlbXNbNF0pOwogICAgICAgIEFzc2VydC5Eb2VzTm90Q29udGFpbihpdGVtcywgaSA9PiBpLktleSA9PSAiMTkyLjE2OC4xLjkiKTsKICAgICAgICBBc3NlcnQuRG9lc05vdENvbnRhaW4oaXRlbXMsIGkgPT4gaS5LZXkuTGVuZ3RoID09IDApOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgUGFyc2VDbGlwYm9hcmRfSGFuZGxlc0NyTGZNYWNBbmRDb2xvblNlcGFyYXRlZFZhbHVlcygpCiAgICB7CiAgICAgICAgdmFyIGl0ZW1zID0gTWVtb1N0b3JlLlBhcnNlQ2xpcGJvYXJkKCIwMC0xQS0yQi0zQy00RC01RT3mnLrmiL9cclxuMTkyLjE2OC4xLjEwPei0ouWKoemDqO+8muS4iealvFxyXG4iKTsKCiAgICAgICAgQXNzZXJ0LkVxdWFsKDIsIGl0ZW1zLkNvdW50KTsKICAgICAgICBBc3NlcnQuRXF1YWwoIuacuuaIvyIsIGl0ZW1zWzBdLlZhbHVlKTsKICAgICAgICBBc3NlcnQuRXF1YWwoIui0ouWKoemDqO+8muS4iealvCIsIGl0ZW1zWzFdLlZhbHVlKTsgLy8gYSBmdWxsLXdpZHRoIGNvbG9uIGlzIG5vdCBhIHNlcGFyYXRvcgogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgUGFyc2VDbGlwYm9hcmRfVHJpbXNTdXJyb3VuZGluZ1doaXRlc3BhY2VPZktleUFuZFZhbHVlKCkKICAgIHsKICAgICAgICB2YXIgaXRlbXMgPSBNZW1vU3RvcmUuUGFyc2VDbGlwYm9hcmQoIiAgMTkyLjE2OC4xLjEwID0g5omT5Y2w5py6ICAiKTsKCiAgICAgICAgQXNzZXJ0LlNpbmdsZShpdGVtcyk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKCIxOTIuMTY4LjEuMTAiLCBpdGVtc1swXS5LZXkpOwogICAgICAgIEFzc2VydC5FcXVhbCgi5omT5Y2w5py6IiwgaXRlbXNbMF0uVmFsdWUpOwogICAgfQoKICAgIFtUaGVvcnldCiAgICBbSW5saW5lRGF0YSgiIildCiAgICBbSW5saW5lRGF0YSgiICAgIildCiAgICBbSW5saW5lRGF0YSgiXHJcblxyXG4iKV0KICAgIFtJbmxpbmVEYXRhKCIjIG9ubHkgYSBjb21tZW50IildCiAgICBbSW5saW5lRGF0YSgiMTkyLjE2OC4xLjEwIildCiAgICBwdWJsaWMgdm9pZCBQYXJzZUNsaXBib2FyZF9SZXR1cm5zTm90aGluZ19Gb3JJbnB1dFdpdGhvdXRFbnRyaWVzKHN0cmluZyB0ZXh0KQogICAgICAgID0+IEFzc2VydC5FbXB0eShNZW1vU3RvcmUuUGFyc2VDbGlwYm9hcmQodGV4dCkpOwp9Cg==
+using Xunit;
+using System.Text;
+using IPScaner.Core.Memo;
+
+namespace IPScaner.Core.Tests;
+
+/// <summary>
+/// Coverage for <see cref="MemoStore"/> — 备注管理, including the on-disk format
+/// that existing IPScanerMemo.dat files already use.
+/// </summary>
+public class MemoStoreTests
+{
+    // ---- ^v^ escaping round trip ------------------------------------------
+
+    [Fact]
+    public void SaveLoad_RoundTripsAMultiLineNote_UsingCaretVEscaping()
+    {
+        using var workspace = new TempWorkspace();
+        var path = workspace.PathFor(MemoStore.FileName);
+        var note = "第一行" + Environment.NewLine + "第二行" + Environment.NewLine + "第三行";
+
+        var store = new MemoStore(path);
+        store.Set("192.168.1.10", note);
+        store.Save();
+
+        var raw = File.ReadAllText(path, Encoding.UTF8);
+        Assert.Contains("192.168.1.10=第一行^v^第二行^v^第三行", raw);
+        // One physical line per entry, even though the value has two newlines.
+        Assert.Single(raw.Split('\n', StringSplitOptions.RemoveEmptyEntries));
+
+        var reloaded = new MemoStore(path);
+        reloaded.Load();
+
+        Assert.Equal(note, reloaded.Lookup(null, "192.168.1.10"));
+        Assert.Equal(1, reloaded.Count);
+    }
+
+    [Fact]
+    public void Save_WritesUtf8WithBom_LikeTheOriginalWriter()
+    {
+        using var workspace = new TempWorkspace();
+        var path = workspace.PathFor(MemoStore.FileName);
+
+        var store = new MemoStore(path);
+        store.Set("192.168.1.10", "打印机");
+        store.Save();
+
+        var bytes = File.ReadAllBytes(path);
+        Assert.Equal(new byte[] { 0xEF, 0xBB, 0xBF }, bytes.Take(3));
+    }
+
+    [Fact]
+    public void SaveLoad_NormalisesLoneLineFeedToThePlatformNewLine()
+    {
+        using var workspace = new TempWorkspace();
+        var path = workspace.PathFor(MemoStore.FileName);
+
+        var store = new MemoStore(path);
+        store.Set("10.0.0.5", "上\n下");
+        store.Save();
+
+        var reloaded = new MemoStore(path);
+        reloaded.Load();
+
+        // Both "\r\n" and "\n" are stored as "^v^" and restored as Environment.NewLine,
+        // so a note saved on Windows reloads byte-identically there. Documented here
+        // because a Linux-authored "\n" note gains a CR when re-saved on Windows.
+        Assert.Equal("上" + Environment.NewLine + "下", reloaded.Lookup(null, "10.0.0.5"));
+    }
+
+    [Fact]
+    public void SaveLoad_OnlyTheFirstEqualsSignSplitsKeyAndValue()
+    {
+        using var workspace = new TempWorkspace();
+        var path = workspace.PathFor(MemoStore.FileName);
+
+        var store = new MemoStore(path);
+        store.Set("192.168.1.11", "a=b=c");
+        store.Save();
+
+        var reloaded = new MemoStore(path);
+        reloaded.Load();
+
+        Assert.Equal("a=b=c", reloaded.Lookup(null, "192.168.1.11"));
+    }
+
+    [Fact]
+    public void Load_SkipsCommentsBlankLinesAndLinesWithoutBothHalves()
+    {
+        using var workspace = new TempWorkspace();
+        var path = workspace.PathFor(MemoStore.FileName);
+        File.WriteAllText(
+            path,
+            string.Join(
+                "\r\n",
+                "# 这是注释",
+                string.Empty,
+                "   ",
+                "192.168.1.10=打印机",
+                "=没有键",
+                "没有等号",
+                "00-1A-2B-3C-4D-5E=三楼机房"),
+            new UTF8Encoding(true));
+
+        var store = new MemoStore(path);
+        store.Load();
+
+        Assert.Equal(2, store.Count);
+        Assert.Equal("打印机", store.Lookup(null, "192.168.1.10"));
+        Assert.Equal("三楼机房", store.Lookup("00-1A-2B-3C-4D-5E"));
+    }
+
+    [Fact]
+    public void Load_MissingFile_LeavesTheStoreEmpty()
+    {
+        using var workspace = new TempWorkspace();
+
+        var store = new MemoStore(workspace.PathFor(MemoStore.FileName));
+        store.Load();
+
+        Assert.Equal(0, store.Count);
+        Assert.Empty(store.Entries);
+    }
+
+    [Fact]
+    public void Load_MigratesTheLegacyFileName()
+    {
+        using var workspace = new TempWorkspace();
+        var current = workspace.PathFor(MemoStore.FileName);
+        var legacy = workspace.PathFor(MemoStore.LegacyFileName);
+        File.WriteAllText(legacy, "192.168.1.10=旧文件", new UTF8Encoding(true));
+
+        var store = new MemoStore(current);
+        store.Load();
+
+        Assert.False(File.Exists(legacy));
+        Assert.True(File.Exists(current));
+        Assert.Equal("旧文件", store.Lookup(null, "192.168.1.10"));
+    }
+
+    // ---- lookup precedence -------------------------------------------------
+
+    [Fact]
+    public void Lookup_PrefersTheMacEntryOverTheIpEntry()
+    {
+        using var workspace = new TempWorkspace();
+        var store = new MemoStore(workspace.PathFor(MemoStore.FileName));
+        store.Set("192.168.1.10", "IP备注");
+        store.Set("00-1A-2B-3C-4D-5E", "MAC备注");
+
+        Assert.Equal("MAC备注", store.Lookup("00-1A-2B-3C-4D-5E", "192.168.1.10"));
+        Assert.Equal("IP备注", store.Lookup("AA-BB-CC-DD-EE-FF", "192.168.1.10"));
+        Assert.Equal("IP备注", store.Lookup(null, "192.168.1.10"));
+        Assert.Equal(string.Empty, store.Lookup("11-22-33-44-55-66", null));
+        Assert.Equal(string.Empty, store.Lookup(null, null));
+
+        // Sharp edge (kept as the original behaved): the "mac" slot is a plain
+        // dictionary lookup, so passing an IP there matches the IP entry too.
+        Assert.Equal("IP备注", store.Lookup("192.168.1.10", null));
+    }
+
+    [Fact]
+    public void Lookup_IsCaseInsensitiveForMacKeys()
+    {
+        using var workspace = new TempWorkspace();
+        var store = new MemoStore(workspace.PathFor(MemoStore.FileName));
+        store.Set("00-1A-2B-3C-4D-5E", "机房");
+
+        Assert.Equal("机房", store.Lookup("00-1a-2b-3c-4d-5e"));
+        Assert.Equal("机房", store.Lookup("00:1A:2B:3C:4D:5E"));
+    }
+
+    [Fact]
+    public void Lookup_CanonicalisesDashAndColonMacShapesToOneKey()
+    {
+        // FIXED: the original compared raw text, so a note saved as "00-1A-..." was
+        // NOT found when the caller passed "00:1A:...". ArpTable's row regex accepts
+        // either separator, so the shape handed to Lookup depends on where the MAC
+        // text came from — a memo imported with colons silently stopped matching.
+        // MemoStore now canonicalises MAC keys to upper-case dash form.
+        using var workspace = new TempWorkspace();
+        var store = new MemoStore(workspace.PathFor(MemoStore.FileName));
+
+        store.Set("00-1A-2B-3C-4D-5E", "机房");
+        Assert.Equal("机房", store.Lookup("00-1A-2B-3C-4D-5E"));
+        Assert.Equal("机房", store.Lookup("00:1A:2B:3C:4D:5E"));
+
+        // Writing the colon shape updates the same entry rather than adding a second.
+        store.Set("00:1a:2b:3c:4d:5e", "机房(改)");
+        Assert.Single(store.Entries);
+        Assert.Equal("机房(改)", store.Lookup("00-1A-2B-3C-4D-5E"));
+
+        // And the canonical form is what gets persisted.
+        Assert.True(store.Entries.ContainsKey("00-1A-2B-3C-4D-5E"));
+    }
+
+    // ---- mutation ----------------------------------------------------------
+
+    [Fact]
+    public void Set_WithEmptyOrNullValue_RemovesTheEntry()
+    {
+        using var workspace = new TempWorkspace();
+        var store = new MemoStore(workspace.PathFor(MemoStore.FileName));
+
+        store.Set("192.168.1.10", "备注");
+        Assert.Equal(1, store.Count);
+
+        store.Set("192.168.1.10", string.Empty);
+        Assert.Equal(0, store.Count);
+        Assert.False(store.TryGet("192.168.1.10", out _));
+        Assert.Equal(string.Empty, store.Lookup(null, "192.168.1.10"));
+
+        store.Set("192.168.1.11", "备注");
+        store.Set("192.168.1.11", null);
+        Assert.Equal(0, store.Count);
+    }
+
+    [Fact]
+    public void Set_TrimsTheKey_AndIgnoresBlankKeys()
+    {
+        using var workspace = new TempWorkspace();
+        var store = new MemoStore(workspace.PathFor(MemoStore.FileName));
+
+        store.Set("  192.168.1.10  ", "备注");
+        store.Set("   ", "没有键");
+        store.Set(string.Empty, "没有键");
+
+        Assert.Equal(1, store.Count);
+        Assert.Equal("备注", store.Lookup(null, "192.168.1.10"));
+    }
+
+    [Fact]
+    public void Remove_ClearAndReplaceAll_BehaveAsDocumented()
+    {
+        using var workspace = new TempWorkspace();
+        var store = new MemoStore(workspace.PathFor(MemoStore.FileName));
+        store.Set("192.168.1.10", "A");
+        store.Set("192.168.1.11", "B");
+
+        Assert.True(store.Remove("192.168.1.10"));
+        Assert.False(store.Remove("192.168.1.10"));
+        Assert.Equal(1, store.Count);
+
+        store.ReplaceAll(MemoStore.ParseClipboard("192.168.1.20=第一台\n192.168.1.21=第二台\n裸键"));
+        Assert.Equal(2, store.Count);
+        Assert.Equal("第一台", store.Lookup(null, "192.168.1.20"));
+
+        store.Clear();
+        Assert.Equal(0, store.Count);
+    }
+
+    [Fact]
+    public void SaveThenLoad_KeepsEveryEntry()
+    {
+        using var workspace = new TempWorkspace();
+        var path = workspace.PathFor(MemoStore.FileName);
+        var store = new MemoStore(path);
+        store.Set("192.168.1.10", "打印机");
+        store.Set("192.168.1.11", "财务部");
+        store.Set("00-1A-2B-3C-4D-5E", "机房");
+        store.Save();
+
+        var reloaded = new MemoStore(path);
+        reloaded.Load();
+
+        Assert.Equal(3, reloaded.Count);
+        Assert.Equal("打印机", reloaded.Lookup(null, "192.168.1.10"));
+        Assert.Equal("财务部", reloaded.Lookup(null, "192.168.1.11"));
+        Assert.Equal("机房", reloaded.Lookup("00-1A-2B-3C-4D-5E"));
+    }
+
+    [Fact]
+    public void Save_ToAnExplicitPath_LeavesTheConfiguredFileAlone()
+    {
+        using var workspace = new TempWorkspace();
+        var configured = workspace.PathFor(MemoStore.FileName);
+        var alternate = workspace.PathFor("copy.dat");
+
+        var store = new MemoStore(configured);
+        store.Set("192.168.1.10", "备注");
+        store.Save(alternate);
+
+        Assert.False(File.Exists(configured));
+        Assert.True(File.Exists(alternate));
+    }
+
+    // ---- IsMacKey ----------------------------------------------------------
+
+    [Theory]
+    [InlineData("00-1A-2B-3C-4D-5E", true)]   // dash shape
+    [InlineData("00:1A:2B:3C:4D:5E", true)]   // colon shape
+    [InlineData("00-1a-2b-3c-4d-5e", true)]
+    [InlineData("192.168.1.10", false)]
+    [InlineData("192.168", false)]
+    [InlineData("", false)]
+    [InlineData("printer", false)]
+    // FIXED: the original classified any dot-less token containing a dash as a MAC,
+    // so a hyphenated host name was mistaken for a MAC key. The check is now a real
+    // six-octet MAC pattern.
+    [InlineData("file-server", false)]
+    [InlineData("3C-7C-3F", false)]           // truncated, not a full MAC
+    [InlineData("00-1A-2B-3C-4D-5E-6F", false)]
+    public void IsMacKey_RequiresASixOctetMacShape(string key, bool expected)
+        => Assert.Equal(expected, MemoStore.IsMacKey(key));
+
+    [Theory]
+    [InlineData("00-1A-2B-3C-4D-5E", "00-1A-2B-3C-4D-5E")]
+    [InlineData("00:1a:2b:3c:4d:5e", "00-1A-2B-3C-4D-5E")]
+    [InlineData("  192.168.1.10  ", "192.168.1.10")]  // non-MAC keys are only trimmed
+    public void NormalizeKey_CanonicalisesMacsOnly(string input, string expected)
+        => Assert.Equal(expected, MemoStore.NormalizeKey(input));
+
+    // ---- ParseClipboard ----------------------------------------------------
+
+    [Fact]
+    public void ParseClipboard_AcceptsEqualsTabCommaAndSpaceForms()
+    {
+        var text = string.Join(
+            "\n",
+            "192.168.1.5=打印机",        // KEY=VALUE
+            "192.168.1.6\t文件服务器",   // KEY<TAB>VALUE
+            "192.168.1.7,会议室",        // KEY,VALUE
+            "192.168.1.8 前台",          // KEY VALUE
+            "# 注释行",
+            "192.168.1.9",               // no value -> skipped
+            "192.168.1.13=",             // empty value -> skipped
+            "=缺少键",                   // no key -> skipped
+            string.Empty,
+            "192.168.1.12=a=b");         // only the first '=' splits
+
+        var items = MemoStore.ParseClipboard(text);
+
+        Assert.Equal(5, items.Count);
+        Assert.Equal(new KeyValuePair<string, string>("192.168.1.5", "打印机"), items[0]);
+        Assert.Equal(new KeyValuePair<string, string>("192.168.1.6", "文件服务器"), items[1]);
+        Assert.Equal(new KeyValuePair<string, string>("192.168.1.7", "会议室"), items[2]);
+        Assert.Equal(new KeyValuePair<string, string>("192.168.1.8", "前台"), items[3]);
+        Assert.Equal(new KeyValuePair<string, string>("192.168.1.12", "a=b"), items[4]);
+        Assert.DoesNotContain(items, i => i.Key == "192.168.1.9");
+        Assert.DoesNotContain(items, i => i.Key.Length == 0);
+    }
+
+    [Fact]
+    public void ParseClipboard_HandlesCrLfMacAndColonSeparatedValues()
+    {
+        var items = MemoStore.ParseClipboard("00-1A-2B-3C-4D-5E=机房\r\n192.168.1.10=财务部：三楼\r\n");
+
+        Assert.Equal(2, items.Count);
+        Assert.Equal("机房", items[0].Value);
+        Assert.Equal("财务部：三楼", items[1].Value); // a full-width colon is not a separator
+    }
+
+    [Fact]
+    public void ParseClipboard_TrimsSurroundingWhitespaceOfKeyAndValue()
+    {
+        var items = MemoStore.ParseClipboard("  192.168.1.10 = 打印机  ");
+
+        Assert.Single(items);
+        Assert.Equal("192.168.1.10", items[0].Key);
+        Assert.Equal("打印机", items[0].Value);
+    }
+
+    [Theory]
+    [InlineData("")]
+    [InlineData("   ")]
+    [InlineData("\r\n\r\n")]
+    [InlineData("# only a comment")]
+    [InlineData("192.168.1.10")]
+    public void ParseClipboard_ReturnsNothing_ForInputWithoutEntries(string text)
+        => Assert.Empty(MemoStore.ParseClipboard(text));
+}

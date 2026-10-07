@@ -1,1 +1,75 @@
-dXNpbmcgU3lzdGVtLkNvbGxlY3Rpb25zLkNvbmN1cnJlbnQ7CgpuYW1lc3BhY2UgSVBTY2FuZXIuQ29yZS5DYWNoaW5nOwoKLy8vIDxzdW1tYXJ5PgovLy8gTWluaW1hbCB0aHJlYWQtc2FmZSBjYWNoZSB3aXRoIGFic29sdXRlIGV4cGlyeSwgcmVwbGFjaW5nIHRoZSBvcmlnaW5hbCdzCi8vLyBkZXBlbmRlbmN5IG9uIDxjPlN5c3RlbS5SdW50aW1lLkNhY2hpbmcuTWVtb3J5Q2FjaGU8L2M+ICh3aGljaCBpcyBub3QgcGFydCBvZgovLy8gdGhlIG1vZGVybiAuTkVUIGJhc2UgbGlicmFyaWVzKS4KLy8vIDwvc3VtbWFyeT4KLy8vIDxyZW1hcmtzPgovLy8gVGhlIG9yaWdpbmFsIGNhY2hlZCBob3N0LW5hbWUgYW5kIE1BQyBsb29rdXBzIGZvciBvbmUgaG91ci4gVGhhdCBpcyBwcmVzZXJ2ZWQKLy8vIGFzIDxzZWUgY3JlZj0iRGVmYXVsdFR0bCIvPiwgYnV0IHRoZSBjYWNoZSBpcyBub3cgZXhwbGljaXRseSBjbGVhcmFibGUgc28gdGhlCi8vLyB1c2VyIGNhbiBmb3JjZSBhIHJlZnJlc2ggd2l0aG91dCByZXN0YXJ0aW5nIHRoZSB0b29sLgovLy8gPC9yZW1hcmtzPgpwdWJsaWMgc2VhbGVkIGNsYXNzIEV4cGlyaW5nQ2FjaGU8VFZhbHVlPgp7CiAgICBwdWJsaWMgc3RhdGljIHJlYWRvbmx5IFRpbWVTcGFuIERlZmF1bHRUdGwgPSBUaW1lU3Bhbi5Gcm9tSG91cnMoMSk7CgogICAgcHJpdmF0ZSByZWFkb25seSBDb25jdXJyZW50RGljdGlvbmFyeTxzdHJpbmcsIEVudHJ5PiBfZW50cmllcyA9IG5ldyhTdHJpbmdDb21wYXJlci5PcmRpbmFsSWdub3JlQ2FzZSk7CiAgICBwcml2YXRlIHJlYWRvbmx5IFRpbWVQcm92aWRlciBfY2xvY2s7CgogICAgcHVibGljIEV4cGlyaW5nQ2FjaGUoVGltZVByb3ZpZGVyPyBjbG9jayA9IG51bGwpID0+IF9jbG9jayA9IGNsb2NrID8/IFRpbWVQcm92aWRlci5TeXN0ZW07CgogICAgcHJpdmF0ZSByZWFkb25seSByZWNvcmQgc3RydWN0IEVudHJ5KFRWYWx1ZSBWYWx1ZSwgRGF0ZVRpbWVPZmZzZXQgRXhwaXJlc0F0KTsKCiAgICBwdWJsaWMgaW50IENvdW50ID0+IF9lbnRyaWVzLkNvdW50OwoKICAgIHB1YmxpYyBib29sIFRyeUdldChzdHJpbmcga2V5LCBvdXQgVFZhbHVlIHZhbHVlKQogICAgewogICAgICAgIGlmIChfZW50cmllcy5UcnlHZXRWYWx1ZShrZXksIG91dCB2YXIgZW50cnkpKQogICAgICAgIHsKICAgICAgICAgICAgaWYgKGVudHJ5LkV4cGlyZXNBdCA+IF9jbG9jay5HZXRVdGNOb3coKSkKICAgICAgICAgICAgewogICAgICAgICAgICAgICAgdmFsdWUgPSBlbnRyeS5WYWx1ZTsKICAgICAgICAgICAgICAgIHJldHVybiB0cnVlOwogICAgICAgICAgICB9CiAgICAgICAgICAgIF9lbnRyaWVzLlRyeVJlbW92ZShrZXksIG91dCBfKTsKICAgICAgICB9CgogICAgICAgIHZhbHVlID0gZGVmYXVsdCE7CiAgICAgICAgcmV0dXJuIGZhbHNlOwogICAgfQoKICAgIHB1YmxpYyB2b2lkIFNldChzdHJpbmcga2V5LCBUVmFsdWUgdmFsdWUsIFRpbWVTcGFuPyB0dGwgPSBudWxsKSA9PgogICAgICAgIF9lbnRyaWVzW2tleV0gPSBuZXcgRW50cnkodmFsdWUsIF9jbG9jay5HZXRVdGNOb3coKSArICh0dGwgPz8gRGVmYXVsdFR0bCkpOwoKICAgIC8vLyA8c3VtbWFyeT5SZXR1cm5zIHRoZSBjYWNoZWQgdmFsdWUsIG9yIGNvbXB1dGVzLCBzdG9yZXMgYW5kIHJldHVybnMgaXQuPC9zdW1tYXJ5PgogICAgcHVibGljIFRWYWx1ZSBHZXRPckFkZChzdHJpbmcga2V5LCBGdW5jPHN0cmluZywgVFZhbHVlPiBmYWN0b3J5LCBUaW1lU3Bhbj8gdHRsID0gbnVsbCkKICAgIHsKICAgICAgICBpZiAoVHJ5R2V0KGtleSwgb3V0IHZhciBleGlzdGluZykpIHJldHVybiBleGlzdGluZzsKICAgICAgICB2YXIgY3JlYXRlZCA9IGZhY3Rvcnkoa2V5KTsKICAgICAgICBTZXQoa2V5LCBjcmVhdGVkLCB0dGwpOwogICAgICAgIHJldHVybiBjcmVhdGVkOwogICAgfQoKICAgIHB1YmxpYyB2b2lkIFJlbW92ZShzdHJpbmcga2V5KSA9PiBfZW50cmllcy5UcnlSZW1vdmUoa2V5LCBvdXQgXyk7CgogICAgcHVibGljIHZvaWQgQ2xlYXIoKSA9PiBfZW50cmllcy5DbGVhcigpOwp9CgovLy8gPHN1bW1hcnk+UHJvY2Vzcy13aWRlIGNhY2hlcyBzaGFyZWQgYnkgZXZlcnkgc2Nhbm5lciBzdXJmYWNlLjwvc3VtbWFyeT4KcHVibGljIHN0YXRpYyBjbGFzcyBTY2FuQ2FjaGVzCnsKICAgIC8vLyA8c3VtbWFyeT5Ib3N0LW5hbWUgcmVzb2x1dGlvbnMsIGtleWVkIGJ5IElQLjwvc3VtbWFyeT4KICAgIHB1YmxpYyBzdGF0aWMgRXhwaXJpbmdDYWNoZTxzdHJpbmc+IEhvc3ROYW1lcyB7IGdldDsgfSA9IG5ldygpOwoKICAgIC8vLyA8c3VtbWFyeT5NQUMgYWRkcmVzc2VzIGxlYXJuZWQgZnJvbSB0aGUgQVJQIHRhYmxlLCBrZXllZCBieSBJUC48L3N1bW1hcnk+CiAgICBwdWJsaWMgc3RhdGljIEV4cGlyaW5nQ2FjaGU8c3RyaW5nPiBNYWNBZGRyZXNzZXMgeyBnZXQ7IH0gPSBuZXcoKTsKCiAgICBwdWJsaWMgc3RhdGljIHZvaWQgQ2xlYXJBbGwoKQogICAgewogICAgICAgIEhvc3ROYW1lcy5DbGVhcigpOwogICAgICAgIE1hY0FkZHJlc3Nlcy5DbGVhcigpOwogICAgfQp9Cg==
+using System.Collections.Concurrent;
+
+namespace IPScaner.Core.Caching;
+
+/// <summary>
+/// Minimal thread-safe cache with absolute expiry, replacing the original's
+/// dependency on <c>System.Runtime.Caching.MemoryCache</c> (which is not part of
+/// the modern .NET base libraries).
+/// </summary>
+/// <remarks>
+/// The original cached host-name and MAC lookups for one hour. That is preserved
+/// as <see cref="DefaultTtl"/>, but the cache is now explicitly clearable so the
+/// user can force a refresh without restarting the tool.
+/// </remarks>
+public sealed class ExpiringCache<TValue>
+{
+    public static readonly TimeSpan DefaultTtl = TimeSpan.FromHours(1);
+
+    private readonly ConcurrentDictionary<string, Entry> _entries = new(StringComparer.OrdinalIgnoreCase);
+    private readonly TimeProvider _clock;
+
+    public ExpiringCache(TimeProvider? clock = null) => _clock = clock ?? TimeProvider.System;
+
+    private readonly record struct Entry(TValue Value, DateTimeOffset ExpiresAt);
+
+    public int Count => _entries.Count;
+
+    public bool TryGet(string key, out TValue value)
+    {
+        if (_entries.TryGetValue(key, out var entry))
+        {
+            if (entry.ExpiresAt > _clock.GetUtcNow())
+            {
+                value = entry.Value;
+                return true;
+            }
+            _entries.TryRemove(key, out _);
+        }
+
+        value = default!;
+        return false;
+    }
+
+    public void Set(string key, TValue value, TimeSpan? ttl = null) =>
+        _entries[key] = new Entry(value, _clock.GetUtcNow() + (ttl ?? DefaultTtl));
+
+    /// <summary>Returns the cached value, or computes, stores and returns it.</summary>
+    public TValue GetOrAdd(string key, Func<string, TValue> factory, TimeSpan? ttl = null)
+    {
+        if (TryGet(key, out var existing)) return existing;
+        var created = factory(key);
+        Set(key, created, ttl);
+        return created;
+    }
+
+    public void Remove(string key) => _entries.TryRemove(key, out _);
+
+    public void Clear() => _entries.Clear();
+}
+
+/// <summary>Process-wide caches shared by every scanner surface.</summary>
+public static class ScanCaches
+{
+    /// <summary>Host-name resolutions, keyed by IP.</summary>
+    public static ExpiringCache<string> HostNames { get; } = new();
+
+    /// <summary>MAC addresses learned from the ARP table, keyed by IP.</summary>
+    public static ExpiringCache<string> MacAddresses { get; } = new();
+
+    public static void ClearAll()
+    {
+        HostNames.Clear();
+        MacAddresses.Clear();
+    }
+}

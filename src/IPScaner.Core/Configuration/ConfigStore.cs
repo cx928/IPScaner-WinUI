@@ -1,1 +1,144 @@
-dXNpbmcgU3lzdGVtLlRleHQ7CnVzaW5nIFN5c3RlbS5YbWw7CnVzaW5nIFN5c3RlbS5YbWwuU2VyaWFsaXphdGlvbjsKCm5hbWVzcGFjZSBJUFNjYW5lci5Db3JlLkNvbmZpZ3VyYXRpb247CgovLy8gPHN1bW1hcnk+Ci8vLyBSZWFkcyBhbmQgd3JpdGVzIDxjPklQU2NhbmVyLmNmZzwvYz4uCi8vLyA8L3N1bW1hcnk+Ci8vLyA8cmVtYXJrcz4KLy8vIFdpcmUtZm9ybWF0IGNvbXBhdGliaWxpdHkgd2l0aCB0aGUgb3JpZ2luYWwgdG9vbCBpcyBhIGhhcmQgcmVxdWlyZW1lbnQ6IGEgdXNlcgovLy8gbXVzdCBiZSBhYmxlIHRvIGRyb3AgdGhlIG5ldyBidWlsZCBuZXh0IHRvIGFuIGV4aXN0aW5nIElQU2NhbmVyLmNmZyBhbmQga2VlcAovLy8gZXZlcnkgc2V0dGluZy4gVGhlIG9yaWdpbmFsIGNhbGxlZAovLy8gPGM+WG1sU2VyaWFsaXplci5TZXJpYWxpemUoRmlsZVN0cmVhbSwgb2JqLCBlbXB0eU5hbWVzcGFjZXMpPC9jPiBvbiAuTkVUCi8vLyBGcmFtZXdvcmssIHdob3NlIDxjPlhtbFRleHRXcml0ZXI8L2M+IGVtaXR0ZWQgYSBkZWNsYXJhdGlvbiB3aXRoIDxiPm5vPC9iPgovLy8gZW5jb2RpbmcgcHNldWRvLWF0dHJpYnV0ZToKLy8vIDxjb2RlPgovLy8gJmx0Oz94bWwgdmVyc2lvbj0iMS4wIj8mZ3Q7XHJcbgovLy8gJmx0O3Jvb3QgVmVyc2lvbj0iMS4wIiAuLi4gLyZndDsKLy8vIDwvY29kZT4KLy8vIFVURi04IHdpdGggbm8gQk9NLCBubyBYTUwgbmFtZXNwYWNlLCBDUkxGIGFmdGVyIHRoZSBkZWNsYXJhdGlvbiBhbmQgbm8KLy8vIHRyYWlsaW5nIG5ld2xpbmUuCi8vLyA8cGFyYT4KLy8vIFRoZSAuTkVUIENvcmUgcmV3cml0ZSBvZiA8Yz5YbWxTZXJpYWxpemVyPC9jPiBjaGFuZ2VkIHRoYXQ6IHRoZSBzYW1lIG92ZXJsb2FkCi8vLyBub3cgZW1pdHMgPGM+Jmx0Oz94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPyZndDs8L2M+LiBQYXNzaW5nIHRoZQovLy8gb3ZlcmxvYWQgc3RyYWlnaHQgdGhyb3VnaCB3b3VsZCB0aGVyZWZvcmUgcmV3cml0ZSB0aGUgZmlyc3QgbGluZSBvZiBldmVyeQovLy8gdXNlcidzIGNvbmZpZyBmaWxlLiBUaGUgZGVjbGFyYXRpb24gaXMgd3JpdHRlbiBieSBoYW5kIGluc3RlYWQgc28gdGhlIGJ5dGVzCi8vLyBtYXRjaCB0aGUgb3JpZ2luYWwgZXhhY3RseS4KLy8vIDwvcGFyYT4KLy8vIDwvcmVtYXJrcz4KcHVibGljIHNlYWxlZCBjbGFzcyBDb25maWdTdG9yZQp7CiAgICBwdWJsaWMgY29uc3Qgc3RyaW5nIEZpbGVOYW1lID0gIklQU2NhbmVyLmNmZyI7CgogICAgcHJpdmF0ZSBzdGF0aWMgcmVhZG9ubHkgWG1sU2VyaWFsaXplciBTZXJpYWxpemVyID0gbmV3KHR5cGVvZihBcHBDb25maWcpKTsKICAgIHByaXZhdGUgc3RhdGljIHJlYWRvbmx5IFhtbFNlcmlhbGl6ZXJOYW1lc3BhY2VzIE5vTmFtZXNwYWNlcyA9IENyZWF0ZUVtcHR5TmFtZXNwYWNlcygpOwogICAgcHJpdmF0ZSBzdGF0aWMgcmVhZG9ubHkgVVRGOEVuY29kaW5nIFV0ZjhOb0JvbSA9IG5ldyhlbmNvZGVyU2hvdWxkRW1pdFVURjhJZGVudGlmaWVyOiBmYWxzZSk7CgogICAgcHJpdmF0ZSBzdGF0aWMgWG1sU2VyaWFsaXplck5hbWVzcGFjZXMgQ3JlYXRlRW1wdHlOYW1lc3BhY2VzKCkKICAgIHsKICAgICAgICB2YXIgbnMgPSBuZXcgWG1sU2VyaWFsaXplck5hbWVzcGFjZXMoKTsKICAgICAgICBucy5BZGQoc3RyaW5nLkVtcHR5LCBzdHJpbmcuRW1wdHkpOwogICAgICAgIHJldHVybiBuczsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+RnVsbCBwYXRoIG9mIHRoZSBjb25maWcgZmlsZSBpbiB1c2UuPC9zdW1tYXJ5PgogICAgcHVibGljIHN0cmluZyBGaWxlUGF0aCB7IGdldDsgfQoKICAgIHB1YmxpYyBDb25maWdTdG9yZShzdHJpbmc/IGZpbGVQYXRoID0gbnVsbCkKICAgIHsKICAgICAgICBGaWxlUGF0aCA9IGZpbGVQYXRoID8/IFBhdGguQ29tYmluZShTdG9yYWdlLkFwcFBhdGhzLkRhdGFEaXJlY3RvcnksIEZpbGVOYW1lKTsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+VHJ1ZSB3aGVuIGEgY29uZmlnIGZpbGUgYWxyZWFkeSBleGlzdHMgb24gZGlzay48L3N1bW1hcnk+CiAgICBwdWJsaWMgYm9vbCBFeGlzdHMgPT4gRmlsZS5FeGlzdHMoRmlsZVBhdGgpOwoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBMb2FkcyB0aGUgY29uZmlndXJhdGlvbi4gQSBtaXNzaW5nIG9yIHVucmVhZGFibGUgZmlsZSB5aWVsZHMgZmFjdG9yeQogICAgLy8vIGRlZmF1bHRzIHJhdGhlciB0aGFuIHRocm93aW5nLCBzbyBhIGNvcnJ1cHQgY2ZnIGNhbiBuZXZlciBibG9jayBzdGFydHVwOwogICAgLy8vIHRoZSBkYW1hZ2VkIGZpbGUgaXMgcmVuYW1lZCBhc2lkZSBzbyBpdCBjYW4gYmUgaW5zcGVjdGVkLgogICAgLy8vIDwvc3VtbWFyeT4KICAgIHB1YmxpYyBBcHBDb25maWcgTG9hZCgpCiAgICB7CiAgICAgICAgaWYgKCFGaWxlLkV4aXN0cyhGaWxlUGF0aCkpIHJldHVybiBuZXcgQXBwQ29uZmlnKCk7CgogICAgICAgIHRyeQogICAgICAgIHsKICAgICAgICAgICAgdXNpbmcgdmFyIHN0cmVhbSA9IG5ldyBGaWxlU3RyZWFtKEZpbGVQYXRoLCBGaWxlTW9kZS5PcGVuLCBGaWxlQWNjZXNzLlJlYWQsIEZpbGVTaGFyZS5SZWFkV3JpdGUpOwogICAgICAgICAgICB2YXIgY2ZnID0gU2VyaWFsaXplci5EZXNlcmlhbGl6ZShzdHJlYW0pIGFzIEFwcENvbmZpZzsKICAgICAgICAgICAgcmV0dXJuIGNmZyA/PyBuZXcgQXBwQ29uZmlnKCk7CiAgICAgICAgfQogICAgICAgIGNhdGNoIChFeGNlcHRpb24gZXgpCiAgICAgICAgewogICAgICAgICAgICBUcnlRdWFyYW50aW5lKGV4KTsKICAgICAgICAgICAgcmV0dXJuIG5ldyBBcHBDb25maWcoKTsKICAgICAgICB9CiAgICB9CgogICAgLy8vIDxzdW1tYXJ5PgogICAgLy8vIFBlcnNpc3RzIHRoZSBjb25maWd1cmF0aW9uLCBjcmVhdGluZyB0aGUgZGlyZWN0b3J5IHdoZW4gbmVlZGVkLgogICAgLy8vIDwvc3VtbWFyeT4KICAgIHB1YmxpYyB2b2lkIFNhdmUoQXBwQ29uZmlnIGNvbmZpZykKICAgIHsKICAgICAgICBBcmd1bWVudE51bGxFeGNlcHRpb24uVGhyb3dJZk51bGwoY29uZmlnKTsKCiAgICAgICAgdmFyIGRpciA9IFBhdGguR2V0RGlyZWN0b3J5TmFtZShGaWxlUGF0aCk7CiAgICAgICAgaWYgKCFzdHJpbmcuSXNOdWxsT3JFbXB0eShkaXIpKSBEaXJlY3RvcnkuQ3JlYXRlRGlyZWN0b3J5KGRpcik7CgogICAgICAgIC8vIFdyaXRlIHRvIGEgc2libGluZyB0ZW1wIGZpbGUgYW5kIHN3YXAsIHNvIGFuIGludGVycnVwdGVkIHNhdmUgY2Fubm90CiAgICAgICAgLy8gdHJ1bmNhdGUgdGhlIHVzZXIncyBzZXR0aW5ncy4KICAgICAgICB2YXIgdGVtcCA9IEZpbGVQYXRoICsgIi50bXAiOwogICAgICAgIHVzaW5nICh2YXIgc3RyZWFtID0gbmV3IEZpbGVTdHJlYW0odGVtcCwgRmlsZU1vZGUuQ3JlYXRlLCBGaWxlQWNjZXNzLldyaXRlLCBGaWxlU2hhcmUuTm9uZSkpCiAgICAgICAgewogICAgICAgICAgICBXcml0ZURvY3VtZW50KHN0cmVhbSwgY29uZmlnKTsKICAgICAgICB9CgogICAgICAgIGlmIChGaWxlLkV4aXN0cyhGaWxlUGF0aCkpIEZpbGUuUmVwbGFjZSh0ZW1wLCBGaWxlUGF0aCwgbnVsbCk7CiAgICAgICAgZWxzZSBGaWxlLk1vdmUodGVtcCwgRmlsZVBhdGgpOwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT5TZXJpYWxpc2VzIHRvIGEgc3RyaW5nLCBmb3IgdGVzdHMgYW5kIGRpYWdub3N0aWNzLjwvc3VtbWFyeT4KICAgIHB1YmxpYyBzdGF0aWMgc3RyaW5nIFNlcmlhbGl6ZVRvWG1sKEFwcENvbmZpZyBjb25maWcpCiAgICB7CiAgICAgICAgdXNpbmcgdmFyIHN0cmVhbSA9IG5ldyBNZW1vcnlTdHJlYW0oKTsKICAgICAgICBXcml0ZURvY3VtZW50KHN0cmVhbSwgY29uZmlnKTsKICAgICAgICByZXR1cm4gbmV3IFVURjhFbmNvZGluZyhlbmNvZGVyU2hvdWxkRW1pdFVURjhJZGVudGlmaWVyOiBmYWxzZSkuR2V0U3RyaW5nKHN0cmVhbS5Ub0FycmF5KCkpOwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBXcml0ZXMgdGhlIGV4YWN0IGJ5dGUgc2VxdWVuY2UgdGhlIG9yaWdpbmFsIHRvb2wgcHJvZHVjZWQuIFNlZSB0aGUgdHlwZQogICAgLy8vIHJlbWFya3MgZm9yIHdoeSB0aGUgZGVjbGFyYXRpb24gY2Fubm90IGNvbWUgZnJvbSA8c2VlIGNyZWY9IlhtbFNlcmlhbGl6ZXIiLz4uCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgcHJpdmF0ZSBzdGF0aWMgdm9pZCBXcml0ZURvY3VtZW50KFN0cmVhbSBzdHJlYW0sIEFwcENvbmZpZyBjb25maWcpCiAgICB7CiAgICAgICAgc3RyZWFtLldyaXRlKERlY2xhcmF0aW9uQnl0ZXMpOwoKICAgICAgICB2YXIgc2V0dGluZ3MgPSBuZXcgWG1sV3JpdGVyU2V0dGluZ3MKICAgICAgICB7CiAgICAgICAgICAgIE9taXRYbWxEZWNsYXJhdGlvbiA9IHRydWUsCiAgICAgICAgICAgIEluZGVudCA9IGZhbHNlLAogICAgICAgICAgICBFbmNvZGluZyA9IFV0ZjhOb0JvbSwKICAgICAgICAgICAgQ2xvc2VPdXRwdXQgPSBmYWxzZSwKICAgICAgICB9OwoKICAgICAgICB1c2luZyB2YXIgd3JpdGVyID0gWG1sV3JpdGVyLkNyZWF0ZShzdHJlYW0sIHNldHRpbmdzKTsKICAgICAgICBTZXJpYWxpemVyLlNlcmlhbGl6ZSh3cml0ZXIsIGNvbmZpZywgTm9OYW1lc3BhY2VzKTsKICAgIH0KCiAgICBwcml2YXRlIHN0YXRpYyByZWFkb25seSBieXRlW10gRGVjbGFyYXRpb25CeXRlcyA9IFV0ZjhOb0JvbS5HZXRCeXRlcygiPD94bWwgdmVyc2lvbj1cIjEuMFwiPz5cclxuIik7CgogICAgcHJpdmF0ZSB2b2lkIFRyeVF1YXJhbnRpbmUoRXhjZXB0aW9uIGV4KQogICAgewogICAgICAgIHRyeQogICAgICAgIHsKICAgICAgICAgICAgdmFyIGJyb2tlbiA9IEZpbGVQYXRoICsgIi5icm9rZW4iOwogICAgICAgICAgICBGaWxlLkNvcHkoRmlsZVBhdGgsIGJyb2tlbiwgb3ZlcndyaXRlOiB0cnVlKTsKICAgICAgICAgICAgU3lzdGVtLkRpYWdub3N0aWNzLkRlYnVnLldyaXRlTGluZSgkIltDb25maWdTdG9yZV0gdW5yZWFkYWJsZSBjb25maWc6IHtleC5NZXNzYWdlfSIpOwogICAgICAgIH0KICAgICAgICBjYXRjaAogICAgICAgIHsKICAgICAgICAgICAgLy8gRGlhZ25vc3RpY3Mgb25seSDigJQgbmV2ZXIgbGV0IHF1YXJhbnRpbmUgZmFpbHVyZSBtYXNrIHRoZSBkZWZhdWx0LgogICAgICAgIH0KICAgIH0KfQo=
+using System.Text;
+using System.Xml;
+using System.Xml.Serialization;
+
+namespace IPScaner.Core.Configuration;
+
+/// <summary>
+/// Reads and writes <c>IPScaner.cfg</c>.
+/// </summary>
+/// <remarks>
+/// Wire-format compatibility with the original tool is a hard requirement: a user
+/// must be able to drop the new build next to an existing IPScaner.cfg and keep
+/// every setting. The original called
+/// <c>XmlSerializer.Serialize(FileStream, obj, emptyNamespaces)</c> on .NET
+/// Framework, whose <c>XmlTextWriter</c> emitted a declaration with <b>no</b>
+/// encoding pseudo-attribute:
+/// <code>
+/// &lt;?xml version="1.0"?&gt;\r\n
+/// &lt;root Version="1.0" ... /&gt;
+/// </code>
+/// UTF-8 with no BOM, no XML namespace, CRLF after the declaration and no
+/// trailing newline.
+/// <para>
+/// The .NET Core rewrite of <c>XmlSerializer</c> changed that: the same overload
+/// now emits <c>&lt;?xml version="1.0" encoding="utf-8"?&gt;</c>. Passing the
+/// overload straight through would therefore rewrite the first line of every
+/// user's config file. The declaration is written by hand instead so the bytes
+/// match the original exactly.
+/// </para>
+/// </remarks>
+public sealed class ConfigStore
+{
+    public const string FileName = "IPScaner.cfg";
+
+    private static readonly XmlSerializer Serializer = new(typeof(AppConfig));
+    private static readonly XmlSerializerNamespaces NoNamespaces = CreateEmptyNamespaces();
+    private static readonly UTF8Encoding Utf8NoBom = new(encoderShouldEmitUTF8Identifier: false);
+
+    private static XmlSerializerNamespaces CreateEmptyNamespaces()
+    {
+        var ns = new XmlSerializerNamespaces();
+        ns.Add(string.Empty, string.Empty);
+        return ns;
+    }
+
+    /// <summary>Full path of the config file in use.</summary>
+    public string FilePath { get; }
+
+    public ConfigStore(string? filePath = null)
+    {
+        FilePath = filePath ?? Path.Combine(Storage.AppPaths.DataDirectory, FileName);
+    }
+
+    /// <summary>True when a config file already exists on disk.</summary>
+    public bool Exists => File.Exists(FilePath);
+
+    /// <summary>
+    /// Loads the configuration. A missing or unreadable file yields factory
+    /// defaults rather than throwing, so a corrupt cfg can never block startup;
+    /// the damaged file is renamed aside so it can be inspected.
+    /// </summary>
+    public AppConfig Load()
+    {
+        if (!File.Exists(FilePath)) return new AppConfig();
+
+        try
+        {
+            using var stream = new FileStream(FilePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+            var cfg = Serializer.Deserialize(stream) as AppConfig;
+            return cfg ?? new AppConfig();
+        }
+        catch (Exception ex)
+        {
+            TryQuarantine(ex);
+            return new AppConfig();
+        }
+    }
+
+    /// <summary>
+    /// Persists the configuration, creating the directory when needed.
+    /// </summary>
+    public void Save(AppConfig config)
+    {
+        ArgumentNullException.ThrowIfNull(config);
+
+        var dir = Path.GetDirectoryName(FilePath);
+        if (!string.IsNullOrEmpty(dir)) Directory.CreateDirectory(dir);
+
+        // Write to a sibling temp file and swap, so an interrupted save cannot
+        // truncate the user's settings.
+        var temp = FilePath + ".tmp";
+        using (var stream = new FileStream(temp, FileMode.Create, FileAccess.Write, FileShare.None))
+        {
+            WriteDocument(stream, config);
+        }
+
+        if (File.Exists(FilePath)) File.Replace(temp, FilePath, null);
+        else File.Move(temp, FilePath);
+    }
+
+    /// <summary>Serialises to a string, for tests and diagnostics.</summary>
+    public static string SerializeToXml(AppConfig config)
+    {
+        using var stream = new MemoryStream();
+        WriteDocument(stream, config);
+        return new UTF8Encoding(encoderShouldEmitUTF8Identifier: false).GetString(stream.ToArray());
+    }
+
+    /// <summary>
+    /// Writes the exact byte sequence the original tool produced. See the type
+    /// remarks for why the declaration cannot come from <see cref="XmlSerializer"/>.
+    /// </summary>
+    private static void WriteDocument(Stream stream, AppConfig config)
+    {
+        stream.Write(DeclarationBytes);
+
+        var settings = new XmlWriterSettings
+        {
+            OmitXmlDeclaration = true,
+            Indent = false,
+            Encoding = Utf8NoBom,
+            CloseOutput = false,
+        };
+
+        using var writer = XmlWriter.Create(stream, settings);
+        Serializer.Serialize(writer, config, NoNamespaces);
+    }
+
+    private static readonly byte[] DeclarationBytes = Utf8NoBom.GetBytes("<?xml version=\"1.0\"?>\r\n");
+
+    private void TryQuarantine(Exception ex)
+    {
+        try
+        {
+            var broken = FilePath + ".broken";
+            File.Copy(FilePath, broken, overwrite: true);
+            System.Diagnostics.Debug.WriteLine($"[ConfigStore] unreadable config: {ex.Message}");
+        }
+        catch
+        {
+            // Diagnostics only — never let quarantine failure mask the default.
+        }
+    }
+}

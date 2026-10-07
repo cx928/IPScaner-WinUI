@@ -1,1 +1,193 @@
-dXNpbmcgWHVuaXQ7DQp1c2luZyBJUFNjYW5lci5Db3JlLk5ldDsKCm5hbWVzcGFjZSBJUFNjYW5lci5Db3JlLlRlc3RzOwoKLy8vIDxzdW1tYXJ5PgovLy8gQ292ZXJhZ2UgZm9yIHRoZSBwdXJlIHRleHQgcGFyc2VycyBvbiA8c2VlIGNyZWY9IlBvcnRTY2FubmVyIi8+LgovLy8gPC9zdW1tYXJ5PgpwdWJsaWMgY2xhc3MgUG9ydFNjYW5uZXJQYXJzZVRlc3RzCnsKICAgIC8vIC0tLS0gUGFyc2VQb3J0cyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgUGFyc2VQb3J0c19TcGxpdHNBQ29tbWFMaXN0KCkKICAgICAgICA9PiBBc3NlcnQuRXF1YWwoWzgwLCA0NDNdLCBQb3J0U2Nhbm5lci5QYXJzZVBvcnRzKCI4MCw0NDMiKSk7CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBQYXJzZVBvcnRzX1NvcnRzQXNjZW5kaW5nQW5kUmVtb3Zlc0R1cGxpY2F0ZXMoKQogICAgewogICAgICAgIEFzc2VydC5FcXVhbChbODAsIDQ0M10sIFBvcnRTY2FubmVyLlBhcnNlUG9ydHMoIjQ0Myw4MCIpKTsKICAgICAgICBBc3NlcnQuRXF1YWwoWzgwLCA0NDNdLCBQb3J0U2Nhbm5lci5QYXJzZVBvcnRzKCI4MCw4MCw0NDMsODAiKSk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKFs4MCwgNDQzLCA4MDgwXSwgUG9ydFNjYW5uZXIuUGFyc2VQb3J0cygiODA4MCw4MCw0NDMsODAiKSk7CiAgICB9CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBQYXJzZVBvcnRzX0V4cGFuZHNBUmFuZ2UoKQogICAgewogICAgICAgIHZhciBwb3J0cyA9IFBvcnRTY2FubmVyLlBhcnNlUG9ydHMoIjEwMDAtMTAwNSIpOwoKICAgICAgICBBc3NlcnQuRXF1YWwoNiwgcG9ydHMuQ291bnQpOwogICAgICAgIEFzc2VydC5FcXVhbChbMTAwMCwgMTAwMSwgMTAwMiwgMTAwMywgMTAwNCwgMTAwNV0sIHBvcnRzKTsKICAgIH0KCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIFBhcnNlUG9ydHNfU3dhcHNBUmV2ZXJzZWRSYW5nZSgpCiAgICAgICAgPT4gQXNzZXJ0LkVxdWFsKFsxMDAwLCAxMDAxLCAxMDAyLCAxMDAzLCAxMDA0LCAxMDA1XSwgUG9ydFNjYW5uZXIuUGFyc2VQb3J0cygiMTAwNS0xMDAwIikpOwoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgUGFyc2VQb3J0c19BbGxFeHBhbmRzVG9UaGVXaG9sZVBvcnRTcGFjZSgpCiAgICB7CiAgICAgICAgdmFyIHBvcnRzID0gUG9ydFNjYW5uZXIuUGFyc2VQb3J0cygiYWxsIik7CgogICAgICAgIEFzc2VydC5FcXVhbCg2NTUzNSwgcG9ydHMuQ291bnQpOwogICAgICAgIEFzc2VydC5FcXVhbCgxLCBwb3J0c1swXSk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKDY1NTM1LCBwb3J0c1teMV0pOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgUGFyc2VQb3J0c19BbGxJc0Nhc2VJbnNlbnNpdGl2ZUFuZEhhc0NoaW5lc2VBbGlhc2VzKCkKICAgIHsKICAgICAgICBBc3NlcnQuRXF1YWwoNjU1MzUsIFBvcnRTY2FubmVyLlBhcnNlUG9ydHMoIkFMTCIpLkNvdW50KTsKICAgICAgICBBc3NlcnQuRXF1YWwoNjU1MzUsIFBvcnRTY2FubmVyLlBhcnNlUG9ydHMoIuWFqOmDqCIpLkNvdW50KTsKICAgICAgICBBc3NlcnQuRXF1YWwoNjU1MzUsIFBvcnRTY2FubmVyLlBhcnNlUG9ydHMoIuWFqOmDqOerr+WPoyIpLkNvdW50KTsKICAgIH0KCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIFBhcnNlUG9ydHNfQWxsQ2FuQmVSZWZ1c2VkKCkKICAgICAgICA9PiBBc3NlcnQuRW1wdHkoUG9ydFNjYW5uZXIuUGFyc2VQb3J0cygiYWxsIiwgYWxsb3dBbGw6IGZhbHNlKSk7CgogICAgW1RoZW9yeV0KICAgIFtJbmxpbmVEYXRhKCI4MO+8jDQ0MyIpXSAgIC8vIGZ1bGwtd2lkdGggY29tbWEKICAgIFtJbmxpbmVEYXRhKCI4MOOAgTQ0MyIpXSAgIC8vIGlkZW9ncmFwaGljIGNvbW1hCiAgICBbSW5saW5lRGF0YSgiODAgNDQzIildICAgIC8vIHNwYWNlCiAgICBbSW5saW5lRGF0YSgiODA7NDQzIildICAgIC8vIHNlbWljb2xvbgogICAgW0lubGluZURhdGEoIjgwICwgNDQzIildCiAgICBwdWJsaWMgdm9pZCBQYXJzZVBvcnRzX0FjY2VwdHNFdmVyeVNlcGFyYXRvclRoZU9yaWdpbmFsQWNjZXB0ZWQoc3RyaW5nIHRleHQpCiAgICAgICAgPT4gQXNzZXJ0LkVxdWFsKFs4MCwgNDQzXSwgUG9ydFNjYW5uZXIuUGFyc2VQb3J0cyh0ZXh0KSk7CgogICAgW1RoZW9yeV0KICAgIFtJbmxpbmVEYXRhKCJhYmMsODAseHl6IiwgbmV3W10geyA4MCB9KV0KICAgIFtJbmxpbmVEYXRhKCI4MCwsLDQ0MyIsIG5ld1tdIHsgODAsIDQ0MyB9KV0KICAgIFtJbmxpbmVEYXRhKCIwLDY1NTM2LDcwMDAwLC01LDgwIiwgbmV3W10geyA4MCB9KV0KICAgIFtJbmxpbmVEYXRhKCI4MC1hYmMsNDQzIiwgbmV3W10geyA0NDMgfSldCiAgICBbSW5saW5lRGF0YSgiIDgwICIsIG5ld1tdIHsgODAgfSldCiAgICBwdWJsaWMgdm9pZCBQYXJzZVBvcnRzX1NraXBzSnVua0FuZE91dE9mUmFuZ2VUb2tlbnMoc3RyaW5nIHRleHQsIGludFtdIGV4cGVjdGVkKQogICAgICAgID0+IEFzc2VydC5FcXVhbChleHBlY3RlZCwgUG9ydFNjYW5uZXIuUGFyc2VQb3J0cyh0ZXh0KSk7CgogICAgW1RoZW9yeV0KICAgIFtJbmxpbmVEYXRhKCIiKV0KICAgIFtJbmxpbmVEYXRhKCIgICAiKV0KICAgIFtJbmxpbmVEYXRhKG51bGwpXQogICAgW0lubGluZURhdGEoIiAsIDsgIildCiAgICBbSW5saW5lRGF0YSgibm90LWEtcG9ydCIpXQogICAgcHVibGljIHZvaWQgUGFyc2VQb3J0c19SZXR1cm5zRW1wdHlfRm9ySW5wdXRXaXRob3V0UG9ydHMoc3RyaW5nPyB0ZXh0KQogICAgICAgID0+IEFzc2VydC5FbXB0eShQb3J0U2Nhbm5lci5QYXJzZVBvcnRzKHRleHQpKTsKCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIFBhcnNlUG9ydHNfQ2xhbXBzUmFuZ2VFbmRwb2ludHNBbmRDYXBzQVNpbGx5UmFuZ2UoKQogICAgewogICAgICAgIC8vIEVuZHBvaW50cyBhcmUgY2xhbXBlZCBpbnRvIDEuLjY1NTM1IC4uLgogICAgICAgIEFzc2VydC5FcXVhbChbMSwgMiwgNjU1MzVdLCBQb3J0U2Nhbm5lci5QYXJzZVBvcnRzKCIwLTIsNjU1MzUtNzAwMDAiKSk7CgogICAgICAgIC8vIC4uLiBhbmQgYSBzaW5nbGUgcmFuZ2UgaXMgY2FwcGVkIGF0IDIwMDAxIGVudHJpZXMgc28gdGhhdCAiMS02NTUzNSIKICAgICAgICAvLyBjYW5ub3QgYmUgdHlwZWQgYnkgYWNjaWRlbnQgaW50byBhIDI1NC1ob3N0IHNjYW4uCiAgICAgICAgdmFyIGNhcHBlZCA9IFBvcnRTY2FubmVyLlBhcnNlUG9ydHMoIjEtNjU1MzUiKTsKICAgICAgICBBc3NlcnQuRXF1YWwoMjAwMDEsIGNhcHBlZC5Db3VudCk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKDEsIGNhcHBlZFswXSk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKDIwMDAxLCBjYXBwZWRbXjFdKTsKICAgIH0KCiAgICAvLyAtLS0tIFBhcnNlVGFyZ2V0cyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIFBhcnNlVGFyZ2V0c19FeHBhbmRzQW5FeHBsaWNpdEFkZHJlc3NSYW5nZSgpCiAgICB7CiAgICAgICAgdmFyIHRhcmdldHMgPSBQb3J0U2Nhbm5lci5QYXJzZVRhcmdldHMoIjE5Mi4xNjguMS4xLTE5Mi4xNjguMS41Iik7CgogICAgICAgIEFzc2VydC5FcXVhbChbIjE5Mi4xNjguMS4xIiwgIjE5Mi4xNjguMS4yIiwgIjE5Mi4xNjguMS4zIiwgIjE5Mi4xNjguMS40IiwgIjE5Mi4xNjguMS41Il0sIHRhcmdldHMpOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgUGFyc2VUYXJnZXRzX0V4cGFuZHNBU2hvcnRSYW5nZVN1ZmZpeCgpCiAgICB7CiAgICAgICAgdmFyIHRhcmdldHMgPSBQb3J0U2Nhbm5lci5QYXJzZVRhcmdldHMoIjE5Mi4xNjguMS4xLTUiKTsKCiAgICAgICAgQXNzZXJ0LkVxdWFsKDUsIHRhcmdldHMuQ291bnQpOwogICAgICAgIEFzc2VydC5FcXVhbCgiMTkyLjE2OC4xLjEiLCB0YXJnZXRzWzBdKTsKICAgICAgICBBc3NlcnQuRXF1YWwoIjE5Mi4xNjguMS41IiwgdGFyZ2V0c1teMV0pOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgUGFyc2VUYXJnZXRzX0tlZXBzTmV0d29ya0FuZEJyb2FkY2FzdEFkZHJlc3Nlc0luc2lkZUFSYW5nZSgpCiAgICB7CiAgICAgICAgLy8gVW5saWtlIElwTWF0aC5HZXRSYW5nZSdzIGRlZmF1bHQsIGEgaGFuZC10eXBlZCByYW5nZSBpcyB0YWtlbiBsaXRlcmFsbHkuCiAgICAgICAgdmFyIHRhcmdldHMgPSBQb3J0U2Nhbm5lci5QYXJzZVRhcmdldHMoIjE5Mi4xNjguMS4yNTQtMTkyLjE2OC4yLjEiKTsKCiAgICAgICAgQXNzZXJ0LkVxdWFsKFsiMTkyLjE2OC4xLjI1NCIsICIxOTIuMTY4LjEuMjU1IiwgIjE5Mi4xNjguMi4wIiwgIjE5Mi4xNjguMi4xIl0sIHRhcmdldHMpOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgUGFyc2VUYXJnZXRzX0V4cGFuZHNBQ2lkckJsb2NrVG9JdHNVc2FibGVIb3N0cygpCiAgICB7CiAgICAgICAgdmFyIHRhcmdldHMgPSBQb3J0U2Nhbm5lci5QYXJzZVRhcmdldHMoIjE5Mi4xNjguMS4wLzMwIik7CgogICAgICAgIEFzc2VydC5FcXVhbChbIjE5Mi4xNjguMS4xIiwgIjE5Mi4xNjguMS4yIl0sIHRhcmdldHMpOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgUGFyc2VUYXJnZXRzX0V4cGFuZHNBV2lkZXJDaWRyQmxvY2soKQogICAgewogICAgICAgIHZhciB0YXJnZXRzID0gUG9ydFNjYW5uZXIuUGFyc2VUYXJnZXRzKCIxOTIuMTY4LjEuMC8yNCIpOwoKICAgICAgICBBc3NlcnQuRXF1YWwoMjU0LCB0YXJnZXRzLkNvdW50KTsKICAgICAgICBBc3NlcnQuRXF1YWwoIjE5Mi4xNjguMS4xIiwgdGFyZ2V0c1swXSk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKCIxOTIuMTY4LjEuMjU0IiwgdGFyZ2V0c1teMV0pOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgUGFyc2VUYXJnZXRzX1NsYXNoMzFBbmRTbGFzaDMyRm9sbG93VGhlQ2FsY3VsYXRvcigpCiAgICB7CiAgICAgICAgQXNzZXJ0LkVxdWFsKFsiMTkyLjE2OC4xLjEwIiwgIjE5Mi4xNjguMS4xMSJdLCBQb3J0U2Nhbm5lci5QYXJzZVRhcmdldHMoIjE5Mi4xNjguMS4xMC8zMSIpKTsKICAgICAgICBBc3NlcnQuRXF1YWwoWyIxOTIuMTY4LjEuMTAiXSwgUG9ydFNjYW5uZXIuUGFyc2VUYXJnZXRzKCIxOTIuMTY4LjEuMTAvMzIiKSk7CiAgICB9CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBQYXJzZVRhcmdldHNfRXhwYW5kc0FCYXJlU2VnbWVudFRvMjU0SG9zdHMoKQogICAgewogICAgICAgIHZhciB0YXJnZXRzID0gUG9ydFNjYW5uZXIuUGFyc2VUYXJnZXRzKCIxOTIuMTY4LjEiKTsKCiAgICAgICAgQXNzZXJ0LkVxdWFsKDI1NCwgdGFyZ2V0cy5Db3VudCk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKCIxOTIuMTY4LjEuMSIsIHRhcmdldHNbMF0pOwogICAgICAgIEFzc2VydC5FcXVhbCgiMTkyLjE2OC4xLjI1NCIsIHRhcmdldHNbXjFdKTsKICAgIH0KCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIFBhcnNlVGFyZ2V0c19LZWVwc0FTaW5nbGVBZGRyZXNzKCkKICAgICAgICA9PiBBc3NlcnQuRXF1YWwoWyIxOTIuMTY4LjEuMTAiXSwgUG9ydFNjYW5uZXIuUGFyc2VUYXJnZXRzKCIxOTIuMTY4LjEuMTAiKSk7CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBQYXJzZVRhcmdldHNfVHJpbXNTdXJyb3VuZGluZ1doaXRlc3BhY2UoKQogICAgICAgID0+IEFzc2VydC5FcXVhbChbIjE5Mi4xNjguMS4xMCJdLCBQb3J0U2Nhbm5lci5QYXJzZVRhcmdldHMoIiAgMTkyLjE2OC4xLjEwICAiKSk7CgogICAgW1RoZW9yeV0KICAgIFtJbmxpbmVEYXRhKCIiKV0KICAgIFtJbmxpbmVEYXRhKCIgICAiKV0KICAgIFtJbmxpbmVEYXRhKG51bGwpXQogICAgW0lubGluZURhdGEoIjk5OS4xLjEuMSIpXQogICAgW0lubGluZURhdGEoIjE5Mi4xNjguMS4xYWJjIildCiAgICBbSW5saW5lRGF0YSgibm90LWFuLWFkZHJlc3MiKV0KICAgIFtJbmxpbmVEYXRhKCIxOTIuMTY4LjEuMS1hYmMiKV0KICAgIFtJbmxpbmVEYXRhKCIxOTIuMTY4LjEuMC85OSIpXQogICAgcHVibGljIHZvaWQgUGFyc2VUYXJnZXRzX1JldHVybnNFbXB0eV9Gb3JVbnVzYWJsZUlucHV0KHN0cmluZz8gdGV4dCkKICAgICAgICA9PiBBc3NlcnQuRW1wdHkoUG9ydFNjYW5uZXIuUGFyc2VUYXJnZXRzKHRleHQpKTsKCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIFBhcnNlVGFyZ2V0c19TdG9wc0F0VGhlRmlyc3RGb3JtVGhhdE1hdGNoZXMoKQogICAgewogICAgICAgIC8vIEEgcmFuZ2UgaXMgdHJpZWQgYmVmb3JlIENJRFIvc2VnbWVudC9zaW5nbGUtYWRkcmVzcyBoYW5kbGluZy4KICAgICAgICB2YXIgdGFyZ2V0cyA9IFBvcnRTY2FubmVyLlBhcnNlVGFyZ2V0cygiMTkyLjE2OC4xLjEtMTkyLjE2OC4xLjIiKTsKCiAgICAgICAgQXNzZXJ0LkVxdWFsKFsiMTkyLjE2OC4xLjEiLCAiMTkyLjE2OC4xLjIiXSwgdGFyZ2V0cyk7CiAgICB9Cn0K
+using Xunit;
+using IPScaner.Core.Net;
+
+namespace IPScaner.Core.Tests;
+
+/// <summary>
+/// Coverage for the pure text parsers on <see cref="PortScanner"/>.
+/// </summary>
+public class PortScannerParseTests
+{
+    // ---- ParsePorts --------------------------------------------------------
+
+    [Fact]
+    public void ParsePorts_SplitsACommaList()
+        => Assert.Equal([80, 443], PortScanner.ParsePorts("80,443"));
+
+    [Fact]
+    public void ParsePorts_SortsAscendingAndRemovesDuplicates()
+    {
+        Assert.Equal([80, 443], PortScanner.ParsePorts("443,80"));
+        Assert.Equal([80, 443], PortScanner.ParsePorts("80,80,443,80"));
+        Assert.Equal([80, 443, 8080], PortScanner.ParsePorts("8080,80,443,80"));
+    }
+
+    [Fact]
+    public void ParsePorts_ExpandsARange()
+    {
+        var ports = PortScanner.ParsePorts("1000-1005");
+
+        Assert.Equal(6, ports.Count);
+        Assert.Equal([1000, 1001, 1002, 1003, 1004, 1005], ports);
+    }
+
+    [Fact]
+    public void ParsePorts_SwapsAReversedRange()
+        => Assert.Equal([1000, 1001, 1002, 1003, 1004, 1005], PortScanner.ParsePorts("1005-1000"));
+
+    [Fact]
+    public void ParsePorts_AllExpandsToTheWholePortSpace()
+    {
+        var ports = PortScanner.ParsePorts("all");
+
+        Assert.Equal(65535, ports.Count);
+        Assert.Equal(1, ports[0]);
+        Assert.Equal(65535, ports[^1]);
+    }
+
+    [Fact]
+    public void ParsePorts_AllIsCaseInsensitiveAndHasChineseAliases()
+    {
+        Assert.Equal(65535, PortScanner.ParsePorts("ALL").Count);
+        Assert.Equal(65535, PortScanner.ParsePorts("全部").Count);
+        Assert.Equal(65535, PortScanner.ParsePorts("全部端口").Count);
+    }
+
+    [Fact]
+    public void ParsePorts_AllCanBeRefused()
+        => Assert.Empty(PortScanner.ParsePorts("all", allowAll: false));
+
+    [Theory]
+    [InlineData("80，443")]   // full-width comma
+    [InlineData("80、443")]   // ideographic comma
+    [InlineData("80 443")]    // space
+    [InlineData("80;443")]    // semicolon
+    [InlineData("80 , 443")]
+    public void ParsePorts_AcceptsEverySeparatorTheOriginalAccepted(string text)
+        => Assert.Equal([80, 443], PortScanner.ParsePorts(text));
+
+    [Theory]
+    [InlineData("abc,80,xyz", new[] { 80 })]
+    [InlineData("80,,,443", new[] { 80, 443 })]
+    [InlineData("0,65536,70000,-5,80", new[] { 80 })]
+    [InlineData("80-abc,443", new[] { 443 })]
+    [InlineData(" 80 ", new[] { 80 })]
+    public void ParsePorts_SkipsJunkAndOutOfRangeTokens(string text, int[] expected)
+        => Assert.Equal(expected, PortScanner.ParsePorts(text));
+
+    [Theory]
+    [InlineData("")]
+    [InlineData("   ")]
+    [InlineData(null)]
+    [InlineData(" , ; ")]
+    [InlineData("not-a-port")]
+    public void ParsePorts_ReturnsEmpty_ForInputWithoutPorts(string? text)
+        => Assert.Empty(PortScanner.ParsePorts(text));
+
+    [Fact]
+    public void ParsePorts_ClampsRangeEndpointsAndCapsASillyRange()
+    {
+        // Endpoints are clamped into 1..65535 ...
+        Assert.Equal([1, 2, 65535], PortScanner.ParsePorts("0-2,65535-70000"));
+
+        // ... and a single range is capped at 20001 entries so that "1-65535"
+        // cannot be typed by accident into a 254-host scan.
+        var capped = PortScanner.ParsePorts("1-65535");
+        Assert.Equal(20001, capped.Count);
+        Assert.Equal(1, capped[0]);
+        Assert.Equal(20001, capped[^1]);
+    }
+
+    // ---- ParseTargets ------------------------------------------------------
+
+    [Fact]
+    public void ParseTargets_ExpandsAnExplicitAddressRange()
+    {
+        var targets = PortScanner.ParseTargets("192.168.1.1-192.168.1.5");
+
+        Assert.Equal(["192.168.1.1", "192.168.1.2", "192.168.1.3", "192.168.1.4", "192.168.1.5"], targets);
+    }
+
+    [Fact]
+    public void ParseTargets_ExpandsAShortRangeSuffix()
+    {
+        var targets = PortScanner.ParseTargets("192.168.1.1-5");
+
+        Assert.Equal(5, targets.Count);
+        Assert.Equal("192.168.1.1", targets[0]);
+        Assert.Equal("192.168.1.5", targets[^1]);
+    }
+
+    [Fact]
+    public void ParseTargets_KeepsNetworkAndBroadcastAddressesInsideARange()
+    {
+        // Unlike IpMath.GetRange's default, a hand-typed range is taken literally.
+        var targets = PortScanner.ParseTargets("192.168.1.254-192.168.2.1");
+
+        Assert.Equal(["192.168.1.254", "192.168.1.255", "192.168.2.0", "192.168.2.1"], targets);
+    }
+
+    [Fact]
+    public void ParseTargets_ExpandsACidrBlockToItsUsableHosts()
+    {
+        var targets = PortScanner.ParseTargets("192.168.1.0/30");
+
+        Assert.Equal(["192.168.1.1", "192.168.1.2"], targets);
+    }
+
+    [Fact]
+    public void ParseTargets_ExpandsAWiderCidrBlock()
+    {
+        var targets = PortScanner.ParseTargets("192.168.1.0/24");
+
+        Assert.Equal(254, targets.Count);
+        Assert.Equal("192.168.1.1", targets[0]);
+        Assert.Equal("192.168.1.254", targets[^1]);
+    }
+
+    [Fact]
+    public void ParseTargets_Slash31AndSlash32FollowTheCalculator()
+    {
+        Assert.Equal(["192.168.1.10", "192.168.1.11"], PortScanner.ParseTargets("192.168.1.10/31"));
+        Assert.Equal(["192.168.1.10"], PortScanner.ParseTargets("192.168.1.10/32"));
+    }
+
+    [Fact]
+    public void ParseTargets_ExpandsABareSegmentTo254Hosts()
+    {
+        var targets = PortScanner.ParseTargets("192.168.1");
+
+        Assert.Equal(254, targets.Count);
+        Assert.Equal("192.168.1.1", targets[0]);
+        Assert.Equal("192.168.1.254", targets[^1]);
+    }
+
+    [Fact]
+    public void ParseTargets_KeepsASingleAddress()
+        => Assert.Equal(["192.168.1.10"], PortScanner.ParseTargets("192.168.1.10"));
+
+    [Fact]
+    public void ParseTargets_TrimsSurroundingWhitespace()
+        => Assert.Equal(["192.168.1.10"], PortScanner.ParseTargets("  192.168.1.10  "));
+
+    [Theory]
+    [InlineData("")]
+    [InlineData("   ")]
+    [InlineData(null)]
+    [InlineData("999.1.1.1")]
+    [InlineData("192.168.1.1abc")]
+    [InlineData("not-an-address")]
+    [InlineData("192.168.1.1-abc")]
+    [InlineData("192.168.1.0/99")]
+    public void ParseTargets_ReturnsEmpty_ForUnusableInput(string? text)
+        => Assert.Empty(PortScanner.ParseTargets(text));
+
+    [Fact]
+    public void ParseTargets_StopsAtTheFirstFormThatMatches()
+    {
+        // A range is tried before CIDR/segment/single-address handling.
+        var targets = PortScanner.ParseTargets("192.168.1.1-192.168.1.2");
+
+        Assert.Equal(["192.168.1.1", "192.168.1.2"], targets);
+    }
+}

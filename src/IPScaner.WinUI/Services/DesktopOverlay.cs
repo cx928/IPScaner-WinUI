@@ -1,1 +1,479 @@
-dXNpbmcgU3lzdGVtLlJ1bnRpbWUuSW50ZXJvcFNlcnZpY2VzOwp1c2luZyBTeXN0ZW0uVGV4dDsKdXNpbmcgSVBTY2FuZXIuQ29yZS5Db25maWd1cmF0aW9uOwp1c2luZyBJUFNjYW5lci5Db3JlLkxvZ2dpbmc7CnVzaW5nIElQU2NhbmVyLkNvcmUuTW9kZWxzOwp1c2luZyBNaWNyb3NvZnQuVUk7CnVzaW5nIE1pY3Jvc29mdC5VSS5XaW5kb3dpbmc7CnVzaW5nIE1pY3Jvc29mdC5VSS5YYW1sOwp1c2luZyBNaWNyb3NvZnQuVUkuWGFtbC5Db250cm9sczsKdXNpbmcgTWljcm9zb2Z0LlVJLlhhbWwuTWVkaWE7CnVzaW5nIFdpbmRvd3MuR3JhcGhpY3M7CnVzaW5nIFdpblJULkludGVyb3A7CgpuYW1lc3BhY2UgSVBTY2FuZXIuV2luVUkuU2VydmljZXM7CgovLy8gPHN1bW1hcnk+Ci8vLyDmoYzpnaLmmL7npLrmnKzmnLpJUCDigJQgdGhlIFdpblVJIHBvcnQgb2YgdGhlIG9yaWdpbmFsIDxjPkRlc2t0b3BPdmVybGF5Rm9ybTwvYz4uCi8vLyA8L3N1bW1hcnk+Ci8vLyA8cmVtYXJrcz4KLy8vIEZhaXRoZnVsIHRvIHRoZSByZXZlcnNlLWVuZ2luZWVyZWQgYmVoYXZpb3VyOgovLy8gPGxpc3QgdHlwZT0iYnVsbGV0Ij4KLy8vIDxpdGVtPmJvcmRlcmxlc3MsIGNocm9tZS1sZXNzIHdpbmRvdyBzaXplZCB0byB0aGUgdGV4dCBwbHVzIHRoZSBvcmlnaW5hbCdzCi8vLyAxOCZuYnNwO3B4IGxhYmVsIHBhZGRpbmcgYW5kIDQwJm5ic3A7cHggc2xhY2sgKDxjPldpZHRoID0gbGJsLldpZHRoICsgNDA8L2M+KTs8L2l0ZW0+Ci8vLyA8aXRlbT5waW5uZWQgdG8gb25lIG9mIGZvdXIgY29ybmVycyBvZiB0aGUgPGI+cHJpbWFyeTwvYj4gZGlzcGxheSB1c2luZyB0aGUgZnVsbAovLy8gbW9uaXRvciBib3VuZHMgKDxzZWUgY3JlZj0iRGlzcGxheUFyZWEuUHJpbWFyeSIvPiA8Yz5PdXRlckJvdW5kczwvYz4gPSBXaW5Gb3JtcwovLy8gPGM+U2NyZWVuLlByaW1hcnlTY3JlZW4uQm91bmRzPC9jPiDigJQgdGhlIHRhc2tiYXIgaXMgPGk+bm90PC9pPiBleGNsdWRlZCBhbmQgYQovLy8gbXVsdGktbW9uaXRvciBkZXNrdG9wIHN0aWxsIHVzZXMgdGhlIHByaW1hcnkgbW9uaXRvcik7PC9pdGVtPgovLy8gPGl0ZW0+bWFkZSBjbGljay10aHJvdWdoIGFuZCBpbnZpc2libGUgdG8gdGhlIHNoZWxsIHdpdGgKLy8vIDxjPldTX0VYX0xBWUVSRUQgfCBXU19FWF9UUkFOU1BBUkVOVCB8IFdTX0VYX1RPT0xXSU5ET1c8L2M+IGFuZCBwZXItd2luZG93Ci8vLyBhbHBoYSBmcm9tIDxzZWUgY3JlZj0iQXBwQ29uZmlnLkRlc2t0b3BPdmVybGF5T3BhY2l0eSIvPi48L2l0ZW0+Ci8vLyA8L2xpc3Q+Ci8vLyA8cGFyYT4KLy8vIEFzIGluIHRoZSBvcmlnaW5hbCB0aGVyZSBpcyA8Yj5ubzwvYj4gPGM+U2V0UGFyZW50KFByb2dtYW4vV29ya2VyVyk8L2M+IGFuZAovLy8gPGI+bm88L2I+IGFsd2F5cy1vbi10b3AsIHNvIHRoZSBiYWRnZSBmbG9hdHMgaW4gdGhlIG5vcm1hbCB6LW9yZGVyIGFuZCBjYW4gYmUKLy8vIGNvdmVyZWQgYnkgb3RoZXIgd2luZG93cy4gVGhlIGRvY3VtZW50ZWQgcXVpcmtzIHRoYXQgd2VyZSBmaXhlZCBoZXJlIGFyZSBub3RlZAovLy8gb24gdGhlIGluZGl2aWR1YWwgbWVtYmVycy4KLy8vIDwvcGFyYT4KLy8vIDxwYXJhPgovLy8gRXZlcnkgbWVtYmVyIG11c3QgYmUgdXNlZCBmcm9tIHRoZSBVSSB0aHJlYWQ7IDxzZWUgY3JlZj0iVXBkYXRlIi8+IGlzIGNoZWFwIGFuZAovLy8gc2FmZSB0byBjYWxsIG9mdGVuIChpdCBvbmx5IHRvdWNoZXMgdGhlIGxhYmVsL3Jlc2l6ZS9tb3ZlIHdoZW4gc29tZXRoaW5nCi8vLyBhY3R1YWxseSBjaGFuZ2VkKS4KLy8vIDwvcGFyYT4KLy8vIDwvcmVtYXJrcz4KcHVibGljIHNlYWxlZCBjbGFzcyBEZXNrdG9wT3ZlcmxheSA6IElEaXNwb3NhYmxlCnsKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBOZXZlciBkaXNwbGF5ZWQgKDxjPkhhc1RpdGxlQmFyID0gZmFsc2U8L2M+LCA8Yz5Jc1Nob3duSW5Td2l0Y2hlcnMgPSBmYWxzZTwvYz4pOwogICAgLy8vIGl0IGV4aXN0cyBzbyB0aGUgd2luZG93IGlzIGlkZW50aWZpYWJsZSBpbiBkaWFnbm9zdGljcyBhbmQgc2NyZWVuc2hvdCB0b29scy4KICAgIC8vLyBUaGUgb3JpZ2luYWwgZm9ybSBrZXB0IHRoZSBkZXNpZ25lciBuYW1lIDxjPkRlc2t0b3BPdmVybGF5Rm9ybTwvYz4gYXMgaXRzIHRleHQuCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgcHJpdmF0ZSBjb25zdCBzdHJpbmcgT3ZlcmxheVRpdGxlID0gIuahjOmdouaYvuekuuacrOacuklQIjsKCiAgICAvLyAtLS0tIHdpbmRvdyBzdHlsZXMgKEdXTF9FWFNUWUxFKSAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgIHByaXZhdGUgY29uc3QgaW50IEdXTF9FWFNUWUxFID0gLTIwOwogICAgcHJpdmF0ZSBjb25zdCBsb25nIFdTX0VYX0xBWUVSRUQgPSAweDAwMDgwMDAwTDsKICAgIHByaXZhdGUgY29uc3QgbG9uZyBXU19FWF9UUkFOU1BBUkVOVCA9IDB4MDAwMDAwMjBMOwogICAgcHJpdmF0ZSBjb25zdCBsb25nIFdTX0VYX1RPT0xXSU5ET1cgPSAweDAwMDAwMDgwTDsKICAgIHByaXZhdGUgY29uc3QgdWludCBMV0FfQUxQSEEgPSAweDAwMDAwMDAyOwoKICAgIHByaXZhdGUgY29uc3QgaW50IFNXX0hJREUgPSAwOwogICAgcHJpdmF0ZSBjb25zdCBpbnQgU1dfU0hPV05PQUNUSVZBVEUgPSA0OwoKICAgIC8vLyA8c3VtbWFyeT5UaGUgb3JpZ2luYWwgbGFiZWwncyA8Yz5QYWRkaW5nID0gbmV3IFBhZGRpbmcoMTgpPC9jPi48L3N1bW1hcnk+CiAgICBwcml2YXRlIGNvbnN0IGRvdWJsZSBMYWJlbFBhZGRpbmcgPSAxODsKCiAgICAvLy8gPHN1bW1hcnk+VGhlIG9yaWdpbmFsJ3MgPGM+V2lkdGggPSBsYmwuV2lkdGggKyA0MDsgSGVpZ2h0ID0gbGJsLkhlaWdodCArIDQwPC9jPi48L3N1bW1hcnk+CiAgICBwcml2YXRlIGNvbnN0IGRvdWJsZSBFeHRyYVNpemUgPSA0MDsKCiAgICAvLy8gPHN1bW1hcnk+5a6L5L2TIDEwIHB0LCBleHByZXNzZWQgaW4gdGhlIERJUHMgV2luVUkncyA8Yz5Gb250U2l6ZTwvYz4gdXNlcy48L3N1bW1hcnk+CiAgICBwcml2YXRlIGNvbnN0IGRvdWJsZSBMYWJlbEZvbnRTaXplID0gMTAgKiA5Ni4wIC8gNzIuMDsKCiAgICBwcml2YXRlIFdpbmRvdz8gX3dpbmRvdzsKICAgIHByaXZhdGUgQXBwV2luZG93PyBfYXBwV2luZG93OwogICAgcHJpdmF0ZSBUZXh0QmxvY2s/IF9sYWJlbDsKICAgIHByaXZhdGUgR3JpZD8gX3Jvb3Q7CiAgICBwcml2YXRlIEludFB0ciBfaHduZDsKCiAgICBwcml2YXRlIGJvb2wgX3Zpc2libGU7CiAgICBwcml2YXRlIGJvb2wgX2Rpc3Bvc2VkOwoKICAgIHByaXZhdGUgc3RyaW5nIF9sYXN0VGV4dCA9IHN0cmluZy5FbXB0eTsKICAgIHByaXZhdGUgaW50IF9sYXN0Rm9yZUNvbG9yQXJnYjsKICAgIHByaXZhdGUgaW50IF9sYXN0QmdDb2xvckFyZ2I7CiAgICBwcml2YXRlIGludCBfbGFzdE9wYWNpdHlQZXJjZW50ID0gLTE7CiAgICBwcml2YXRlIGludCBfbGFzdERwaTsKICAgIHByaXZhdGUgYm9vbCBfc2l6ZURpcnR5ID0gdHJ1ZTsKICAgIHByaXZhdGUgU2l6ZUludDMyIF9sYXN0U2l6ZTsKCiAgICAvLy8gPHN1bW1hcnk+CiAgICAvLy8gU2VudGluZWwgcmF0aGVyIHRoYW4gKDAsMCk6IHRoZSB0b3AtbGVmdCBjb3JuZXIgaXMgYSBsZWdpdGltYXRlIHRhcmdldCwgYW5kCiAgICAvLy8gdHJlYXRpbmcgaXQgYXMgIm5vdCBtb3ZlZCB5ZXQiIHNpbGVudGx5IHNraXBwZWQgdGhlIHZlcnkgZmlyc3QgTW92ZS4KICAgIC8vLyA8L3N1bW1hcnk+CiAgICBwcml2YXRlIFBvaW50SW50MzIgX2xhc3RQb3NpdGlvbiA9IG5ldyhpbnQuTWluVmFsdWUsIGludC5NaW5WYWx1ZSk7CgogICAgcHJpdmF0ZSBEYXRlVGltZSBfbGFzdEFkYXB0ZXJSZWZyZXNoID0gRGF0ZVRpbWUuTWluVmFsdWU7CgogICAgLy8vIDxzdW1tYXJ5PlRydWUgd2hpbGUgdGhlIG92ZXJsYXkgd2luZG93IGlzIG9uIHNjcmVlbi48L3N1bW1hcnk+CiAgICBwdWJsaWMgYm9vbCBJc1Zpc2libGUgPT4gX3Zpc2libGU7CgogICAgLy8vIDxzdW1tYXJ5PkNyZWF0ZXMgdGhlIHdpbmRvdyBvbiBmaXJzdCB1c2UsIHRoZW4gdXBkYXRlcyBhbmQgc2hvd3MgaXQuPC9zdW1tYXJ5PgogICAgcHVibGljIHZvaWQgU2hvdyhBcHBDb25maWcgY29uZmlnKQogICAgewogICAgICAgIEFyZ3VtZW50TnVsbEV4Y2VwdGlvbi5UaHJvd0lmTnVsbChjb25maWcpOwogICAgICAgIGlmIChfZGlzcG9zZWQpIHJldHVybjsKCiAgICAgICAgdHJ5CiAgICAgICAgewogICAgICAgICAgICBFbnN1cmVXaW5kb3coKTsKICAgICAgICAgICAgQXBwbHlFeHRlbmRlZFN0eWxlcygpOyAvLyByZS1hc3NlcnQ6IHRoZSBzdHlsZXMgYmVsb25nIHRvIHRoZSBIV05ELCBub3QgdG8gdGhlIGNvbnRlbnQKICAgICAgICAgICAgQXBwbHkoY29uZmlnLCBzaG93OiB0cnVlKTsKICAgICAgICB9CiAgICAgICAgY2F0Y2ggKEV4Y2VwdGlvbiBleCkKICAgICAgICB7CiAgICAgICAgICAgIEFwcExvZy5JbnN0YW5jZS5Mb2cobmFtZW9mKERlc2t0b3BPdmVybGF5KSwgIuaYvuekuuahjOmdouaYvuekuuacrOacuklQ5aSx6LSlOiAiICsgZXguTWVzc2FnZSk7CiAgICAgICAgfQogICAgfQoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBSZS1yZWFkcyB0aGUgYWRkcmVzcywgY29sb3Vycywgb3BhY2l0eSBhbmQgcG9zaXRpb24uIEEgbm8tb3Agd2hpbGUgaGlkZGVuCiAgICAvLy8gKHRoZSBuZXh0IDxzZWUgY3JlZj0iU2hvdyIvPiBwaWNrcyB0aGUgY3VycmVudCBjb25maWd1cmF0aW9uIHVwIGFueXdheSkuCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgcHVibGljIHZvaWQgVXBkYXRlKEFwcENvbmZpZyBjb25maWcpCiAgICB7CiAgICAgICAgQXJndW1lbnROdWxsRXhjZXB0aW9uLlRocm93SWZOdWxsKGNvbmZpZyk7CiAgICAgICAgaWYgKF9kaXNwb3NlZCB8fCAhX3Zpc2libGUgfHwgX3dpbmRvdyBpcyBudWxsKSByZXR1cm47CgogICAgICAgIHRyeQogICAgICAgIHsKICAgICAgICAgICAgQXBwbHkoY29uZmlnLCBzaG93OiBmYWxzZSk7CiAgICAgICAgfQogICAgICAgIGNhdGNoIChFeGNlcHRpb24gZXgpCiAgICAgICAgewogICAgICAgICAgICBBcHBMb2cuSW5zdGFuY2UuTG9nKG5hbWVvZihEZXNrdG9wT3ZlcmxheSksICLliLfmlrDmoYzpnaLmmL7npLrmnKzmnLpJUOWksei0pTogIiArIGV4Lk1lc3NhZ2UpOwogICAgICAgIH0KICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+SGlkZXMgdGhlIHdpbmRvdyB3aXRob3V0IGRlc3Ryb3lpbmcgaXQsIHNvIHNob3dpbmcgaXQgYWdhaW4gaXMgaW5zdGFudC48L3N1bW1hcnk+CiAgICBwdWJsaWMgdm9pZCBIaWRlKCkKICAgIHsKICAgICAgICBpZiAoX3dpbmRvdyBpcyBudWxsIHx8IF9od25kID09IEludFB0ci5aZXJvKQogICAgICAgIHsKICAgICAgICAgICAgX3Zpc2libGUgPSBmYWxzZTsKICAgICAgICAgICAgcmV0dXJuOwogICAgICAgIH0KCiAgICAgICAgdHJ5CiAgICAgICAgewogICAgICAgICAgICBTaG93V2luZG93KF9od25kLCBTV19ISURFKTsKICAgICAgICB9CiAgICAgICAgY2F0Y2ggKEV4Y2VwdGlvbiBleCkKICAgICAgICB7CiAgICAgICAgICAgIEFwcExvZy5JbnN0YW5jZS5Mb2cobmFtZW9mKERlc2t0b3BPdmVybGF5KSwgIumakOiXj+ahjOmdouaYvuekuuacrOacuklQ5aSx6LSlOiAiICsgZXguTWVzc2FnZSk7CiAgICAgICAgfQoKICAgICAgICBfdmlzaWJsZSA9IGZhbHNlOwogICAgfQoKICAgIHB1YmxpYyB2b2lkIERpc3Bvc2UoKQogICAgewogICAgICAgIGlmIChfZGlzcG9zZWQpIHJldHVybjsKICAgICAgICBfZGlzcG9zZWQgPSB0cnVlOwoKICAgICAgICB0cnkKICAgICAgICB7CiAgICAgICAgICAgIGlmIChfd2luZG93IGlzIG5vdCBudWxsKQogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICBpZiAoX2h3bmQgIT0gSW50UHRyLlplcm8pIFNob3dXaW5kb3coX2h3bmQsIFNXX0hJREUpOwogICAgICAgICAgICAgICAgX3dpbmRvdy5DbG9zZSgpOwogICAgICAgICAgICB9CiAgICAgICAgfQogICAgICAgIGNhdGNoIChFeGNlcHRpb24gZXgpCiAgICAgICAgewogICAgICAgICAgICBBcHBMb2cuSW5zdGFuY2UuTG9nKG5hbWVvZihEZXNrdG9wT3ZlcmxheSksICLlhbPpl63moYzpnaLmmL7npLrmnKzmnLpJUOWksei0pTogIiArIGV4Lk1lc3NhZ2UpOwogICAgICAgIH0KICAgICAgICBmaW5hbGx5CiAgICAgICAgewogICAgICAgICAgICBfd2luZG93ID0gbnVsbDsKICAgICAgICAgICAgX2FwcFdpbmRvdyA9IG51bGw7CiAgICAgICAgICAgIF9sYWJlbCA9IG51bGw7CiAgICAgICAgICAgIF9yb290ID0gbnVsbDsKICAgICAgICAgICAgX2h3bmQgPSBJbnRQdHIuWmVybzsKICAgICAgICAgICAgX3Zpc2libGUgPSBmYWxzZTsKICAgICAgICB9CiAgICB9CgogICAgLy8gLS0tLSB3aW5kb3cgcGx1bWJpbmcgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgogICAgcHJpdmF0ZSB2b2lkIEVuc3VyZVdpbmRvdygpCiAgICB7CiAgICAgICAgaWYgKF93aW5kb3cgaXMgbm90IG51bGwpIHJldHVybjsKCiAgICAgICAgdmFyIGxhYmVsID0gbmV3IFRleHRCbG9jawogICAgICAgIHsKICAgICAgICAgICAgRm9udEZhbWlseSA9IG5ldyBGb250RmFtaWx5KCJTaW1TdW4iKSwgLy8g5a6L5L2TCiAgICAgICAgICAgIEZvbnRTaXplID0gTGFiZWxGb250U2l6ZSwKICAgICAgICAgICAgVGV4dFdyYXBwaW5nID0gVGV4dFdyYXBwaW5nLk5vV3JhcCwKICAgICAgICAgICAgVGV4dEFsaWdubWVudCA9IFRleHRBbGlnbm1lbnQuTGVmdCwKICAgICAgICAgICAgSG9yaXpvbnRhbEFsaWdubWVudCA9IEhvcml6b250YWxBbGlnbm1lbnQuTGVmdCwKICAgICAgICAgICAgVmVydGljYWxBbGlnbm1lbnQgPSBWZXJ0aWNhbEFsaWdubWVudC5DZW50ZXIsIC8vIExhYmVsLlRleHRBbGlnbiA9IE1pZGRsZUxlZnQKICAgICAgICAgICAgRm9yZWdyb3VuZCA9IG5ldyBTb2xpZENvbG9yQnJ1c2goVWlLaXQuQ29sb3JGcm9tQXJnYihBcHBDb25maWcuQmxhY2tBcmdiKSksCiAgICAgICAgfTsKCiAgICAgICAgLy8gVGhlIG9yaWdpbmFsIGxhYmVsIHdhcyBBdXRvU2l6ZSArIERvY2s9RmlsbCwgc28gaXRzIGJhY2tncm91bmQgY292ZXJlZCB0aGUKICAgICAgICAvLyB3aG9sZSBjbGllbnQgYXJlYTogdGhlIGJhZGdlIGlzIG9uZSBzb2xpZCBjYXJkIHdpdGggMTggcHggb2YgcGFkZGluZy4KICAgICAgICB2YXIgcm9vdCA9IG5ldyBHcmlkCiAgICAgICAgewogICAgICAgICAgICBQYWRkaW5nID0gbmV3IFRoaWNrbmVzcyhMYWJlbFBhZGRpbmcpLAogICAgICAgICAgICBCYWNrZ3JvdW5kID0gbmV3IFNvbGlkQ29sb3JCcnVzaChNaWNyb3NvZnQuVUkuQ29sb3JzLlRyYW5zcGFyZW50KSwKICAgICAgICB9OwogICAgICAgIHJvb3QuQ2hpbGRyZW4uQWRkKGxhYmVsKTsKCiAgICAgICAgdmFyIHdpbmRvdyA9IG5ldyBXaW5kb3cgeyBUaXRsZSA9IE92ZXJsYXlUaXRsZSwgQ29udGVudCA9IHJvb3QgfTsKICAgICAgICB2YXIgaHduZCA9IFdpbmRvd05hdGl2ZS5HZXRXaW5kb3dIYW5kbGUod2luZG93KTsKICAgICAgICB2YXIgYXBwV2luZG93ID0gQXBwV2luZG93LkdldEZyb21XaW5kb3dJZChXaW4zMkludGVyb3AuR2V0V2luZG93SWRGcm9tV2luZG93KGh3bmQpKTsKCiAgICAgICAgLy8gTm8gdGl0bGUgYmFyLCBubyBib3JkZXIsIG5vdCByZXNpemFibGUvbWluaW1pemFibGUvbWF4aW1pemFibGUg4oCUIHRoZQogICAgICAgIC8vIFdpblVJIGVxdWl2YWxlbnQgb2YgRm9ybUJvcmRlclN0eWxlLk5vbmUgKyBTaG93SWNvbiA9IGZhbHNlLgogICAgICAgIC8vIChXaW5BcHBTREsgaGFzIG5vIHB1YmxpYyBPdmVybGFwcGVkUHJlc2VudGVyIGNvbnN0cnVjdG9yOiBDcmVhdGUoKSBwbHVzCiAgICAgICAgLy8gU2V0Qm9yZGVyQW5kVGl0bGVCYXIoZmFsc2UsIGZhbHNlKSBpcyB0aGUgc3VwcG9ydGVkIHdheSB0byBleHByZXNzCiAgICAgICAgLy8gSGFzQm9yZGVyL0hhc1RpdGxlQmFyLCB3aGljaCBhcmUgcmVhZC1vbmx5IHByb3BlcnRpZXMuKQogICAgICAgIHZhciBwcmVzZW50ZXIgPSBPdmVybGFwcGVkUHJlc2VudGVyLkNyZWF0ZSgpOwogICAgICAgIHByZXNlbnRlci5Jc1Jlc2l6YWJsZSA9IGZhbHNlOwogICAgICAgIHByZXNlbnRlci5Jc01heGltaXphYmxlID0gZmFsc2U7CiAgICAgICAgcHJlc2VudGVyLklzTWluaW1pemFibGUgPSBmYWxzZTsKICAgICAgICBwcmVzZW50ZXIuSXNBbHdheXNPblRvcCA9IGZhbHNlOyAvLyB0aGUgb3JpZ2luYWwgaGFkIG5vIFRvcE1vc3QKICAgICAgICBwcmVzZW50ZXIuU2V0Qm9yZGVyQW5kVGl0bGVCYXIoZmFsc2UsIGZhbHNlKTsKICAgICAgICBhcHBXaW5kb3cuU2V0UHJlc2VudGVyKHByZXNlbnRlcik7CiAgICAgICAgYXBwV2luZG93LklzU2hvd25JblN3aXRjaGVycyA9IGZhbHNlOyAvLyArIFdTX0VYX1RPT0xXSU5ET1c6IG5ldmVyIGluIEFsdCtUYWIvdGFza2JhcgoKICAgICAgICBfd2luZG93ID0gd2luZG93OwogICAgICAgIF9hcHBXaW5kb3cgPSBhcHBXaW5kb3c7CiAgICAgICAgX2xhYmVsID0gbGFiZWw7CiAgICAgICAgX3Jvb3QgPSByb290OwogICAgICAgIF9od25kID0gaHduZDsKICAgICAgICBfbGFzdERwaSA9IDA7CiAgICAgICAgX3NpemVEaXJ0eSA9IHRydWU7CiAgICB9CgogICAgLy8vIDxzdW1tYXJ5PgogICAgLy8vIDxjPldTX0VYX0xBWUVSRUQgfCBXU19FWF9UUkFOU1BBUkVOVCB8IFdTX0VYX1RPT0xXSU5ET1c8L2M+LCBleGFjdGx5IHdoYXQgdGhlCiAgICAvLy8gb3JpZ2luYWwgT1ItZWQgaW50byA8Yz5HV0xfRVhTVFlMRTwvYz4gKGxheWVyZWQgPSBhbHBoYSwgdHJhbnNwYXJlbnQgPQogICAgLy8vIGNsaWNrLXRocm91Z2gsIHRvb2wgd2luZG93ID0gb3V0IG9mIHRoZSBzaGVsbCdzIHdpbmRvdyBsaXN0cykuCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgcHJpdmF0ZSB2b2lkIEFwcGx5RXh0ZW5kZWRTdHlsZXMoKQogICAgewogICAgICAgIGlmIChfaHduZCA9PSBJbnRQdHIuWmVybykgcmV0dXJuOwoKICAgICAgICB2YXIgc3R5bGUgPSBHZXRXaW5kb3dMb25nUHRyVyhfaHduZCwgR1dMX0VYU1RZTEUpLlRvSW50NjQoKTsKICAgICAgICBzdHlsZSB8PSBXU19FWF9MQVlFUkVEIHwgV1NfRVhfVFJBTlNQQVJFTlQgfCBXU19FWF9UT09MV0lORE9XOwogICAgICAgIFNldFdpbmRvd0xvbmdQdHJXKF9od25kLCBHV0xfRVhTVFlMRSwgbmV3IEludFB0cihzdHlsZSkpOwogICAgfQoKICAgIHByaXZhdGUgdm9pZCBBcHBseShBcHBDb25maWcgY29uZmlnLCBib29sIHNob3cpCiAgICB7CiAgICAgICAgdmFyIGxhYmVsID0gX2xhYmVsOwogICAgICAgIHZhciByb290ID0gX3Jvb3Q7CiAgICAgICAgdmFyIGFwcFdpbmRvdyA9IF9hcHBXaW5kb3c7CiAgICAgICAgaWYgKGxhYmVsIGlzIG51bGwgfHwgcm9vdCBpcyBudWxsIHx8IGFwcFdpbmRvdyBpcyBudWxsIHx8IF9od25kID09IEludFB0ci5aZXJvKSByZXR1cm47CgogICAgICAgIC8vIDEuIHRleHQgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICAgICAgdmFyIHRleHQgPSBOb3JtYWxpemUoQnVpbGRUZXh0KGNvbmZpZykpOwogICAgICAgIGlmICghc3RyaW5nLkVxdWFscyh0ZXh0LCBfbGFzdFRleHQsIFN0cmluZ0NvbXBhcmlzb24uT3JkaW5hbCkpCiAgICAgICAgewogICAgICAgICAgICBfbGFzdFRleHQgPSB0ZXh0OwogICAgICAgICAgICBsYWJlbC5UZXh0ID0gdGV4dDsKICAgICAgICAgICAgX3NpemVEaXJ0eSA9IHRydWU7CiAgICAgICAgfQoKICAgICAgICAvLyAyLiBjb2xvdXJzIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgICAgIGlmIChfbGFzdEJnQ29sb3JBcmdiICE9IGNvbmZpZy5EZXNrdG9wQmdDb2xvckFyZ2IgfHwgcm9vdC5CYWNrZ3JvdW5kIGlzIG5vdCBTb2xpZENvbG9yQnJ1c2gpCiAgICAgICAgewogICAgICAgICAgICBfbGFzdEJnQ29sb3JBcmdiID0gY29uZmlnLkRlc2t0b3BCZ0NvbG9yQXJnYjsKICAgICAgICAgICAgcm9vdC5CYWNrZ3JvdW5kID0gbmV3IFNvbGlkQ29sb3JCcnVzaChVaUtpdC5Db2xvckZyb21BcmdiKF9sYXN0QmdDb2xvckFyZ2IpKTsKICAgICAgICB9CgogICAgICAgIGlmIChfbGFzdEZvcmVDb2xvckFyZ2IgIT0gY29uZmlnLkRlc2t0b3BGb3JlQ29sb3JBcmdiIHx8IGxhYmVsLkZvcmVncm91bmQgaXMgbm90IFNvbGlkQ29sb3JCcnVzaCkKICAgICAgICB7CiAgICAgICAgICAgIF9sYXN0Rm9yZUNvbG9yQXJnYiA9IGNvbmZpZy5EZXNrdG9wRm9yZUNvbG9yQXJnYjsKICAgICAgICAgICAgbGFiZWwuRm9yZWdyb3VuZCA9IG5ldyBTb2xpZENvbG9yQnJ1c2goVWlLaXQuQ29sb3JGcm9tQXJnYihfbGFzdEZvcmVDb2xvckFyZ2IpKTsKICAgICAgICB9CgogICAgICAgIC8vIDMuIHNpemUgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICAgICAgdmFyIGRwaSA9IEdldERwaUZvcldpbmRvdyhfaHduZCk7CiAgICAgICAgaWYgKGRwaSA8PSAwKSBkcGkgPSA5NjsKICAgICAgICBpZiAoX3NpemVEaXJ0eSB8fCBkcGkgIT0gX2xhc3REcGkpIFJlc2l6ZVRvQ29udGVudChkcGkpOwoKICAgICAgICAvLyA0LiBvcGFjaXR5IC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgICAgIHZhciBvcGFjaXR5ID0gTWF0aC5DbGFtcChjb25maWcuRGVza3RvcE92ZXJsYXlPcGFjaXR5LCAwLCAxMDApOwogICAgICAgIGlmIChvcGFjaXR5ICE9IF9sYXN0T3BhY2l0eVBlcmNlbnQpCiAgICAgICAgewogICAgICAgICAgICAvLyBPcGFjaXR5ID0gRGVza3RvcE92ZXJsYXlPcGFjaXR5IC8gMTAwLjAsIGFwcGxpZWQgcGVyIHdpbmRvdy4KICAgICAgICAgICAgU2V0TGF5ZXJlZFdpbmRvd0F0dHJpYnV0ZXMoX2h3bmQsIDAsIChieXRlKShvcGFjaXR5ICogMjU1IC8gMTAwKSwgTFdBX0FMUEhBKTsKICAgICAgICAgICAgX2xhc3RPcGFjaXR5UGVyY2VudCA9IG9wYWNpdHk7CiAgICAgICAgfQoKICAgICAgICAvLyA1LiBwb3NpdGlvbiAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgICAgIE1vdmVUb0NvbmZpZ3VyZWRDb3JuZXIoY29uZmlnKTsKCiAgICAgICAgLy8gNi4gc2hvdyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgICAgICBpZiAoc2hvdyAmJiAhX3Zpc2libGUpIFNob3dOb0FjdGl2YXRlKCk7CiAgICB9CgogICAgcHJpdmF0ZSB2b2lkIFNob3dOb0FjdGl2YXRlKCkKICAgIHsKICAgICAgICAvLyBTaG93V2luZG93KFNXX1NIT1dOT0FDVElWQVRFKSByYXRoZXIgdGhhbiBXaW5kb3cuQWN0aXZhdGUoKTogdGhlIGJhZGdlIGlzCiAgICAgICAgLy8gY2xpY2stdGhyb3VnaCBkZWNvcmF0aW9uIGFuZCBtdXN0IG5vdCBzdGVhbCBhY3RpdmF0aW9uIGZyb20gd2hhdGV2ZXIgdGhlCiAgICAgICAgLy8gdXNlciBpcyB3b3JraW5nIGluIChXaW5Gb3JtcycgU2hvdygpIGFjdGl2YXRlZCBvbmx5IGFzIGEgc2lkZSBlZmZlY3QpLgogICAgICAgIFNob3dXaW5kb3coX2h3bmQsIFNXX1NIT1dOT0FDVElWQVRFKTsKICAgICAgICBfdmlzaWJsZSA9IHRydWU7CiAgICB9CgogICAgLy8gLS0tLSBjb250ZW50IC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgogICAgLy8vIDxzdW1tYXJ5PgogICAgLy8vIE1pcnJvcnMgPGM+Rm9ybU1haW4uRGlzbGF5RGVza3RvcE92ZXJsYXk8L2M+OiB0aGUgY29uZmlndXJlZCBwcmVmaXgsIHRoZQogICAgLy8vIGFjdGl2ZSBJUHY0IGFkZHJlc3MoZXMpLCB0aGVuIOWQjeensCAvIE1BQyAvIOaOqeeggSAvIOe9keWFsyAvIERIQ1AgLyBETlMgZm9yIHRoZQogICAgLy8vIGZpcnN0IGFjdGl2ZSBhZGFwdGVyLiBMaW5lcyB3aXRob3V0IGEgdmFsdWUgYXJlIHNraXBwZWQsIHdoaWNoIGFsc28gY292ZXJzCiAgICAvLy8gdGhlIG9yaWdpbmFsJ3MgYWxsLW9yLW5vdGhpbmcgZW1pc3Npb24gd2hlbiBzZXZlcmFsIE5JQ3MgYXJlIHVwIChpdHMKICAgIC8vLyA8Yz5GaXJzdE9yRGVmYXVsdChyID0mZ3Q7IHIuSVAgPT0gImlwMTsgaXAyIik8L2M+IG5ldmVyIG1hdGNoZWQsIHNvIGEKICAgIC8vLyBtdWx0aS1ob21lZCBtYWNoaW5lIGxvc3QgZXZlcnkgZGV0YWlsIGxpbmUpLgogICAgLy8vIDwvc3VtbWFyeT4KICAgIHByaXZhdGUgc3RyaW5nIEJ1aWxkVGV4dChBcHBDb25maWcgY29uZmlnKQogICAgewogICAgICAgIHZhciBhZGFwdGVycyA9IFJlYWRBZGFwdGVycygpOwogICAgICAgIHZhciBhY3RpdmUgPSBhZGFwdGVycwogICAgICAgICAgICAuV2hlcmUoYSA9PiBhLklzVXAgJiYgIXN0cmluZy5Jc051bGxPcldoaXRlU3BhY2UoYS5JUCkpCiAgICAgICAgICAgIC5Ub0xpc3QoKTsKCiAgICAgICAgdmFyIHRleHQgPSBuZXcgU3RyaW5nQnVpbGRlcihjb25maWcuRGVza3RvcE92ZXJsYXlQcmUgPz8gc3RyaW5nLkVtcHR5KQogICAgICAgICAgICAuQXBwZW5kKHN0cmluZy5Kb2luKCI7ICIsIGFjdGl2ZS5TZWxlY3QoYSA9PiBhLklQKSkpOwoKICAgICAgICB2YXIgcHJpbWFyeSA9IGFjdGl2ZS5GaXJzdE9yRGVmYXVsdCgpOwogICAgICAgIGlmIChwcmltYXJ5IGlzIG5vdCBudWxsKQogICAgICAgIHsKICAgICAgICAgICAgQXBwZW5kRmllbGQodGV4dCwgIuWQjeensCIsIHByaW1hcnkuTmFtZSk7CiAgICAgICAgICAgIEFwcGVuZEZpZWxkKHRleHQsICJNQUMiLCBwcmltYXJ5Lk1hYyk7CiAgICAgICAgICAgIEFwcGVuZEZpZWxkKHRleHQsICLmjqnnoIEiLCBwcmltYXJ5LlN1Ym5ldE1hc2spOwogICAgICAgICAgICBBcHBlbmRGaWVsZCh0ZXh0LCAi572R5YWzIiwgcHJpbWFyeS5HYXRld2F5KTsKICAgICAgICAgICAgQXBwZW5kRmllbGQodGV4dCwgIkRIQ1AiLCBwcmltYXJ5LklzRGhjcEVuYWJsZWQgPyAiVHJ1ZSIgOiAiRmFsc2UiKTsgLy8gcmF3IC5ORVQgYm9vbCwgYXMgdGhlIG9yaWdpbmFsIHByaW50ZWQgaXQKICAgICAgICAgICAgQXBwZW5kRmllbGQodGV4dCwgIkROUyIsIHN0cmluZy5Kb2luKCI7ICIsIHByaW1hcnkuRG5zU2VydmVycykpOwogICAgICAgIH0KCiAgICAgICAgcmV0dXJuIHRleHQuVG9TdHJpbmcoKTsKICAgIH0KCiAgICBwcml2YXRlIHN0YXRpYyB2b2lkIEFwcGVuZEZpZWxkKFN0cmluZ0J1aWxkZXIgdGV4dCwgc3RyaW5nIGxhYmVsLCBzdHJpbmc/IHZhbHVlKQogICAgewogICAgICAgIGlmIChzdHJpbmcuSXNOdWxsT3JXaGl0ZVNwYWNlKHZhbHVlKSkgcmV0dXJuOwogICAgICAgIHRleHQuQXBwZW5kKEVudmlyb25tZW50Lk5ld0xpbmUpLkFwcGVuZChsYWJlbCkuQXBwZW5kKCfvvJonKS5BcHBlbmQodmFsdWUuVHJpbSgpKTsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+Q1JMRiBpcyBub3JtYWxpc2VkIHNvIHRoZSBUZXh0QmxvY2sgcmVuZGVycyBvbmUgYnJlYWsgcGVyIGxpbmUuPC9zdW1tYXJ5PgogICAgcHJpdmF0ZSBzdGF0aWMgc3RyaW5nIE5vcm1hbGl6ZShzdHJpbmcgdGV4dCkgPT4gdGV4dC5SZXBsYWNlKCJcclxuIiwgIlxuIikuUmVwbGFjZSgnXHInLCAnXG4nKTsKCiAgICBwcml2YXRlIElSZWFkT25seUxpc3Q8QWRhcHRlckluZm8+IFJlYWRBZGFwdGVycygpCiAgICB7CiAgICAgICAgdmFyIHNlcnZpY2VzID0gQXBwU2VydmljZXMuQ3VycmVudDsKICAgICAgICB2YXIgbGlzdCA9IHNlcnZpY2VzLkFkYXB0ZXJMaXN0OwoKICAgICAgICAvLyBBZGFwdGVyTGlzdCBpcyBmaWxsZWQgYnkgYSBiYWNrZ3JvdW5kIHRhc2sgYXQgc3RhcnR1cCwgc28gdGhlIGZpcnN0IHBhaW50CiAgICAgICAgLy8gY2FuIHdpbiB0aGF0IHJhY2UgKHRoZSBvcmlnaW5hbCByZWFkIGEgbGlzdCBhbHJlYWR5IGZpbGxlZCBieQogICAgICAgIC8vIEZvcm1NYWluX0xvYWQpLiBSZS1lbnVtZXJhdGUsIHRocm90dGxlZCBzbyBhIGZyZXF1ZW50IFVwZGF0ZSgpIGNhbm5vdCB0dXJuCiAgICAgICAgLy8gaW50byBhIFdNSSBzdG9ybSBvbiBhIG1hY2hpbmUgd2l0aCBubyB1c2FibGUgYWRhcHRlci4KICAgICAgICBpZiAobGlzdC5Db3VudCA9PSAwICYmIERhdGVUaW1lLlV0Y05vdyAtIF9sYXN0QWRhcHRlclJlZnJlc2ggPiBUaW1lU3Bhbi5Gcm9tU2Vjb25kcygxMCkpCiAgICAgICAgewogICAgICAgICAgICBfbGFzdEFkYXB0ZXJSZWZyZXNoID0gRGF0ZVRpbWUuVXRjTm93OwogICAgICAgICAgICBsaXN0ID0gc2VydmljZXMuUmVmcmVzaEFkYXB0ZXJzKCk7CiAgICAgICAgfQoKICAgICAgICByZXR1cm4gbGlzdDsKICAgIH0KCiAgICAvLyAtLS0tIGdlb21ldHJ5IC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCiAgICBwcml2YXRlIHZvaWQgUmVzaXplVG9Db250ZW50KGludCBkcGkpCiAgICB7CiAgICAgICAgdmFyIGxhYmVsID0gX2xhYmVsOwogICAgICAgIHZhciBhcHBXaW5kb3cgPSBfYXBwV2luZG93OwogICAgICAgIGlmIChsYWJlbCBpcyBudWxsIHx8IGFwcFdpbmRvdyBpcyBudWxsKSByZXR1cm47CgogICAgICAgIC8vIFVuY29uc3RyYWluZWQgbWVhc3VyZSA9IExhYmVsLkF1dG9TaXplLgogICAgICAgIGxhYmVsLk1lYXN1cmUobmV3IFdpbmRvd3MuRm91bmRhdGlvbi5TaXplKGRvdWJsZS5Qb3NpdGl2ZUluZmluaXR5LCBkb3VibGUuUG9zaXRpdmVJbmZpbml0eSkpOwogICAgICAgIHZhciBkZXNpcmVkID0gbGFiZWwuRGVzaXJlZFNpemU7CiAgICAgICAgdmFyIGRpcFdpZHRoID0gZGVzaXJlZC5XaWR0aDsKICAgICAgICB2YXIgZGlwSGVpZ2h0ID0gZGVzaXJlZC5IZWlnaHQ7CgogICAgICAgIGlmIChkaXBXaWR0aCA8PSAwIHx8IGRpcEhlaWdodCA8PSAwKQogICAgICAgIHsKICAgICAgICAgICAgLy8gTmV2ZXIgaGFuZCB0aGUgd2luZG93IGEgemVybyBzaXplIGlmIHRoZSB0ZXh0IHN0YWNrIGNhbm5vdCBtZWFzdXJlLgogICAgICAgICAgICB2YXIgbGluZXMgPSBfbGFzdFRleHQuU3BsaXQoJ1xuJyk7CiAgICAgICAgICAgIGRpcFdpZHRoID0gbGluZXMuTWF4KGwgPT4gbC5MZW5ndGgpICogTGFiZWxGb250U2l6ZSAqIDAuOTU7CiAgICAgICAgICAgIGRpcEhlaWdodCA9IGxpbmVzLkxlbmd0aCAqIExhYmVsRm9udFNpemUgKiAxLjM1OwogICAgICAgIH0KCiAgICAgICAgdmFyIHNjYWxlID0gZHBpIC8gOTYuMDsKICAgICAgICB2YXIgd2lkdGggPSBNYXRoLk1heCgxLCAoaW50KU1hdGguQ2VpbGluZygoZGlwV2lkdGggKyAoTGFiZWxQYWRkaW5nICogMikgKyBFeHRyYVNpemUpICogc2NhbGUpKTsKICAgICAgICB2YXIgaGVpZ2h0ID0gTWF0aC5NYXgoMSwgKGludClNYXRoLkNlaWxpbmcoKGRpcEhlaWdodCArIChMYWJlbFBhZGRpbmcgKiAyKSArIEV4dHJhU2l6ZSkgKiBzY2FsZSkpOwoKICAgICAgICBfbGFzdFNpemUgPSBuZXcgU2l6ZUludDMyKHdpZHRoLCBoZWlnaHQpOwogICAgICAgIF9sYXN0RHBpID0gZHBpOwogICAgICAgIF9zaXplRGlydHkgPSBmYWxzZTsKCiAgICAgICAgYXBwV2luZG93LlJlc2l6ZShfbGFzdFNpemUpOwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBUaGUgb3JpZ2luYWwncyBmb3VyLWNvcm5lciBzd2l0Y2gsIHJlc29sdmVkIGFnYWluc3QgdGhlIHByaW1hcnkgZGlzcGxheSdzCiAgICAvLy8gZnVsbCBib3VuZHMuIFRoZSBvbmx5IGNoYW5nZSBpcyB0aGUgY2xhbXA6IG9mZnNldHMgYXJlIGFsbG93ZWQgdG8gYmUKICAgIC8vLyBuZWdhdGl2ZSBvciBodWdlLCBhbmQgdGhlIG9yaWdpbmFsIGhhcHBpbHkgcHVzaGVkIHRoZSBiYWRnZSBvZmYgdGhlIHNjcmVlbgogICAgLy8vIChhbmQgZmVsbCB0aHJvdWdoIHRvICgwLDApIGZvciBhIGxvY2F0aW9uIG91dHNpZGUgMC4uMykuCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgcHJpdmF0ZSB2b2lkIE1vdmVUb0NvbmZpZ3VyZWRDb3JuZXIoQXBwQ29uZmlnIGNvbmZpZykKICAgIHsKICAgICAgICB2YXIgYXBwV2luZG93ID0gX2FwcFdpbmRvdzsKICAgICAgICBpZiAoYXBwV2luZG93IGlzIG51bGwpIHJldHVybjsKCiAgICAgICAgdmFyIGJvdW5kcyA9IERpc3BsYXlBcmVhLlByaW1hcnkuT3V0ZXJCb3VuZHM7CiAgICAgICAgdmFyIHdpZHRoID0gX2xhc3RTaXplLldpZHRoOwogICAgICAgIHZhciBoZWlnaHQgPSBfbGFzdFNpemUuSGVpZ2h0OwogICAgICAgIHZhciBvZmZzZXRYID0gY29uZmlnLkRlc2t0b3BPdmVybGF5T2Zmc2V0WDsKICAgICAgICB2YXIgb2Zmc2V0WSA9IGNvbmZpZy5EZXNrdG9wT3ZlcmxheU9mZnNldFk7CgogICAgICAgIGludCB4LCB5OwogICAgICAgIHN3aXRjaCAoY29uZmlnLkRlc2t0b3BPdmVybGF5TG9jYXRpb24pCiAgICAgICAgewogICAgICAgICAgICBjYXNlIDA6IC8vIOW3puS4iuinkgogICAgICAgICAgICAgICAgeCA9IGJvdW5kcy5YICsgb2Zmc2V0WDsKICAgICAgICAgICAgICAgIHkgPSBib3VuZHMuWSArIG9mZnNldFk7CiAgICAgICAgICAgICAgICBicmVhazsKICAgICAgICAgICAgY2FzZSAxOiAvLyDlj7PkuIrop5IKICAgICAgICAgICAgICAgIHggPSBib3VuZHMuWCArIGJvdW5kcy5XaWR0aCAtIHdpZHRoIC0gb2Zmc2V0WDsKICAgICAgICAgICAgICAgIHkgPSBib3VuZHMuWSArIG9mZnNldFk7CiAgICAgICAgICAgICAgICBicmVhazsKICAgICAgICAgICAgY2FzZSAzOiAvLyDlt6bkuIvop5IKICAgICAgICAgICAgICAgIHggPSBib3VuZHMuWCArIG9mZnNldFg7CiAgICAgICAgICAgICAgICB5ID0gYm91bmRzLlkgKyBib3VuZHMuSGVpZ2h0IC0gaGVpZ2h0IC0gb2Zmc2V0WTsKICAgICAgICAgICAgICAgIGJyZWFrOwogICAgICAgICAgICBkZWZhdWx0OiAvLyAyID0g5Y+z5LiL6KeSICh0aGUgY29uZmlnIGRlZmF1bHQsIGFsc28gdXNlZCBmb3Igb3V0LW9mLXJhbmdlIHZhbHVlcykKICAgICAgICAgICAgICAgIHggPSBib3VuZHMuWCArIGJvdW5kcy5XaWR0aCAtIHdpZHRoIC0gb2Zmc2V0WDsKICAgICAgICAgICAgICAgIHkgPSBib3VuZHMuWSArIGJvdW5kcy5IZWlnaHQgLSBoZWlnaHQgLSBvZmZzZXRZOwogICAgICAgICAgICAgICAgYnJlYWs7CiAgICAgICAgfQoKICAgICAgICB2YXIgcG9zaXRpb24gPSBuZXcgUG9pbnRJbnQzMigKICAgICAgICAgICAgS2VlcE9uU2NyZWVuKHgsIGJvdW5kcy5YLCBib3VuZHMuV2lkdGgsIHdpZHRoKSwKICAgICAgICAgICAgS2VlcE9uU2NyZWVuKHksIGJvdW5kcy5ZLCBib3VuZHMuSGVpZ2h0LCBoZWlnaHQpKTsKCiAgICAgICAgaWYgKHBvc2l0aW9uLlggIT0gX2xhc3RQb3NpdGlvbi5YIHx8IHBvc2l0aW9uLlkgIT0gX2xhc3RQb3NpdGlvbi5ZKQogICAgICAgIHsKICAgICAgICAgICAgYXBwV2luZG93Lk1vdmUocG9zaXRpb24pOwogICAgICAgICAgICBfbGFzdFBvc2l0aW9uID0gcG9zaXRpb247CiAgICAgICAgfQogICAgfQoKICAgIHByaXZhdGUgc3RhdGljIGludCBLZWVwT25TY3JlZW4oaW50IHZhbHVlLCBpbnQgb3JpZ2luLCBpbnQgZXh0ZW50LCBpbnQgc2l6ZSkKICAgIHsKICAgICAgICBpZiAoc2l6ZSA+PSBleHRlbnQpIHJldHVybiBvcmlnaW47IC8vIHdpZGVyL3RhbGxlciB0aGFuIHRoZSBtb25pdG9yOiBwaW4gdG8gaXRzIG9yaWdpbgogICAgICAgIHJldHVybiBNYXRoLkNsYW1wKHZhbHVlLCBvcmlnaW4sIG9yaWdpbiArIGV4dGVudCAtIHNpemUpOwogICAgfQoKICAgIC8vIC0tLS0gaW50ZXJvcCAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIFtEbGxJbXBvcnQoInVzZXIzMi5kbGwiLCBFbnRyeVBvaW50ID0gIkdldFdpbmRvd0xvbmdQdHJXIiwgU2V0TGFzdEVycm9yID0gdHJ1ZSldCiAgICBwcml2YXRlIHN0YXRpYyBleHRlcm4gSW50UHRyIEdldFdpbmRvd0xvbmdQdHJXKEludFB0ciBoV25kLCBpbnQgbkluZGV4KTsKCiAgICAvLyB4NjQvQVJNNjQgb25seSAodGhlIHByb2plY3QncyBQbGF0Zm9ybXMpOiB0aGUgMzItYml0IHVzZXIzMiBleHBvcnRzIHRoZQogICAgLy8gR2V0V2luZG93TG9uZy9TZXRXaW5kb3dMb25nIHBhaXIgaW5zdGVhZC4KICAgIFtEbGxJbXBvcnQoInVzZXIzMi5kbGwiLCBFbnRyeVBvaW50ID0gIlNldFdpbmRvd0xvbmdQdHJXIiwgU2V0TGFzdEVycm9yID0gdHJ1ZSldCiAgICBwcml2YXRlIHN0YXRpYyBleHRlcm4gSW50UHRyIFNldFdpbmRvd0xvbmdQdHJXKEludFB0ciBoV25kLCBpbnQgbkluZGV4LCBJbnRQdHIgZHdOZXdMb25nKTsKCiAgICBbRGxsSW1wb3J0KCJ1c2VyMzIuZGxsIiwgU2V0TGFzdEVycm9yID0gdHJ1ZSldCiAgICBwcml2YXRlIHN0YXRpYyBleHRlcm4gYm9vbCBTZXRMYXllcmVkV2luZG93QXR0cmlidXRlcyhJbnRQdHIgaFduZCwgdWludCBjcktleSwgYnl0ZSBiQWxwaGEsIHVpbnQgZHdGbGFncyk7CgogICAgW0RsbEltcG9ydCgidXNlcjMyLmRsbCIpXQogICAgcHJpdmF0ZSBzdGF0aWMgZXh0ZXJuIGJvb2wgU2hvd1dpbmRvdyhJbnRQdHIgaFduZCwgaW50IG5DbWRTaG93KTsKCiAgICBbRGxsSW1wb3J0KCJ1c2VyMzIuZGxsIildCiAgICBwcml2YXRlIHN0YXRpYyBleHRlcm4gaW50IEdldERwaUZvcldpbmRvdyhJbnRQdHIgaFduZCk7Cn0K
+using System.Runtime.InteropServices;
+using System.Text;
+using IPScaner.Core.Configuration;
+using IPScaner.Core.Logging;
+using IPScaner.Core.Models;
+using Microsoft.UI;
+using Microsoft.UI.Windowing;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Media;
+using Windows.Graphics;
+using WinRT.Interop;
+
+namespace IPScaner.WinUI.Services;
+
+/// <summary>
+/// 桌面显示本机IP — the WinUI port of the original <c>DesktopOverlayForm</c>.
+/// </summary>
+/// <remarks>
+/// Faithful to the reverse-engineered behaviour:
+/// <list type="bullet">
+/// <item>borderless, chrome-less window sized to the text plus the original's
+/// 18&nbsp;px label padding and 40&nbsp;px slack (<c>Width = lbl.Width + 40</c>);</item>
+/// <item>pinned to one of four corners of the <b>primary</b> display using the full
+/// monitor bounds (<see cref="DisplayArea.Primary"/> <c>OuterBounds</c> = WinForms
+/// <c>Screen.PrimaryScreen.Bounds</c> — the taskbar is <i>not</i> excluded and a
+/// multi-monitor desktop still uses the primary monitor);</item>
+/// <item>made click-through and invisible to the shell with
+/// <c>WS_EX_LAYERED | WS_EX_TRANSPARENT | WS_EX_TOOLWINDOW</c> and per-window
+/// alpha from <see cref="AppConfig.DesktopOverlayOpacity"/>.</item>
+/// </list>
+/// <para>
+/// As in the original there is <b>no</b> <c>SetParent(Progman/WorkerW)</c> and
+/// <b>no</b> always-on-top, so the badge floats in the normal z-order and can be
+/// covered by other windows. The documented quirks that were fixed here are noted
+/// on the individual members.
+/// </para>
+/// <para>
+/// Every member must be used from the UI thread; <see cref="Update"/> is cheap and
+/// safe to call often (it only touches the label/resize/move when something
+/// actually changed).
+/// </para>
+/// </remarks>
+public sealed class DesktopOverlay : IDisposable
+{
+    /// <summary>
+    /// Never displayed (<c>HasTitleBar = false</c>, <c>IsShownInSwitchers = false</c>);
+    /// it exists so the window is identifiable in diagnostics and screenshot tools.
+    /// The original form kept the designer name <c>DesktopOverlayForm</c> as its text.
+    /// </summary>
+    private const string OverlayTitle = "桌面显示本机IP";
+
+    // ---- window styles (GWL_EXSTYLE) ---------------------------------------
+    private const int GWL_EXSTYLE = -20;
+    private const long WS_EX_LAYERED = 0x00080000L;
+    private const long WS_EX_TRANSPARENT = 0x00000020L;
+    private const long WS_EX_TOOLWINDOW = 0x00000080L;
+    private const uint LWA_ALPHA = 0x00000002;
+
+    private const int SW_HIDE = 0;
+    private const int SW_SHOWNOACTIVATE = 4;
+
+    /// <summary>The original label's <c>Padding = new Padding(18)</c>.</summary>
+    private const double LabelPadding = 18;
+
+    /// <summary>The original's <c>Width = lbl.Width + 40; Height = lbl.Height + 40</c>.</summary>
+    private const double ExtraSize = 40;
+
+    /// <summary>宋体 10 pt, expressed in the DIPs WinUI's <c>FontSize</c> uses.</summary>
+    private const double LabelFontSize = 10 * 96.0 / 72.0;
+
+    private Window? _window;
+    private AppWindow? _appWindow;
+    private TextBlock? _label;
+    private Grid? _root;
+    private IntPtr _hwnd;
+
+    private bool _visible;
+    private bool _disposed;
+
+    private string _lastText = string.Empty;
+    private int _lastForeColorArgb;
+    private int _lastBgColorArgb;
+    private int _lastOpacityPercent = -1;
+    private int _lastDpi;
+    private bool _sizeDirty = true;
+    private SizeInt32 _lastSize;
+
+    /// <summary>
+    /// Sentinel rather than (0,0): the top-left corner is a legitimate target, and
+    /// treating it as "not moved yet" silently skipped the very first Move.
+    /// </summary>
+    private PointInt32 _lastPosition = new(int.MinValue, int.MinValue);
+
+    private DateTime _lastAdapterRefresh = DateTime.MinValue;
+
+    /// <summary>True while the overlay window is on screen.</summary>
+    public bool IsVisible => _visible;
+
+    /// <summary>Creates the window on first use, then updates and shows it.</summary>
+    public void Show(AppConfig config)
+    {
+        ArgumentNullException.ThrowIfNull(config);
+        if (_disposed) return;
+
+        try
+        {
+            EnsureWindow();
+            ApplyExtendedStyles(); // re-assert: the styles belong to the HWND, not to the content
+            Apply(config, show: true);
+        }
+        catch (Exception ex)
+        {
+            AppLog.Instance.Log(nameof(DesktopOverlay), "显示桌面显示本机IP失败: " + ex.Message);
+        }
+    }
+
+    /// <summary>
+    /// Re-reads the address, colours, opacity and position. A no-op while hidden
+    /// (the next <see cref="Show"/> picks the current configuration up anyway).
+    /// </summary>
+    public void Update(AppConfig config)
+    {
+        ArgumentNullException.ThrowIfNull(config);
+        if (_disposed || !_visible || _window is null) return;
+
+        try
+        {
+            Apply(config, show: false);
+        }
+        catch (Exception ex)
+        {
+            AppLog.Instance.Log(nameof(DesktopOverlay), "刷新桌面显示本机IP失败: " + ex.Message);
+        }
+    }
+
+    /// <summary>Hides the window without destroying it, so showing it again is instant.</summary>
+    public void Hide()
+    {
+        if (_window is null || _hwnd == IntPtr.Zero)
+        {
+            _visible = false;
+            return;
+        }
+
+        try
+        {
+            ShowWindow(_hwnd, SW_HIDE);
+        }
+        catch (Exception ex)
+        {
+            AppLog.Instance.Log(nameof(DesktopOverlay), "隐藏桌面显示本机IP失败: " + ex.Message);
+        }
+
+        _visible = false;
+    }
+
+    public void Dispose()
+    {
+        if (_disposed) return;
+        _disposed = true;
+
+        try
+        {
+            if (_window is not null)
+            {
+                if (_hwnd != IntPtr.Zero) ShowWindow(_hwnd, SW_HIDE);
+                _window.Close();
+            }
+        }
+        catch (Exception ex)
+        {
+            AppLog.Instance.Log(nameof(DesktopOverlay), "关闭桌面显示本机IP失败: " + ex.Message);
+        }
+        finally
+        {
+            _window = null;
+            _appWindow = null;
+            _label = null;
+            _root = null;
+            _hwnd = IntPtr.Zero;
+            _visible = false;
+        }
+    }
+
+    // ---- window plumbing ---------------------------------------------------
+
+    private void EnsureWindow()
+    {
+        if (_window is not null) return;
+
+        var label = new TextBlock
+        {
+            FontFamily = new FontFamily("SimSun"), // 宋体
+            FontSize = LabelFontSize,
+            TextWrapping = TextWrapping.NoWrap,
+            TextAlignment = TextAlignment.Left,
+            HorizontalAlignment = HorizontalAlignment.Left,
+            VerticalAlignment = VerticalAlignment.Center, // Label.TextAlign = MiddleLeft
+            Foreground = new SolidColorBrush(UiKit.ColorFromArgb(AppConfig.BlackArgb)),
+        };
+
+        // The original label was AutoSize + Dock=Fill, so its background covered the
+        // whole client area: the badge is one solid card with 18 px of padding.
+        var root = new Grid
+        {
+            Padding = new Thickness(LabelPadding),
+            Background = new SolidColorBrush(Microsoft.UI.Colors.Transparent),
+        };
+        root.Children.Add(label);
+
+        var window = new Window { Title = OverlayTitle, Content = root };
+        var hwnd = WindowNative.GetWindowHandle(window);
+        var appWindow = AppWindow.GetFromWindowId(Win32Interop.GetWindowIdFromWindow(hwnd));
+
+        // No title bar, no border, not resizable/minimizable/maximizable — the
+        // WinUI equivalent of FormBorderStyle.None + ShowIcon = false.
+        // (WinAppSDK has no public OverlappedPresenter constructor: Create() plus
+        // SetBorderAndTitleBar(false, false) is the supported way to express
+        // HasBorder/HasTitleBar, which are read-only properties.)
+        var presenter = OverlappedPresenter.Create();
+        presenter.IsResizable = false;
+        presenter.IsMaximizable = false;
+        presenter.IsMinimizable = false;
+        presenter.IsAlwaysOnTop = false; // the original had no TopMost
+        presenter.SetBorderAndTitleBar(false, false);
+        appWindow.SetPresenter(presenter);
+        appWindow.IsShownInSwitchers = false; // + WS_EX_TOOLWINDOW: never in Alt+Tab/taskbar
+
+        _window = window;
+        _appWindow = appWindow;
+        _label = label;
+        _root = root;
+        _hwnd = hwnd;
+        _lastDpi = 0;
+        _sizeDirty = true;
+    }
+
+    /// <summary>
+    /// <c>WS_EX_LAYERED | WS_EX_TRANSPARENT | WS_EX_TOOLWINDOW</c>, exactly what the
+    /// original OR-ed into <c>GWL_EXSTYLE</c> (layered = alpha, transparent =
+    /// click-through, tool window = out of the shell's window lists).
+    /// </summary>
+    private void ApplyExtendedStyles()
+    {
+        if (_hwnd == IntPtr.Zero) return;
+
+        var style = GetWindowLongPtrW(_hwnd, GWL_EXSTYLE).ToInt64();
+        style |= WS_EX_LAYERED | WS_EX_TRANSPARENT | WS_EX_TOOLWINDOW;
+        SetWindowLongPtrW(_hwnd, GWL_EXSTYLE, new IntPtr(style));
+    }
+
+    private void Apply(AppConfig config, bool show)
+    {
+        var label = _label;
+        var root = _root;
+        var appWindow = _appWindow;
+        if (label is null || root is null || appWindow is null || _hwnd == IntPtr.Zero) return;
+
+        // 1. text ------------------------------------------------------------
+        var text = Normalize(BuildText(config));
+        if (!string.Equals(text, _lastText, StringComparison.Ordinal))
+        {
+            _lastText = text;
+            label.Text = text;
+            _sizeDirty = true;
+        }
+
+        // 2. colours ---------------------------------------------------------
+        if (_lastBgColorArgb != config.DesktopBgColorArgb || root.Background is not SolidColorBrush)
+        {
+            _lastBgColorArgb = config.DesktopBgColorArgb;
+            root.Background = new SolidColorBrush(UiKit.ColorFromArgb(_lastBgColorArgb));
+        }
+
+        if (_lastForeColorArgb != config.DesktopForeColorArgb || label.Foreground is not SolidColorBrush)
+        {
+            _lastForeColorArgb = config.DesktopForeColorArgb;
+            label.Foreground = new SolidColorBrush(UiKit.ColorFromArgb(_lastForeColorArgb));
+        }
+
+        // 3. size ------------------------------------------------------------
+        var dpi = GetDpiForWindow(_hwnd);
+        if (dpi <= 0) dpi = 96;
+        if (_sizeDirty || dpi != _lastDpi) ResizeToContent(dpi);
+
+        // 4. opacity ---------------------------------------------------------
+        var opacity = Math.Clamp(config.DesktopOverlayOpacity, 0, 100);
+        if (opacity != _lastOpacityPercent)
+        {
+            // Opacity = DesktopOverlayOpacity / 100.0, applied per window.
+            SetLayeredWindowAttributes(_hwnd, 0, (byte)(opacity * 255 / 100), LWA_ALPHA);
+            _lastOpacityPercent = opacity;
+        }
+
+        // 5. position --------------------------------------------------------
+        MoveToConfiguredCorner(config);
+
+        // 6. show ------------------------------------------------------------
+        if (show && !_visible) ShowNoActivate();
+    }
+
+    private void ShowNoActivate()
+    {
+        // ShowWindow(SW_SHOWNOACTIVATE) rather than Window.Activate(): the badge is
+        // click-through decoration and must not steal activation from whatever the
+        // user is working in (WinForms' Show() activated only as a side effect).
+        ShowWindow(_hwnd, SW_SHOWNOACTIVATE);
+        _visible = true;
+    }
+
+    // ---- content -----------------------------------------------------------
+
+    /// <summary>
+    /// Mirrors <c>FormMain.DislayDesktopOverlay</c>: the configured prefix, the
+    /// active IPv4 address(es), then 名称 / MAC / 掩码 / 网关 / DHCP / DNS for the
+    /// first active adapter. Lines without a value are skipped, which also covers
+    /// the original's all-or-nothing emission when several NICs are up (its
+    /// <c>FirstOrDefault(r =&gt; r.IP == "ip1; ip2")</c> never matched, so a
+    /// multi-homed machine lost every detail line).
+    /// </summary>
+    private string BuildText(AppConfig config)
+    {
+        var adapters = ReadAdapters();
+        var active = adapters
+            .Where(a => a.IsUp && !string.IsNullOrWhiteSpace(a.IP))
+            .ToList();
+
+        var text = new StringBuilder(config.DesktopOverlayPre ?? string.Empty)
+            .Append(string.Join("; ", active.Select(a => a.IP)));
+
+        var primary = active.FirstOrDefault();
+        if (primary is not null)
+        {
+            AppendField(text, "名称", primary.Name);
+            AppendField(text, "MAC", primary.Mac);
+            AppendField(text, "掩码", primary.SubnetMask);
+            AppendField(text, "网关", primary.Gateway);
+            AppendField(text, "DHCP", primary.IsDhcpEnabled ? "True" : "False"); // raw .NET bool, as the original printed it
+            AppendField(text, "DNS", string.Join("; ", primary.DnsServers));
+        }
+
+        return text.ToString();
+    }
+
+    private static void AppendField(StringBuilder text, string label, string? value)
+    {
+        if (string.IsNullOrWhiteSpace(value)) return;
+        text.Append(Environment.NewLine).Append(label).Append('：').Append(value.Trim());
+    }
+
+    /// <summary>CRLF is normalised so the TextBlock renders one break per line.</summary>
+    private static string Normalize(string text) => text.Replace("\r\n", "\n").Replace('\r', '\n');
+
+    private IReadOnlyList<AdapterInfo> ReadAdapters()
+    {
+        var services = AppServices.Current;
+        var list = services.AdapterList;
+
+        // AdapterList is filled by a background task at startup, so the first paint
+        // can win that race (the original read a list already filled by
+        // FormMain_Load). Re-enumerate, throttled so a frequent Update() cannot turn
+        // into a WMI storm on a machine with no usable adapter.
+        if (list.Count == 0 && DateTime.UtcNow - _lastAdapterRefresh > TimeSpan.FromSeconds(10))
+        {
+            _lastAdapterRefresh = DateTime.UtcNow;
+            list = services.RefreshAdapters();
+        }
+
+        return list;
+    }
+
+    // ---- geometry ----------------------------------------------------------
+
+    private void ResizeToContent(int dpi)
+    {
+        var label = _label;
+        var appWindow = _appWindow;
+        if (label is null || appWindow is null) return;
+
+        // Unconstrained measure = Label.AutoSize.
+        label.Measure(new Windows.Foundation.Size(double.PositiveInfinity, double.PositiveInfinity));
+        var desired = label.DesiredSize;
+        var dipWidth = desired.Width;
+        var dipHeight = desired.Height;
+
+        if (dipWidth <= 0 || dipHeight <= 0)
+        {
+            // Never hand the window a zero size if the text stack cannot measure.
+            var lines = _lastText.Split('\n');
+            dipWidth = lines.Max(l => l.Length) * LabelFontSize * 0.95;
+            dipHeight = lines.Length * LabelFontSize * 1.35;
+        }
+
+        var scale = dpi / 96.0;
+        var width = Math.Max(1, (int)Math.Ceiling((dipWidth + (LabelPadding * 2) + ExtraSize) * scale));
+        var height = Math.Max(1, (int)Math.Ceiling((dipHeight + (LabelPadding * 2) + ExtraSize) * scale));
+
+        _lastSize = new SizeInt32(width, height);
+        _lastDpi = dpi;
+        _sizeDirty = false;
+
+        appWindow.Resize(_lastSize);
+    }
+
+    /// <summary>
+    /// The original's four-corner switch, resolved against the primary display's
+    /// full bounds. The only change is the clamp: offsets are allowed to be
+    /// negative or huge, and the original happily pushed the badge off the screen
+    /// (and fell through to (0,0) for a location outside 0..3).
+    /// </summary>
+    private void MoveToConfiguredCorner(AppConfig config)
+    {
+        var appWindow = _appWindow;
+        if (appWindow is null) return;
+
+        var bounds = DisplayArea.Primary.OuterBounds;
+        var width = _lastSize.Width;
+        var height = _lastSize.Height;
+        var offsetX = config.DesktopOverlayOffsetX;
+        var offsetY = config.DesktopOverlayOffsetY;
+
+        int x, y;
+        switch (config.DesktopOverlayLocation)
+        {
+            case 0: // 左上角
+                x = bounds.X + offsetX;
+                y = bounds.Y + offsetY;
+                break;
+            case 1: // 右上角
+                x = bounds.X + bounds.Width - width - offsetX;
+                y = bounds.Y + offsetY;
+                break;
+            case 3: // 左下角
+                x = bounds.X + offsetX;
+                y = bounds.Y + bounds.Height - height - offsetY;
+                break;
+            default: // 2 = 右下角 (the config default, also used for out-of-range values)
+                x = bounds.X + bounds.Width - width - offsetX;
+                y = bounds.Y + bounds.Height - height - offsetY;
+                break;
+        }
+
+        var position = new PointInt32(
+            KeepOnScreen(x, bounds.X, bounds.Width, width),
+            KeepOnScreen(y, bounds.Y, bounds.Height, height));
+
+        if (position.X != _lastPosition.X || position.Y != _lastPosition.Y)
+        {
+            appWindow.Move(position);
+            _lastPosition = position;
+        }
+    }
+
+    private static int KeepOnScreen(int value, int origin, int extent, int size)
+    {
+        if (size >= extent) return origin; // wider/taller than the monitor: pin to its origin
+        return Math.Clamp(value, origin, origin + extent - size);
+    }
+
+    // ---- interop -----------------------------------------------------------
+
+    [DllImport("user32.dll", EntryPoint = "GetWindowLongPtrW", SetLastError = true)]
+    private static extern IntPtr GetWindowLongPtrW(IntPtr hWnd, int nIndex);
+
+    // x64/ARM64 only (the project's Platforms): the 32-bit user32 exports the
+    // GetWindowLong/SetWindowLong pair instead.
+    [DllImport("user32.dll", EntryPoint = "SetWindowLongPtrW", SetLastError = true)]
+    private static extern IntPtr SetWindowLongPtrW(IntPtr hWnd, int nIndex, IntPtr dwNewLong);
+
+    [DllImport("user32.dll", SetLastError = true)]
+    private static extern bool SetLayeredWindowAttributes(IntPtr hWnd, uint crKey, byte bAlpha, uint dwFlags);
+
+    [DllImport("user32.dll")]
+    private static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+
+    [DllImport("user32.dll")]
+    private static extern int GetDpiForWindow(IntPtr hWnd);
+}

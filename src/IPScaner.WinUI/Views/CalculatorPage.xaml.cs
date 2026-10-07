@@ -1,1 +1,171 @@
-dXNpbmcgU3lzdGVtLlRleHQ7CnVzaW5nIElQU2NhbmVyLkNvcmUuTG9nZ2luZzsKdXNpbmcgSVBTY2FuZXIuQ29yZS5OZXQ7CnVzaW5nIElQU2NhbmVyLldpblVJLlNlcnZpY2VzOwp1c2luZyBNaWNyb3NvZnQuVUkuWGFtbDsKdXNpbmcgTWljcm9zb2Z0LlVJLlhhbWwuQ29udHJvbHM7CgpuYW1lc3BhY2UgSVBTY2FuZXIuV2luVUkuVmlld3M7CgovLy8gPHN1bW1hcnk+Ci8vLyBJUOWcsOWdgOiuoeeul+WZqCDigJQgdGhlIFdpblVJIHJlYnVpbGQgb2YgdGhlIG9yaWdpbmFsIDxjPkZvcm1BZGRyZXNzQ2FsYzwvYz4KLy8vIChJUFNjYW5lciBWMS4yOC4yKSwgYmFja2VkIGJ5IDxzZWUgY3JlZj0iU3VibmV0Q2FsY3VsYXRvciIvPi4KLy8vIDwvc3VtbWFyeT4KLy8vIDxyZW1hcmtzPgovLy8gRmFpdGhmdWwgdG8gdGhlIG9yaWdpbmFsOgovLy8gPGxpc3QgdHlwZT0iYnVsbGV0Ij4KLy8vIDxpdGVtPlRoZSBleGFjdCBjYXB0aW9uczog572R57uc5ZKMSVDlnLDlnYDorqHnrpflmagsIOaYvuekuue9kee7nO+8jOW5v+aSre+8jOesrOS4gOS4quWSjOacgOWQjuS4gOS4que7meWumueahOe9kee7nOWcsOWdgAovLy8gYW5kIHRoZSDlj6/nlKjlnLDlnYAgLyDmjqnnoIEgLyDnvZHnu5wgLyDpppbkuKrlj6/nlKggLyDmnKvkuKrlj6/nlKggLyDlub/mkq0gb3V0cHV0IHJvd3MuPC9pdGVtPgovLy8gPGl0ZW0+RXZlcnkgb3V0cHV0IGlzIHJlLWFzc2lnbmVkIG9uIGV2ZXJ5IOiuoeeulywgc28gYSBmYWlsZWQgY2FsY3VsYXRpb24gY2xlYXJzIHRoZQovLy8gc3RhbGUgdmFsdWVzIG9mIHRoZSBwcmV2aW91cyBvbmUg4oCUIGV4YWN0bHkgd2hhdCA8Yz5idG5DYWxjX0NsaWNrPC9jPiBkaWQuPC9pdGVtPgovLy8gPGl0ZW0+VGhlIGVuZ2luZSdzIG93biBtYXJrZXJzIGFyZSByZW5kZXJlZCB2ZXJiYXRpbTog6ZSZ6K+vLCBhbmQgdGhlIEVuZ2xpc2gKLy8vICJ0d28gaG9zdHMiICgvMzEpIC8gIm9uZSBob3N0IiAoLzMyKSBzdHJpbmdzLiBFcnJvcnMgbmV2ZXIgcmFpc2UgYSBkaWFsb2cuPC9pdGVtPgovLy8gPC9saXN0PgovLy8gRml4ZWQgLyBleHRlbmRlZCAoZG9jdW1lbnRlZCBkZXZpYXRpb25zKToKLy8vIDxsaXN0IHR5cGU9ImJ1bGxldCI+Ci8vLyA8aXRlbT5UaGUgb3JpZ2luYWwgY2FwcGVkIGl0cyBtYXNrIGlucHV0IGF0IDMwLCB3aGljaCBtYWRlIGl0cyBvd24gLzMxIGFuZCAvMzIKLy8vIGJyYW5jaGVzIHVucmVhY2hhYmxlIGRlYWQgY29kZS4gVGhpcyBwYWdlIG9mZmVycyB0aGUgZW5naW5lJ3MgZnVsbCAwLTMyIHJhbmdlLjwvaXRlbT4KLy8vIDxpdGVtPkludmFsaWQgaW5wdXQgY2FuIG5vIGxvbmdlciB0aHJvdzogYW4gZW1wdGllZCBvY3RldCBib3ggaXMgcmVwb3J0ZWQgYXMg6ZSZ6K+vCi8vLyBieSB0aGUgZW5naW5lIGluc3RlYWQgb2YgcmVhY2hpbmcgPGM+aW50LlBhcnNlPC9jPi48L2l0ZW0+Ci8vLyA8aXRlbT5FeHRyYXMgdGhhdCBjaGFuZ2Ugbm8gZG9jdW1lbnRlZCBvdXRwdXQ6IGEgQ0lEUiBsaW5lLCB0aGUgd2lsZGNhcmQgbWFzayBhbmQKLy8vIGEg5aSN5Yi257uT5p6cIGJ1dHRvbi48L2l0ZW0+Ci8vLyA8L2xpc3Q+Ci8vLyA8L3JlbWFya3M+CnB1YmxpYyBzZWFsZWQgcGFydGlhbCBjbGFzcyBDYWxjdWxhdG9yUGFnZSA6IFBhZ2UKewogICAgcHJpdmF0ZSBjb25zdCBzdHJpbmcgUGFnZVRpdGxlID0gIklQ5Zyw5Z2A6K6h566X5ZmoIjsKCiAgICAvLy8gPHN1bW1hcnk+Q2xpcGJvYXJkIHRleHQgcHJvZHVjZWQgYnkgdGhlIGxhc3QgY2FsY3VsYXRpb24uPC9zdW1tYXJ5PgogICAgcHJpdmF0ZSBzdHJpbmcgX3Jlc3VsdFRleHQgPSBzdHJpbmcuRW1wdHk7CgogICAgcHVibGljIENhbGN1bGF0b3JQYWdlKCkKICAgIHsKICAgICAgICBJbml0aWFsaXplQ29tcG9uZW50KCk7CiAgICAgICAgLy8gVGhlIG9yaWdpbmFsIGxlZnQgdGhlIG91dHB1dHMgYmxhbmsgdW50aWwg6K6h566XIHdhcyBwcmVzc2VkOyBmaWxsaW5nIHRoZW0KICAgICAgICAvLyBpbiBvbiBhcnJpdmFsIGNvc3RzIG5vdGhpbmcgYW5kIG1ha2VzIHRoZSBwYWdlIHNlbGYtZXhwbGFuYXRvcnkuCiAgICAgICAgTG9hZGVkICs9IChfLCBfKSA9PiBDYWxjdWxhdGUoKTsKICAgIH0KCiAgICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgIC8vIOiuoeeulwogICAgLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgogICAgcHJpdmF0ZSB2b2lkIE9uQ2FsY0NsaWNrKG9iamVjdCBzZW5kZXIsIFJvdXRlZEV2ZW50QXJncyBlKSA9PiBDYWxjdWxhdGUoKTsKCiAgICBwcml2YXRlIHZvaWQgQ2FsY3VsYXRlKCkKICAgIHsKICAgICAgICB0cnkKICAgICAgICB7CiAgICAgICAgICAgIC8vIE51bWJlckJveCBjbGFtcHMgdHlwZWQgaW5wdXQgaW50byAwLi4yNTUgb24gaXRzIG93bjsgYW4gZW1wdGllZCBib3ggaXMKICAgICAgICAgICAgLy8gTmFOIGFuZCBpcyBoYW5kZWQgdG8gdGhlIGVuZ2luZSBhcyAtMSBzbyBpdCByZXBvcnRzIOmUmeivryAodGhlIG9yaWdpbmFsCiAgICAgICAgICAgIC8vIHRocmV3IE92ZXJmbG93RXhjZXB0aW9uL0Zvcm1hdEV4Y2VwdGlvbiBvbiBzdWNoIGlucHV0KS4KICAgICAgICAgICAgaW50W10gb2N0ZXRzID0gW1JlYWRPY3RldChJcDFCb3gpLCBSZWFkT2N0ZXQoSXAyQm94KSwgUmVhZE9jdGV0KElwM0JveCksIFJlYWRPY3RldChJcDRCb3gpXTsKCiAgICAgICAgICAgIC8vIDAuLjMyOiBCaXRzRnJvbU1hc2sgYWxzbyBhY2NlcHRzICIvMjQiIGFuZCBhIGRvdHRlZCAiMjU1LjI1NS4yNTUuMCIsCiAgICAgICAgICAgIC8vIHJldHVybmluZyAtMSBmb3IgYW55dGhpbmcgbm9uLWNvbnRpZ3VvdXMgb3Igb3V0IG9mIHJhbmdlLgogICAgICAgICAgICB2YXIgYml0cyA9IFN1Ym5ldENhbGN1bGF0b3IuQml0c0Zyb21NYXNrKE1hc2tCb3guVGV4dCk7CiAgICAgICAgICAgIHZhciByZXN1bHQgPSBTdWJuZXRDYWxjdWxhdG9yLkNhbGN1bGF0ZShvY3RldHMsIGJpdHMpOwoKICAgICAgICAgICAgLy8gQ2Fub25pY2FsaXNlIGEgZG90dGVkIG1hc2sgaW50byBpdHMgYml0IGNvdW50LCBleGFjdGx5IHdoYXQgdGhlIGhpbnQgcHJvbWlzZXMuCiAgICAgICAgICAgIGlmIChiaXRzID49IDApIE1hc2tCb3guVGV4dCA9IGJpdHMuVG9TdHJpbmcoKTsKCiAgICAgICAgICAgIFVzYWJsZUJveC5UZXh0ID0gcmVzdWx0LlVzYWJsZUNvdW50OwogICAgICAgICAgICBTZXRPY3RldHMoTWFzazFCb3gsIE1hc2syQm94LCBNYXNrM0JveCwgTWFzazRCb3gsIHJlc3VsdC5NYXNrKTsKICAgICAgICAgICAgU2V0T2N0ZXRzKE5ldDFCb3gsIE5ldDJCb3gsIE5ldDNCb3gsIE5ldDRCb3gsIHJlc3VsdC5OZXR3b3JrKTsKICAgICAgICAgICAgU2V0T2N0ZXRzKEZpcnN0MUJveCwgRmlyc3QyQm94LCBGaXJzdDNCb3gsIEZpcnN0NEJveCwgcmVzdWx0LkZpcnN0VXNhYmxlKTsKICAgICAgICAgICAgU2V0T2N0ZXRzKExhc3QxQm94LCBMYXN0MkJveCwgTGFzdDNCb3gsIExhc3Q0Qm94LCByZXN1bHQuTGFzdFVzYWJsZSk7CiAgICAgICAgICAgIFNldE9jdGV0cyhCY2FzdDFCb3gsIEJjYXN0MkJveCwgQmNhc3QzQm94LCBCY2FzdDRCb3gsIHJlc3VsdC5Ccm9hZGNhc3QpOwoKICAgICAgICAgICAgLy8gLS0tLSBleHRyYXMgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgICAgICAgICB2YXIgaGFzQ2lkciA9ICFyZXN1bHQuSGFzRXJyb3IgJiYgcmVzdWx0LkNpZHIuTGVuZ3RoID4gMDsKICAgICAgICAgICAgQ2lkclRleHQuVGV4dCA9ICJDSURS77yaIiArIChoYXNDaWRyID8gcmVzdWx0LkNpZHIgOiAi4oCUIik7CiAgICAgICAgICAgIFdpbGRjYXJkVGV4dC5UZXh0ID0gIumAmumFjeespuaOqeegge+8miIgKwogICAgICAgICAgICAgICAgKGhhc0NpZHIgJiYgYml0cyA+PSAwID8gU3VibmV0Q2FsY3VsYXRvci5XaWxkY2FyZFN0cmluZyhiaXRzKSA6ICLigJQiKTsKCiAgICAgICAgICAgIF9yZXN1bHRUZXh0ID0gQnVpbGRSZXN1bHRUZXh0KHJlc3VsdCwgYml0cyk7CiAgICAgICAgICAgIEFwcC5NYWluV2luZG93Py5TZXRTdGF0dXMoaGFzQ2lkciA/ICQi6K6h566X57uT5p6c77yae3Jlc3VsdC5DaWRyfSIgOiAi6K6h566X5aSx6LSl77ya6K+35qOA5p+lSVDlnLDlnYDkuI7mjqnnoIHkvY0iKTsKICAgICAgICB9CiAgICAgICAgY2F0Y2ggKEV4Y2VwdGlvbiBleCkKICAgICAgICB7CiAgICAgICAgICAgIEFwcExvZy5JbnN0YW5jZS5Mb2cobmFtZW9mKENhbGN1bGF0b3JQYWdlKSwgIuiuoeeul+Wksei0pTogIiArIGV4Lk1lc3NhZ2UpOwogICAgICAgIH0KICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+T25lIG9jdGV0IGFzIGFuIGludCwgb3IgLTEgd2hlbiB0aGUgYm94IGlzIGVtcHR5IOKAlCBuZXZlciB0aHJvd3MuPC9zdW1tYXJ5PgogICAgcHJpdmF0ZSBzdGF0aWMgaW50IFJlYWRPY3RldChOdW1iZXJCb3ggYm94KQogICAgewogICAgICAgIHZhciB2YWx1ZSA9IGJveC5WYWx1ZTsKICAgICAgICBpZiAoZG91YmxlLklzTmFOKHZhbHVlKSkgcmV0dXJuIC0xOwogICAgICAgIHZhciBvY3RldCA9IChpbnQpTWF0aC5Sb3VuZCh2YWx1ZSwgTWlkcG9pbnRSb3VuZGluZy5Bd2F5RnJvbVplcm8pOwogICAgICAgIHJldHVybiBvY3RldCBpcyA+PSAwIGFuZCA8PSAyNTUgPyBvY3RldCA6IC0xOwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBTcGxpdHMgYW4gZW5naW5lIGZpZWxkIGludG8gdGhlIGZvdXIgb3V0cHV0IGJveGVzLiBBIG5vbi1kb3R0ZWQgdmFsdWUgKHRoZQogICAgLy8vIGxpdGVyYWwg6ZSZ6K+vKSBsYW5kcyBpbiB0aGUgZmlyc3QgYm94IHdpdGggdGhlIHJlc3QgYmxhbmssIHdoaWNoIGlzIGhvdyB0aGUKICAgIC8vLyBvcmlnaW5hbCdzIDxjPnR4dFNubTEuVGV4dCA9ICLplJnor68iPC9jPiByZW5kZXJlZC4KICAgIC8vLyA8L3N1bW1hcnk+CiAgICBwcml2YXRlIHN0YXRpYyB2b2lkIFNldE9jdGV0cyhUZXh0Qm94IGJveDEsIFRleHRCb3ggYm94MiwgVGV4dEJveCBib3gzLCBUZXh0Qm94IGJveDQsIHN0cmluZyB2YWx1ZSkKICAgIHsKICAgICAgICBpZiAoc3RyaW5nLklzTnVsbE9yRW1wdHkodmFsdWUpKQogICAgICAgIHsKICAgICAgICAgICAgYm94MS5UZXh0ID0gc3RyaW5nLkVtcHR5OwogICAgICAgICAgICBib3gyLlRleHQgPSBzdHJpbmcuRW1wdHk7CiAgICAgICAgICAgIGJveDMuVGV4dCA9IHN0cmluZy5FbXB0eTsKICAgICAgICAgICAgYm94NC5UZXh0ID0gc3RyaW5nLkVtcHR5OwogICAgICAgICAgICByZXR1cm47CiAgICAgICAgfQoKICAgICAgICB2YXIgcGFydHMgPSB2YWx1ZS5TcGxpdCgnLicpOwogICAgICAgIGJveDEuVGV4dCA9IHBhcnRzLkxlbmd0aCA+IDAgPyBwYXJ0c1swXSA6IHN0cmluZy5FbXB0eTsKICAgICAgICBib3gyLlRleHQgPSBwYXJ0cy5MZW5ndGggPiAxID8gcGFydHNbMV0gOiBzdHJpbmcuRW1wdHk7CiAgICAgICAgYm94My5UZXh0ID0gcGFydHMuTGVuZ3RoID4gMiA/IHBhcnRzWzJdIDogc3RyaW5nLkVtcHR5OwogICAgICAgIGJveDQuVGV4dCA9IHBhcnRzLkxlbmd0aCA+IDMgPyBwYXJ0c1szXSA6IHN0cmluZy5FbXB0eTsKICAgIH0KCiAgICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgIC8vIOWkjeWItue7k+aenCAoZXh0cmEg4oCUIG5vdCBpbiB0aGUgb3JpZ2luYWwpCiAgICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCiAgICBwcml2YXRlIGFzeW5jIHZvaWQgT25Db3B5Q2xpY2sob2JqZWN0IHNlbmRlciwgUm91dGVkRXZlbnRBcmdzIGUpCiAgICB7CiAgICAgICAgdHJ5CiAgICAgICAgewogICAgICAgICAgICBDYWxjdWxhdGUoKTsgLy8ga2VlcCB0aGUgY2xpcGJvYXJkIGluIHN0ZXAgd2l0aCB0aGUgYm94ZXMKICAgICAgICAgICAgaWYgKHN0cmluZy5Jc051bGxPckVtcHR5KF9yZXN1bHRUZXh0KSkgcmV0dXJuOwoKICAgICAgICAgICAgaWYgKFVpS2l0LkNvcHlUb0NsaXBib2FyZChfcmVzdWx0VGV4dCkpIEFwcC5NYWluV2luZG93Py5TZXRTdGF0dXMoIuiuoeeul+e7k+aenOW3suWkjeWItuWIsOWJqui0tOadvyIpOwogICAgICAgICAgICBlbHNlIGF3YWl0IFVpS2l0LkluZm9Bc3luYyhYYW1sUm9vdCwgUGFnZVRpdGxlLCAi5aSN5Yi25aSx6LSl77ya5Ymq6LS05p2/5LiN5Y+v55So44CCIik7CiAgICAgICAgfQogICAgICAgIGNhdGNoIChFeGNlcHRpb24gZXgpCiAgICAgICAgewogICAgICAgICAgICBBcHBMb2cuSW5zdGFuY2UuTG9nKG5hbWVvZihDYWxjdWxhdG9yUGFnZSksICLlpI3liLblpLHotKU6ICIgKyBleC5NZXNzYWdlKTsKICAgICAgICB9CiAgICB9CgogICAgcHJpdmF0ZSBzdHJpbmcgQnVpbGRSZXN1bHRUZXh0KFN1Ym5ldFJlc3VsdCByZXN1bHQsIGludCBiaXRzKQogICAgewogICAgICAgIHZhciBpcCA9ICQie0lwMUJveC5WYWx1ZTowfS57SXAyQm94LlZhbHVlOjB9LntJcDNCb3guVmFsdWU6MH0ue0lwNEJveC5WYWx1ZTowfSI7CiAgICAgICAgdmFyIG1hc2tUZXh0ID0gYml0cyA+PSAwID8gYml0cy5Ub1N0cmluZygpIDogTWFza0JveC5UZXh0LlRyaW0oKTsKCiAgICAgICAgdmFyIHRleHQgPSBuZXcgU3RyaW5nQnVpbGRlcigpOwogICAgICAgIHRleHQuQXBwZW5kTGluZSgi572R57uc5ZKMSVDlnLDlnYDorqHnrpflmagiKTsKICAgICAgICB0ZXh0LkFwcGVuZExpbmUoJCJJUC/mjqnnoIHkvY06IHtpcH0ve21hc2tUZXh0fSIpOwogICAgICAgIHRleHQuQXBwZW5kTGluZSgkIuWPr+eUqOWcsOWdgDoge1VzYWJsZUJveC5UZXh0fSIpOwogICAgICAgIHRleHQuQXBwZW5kTGluZSgkIuaOqeeggToge0pvaW4oTWFzazFCb3gsIE1hc2syQm94LCBNYXNrM0JveCwgTWFzazRCb3gpfSIpOwogICAgICAgIHRleHQuQXBwZW5kTGluZSgkIue9kee7nDoge0pvaW4oTmV0MUJveCwgTmV0MkJveCwgTmV0M0JveCwgTmV0NEJveCl9Iik7CiAgICAgICAgdGV4dC5BcHBlbmRMaW5lKCQi6aaW5Liq5Y+v55SoOiB7Sm9pbihGaXJzdDFCb3gsIEZpcnN0MkJveCwgRmlyc3QzQm94LCBGaXJzdDRCb3gpfSIpOwogICAgICAgIHRleHQuQXBwZW5kTGluZSgkIuacq+S4quWPr+eUqO+8mntKb2luKExhc3QxQm94LCBMYXN0MkJveCwgTGFzdDNCb3gsIExhc3Q0Qm94KX0iKTsKICAgICAgICB0ZXh0LkFwcGVuZExpbmUoJCLlub/mkq06IHtKb2luKEJjYXN0MUJveCwgQmNhc3QyQm94LCBCY2FzdDNCb3gsIEJjYXN0NEJveCl9Iik7CgogICAgICAgIGlmICghcmVzdWx0Lkhhc0Vycm9yICYmIHJlc3VsdC5DaWRyLkxlbmd0aCA+IDApCiAgICAgICAgewogICAgICAgICAgICB0ZXh0LkFwcGVuZExpbmUoJCJDSURSOiB7cmVzdWx0LkNpZHJ9Iik7CiAgICAgICAgICAgIGlmIChiaXRzID49IDApIHRleHQuQXBwZW5kTGluZSgkIumAmumFjeespuaOqeeggToge1N1Ym5ldENhbGN1bGF0b3IuV2lsZGNhcmRTdHJpbmcoYml0cyl9Iik7CiAgICAgICAgfQogICAgICAgIHJldHVybiB0ZXh0LlRvU3RyaW5nKCkuVHJpbUVuZCgpOwogICAgfQoKICAgIHByaXZhdGUgc3RhdGljIHN0cmluZyBKb2luKFRleHRCb3ggYm94MSwgVGV4dEJveCBib3gyLCBUZXh0Qm94IGJveDMsIFRleHRCb3ggYm94NCkgPT4KICAgICAgICAkIntib3gxLlRleHR9Lntib3gyLlRleHR9Lntib3gzLlRleHR9Lntib3g0LlRleHR9IjsKfQo=
+using System.Text;
+using IPScaner.Core.Logging;
+using IPScaner.Core.Net;
+using IPScaner.WinUI.Services;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+
+namespace IPScaner.WinUI.Views;
+
+/// <summary>
+/// IP地址计算器 — the WinUI rebuild of the original <c>FormAddressCalc</c>
+/// (IPScaner V1.28.2), backed by <see cref="SubnetCalculator"/>.
+/// </summary>
+/// <remarks>
+/// Faithful to the original:
+/// <list type="bullet">
+/// <item>The exact captions: 网络和IP地址计算器, 显示网络，广播，第一个和最后一个给定的网络地址
+/// and the 可用地址 / 掩码 / 网络 / 首个可用 / 末个可用 / 广播 output rows.</item>
+/// <item>Every output is re-assigned on every 计算, so a failed calculation clears the
+/// stale values of the previous one — exactly what <c>btnCalc_Click</c> did.</item>
+/// <item>The engine's own markers are rendered verbatim: 错误, and the English
+/// "two hosts" (/31) / "one host" (/32) strings. Errors never raise a dialog.</item>
+/// </list>
+/// Fixed / extended (documented deviations):
+/// <list type="bullet">
+/// <item>The original capped its mask input at 30, which made its own /31 and /32
+/// branches unreachable dead code. This page offers the engine's full 0-32 range.</item>
+/// <item>Invalid input can no longer throw: an emptied octet box is reported as 错误
+/// by the engine instead of reaching <c>int.Parse</c>.</item>
+/// <item>Extras that change no documented output: a CIDR line, the wildcard mask and
+/// a 复制结果 button.</item>
+/// </list>
+/// </remarks>
+public sealed partial class CalculatorPage : Page
+{
+    private const string PageTitle = "IP地址计算器";
+
+    /// <summary>Clipboard text produced by the last calculation.</summary>
+    private string _resultText = string.Empty;
+
+    public CalculatorPage()
+    {
+        InitializeComponent();
+        // The original left the outputs blank until 计算 was pressed; filling them
+        // in on arrival costs nothing and makes the page self-explanatory.
+        Loaded += (_, _) => Calculate();
+    }
+
+    // ---------------------------------------------------------------------
+    // 计算
+    // ---------------------------------------------------------------------
+
+    private void OnCalcClick(object sender, RoutedEventArgs e) => Calculate();
+
+    private void Calculate()
+    {
+        try
+        {
+            // NumberBox clamps typed input into 0..255 on its own; an emptied box is
+            // NaN and is handed to the engine as -1 so it reports 错误 (the original
+            // threw OverflowException/FormatException on such input).
+            int[] octets = [ReadOctet(Ip1Box), ReadOctet(Ip2Box), ReadOctet(Ip3Box), ReadOctet(Ip4Box)];
+
+            // 0..32: BitsFromMask also accepts "/24" and a dotted "255.255.255.0",
+            // returning -1 for anything non-contiguous or out of range.
+            var bits = SubnetCalculator.BitsFromMask(MaskBox.Text);
+            var result = SubnetCalculator.Calculate(octets, bits);
+
+            // Canonicalise a dotted mask into its bit count, exactly what the hint promises.
+            if (bits >= 0) MaskBox.Text = bits.ToString();
+
+            UsableBox.Text = result.UsableCount;
+            SetOctets(Mask1Box, Mask2Box, Mask3Box, Mask4Box, result.Mask);
+            SetOctets(Net1Box, Net2Box, Net3Box, Net4Box, result.Network);
+            SetOctets(First1Box, First2Box, First3Box, First4Box, result.FirstUsable);
+            SetOctets(Last1Box, Last2Box, Last3Box, Last4Box, result.LastUsable);
+            SetOctets(Bcast1Box, Bcast2Box, Bcast3Box, Bcast4Box, result.Broadcast);
+
+            // ---- extras ----------------------------------------------------
+            var hasCidr = !result.HasError && result.Cidr.Length > 0;
+            CidrText.Text = "CIDR：" + (hasCidr ? result.Cidr : "—");
+            WildcardText.Text = "通配符掩码：" +
+                (hasCidr && bits >= 0 ? SubnetCalculator.WildcardString(bits) : "—");
+
+            _resultText = BuildResultText(result, bits);
+            App.MainWindow?.SetStatus(hasCidr ? $"计算结果：{result.Cidr}" : "计算失败：请检查IP地址与掩码位");
+        }
+        catch (Exception ex)
+        {
+            AppLog.Instance.Log(nameof(CalculatorPage), "计算失败: " + ex.Message);
+        }
+    }
+
+    /// <summary>One octet as an int, or -1 when the box is empty — never throws.</summary>
+    private static int ReadOctet(NumberBox box)
+    {
+        var value = box.Value;
+        if (double.IsNaN(value)) return -1;
+        var octet = (int)Math.Round(value, MidpointRounding.AwayFromZero);
+        return octet is >= 0 and <= 255 ? octet : -1;
+    }
+
+    /// <summary>
+    /// Splits an engine field into the four output boxes. A non-dotted value (the
+    /// literal 错误) lands in the first box with the rest blank, which is how the
+    /// original's <c>txtSnm1.Text = "错误"</c> rendered.
+    /// </summary>
+    private static void SetOctets(TextBox box1, TextBox box2, TextBox box3, TextBox box4, string value)
+    {
+        if (string.IsNullOrEmpty(value))
+        {
+            box1.Text = string.Empty;
+            box2.Text = string.Empty;
+            box3.Text = string.Empty;
+            box4.Text = string.Empty;
+            return;
+        }
+
+        var parts = value.Split('.');
+        box1.Text = parts.Length > 0 ? parts[0] : string.Empty;
+        box2.Text = parts.Length > 1 ? parts[1] : string.Empty;
+        box3.Text = parts.Length > 2 ? parts[2] : string.Empty;
+        box4.Text = parts.Length > 3 ? parts[3] : string.Empty;
+    }
+
+    // ---------------------------------------------------------------------
+    // 复制结果 (extra — not in the original)
+    // ---------------------------------------------------------------------
+
+    private async void OnCopyClick(object sender, RoutedEventArgs e)
+    {
+        try
+        {
+            Calculate(); // keep the clipboard in step with the boxes
+            if (string.IsNullOrEmpty(_resultText)) return;
+
+            if (UiKit.CopyToClipboard(_resultText)) App.MainWindow?.SetStatus("计算结果已复制到剪贴板");
+            else await UiKit.InfoAsync(XamlRoot, PageTitle, "复制失败：剪贴板不可用。");
+        }
+        catch (Exception ex)
+        {
+            AppLog.Instance.Log(nameof(CalculatorPage), "复制失败: " + ex.Message);
+        }
+    }
+
+    private string BuildResultText(SubnetResult result, int bits)
+    {
+        var ip = $"{Ip1Box.Value:0}.{Ip2Box.Value:0}.{Ip3Box.Value:0}.{Ip4Box.Value:0}";
+        var maskText = bits >= 0 ? bits.ToString() : MaskBox.Text.Trim();
+
+        var text = new StringBuilder();
+        text.AppendLine("网络和IP地址计算器");
+        text.AppendLine($"IP/掩码位: {ip}/{maskText}");
+        text.AppendLine($"可用地址: {UsableBox.Text}");
+        text.AppendLine($"掩码: {Join(Mask1Box, Mask2Box, Mask3Box, Mask4Box)}");
+        text.AppendLine($"网络: {Join(Net1Box, Net2Box, Net3Box, Net4Box)}");
+        text.AppendLine($"首个可用: {Join(First1Box, First2Box, First3Box, First4Box)}");
+        text.AppendLine($"末个可用：{Join(Last1Box, Last2Box, Last3Box, Last4Box)}");
+        text.AppendLine($"广播: {Join(Bcast1Box, Bcast2Box, Bcast3Box, Bcast4Box)}");
+
+        if (!result.HasError && result.Cidr.Length > 0)
+        {
+            text.AppendLine($"CIDR: {result.Cidr}");
+            if (bits >= 0) text.AppendLine($"通配符掩码: {SubnetCalculator.WildcardString(bits)}");
+        }
+        return text.ToString().TrimEnd();
+    }
+
+    private static string Join(TextBox box1, TextBox box2, TextBox box3, TextBox box4) =>
+        $"{box1.Text}.{box2.Text}.{box3.Text}.{box4.Text}";
+}

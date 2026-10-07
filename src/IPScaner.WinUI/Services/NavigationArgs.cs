@@ -1,1 +1,43 @@
-bmFtZXNwYWNlIElQU2NhbmVyLldpblVJLlNlcnZpY2VzOwoKLy8vIDxzdW1tYXJ5PgovLy8gSGFuZC1vZmYgdmFsdWVzIHBhc3NlZCBiZXR3ZWVuIHBhZ2VzIHdoZW4gb25lIG5hdmlnYXRlcyB0byBhbm90aGVyIOKAlCBmb3IKLy8vIGV4YW1wbGUgInNjYW4gdGhpcyBob3N0J3MgcG9ydHMiIGZyb20gdGhlIG1haW4gZ3JpZCdzIGNvbnRleHQgbWVudS4KLy8vIDwvc3VtbWFyeT4KLy8vIDxyZW1hcmtzPgovLy8gV2luVUkgbmF2aWdhdGlvbiBwYXJhbWV0ZXJzIGFyZSBub3QgdXNlZCBkaXJlY3RseSBiZWNhdXNlIHBhZ2VzIGFyZSByZXNvbHZlZAovLy8gYnkgdHlwZSwgc28gYSB0aW55IGFtYmllbnQgaG9sZGVyIGtlZXBzIHRoZSBmbG93IHNpbXBsZSBhbmQgZXhwbGljaXQuCi8vLyA8L3JlbWFya3M+CnB1YmxpYyBzdGF0aWMgY2xhc3MgTmF2aWdhdGlvbkFyZ3MKewogICAgLy8vIDxzdW1tYXJ5Pkhvc3QgdGhlIHBvcnQtc2NhbiBwYWdlIHNob3VsZCBwcmUtZmlsbCwgdGhlbiBjbGVhci48L3N1bW1hcnk+CiAgICBwdWJsaWMgc3RhdGljIHN0cmluZz8gUGVuZGluZ1BvcnRTY2FuSG9zdCB7IGdldDsgc2V0OyB9CgogICAgLy8vIDxzdW1tYXJ5PlNlZ21lbnQgdGhlIGJhdGNoLXNjYW4gcGFnZSBzaG91bGQgcHJlLWZpbGwsIHRoZW4gY2xlYXIuPC9zdW1tYXJ5PgogICAgcHVibGljIHN0YXRpYyBzdHJpbmc/IFBlbmRpbmdCYXRjaFNlZ21lbnQgeyBnZXQ7IHNldDsgfQoKICAgIC8vLyA8c3VtbWFyeT5NZW1vIGtleSAoSVAgb3IgTUFDKSB0aGUgbWVtbyBwYWdlIHNob3VsZCBmb2N1cywgdGhlbiBjbGVhci48L3N1bW1hcnk+CiAgICBwdWJsaWMgc3RhdGljIHN0cmluZz8gUGVuZGluZ01lbW9LZXkgeyBnZXQ7IHNldDsgfQoKICAgIC8vLyA8c3VtbWFyeT5Db25zdW1lcyB0aGUgcGVuZGluZyBwb3J0LXNjYW4gaG9zdCwgaWYgYW55Ljwvc3VtbWFyeT4KICAgIHB1YmxpYyBzdGF0aWMgc3RyaW5nPyBUYWtlUG9ydFNjYW5Ib3N0KCkKICAgIHsKICAgICAgICB2YXIgdmFsdWUgPSBQZW5kaW5nUG9ydFNjYW5Ib3N0OwogICAgICAgIFBlbmRpbmdQb3J0U2Nhbkhvc3QgPSBudWxsOwogICAgICAgIHJldHVybiB2YWx1ZTsKICAgIH0KCiAgICBwdWJsaWMgc3RhdGljIHN0cmluZz8gVGFrZUJhdGNoU2VnbWVudCgpCiAgICB7CiAgICAgICAgdmFyIHZhbHVlID0gUGVuZGluZ0JhdGNoU2VnbWVudDsKICAgICAgICBQZW5kaW5nQmF0Y2hTZWdtZW50ID0gbnVsbDsKICAgICAgICByZXR1cm4gdmFsdWU7CiAgICB9CgogICAgcHVibGljIHN0YXRpYyBzdHJpbmc/IFRha2VNZW1vS2V5KCkKICAgIHsKICAgICAgICB2YXIgdmFsdWUgPSBQZW5kaW5nTWVtb0tleTsKICAgICAgICBQZW5kaW5nTWVtb0tleSA9IG51bGw7CiAgICAgICAgcmV0dXJuIHZhbHVlOwogICAgfQp9Cg==
+namespace IPScaner.WinUI.Services;
+
+/// <summary>
+/// Hand-off values passed between pages when one navigates to another — for
+/// example "scan this host's ports" from the main grid's context menu.
+/// </summary>
+/// <remarks>
+/// WinUI navigation parameters are not used directly because pages are resolved
+/// by type, so a tiny ambient holder keeps the flow simple and explicit.
+/// </remarks>
+public static class NavigationArgs
+{
+    /// <summary>Host the port-scan page should pre-fill, then clear.</summary>
+    public static string? PendingPortScanHost { get; set; }
+
+    /// <summary>Segment the batch-scan page should pre-fill, then clear.</summary>
+    public static string? PendingBatchSegment { get; set; }
+
+    /// <summary>Memo key (IP or MAC) the memo page should focus, then clear.</summary>
+    public static string? PendingMemoKey { get; set; }
+
+    /// <summary>Consumes the pending port-scan host, if any.</summary>
+    public static string? TakePortScanHost()
+    {
+        var value = PendingPortScanHost;
+        PendingPortScanHost = null;
+        return value;
+    }
+
+    public static string? TakeBatchSegment()
+    {
+        var value = PendingBatchSegment;
+        PendingBatchSegment = null;
+        return value;
+    }
+
+    public static string? TakeMemoKey()
+    {
+        var value = PendingMemoKey;
+        PendingMemoKey = null;
+        return value;
+    }
+}

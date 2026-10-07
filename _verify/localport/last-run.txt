@@ -1,1 +1,129 @@
-DQo9PT0gZW52aXJvbm1lbnQgPT09DQpPUyAgICAgICAgICAgIDogTWljcm9zb2Z0IFdpbmRvd3MgMTAuMC4yOTY4MA0KUnVudGltZSAgICAgICA6IC5ORVQgOC4wLjMxIChYNjQpDQpFbGV2YXRlZCAgICAgIDogVHJ1ZQ0KT0VNIGNvZGVwYWdlICA6IDkzNg0KDQo9PT0gUC9JbnZva2Ugc3RydWN0IHNpemVzIChyZWZsZWN0aW9uIG92ZXIgdGhlIHByaXZhdGUgbmVzdGVkIHN0cnVjdHMpID09PQ0KUEFTUyAgTUlCX1RDUFJPV19PV05FUl9QSUQgPSAyNCBieXRlcyAoZXhwZWN0ZWQgMjQpDQpQQVNTICBNSUJfVENQNlJPV19PV05FUl9QSUQgPSA1NiBieXRlcyAoZXhwZWN0ZWQgNTYpDQpQQVNTICBNSUJfVURQUk9XX09XTkVSX1BJRCA9IDEyIGJ5dGVzIChleHBlY3RlZCAxMikNClBBU1MgIE1JQl9VRFA2Uk9XX09XTkVSX1BJRCA9IDI4IGJ5dGVzIChleHBlY3RlZCAyOCkNCg0KPT09IFF1ZXJ5QXN5bmMoKSDigJQgbmF0aXZlIElQIEhlbHBlciBwYXRoLCBUQ1AgKyBVRFAsIElQdjQgb25seSA9PT0NCm5hdGl2ZTogcm93cz01NDggIFRDUD0xODQgIFVEUD0zNjQgIElQdjQ9NTQ4ICBJUHY2PTANCiAgICBkaXN0aW5jdCBQSURzPTU1ICAgcmVzb2x2ZWQtYnktbmFtZSBQSURzPTUzICAgdW5yZXNvbHZlZCBQSURzPTIgICByb3dzIHdpdGggUHJvY2Vzc01pc3Npbmc9dHJ1ZTogOTQNCiAgICBUQ1Agc3RhdGVzOiDkvqblkKw9NjgsIOaXtumXtOetieW+hT02OCwg5bey5bu656uLPTQyLCDlt7Llj5HpgIFTWU49Ng0KICAgIGZpcnN0IDE1IHJvd3M6DQogICAgVENQIDAuMC4wLjA6MjIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4wLjAuMDowICAgICAgICAgICAgICAgICAgICAgICAg5L6m5ZCsICAgICAgICAgcGlkPTcxMDggICAgc3NoZCAgICAgICAgICAgICAgICAgICBDOlxXaW5kb3dzXFN5c3RlbTMyXE9wZW5TU0hcc3NoZC5leGUNCiAgICBUQ1AgMC4wLjAuMDoxMzUgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjAuMC4wOjAgICAgICAgICAgICAgICAgICAgICAgICDkvqblkKwgICAgICAgICBwaWQ9MTc0OCAgICBzdmNob3N0ICAgICAgICAgICAgICAgIEM6XFdpbmRvd3NcU3lzdGVtMzJcc3ZjaG9zdC5leGUNCiAgICBUQ1AgMTcyLjIzLjMyLjE6MTM5ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjAuMC4wOjAgICAgICAgICAgICAgICAgICAgICAgICDkvqblkKwgICAgICAgICBwaWQ9NCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPFByb2Nlc3NNaXNzaW5nPg0KICAgIFRDUCAxNzIuMjQuMjUyLjE2MDoxMzkgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMC4wLjA6MCAgICAgICAgICAgICAgICAgICAgICAgIOS+puWQrCAgICAgICAgIHBpZD00ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8UHJvY2Vzc01pc3Npbmc+DQogICAgVENQIDE5Mi4xNjguMTM0LjE6MTM5ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4wLjAuMDowICAgICAgICAgICAgICAgICAgICAgICAg5L6m5ZCsICAgICAgICAgcGlkPTQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxQcm9jZXNzTWlzc2luZz4NCiAgICBUQ1AgMTkyLjE2OC4xMzcuMToxMzkgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjAuMC4wOjAgICAgICAgICAgICAgICAgICAgICAgICDkvqblkKwgICAgICAgICBwaWQ9NCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPFByb2Nlc3NNaXNzaW5nPg0KICAgIFRDUCAxOTIuMTY4LjIzNS4xOjEzOSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMC4wLjA6MCAgICAgICAgICAgICAgICAgICAgICAgIOS+puWQrCAgICAgICAgIHBpZD00ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8UHJvY2Vzc01pc3Npbmc+DQogICAgVENQIDE5Mi4xNjguMzIuNDc6MTM5ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4wLjAuMDowICAgICAgICAgICAgICAgICAgICAgICAg5L6m5ZCsICAgICAgICAgcGlkPTQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxQcm9jZXNzTWlzc2luZz4NCiAgICBUQ1AgMC4wLjAuMDo0NDUgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjAuMC4wOjAgICAgICAgICAgICAgICAgICAgICAgICDkvqblkKwgICAgICAgICBwaWQ9NCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPFByb2Nlc3NNaXNzaW5nPg0KICAgIFRDUCAxMjcuMC4wLjE6OTAzICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMC4wLjA6MCAgICAgICAgICAgICAgICAgICAgICAgIOS+puWQrCAgICAgICAgIHBpZD02NjMyICAgIHZtd2FyZS1hdXRoZCAgICAgICAgICAgQzpcUHJvZ3JhbSBGaWxlc1xWTXdhcmVcVk13YXJlIFdvcmtzdGF0aW9uXHZtd2FyZS1hdXRoZC5leGUNCiAgICBUQ1AgMTI3LjAuMC4xOjkxMyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjAuMC4wOjAgICAgICAgICAgICAgICAgICAgICAgICDkvqblkKwgICAgICAgICBwaWQ9NjYzMiAgICB2bXdhcmUtYXV0aGQgICAgICAgICAgIEM6XFByb2dyYW0gRmlsZXNcVk13YXJlXFZNd2FyZSBXb3Jrc3RhdGlvblx2bXdhcmUtYXV0aGQuZXhlDQogICAgVENQIDEyNy4wLjAuMToxMDAxICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4wLjAuMDowICAgICAgICAgICAgICAgICAgICAgICAg5L6m5ZCsICAgICAgICAgcGlkPTQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxQcm9jZXNzTWlzc2luZz4NCiAgICBUQ1AgMC4wLjAuMDoxMDI0ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjAuMC4wOjAgICAgICAgICAgICAgICAgICAgICAgICDkvqblkKwgICAgICAgICBwaWQ9MTQ1NiAgICBzZXJ2aWNlcyAgICAgICAgICAgICAgIEM6XFdpbmRvd3NcU3lzdGVtMzJcc2VydmljZXMuZXhlDQogICAgVENQIDE5Mi4xNjguMzIuNDc6MTAyNSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgNC4xNDUuNzkuODE6NDQzICAgICAgICAgICAgICAgICAg5bey5bu656uLICAgICAgICBwaWQ9ODE2NCAgICBzdmNob3N0ICAgICAgICAgICAgICAgIEM6XFdpbmRvd3NcU3lzdGVtMzJcc3ZjaG9zdC5leGUNCiAgICBUQ1AgMC4wLjAuMDoxMDI4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjAuMC4wOjAgICAgICAgICAgICAgICAgICAgICAgICDkvqblkKwgICAgICAgICBwaWQ9MTEzOTYgICBDTkFCNFJQRCAgICAgICAgICAgICAgIEM6XFdpbmRvd3NcU3lzdGVtMzJcQ05BQjRSUEQuRVhFDQpQQVNTICBuYXRpdmUgZW51bWVyYXRpb24gcmV0dXJuZWQgcm93cw0KUEFTUyAgYXQgbGVhc3QgMyBUQ1Ag5L6m5ZCsIChMSVNURU5JTkcpIHJvd3MgKGZvdW5kIDY4KQ0KUEFTUyAgZXZlcnkgcm93IGNhcnJpZXMgcHJvdG9jb2wgVENQIG9yIFVEUA0KUEFTUyAgZXZlcnkgbG9jYWwgcG9ydCBpcyBpbiAwLi42NTUzNQ0KUEFTUyAgZXZlcnkgcmVtb3RlIHBvcnQgaXMgaW4gMC4uNjU1MzUNClBBU1MgIGV2ZXJ5IFBJRCBpcyBub24tbmVnYXRpdmUNClBBU1MgIGV2ZXJ5IHJvdyBoYXMgbm9uLWVtcHR5IHN0YXRlIHRleHQNClBBU1MgIFVEUCByb3dzIHVzZSBMb2NhbFBvcnRJbmZvLlVkcFN0YXRlICgnVURQJykNClBBU1MgIGV2ZXJ5IElQdjQgbG9jYWwgYWRkcmVzcyBpcyBhIGRvdHRlZCBxdWFkDQpQQVNTICBldmVyeSBUQ1AgcmVtb3RlIGFkZHJlc3MgaXMgYSBkb3R0ZWQgcXVhZA0KUEFTUyAgZXZlcnkgVURQIHJvdyB1c2VzIG5ldHN0YXQncyAnKjoqJyByZW1vdGUgZW5kcG9pbnQNClBBU1MgIHJlc29sdmVkIHJvd3MgaGF2ZSBhIHByb2Nlc3MgbmFtZQ0KUEFTUyAgUHJvY2Vzc01pc3Npbmcgcm93cyBoYXZlIGVtcHR5IG5hbWUgYW5kIHBhdGgNClBBU1MgIHJvd3MgYXJlIHNvcnRlZCBieSBwcm90b2NvbCwgbG9jYWwgcG9ydCwgUElEDQpQQVNTICBpbmNsdWRlVWRwOmZhbHNlIHJldHVybnMgb25seSBUQ1AgKDE4NCByb3dzKQ0KUEFTUyAgaW5jbHVkZVRjcDpmYWxzZSByZXR1cm5zIG9ubHkgVURQICg0MzYgcm93cykNClBBU1MgIGJvdGggcHJvdG9jb2xzIGRpc2FibGVkIHJldHVybnMgYW4gZW1wdHkgdGFibGUgKDAgcm93cykNCg0KPT09IFF1ZXJ5QXN5bmMoaW5jbHVkZUlwdjY6IHRydWUpIOKAlCBJUHY2IG11c3Qgbm90IGRpc3R1cmIgdGhlIElQdjQgcm93cyA9PT0NCm5hdGl2ZStJUHY2OiByb3dzPTY3MiAgVENQPTIzNiAgVURQPTQzNiAgSVB2ND01NDggIElQdjY9MTI0DQogICAgZGlzdGluY3QgUElEcz01OCAgIHJlc29sdmVkLWJ5LW5hbWUgUElEcz01NiAgIHVucmVzb2x2ZWQgUElEcz0yICAgcm93cyB3aXRoIFByb2Nlc3NNaXNzaW5nPXRydWU6IDEwMQ0KICAgIFRDUCBzdGF0ZXM6IOS+puWQrD05Niwg5pe26Ze0562J5b6FPTY5LCDlt7Llu7rnq4s9NjEsIOW3suWPkemAgVNZTj05LCDlhbPpl63nrYnlvoU9MQ0KICAgIElQdjYgcm93czogMTI0OyBJUHY0IHJvd3Mgd2l0aCBmbGFnIG9uOiA1NDgsIGZsYWcgb2ZmOiA1NDg7IGZyZXNoIG5ldHN0YXQgSVB2NCByb3dzOiA1NDgNClBBU1MgIElQdjQgcm93IGNvdW50IHVuY2hhbmdlZCBieSBpbmNsdWRlSXB2NiAowrEzOiA1NDggdnMgNTQ4KQ0KUEFTUyAgSVB2NCByb3dzIGNvbXBsZXRlIHdoZW4gaW5jbHVkZUlwdjY6dHJ1ZSAowrE2IHZzIGZyZXNoIG5ldHN0YXQ6IDU0OCB2cyA1NDgpDQpQQVNTICBpbmNsdWRlSXB2Njp0cnVlIGFjdHVhbGx5IHJldHVybnMgSVB2NiByb3dzICgxMjQpDQpQQVNTICBldmVyeSBJUHY2IGxvY2FsIGFkZHJlc3MgcGFyc2VzIGFzIElQdjYNClBBU1MgIElQdjYgcm93cyBjYXJyeSBzdGF0ZSB0ZXh0DQpQQVNTICBJUHY2LWVuYWJsZWQgcmVzdWx0IGlzIHN0aWxsIHNvcnRlZA0KUEFTUyAgaW5jbHVkZUlwdjY6ZmFsc2UgcmV0dXJucyBubyBJUHY2IHJvd3MNCiAgICBmaXJzdCAxMCBJUHY2IHJvd3M6DQogICAgVENQIFs6Ol06MjIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgWzo6XTowICAgICAgICAgICAgICAgICAgICAgICAgICAg5L6m5ZCsICAgICAgICAgcGlkPTcxMDggICAgc3NoZCAgICAgICAgICAgICAgICAgICBDOlxXaW5kb3dzXFN5c3RlbTMyXE9wZW5TU0hcc3NoZC5leGUNCiAgICBUQ1AgWzo6XToxMzUgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBbOjpdOjAgICAgICAgICAgICAgICAgICAgICAgICAgICDkvqblkKwgICAgICAgICBwaWQ9MTc0OCAgICBzdmNob3N0ICAgICAgICAgICAgICAgIEM6XFdpbmRvd3NcU3lzdGVtMzJcc3ZjaG9zdC5leGUNCiAgICBUQ1AgWzo6XTo0NDUgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBbOjpdOjAgICAgICAgICAgICAgICAgICAgICAgICAgICDkvqblkKwgICAgICAgICBwaWQ9NCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPFByb2Nlc3NNaXNzaW5nPg0KICAgIFRDUCBbOjpdOjEwMjQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFs6Ol06MCAgICAgICAgICAgICAgICAgICAgICAgICAgIOS+puWQrCAgICAgICAgIHBpZD0xNDU2ICAgIHNlcnZpY2VzICAgICAgICAgICAgICAgQzpcV2luZG93c1xTeXN0ZW0zMlxzZXJ2aWNlcy5leGUNCiAgICBUQ1AgWzo6XToxMDI4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBbOjpdOjAgICAgICAgICAgICAgICAgICAgICAgICAgICDkvqblkKwgICAgICAgICBwaWQ9MTEzOTYgICBDTkFCNFJQRCAgICAgICAgICAgICAgIEM6XFdpbmRvd3NcU3lzdGVtMzJcQ05BQjRSUEQuRVhFDQogICAgVENQIFs6Ol06MTE0MiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgWzo6XTowICAgICAgICAgICAgICAgICAgICAgICAgICAg5L6m5ZCsICAgICAgICAgcGlkPTI3MDggICAgc3ZjaG9zdCAgICAgICAgICAgICAgICBDOlxXaW5kb3dzXFN5c3RlbTMyXHN2Y2hvc3QuZXhlDQogICAgVENQIFsyNDBlOjNhMzo0OTkwOmIxMTA6ODhhOTo2Y2QyOjdmYjU6OTg4NV06MTI0OSAgWzI0MGU6ZTk6NjAwMzoyMTE6OjExMF06NDQzICAgICAg5YWz6Zet562J5b6FICAgICAgIHBpZD0xMTYxMiAgIHZpdmFsZGkgICAgICAgICAgICAgICAgQzpcVXNlcnNcQWRtaW5pc3RyYXRvclxBcHBEYXRhXExvY2FsXFZpdmFsZGlcQXBwbGljYXRpb25cdml2YWxkaS5leGUNCiAgICBUQ1AgWzI0MGU6M2EzOjQ5OTA6YjExMDo4OGE5OjZjZDI6N2ZiNTo5ODg1XToxMjUxICBbMjYwMDoxNDA2OjZjMDA6MThjOjozNTZlXTo0NDMgICDlt7Llu7rnq4sgICAgICAgIHBpZD0xMTYxMiAgIHZpdmFsZGkgICAgICAgICAgICAgICAgQzpcVXNlcnNcQWRtaW5pc3RyYXRvclxBcHBEYXRhXExvY2FsXFZpdmFsZGlcQXBwbGljYXRpb25cdml2YWxkaS5leGUNCiAgICBUQ1AgWzI0MGU6M2EzOjQ5OTA6YjExMDo4OGE5OjZjZDI6N2ZiNTo5ODg1XToxODAwICBbMjYwMDoxNDA2OjZjMDA6MThjOjozNTZlXTo0NDMgICDlt7Llu7rnq4sgICAgICAgIHBpZD0xMTYxMiAgIHZpdmFsZGkgICAgICAgICAgICAgICAgQzpcVXNlcnNcQWRtaW5pc3RyYXRvclxBcHBEYXRhXExvY2FsXFZpdmFsZGlcQXBwbGljYXRpb25cdml2YWxkaS5leGUNCiAgICBUQ1AgWzI0MGU6M2EzOjQ5OTA6YjExMDo4OGE5OjZjZDI6N2ZiNTo5ODg1XToxOTY4ICBbMjYwMzoxMDYxOjE0OjE0Mzo6MV06NDQzICAgICAgICDlt7Llu7rnq4sgICAgICAgIHBpZD0xMTYxMiAgIHZpdmFsZGkgICAgICAgICAgICAgICAgQzpcVXNlcnNcQWRtaW5pc3RyYXRvclxBcHBEYXRhXExvY2FsXFZpdmFsZGlcQXBwbGljYXRpb25cdml2YWxkaS5leGUNCg0KPT09IGluZGVwZW5kZW50IG5ldHN0YXQgLWFubyBjcm9zcy1jaGVjayAodmFsaWRhdGVzIHRoZSBzdHJ1Y3Qgc2l6ZXMgLyByb3cgc3RyaWRlKSA9PT0NCiAgICBuZXRzdGF0OiBUQ1AvSVB2ND0xODQgIFVEUC9JUHY0PTM2NCAgVENQL0lQdjY9NTIgIFVEUC9JUHY2PTcyDQogICAgbmF0aXZlIDogVENQL0lQdjQ9MTg0ICBVRFAvSVB2ND0zNjQNClBBU1MgIG5hdGl2ZSBUQ1AvSVB2NCBjb3VudCB3aXRoaW4gwrE1IG9mIG5ldHN0YXQgKDE4NCB2cyAxODQpDQpQQVNTICBuYXRpdmUgVURQL0lQdjQgY291bnQgd2l0aGluIMKxMyBvZiBuZXRzdGF0ICgzNjQgdnMgMzY0KQ0KDQo9PT0gZmFsbGJhY2sgcGF0aCDigJQgSVBTQ0FORVJfTE9DQUxQT1JUX0ZPUkNFX0ZBTExCQUNLPTEgZm9yY2VzIG5ldHN0YXQgPT09DQpmYWxsYmFjayhuZXRzdGF0KTogcm93cz01NDggIFRDUD0xODQgIFVEUD0zNjQgIElQdjQ9NTQ4ICBJUHY2PTANCiAgICBkaXN0aW5jdCBQSURzPTU1ICAgcmVzb2x2ZWQtYnktbmFtZSBQSURzPTUzICAgdW5yZXNvbHZlZCBQSURzPTIgICByb3dzIHdpdGggUHJvY2Vzc01pc3Npbmc9dHJ1ZTogOTQNCiAgICBUQ1Agc3RhdGVzOiDkvqblkKw9NjgsIOaXtumXtOetieW+hT02OCwg5bey5bu656uLPTQyLCDlt7Llj5HpgIFTWU49Ng0KICAgIGZpcnN0IDE1IGZhbGxiYWNrIHJvd3M6DQogICAgVENQIDAuMC4wLjA6MjIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4wLjAuMDowICAgICAgICAgICAgICAgICAgICAgICAg5L6m5ZCsICAgICAgICAgcGlkPTcxMDggICAgc3NoZCAgICAgICAgICAgICAgICAgICBDOlxXaW5kb3dzXFN5c3RlbTMyXE9wZW5TU0hcc3NoZC5leGUNCiAgICBUQ1AgMC4wLjAuMDoxMzUgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjAuMC4wOjAgICAgICAgICAgICAgICAgICAgICAgICDkvqblkKwgICAgICAgICBwaWQ9MTc0OCAgICBzdmNob3N0ICAgICAgICAgICAgICAgIEM6XFdpbmRvd3NcU3lzdGVtMzJcc3ZjaG9zdC5leGUNCiAgICBUQ1AgMTcyLjIzLjMyLjE6MTM5ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjAuMC4wOjAgICAgICAgICAgICAgICAgICAgICAgICDkvqblkKwgICAgICAgICBwaWQ9NCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPFByb2Nlc3NNaXNzaW5nPg0KICAgIFRDUCAxNzIuMjQuMjUyLjE2MDoxMzkgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMC4wLjA6MCAgICAgICAgICAgICAgICAgICAgICAgIOS+puWQrCAgICAgICAgIHBpZD00ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8UHJvY2Vzc01pc3Npbmc+DQogICAgVENQIDE5Mi4xNjguMTM0LjE6MTM5ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4wLjAuMDowICAgICAgICAgICAgICAgICAgICAgICAg5L6m5ZCsICAgICAgICAgcGlkPTQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxQcm9jZXNzTWlzc2luZz4NCiAgICBUQ1AgMTkyLjE2OC4xMzcuMToxMzkgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjAuMC4wOjAgICAgICAgICAgICAgICAgICAgICAgICDkvqblkKwgICAgICAgICBwaWQ9NCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPFByb2Nlc3NNaXNzaW5nPg0KICAgIFRDUCAxOTIuMTY4LjIzNS4xOjEzOSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMC4wLjA6MCAgICAgICAgICAgICAgICAgICAgICAgIOS+puWQrCAgICAgICAgIHBpZD00ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8UHJvY2Vzc01pc3Npbmc+DQogICAgVENQIDE5Mi4xNjguMzIuNDc6MTM5ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4wLjAuMDowICAgICAgICAgICAgICAgICAgICAgICAg5L6m5ZCsICAgICAgICAgcGlkPTQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxQcm9jZXNzTWlzc2luZz4NCiAgICBUQ1AgMC4wLjAuMDo0NDUgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjAuMC4wOjAgICAgICAgICAgICAgICAgICAgICAgICDkvqblkKwgICAgICAgICBwaWQ9NCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPFByb2Nlc3NNaXNzaW5nPg0KICAgIFRDUCAxMjcuMC4wLjE6OTAzICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMC4wLjA6MCAgICAgICAgICAgICAgICAgICAgICAgIOS+puWQrCAgICAgICAgIHBpZD02NjMyICAgIHZtd2FyZS1hdXRoZCAgICAgICAgICAgQzpcUHJvZ3JhbSBGaWxlc1xWTXdhcmVcVk13YXJlIFdvcmtzdGF0aW9uXHZtd2FyZS1hdXRoZC5leGUNCiAgICBUQ1AgMTI3LjAuMC4xOjkxMyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjAuMC4wOjAgICAgICAgICAgICAgICAgICAgICAgICDkvqblkKwgICAgICAgICBwaWQ9NjYzMiAgICB2bXdhcmUtYXV0aGQgICAgICAgICAgIEM6XFByb2dyYW0gRmlsZXNcVk13YXJlXFZNd2FyZSBXb3Jrc3RhdGlvblx2bXdhcmUtYXV0aGQuZXhlDQogICAgVENQIDEyNy4wLjAuMToxMDAxICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4wLjAuMDowICAgICAgICAgICAgICAgICAgICAgICAg5L6m5ZCsICAgICAgICAgcGlkPTQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxQcm9jZXNzTWlzc2luZz4NCiAgICBUQ1AgMC4wLjAuMDoxMDI0ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjAuMC4wOjAgICAgICAgICAgICAgICAgICAgICAgICDkvqblkKwgICAgICAgICBwaWQ9MTQ1NiAgICBzZXJ2aWNlcyAgICAgICAgICAgICAgIEM6XFdpbmRvd3NcU3lzdGVtMzJcc2VydmljZXMuZXhlDQogICAgVENQIDE5Mi4xNjguMzIuNDc6MTAyNSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgNC4xNDUuNzkuODE6NDQzICAgICAgICAgICAgICAgICAg5bey5bu656uLICAgICAgICBwaWQ9ODE2NCAgICBzdmNob3N0ICAgICAgICAgICAgICAgIEM6XFdpbmRvd3NcU3lzdGVtMzJcc3ZjaG9zdC5leGUNCiAgICBUQ1AgMC4wLjAuMDoxMDI4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjAuMC4wOjAgICAgICAgICAgICAgICAgICAgICAgICDkvqblkKwgICAgICAgICBwaWQ9MTEzOTYgICBDTkFCNFJQRCAgICAgICAgICAgICAgIEM6XFdpbmRvd3NcU3lzdGVtMzJcQ05BQjRSUEQuRVhFDQogICAgZnJlc2ggbmV0c3RhdCByaWdodCBhZnRlciB0aGUgZmFsbGJhY2sgcnVuOiBUQ1AvSVB2ND0xODQgIFVEUC9JUHY0PTM2NA0KUEFTUyAgbmV0c3RhdCBmYWxsYmFjayByZXR1cm5lZCByb3dzDQpQQVNTICBmYWxsYmFjayBUQ1AvSVB2NCBjb3VudCB3aXRoaW4gwrEyIG9mIG5ldHN0YXQgKDE4NCB2cyAxODQpDQpQQVNTICBmYWxsYmFjayBVRFAvSVB2NCBjb3VudCB3aXRoaW4gwrEyIG9mIG5ldHN0YXQgKDM2NCB2cyAzNjQpDQpQQVNTICBmYWxsYmFjayBmb3VuZCBUQ1Ag5L6m5ZCsIHJvd3MgKDY4KQ0KUEFTUyAgZmFsbGJhY2sgVENQL0lQdjQgY291bnQgd2l0aGluIMKxNSBvZiBuYXRpdmUgKDE4NCB2cyAxODQpDQpQQVNTICBmYWxsYmFjayBVRFAvSVB2NCBjb3VudCB3aXRoaW4gwrEzIG9mIG5hdGl2ZSAoMzY0IHZzIDM2NCkNClBBU1MgIGZhbGxiYWNrIGhvbm91cnMgaW5jbHVkZUlwdjY6ZmFsc2UNClBBU1MgIGZhbGxiYWNrIGxvY2FsIHBvcnRzIGFyZSBpbiByYW5nZQ0KUEFTUyAgZmFsbGJhY2sgVURQIHJvd3MgdXNlIFVkcFN0YXRlDQpQQVNTICBmYWxsYmFjayByZXNvbHZlZCByb3dzIGhhdmUgYSBwcm9jZXNzIG5hbWUNClBBU1MgIGZhbGxiYWNrIHJvd3MgYXJlIHNvcnRlZA0KUEFTUyAgZmFsbGJhY2sgcmV0dXJucyBJUHY2IHJvd3Mgd2hlbiBhc2tlZA0KUEFTUyAgZmFsbGJhY2sgSVB2NiBhZGRyZXNzZXMgcGFyc2UgYXMgSVB2Ng0KUEFTUyAgZmFsbGJhY2sga2VlcHMgaXRzIElQdjQgcm93cyB3aGVuIGluY2x1ZGVJcHY2OnRydWUgKMKxNiB2cyBmcmVzaCBuZXRzdGF0OiA1NDggdnMgNTQ4KQ0KDQo9PT0gY2FuY2VsbGF0aW9uID09PQ0KUEFTUyAgYW4gYWxyZWFkeS1jYW5jZWxsZWQgdG9rZW4gdGhyb3dzIE9wZXJhdGlvbkNhbmNlbGVkRXhjZXB0aW9uDQpQQVNTICBtaWQtZmxpZ2h0IGNhbmNlbGxhdGlvbiBkdXJpbmcgdGhlIG5ldHN0YXQgZmFsbGJhY2sgc2V0dGxlcyBjbGVhbmx5IChjYW5jZWxsZWQ9VHJ1ZSwgcm93cz0pDQoNCj09PSBUcnlLaWxsUHJvY2VzcyA9PT0NClBBU1MgIFRyeUtpbGxQcm9jZXNzKDIxMjQwKSA9PiB0cnVlICAoZXJyb3I9JycpDQpQQVNTICB2aWN0aW0gcHJvY2VzcyAyMTI0MCBubyBsb25nZXIgZXhpc3RzDQpQQVNTICAobm9uZXhpc3RlbnQgcGlkKSA9PiBmYWxzZSwgZXJyb3I9J+i/m+eoiyAyMTQ3NDgzNjQ3IOS4jeWtmOWcqOaIluW3sumAgOWHuuOAgicNClBBU1MgIChvd24gcGlkKSA9PiBmYWxzZSwgZXJyb3I9J+S4jeiDvee7k+adn+acrOeoi+W6j+iHqui6q+eahOi/m+eoi+OAgicNClBBU1MgIChwaWQgMCkgPT4gZmFsc2UsIGVycm9yPSfml6DmlYjnmoTov5vnqIsgSUTvvJow44CCJw0KDQpBTEwgQ0hFQ0tTIFBBU1NFRA0K
+
+=== environment ===
+OS            : Microsoft Windows 10.0.29680
+Runtime       : .NET 8.0.31 (X64)
+Elevated      : True
+OEM codepage  : 936
+
+=== P/Invoke struct sizes (reflection over the private nested structs) ===
+PASS  MIB_TCPROW_OWNER_PID = 24 bytes (expected 24)
+PASS  MIB_TCP6ROW_OWNER_PID = 56 bytes (expected 56)
+PASS  MIB_UDPROW_OWNER_PID = 12 bytes (expected 12)
+PASS  MIB_UDP6ROW_OWNER_PID = 28 bytes (expected 28)
+
+=== QueryAsync() — native IP Helper path, TCP + UDP, IPv4 only ===
+native: rows=548  TCP=184  UDP=364  IPv4=548  IPv6=0
+    distinct PIDs=55   resolved-by-name PIDs=53   unresolved PIDs=2   rows with ProcessMissing=true: 94
+    TCP states: 侦听=68, 时间等待=68, 已建立=42, 已发送SYN=6
+    first 15 rows:
+    TCP 0.0.0.0:22                                     0.0.0.0:0                        侦听         pid=7108    sshd                   C:\Windows\System32\OpenSSH\sshd.exe
+    TCP 0.0.0.0:135                                    0.0.0.0:0                        侦听         pid=1748    svchost                C:\Windows\System32\svchost.exe
+    TCP 172.23.32.1:139                                0.0.0.0:0                        侦听         pid=4                                <ProcessMissing>
+    TCP 172.24.252.160:139                             0.0.0.0:0                        侦听         pid=4                                <ProcessMissing>
+    TCP 192.168.134.1:139                              0.0.0.0:0                        侦听         pid=4                                <ProcessMissing>
+    TCP 192.168.137.1:139                              0.0.0.0:0                        侦听         pid=4                                <ProcessMissing>
+    TCP 192.168.235.1:139                              0.0.0.0:0                        侦听         pid=4                                <ProcessMissing>
+    TCP 192.168.32.47:139                              0.0.0.0:0                        侦听         pid=4                                <ProcessMissing>
+    TCP 0.0.0.0:445                                    0.0.0.0:0                        侦听         pid=4                                <ProcessMissing>
+    TCP 127.0.0.1:903                                  0.0.0.0:0                        侦听         pid=6632    vmware-authd           C:\Program Files\VMware\VMware Workstation\vmware-authd.exe
+    TCP 127.0.0.1:913                                  0.0.0.0:0                        侦听         pid=6632    vmware-authd           C:\Program Files\VMware\VMware Workstation\vmware-authd.exe
+    TCP 127.0.0.1:1001                                 0.0.0.0:0                        侦听         pid=4                                <ProcessMissing>
+    TCP 0.0.0.0:1024                                   0.0.0.0:0                        侦听         pid=1456    services               C:\Windows\System32\services.exe
+    TCP 192.168.32.47:1025                             4.145.79.81:443                  已建立        pid=8164    svchost                C:\Windows\System32\svchost.exe
+    TCP 0.0.0.0:1028                                   0.0.0.0:0                        侦听         pid=11396   CNAB4RPD               C:\Windows\System32\CNAB4RPD.EXE
+PASS  native enumeration returned rows
+PASS  at least 3 TCP 侦听 (LISTENING) rows (found 68)
+PASS  every row carries protocol TCP or UDP
+PASS  every local port is in 0..65535
+PASS  every remote port is in 0..65535
+PASS  every PID is non-negative
+PASS  every row has non-empty state text
+PASS  UDP rows use LocalPortInfo.UdpState ('UDP')
+PASS  every IPv4 local address is a dotted quad
+PASS  every TCP remote address is a dotted quad
+PASS  every UDP row uses netstat's '*:*' remote endpoint
+PASS  resolved rows have a process name
+PASS  ProcessMissing rows have empty name and path
+PASS  rows are sorted by protocol, local port, PID
+PASS  includeUdp:false returns only TCP (184 rows)
+PASS  includeTcp:false returns only UDP (436 rows)
+PASS  both protocols disabled returns an empty table (0 rows)
+
+=== QueryAsync(includeIpv6: true) — IPv6 must not disturb the IPv4 rows ===
+native+IPv6: rows=672  TCP=236  UDP=436  IPv4=548  IPv6=124
+    distinct PIDs=58   resolved-by-name PIDs=56   unresolved PIDs=2   rows with ProcessMissing=true: 101
+    TCP states: 侦听=96, 时间等待=69, 已建立=61, 已发送SYN=9, 关闭等待=1
+    IPv6 rows: 124; IPv4 rows with flag on: 548, flag off: 548; fresh netstat IPv4 rows: 548
+PASS  IPv4 row count unchanged by includeIpv6 (±3: 548 vs 548)
+PASS  IPv4 rows complete when includeIpv6:true (±6 vs fresh netstat: 548 vs 548)
+PASS  includeIpv6:true actually returns IPv6 rows (124)
+PASS  every IPv6 local address parses as IPv6
+PASS  IPv6 rows carry state text
+PASS  IPv6-enabled result is still sorted
+PASS  includeIpv6:false returns no IPv6 rows
+    first 10 IPv6 rows:
+    TCP [::]:22                                        [::]:0                           侦听         pid=7108    sshd                   C:\Windows\System32\OpenSSH\sshd.exe
+    TCP [::]:135                                       [::]:0                           侦听         pid=1748    svchost                C:\Windows\System32\svchost.exe
+    TCP [::]:445                                       [::]:0                           侦听         pid=4                                <ProcessMissing>
+    TCP [::]:1024                                      [::]:0                           侦听         pid=1456    services               C:\Windows\System32\services.exe
+    TCP [::]:1028                                      [::]:0                           侦听         pid=11396   CNAB4RPD               C:\Windows\System32\CNAB4RPD.EXE
+    TCP [::]:1142                                      [::]:0                           侦听         pid=2708    svchost                C:\Windows\System32\svchost.exe
+    TCP [240e:3a3:4990:b110:88a9:6cd2:7fb5:9885]:1249  [240e:e9:6003:211::110]:443      关闭等待       pid=11612   vivaldi                C:\Users\Administrator\AppData\Local\Vivaldi\Application\vivaldi.exe
+    TCP [240e:3a3:4990:b110:88a9:6cd2:7fb5:9885]:1251  [2600:1406:6c00:18c::356e]:443   已建立        pid=11612   vivaldi                C:\Users\Administrator\AppData\Local\Vivaldi\Application\vivaldi.exe
+    TCP [240e:3a3:4990:b110:88a9:6cd2:7fb5:9885]:1800  [2600:1406:6c00:18c::356e]:443   已建立        pid=11612   vivaldi                C:\Users\Administrator\AppData\Local\Vivaldi\Application\vivaldi.exe
+    TCP [240e:3a3:4990:b110:88a9:6cd2:7fb5:9885]:1968  [2603:1061:14:143::1]:443        已建立        pid=11612   vivaldi                C:\Users\Administrator\AppData\Local\Vivaldi\Application\vivaldi.exe
+
+=== independent netstat -ano cross-check (validates the struct sizes / row stride) ===
+    netstat: TCP/IPv4=184  UDP/IPv4=364  TCP/IPv6=52  UDP/IPv6=72
+    native : TCP/IPv4=184  UDP/IPv4=364
+PASS  native TCP/IPv4 count within ±5 of netstat (184 vs 184)
+PASS  native UDP/IPv4 count within ±3 of netstat (364 vs 364)
+
+=== fallback path — IPSCANER_LOCALPORT_FORCE_FALLBACK=1 forces netstat ===
+fallback(netstat): rows=548  TCP=184  UDP=364  IPv4=548  IPv6=0
+    distinct PIDs=55   resolved-by-name PIDs=53   unresolved PIDs=2   rows with ProcessMissing=true: 94
+    TCP states: 侦听=68, 时间等待=68, 已建立=42, 已发送SYN=6
+    first 15 fallback rows:
+    TCP 0.0.0.0:22                                     0.0.0.0:0                        侦听         pid=7108    sshd                   C:\Windows\System32\OpenSSH\sshd.exe
+    TCP 0.0.0.0:135                                    0.0.0.0:0                        侦听         pid=1748    svchost                C:\Windows\System32\svchost.exe
+    TCP 172.23.32.1:139                                0.0.0.0:0                        侦听         pid=4                                <ProcessMissing>
+    TCP 172.24.252.160:139                             0.0.0.0:0                        侦听         pid=4                                <ProcessMissing>
+    TCP 192.168.134.1:139                              0.0.0.0:0                        侦听         pid=4                                <ProcessMissing>
+    TCP 192.168.137.1:139                              0.0.0.0:0                        侦听         pid=4                                <ProcessMissing>
+    TCP 192.168.235.1:139                              0.0.0.0:0                        侦听         pid=4                                <ProcessMissing>
+    TCP 192.168.32.47:139                              0.0.0.0:0                        侦听         pid=4                                <ProcessMissing>
+    TCP 0.0.0.0:445                                    0.0.0.0:0                        侦听         pid=4                                <ProcessMissing>
+    TCP 127.0.0.1:903                                  0.0.0.0:0                        侦听         pid=6632    vmware-authd           C:\Program Files\VMware\VMware Workstation\vmware-authd.exe
+    TCP 127.0.0.1:913                                  0.0.0.0:0                        侦听         pid=6632    vmware-authd           C:\Program Files\VMware\VMware Workstation\vmware-authd.exe
+    TCP 127.0.0.1:1001                                 0.0.0.0:0                        侦听         pid=4                                <ProcessMissing>
+    TCP 0.0.0.0:1024                                   0.0.0.0:0                        侦听         pid=1456    services               C:\Windows\System32\services.exe
+    TCP 192.168.32.47:1025                             4.145.79.81:443                  已建立        pid=8164    svchost                C:\Windows\System32\svchost.exe
+    TCP 0.0.0.0:1028                                   0.0.0.0:0                        侦听         pid=11396   CNAB4RPD               C:\Windows\System32\CNAB4RPD.EXE
+    fresh netstat right after the fallback run: TCP/IPv4=184  UDP/IPv4=364
+PASS  netstat fallback returned rows
+PASS  fallback TCP/IPv4 count within ±2 of netstat (184 vs 184)
+PASS  fallback UDP/IPv4 count within ±2 of netstat (364 vs 364)
+PASS  fallback found TCP 侦听 rows (68)
+PASS  fallback TCP/IPv4 count within ±5 of native (184 vs 184)
+PASS  fallback UDP/IPv4 count within ±3 of native (364 vs 364)
+PASS  fallback honours includeIpv6:false
+PASS  fallback local ports are in range
+PASS  fallback UDP rows use UdpState
+PASS  fallback resolved rows have a process name
+PASS  fallback rows are sorted
+PASS  fallback returns IPv6 rows when asked
+PASS  fallback IPv6 addresses parse as IPv6
+PASS  fallback keeps its IPv4 rows when includeIpv6:true (±6 vs fresh netstat: 548 vs 548)
+
+=== cancellation ===
+PASS  an already-cancelled token throws OperationCanceledException
+PASS  mid-flight cancellation during the netstat fallback settles cleanly (cancelled=True, rows=)
+
+=== TryKillProcess ===
+PASS  TryKillProcess(21240) => true  (error='')
+PASS  victim process 21240 no longer exists
+PASS  (nonexistent pid) => false, error='进程 2147483647 不存在或已退出。'
+PASS  (own pid) => false, error='不能结束本程序自身的进程。'
+PASS  (pid 0) => false, error='无效的进程 ID：0。'
+
+ALL CHECKS PASSED

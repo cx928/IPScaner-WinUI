@@ -1,1 +1,95 @@
-dXNpbmcgU3lzdGVtLlRleHQ7CnVzaW5nIElQU2NhbmVyLkNvcmUuQ29uZmlndXJhdGlvbjsKCi8vIEJ5dGUtZm9yLWJ5dGUgY29tcGF0aWJpbGl0eSBjaGVjazogbG9hZCB0aGUgdXNlcidzIHJlYWwgSVBTY2FuZXIuY2ZnIHRocm91Z2gKLy8gQ29uZmlnU3RvcmUsIHdyaXRlIGl0IGJhY2sgb3V0LCBhbmQgY29tcGFyZSB0aGUgdHdvIGZpbGVzLgovLwovLyBUaGlzIGlzIHRoZSBzdHJvbmdlc3QgYXZhaWxhYmxlIHByb29mIHRoYXQgZHJvcHBpbmcgdGhlIFdpblVJIGJ1aWxkIG5leHQgdG8gYW4KLy8gZXhpc3RpbmcgaW5zdGFsbGF0aW9uIHByZXNlcnZlcyBzZXR0aW5ncywgaW5jbHVkaW5nIHRoZSBYTUwgZGVjbGFyYXRpb24gc3R5bGUuCgp2YXIgb3JpZ2luYWwgPSBhcmdzLkxlbmd0aCA+IDAgPyBhcmdzWzBdIDogQCJFOlxJUFNjYW5lci5jZmciOwoKaWYgKCFGaWxlLkV4aXN0cyhvcmlnaW5hbCkpCnsKICAgIENvbnNvbGUuV3JpdGVMaW5lKCQiU0tJUDoge29yaWdpbmFsfSBub3QgZm91bmQiKTsKICAgIHJldHVybiAyOwp9Cgp2YXIgb3JpZ2luYWxCeXRlcyA9IEZpbGUuUmVhZEFsbEJ5dGVzKG9yaWdpbmFsKTsKCi8vIDEuIFBhcnNlIGl0IHdpdGggdGhlIG5ldyBtb2RlbC4KdmFyIHN0b3JlID0gbmV3IENvbmZpZ1N0b3JlKG9yaWdpbmFsKTsKdmFyIGNvbmZpZyA9IHN0b3JlLkxvYWQoKTsKCkNvbnNvbGUuV3JpdGVMaW5lKCQibG9hZGVkOiBRdWVyeUhvc3ROYW1lPXtjb25maWcuUXVlcnlIb3N0TmFtZUVuYWJsZWR9IFBpbmdUaW1lb3V0PXtjb25maWcuUGluZ1RpbWVvdXR9ICIgKwogICAgICAgICAgICAgICAgICAkIlBpbmdDb3VudD17Y29uZmlnLlBpbmdDb3VudH0gQVJQPXtjb25maWcuQVJQSW5zdGVhZFBpbmdFbmFibGVkfSBUQ1A9e2NvbmZpZy5Qb3J0SW5zdGVhZFBpbmdFbmFibGVkfSAiICsKICAgICAgICAgICAgICAgICAgJCJwb3J0cz1be2NvbmZpZy5QcmVQb3J0QXJyYXl9XSBQb3J0VGltZW91dD17Y29uZmlnLlBvcnRUaW1lb3V0fSBEb3VibGVDbGljaz17Y29uZmlnLkRvdWJsZUNsaWNrVGltZX0gIiArCiAgICAgICAgICAgICAgICAgICQiZm9udD17Y29uZmlnLkJ0bkZvbnRTaXplfSBEb3VibGVFdmVudD17Y29uZmlnLkRvdWJsZUV2ZW50fSBIaWRlTWFpbj17Y29uZmlnLkhpZGVNYWluRW5hYmxlZH0iKTsKCi8vIDIuIFJlLXNlcmlhbGlzZSB0byBhIHNjcmF0Y2ggZmlsZS4KdmFyIHRlbXBEaXIgPSBQYXRoLkNvbWJpbmUoQXBwQ29udGV4dC5CYXNlRGlyZWN0b3J5LCAicm91bmR0cmlwIik7CkRpcmVjdG9yeS5DcmVhdGVEaXJlY3RvcnkodGVtcERpcik7CnZhciByZXdyaXR0ZW4gPSBQYXRoLkNvbWJpbmUodGVtcERpciwgIklQU2NhbmVyLmNmZyIpOwppZiAoRmlsZS5FeGlzdHMocmV3cml0dGVuKSkgRmlsZS5EZWxldGUocmV3cml0dGVuKTsKCm5ldyBDb25maWdTdG9yZShyZXdyaXR0ZW4pLlNhdmUoY29uZmlnKTsKdmFyIG5ld0J5dGVzID0gRmlsZS5SZWFkQWxsQnl0ZXMocmV3cml0dGVuKTsKCi8vIDMuIFJlcG9ydC4Kc3RhdGljIHN0cmluZyBIZWFkKGJ5dGVbXSBiLCBpbnQgbikgPT4KICAgIHN0cmluZy5Kb2luKCIgIiwgYi5UYWtlKG4pLlNlbGVjdCh4ID0+IHguVG9TdHJpbmcoIlgyIikpKTsKCkNvbnNvbGUuV3JpdGVMaW5lKCk7CkNvbnNvbGUuV3JpdGVMaW5lKCQib3JpZ2luYWwgIHtvcmlnaW5hbEJ5dGVzLkxlbmd0aCw1fSBieXRlcyB8IHtIZWFkKG9yaWdpbmFsQnl0ZXMsIDIyKX0iKTsKQ29uc29sZS5Xcml0ZUxpbmUoJCJyZXdyaXR0ZW4ge25ld0J5dGVzLkxlbmd0aCw1fSBieXRlcyB8IHtIZWFkKG5ld0J5dGVzLCAyMil9Iik7CgovLyBDb21wYXJlIHRoZSBkZWNsYXJhdGlvbiBhbmQgdGhlIHdob2xlIGRvY3VtZW50IHNlcGFyYXRlbHkgc28gYSBtaXNtYXRjaCBpcyBkaWFnbm9zYWJsZS4KdmFyIGRlY2xMZW4gPSAiPD94bWwgdmVyc2lvbj1cIjEuMFwiPz5cclxuInU4Lkxlbmd0aDsKdmFyIGRlY2xPcmlnaW5hbCA9IEVuY29kaW5nLlVURjguR2V0U3RyaW5nKG9yaWdpbmFsQnl0ZXMsIDAsIE1hdGguTWluKGRlY2xMZW4sIG9yaWdpbmFsQnl0ZXMuTGVuZ3RoKSk7CnZhciBkZWNsTmV3ID0gRW5jb2RpbmcuVVRGOC5HZXRTdHJpbmcobmV3Qnl0ZXMsIDAsIE1hdGguTWluKGRlY2xMZW4sIG5ld0J5dGVzLkxlbmd0aCkpOwoKdmFyIGRlY2xhcmF0aW9uTWF0Y2hlcyA9IGRlY2xPcmlnaW5hbCA9PSAiPD94bWwgdmVyc2lvbj1cIjEuMFwiPz5cclxuIjsKdmFyIGlkZW50aWNhbCA9IG9yaWdpbmFsQnl0ZXMuQXNTcGFuKCkuU2VxdWVuY2VFcXVhbChuZXdCeXRlcyk7CgpDb25zb2xlLldyaXRlTGluZSgpOwpDb25zb2xlLldyaXRlTGluZSgkImRlY2xhcmF0aW9uIG9yaWdpbmFsIDoge2RlY2xPcmlnaW5hbC5SZXBsYWNlKCJcciIsICJcXHIiKS5SZXBsYWNlKCJcbiIsICJcXG4iKX0iKTsKQ29uc29sZS5Xcml0ZUxpbmUoJCJkZWNsYXJhdGlvbiByZXdyaXR0ZW46IHtkZWNsTmV3LlJlcGxhY2UoIlxyIiwgIlxcciIpLlJlcGxhY2UoIlxuIiwgIlxcbiIpfSIpOwpDb25zb2xlLldyaXRlTGluZSgkImRlY2xhcmF0aW9uIGlzIHRoZSBiYXJlIGZvcm0gKG5vIGVuY29kaW5nIGF0dHIpOiB7ZGVjbGFyYXRpb25NYXRjaGVzfSIpOwpDb25zb2xlLldyaXRlTGluZSgkIkJZVEUtSURFTlRJQ0FMIFJPVU5EIFRSSVA6IHtpZGVudGljYWx9Iik7CgppZiAoIWlkZW50aWNhbCkKewogICAgLy8gU2hvdyB0aGUgZmlyc3QgZGlmZmVyaW5nIG9mZnNldCB0byBtYWtlIHRoZSBkcmlmdCBvYnZpb3VzLgogICAgdmFyIGxpbWl0ID0gTWF0aC5NaW4ob3JpZ2luYWxCeXRlcy5MZW5ndGgsIG5ld0J5dGVzLkxlbmd0aCk7CiAgICBmb3IgKHZhciBpID0gMDsgaSA8IGxpbWl0OyBpKyspCiAgICB7CiAgICAgICAgaWYgKG9yaWdpbmFsQnl0ZXNbaV0gPT0gbmV3Qnl0ZXNbaV0pIGNvbnRpbnVlOwogICAgICAgIHZhciBmcm9tID0gTWF0aC5NYXgoMCwgaSAtIDQwKTsKICAgICAgICBDb25zb2xlLldyaXRlTGluZSgkImZpcnN0IGRpZmYgYXQgYnl0ZSB7aX0iKTsKICAgICAgICBDb25zb2xlLldyaXRlTGluZSgkIiAgb3JpZ2luYWwgOiAuLi57RW5jb2RpbmcuVVRGOC5HZXRTdHJpbmcob3JpZ2luYWxCeXRlcywgZnJvbSwgTWF0aC5NaW4oMTIwLCBvcmlnaW5hbEJ5dGVzLkxlbmd0aCAtIGZyb20pKX0uLi4iKTsKICAgICAgICBDb25zb2xlLldyaXRlTGluZSgkIiAgcmV3cml0dGVuOiAuLi57RW5jb2RpbmcuVVRGOC5HZXRTdHJpbmcobmV3Qnl0ZXMsIGZyb20sIE1hdGguTWluKDEyMCwgbmV3Qnl0ZXMuTGVuZ3RoIC0gZnJvbSkpfS4uLiIpOwogICAgICAgIGJyZWFrOwogICAgfQp9CgovLyA0LiBJbmRlcGVuZGVudGx5IGNvbmZpcm0gdGhlIHJld3JpdHRlbiBmaWxlIHN0aWxsIHBhcnNlcyBiYWNrIHRvIHRoZSBzYW1lIHZhbHVlcy4KdmFyIHJlbG9hZGVkID0gbmV3IENvbmZpZ1N0b3JlKHJld3JpdHRlbikuTG9hZCgpOwp2YXIgc2FtZSA9IHJlbG9hZGVkLlBpbmdUaW1lb3V0ID09IGNvbmZpZy5QaW5nVGltZW91dAogICAgICAgICAgICYmIHJlbG9hZGVkLlBpbmdDb3VudCA9PSBjb25maWcuUGluZ0NvdW50CiAgICAgICAgICAgJiYgcmVsb2FkZWQuUHJlUG9ydEFycmF5ID09IGNvbmZpZy5QcmVQb3J0QXJyYXkKICAgICAgICAgICAmJiByZWxvYWRlZC5Qb3J0VGltZW91dCA9PSBjb25maWcuUG9ydFRpbWVvdXQKICAgICAgICAgICAmJiByZWxvYWRlZC5EZWZhdWx0Q29sb3JBcmdiID09IGNvbmZpZy5EZWZhdWx0Q29sb3JBcmdiCiAgICAgICAgICAgJiYgcmVsb2FkZWQuTmV0d29ya09LQ29sb3JBcmdiID09IGNvbmZpZy5OZXR3b3JrT0tDb2xvckFyZ2IKICAgICAgICAgICAmJiByZWxvYWRlZC5OZXR3b3JrTkdDb2xvckFyZ2IgPT0gY29uZmlnLk5ldHdvcmtOR0NvbG9yQXJnYgogICAgICAgICAgICYmIHJlbG9hZGVkLk1lbW9Db2xvckFyZ2IgPT0gY29uZmlnLk1lbW9Db2xvckFyZ2IKICAgICAgICAgICAmJiByZWxvYWRlZC5Eb3VibGVFdmVudCA9PSBjb25maWcuRG91YmxlRXZlbnQKICAgICAgICAgICAmJiByZWxvYWRlZC5RUlkoKSA9PSBjb25maWcuUVJZKCk7CgpDb25zb2xlLldyaXRlTGluZSgkImFsbCBzZXR0aW5ncyBzdXJ2aXZlIGEgcmVsb2FkOiB7c2FtZX0iKTsKcmV0dXJuIGlkZW50aWNhbCAmJiBkZWNsYXJhdGlvbk1hdGNoZXMgJiYgc2FtZSA/IDAgOiAxOwoKaW50ZXJuYWwgc3RhdGljIGNsYXNzIENvbmZpZ0V4dGVuc2lvbnMKewogICAgLy8gU21hbGwgaGVscGVyIHNvIHRoZSBjb21wYXJpc29uIGFib3ZlIHN0YXlzIHJlYWRhYmxlLgogICAgcHVibGljIHN0YXRpYyBib29sIFFSWSh0aGlzIEFwcENvbmZpZyBjKSA9PiBjLlF1ZXJ5SG9zdE5hbWVFbmFibGVkOwp9Cg==
+using System.Text;
+using IPScaner.Core.Configuration;
+
+// Byte-for-byte compatibility check: load the user's real IPScaner.cfg through
+// ConfigStore, write it back out, and compare the two files.
+//
+// This is the strongest available proof that dropping the WinUI build next to an
+// existing installation preserves settings, including the XML declaration style.
+
+var original = args.Length > 0 ? args[0] : @"E:\IPScaner.cfg";
+
+if (!File.Exists(original))
+{
+    Console.WriteLine($"SKIP: {original} not found");
+    return 2;
+}
+
+var originalBytes = File.ReadAllBytes(original);
+
+// 1. Parse it with the new model.
+var store = new ConfigStore(original);
+var config = store.Load();
+
+Console.WriteLine($"loaded: QueryHostName={config.QueryHostNameEnabled} PingTimeout={config.PingTimeout} " +
+                  $"PingCount={config.PingCount} ARP={config.ARPInsteadPingEnabled} TCP={config.PortInsteadPingEnabled} " +
+                  $"ports=[{config.PrePortArray}] PortTimeout={config.PortTimeout} DoubleClick={config.DoubleClickTime} " +
+                  $"font={config.BtnFontSize} DoubleEvent={config.DoubleEvent} HideMain={config.HideMainEnabled}");
+
+// 2. Re-serialise to a scratch file.
+var tempDir = Path.Combine(AppContext.BaseDirectory, "roundtrip");
+Directory.CreateDirectory(tempDir);
+var rewritten = Path.Combine(tempDir, "IPScaner.cfg");
+if (File.Exists(rewritten)) File.Delete(rewritten);
+
+new ConfigStore(rewritten).Save(config);
+var newBytes = File.ReadAllBytes(rewritten);
+
+// 3. Report.
+static string Head(byte[] b, int n) =>
+    string.Join(" ", b.Take(n).Select(x => x.ToString("X2")));
+
+Console.WriteLine();
+Console.WriteLine($"original  {originalBytes.Length,5} bytes | {Head(originalBytes, 22)}");
+Console.WriteLine($"rewritten {newBytes.Length,5} bytes | {Head(newBytes, 22)}");
+
+// Compare the declaration and the whole document separately so a mismatch is diagnosable.
+var declLen = "<?xml version=\"1.0\"?>\r\n"u8.Length;
+var declOriginal = Encoding.UTF8.GetString(originalBytes, 0, Math.Min(declLen, originalBytes.Length));
+var declNew = Encoding.UTF8.GetString(newBytes, 0, Math.Min(declLen, newBytes.Length));
+
+var declarationMatches = declOriginal == "<?xml version=\"1.0\"?>\r\n";
+var identical = originalBytes.AsSpan().SequenceEqual(newBytes);
+
+Console.WriteLine();
+Console.WriteLine($"declaration original : {declOriginal.Replace("\r", "\\r").Replace("\n", "\\n")}");
+Console.WriteLine($"declaration rewritten: {declNew.Replace("\r", "\\r").Replace("\n", "\\n")}");
+Console.WriteLine($"declaration is the bare form (no encoding attr): {declarationMatches}");
+Console.WriteLine($"BYTE-IDENTICAL ROUND TRIP: {identical}");
+
+if (!identical)
+{
+    // Show the first differing offset to make the drift obvious.
+    var limit = Math.Min(originalBytes.Length, newBytes.Length);
+    for (var i = 0; i < limit; i++)
+    {
+        if (originalBytes[i] == newBytes[i]) continue;
+        var from = Math.Max(0, i - 40);
+        Console.WriteLine($"first diff at byte {i}");
+        Console.WriteLine($"  original : ...{Encoding.UTF8.GetString(originalBytes, from, Math.Min(120, originalBytes.Length - from))}...");
+        Console.WriteLine($"  rewritten: ...{Encoding.UTF8.GetString(newBytes, from, Math.Min(120, newBytes.Length - from))}...");
+        break;
+    }
+}
+
+// 4. Independently confirm the rewritten file still parses back to the same values.
+var reloaded = new ConfigStore(rewritten).Load();
+var same = reloaded.PingTimeout == config.PingTimeout
+           && reloaded.PingCount == config.PingCount
+           && reloaded.PrePortArray == config.PrePortArray
+           && reloaded.PortTimeout == config.PortTimeout
+           && reloaded.DefaultColorArgb == config.DefaultColorArgb
+           && reloaded.NetworkOKColorArgb == config.NetworkOKColorArgb
+           && reloaded.NetworkNGColorArgb == config.NetworkNGColorArgb
+           && reloaded.MemoColorArgb == config.MemoColorArgb
+           && reloaded.DoubleEvent == config.DoubleEvent
+           && reloaded.QRY() == config.QRY();
+
+Console.WriteLine($"all settings survive a reload: {same}");
+return identical && declarationMatches && same ? 0 : 1;
+
+internal static class ConfigExtensions
+{
+    // Small helper so the comparison above stays readable.
+    public static bool QRY(this AppConfig c) => c.QueryHostNameEnabled;
+}

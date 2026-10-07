@@ -1,1 +1,123 @@
-dXNpbmcgU3lzdGVtLkNvbGxlY3Rpb25zLkNvbmN1cnJlbnQ7CnVzaW5nIFN5c3RlbS5UZXh0OwoKbmFtZXNwYWNlIElQU2NhbmVyLkNvcmUuTG9nZ2luZzsKCi8vLyA8c3VtbWFyeT4KLy8vIERlYnVnIGxvZyB3cml0ZXIsIHByZXNlcnZpbmcgdGhlIG9yaWdpbmFsIHRvb2wncyBvbi1kaXNrIGNvbnRyYWN0OgovLy8gPGM+TG9nc1x5eXl5LU1NLWRkLmxvZzwvYz4gdW5kZXIgdGhlIGFwcGxpY2F0aW9uIGRpcmVjdG9yeSwgb25lIGxpbmUgcGVyIGVudHJ5Ci8vLyBmb3JtYXR0ZWQgPGM+eXl5eS1NTS1kZCBISDptbTpzcyAtIENhbGxlci5NZXNzYWdlICB0ZXh0PC9jPiwgd2l0aCBmaWxlcyBvbGRlcgovLy8gdGhhbiAzMCBkYXlzIHBydW5lZC4KLy8vIDwvc3VtbWFyeT4KLy8vIDxyZW1hcmtzPgovLy8gV3JpdGVzIGFyZSBxdWV1ZWQgdG8gYSBiYWNrZ3JvdW5kIGZsdXNoIGxvb3AgZXhhY3RseSBsaWtlIHRoZSBvcmlnaW5hbCwgYnV0Ci8vLyB0aGUgcXVldWUgaXMgYm91bmRlZCBzbyBhIGh1bmcgZGlzayBjYW5ub3QgZXhoYXVzdCBtZW1vcnkgZHVyaW5nIGEgLzE2IHN3ZWVwLgovLy8gPC9yZW1hcmtzPgpwdWJsaWMgc2VhbGVkIGNsYXNzIEFwcExvZwp7CiAgICBwcml2YXRlIGNvbnN0IGludCBNYXhRdWV1ZWRFbnRyaWVzID0gODE5MjsKICAgIHByaXZhdGUgY29uc3QgaW50IFJldGVudGlvbkRheXMgPSAzMDsKCiAgICBwcml2YXRlIHJlYWRvbmx5IEJsb2NraW5nQ29sbGVjdGlvbjxzdHJpbmc+IF9xdWV1ZSA9IG5ldyhuZXcgQ29uY3VycmVudFF1ZXVlPHN0cmluZz4oKSwgTWF4UXVldWVkRW50cmllcyk7CiAgICBwcml2YXRlIHJlYWRvbmx5IHN0cmluZyBfZGlyZWN0b3J5OwogICAgcHJpdmF0ZSByZWFkb25seSBUYXNrIF93cml0ZXI7CiAgICBwcml2YXRlIHJlYWRvbmx5IFRpbWVQcm92aWRlciBfY2xvY2s7CgogICAgcHVibGljIHN0YXRpYyBBcHBMb2cgSW5zdGFuY2UgeyBnZXQ7IH0gPSBuZXcoKTsKCiAgICAvLy8gPHN1bW1hcnk+U2V0IGZyb20gY29uZmlndXJhdGlvbjsgd2hlbiBmYWxzZSwgcXVldWVkIGVudHJpZXMgYXJlIGRpc2NhcmRlZC48L3N1bW1hcnk+CiAgICBwdWJsaWMgYm9vbCBFbmFibGVkIHsgZ2V0OyBzZXQ7IH0KCiAgICBwdWJsaWMgQXBwTG9nKHN0cmluZz8gZGlyZWN0b3J5ID0gbnVsbCwgVGltZVByb3ZpZGVyPyBjbG9jayA9IG51bGwpCiAgICB7CiAgICAgICAgX2Nsb2NrID0gY2xvY2sgPz8gVGltZVByb3ZpZGVyLlN5c3RlbTsKICAgICAgICBfZGlyZWN0b3J5ID0gZGlyZWN0b3J5ID8/IFBhdGguQ29tYmluZShTdG9yYWdlLkFwcFBhdGhzLkRhdGFEaXJlY3RvcnksICJMb2dzIik7CiAgICAgICAgX3dyaXRlciA9IFRhc2suRmFjdG9yeS5TdGFydE5ldyhGbHVzaExvb3AsIFRhc2tDcmVhdGlvbk9wdGlvbnMuTG9uZ1J1bm5pbmcpOwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT5RdWV1ZXMgYSBsaW5lIGF0dHJpYnV0ZWQgdG8gdGhlIGNhbGxpbmcgbWV0aG9kLjwvc3VtbWFyeT4KICAgIHB1YmxpYyB2b2lkIExvZyhzdHJpbmcgbWVzc2FnZSkgPT4gV3JpdGUoQ2FsbGVyTmFtZSgpLCBtZXNzYWdlKTsKCiAgICBwdWJsaWMgdm9pZCBMb2coc3RyaW5nIGNhdGVnb3J5LCBzdHJpbmcgbWVzc2FnZSkgPT4gV3JpdGUoY2F0ZWdvcnksIG1lc3NhZ2UpOwoKICAgIHByaXZhdGUgdm9pZCBXcml0ZShzdHJpbmcgY2F0ZWdvcnksIHN0cmluZyBtZXNzYWdlKQogICAgewogICAgICAgIGlmICghRW5hYmxlZCkgcmV0dXJuOwogICAgICAgIHZhciBsaW5lID0gJCJ7X2Nsb2NrLkdldExvY2FsTm93KCk6eXl5eS1NTS1kZCBISDptbTpzc30gLSB7Y2F0ZWdvcnl9ICB7bWVzc2FnZX0iOwogICAgICAgIF9xdWV1ZS5UcnlBZGQobGluZSk7CiAgICB9CgogICAgcHJpdmF0ZSBzdGF0aWMgc3RyaW5nIENhbGxlck5hbWUoKQogICAgewogICAgICAgIHRyeQogICAgICAgIHsKICAgICAgICAgICAgdmFyIGZyYW1lID0gbmV3IFN5c3RlbS5EaWFnbm9zdGljcy5TdGFja1RyYWNlKDIsIGZhbHNlKS5HZXRGcmFtZSgwKTsKICAgICAgICAgICAgdmFyIG1ldGhvZCA9IGZyYW1lPy5HZXRNZXRob2QoKTsKICAgICAgICAgICAgcmV0dXJuIG1ldGhvZCBpcyBudWxsID8gIkFwcExvZyIgOiAkInttZXRob2QuRGVjbGFyaW5nVHlwZT8uTmFtZX0ue21ldGhvZC5OYW1lfSI7CiAgICAgICAgfQogICAgICAgIGNhdGNoCiAgICAgICAgewogICAgICAgICAgICByZXR1cm4gIkFwcExvZyI7CiAgICAgICAgfQogICAgfQoKICAgIHByaXZhdGUgdm9pZCBGbHVzaExvb3AoKQogICAgewogICAgICAgIHZhciBsYXN0UHJ1bmUgPSBEYXRlVGltZS5NaW5WYWx1ZS5EYXRlOwogICAgICAgIGZvcmVhY2ggKHZhciBsaW5lIGluIF9xdWV1ZS5HZXRDb25zdW1pbmdFbnVtZXJhYmxlKCkpCiAgICAgICAgewogICAgICAgICAgICB0cnkKICAgICAgICAgICAgewogICAgICAgICAgICAgICAgaWYgKCFFbmFibGVkKSBjb250aW51ZTsgLy8gcmUtY2hlY2sgYXQgZmx1c2ggdGltZQogICAgICAgICAgICAgICAgRGlyZWN0b3J5LkNyZWF0ZURpcmVjdG9yeShfZGlyZWN0b3J5KTsKICAgICAgICAgICAgICAgIHZhciB0b2RheSA9IF9jbG9jay5HZXRMb2NhbE5vdygpLkRhdGU7CiAgICAgICAgICAgICAgICB2YXIgcGF0aCA9IFBhdGguQ29tYmluZShfZGlyZWN0b3J5LCAkInt0b2RheTp5eXl5LU1NLWRkfS5sb2ciKTsKICAgICAgICAgICAgICAgIHVzaW5nIHZhciB3cml0ZXIgPSBuZXcgU3RyZWFtV3JpdGVyKHBhdGgsIGFwcGVuZDogdHJ1ZSwgRW5jb2RpbmcuVVRGOCk7CiAgICAgICAgICAgICAgICB3cml0ZXIuV3JpdGVMaW5lKGxpbmUpOwoKICAgICAgICAgICAgICAgIGlmICh0b2RheSAhPSBsYXN0UHJ1bmUpCiAgICAgICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAgICAgbGFzdFBydW5lID0gdG9kYXk7CiAgICAgICAgICAgICAgICAgICAgUHJ1bmVPbGRGaWxlcyh0b2RheSk7CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgICAgY2F0Y2gKICAgICAgICAgICAgewogICAgICAgICAgICAgICAgLy8gTG9nZ2luZyBtdXN0IG5ldmVyIHRha2UgdGhlIGFwcGxpY2F0aW9uIGRvd24uCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9CgogICAgcHJpdmF0ZSB2b2lkIFBydW5lT2xkRmlsZXMoRGF0ZVRpbWUgdG9kYXkpCiAgICB7CiAgICAgICAgdHJ5CiAgICAgICAgewogICAgICAgICAgICBpZiAoIURpcmVjdG9yeS5FeGlzdHMoX2RpcmVjdG9yeSkpIHJldHVybjsKICAgICAgICAgICAgZm9yZWFjaCAodmFyIGZpbGUgaW4gbmV3IERpcmVjdG9yeUluZm8oX2RpcmVjdG9yeSkuR2V0RmlsZXMoIioubG9nIikpCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIGlmICh0b2RheS5TdWJ0cmFjdChmaWxlLkNyZWF0aW9uVGltZSkuVG90YWxEYXlzID49IFJldGVudGlvbkRheXMpCiAgICAgICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAgICAgdHJ5IHsgZmlsZS5EZWxldGUoKTsgfSBjYXRjaCB7IC8qIGluIHVzZSAqLyB9CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICAgICAgY2F0Y2gKICAgICAgICB7CiAgICAgICAgICAgIC8vIGJlc3QgZWZmb3J0CiAgICAgICAgfQogICAgfQoKICAgIC8vLyA8c3VtbWFyeT5GbHVzaGVzIGFuZCBzdG9wcyB0aGUgYmFja2dyb3VuZCB3cml0ZXIgKGNhbGxlZCBvbiBhcHAgZXhpdCkuPC9zdW1tYXJ5PgogICAgcHVibGljIHZvaWQgU2h1dGRvd24oKQogICAgewogICAgICAgIHRyeQogICAgICAgIHsKICAgICAgICAgICAgX3F1ZXVlLkNvbXBsZXRlQWRkaW5nKCk7CiAgICAgICAgICAgIF93cml0ZXIuV2FpdChUaW1lU3Bhbi5Gcm9tU2Vjb25kcygyKSk7CiAgICAgICAgfQogICAgICAgIGNhdGNoCiAgICAgICAgewogICAgICAgICAgICAvLyBzaHV0dGluZyBkb3duIGFueXdheQogICAgICAgIH0KICAgIH0KfQo=
+using System.Collections.Concurrent;
+using System.Text;
+
+namespace IPScaner.Core.Logging;
+
+/// <summary>
+/// Debug log writer, preserving the original tool's on-disk contract:
+/// <c>Logs\yyyy-MM-dd.log</c> under the application directory, one line per entry
+/// formatted <c>yyyy-MM-dd HH:mm:ss - Caller.Message  text</c>, with files older
+/// than 30 days pruned.
+/// </summary>
+/// <remarks>
+/// Writes are queued to a background flush loop exactly like the original, but
+/// the queue is bounded so a hung disk cannot exhaust memory during a /16 sweep.
+/// </remarks>
+public sealed class AppLog
+{
+    private const int MaxQueuedEntries = 8192;
+    private const int RetentionDays = 30;
+
+    private readonly BlockingCollection<string> _queue = new(new ConcurrentQueue<string>(), MaxQueuedEntries);
+    private readonly string _directory;
+    private readonly Task _writer;
+    private readonly TimeProvider _clock;
+
+    public static AppLog Instance { get; } = new();
+
+    /// <summary>Set from configuration; when false, queued entries are discarded.</summary>
+    public bool Enabled { get; set; }
+
+    public AppLog(string? directory = null, TimeProvider? clock = null)
+    {
+        _clock = clock ?? TimeProvider.System;
+        _directory = directory ?? Path.Combine(Storage.AppPaths.DataDirectory, "Logs");
+        _writer = Task.Factory.StartNew(FlushLoop, TaskCreationOptions.LongRunning);
+    }
+
+    /// <summary>Queues a line attributed to the calling method.</summary>
+    public void Log(string message) => Write(CallerName(), message);
+
+    public void Log(string category, string message) => Write(category, message);
+
+    private void Write(string category, string message)
+    {
+        if (!Enabled) return;
+        var line = $"{_clock.GetLocalNow():yyyy-MM-dd HH:mm:ss} - {category}  {message}";
+        _queue.TryAdd(line);
+    }
+
+    private static string CallerName()
+    {
+        try
+        {
+            var frame = new System.Diagnostics.StackTrace(2, false).GetFrame(0);
+            var method = frame?.GetMethod();
+            return method is null ? "AppLog" : $"{method.DeclaringType?.Name}.{method.Name}";
+        }
+        catch
+        {
+            return "AppLog";
+        }
+    }
+
+    private void FlushLoop()
+    {
+        var lastPrune = DateTime.MinValue.Date;
+        foreach (var line in _queue.GetConsumingEnumerable())
+        {
+            try
+            {
+                if (!Enabled) continue; // re-check at flush time
+                Directory.CreateDirectory(_directory);
+                var today = _clock.GetLocalNow().Date;
+                var path = Path.Combine(_directory, $"{today:yyyy-MM-dd}.log");
+                using var writer = new StreamWriter(path, append: true, Encoding.UTF8);
+                writer.WriteLine(line);
+
+                if (today != lastPrune)
+                {
+                    lastPrune = today;
+                    PruneOldFiles(today);
+                }
+            }
+            catch
+            {
+                // Logging must never take the application down.
+            }
+        }
+    }
+
+    private void PruneOldFiles(DateTime today)
+    {
+        try
+        {
+            if (!Directory.Exists(_directory)) return;
+            foreach (var file in new DirectoryInfo(_directory).GetFiles("*.log"))
+            {
+                if (today.Subtract(file.CreationTime).TotalDays >= RetentionDays)
+                {
+                    try { file.Delete(); } catch { /* in use */ }
+                }
+            }
+        }
+        catch
+        {
+            // best effort
+        }
+    }
+
+    /// <summary>Flushes and stops the background writer (called on app exit).</summary>
+    public void Shutdown()
+    {
+        try
+        {
+            _queue.CompleteAdding();
+            _writer.Wait(TimeSpan.FromSeconds(2));
+        }
+        catch
+        {
+            // shutting down anyway
+        }
+    }
+}

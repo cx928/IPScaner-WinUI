@@ -1,1 +1,570 @@
-dXNpbmcgU3lzdGVtLlJ1bnRpbWUuSW50ZXJvcFNlcnZpY2VzOwp1c2luZyBJUFNjYW5lci5Db3JlLkxvZ2dpbmc7CnVzaW5nIE1pY3Jvc29mdC5VSTsKdXNpbmcgTWljcm9zb2Z0LlVJLkRpc3BhdGNoaW5nOwp1c2luZyBNaWNyb3NvZnQuVUkuV2luZG93aW5nOwp1c2luZyBNaWNyb3NvZnQuVUkuWGFtbDsKdXNpbmcgV2luUlQuSW50ZXJvcDsKCm5hbWVzcGFjZSBJUFNjYW5lci5XaW5VSS5TZXJ2aWNlczsKCi8vLyA8c3VtbWFyeT4KLy8vIOezu+e7n+aJmOebmOWbvuaghyDigJQgdGhlIFdpblVJIHJlcGxhY2VtZW50IGZvciB0aGUgb3JpZ2luYWwncyBXaW5Gb3JtcwovLy8gPGM+Tm90aWZ5SWNvbjwvYz4gKDxjPm5vdGlmeUljb24xPC9jPiksIGltcGxlbWVudGVkIGRpcmVjdGx5IG9uCi8vLyA8Yz5TaGVsbF9Ob3RpZnlJY29uPC9jPiBiZWNhdXNlIFdpblVJIDMgaGFzIG5vIHRyYXkgQVBJLgovLy8gPC9zdW1tYXJ5PgovLy8gPHJlbWFya3M+Ci8vLyA8bGlzdCB0eXBlPSJidWxsZXQiPgovLy8gPGl0ZW0+YSBwcml2YXRlLCBuZXZlci1zaG93biB0b3AtbGV2ZWwgd2luZG93IHJlY2VpdmVzIHRoZSBzaGVsbCBjYWxsYmFjawovLy8gKDxjPldNX0FQUCArIDE8L2M+KSBvbiB0aGUgVUkgdGhyZWFkOzwvaXRlbT4KLy8vIDxpdGVtPmRvdWJsZS1jbGljayByZXN0b3JlcyB0aGUgbWFpbiB3aW5kb3csIHJpZ2h0LWNsaWNrIG9wZW5zIHRoZQovLy8g5pi+56S65Li755WM6Z2iIC8g6ZqQ6JePIC8g5YWz5LqOIC8g6YCA5Ye6IG1lbnUgdGhhdCB0aGUgb3JpZ2luYWwncwovLy8gPGM+Y29udGV4dE1lbnVOb3RpZnk8L2M+IHByb3ZpZGVkOzwvaXRlbT4KLy8vIDxpdGVtPjxzZWUgY3JlZj0iQXR0YWNoTWFpbldpbmRvdyIvPiByZXByb2R1Y2VzIOacgOWwj+WMluaXtumakOiXj+WIsOaJmOebmAovLy8gKDxzZWUgY3JlZj0iQ29yZS5Db25maWd1cmF0aW9uLkFwcENvbmZpZy5IaWRlTWFpbkVuYWJsZWQiLz4pOiBtaW5pbWlzaW5nIGhpZGVzCi8vLyB0aGUgd2luZG93IGZyb20gdGhlIHRhc2tiYXIgd2l0aCA8Yz5TV19ISURFPC9jPiBpbnN0ZWFkIG9mIGxldHRpbmcgaXQgc2l0IGluCi8vLyB0aGUgdGFza2Jhci48L2l0ZW0+Ci8vLyA8L2xpc3Q+Ci8vLyA8cGFyYT4KLy8vIFRoZSBjYWxsYmFjayB3aW5kb3cgaXMgY3JlYXRlZCBhcyBhIGhpZGRlbiB0b3AtbGV2ZWwgd2luZG93IHJhdGhlciB0aGFuIGEKLy8vIG1lc3NhZ2Utb25seSBvbmUgKDxjPkhXTkRfTUVTU0FHRTwvYz4pLiBUd28gbWVhc3VyZWQgYmVoYXZpb3VycyBmb3JjZWQgdGhhdAovLy8gY2hvaWNlOiAoMSkgdGhlIDxjPlRyYWNrUG9wdXBNZW51PC9jPiBjb250cmFjdCByZXF1aXJlcyB0aGUgb3duaW5nIHRocmVhZCB0byBiZQovLy8gZm9yZWdyb3VuZCBzbyB0aGUgbWVudSBjbG9zZXMgb24gRXNjIC8gYW4gb3V0c2lkZSBjbGljaywgYW5kIGEgbWVzc2FnZS1vbmx5Ci8vLyB3aW5kb3cgY2FuIG5ldmVyIGJlY29tZSBmb3JlZ3JvdW5kIOKAlCB0aGUgbWVudSBzdGF5ZWQgb24gc2NyZWVuIHVudGlsIGFuIGl0ZW0KLy8vIHdhcyBjbGlja2VkOyAoMikgPGM+VGFza2JhckNyZWF0ZWQ8L2M+IGlzIGJyb2FkY2FzdCB0byB0b3AtbGV2ZWwgd2luZG93cyBvbmx5LAovLy8gc28gYSBtZXNzYWdlLW9ubHkgd2luZG93IHdvdWxkIG5ldmVyIGxlYXJuIHRoYXQgRXhwbG9yZXIgcmVzdGFydGVkIGFuZCB0aGUgaWNvbgovLy8gd291bGQgZGlzYXBwZWFyIGZvciBnb29kLiBUaGlzIGlzIHRoZSBzYW1lIHNoYXBlIFdpbkZvcm1zJyA8Yz5Ob3RpZnlJY29uPC9jPgovLy8gdXNlcy4gVGhlIHdpbmRvdyBpcyBuZXZlciBzaG93biwgc28gaXQgaGFzIG5vIHRhc2tiYXIgYnV0dG9uIGFuZCBubyBBbHQrVGFiCi8vLyBlbnRyeSAoYWxzbyBleGNsdWRlZCBieSA8Yz5XU19FWF9UT09MV0lORE9XPC9jPikuCi8vLyA8L3BhcmE+Ci8vLyA8cGFyYT4KLy8vIFRoZSBvcmlnaW5hbCdzIHRvb2x0aXAgd2FzIHRoZSBsaXRlcmFsIGRlc2lnbmVyIHN0cmluZyA8Yz5ub3RpZnlJY29uMTwvYz47IGEgcmVhbAovLy8gcHJvZHVjdCBuYW1lIGlzIHVzZWQgaW5zdGVhZCwgYXMgdGhlIHJldmVyc2UtZW5naW5lZXJpbmcgbm90ZXMgcmVjb21tZW5kLgovLy8gSXRzIDEtc2Vjb25kIGJhbGxvb24gb24gZXZlcnkgbWluaW1pc2UgaXMgZGVsaWJlcmF0ZWx5IG5vdCByZXByb2R1Y2VkIOKAlCB0aGUKLy8vIHNoZWxsIGhhcyBkZXByZWNhdGVkIGJhbGxvb24gdGlwcyBhbmQgdGhlIGNvbmZpZyBzdXJmYWNlIGhhcyBubyBzd2l0Y2ggZm9yIGl0LgovLy8gPC9wYXJhPgovLy8gPHBhcmE+QWxsIG1lbWJlcnMgbXVzdCBiZSB1c2VkIGZyb20gdGhlIFVJIHRocmVhZC48L3BhcmE+Ci8vLyA8L3JlbWFya3M+CnB1YmxpYyBzZWFsZWQgY2xhc3MgVHJheUljb24gOiBJRGlzcG9zYWJsZQp7CiAgICBwcml2YXRlIGNvbnN0IHN0cmluZyBXaW5kb3dDbGFzc05hbWUgPSAiSVBTY2FuZXJUcmF5SWNvbk1lc3NhZ2VXaW5kb3ciOwoKICAgIHByaXZhdGUgY29uc3QgdWludCBUcmF5SWNvbklkID0gMTsKCiAgICAvLy8gPHN1bW1hcnk+PGM+V01fQVBQICsgMTwvYz4sIHRoZSBjYWxsYmFjayBtZXNzYWdlIHRoZSBzaGVsbCBzZW5kcyB0aGUgaWNvbidzIHdpbmRvdy48L3N1bW1hcnk+CiAgICBwcml2YXRlIGNvbnN0IHVpbnQgQ2FsbGJhY2tNZXNzYWdlID0gMHg4MDAwICsgMTsKCiAgICAvLyAtLS0tIG1lc3NhZ2VzIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgIHByaXZhdGUgY29uc3QgdWludCBXTV9OVUxMID0gMHgwMDAwOwogICAgcHJpdmF0ZSBjb25zdCB1aW50IFdNX0xCVVRUT05EQkxDTEsgPSAweDAyMDM7CiAgICBwcml2YXRlIGNvbnN0IHVpbnQgV01fUkJVVFRPTlVQID0gMHgwMjA1OwoKICAgIC8vIC0tLS0gU2hlbGxfTm90aWZ5SWNvbiAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgcHJpdmF0ZSBjb25zdCB1aW50IE5JTV9BREQgPSAweDAwMDAwMDAwOwogICAgcHJpdmF0ZSBjb25zdCB1aW50IE5JTV9ERUxFVEUgPSAweDAwMDAwMDAyOwogICAgcHJpdmF0ZSBjb25zdCB1aW50IE5JRl9NRVNTQUdFID0gMHgwMDAwMDAwMTsKICAgIHByaXZhdGUgY29uc3QgdWludCBOSUZfSUNPTiA9IDB4MDAwMDAwMDI7CiAgICBwcml2YXRlIGNvbnN0IHVpbnQgTklGX1RJUCA9IDB4MDAwMDAwMDQ7CgogICAgLy8gLS0tLSBpY29ucyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICBwcml2YXRlIGNvbnN0IHVpbnQgSU1BR0VfSUNPTiA9IDE7CiAgICBwcml2YXRlIGNvbnN0IHVpbnQgTFJfTE9BREZST01GSUxFID0gMHgwMDAwMDAxMDsKICAgIHByaXZhdGUgY29uc3QgdWludCBMUl9ERUZBVUxUU0laRSA9IDB4MDAwMDAwNDA7CgogICAgLy8vIDxzdW1tYXJ5PjxjPklESV9BUFBMSUNBVElPTjwvYz4gKDxjPk1BS0VJTlRSRVNPVVJDRSgzMjUxMik8L2M+KS48L3N1bW1hcnk+CiAgICBwcml2YXRlIHN0YXRpYyByZWFkb25seSBJbnRQdHIgSURJX0FQUExJQ0FUSU9OID0gbmV3KDMyNTEyKTsKCiAgICAvLyAtLS0tIG1lbnVzIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgIHByaXZhdGUgY29uc3QgdWludCBNRl9TVFJJTkcgPSAweDAwMDAwMDAwOwogICAgcHJpdmF0ZSBjb25zdCB1aW50IE1GX1NFUEFSQVRPUiA9IDB4MDAwMDA4MDA7CiAgICBwcml2YXRlIGNvbnN0IHVpbnQgVFBNX1JFVFVSTkNNRCA9IDB4MDAwMDAxMDA7CiAgICBwcml2YXRlIGNvbnN0IHVpbnQgVFBNX1JJR0hUQlVUVE9OID0gMHgwMDAwMDAwMjsKCiAgICBwcml2YXRlIGNvbnN0IGludCBDbWRTaG93TWFpbiA9IDE7CiAgICBwcml2YXRlIGNvbnN0IGludCBDbWRIaWRlTWFpbiA9IDI7CiAgICBwcml2YXRlIGNvbnN0IGludCBDbWRBYm91dCA9IDM7CiAgICBwcml2YXRlIGNvbnN0IGludCBDbWRFeGl0ID0gNDsKCiAgICAvLyAtLS0tIHdpbmRvdyBjb21tYW5kcyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgIHByaXZhdGUgY29uc3QgaW50IFNXX0hJREUgPSAwOwogICAgcHJpdmF0ZSBjb25zdCBpbnQgU1dfU0hPVyA9IDU7CiAgICBwcml2YXRlIGNvbnN0IGludCBTV19NSU5JTUlaRSA9IDY7CgogICAgcHJpdmF0ZSBjb25zdCB1aW50IFdTX1BPUFVQID0gMHg4MDAwMDAwMDsKICAgIHByaXZhdGUgY29uc3QgdWludCBXU19FWF9UT09MV0lORE9XID0gMHgwMDAwMDA4MDsKCiAgICBwcml2YXRlIGNvbnN0IHVpbnQgRVJST1JfQ0xBU1NfQUxSRUFEWV9FWElTVFMgPSAxNDEwOwoKICAgIHByaXZhdGUgc3RhdGljIHJlYWRvbmx5IEludFB0ciBIV05EX01FU1NBR0UgPSBuZXcoLTMpOwoKICAgIHByaXZhdGUgcmVhZG9ubHkgc3RyaW5nIF90b29sdGlwOwogICAgcHJpdmF0ZSByZWFkb25seSBBY3Rpb24gX29uQWN0aXZhdGU7CiAgICBwcml2YXRlIHJlYWRvbmx5IEFjdGlvbiBfb25FeGl0OwogICAgcHJpdmF0ZSByZWFkb25seSBEaXNwYXRjaGVyUXVldWU/IF9kaXNwYXRjaGVyOwogICAgcHJpdmF0ZSByZWFkb25seSB1aW50IF90YXNrYmFyQ3JlYXRlZE1lc3NhZ2U7CgogICAgLy8vIDxzdW1tYXJ5PgogICAgLy8vIEhlbGQgYXMgYSBmaWVsZCBvbiBwdXJwb3NlOiB0aGUgbmF0aXZlIHdpbmRvdyBjbGFzcyBzdG9yZXMgYSByYXcgZnVuY3Rpb24KICAgIC8vLyBwb2ludGVyLCBzbyBhIGNvbGxlY3RlZCBkZWxlZ2F0ZSB3b3VsZCBjcmFzaCB0aGUgc2hlbGwgY2FsbGJhY2suCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgcHJpdmF0ZSByZWFkb25seSBXbmRQcm9jRGVsZWdhdGUgX3duZFByb2M7CgogICAgcHJpdmF0ZSBJbnRQdHIgX2h3bmQ7CiAgICBwcml2YXRlIEludFB0ciBfaWNvbjsKICAgIHByaXZhdGUgYm9vbCBfb3duc0ljb247CiAgICBwcml2YXRlIGJvb2wgX2FkZGVkOwogICAgcHJpdmF0ZSBib29sIF9kaXNwb3NlZDsKCiAgICBwcml2YXRlIFdpbmRvdz8gX21haW5XaW5kb3c7CiAgICBwcml2YXRlIEFwcFdpbmRvdz8gX2FwcFdpbmRvdzsKICAgIHByaXZhdGUgRnVuYzxib29sPj8gX2hpZGVUb1RyYXlFbmFibGVkOwogICAgcHJpdmF0ZSBib29sIF9yZXN0b3Jpbmc7CgogICAgLy8vIDxwYXJhbSBuYW1lPSJ0b29sdGlwIj5UcmF5IHRvb2x0aXAgKG1heCAxMjcgY2hhcmFjdGVycyksIHNob3duIG9uIGhvdmVyLjwvcGFyYW0+CiAgICAvLy8gPHBhcmFtIG5hbWU9Im9uQWN0aXZhdGUiPkludm9rZWQgZm9yIGEgZG91YmxlLWNsaWNrIGFuZCBmb3Ig5pi+56S65Li755WM6Z2iLjwvcGFyYW0+CiAgICAvLy8gPHBhcmFtIG5hbWU9Im9uRXhpdCI+SW52b2tlZCBmb3Ig6YCA5Ye6OyB0aGUgaGFuZGxlciBvd25zIHRoZSBjb25maXJtYXRpb24gcHJvbXB0LjwvcGFyYW0+CiAgICBwdWJsaWMgVHJheUljb24oc3RyaW5nIHRvb2x0aXAsIEFjdGlvbiBvbkFjdGl2YXRlLCBBY3Rpb24gb25FeGl0KQogICAgewogICAgICAgIEFyZ3VtZW50TnVsbEV4Y2VwdGlvbi5UaHJvd0lmTnVsbChvbkFjdGl2YXRlKTsKICAgICAgICBBcmd1bWVudE51bGxFeGNlcHRpb24uVGhyb3dJZk51bGwob25FeGl0KTsKCiAgICAgICAgdmFyIHRleHQgPSBzdHJpbmcuSXNOdWxsT3JXaGl0ZVNwYWNlKHRvb2x0aXApID8gIuWxgOWfn+e9kUlQ5omr5o+P5bel5YW3IiA6IHRvb2x0aXAuVHJpbSgpOwogICAgICAgIF90b29sdGlwID0gdGV4dC5MZW5ndGggPiAxMjcgPyB0ZXh0Wy4uMTI3XSA6IHRleHQ7IC8vIHN6VGlwIGlzIDEyOCBjaGFycyBpbmNsLiB0aGUgdGVybWluYXRvcgogICAgICAgIF9vbkFjdGl2YXRlID0gb25BY3RpdmF0ZTsKICAgICAgICBfb25FeGl0ID0gb25FeGl0OwogICAgICAgIF9kaXNwYXRjaGVyID0gRGlzcGF0Y2hlclF1ZXVlLkdldEZvckN1cnJlbnRUaHJlYWQoKTsKICAgICAgICBfd25kUHJvYyA9IFdpbmRvd1Byb2M7CiAgICAgICAgX3Rhc2tiYXJDcmVhdGVkTWVzc2FnZSA9IFJlZ2lzdGVyV2luZG93TWVzc2FnZVcoIlRhc2tiYXJDcmVhdGVkIik7CgogICAgICAgIENyZWF0ZU1lc3NhZ2VXaW5kb3coKTsKICAgICAgICBfaWNvbiA9IExvYWRUcmF5SWNvbigpOwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT5BZGRzIHRoZSBpY29uIHRvIHRoZSBub3RpZmljYXRpb24gYXJlYSAodGhlIG9yaWdpbmFsIHdhcyB2aXNpYmxlIGZyb20gc3RhcnR1cCkuPC9zdW1tYXJ5PgogICAgcHVibGljIHZvaWQgU2hvdygpCiAgICB7CiAgICAgICAgaWYgKF9kaXNwb3NlZCB8fCBfaHduZCA9PSBJbnRQdHIuWmVybykgcmV0dXJuOwogICAgICAgIEFkZEljb24oKTsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+UmVtb3ZlcyB0aGUgaWNvbiBmcm9tIHRoZSBub3RpZmljYXRpb24gYXJlYS48L3N1bW1hcnk+CiAgICBwdWJsaWMgdm9pZCBIaWRlKCkKICAgIHsKICAgICAgICBpZiAoIV9hZGRlZCB8fCBfaHduZCA9PSBJbnRQdHIuWmVybykgcmV0dXJuOwoKICAgICAgICB0cnkKICAgICAgICB7CiAgICAgICAgICAgIHZhciBkYXRhID0gQ3JlYXRlRGF0YSgpOwogICAgICAgICAgICBpZiAoIVNoZWxsX05vdGlmeUljb25XKE5JTV9ERUxFVEUsIHJlZiBkYXRhKSkKICAgICAgICAgICAgICAgIEFwcExvZy5JbnN0YW5jZS5Mb2cobmFtZW9mKFRyYXlJY29uKSwgJCLnp7vpmaTmiZjnm5jlm77moIflpLHotKUgKFdpbjMyPXtNYXJzaGFsLkdldExhc3RXaW4zMkVycm9yKCl9KSIpOwogICAgICAgIH0KICAgICAgICBjYXRjaCAoRXhjZXB0aW9uIGV4KQogICAgICAgIHsKICAgICAgICAgICAgQXBwTG9nLkluc3RhbmNlLkxvZyhuYW1lb2YoVHJheUljb24pLCAi56e76Zmk5omY55uY5Zu+5qCH5byC5bi4OiAiICsgZXguTWVzc2FnZSk7CiAgICAgICAgfQogICAgICAgIGZpbmFsbHkKICAgICAgICB7CiAgICAgICAgICAgIF9hZGRlZCA9IGZhbHNlOwogICAgICAgIH0KICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+CiAgICAvLy8gSG9va3MgdGhlIG1haW4gd2luZG93IHNvIHRoYXQgbWluaW1pc2luZyBpdCBoaWRlcyB0aGUgd2luZG93IGZyb20gdGhlCiAgICAvLy8gdGFza2JhciB3aGlsZSDmnIDlsI/ljJbml7bpmpDol4/liLDmiZjnm5ggaXMgZW5hYmxlZC4KICAgIC8vLyA8L3N1bW1hcnk+CiAgICAvLy8gPHBhcmFtIG5hbWU9IndpbmRvdyI+VGhlIG1haW4gd2luZG93LjwvcGFyYW0+CiAgICAvLy8gPHBhcmFtIG5hbWU9ImhpZGVUb1RyYXlFbmFibGVkIj5SZWFkcyB0aGUgbGl2ZSA8Yz5IaWRlTWFpbkVuYWJsZWQ8L2M+IGZsYWcuPC9wYXJhbT4KICAgIHB1YmxpYyB2b2lkIEF0dGFjaE1haW5XaW5kb3coV2luZG93IHdpbmRvdywgRnVuYzxib29sPiBoaWRlVG9UcmF5RW5hYmxlZCkKICAgIHsKICAgICAgICBBcmd1bWVudE51bGxFeGNlcHRpb24uVGhyb3dJZk51bGwod2luZG93KTsKICAgICAgICBBcmd1bWVudE51bGxFeGNlcHRpb24uVGhyb3dJZk51bGwoaGlkZVRvVHJheUVuYWJsZWQpOwoKICAgICAgICBfbWFpbldpbmRvdyA9IHdpbmRvdzsKICAgICAgICBfaGlkZVRvVHJheUVuYWJsZWQgPSBoaWRlVG9UcmF5RW5hYmxlZDsKCiAgICAgICAgdmFyIGh3bmQgPSBXaW5kb3dOYXRpdmUuR2V0V2luZG93SGFuZGxlKHdpbmRvdyk7CiAgICAgICAgX2FwcFdpbmRvdyA9IEFwcFdpbmRvdy5HZXRGcm9tV2luZG93SWQoV2luMzJJbnRlcm9wLkdldFdpbmRvd0lkRnJvbVdpbmRvdyhod25kKSk7CiAgICAgICAgX2FwcFdpbmRvdy5DaGFuZ2VkICs9IE9uQXBwV2luZG93Q2hhbmdlZDsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+CiAgICAvLy8gQnJpbmdzIHRoZSBtYWluIHdpbmRvdyBiYWNrIGFmdGVyIGl0IHdhcyBtaW5pbWlzZWQgdG8gdGhlIHRyYXk6CiAgICAvLy8gPGM+U1dfU0hPVzwvYz4gKHRoZSB3aW5kb3cgd2FzIGhpZGRlbiBvdXRyaWdodCkgZm9sbG93ZWQgYnkgdGhlIHNoYXJlZAogICAgLy8vIGFjdGl2YXRlL3Jlc3RvcmUvZm9yZWdyb3VuZCBoZWxwZXIuCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgcHVibGljIHZvaWQgUmVzdG9yZU1haW5XaW5kb3coKQogICAgewogICAgICAgIHZhciB3aW5kb3cgPSBfbWFpbldpbmRvdyA/PyBBcHAuTWFpbldpbmRvdzsKICAgICAgICBpZiAod2luZG93IGlzIG51bGwpIHJldHVybjsKCiAgICAgICAgX3Jlc3RvcmluZyA9IHRydWU7CiAgICAgICAgdHJ5CiAgICAgICAgewogICAgICAgICAgICB2YXIgaHduZCA9IFdpbmRvd05hdGl2ZS5HZXRXaW5kb3dIYW5kbGUod2luZG93KTsKICAgICAgICAgICAgU2hvd1dpbmRvdyhod25kLCBTV19TSE9XKTsKICAgICAgICAgICAgVWlLaXQuQWN0aXZhdGVNYWluV2luZG93KCk7CiAgICAgICAgfQogICAgICAgIGZpbmFsbHkKICAgICAgICB7CiAgICAgICAgICAgIC8vIENsZWFyZWQgb25jZSB0aGUgcmVzdG9yZSdzIHdpbmRvdyBtZXNzYWdlcyBoYXZlIGJlZW4gcHVtcGVkLCBzbyB0aGUKICAgICAgICAgICAgLy8gdHJhbnNpdGlvbmFsICJzdGlsbCBtaW5pbWl6ZWQiIG5vdGlmaWNhdGlvbnMgY2Fubm90IHJlLWhpZGUgdGhlIHdpbmRvdy4KICAgICAgICAgICAgaWYgKF9kaXNwYXRjaGVyIGlzIG5vdCBudWxsKSBfZGlzcGF0Y2hlci5UcnlFbnF1ZXVlKCgpID0+IF9yZXN0b3JpbmcgPSBmYWxzZSk7CiAgICAgICAgICAgIGVsc2UgX3Jlc3RvcmluZyA9IGZhbHNlOwogICAgICAgIH0KICAgIH0KCiAgICBwdWJsaWMgdm9pZCBEaXNwb3NlKCkKICAgIHsKICAgICAgICBpZiAoX2Rpc3Bvc2VkKSByZXR1cm47CiAgICAgICAgX2Rpc3Bvc2VkID0gdHJ1ZTsKCiAgICAgICAgSGlkZSgpOyAvLyBTaGVsbF9Ob3RpZnlJY29uKE5JTV9ERUxFVEUpIGJlZm9yZSB0aGUgd2luZG93IGl0IGJlbG9uZ3MgdG8gZ29lcyBhd2F5CgogICAgICAgIGlmIChfYXBwV2luZG93IGlzIG5vdCBudWxsKQogICAgICAgIHsKICAgICAgICAgICAgdHJ5IHsgX2FwcFdpbmRvdy5DaGFuZ2VkIC09IE9uQXBwV2luZG93Q2hhbmdlZDsgfSBjYXRjaCB7IC8qIHdpbmRvdyBhbHJlYWR5IGdvbmUgKi8gfQogICAgICAgICAgICBfYXBwV2luZG93ID0gbnVsbDsKICAgICAgICB9CiAgICAgICAgX21haW5XaW5kb3cgPSBudWxsOwogICAgICAgIF9oaWRlVG9UcmF5RW5hYmxlZCA9IG51bGw7CgogICAgICAgIGlmIChfaHduZCAhPSBJbnRQdHIuWmVybykKICAgICAgICB7CiAgICAgICAgICAgIERlc3Ryb3lXaW5kb3coX2h3bmQpOwogICAgICAgICAgICBfaHduZCA9IEludFB0ci5aZXJvOwogICAgICAgIH0KCiAgICAgICAgaWYgKF9vd25zSWNvbiAmJiBfaWNvbiAhPSBJbnRQdHIuWmVybykgRGVzdHJveUljb24oX2ljb24pOwogICAgICAgIF9pY29uID0gSW50UHRyLlplcm87CiAgICAgICAgX293bnNJY29uID0gZmFsc2U7CiAgICB9CgogICAgLy8gLS0tLSBub3RpZmljYXRpb25zIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgogICAgcHJpdmF0ZSB2b2lkIEFkZEljb24oKQogICAgewogICAgICAgIGlmIChfYWRkZWQpIHJldHVybjsKCiAgICAgICAgdHJ5CiAgICAgICAgewogICAgICAgICAgICB2YXIgZGF0YSA9IENyZWF0ZURhdGEoKTsKICAgICAgICAgICAgZGF0YS51RmxhZ3MgPSBOSUZfTUVTU0FHRSB8IE5JRl9JQ09OIHwgTklGX1RJUDsKICAgICAgICAgICAgZGF0YS51Q2FsbGJhY2tNZXNzYWdlID0gQ2FsbGJhY2tNZXNzYWdlOwogICAgICAgICAgICBkYXRhLmhJY29uID0gX2ljb247CiAgICAgICAgICAgIGRhdGEuc3pUaXAgPSBfdG9vbHRpcDsKCiAgICAgICAgICAgIGlmIChTaGVsbF9Ob3RpZnlJY29uVyhOSU1fQURELCByZWYgZGF0YSkpIF9hZGRlZCA9IHRydWU7CiAgICAgICAgICAgIGVsc2UgQXBwTG9nLkluc3RhbmNlLkxvZyhuYW1lb2YoVHJheUljb24pLCAkIua3u+WKoOaJmOebmOWbvuagh+Wksei0pSAoV2luMzI9e01hcnNoYWwuR2V0TGFzdFdpbjMyRXJyb3IoKX0pIik7CiAgICAgICAgfQogICAgICAgIGNhdGNoIChFeGNlcHRpb24gZXgpCiAgICAgICAgewogICAgICAgICAgICBBcHBMb2cuSW5zdGFuY2UuTG9nKG5hbWVvZihUcmF5SWNvbiksICLmt7vliqDmiZjnm5jlm77moIflvILluLg6ICIgKyBleC5NZXNzYWdlKTsKICAgICAgICB9CiAgICB9CgogICAgcHJpdmF0ZSBOT1RJRllJQ09OREFUQVcgQ3JlYXRlRGF0YSgpID0+IG5ldygpCiAgICB7CiAgICAgICAgY2JTaXplID0gKHVpbnQpTWFyc2hhbC5TaXplT2Y8Tk9USUZZSUNPTkRBVEFXPigpLAogICAgICAgIGhXbmQgPSBfaHduZCwKICAgICAgICB1SUQgPSBUcmF5SWNvbklkLAogICAgICAgIHN6VGlwID0gc3RyaW5nLkVtcHR5LAogICAgICAgIHN6SW5mbyA9IHN0cmluZy5FbXB0eSwKICAgICAgICBzekluZm9UaXRsZSA9IHN0cmluZy5FbXB0eSwKICAgIH07CgogICAgcHJpdmF0ZSBzdGF0aWMgSW50UHRyIExvYWRUcmF5SWNvbigpCiAgICB7CiAgICAgICAgdHJ5CiAgICAgICAgewogICAgICAgICAgICB2YXIgcGF0aCA9IFBhdGguQ29tYmluZShBcHBDb250ZXh0LkJhc2VEaXJlY3RvcnksICJBc3NldHMiLCAiYXBwLmljbyIpOwogICAgICAgICAgICBpZiAoRmlsZS5FeGlzdHMocGF0aCkpCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIHZhciBpY29uID0gTG9hZEltYWdlVyhJbnRQdHIuWmVybywgcGF0aCwgSU1BR0VfSUNPTiwgMCwgMCwgTFJfTE9BREZST01GSUxFIHwgTFJfREVGQVVMVFNJWkUpOwogICAgICAgICAgICAgICAgaWYgKGljb24gIT0gSW50UHRyLlplcm8pIHJldHVybiBpY29uOwogICAgICAgICAgICAgICAgQXBwTG9nLkluc3RhbmNlLkxvZyhuYW1lb2YoVHJheUljb24pLCAi5Yqg6L29IGFwcC5pY28g5aSx6LSl77yM5pS555So57O757uf6buY6K6k5Zu+5qCHIik7CiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICAgICAgY2F0Y2ggKEV4Y2VwdGlvbiBleCkKICAgICAgICB7CiAgICAgICAgICAgIEFwcExvZy5JbnN0YW5jZS5Mb2cobmFtZW9mKFRyYXlJY29uKSwgIuWKoOi9veaJmOebmOWbvuagh+W8guW4uDogIiArIGV4Lk1lc3NhZ2UpOwogICAgICAgIH0KCiAgICAgICAgcmV0dXJuIExvYWRJY29uVyhJbnRQdHIuWmVybywgSURJX0FQUExJQ0FUSU9OKTsgLy8gc2hhcmVkIGljb246IG5ldmVyIGRlc3Ryb3kgaXQKICAgIH0KCiAgICAvLyAtLS0tIG1lc3NhZ2Ugd2luZG93IC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCiAgICBwcml2YXRlIHZvaWQgQ3JlYXRlTWVzc2FnZVdpbmRvdygpCiAgICB7CiAgICAgICAgdmFyIGluc3RhbmNlID0gR2V0TW9kdWxlSGFuZGxlVyhudWxsKTsKCiAgICAgICAgdmFyIHdpbmRvd0NsYXNzID0gbmV3IFdORENMQVNTRVhXCiAgICAgICAgewogICAgICAgICAgICBjYlNpemUgPSAodWludClNYXJzaGFsLlNpemVPZjxXTkRDTEFTU0VYVz4oKSwKICAgICAgICAgICAgbHBmblduZFByb2MgPSBNYXJzaGFsLkdldEZ1bmN0aW9uUG9pbnRlckZvckRlbGVnYXRlKF93bmRQcm9jKSwKICAgICAgICAgICAgaEluc3RhbmNlID0gaW5zdGFuY2UsCiAgICAgICAgICAgIGxwc3pDbGFzc05hbWUgPSBXaW5kb3dDbGFzc05hbWUsCiAgICAgICAgfTsKCiAgICAgICAgaWYgKFJlZ2lzdGVyQ2xhc3NFeFcocmVmIHdpbmRvd0NsYXNzKSA9PSAwKQogICAgICAgIHsKICAgICAgICAgICAgdmFyIGVycm9yID0gTWFyc2hhbC5HZXRMYXN0V2luMzJFcnJvcigpOwogICAgICAgICAgICBpZiAoZXJyb3IgIT0gRVJST1JfQ0xBU1NfQUxSRUFEWV9FWElTVFMpCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIEFwcExvZy5JbnN0YW5jZS5Mb2cobmFtZW9mKFRyYXlJY29uKSwgJCLms6jlhozmiZjnm5jnqpflj6PnsbvlpLHotKUgKFdpbjMyPXtlcnJvcn0pIik7CiAgICAgICAgICAgICAgICByZXR1cm47CiAgICAgICAgICAgIH0KICAgICAgICB9CgogICAgICAgIC8vIEhpZGRlbiB0b3AtbGV2ZWwgd2luZG93IChzZWUgdGhlIGNsYXNzIHJlbWFya3MgZm9yIHdoeSBpdCBpcyBub3QKICAgICAgICAvLyBIV05EX01FU1NBR0UpOyBXU19FWF9UT09MV0lORE9XIGtlZXBzIGl0IG91dCBvZiBBbHQrVGFiIHNob3VsZCBpdCBldmVyCiAgICAgICAgLy8gYmUgc2hvd24sIGFuZCBpdCBpcyBuZXZlciBwYXNzZWQgdG8gU2hvd1dpbmRvdy4KICAgICAgICBfaHduZCA9IENyZWF0ZVdpbmRvd0V4VygKICAgICAgICAgICAgV1NfRVhfVE9PTFdJTkRPVywgV2luZG93Q2xhc3NOYW1lLCBzdHJpbmcuRW1wdHksIFdTX1BPUFVQLAogICAgICAgICAgICAwLCAwLCAwLCAwLAogICAgICAgICAgICBJbnRQdHIuWmVybywgSW50UHRyLlplcm8sIGluc3RhbmNlLCBJbnRQdHIuWmVybyk7CgogICAgICAgIGlmIChfaHduZCA9PSBJbnRQdHIuWmVybykKICAgICAgICAgICAgQXBwTG9nLkluc3RhbmNlLkxvZyhuYW1lb2YoVHJheUljb24pLCAkIuWIm+W7uuaJmOebmOa2iOaBr+eql+WPo+Wksei0pSAoV2luMzI9e01hcnNoYWwuR2V0TGFzdFdpbjMyRXJyb3IoKX0pIik7CiAgICB9CgogICAgcHJpdmF0ZSBJbnRQdHIgV2luZG93UHJvYyhJbnRQdHIgaFduZCwgdWludCBtc2csIEludFB0ciB3UGFyYW0sIEludFB0ciBsUGFyYW0pCiAgICB7CiAgICAgICAgdHJ5CiAgICAgICAgewogICAgICAgICAgICBpZiAobXNnID09IENhbGxiYWNrTWVzc2FnZSkKICAgICAgICAgICAgewogICAgICAgICAgICAgICAgLy8gVGhlIG1vdXNlIGV2ZW50IGFycml2ZXMgaW4gdGhlIGxvdyB3b3JkIG9mIGxQYXJhbS4KICAgICAgICAgICAgICAgIHN3aXRjaCAoKHVpbnQpKGxQYXJhbS5Ub0ludDY0KCkgJiAweEZGRkYpKQogICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgIGNhc2UgV01fTEJVVFRPTkRCTENMSzoKICAgICAgICAgICAgICAgICAgICAgICAgUmVzdG9yZU1haW5XaW5kb3coKTsKICAgICAgICAgICAgICAgICAgICAgICAgX29uQWN0aXZhdGUoKTsKICAgICAgICAgICAgICAgICAgICAgICAgcmV0dXJuIEludFB0ci5aZXJvOwoKICAgICAgICAgICAgICAgICAgICBjYXNlIFdNX1JCVVRUT05VUDoKICAgICAgICAgICAgICAgICAgICAgICAgU2hvd0NvbnRleHRNZW51KCk7CiAgICAgICAgICAgICAgICAgICAgICAgIHJldHVybiBJbnRQdHIuWmVybzsKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICBlbHNlIGlmIChfdGFza2JhckNyZWF0ZWRNZXNzYWdlICE9IDAgJiYgbXNnID09IF90YXNrYmFyQ3JlYXRlZE1lc3NhZ2UpCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIC8vIEV4cGxvcmVyIHJlc3RhcnRlZDogdGhlIHNoZWxsIGZvcmdvdCBldmVyeSBpY29uLCBzbyByZS1hZGQgb3VycwogICAgICAgICAgICAgICAgLy8gKFdpbkZvcm1zJyBOb3RpZnlJY29uIGRpZCB0aGlzIGZvciB0aGUgb3JpZ2luYWwpLgogICAgICAgICAgICAgICAgQXBwTG9nLkluc3RhbmNlLkxvZyhuYW1lb2YoVHJheUljb24pLCAi5Lu75Yqh5qCP5bey6YeN5bu677yM6YeN5paw5re75Yqg5omY55uY5Zu+5qCHIik7CiAgICAgICAgICAgICAgICBfYWRkZWQgPSBmYWxzZTsKICAgICAgICAgICAgICAgIEFkZEljb24oKTsKICAgICAgICAgICAgICAgIHJldHVybiBJbnRQdHIuWmVybzsKICAgICAgICAgICAgfQogICAgICAgIH0KICAgICAgICBjYXRjaCAoRXhjZXB0aW9uIGV4KQogICAgICAgIHsKICAgICAgICAgICAgQXBwTG9nLkluc3RhbmNlLkxvZyhuYW1lb2YoVHJheUljb24pLCAi5omY55uY5Zue6LCD5byC5bi4OiAiICsgZXguTWVzc2FnZSk7CiAgICAgICAgfQoKICAgICAgICByZXR1cm4gRGVmV2luZG93UHJvY1coaFduZCwgbXNnLCB3UGFyYW0sIGxQYXJhbSk7CiAgICB9CgogICAgLy8gLS0tLSBwb3B1cCBtZW51IC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgogICAgcHJpdmF0ZSB2b2lkIFNob3dDb250ZXh0TWVudSgpCiAgICB7CiAgICAgICAgdmFyIG1lbnUgPSBDcmVhdGVQb3B1cE1lbnUoKTsKICAgICAgICBpZiAobWVudSA9PSBJbnRQdHIuWmVybykgcmV0dXJuOwoKICAgICAgICB0cnkKICAgICAgICB7CiAgICAgICAgICAgIC8vIFNhbWUgNSBlbnRyaWVzIGFzIHRoZSBvcmlnaW5hbCBjb250ZXh0TWVudU5vdGlmeSwgQ2hpbmVzZSBzdHJpbmdzIHZlcmJhdGltLgogICAgICAgICAgICBBcHBlbmRNZW51VyhtZW51LCBNRl9TVFJJTkcsIENtZFNob3dNYWluLCAi5pi+56S65Li755WM6Z2iKCZTKSIpOwogICAgICAgICAgICBBcHBlbmRNZW51VyhtZW51LCBNRl9TVFJJTkcsIENtZEhpZGVNYWluLCAi6ZqQ6JePKCZIKSIpOwogICAgICAgICAgICBBcHBlbmRNZW51VyhtZW51LCBNRl9TRVBBUkFUT1IsIDAsIG51bGwpOwogICAgICAgICAgICBBcHBlbmRNZW51VyhtZW51LCBNRl9TVFJJTkcsIENtZEFib3V0LCAi5YWz5LqOKCZBKSIpOwogICAgICAgICAgICBBcHBlbmRNZW51VyhtZW51LCBNRl9TVFJJTkcsIENtZEV4aXQsICLpgIDlh7ooJlgpIik7CgogICAgICAgICAgICBpZiAoIUdldEN1cnNvclBvcyhvdXQgdmFyIGN1cnNvcikpIGN1cnNvciA9IGRlZmF1bHQ7CgogICAgICAgICAgICAvLyBEb2N1bWVudGVkIFRyYWNrUG9wdXBNZW51IHBhdHRlcm46IHRoZSBvd25lciBtdXN0IGJlIGZvcmVncm91bmQgb3IgdGhlCiAgICAgICAgICAgIC8vIG1lbnUgd2lsbCBub3QgY2xvc2Ugd2hlbiB0aGUgdXNlciBjbGlja3MgZWxzZXdoZXJlLiBBIG1lc3NhZ2Utb25seQogICAgICAgICAgICAvLyB3aW5kb3cgY2Fubm90IGJlIGZvcmVncm91bmQsIHNvIHRoaXMgaXMgYmVzdC1lZmZvcnQgb25seS4KICAgICAgICAgICAgU2V0Rm9yZWdyb3VuZFdpbmRvdyhfaHduZCk7CiAgICAgICAgICAgIHZhciBjb21tYW5kID0gVHJhY2tQb3B1cE1lbnUoCiAgICAgICAgICAgICAgICBtZW51LCBUUE1fUkVUVVJOQ01EIHwgVFBNX1JJR0hUQlVUVE9OLAogICAgICAgICAgICAgICAgY3Vyc29yLlgsIGN1cnNvci5ZLCAwLCBfaHduZCwgSW50UHRyLlplcm8pOwogICAgICAgICAgICBQb3N0TWVzc2FnZVcoX2h3bmQsIFdNX05VTEwsIEludFB0ci5aZXJvLCBJbnRQdHIuWmVybyk7CgogICAgICAgICAgICBIYW5kbGVDb21tYW5kKGNvbW1hbmQpOwogICAgICAgIH0KICAgICAgICBjYXRjaCAoRXhjZXB0aW9uIGV4KQogICAgICAgIHsKICAgICAgICAgICAgQXBwTG9nLkluc3RhbmNlLkxvZyhuYW1lb2YoVHJheUljb24pLCAi5pi+56S65omY55uY6I+c5Y2V5aSx6LSlOiAiICsgZXguTWVzc2FnZSk7CiAgICAgICAgfQogICAgICAgIGZpbmFsbHkKICAgICAgICB7CiAgICAgICAgICAgIERlc3Ryb3lNZW51KG1lbnUpOwogICAgICAgIH0KICAgIH0KCiAgICBwcml2YXRlIHZvaWQgSGFuZGxlQ29tbWFuZChpbnQgY29tbWFuZCkKICAgIHsKICAgICAgICBzd2l0Y2ggKGNvbW1hbmQpCiAgICAgICAgewogICAgICAgICAgICBjYXNlIENtZFNob3dNYWluOgogICAgICAgICAgICAgICAgUmVzdG9yZU1haW5XaW5kb3coKTsKICAgICAgICAgICAgICAgIF9vbkFjdGl2YXRlKCk7CiAgICAgICAgICAgICAgICBicmVhazsKCiAgICAgICAgICAgIGNhc2UgQ21kSGlkZU1haW46CiAgICAgICAgICAgICAgICBIaWRlTWFpbldpbmRvdygpOwogICAgICAgICAgICAgICAgYnJlYWs7CgogICAgICAgICAgICBjYXNlIENtZEFib3V0OgogICAgICAgICAgICAgICAgUmVzdG9yZU1haW5XaW5kb3coKTsKICAgICAgICAgICAgICAgIEFwcC5NYWluV2luZG93Py5OYXZpZ2F0ZVRvKCJhYm91dCIpOwogICAgICAgICAgICAgICAgYnJlYWs7CgogICAgICAgICAgICBjYXNlIENtZEV4aXQ6CiAgICAgICAgICAgICAgICAvLyBEZWZlcnJlZCBvbiBwdXJwb3NlOiB0aGUgZXhpdCBoYW5kbGVyIGNsb3NlcyB0aGUgbWFpbiB3aW5kb3csIHdob3NlCiAgICAgICAgICAgICAgICAvLyBDbG9zZWQgaGFuZGxlciBkaXNwb3NlcyB0aGlzIHRyYXkgaWNvbiDigJQgd2hpY2ggd291bGQgZGVzdHJveSB0aGUKICAgICAgICAgICAgICAgIC8vIHZlcnkgd2luZG93IHdob3NlIFduZFByb2MgaXMgc3RpbGwgb24gdGhlIHN0YWNrLgogICAgICAgICAgICAgICAgaWYgKF9kaXNwYXRjaGVyIGlzIG5vdCBudWxsKSBfZGlzcGF0Y2hlci5UcnlFbnF1ZXVlKCgpID0+IF9vbkV4aXQoKSk7CiAgICAgICAgICAgICAgICBlbHNlIF9vbkV4aXQoKTsKICAgICAgICAgICAgICAgIGJyZWFrOwogICAgICAgIH0KICAgIH0KCiAgICBwcml2YXRlIHZvaWQgSGlkZU1haW5XaW5kb3coKQogICAgewogICAgICAgIHZhciB3aW5kb3cgPSBfbWFpbldpbmRvdyA/PyBBcHAuTWFpbldpbmRvdzsKICAgICAgICBpZiAod2luZG93IGlzIG51bGwpIHJldHVybjsKCiAgICAgICAgdmFyIGh3bmQgPSBXaW5kb3dOYXRpdmUuR2V0V2luZG93SGFuZGxlKHdpbmRvdyk7CiAgICAgICAgaWYgKF9oaWRlVG9UcmF5RW5hYmxlZD8uSW52b2tlKCkgPT0gdHJ1ZSkgU2hvd1dpbmRvdyhod25kLCBTV19ISURFKTsgLy8g6ZqQ6JePKCZIKSB3aXRoIHRoZSB0cmF5IG9wdGlvbiBvbgogICAgICAgIGVsc2UgU2hvd1dpbmRvdyhod25kLCBTV19NSU5JTUlaRSk7CiAgICB9CgogICAgLy8gLS0tLSBtaW5pbWlzZSB0byB0cmF5IC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgogICAgcHJpdmF0ZSB2b2lkIE9uQXBwV2luZG93Q2hhbmdlZChBcHBXaW5kb3cgc2VuZGVyLCBBcHBXaW5kb3dDaGFuZ2VkRXZlbnRBcmdzIGFyZ3MpCiAgICB7CiAgICAgICAgLy8gQSByZXN0b3JlIHJhaXNlcyB0cmFuc2l0aW9uYWwgQ2hhbmdlZCBldmVudHMgd2hpbGUgdGhlIHByZXNlbnRlciBzdGlsbAogICAgICAgIC8vIHJlcG9ydHMgTWluaW1pemVkOyB0aGV5IG11c3Qgbm90IGhpZGUgdGhlIHdpbmRvdyBhZ2Fpbi4KICAgICAgICBpZiAoX3Jlc3RvcmluZykgcmV0dXJuOwogICAgICAgIGlmIChfaGlkZVRvVHJheUVuYWJsZWQ/Lkludm9rZSgpICE9IHRydWUpIHJldHVybjsKICAgICAgICBpZiAoc2VuZGVyLlByZXNlbnRlciBpcyBub3QgT3ZlcmxhcHBlZFByZXNlbnRlciBwcmVzZW50ZXIpIHJldHVybjsKICAgICAgICBpZiAocHJlc2VudGVyLlN0YXRlICE9IE92ZXJsYXBwZWRQcmVzZW50ZXJTdGF0ZS5NaW5pbWl6ZWQpIHJldHVybjsKCiAgICAgICAgdmFyIHdpbmRvdyA9IF9tYWluV2luZG93OwogICAgICAgIGlmICh3aW5kb3cgaXMgbnVsbCkgcmV0dXJuOwoKICAgICAgICAvLyBBcHBXaW5kb3cuSXNTaG93bkluU3dpdGNoZXJzIC8gcHJlc2VudGVyLklzUmVzaXphYmxlIGRvIG5vdCByZW1vdmUgdGhlCiAgICAgICAgLy8gdGFza2JhciBidXR0b24gb2YgYW4gYWxyZWFkeSBjcmVhdGVkIHdpbmRvdywgc28gaGlkZSBpdCBvdXRyaWdodCDigJQgdGhlCiAgICAgICAgLy8gV2luVUkgZXF1aXZhbGVudCBvZiB0aGUgb3JpZ2luYWwncyBTaG93SW5UYXNrYmFyID0gZmFsc2UuCiAgICAgICAgU2hvd1dpbmRvdyhXaW5kb3dOYXRpdmUuR2V0V2luZG93SGFuZGxlKHdpbmRvdyksIFNXX0hJREUpOwogICAgfQoKICAgIC8vIC0tLS0gaW50ZXJvcCAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIHByaXZhdGUgZGVsZWdhdGUgSW50UHRyIFduZFByb2NEZWxlZ2F0ZShJbnRQdHIgaFduZCwgdWludCBtc2csIEludFB0ciB3UGFyYW0sIEludFB0ciBsUGFyYW0pOwoKICAgIFtTdHJ1Y3RMYXlvdXQoTGF5b3V0S2luZC5TZXF1ZW50aWFsLCBDaGFyU2V0ID0gQ2hhclNldC5Vbmljb2RlKV0KICAgIHByaXZhdGUgc3RydWN0IFdORENMQVNTRVhXCiAgICB7CiAgICAgICAgcHVibGljIHVpbnQgY2JTaXplOwogICAgICAgIHB1YmxpYyB1aW50IHN0eWxlOwogICAgICAgIHB1YmxpYyBJbnRQdHIgbHBmblduZFByb2M7CiAgICAgICAgcHVibGljIGludCBjYkNsc0V4dHJhOwogICAgICAgIHB1YmxpYyBpbnQgY2JXbmRFeHRyYTsKICAgICAgICBwdWJsaWMgSW50UHRyIGhJbnN0YW5jZTsKICAgICAgICBwdWJsaWMgSW50UHRyIGhJY29uOwogICAgICAgIHB1YmxpYyBJbnRQdHIgaEN1cnNvcjsKICAgICAgICBwdWJsaWMgSW50UHRyIGhickJhY2tncm91bmQ7CiAgICAgICAgW01hcnNoYWxBcyhVbm1hbmFnZWRUeXBlLkxQV1N0cildIHB1YmxpYyBzdHJpbmc/IGxwc3pNZW51TmFtZTsKICAgICAgICBbTWFyc2hhbEFzKFVubWFuYWdlZFR5cGUuTFBXU3RyKV0gcHVibGljIHN0cmluZz8gbHBzekNsYXNzTmFtZTsKICAgICAgICBwdWJsaWMgSW50UHRyIGhJY29uU207CiAgICB9CgogICAgW1N0cnVjdExheW91dChMYXlvdXRLaW5kLlNlcXVlbnRpYWwsIENoYXJTZXQgPSBDaGFyU2V0LlVuaWNvZGUpXQogICAgcHJpdmF0ZSBzdHJ1Y3QgTk9USUZZSUNPTkRBVEFXCiAgICB7CiAgICAgICAgcHVibGljIHVpbnQgY2JTaXplOwogICAgICAgIHB1YmxpYyBJbnRQdHIgaFduZDsKICAgICAgICBwdWJsaWMgdWludCB1SUQ7CiAgICAgICAgcHVibGljIHVpbnQgdUZsYWdzOwogICAgICAgIHB1YmxpYyB1aW50IHVDYWxsYmFja01lc3NhZ2U7CiAgICAgICAgcHVibGljIEludFB0ciBoSWNvbjsKICAgICAgICBbTWFyc2hhbEFzKFVubWFuYWdlZFR5cGUuQnlWYWxUU3RyLCBTaXplQ29uc3QgPSAxMjgpXSBwdWJsaWMgc3RyaW5nIHN6VGlwOwogICAgICAgIHB1YmxpYyB1aW50IGR3U3RhdGU7CiAgICAgICAgcHVibGljIHVpbnQgZHdTdGF0ZU1hc2s7CiAgICAgICAgW01hcnNoYWxBcyhVbm1hbmFnZWRUeXBlLkJ5VmFsVFN0ciwgU2l6ZUNvbnN0ID0gMjU2KV0gcHVibGljIHN0cmluZyBzekluZm87CiAgICAgICAgcHVibGljIHVpbnQgdVZlcnNpb247CiAgICAgICAgW01hcnNoYWxBcyhVbm1hbmFnZWRUeXBlLkJ5VmFsVFN0ciwgU2l6ZUNvbnN0ID0gNjQpXSBwdWJsaWMgc3RyaW5nIHN6SW5mb1RpdGxlOwogICAgICAgIHB1YmxpYyB1aW50IGR3SW5mb0ZsYWdzOwogICAgICAgIHB1YmxpYyBHdWlkIGd1aWRJdGVtOwogICAgICAgIHB1YmxpYyBJbnRQdHIgaEJhbGxvb25JY29uOwogICAgfQoKICAgIFtTdHJ1Y3RMYXlvdXQoTGF5b3V0S2luZC5TZXF1ZW50aWFsKV0KICAgIHByaXZhdGUgc3RydWN0IFBPSU5UCiAgICB7CiAgICAgICAgcHVibGljIGludCBYOwogICAgICAgIHB1YmxpYyBpbnQgWTsKICAgIH0KCiAgICBbRGxsSW1wb3J0KCJzaGVsbDMyLmRsbCIsIEVudHJ5UG9pbnQgPSAiU2hlbGxfTm90aWZ5SWNvblciLCBDaGFyU2V0ID0gQ2hhclNldC5Vbmljb2RlLCBTZXRMYXN0RXJyb3IgPSB0cnVlKV0KICAgIHByaXZhdGUgc3RhdGljIGV4dGVybiBib29sIFNoZWxsX05vdGlmeUljb25XKHVpbnQgZHdNZXNzYWdlLCByZWYgTk9USUZZSUNPTkRBVEFXIGxwRGF0YSk7CgogICAgW0RsbEltcG9ydCgidXNlcjMyLmRsbCIsIEVudHJ5UG9pbnQgPSAiUmVnaXN0ZXJDbGFzc0V4VyIsIENoYXJTZXQgPSBDaGFyU2V0LlVuaWNvZGUsIFNldExhc3RFcnJvciA9IHRydWUpXQogICAgcHJpdmF0ZSBzdGF0aWMgZXh0ZXJuIHVzaG9ydCBSZWdpc3RlckNsYXNzRXhXKHJlZiBXTkRDTEFTU0VYVyBscHdjeCk7CgogICAgW0RsbEltcG9ydCgidXNlcjMyLmRsbCIsIEVudHJ5UG9pbnQgPSAiQ3JlYXRlV2luZG93RXhXIiwgQ2hhclNldCA9IENoYXJTZXQuVW5pY29kZSwgU2V0TGFzdEVycm9yID0gdHJ1ZSldCiAgICBwcml2YXRlIHN0YXRpYyBleHRlcm4gSW50UHRyIENyZWF0ZVdpbmRvd0V4VygKICAgICAgICB1aW50IGR3RXhTdHlsZSwgc3RyaW5nIGxwQ2xhc3NOYW1lLCBzdHJpbmcgbHBXaW5kb3dOYW1lLCB1aW50IGR3U3R5bGUsCiAgICAgICAgaW50IHgsIGludCB5LCBpbnQgbldpZHRoLCBpbnQgbkhlaWdodCwKICAgICAgICBJbnRQdHIgaFduZFBhcmVudCwgSW50UHRyIGhNZW51LCBJbnRQdHIgaEluc3RhbmNlLCBJbnRQdHIgbHBQYXJhbSk7CgogICAgW0RsbEltcG9ydCgidXNlcjMyLmRsbCIpXQogICAgcHJpdmF0ZSBzdGF0aWMgZXh0ZXJuIGJvb2wgRGVzdHJveVdpbmRvdyhJbnRQdHIgaFduZCk7CgogICAgW0RsbEltcG9ydCgidXNlcjMyLmRsbCIsIEVudHJ5UG9pbnQgPSAiRGVmV2luZG93UHJvY1ciKV0KICAgIHByaXZhdGUgc3RhdGljIGV4dGVybiBJbnRQdHIgRGVmV2luZG93UHJvY1coSW50UHRyIGhXbmQsIHVpbnQgbXNnLCBJbnRQdHIgd1BhcmFtLCBJbnRQdHIgbFBhcmFtKTsKCiAgICBbRGxsSW1wb3J0KCJrZXJuZWwzMi5kbGwiLCBFbnRyeVBvaW50ID0gIkdldE1vZHVsZUhhbmRsZVciLCBDaGFyU2V0ID0gQ2hhclNldC5Vbmljb2RlLCBTZXRMYXN0RXJyb3IgPSB0cnVlKV0KICAgIHByaXZhdGUgc3RhdGljIGV4dGVybiBJbnRQdHIgR2V0TW9kdWxlSGFuZGxlVyhzdHJpbmc/IGxwTW9kdWxlTmFtZSk7CgogICAgW0RsbEltcG9ydCgidXNlcjMyLmRsbCIsIEVudHJ5UG9pbnQgPSAiUmVnaXN0ZXJXaW5kb3dNZXNzYWdlVyIsIENoYXJTZXQgPSBDaGFyU2V0LlVuaWNvZGUpXQogICAgcHJpdmF0ZSBzdGF0aWMgZXh0ZXJuIHVpbnQgUmVnaXN0ZXJXaW5kb3dNZXNzYWdlVyhzdHJpbmcgbHBTdHJpbmcpOwoKICAgIFtEbGxJbXBvcnQoInVzZXIzMi5kbGwiLCBFbnRyeVBvaW50ID0gIkxvYWRJbWFnZVciLCBDaGFyU2V0ID0gQ2hhclNldC5Vbmljb2RlLCBTZXRMYXN0RXJyb3IgPSB0cnVlKV0KICAgIHByaXZhdGUgc3RhdGljIGV4dGVybiBJbnRQdHIgTG9hZEltYWdlVyhJbnRQdHIgaGluc3QsIHN0cmluZyBscHN6TmFtZSwgdWludCB1VHlwZSwgaW50IGN4LCBpbnQgY3ksIHVpbnQgZnVMb2FkKTsKCiAgICBbRGxsSW1wb3J0KCJ1c2VyMzIuZGxsIiwgRW50cnlQb2ludCA9ICJMb2FkSWNvblciLCBTZXRMYXN0RXJyb3IgPSB0cnVlKV0KICAgIHByaXZhdGUgc3RhdGljIGV4dGVybiBJbnRQdHIgTG9hZEljb25XKEludFB0ciBoSW5zdGFuY2UsIEludFB0ciBscEljb25OYW1lKTsKCiAgICBbRGxsSW1wb3J0KCJ1c2VyMzIuZGxsIiwgU2V0TGFzdEVycm9yID0gdHJ1ZSldCiAgICBwcml2YXRlIHN0YXRpYyBleHRlcm4gYm9vbCBEZXN0cm95SWNvbihJbnRQdHIgaEljb24pOwoKICAgIFtEbGxJbXBvcnQoInVzZXIzMi5kbGwiLCBTZXRMYXN0RXJyb3IgPSB0cnVlKV0KICAgIHByaXZhdGUgc3RhdGljIGV4dGVybiBJbnRQdHIgQ3JlYXRlUG9wdXBNZW51KCk7CgogICAgW0RsbEltcG9ydCgidXNlcjMyLmRsbCIsIFNldExhc3RFcnJvciA9IHRydWUpXQogICAgcHJpdmF0ZSBzdGF0aWMgZXh0ZXJuIGJvb2wgRGVzdHJveU1lbnUoSW50UHRyIGhNZW51KTsKCiAgICBbRGxsSW1wb3J0KCJ1c2VyMzIuZGxsIiwgRW50cnlQb2ludCA9ICJBcHBlbmRNZW51VyIsIENoYXJTZXQgPSBDaGFyU2V0LlVuaWNvZGUsIFNldExhc3RFcnJvciA9IHRydWUpXQogICAgcHJpdmF0ZSBzdGF0aWMgZXh0ZXJuIGJvb2wgQXBwZW5kTWVudVcoSW50UHRyIGhNZW51LCB1aW50IHVGbGFncywgdWludCB1SUROZXdJdGVtLCBzdHJpbmc/IGxwTmV3SXRlbSk7CgogICAgW0RsbEltcG9ydCgidXNlcjMyLmRsbCIsIEVudHJ5UG9pbnQgPSAiVHJhY2tQb3B1cE1lbnUiLCBTZXRMYXN0RXJyb3IgPSB0cnVlKV0KICAgIHByaXZhdGUgc3RhdGljIGV4dGVybiBpbnQgVHJhY2tQb3B1cE1lbnUoCiAgICAgICAgSW50UHRyIGhNZW51LCB1aW50IHVGbGFncywgaW50IHgsIGludCB5LCBpbnQgblJlc2VydmVkLCBJbnRQdHIgaFduZCwgSW50UHRyIHByY1JlY3QpOwoKICAgIFtEbGxJbXBvcnQoInVzZXIzMi5kbGwiLCBTZXRMYXN0RXJyb3IgPSB0cnVlKV0KICAgIHByaXZhdGUgc3RhdGljIGV4dGVybiBib29sIEdldEN1cnNvclBvcyhvdXQgUE9JTlQgbHBQb2ludCk7CgogICAgW0RsbEltcG9ydCgidXNlcjMyLmRsbCIsIFNldExhc3RFcnJvciA9IHRydWUpXQogICAgcHJpdmF0ZSBzdGF0aWMgZXh0ZXJuIGJvb2wgU2V0Rm9yZWdyb3VuZFdpbmRvdyhJbnRQdHIgaFduZCk7CgogICAgW0RsbEltcG9ydCgidXNlcjMyLmRsbCIsIEVudHJ5UG9pbnQgPSAiUG9zdE1lc3NhZ2VXIiwgU2V0TGFzdEVycm9yID0gdHJ1ZSldCiAgICBwcml2YXRlIHN0YXRpYyBleHRlcm4gYm9vbCBQb3N0TWVzc2FnZVcoSW50UHRyIGhXbmQsIHVpbnQgbXNnLCBJbnRQdHIgd1BhcmFtLCBJbnRQdHIgbFBhcmFtKTsKCiAgICBbRGxsSW1wb3J0KCJ1c2VyMzIuZGxsIildCiAgICBwcml2YXRlIHN0YXRpYyBleHRlcm4gYm9vbCBTaG93V2luZG93KEludFB0ciBoV25kLCBpbnQgbkNtZFNob3cpOwp9Cg==
+using System.Runtime.InteropServices;
+using IPScaner.Core.Logging;
+using Microsoft.UI;
+using Microsoft.UI.Dispatching;
+using Microsoft.UI.Windowing;
+using Microsoft.UI.Xaml;
+using WinRT.Interop;
+
+namespace IPScaner.WinUI.Services;
+
+/// <summary>
+/// 系统托盘图标 — the WinUI replacement for the original's WinForms
+/// <c>NotifyIcon</c> (<c>notifyIcon1</c>), implemented directly on
+/// <c>Shell_NotifyIcon</c> because WinUI 3 has no tray API.
+/// </summary>
+/// <remarks>
+/// <list type="bullet">
+/// <item>a private, never-shown top-level window receives the shell callback
+/// (<c>WM_APP + 1</c>) on the UI thread;</item>
+/// <item>double-click restores the main window, right-click opens the
+/// 显示主界面 / 隐藏 / 关于 / 退出 menu that the original's
+/// <c>contextMenuNotify</c> provided;</item>
+/// <item><see cref="AttachMainWindow"/> reproduces 最小化时隐藏到托盘
+/// (<see cref="Core.Configuration.AppConfig.HideMainEnabled"/>): minimising hides
+/// the window from the taskbar with <c>SW_HIDE</c> instead of letting it sit in
+/// the taskbar.</item>
+/// </list>
+/// <para>
+/// The callback window is created as a hidden top-level window rather than a
+/// message-only one (<c>HWND_MESSAGE</c>). Two measured behaviours forced that
+/// choice: (1) the <c>TrackPopupMenu</c> contract requires the owning thread to be
+/// foreground so the menu closes on Esc / an outside click, and a message-only
+/// window can never become foreground — the menu stayed on screen until an item
+/// was clicked; (2) <c>TaskbarCreated</c> is broadcast to top-level windows only,
+/// so a message-only window would never learn that Explorer restarted and the icon
+/// would disappear for good. This is the same shape WinForms' <c>NotifyIcon</c>
+/// uses. The window is never shown, so it has no taskbar button and no Alt+Tab
+/// entry (also excluded by <c>WS_EX_TOOLWINDOW</c>).
+/// </para>
+/// <para>
+/// The original's tooltip was the literal designer string <c>notifyIcon1</c>; a real
+/// product name is used instead, as the reverse-engineering notes recommend.
+/// Its 1-second balloon on every minimise is deliberately not reproduced — the
+/// shell has deprecated balloon tips and the config surface has no switch for it.
+/// </para>
+/// <para>All members must be used from the UI thread.</para>
+/// </remarks>
+public sealed class TrayIcon : IDisposable
+{
+    private const string WindowClassName = "IPScanerTrayIconMessageWindow";
+
+    private const uint TrayIconId = 1;
+
+    /// <summary><c>WM_APP + 1</c>, the callback message the shell sends the icon's window.</summary>
+    private const uint CallbackMessage = 0x8000 + 1;
+
+    // ---- messages ----------------------------------------------------------
+    private const uint WM_NULL = 0x0000;
+    private const uint WM_LBUTTONDBLCLK = 0x0203;
+    private const uint WM_RBUTTONUP = 0x0205;
+
+    // ---- Shell_NotifyIcon --------------------------------------------------
+    private const uint NIM_ADD = 0x00000000;
+    private const uint NIM_DELETE = 0x00000002;
+    private const uint NIF_MESSAGE = 0x00000001;
+    private const uint NIF_ICON = 0x00000002;
+    private const uint NIF_TIP = 0x00000004;
+
+    // ---- icons -------------------------------------------------------------
+    private const uint IMAGE_ICON = 1;
+    private const uint LR_LOADFROMFILE = 0x00000010;
+    private const uint LR_DEFAULTSIZE = 0x00000040;
+
+    /// <summary><c>IDI_APPLICATION</c> (<c>MAKEINTRESOURCE(32512)</c>).</summary>
+    private static readonly IntPtr IDI_APPLICATION = new(32512);
+
+    // ---- menus -------------------------------------------------------------
+    private const uint MF_STRING = 0x00000000;
+    private const uint MF_SEPARATOR = 0x00000800;
+    private const uint TPM_RETURNCMD = 0x00000100;
+    private const uint TPM_RIGHTBUTTON = 0x00000002;
+
+    private const int CmdShowMain = 1;
+    private const int CmdHideMain = 2;
+    private const int CmdAbout = 3;
+    private const int CmdExit = 4;
+
+    // ---- window commands ---------------------------------------------------
+    private const int SW_HIDE = 0;
+    private const int SW_SHOW = 5;
+    private const int SW_MINIMIZE = 6;
+
+    private const uint WS_POPUP = 0x80000000;
+    private const uint WS_EX_TOOLWINDOW = 0x00000080;
+
+    private const uint ERROR_CLASS_ALREADY_EXISTS = 1410;
+
+    private static readonly IntPtr HWND_MESSAGE = new(-3);
+
+    private readonly string _tooltip;
+    private readonly Action _onActivate;
+    private readonly Action _onExit;
+    private readonly DispatcherQueue? _dispatcher;
+    private readonly uint _taskbarCreatedMessage;
+
+    /// <summary>
+    /// Held as a field on purpose: the native window class stores a raw function
+    /// pointer, so a collected delegate would crash the shell callback.
+    /// </summary>
+    private readonly WndProcDelegate _wndProc;
+
+    private IntPtr _hwnd;
+    private IntPtr _icon;
+    private bool _ownsIcon;
+    private bool _added;
+    private bool _disposed;
+
+    private Window? _mainWindow;
+    private AppWindow? _appWindow;
+    private Func<bool>? _hideToTrayEnabled;
+    private bool _restoring;
+
+    /// <param name="tooltip">Tray tooltip (max 127 characters), shown on hover.</param>
+    /// <param name="onActivate">Invoked for a double-click and for 显示主界面.</param>
+    /// <param name="onExit">Invoked for 退出; the handler owns the confirmation prompt.</param>
+    public TrayIcon(string tooltip, Action onActivate, Action onExit)
+    {
+        ArgumentNullException.ThrowIfNull(onActivate);
+        ArgumentNullException.ThrowIfNull(onExit);
+
+        var text = string.IsNullOrWhiteSpace(tooltip) ? "局域网IP扫描工具" : tooltip.Trim();
+        _tooltip = text.Length > 127 ? text[..127] : text; // szTip is 128 chars incl. the terminator
+        _onActivate = onActivate;
+        _onExit = onExit;
+        _dispatcher = DispatcherQueue.GetForCurrentThread();
+        _wndProc = WindowProc;
+        _taskbarCreatedMessage = RegisterWindowMessageW("TaskbarCreated");
+
+        CreateMessageWindow();
+        _icon = LoadTrayIcon();
+    }
+
+    /// <summary>Adds the icon to the notification area (the original was visible from startup).</summary>
+    public void Show()
+    {
+        if (_disposed || _hwnd == IntPtr.Zero) return;
+        AddIcon();
+    }
+
+    /// <summary>Removes the icon from the notification area.</summary>
+    public void Hide()
+    {
+        if (!_added || _hwnd == IntPtr.Zero) return;
+
+        try
+        {
+            var data = CreateData();
+            if (!Shell_NotifyIconW(NIM_DELETE, ref data))
+                AppLog.Instance.Log(nameof(TrayIcon), $"移除托盘图标失败 (Win32={Marshal.GetLastWin32Error()})");
+        }
+        catch (Exception ex)
+        {
+            AppLog.Instance.Log(nameof(TrayIcon), "移除托盘图标异常: " + ex.Message);
+        }
+        finally
+        {
+            _added = false;
+        }
+    }
+
+    /// <summary>
+    /// Hooks the main window so that minimising it hides the window from the
+    /// taskbar while 最小化时隐藏到托盘 is enabled.
+    /// </summary>
+    /// <param name="window">The main window.</param>
+    /// <param name="hideToTrayEnabled">Reads the live <c>HideMainEnabled</c> flag.</param>
+    public void AttachMainWindow(Window window, Func<bool> hideToTrayEnabled)
+    {
+        ArgumentNullException.ThrowIfNull(window);
+        ArgumentNullException.ThrowIfNull(hideToTrayEnabled);
+
+        _mainWindow = window;
+        _hideToTrayEnabled = hideToTrayEnabled;
+
+        var hwnd = WindowNative.GetWindowHandle(window);
+        _appWindow = AppWindow.GetFromWindowId(Win32Interop.GetWindowIdFromWindow(hwnd));
+        _appWindow.Changed += OnAppWindowChanged;
+    }
+
+    /// <summary>
+    /// Brings the main window back after it was minimised to the tray:
+    /// <c>SW_SHOW</c> (the window was hidden outright) followed by the shared
+    /// activate/restore/foreground helper.
+    /// </summary>
+    public void RestoreMainWindow()
+    {
+        var window = _mainWindow ?? App.MainWindow;
+        if (window is null) return;
+
+        _restoring = true;
+        try
+        {
+            var hwnd = WindowNative.GetWindowHandle(window);
+            ShowWindow(hwnd, SW_SHOW);
+            UiKit.ActivateMainWindow();
+        }
+        finally
+        {
+            // Cleared once the restore's window messages have been pumped, so the
+            // transitional "still minimized" notifications cannot re-hide the window.
+            if (_dispatcher is not null) _dispatcher.TryEnqueue(() => _restoring = false);
+            else _restoring = false;
+        }
+    }
+
+    public void Dispose()
+    {
+        if (_disposed) return;
+        _disposed = true;
+
+        Hide(); // Shell_NotifyIcon(NIM_DELETE) before the window it belongs to goes away
+
+        if (_appWindow is not null)
+        {
+            try { _appWindow.Changed -= OnAppWindowChanged; } catch { /* window already gone */ }
+            _appWindow = null;
+        }
+        _mainWindow = null;
+        _hideToTrayEnabled = null;
+
+        if (_hwnd != IntPtr.Zero)
+        {
+            DestroyWindow(_hwnd);
+            _hwnd = IntPtr.Zero;
+        }
+
+        if (_ownsIcon && _icon != IntPtr.Zero) DestroyIcon(_icon);
+        _icon = IntPtr.Zero;
+        _ownsIcon = false;
+    }
+
+    // ---- notifications -----------------------------------------------------
+
+    private void AddIcon()
+    {
+        if (_added) return;
+
+        try
+        {
+            var data = CreateData();
+            data.uFlags = NIF_MESSAGE | NIF_ICON | NIF_TIP;
+            data.uCallbackMessage = CallbackMessage;
+            data.hIcon = _icon;
+            data.szTip = _tooltip;
+
+            if (Shell_NotifyIconW(NIM_ADD, ref data)) _added = true;
+            else AppLog.Instance.Log(nameof(TrayIcon), $"添加托盘图标失败 (Win32={Marshal.GetLastWin32Error()})");
+        }
+        catch (Exception ex)
+        {
+            AppLog.Instance.Log(nameof(TrayIcon), "添加托盘图标异常: " + ex.Message);
+        }
+    }
+
+    private NOTIFYICONDATAW CreateData() => new()
+    {
+        cbSize = (uint)Marshal.SizeOf<NOTIFYICONDATAW>(),
+        hWnd = _hwnd,
+        uID = TrayIconId,
+        szTip = string.Empty,
+        szInfo = string.Empty,
+        szInfoTitle = string.Empty,
+    };
+
+    private static IntPtr LoadTrayIcon()
+    {
+        try
+        {
+            var path = Path.Combine(AppContext.BaseDirectory, "Assets", "app.ico");
+            if (File.Exists(path))
+            {
+                var icon = LoadImageW(IntPtr.Zero, path, IMAGE_ICON, 0, 0, LR_LOADFROMFILE | LR_DEFAULTSIZE);
+                if (icon != IntPtr.Zero) return icon;
+                AppLog.Instance.Log(nameof(TrayIcon), "加载 app.ico 失败，改用系统默认图标");
+            }
+        }
+        catch (Exception ex)
+        {
+            AppLog.Instance.Log(nameof(TrayIcon), "加载托盘图标异常: " + ex.Message);
+        }
+
+        return LoadIconW(IntPtr.Zero, IDI_APPLICATION); // shared icon: never destroy it
+    }
+
+    // ---- message window ----------------------------------------------------
+
+    private void CreateMessageWindow()
+    {
+        var instance = GetModuleHandleW(null);
+
+        var windowClass = new WNDCLASSEXW
+        {
+            cbSize = (uint)Marshal.SizeOf<WNDCLASSEXW>(),
+            lpfnWndProc = Marshal.GetFunctionPointerForDelegate(_wndProc),
+            hInstance = instance,
+            lpszClassName = WindowClassName,
+        };
+
+        if (RegisterClassExW(ref windowClass) == 0)
+        {
+            var error = Marshal.GetLastWin32Error();
+            if (error != ERROR_CLASS_ALREADY_EXISTS)
+            {
+                AppLog.Instance.Log(nameof(TrayIcon), $"注册托盘窗口类失败 (Win32={error})");
+                return;
+            }
+        }
+
+        // Hidden top-level window (see the class remarks for why it is not
+        // HWND_MESSAGE); WS_EX_TOOLWINDOW keeps it out of Alt+Tab should it ever
+        // be shown, and it is never passed to ShowWindow.
+        _hwnd = CreateWindowExW(
+            WS_EX_TOOLWINDOW, WindowClassName, string.Empty, WS_POPUP,
+            0, 0, 0, 0,
+            IntPtr.Zero, IntPtr.Zero, instance, IntPtr.Zero);
+
+        if (_hwnd == IntPtr.Zero)
+            AppLog.Instance.Log(nameof(TrayIcon), $"创建托盘消息窗口失败 (Win32={Marshal.GetLastWin32Error()})");
+    }
+
+    private IntPtr WindowProc(IntPtr hWnd, uint msg, IntPtr wParam, IntPtr lParam)
+    {
+        try
+        {
+            if (msg == CallbackMessage)
+            {
+                // The mouse event arrives in the low word of lParam.
+                switch ((uint)(lParam.ToInt64() & 0xFFFF))
+                {
+                    case WM_LBUTTONDBLCLK:
+                        RestoreMainWindow();
+                        _onActivate();
+                        return IntPtr.Zero;
+
+                    case WM_RBUTTONUP:
+                        ShowContextMenu();
+                        return IntPtr.Zero;
+                }
+            }
+            else if (_taskbarCreatedMessage != 0 && msg == _taskbarCreatedMessage)
+            {
+                // Explorer restarted: the shell forgot every icon, so re-add ours
+                // (WinForms' NotifyIcon did this for the original).
+                AppLog.Instance.Log(nameof(TrayIcon), "任务栏已重建，重新添加托盘图标");
+                _added = false;
+                AddIcon();
+                return IntPtr.Zero;
+            }
+        }
+        catch (Exception ex)
+        {
+            AppLog.Instance.Log(nameof(TrayIcon), "托盘回调异常: " + ex.Message);
+        }
+
+        return DefWindowProcW(hWnd, msg, wParam, lParam);
+    }
+
+    // ---- popup menu --------------------------------------------------------
+
+    private void ShowContextMenu()
+    {
+        var menu = CreatePopupMenu();
+        if (menu == IntPtr.Zero) return;
+
+        try
+        {
+            // Same 5 entries as the original contextMenuNotify, Chinese strings verbatim.
+            AppendMenuW(menu, MF_STRING, CmdShowMain, "显示主界面(&S)");
+            AppendMenuW(menu, MF_STRING, CmdHideMain, "隐藏(&H)");
+            AppendMenuW(menu, MF_SEPARATOR, 0, null);
+            AppendMenuW(menu, MF_STRING, CmdAbout, "关于(&A)");
+            AppendMenuW(menu, MF_STRING, CmdExit, "退出(&X)");
+
+            if (!GetCursorPos(out var cursor)) cursor = default;
+
+            // Documented TrackPopupMenu pattern: the owner must be foreground or the
+            // menu will not close when the user clicks elsewhere. A message-only
+            // window cannot be foreground, so this is best-effort only.
+            SetForegroundWindow(_hwnd);
+            var command = TrackPopupMenu(
+                menu, TPM_RETURNCMD | TPM_RIGHTBUTTON,
+                cursor.X, cursor.Y, 0, _hwnd, IntPtr.Zero);
+            PostMessageW(_hwnd, WM_NULL, IntPtr.Zero, IntPtr.Zero);
+
+            HandleCommand(command);
+        }
+        catch (Exception ex)
+        {
+            AppLog.Instance.Log(nameof(TrayIcon), "显示托盘菜单失败: " + ex.Message);
+        }
+        finally
+        {
+            DestroyMenu(menu);
+        }
+    }
+
+    private void HandleCommand(int command)
+    {
+        switch (command)
+        {
+            case CmdShowMain:
+                RestoreMainWindow();
+                _onActivate();
+                break;
+
+            case CmdHideMain:
+                HideMainWindow();
+                break;
+
+            case CmdAbout:
+                RestoreMainWindow();
+                App.MainWindow?.NavigateTo("about");
+                break;
+
+            case CmdExit:
+                // Deferred on purpose: the exit handler closes the main window, whose
+                // Closed handler disposes this tray icon — which would destroy the
+                // very window whose WndProc is still on the stack.
+                if (_dispatcher is not null) _dispatcher.TryEnqueue(() => _onExit());
+                else _onExit();
+                break;
+        }
+    }
+
+    private void HideMainWindow()
+    {
+        var window = _mainWindow ?? App.MainWindow;
+        if (window is null) return;
+
+        var hwnd = WindowNative.GetWindowHandle(window);
+        if (_hideToTrayEnabled?.Invoke() == true) ShowWindow(hwnd, SW_HIDE); // 隐藏(&H) with the tray option on
+        else ShowWindow(hwnd, SW_MINIMIZE);
+    }
+
+    // ---- minimise to tray --------------------------------------------------
+
+    private void OnAppWindowChanged(AppWindow sender, AppWindowChangedEventArgs args)
+    {
+        // A restore raises transitional Changed events while the presenter still
+        // reports Minimized; they must not hide the window again.
+        if (_restoring) return;
+        if (_hideToTrayEnabled?.Invoke() != true) return;
+        if (sender.Presenter is not OverlappedPresenter presenter) return;
+        if (presenter.State != OverlappedPresenterState.Minimized) return;
+
+        var window = _mainWindow;
+        if (window is null) return;
+
+        // AppWindow.IsShownInSwitchers / presenter.IsResizable do not remove the
+        // taskbar button of an already created window, so hide it outright — the
+        // WinUI equivalent of the original's ShowInTaskbar = false.
+        ShowWindow(WindowNative.GetWindowHandle(window), SW_HIDE);
+    }
+
+    // ---- interop -----------------------------------------------------------
+
+    private delegate IntPtr WndProcDelegate(IntPtr hWnd, uint msg, IntPtr wParam, IntPtr lParam);
+
+    [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
+    private struct WNDCLASSEXW
+    {
+        public uint cbSize;
+        public uint style;
+        public IntPtr lpfnWndProc;
+        public int cbClsExtra;
+        public int cbWndExtra;
+        public IntPtr hInstance;
+        public IntPtr hIcon;
+        public IntPtr hCursor;
+        public IntPtr hbrBackground;
+        [MarshalAs(UnmanagedType.LPWStr)] public string? lpszMenuName;
+        [MarshalAs(UnmanagedType.LPWStr)] public string? lpszClassName;
+        public IntPtr hIconSm;
+    }
+
+    [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
+    private struct NOTIFYICONDATAW
+    {
+        public uint cbSize;
+        public IntPtr hWnd;
+        public uint uID;
+        public uint uFlags;
+        public uint uCallbackMessage;
+        public IntPtr hIcon;
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 128)] public string szTip;
+        public uint dwState;
+        public uint dwStateMask;
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 256)] public string szInfo;
+        public uint uVersion;
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 64)] public string szInfoTitle;
+        public uint dwInfoFlags;
+        public Guid guidItem;
+        public IntPtr hBalloonIcon;
+    }
+
+    [StructLayout(LayoutKind.Sequential)]
+    private struct POINT
+    {
+        public int X;
+        public int Y;
+    }
+
+    [DllImport("shell32.dll", EntryPoint = "Shell_NotifyIconW", CharSet = CharSet.Unicode, SetLastError = true)]
+    private static extern bool Shell_NotifyIconW(uint dwMessage, ref NOTIFYICONDATAW lpData);
+
+    [DllImport("user32.dll", EntryPoint = "RegisterClassExW", CharSet = CharSet.Unicode, SetLastError = true)]
+    private static extern ushort RegisterClassExW(ref WNDCLASSEXW lpwcx);
+
+    [DllImport("user32.dll", EntryPoint = "CreateWindowExW", CharSet = CharSet.Unicode, SetLastError = true)]
+    private static extern IntPtr CreateWindowExW(
+        uint dwExStyle, string lpClassName, string lpWindowName, uint dwStyle,
+        int x, int y, int nWidth, int nHeight,
+        IntPtr hWndParent, IntPtr hMenu, IntPtr hInstance, IntPtr lpParam);
+
+    [DllImport("user32.dll")]
+    private static extern bool DestroyWindow(IntPtr hWnd);
+
+    [DllImport("user32.dll", EntryPoint = "DefWindowProcW")]
+    private static extern IntPtr DefWindowProcW(IntPtr hWnd, uint msg, IntPtr wParam, IntPtr lParam);
+
+    [DllImport("kernel32.dll", EntryPoint = "GetModuleHandleW", CharSet = CharSet.Unicode, SetLastError = true)]
+    private static extern IntPtr GetModuleHandleW(string? lpModuleName);
+
+    [DllImport("user32.dll", EntryPoint = "RegisterWindowMessageW", CharSet = CharSet.Unicode)]
+    private static extern uint RegisterWindowMessageW(string lpString);
+
+    [DllImport("user32.dll", EntryPoint = "LoadImageW", CharSet = CharSet.Unicode, SetLastError = true)]
+    private static extern IntPtr LoadImageW(IntPtr hinst, string lpszName, uint uType, int cx, int cy, uint fuLoad);
+
+    [DllImport("user32.dll", EntryPoint = "LoadIconW", SetLastError = true)]
+    private static extern IntPtr LoadIconW(IntPtr hInstance, IntPtr lpIconName);
+
+    [DllImport("user32.dll", SetLastError = true)]
+    private static extern bool DestroyIcon(IntPtr hIcon);
+
+    [DllImport("user32.dll", SetLastError = true)]
+    private static extern IntPtr CreatePopupMenu();
+
+    [DllImport("user32.dll", SetLastError = true)]
+    private static extern bool DestroyMenu(IntPtr hMenu);
+
+    [DllImport("user32.dll", EntryPoint = "AppendMenuW", CharSet = CharSet.Unicode, SetLastError = true)]
+    private static extern bool AppendMenuW(IntPtr hMenu, uint uFlags, uint uIDNewItem, string? lpNewItem);
+
+    [DllImport("user32.dll", EntryPoint = "TrackPopupMenu", SetLastError = true)]
+    private static extern int TrackPopupMenu(
+        IntPtr hMenu, uint uFlags, int x, int y, int nReserved, IntPtr hWnd, IntPtr prcRect);
+
+    [DllImport("user32.dll", SetLastError = true)]
+    private static extern bool GetCursorPos(out POINT lpPoint);
+
+    [DllImport("user32.dll", SetLastError = true)]
+    private static extern bool SetForegroundWindow(IntPtr hWnd);
+
+    [DllImport("user32.dll", EntryPoint = "PostMessageW", SetLastError = true)]
+    private static extern bool PostMessageW(IntPtr hWnd, uint msg, IntPtr wParam, IntPtr lParam);
+
+    [DllImport("user32.dll")]
+    private static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+}

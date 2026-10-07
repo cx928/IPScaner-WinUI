@@ -1,1 +1,91 @@
-dXNpbmcgU3lzdGVtLkRpYWdub3N0aWNzOwp1c2luZyBTeXN0ZW0uTmV0Owp1c2luZyBTeXN0ZW0uTmV0LlNvY2tldHM7CgpuYW1lc3BhY2UgSVBTY2FuZXIuQ29yZS5OZXQ7CgovLy8gPHN1bW1hcnk+VENQIGNvbm5lY3QgcHJvYmUgdXNlZCBib3RoIGFzIGEgcGluZyBmYWxsYmFjayBhbmQgYnkgdGhlIHBvcnQgc2Nhbm5lci48L3N1bW1hcnk+CnB1YmxpYyBzdGF0aWMgY2xhc3MgVGNwUHJvYmUKewogICAgLy8vIDxzdW1tYXJ5PgogICAgLy8vIEF0dGVtcHRzIGEgZnVsbCBUQ1AgaGFuZHNoYWtlLiBSZXR1cm5zIHRydWUgb25seSB3aGVuIHRoZSBjb25uZWN0aW9uIHdhcwogICAgLy8vIGVzdGFibGlzaGVkOyBhIHJlZnVzZWQgb3IgdGltZWQtb3V0IGNvbm5lY3QgaXMgZmFsc2UuCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgLy8vIDxyZW1hcmtzPgogICAgLy8vIFRoZSBvcmlnaW5hbCB1c2VkIDxjPlRjcENsaWVudC5CZWdpbkNvbm5lY3Q8L2M+IHBsdXMKICAgIC8vLyA8Yz5Bc3luY1dhaXRIYW5kbGUuV2FpdE9uZSh0aW1lb3V0KTwvYz4gYW5kIHRoZW4gY2xvc2VkIHRoZSBjbGllbnQgb24KICAgIC8vLyB0aW1lb3V0LCBsZWF2aW5nIHRoZSBjb25uZWN0IGF0dGVtcHQgdG8gZmluaXNoIGluIHRoZSBiYWNrZ3JvdW5kLiBUaGlzCiAgICAvLy8gdmVyc2lvbiB1c2VzIGEgY2FuY2VsbGFibGUgPHNlZSBjcmVmPSJTb2NrZXQuQ29ubmVjdEFzeW5jKEVuZFBvaW50LCBDYW5jZWxsYXRpb25Ub2tlbikiLz4KICAgIC8vLyBzbyBhIDUwJm5ic3A7bXMgc2NhbiBvZiA1IHBvcnRzIGFjcm9zcyAyNTQgaG9zdHMgZG9lcyBub3QgbGVhdmUgdGhvdXNhbmRzCiAgICAvLy8gb2Ygb3JwaGFuZWQgaGFsZi1vcGVuIGNvbm5lY3Rpb25zIGJlaGluZC4KICAgIC8vLyA8L3JlbWFya3M+CiAgICBwdWJsaWMgc3RhdGljIGFzeW5jIFRhc2s8Ym9vbD4gSXNPcGVuQXN5bmMoc3RyaW5nIGlwLCBpbnQgcG9ydCwgaW50IHRpbWVvdXRNcywgQ2FuY2VsbGF0aW9uVG9rZW4gY3QgPSBkZWZhdWx0KQogICAgewogICAgICAgIGlmIChwb3J0IGlzIDw9IDAgb3IgPiA2NTUzNSkgcmV0dXJuIGZhbHNlOwogICAgICAgIGlmICghSVBBZGRyZXNzLlRyeVBhcnNlKGlwLCBvdXQgdmFyIGFkZHJlc3MpKSByZXR1cm4gZmFsc2U7CgogICAgICAgIHVzaW5nIHZhciBzb2NrZXQgPSBuZXcgU29ja2V0KEFkZHJlc3NGYW1pbHkuSW50ZXJOZXR3b3JrLCBTb2NrZXRUeXBlLlN0cmVhbSwgUHJvdG9jb2xUeXBlLlRjcCk7CiAgICAgICAgdHJ5CiAgICAgICAgewogICAgICAgICAgICB1c2luZyB2YXIgY3RzID0gQ2FuY2VsbGF0aW9uVG9rZW5Tb3VyY2UuQ3JlYXRlTGlua2VkVG9rZW5Tb3VyY2UoY3QpOwogICAgICAgICAgICBpZiAodGltZW91dE1zID4gMCkgY3RzLkNhbmNlbEFmdGVyKHRpbWVvdXRNcyk7CiAgICAgICAgICAgIGF3YWl0IHNvY2tldC5Db25uZWN0QXN5bmMobmV3IElQRW5kUG9pbnQoYWRkcmVzcywgcG9ydCksIGN0cy5Ub2tlbikuQ29uZmlndXJlQXdhaXQoZmFsc2UpOwogICAgICAgICAgICByZXR1cm4gc29ja2V0LkNvbm5lY3RlZDsKICAgICAgICB9CiAgICAgICAgY2F0Y2ggKE9wZXJhdGlvbkNhbmNlbGVkRXhjZXB0aW9uKQogICAgICAgIHsKICAgICAgICAgICAgcmV0dXJuIGZhbHNlOwogICAgICAgIH0KICAgICAgICBjYXRjaCAoU29ja2V0RXhjZXB0aW9uKQogICAgICAgIHsKICAgICAgICAgICAgcmV0dXJuIGZhbHNlOwogICAgICAgIH0KICAgICAgICBjYXRjaCAoT2JqZWN0RGlzcG9zZWRFeGNlcHRpb24pCiAgICAgICAgewogICAgICAgICAgICByZXR1cm4gZmFsc2U7CiAgICAgICAgfQogICAgICAgIGZpbmFsbHkKICAgICAgICB7CiAgICAgICAgICAgIHRyeSB7IHNvY2tldC5DbG9zZSgpOyB9IGNhdGNoIHsgLyogYWxyZWFkeSBnb25lICovIH0KICAgICAgICB9CiAgICB9CgogICAgLy8vIDxzdW1tYXJ5PkJsb2NraW5nIGNvbnZlbmllbmNlIHdyYXBwZXIgYXJvdW5kIDxzZWUgY3JlZj0iSXNPcGVuQXN5bmMiLz4uPC9zdW1tYXJ5PgogICAgcHVibGljIHN0YXRpYyBib29sIElzT3BlbihzdHJpbmcgaXAsIGludCBwb3J0LCBpbnQgdGltZW91dE1zLCBDYW5jZWxsYXRpb25Ub2tlbiBjdCA9IGRlZmF1bHQpID0+CiAgICAgICAgSXNPcGVuQXN5bmMoaXAsIHBvcnQsIHRpbWVvdXRNcywgY3QpLkdldEF3YWl0ZXIoKS5HZXRSZXN1bHQoKTsKCiAgICAvLy8gPHN1bW1hcnk+CiAgICAvLy8gVHJpZXMgZWFjaCBwb3J0IGluIHR1cm4gYW5kIHN0b3BzIGF0IHRoZSBmaXJzdCBzdWNjZXNzIOKAlCB0aGUgb3JpZ2luYWwncwogICAgLy8vIDxjPlRjcFBvcnRUZXN0TXVsaTwvYz4uIDxwYXJhbXJlZiBuYW1lPSJvblJlc3VsdCIvPiByZWNlaXZlcyB0aGUgdmVyZGljdC4KICAgIC8vLyA8L3N1bW1hcnk+CiAgICBwdWJsaWMgc3RhdGljIGFzeW5jIFRhc2s8Ym9vbD4gQW55UG9ydE9wZW5Bc3luYygKICAgICAgICBzdHJpbmcgaXAsCiAgICAgICAgSUVudW1lcmFibGU8aW50PiBwb3J0cywKICAgICAgICBpbnQgdGltZW91dE1zLAogICAgICAgIEFjdGlvbjxib29sPj8gb25SZXN1bHQgPSBudWxsLAogICAgICAgIENhbmNlbGxhdGlvblRva2VuIGN0ID0gZGVmYXVsdCkKICAgIHsKICAgICAgICB2YXIgYW55ID0gZmFsc2U7CiAgICAgICAgZm9yZWFjaCAodmFyIHBvcnQgaW4gcG9ydHMpCiAgICAgICAgewogICAgICAgICAgICBjdC5UaHJvd0lmQ2FuY2VsbGF0aW9uUmVxdWVzdGVkKCk7CiAgICAgICAgICAgIGlmIChhd2FpdCBJc09wZW5Bc3luYyhpcCwgcG9ydCwgdGltZW91dE1zLCBjdCkuQ29uZmlndXJlQXdhaXQoZmFsc2UpKQogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICBhbnkgPSB0cnVlOwogICAgICAgICAgICAgICAgYnJlYWs7CiAgICAgICAgICAgIH0KICAgICAgICB9CgogICAgICAgIG9uUmVzdWx0Py5JbnZva2UoYW55KTsKICAgICAgICByZXR1cm4gYW55OwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT5NZWFzdXJlcyBjb25uZWN0IGxhdGVuY3k7IC0xIHdoZW4gdGhlIHBvcnQgaXMgY2xvc2VkIG9yIGZpbHRlcmVkLjwvc3VtbWFyeT4KICAgIHB1YmxpYyBzdGF0aWMgYXN5bmMgVGFzazxsb25nPiBNZWFzdXJlQXN5bmMoc3RyaW5nIGlwLCBpbnQgcG9ydCwgaW50IHRpbWVvdXRNcywgQ2FuY2VsbGF0aW9uVG9rZW4gY3QgPSBkZWZhdWx0KQogICAgewogICAgICAgIHZhciBzdyA9IFN0b3B3YXRjaC5TdGFydE5ldygpOwogICAgICAgIHZhciBvcGVuID0gYXdhaXQgSXNPcGVuQXN5bmMoaXAsIHBvcnQsIHRpbWVvdXRNcywgY3QpLkNvbmZpZ3VyZUF3YWl0KGZhbHNlKTsKICAgICAgICBzdy5TdG9wKCk7CiAgICAgICAgcmV0dXJuIG9wZW4gPyBzdy5FbGFwc2VkTWlsbGlzZWNvbmRzIDogLTE7CiAgICB9Cn0K
+using System.Diagnostics;
+using System.Net;
+using System.Net.Sockets;
+
+namespace IPScaner.Core.Net;
+
+/// <summary>TCP connect probe used both as a ping fallback and by the port scanner.</summary>
+public static class TcpProbe
+{
+    /// <summary>
+    /// Attempts a full TCP handshake. Returns true only when the connection was
+    /// established; a refused or timed-out connect is false.
+    /// </summary>
+    /// <remarks>
+    /// The original used <c>TcpClient.BeginConnect</c> plus
+    /// <c>AsyncWaitHandle.WaitOne(timeout)</c> and then closed the client on
+    /// timeout, leaving the connect attempt to finish in the background. This
+    /// version uses a cancellable <see cref="Socket.ConnectAsync(EndPoint, CancellationToken)"/>
+    /// so a 50&nbsp;ms scan of 5 ports across 254 hosts does not leave thousands
+    /// of orphaned half-open connections behind.
+    /// </remarks>
+    public static async Task<bool> IsOpenAsync(string ip, int port, int timeoutMs, CancellationToken ct = default)
+    {
+        if (port is <= 0 or > 65535) return false;
+        if (!IPAddress.TryParse(ip, out var address)) return false;
+
+        using var socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+        try
+        {
+            using var cts = CancellationTokenSource.CreateLinkedTokenSource(ct);
+            if (timeoutMs > 0) cts.CancelAfter(timeoutMs);
+            await socket.ConnectAsync(new IPEndPoint(address, port), cts.Token).ConfigureAwait(false);
+            return socket.Connected;
+        }
+        catch (OperationCanceledException)
+        {
+            return false;
+        }
+        catch (SocketException)
+        {
+            return false;
+        }
+        catch (ObjectDisposedException)
+        {
+            return false;
+        }
+        finally
+        {
+            try { socket.Close(); } catch { /* already gone */ }
+        }
+    }
+
+    /// <summary>Blocking convenience wrapper around <see cref="IsOpenAsync"/>.</summary>
+    public static bool IsOpen(string ip, int port, int timeoutMs, CancellationToken ct = default) =>
+        IsOpenAsync(ip, port, timeoutMs, ct).GetAwaiter().GetResult();
+
+    /// <summary>
+    /// Tries each port in turn and stops at the first success — the original's
+    /// <c>TcpPortTestMuli</c>. <paramref name="onResult"/> receives the verdict.
+    /// </summary>
+    public static async Task<bool> AnyPortOpenAsync(
+        string ip,
+        IEnumerable<int> ports,
+        int timeoutMs,
+        Action<bool>? onResult = null,
+        CancellationToken ct = default)
+    {
+        var any = false;
+        foreach (var port in ports)
+        {
+            ct.ThrowIfCancellationRequested();
+            if (await IsOpenAsync(ip, port, timeoutMs, ct).ConfigureAwait(false))
+            {
+                any = true;
+                break;
+            }
+        }
+
+        onResult?.Invoke(any);
+        return any;
+    }
+
+    /// <summary>Measures connect latency; -1 when the port is closed or filtered.</summary>
+    public static async Task<long> MeasureAsync(string ip, int port, int timeoutMs, CancellationToken ct = default)
+    {
+        var sw = Stopwatch.StartNew();
+        var open = await IsOpenAsync(ip, port, timeoutMs, ct).ConfigureAwait(false);
+        sw.Stop();
+        return open ? sw.ElapsedMilliseconds : -1;
+    }
+}

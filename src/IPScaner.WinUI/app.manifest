@@ -1,1 +1,33 @@
-PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPGFzc2VtYmx5IG1hbmlmZXN0VmVyc2lvbj0iMS4wIiB4bWxucz0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTphc20udjEiPgogIDxhc3NlbWJseUlkZW50aXR5IHZlcnNpb249IjEuMjguMi4wIiBuYW1lPSJJUFNjYW5lci5XaW5VSSIgLz4KCiAgPHRydXN0SW5mbyB4bWxucz0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTphc20udjIiPgogICAgPHNlY3VyaXR5PgogICAgICA8cmVxdWVzdGVkUHJpdmlsZWdlcyB4bWxucz0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTphc20udjMiPgogICAgICAgIDwhLS0KICAgICAgICAgIGFzSW52b2tlciwgZGVsaWJlcmF0ZWx5LiBUaGUgb3JpZ2luYWwgZm9yY2VkIGEgVUFDIHByb21wdCBvbiBldmVyeSBsYXVuY2gKICAgICAgICAgIGJ5IHJlLWxhdW5jaGluZyBpdHNlbGYgd2l0aCBWZXJiPSJydW5hcyIuIE9ubHkgdHdvIGZlYXR1cmVzIGdlbnVpbmVseSBuZWVkCiAgICAgICAgICBlbGV2YXRpb24gKOS/ruaUueacrOWcsElQIHZpYSBuZXRzaCwgYW5kIGZsdXNoaW5nIHRoZSBBUlAgY2FjaGUpOyBzY2FubmluZyBkb2VzCiAgICAgICAgICBub3QuIFRoZSBhcHAgZGV0ZWN0cyBpdHMgZWxldmF0aW9uIHN0YXRlIGFuZCBvZmZlcnMgYW4gb24tZGVtYW5kIHJlc3RhcnQKICAgICAgICAgIGluc3RlYWQgb2YgZ2F0aW5nIHRoZSB3aG9sZSB0b29sIGJlaGluZCBVQUMuCiAgICAgICAgLS0+CiAgICAgICAgPHJlcXVlc3RlZEV4ZWN1dGlvbkxldmVsIGxldmVsPSJhc0ludm9rZXIiIHVpQWNjZXNzPSJmYWxzZSIgLz4KICAgICAgPC9yZXF1ZXN0ZWRQcml2aWxlZ2VzPgogICAgPC9zZWN1cml0eT4KICA8L3RydXN0SW5mbz4KCiAgPGFwcGxpY2F0aW9uIHhtbG5zPSJ1cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOmFzbS52MyI+CiAgICA8d2luZG93c1NldHRpbmdzPgogICAgICA8ZHBpQXdhcmVuZXNzIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL1NNSS8yMDE2L1dpbmRvd3NTZXR0aW5ncyI+UGVyTW9uaXRvclYyPC9kcGlBd2FyZW5lc3M+CiAgICAgIDxsb25nUGF0aEF3YXJlIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL1NNSS8yMDE2L1dpbmRvd3NTZXR0aW5ncyI+dHJ1ZTwvbG9uZ1BhdGhBd2FyZT4KICAgIDwvd2luZG93c1NldHRpbmdzPgogIDwvYXBwbGljYXRpb24+CgogIDxjb21wYXRpYmlsaXR5IHhtbG5zPSJ1cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOmNvbXBhdGliaWxpdHkudjEiPgogICAgPGFwcGxpY2F0aW9uPgogICAgICA8IS0tIFdpbmRvd3MgMTAgLyAxMSAtLT4KICAgICAgPHN1cHBvcnRlZE9TIElkPSJ7OGUwZjdhMTItYmZiMy00ZmU4LWI5YTUtNDhmZDUwYTE1YTlhfSIgLz4KICAgIDwvYXBwbGljYXRpb24+CiAgPC9jb21wYXRpYmlsaXR5Pgo8L2Fzc2VtYmx5Pgo=
+<?xml version="1.0" encoding="utf-8"?>
+<assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1">
+  <assemblyIdentity version="1.28.2.0" name="IPScaner.WinUI" />
+
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          asInvoker, deliberately. The original forced a UAC prompt on every launch
+          by re-launching itself with Verb="runas". Only two features genuinely need
+          elevation (修改本地IP via netsh, and flushing the ARP cache); scanning does
+          not. The app detects its elevation state and offers an on-demand restart
+          instead of gating the whole tool behind UAC.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+
+  <application xmlns="urn:schemas-microsoft-com:asm.v3">
+    <windowsSettings>
+      <dpiAwareness xmlns="http://schemas.microsoft.com/SMI/2016/WindowsSettings">PerMonitorV2</dpiAwareness>
+      <longPathAware xmlns="http://schemas.microsoft.com/SMI/2016/WindowsSettings">true</longPathAware>
+    </windowsSettings>
+  </application>
+
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Windows 10 / 11 -->
+      <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />
+    </application>
+  </compatibility>
+</assembly>

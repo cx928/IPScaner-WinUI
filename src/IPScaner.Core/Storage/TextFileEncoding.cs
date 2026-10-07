@@ -1,1 +1,72 @@
-dXNpbmcgU3lzdGVtLlRleHQ7CgpuYW1lc3BhY2UgSVBTY2FuZXIuQ29yZS5TdG9yYWdlOwoKLy8vIDxzdW1tYXJ5PgovLy8gRW5jb2Rpbmcgc25pZmZpbmcgZm9yIHRoZSB0b29sJ3MgbGVnYWN5IHRleHQgZmlsZXMuCi8vLyA8L3N1bW1hcnk+Ci8vLyA8cmVtYXJrcz4KLy8vIFRoZSBvcmlnaW5hbCBtZW1vL2NvbW1hbmQgZmlsZXMgbWF5IGJlIFVURi04ICh3aXRoIG9yIHdpdGhvdXQgQk9NKSwKLy8vIFVURi0xNiBMRS9CRSwgb3IgR0JLIOKAlCB0aGUgbGF0dGVyIGJlaW5nIGNvbW1vbiBvbiBDaGluZXNlIFdpbmRvd3Mgd2hlcmUKLy8vIE5vdGVwYWQgc2F2ZWQgIkFOU0kiLiBUaGlzIG1pcnJvcnMgdGhlIG9yaWdpbmFsIGRldGVjdGlvbiBvcmRlciBzbyBleGlzdGluZwovLy8gZmlsZXMga2VlcCBsb2FkaW5nIGNvcnJlY3RseS4KLy8vIDwvcmVtYXJrcz4KcHVibGljIHN0YXRpYyBjbGFzcyBUZXh0RmlsZUVuY29kaW5nCnsKICAgIHN0YXRpYyBUZXh0RmlsZUVuY29kaW5nKCkKICAgIHsKICAgICAgICAvLyBHQksgaXMgbm90IGluIHRoZSBkZWZhdWx0IC5ORVQgQ29yZSBlbmNvZGluZyBzZXQuCiAgICAgICAgRW5jb2RpbmcuUmVnaXN0ZXJQcm92aWRlcihDb2RlUGFnZXNFbmNvZGluZ1Byb3ZpZGVyLkluc3RhbmNlKTsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+VVRGLTggd2l0aG91dCBCT00g4oCUIHRoZSBlbmNvZGluZyBuZXcgZmlsZXMgYXJlIHdyaXR0ZW4gd2l0aC48L3N1bW1hcnk+CiAgICBwdWJsaWMgc3RhdGljIEVuY29kaW5nIFV0ZjhOb0JvbSB7IGdldDsgfSA9IG5ldyBVVEY4RW5jb2RpbmcoZW5jb2RlclNob3VsZEVtaXRVVEY4SWRlbnRpZmllcjogZmFsc2UpOwoKICAgIC8vLyA8c3VtbWFyeT5VVEYtOCB3aXRoIEJPTSDigJQgd2hhdCB0aGUgb3JpZ2luYWwgbWVtbyB3cml0ZXIgcHJvZHVjZWQuPC9zdW1tYXJ5PgogICAgcHVibGljIHN0YXRpYyBFbmNvZGluZyBVdGY4Qm9tIHsgZ2V0OyB9ID0gbmV3IFVURjhFbmNvZGluZyhlbmNvZGVyU2hvdWxkRW1pdFVURjhJZGVudGlmaWVyOiB0cnVlKTsKCiAgICAvLy8gPHN1bW1hcnk+R0JLIC8gY29kZSBwYWdlIDkzNi48L3N1bW1hcnk+CiAgICBwdWJsaWMgc3RhdGljIEVuY29kaW5nIEdiawogICAgewogICAgICAgIGdldAogICAgICAgIHsKICAgICAgICAgICAgdHJ5IHsgcmV0dXJuIEVuY29kaW5nLkdldEVuY29kaW5nKDkzNik7IH0KICAgICAgICAgICAgY2F0Y2ggeyByZXR1cm4gRW5jb2RpbmcuVVRGODsgfQogICAgICAgIH0KICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+RGV0ZWN0cyB0aGUgZW5jb2Rpbmcgb2YgYSBmaWxlIGZyb20gaXRzIGJ5dGUtb3JkZXIgbWFyayBhbmQgY29udGVudHMuPC9zdW1tYXJ5PgogICAgcHVibGljIHN0YXRpYyBFbmNvZGluZyBEZXRlY3Qoc3RyaW5nIGZpbGVQYXRoKQogICAgewogICAgICAgIHRyeQogICAgICAgIHsKICAgICAgICAgICAgdmFyIGJ5dGVzID0gRmlsZS5SZWFkQWxsQnl0ZXMoZmlsZVBhdGgpOwogICAgICAgICAgICByZXR1cm4gRGV0ZWN0KGJ5dGVzKTsKICAgICAgICB9CiAgICAgICAgY2F0Y2gKICAgICAgICB7CiAgICAgICAgICAgIHJldHVybiBFbmNvZGluZy5EZWZhdWx0OwogICAgICAgIH0KICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+RGV0ZWN0cyB0aGUgZW5jb2Rpbmcgb2YgYSBieXRlIGJ1ZmZlciAoQk9NIGZpcnN0LCB0aGVuIEdCSyBoZXVyaXN0aWMpLjwvc3VtbWFyeT4KICAgIHB1YmxpYyBzdGF0aWMgRW5jb2RpbmcgRGV0ZWN0KFJlYWRPbmx5U3BhbjxieXRlPiBieXRlcykKICAgIHsKICAgICAgICBpZiAoYnl0ZXMuTGVuZ3RoID49IDMgJiYgYnl0ZXNbMF0gPT0gMHhFRiAmJiBieXRlc1sxXSA9PSAweEJCICYmIGJ5dGVzWzJdID09IDB4QkYpIHJldHVybiBVdGY4Qm9tOwogICAgICAgIGlmIChieXRlcy5MZW5ndGggPj0gMiAmJiBieXRlc1swXSA9PSAweEZGICYmIGJ5dGVzWzFdID09IDB4RkUpIHJldHVybiBFbmNvZGluZy5Vbmljb2RlOwogICAgICAgIGlmIChieXRlcy5MZW5ndGggPj0gMiAmJiBieXRlc1swXSA9PSAweEZFICYmIGJ5dGVzWzFdID09IDB4RkYpIHJldHVybiBFbmNvZGluZy5CaWdFbmRpYW5Vbmljb2RlOwoKICAgICAgICAvLyBObyBCT006IGxvb2sgZm9yIGJ5dGVzIHRoYXQgYXJlIG9ubHkgcGxhdXNpYmxlIGFzIGEgR0JLIGxlYWQgYnl0ZS4KICAgICAgICAvLyAoVGhlIG9yaWdpbmFsIHVzZWQgdGhlIHNhbWUgIj49IDE2MSIgaGV1cmlzdGljLikKICAgICAgICBmb3JlYWNoICh2YXIgYiBpbiBieXRlcykKICAgICAgICB7CiAgICAgICAgICAgIGlmIChiIGlzID49IDE2MSBhbmQgPD0gMjQ3KSByZXR1cm4gR2JrOwogICAgICAgIH0KCiAgICAgICAgcmV0dXJuIFV0ZjhOb0JvbTsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+UmVhZHMgYWxsIGxpbmVzIHVzaW5nIHRoZSBkZXRlY3RlZCBlbmNvZGluZy48L3N1bW1hcnk+CiAgICBwdWJsaWMgc3RhdGljIHN0cmluZ1tdIFJlYWRBbGxMaW5lcyhzdHJpbmcgZmlsZVBhdGgpID0+CiAgICAgICAgRmlsZS5SZWFkQWxsTGluZXMoZmlsZVBhdGgsIERldGVjdChmaWxlUGF0aCkpOwp9Cg==
+using System.Text;
+
+namespace IPScaner.Core.Storage;
+
+/// <summary>
+/// Encoding sniffing for the tool's legacy text files.
+/// </summary>
+/// <remarks>
+/// The original memo/command files may be UTF-8 (with or without BOM),
+/// UTF-16 LE/BE, or GBK — the latter being common on Chinese Windows where
+/// Notepad saved "ANSI". This mirrors the original detection order so existing
+/// files keep loading correctly.
+/// </remarks>
+public static class TextFileEncoding
+{
+    static TextFileEncoding()
+    {
+        // GBK is not in the default .NET Core encoding set.
+        Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+    }
+
+    /// <summary>UTF-8 without BOM — the encoding new files are written with.</summary>
+    public static Encoding Utf8NoBom { get; } = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
+
+    /// <summary>UTF-8 with BOM — what the original memo writer produced.</summary>
+    public static Encoding Utf8Bom { get; } = new UTF8Encoding(encoderShouldEmitUTF8Identifier: true);
+
+    /// <summary>GBK / code page 936.</summary>
+    public static Encoding Gbk
+    {
+        get
+        {
+            try { return Encoding.GetEncoding(936); }
+            catch { return Encoding.UTF8; }
+        }
+    }
+
+    /// <summary>Detects the encoding of a file from its byte-order mark and contents.</summary>
+    public static Encoding Detect(string filePath)
+    {
+        try
+        {
+            var bytes = File.ReadAllBytes(filePath);
+            return Detect(bytes);
+        }
+        catch
+        {
+            return Encoding.Default;
+        }
+    }
+
+    /// <summary>Detects the encoding of a byte buffer (BOM first, then GBK heuristic).</summary>
+    public static Encoding Detect(ReadOnlySpan<byte> bytes)
+    {
+        if (bytes.Length >= 3 && bytes[0] == 0xEF && bytes[1] == 0xBB && bytes[2] == 0xBF) return Utf8Bom;
+        if (bytes.Length >= 2 && bytes[0] == 0xFF && bytes[1] == 0xFE) return Encoding.Unicode;
+        if (bytes.Length >= 2 && bytes[0] == 0xFE && bytes[1] == 0xFF) return Encoding.BigEndianUnicode;
+
+        // No BOM: look for bytes that are only plausible as a GBK lead byte.
+        // (The original used the same ">= 161" heuristic.)
+        foreach (var b in bytes)
+        {
+            if (b is >= 161 and <= 247) return Gbk;
+        }
+
+        return Utf8NoBom;
+    }
+
+    /// <summary>Reads all lines using the detected encoding.</summary>
+    public static string[] ReadAllLines(string filePath) =>
+        File.ReadAllLines(filePath, Detect(filePath));
+}

@@ -1,1 +1,522 @@
-dXNpbmcgU3lzdGVtLkRpYWdub3N0aWNzOwp1c2luZyBTeXN0ZW0uVGV4dDsKdXNpbmcgSVBTY2FuZXIuQ29yZS5Mb2dnaW5nOwp1c2luZyBJUFNjYW5lci5Db3JlLk1vZGVsczsKdXNpbmcgSVBTY2FuZXIuQ29yZS5TdG9yYWdlOwoKbmFtZXNwYWNlIElQU2NhbmVyLkNvcmUuTmV0OwoKLy8vIDxzdW1tYXJ5PgovLy8gUmVhZHMgdGhlIHNhdmVkIFdMQU4gcHJvZmlsZXMgYW5kIHRoZWlyIGNsZWFydGV4dCBrZXlzIGJ5IHNjcmFwaW5nCi8vLyA8Yz5uZXRzaCB3bGFuIHNob3cgcHJvZmlsZXM8L2M+IC8gPGM+bmV0c2ggd2xhbiBzaG93IHByb2ZpbGUgbmFtZT0i4oCmIiBrZXk9Y2xlYXI8L2M+LgovLy8gPC9zdW1tYXJ5PgovLy8gPHJlbWFya3M+Ci8vLyA8cGFyYT4KLy8vIFRoZSBvcmlnaW5hbCA8Yz5Gb3JtV2lGaVZpZXdlcjwvYz4gbWF0Y2hlZCB0aGUgPGVtPmxvY2FsaXNlZDwvZW0+IG1hcmtlcnMKLy8vIDxjPuaJgOacieeUqOaIt+mFjee9ruaWh+S7tjwvYz4gYW5kIDxjPuWFs+mUruWGheWuuTwvYz4sIHNvIG9uIGFuIEVuZ2xpc2ggKG9yIGFueSBub24tQ2hpbmVzZSkKLy8vIFdpbmRvd3MgZXZlcnkgYXR0ZW1wdCByZXR1cm5lZCA8Yz5udWxsPC9jPiBhbmQgdGhlIGxpc3Qgc3RheWVkIGVtcHR5LiBUaGlzIHBvcnQKLy8vIGlzIGxvY2FsZS1pbmRlcGVuZGVudDogcHJvZmlsZSBuYW1lcyBhcmUgd2hhdGV2ZXIgZm9sbG93cyB0aGUgbGFzdCBjb2xvbiBvbiBhCi8vLyBsaW5lIG9mIHRoZSBwcm9maWxlIGxpc3RpbmcgKGhlYWRlci9mb290ZXIgbGluZXMgaGF2ZSBubyB2YWx1ZSBhZnRlciB0aGVpcgovLy8gY29sb24sIG9yIG5vIGNvbG9uIGF0IGFsbCksIGFuZCB0aGUga2V5IGlzIHRha2VuIGZyb20gdGhlIGxpbmUgd2hvc2UgbGFiZWwgaXMKLy8vIDxjPuWFs+mUruWGheWuuTwvYz4gLyA8Yz5LZXkgQ29udGVudDwvYz4gLyBjb250YWlucyBib3RoICJrZXkiIGFuZCAiY29udGVudCIuCi8vLyBCb3RoIDxjPjo8L2M+IChVKzAwM0EpIGFuZCA8Yz7vvJo8L2M+IChVK0ZGMUEpIGFyZSBhY2NlcHRlZCBhcyBzZXBhcmF0b3JzLgovLy8gPC9wYXJhPgovLy8gPHBhcmE+Ci8vLyBFbmNvZGluZyBmb2xsb3dzIHRoZSBvcmlnaW5hbCdzIFdpbmRvd3MgMTEgMjRIMiB3b3JrYXJvdW5kOiB0aGUgcHJvY2VzcyBpcwovLy8gc3RhcnRlZCB3aXRoIDxzZWUgY3JlZj0iRW5jb2RpbmcuVVRGOCIvPiBhbmQsIHdoZW4gdGhhdCBwcm9kdWNlcyBubyB1c2FibGUKLy8vIG5hbWVzIChlbXB0eSBzZXQsIG9yIHJlcGxhY2VtZW50IGNoYXJhY3RlcnMgZnJvbSBhIEdCSyBjb25zb2xlKSwgdGhlIGNvbW1hbmQgaXMKLy8vIHJldHJpZWQgd2l0aCA8c2VlIGNyZWY9IkVuY29kaW5nLkRlZmF1bHQiLz4gYW5kIHRoZW4KLy8vIDxzZWUgY3JlZj0iVGV4dEZpbGVFbmNvZGluZy5HYmsiLz47IHRoZSBhdHRlbXB0IHRoYXQgcHJvZHVjZWQgdXNhYmxlIG91dHB1dAovLy8gd2lucy4gUHVyZS1BU0NJSSBvdXRwdXQgaXMgYWNjZXB0ZWQgaW1tZWRpYXRlbHkgYmVjYXVzZSByZS1kZWNvZGluZyBpdCBjYW5ub3QKLy8vIGNoYW5nZSBhbnl0aGluZy4KLy8vIDwvcGFyYT4KLy8vIDxwYXJhPlRoaXMgY2xhc3MgbmV2ZXIgdGhyb3dzOiBhbnkgZmFpbHVyZSB5aWVsZHMgYW4gZW1wdHkgbGlzdCBwbHVzIGEgbG9nIGVudHJ5LjwvcGFyYT4KLy8vIDwvcmVtYXJrcz4KcHVibGljIHNlYWxlZCBjbGFzcyBXaWZpU2VydmljZQp7CiAgICBwcml2YXRlIGNvbnN0IHN0cmluZyBDYXRlZ29yeSA9IG5hbWVvZihXaWZpU2VydmljZSk7CiAgICBwcml2YXRlIGNvbnN0IHN0cmluZyBOZXRzaCA9ICJuZXRzaCI7CiAgICBwcml2YXRlIGNvbnN0IHN0cmluZyBTaG93UHJvZmlsZXNBcmd1bWVudHMgPSAid2xhbiBzaG93IHByb2ZpbGVzIjsKCiAgICAvLy8gPHN1bW1hcnk+UmVwbGFjZW1lbnQgY2hhcmFjdGVyIHByb2R1Y2VkIHdoZW4gYSBieXRlIHNlcXVlbmNlIGNhbm5vdCBiZSBkZWNvZGVkLjwvc3VtbWFyeT4KICAgIHByaXZhdGUgY29uc3QgY2hhciBSZXBsYWNlbWVudENoYXIgPSAnXHVGRkZEJzsKCiAgICAvLy8gPHN1bW1hcnk+QSBzaW5nbGUgbmV0c2ggaW52b2NhdGlvbiBpcyBuZXZlciBleHBlY3RlZCB0byB0YWtlIHRoaXMgbG9uZy48L3N1bW1hcnk+CiAgICBwcml2YXRlIHN0YXRpYyByZWFkb25seSBUaW1lU3BhbiBDb21tYW5kVGltZW91dCA9IFRpbWVTcGFuLkZyb21TZWNvbmRzKDIwKTsKCiAgICAvLy8gPHN1bW1hcnk+S25vd24gY2lwaGVyIHRva2VucywgdXNlZCB0byB0ZWxsIHRoZSBDaGluZXNlICLlr4bnoIEiIChjaXBoZXIpIGxhYmVsIGZyb20gYSBwYXNzd29yZCBsYWJlbC48L3N1bW1hcnk+CiAgICBwcml2YXRlIHN0YXRpYyByZWFkb25seSBIYXNoU2V0PHN0cmluZz4gQ2lwaGVyVG9rZW5zID0gbmV3KFN0cmluZ0NvbXBhcmVyLk9yZGluYWxJZ25vcmVDYXNlKQogICAgewogICAgICAgICJDQ01QIiwgIkNDTVAtMjU2IiwgIkdDTVAiLCAiR0NNUC0yNTYiLCAiVEtJUCIsICJXRVAiLCAiV0VQLTQwIiwgIldFUC0xMDQiLCAiV0VQLTEyOCIsCiAgICAgICAgIkFFUyIsICJCSVAiLCAiTm9uZSIsICLml6AiLCAi5YW25LuWIiwgIuacquefpSIsICJPcGVuIiwgIuW8gOaUviIsCiAgICB9OwoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBFbnVtZXJhdGVzIGV2ZXJ5IHNhdmVkIFdMQU4gcHJvZmlsZSAoYWxsIHdpcmVsZXNzIGludGVyZmFjZXMpIHdpdGggaXRzCiAgICAvLy8gY2xlYXJ0ZXh0IGtleSB3aGVuIG9uZSBpcyBzdG9yZWQuCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgLy8vIDxyZXR1cm5zPgogICAgLy8vIE9uZSA8c2VlIGNyZWY9IldpZmlQcm9maWxlIi8+IHBlciB1bmlxdWUgcHJvZmlsZTsgb3BlbiBuZXR3b3JrcyBhcmUgaW5jbHVkZWQKICAgIC8vLyB3aXRoIDxzZWUgY3JlZj0iV2lmaVByb2ZpbGUuSXNPcGVuIi8+IHNldCBhbmQgYW4gZW1wdHkgcGFzc3dvcmQuIEVtcHR5IG9uIGZhaWx1cmUuCiAgICAvLy8gPC9yZXR1cm5zPgogICAgcHVibGljIGFzeW5jIFRhc2s8TGlzdDxXaWZpUHJvZmlsZT4+IFF1ZXJ5QXN5bmMoQ2FuY2VsbGF0aW9uVG9rZW4gY3QgPSBkZWZhdWx0KQogICAgewogICAgICAgIHZhciBwcm9maWxlcyA9IG5ldyBMaXN0PFdpZmlQcm9maWxlPigpOwogICAgICAgIHRyeQogICAgICAgIHsKICAgICAgICAgICAgdmFyIChuYW1lcywgZW5jb2RpbmcpID0gYXdhaXQgUmVhZFByb2ZpbGVOYW1lc0FzeW5jKGN0KS5Db25maWd1cmVBd2FpdChmYWxzZSk7CiAgICAgICAgICAgIGlmIChuYW1lcy5Db3VudCA9PSAwKQogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICBBcHBMb2cuSW5zdGFuY2UuTG9nKENhdGVnb3J5LCAi5pyq6K+75Y+W5Yiw5Lu75L2V5bey5L+d5a2Y55qEV2lGaemFjee9ruaWh+S7tu+8iG5ldHNoIOaXoOi+k+WHuuOAgeaXoOaXoOe6v+e9keWNoeaIluWFqOmDqOino+eggeWksei0pe+8iSIpOwogICAgICAgICAgICAgICAgcmV0dXJuIHByb2ZpbGVzOwogICAgICAgICAgICB9CgogICAgICAgICAgICBBcHBMb2cuSW5zdGFuY2UuTG9nKENhdGVnb3J5LCAkIuivu+WPluWIsCB7bmFtZXMuQ291bnR9IOS4qldpRmnphY3nva7mlofku7bvvIzkvb/nlKjnvJbnoIEge2VuY29kaW5nLldlYk5hbWV9Iik7CgogICAgICAgICAgICBmb3JlYWNoICh2YXIgbmFtZSBpbiBuYW1lcykKICAgICAgICAgICAgewogICAgICAgICAgICAgICAgY3QuVGhyb3dJZkNhbmNlbGxhdGlvblJlcXVlc3RlZCgpOwogICAgICAgICAgICAgICAgdmFyIHByb2ZpbGUgPSBhd2FpdCBSZWFkUHJvZmlsZUFzeW5jKG5hbWUsIGVuY29kaW5nLCBjdCkuQ29uZmlndXJlQXdhaXQoZmFsc2UpOwogICAgICAgICAgICAgICAgaWYgKHByb2ZpbGUgaXMgbm90IG51bGwpIHByb2ZpbGVzLkFkZChwcm9maWxlKTsKICAgICAgICAgICAgfQogICAgICAgIH0KICAgICAgICBjYXRjaCAoT3BlcmF0aW9uQ2FuY2VsZWRFeGNlcHRpb24pCiAgICAgICAgewogICAgICAgICAgICBBcHBMb2cuSW5zdGFuY2UuTG9nKENhdGVnb3J5LCAkIuivu+WPlldpRmnlr4bnoIHlt7Llj5bmtojvvIzlt7Lov5Tlm54ge3Byb2ZpbGVzLkNvdW50fSDmnaHnu5PmnpwiKTsKICAgICAgICB9CiAgICAgICAgY2F0Y2ggKEV4Y2VwdGlvbiBleCkKICAgICAgICB7CiAgICAgICAgICAgIEFwcExvZy5JbnN0YW5jZS5Mb2coQ2F0ZWdvcnksICLor7vlj5ZXaUZp5a+G56CB5aSx6LSlOiAiICsgZXguTWVzc2FnZSk7CiAgICAgICAgfQoKICAgICAgICByZXR1cm4gcHJvZmlsZXM7CiAgICB9CgogICAgLy8gLS0tLSBwcm9maWxlIGxpc3RpbmcgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgogICAgLy8vIDxzdW1tYXJ5PgogICAgLy8vIFJ1bnMgdGhlIHByb2ZpbGUgbGlzdGluZyB1bmRlciBlYWNoIGNhbmRpZGF0ZSBlbmNvZGluZyB1bnRpbCBvbmUgeWllbGRzIGEKICAgIC8vLyB1c2FibGUgcmVzdWx0LCBhbmQgcmV0dXJucyB0aGUgcGFyc2VkIG5hbWVzIHdpdGggdGhlIGVuY29kaW5nIHRoYXQgcHJvZHVjZWQgdGhlbS4KICAgIC8vLyA8L3N1bW1hcnk+CiAgICBwcml2YXRlIHN0YXRpYyBhc3luYyBUYXNrPChMaXN0PHN0cmluZz4gTmFtZXMsIEVuY29kaW5nIEVuY29kaW5nKT4gUmVhZFByb2ZpbGVOYW1lc0FzeW5jKENhbmNlbGxhdGlvblRva2VuIGN0KQogICAgewogICAgICAgIHZhciBjYW5kaWRhdGVzID0gQ2FuZGlkYXRlRW5jb2RpbmdzKCk7CiAgICAgICAgdmFyIGJlc3QgPSBuZXcgTGlzdDxzdHJpbmc+KCk7CiAgICAgICAgdmFyIGJlc3RFbmNvZGluZyA9IGNhbmRpZGF0ZXNbMF07CiAgICAgICAgdmFyIGJlc3RTY29yZSA9IGludC5NaW5WYWx1ZTsKCiAgICAgICAgZm9yZWFjaCAodmFyIGVuY29kaW5nIGluIGNhbmRpZGF0ZXMpCiAgICAgICAgewogICAgICAgICAgICBjdC5UaHJvd0lmQ2FuY2VsbGF0aW9uUmVxdWVzdGVkKCk7CgogICAgICAgICAgICB2YXIgcnVuID0gYXdhaXQgUnVuTmV0c2hBc3luYyhTaG93UHJvZmlsZXNBcmd1bWVudHMsIGVuY29kaW5nLCBjdCkuQ29uZmlndXJlQXdhaXQoZmFsc2UpOwogICAgICAgICAgICBpZiAoIXJ1bi5TdGFydGVkKQogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAvLyBuZXRzaCBpdHNlbGYgaXMgdW5hdmFpbGFibGUg4oCUIGFub3RoZXIgZW5jb2RpbmcgY2Fubm90IGhlbHAuCiAgICAgICAgICAgICAgICBBcHBMb2cuSW5zdGFuY2UuTG9nKENhdGVnb3J5LCAkIm5ldHNoIOWQr+WKqOWksei0pToge3J1bi5TdGFuZGFyZEVycm9yfSIpOwogICAgICAgICAgICAgICAgYnJlYWs7CiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIHZhciBuYW1lcyA9IFBhcnNlUHJvZmlsZU5hbWVzKHJ1bi5TdGFuZGFyZE91dHB1dCk7CiAgICAgICAgICAgIHZhciBzY29yZSA9IFNjb3JlKHJ1bi5TdGFuZGFyZE91dHB1dCwgbmFtZXMpOwogICAgICAgICAgICBpZiAoc2NvcmUgPiBiZXN0U2NvcmUpCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIGJlc3RTY29yZSA9IHNjb3JlOwogICAgICAgICAgICAgICAgYmVzdCA9IG5hbWVzOwogICAgICAgICAgICAgICAgYmVzdEVuY29kaW5nID0gZW5jb2Rpbmc7CiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGlmIChJc1VzYWJsZShydW4uU3RhbmRhcmRPdXRwdXQsIG5hbWVzKSkgcmV0dXJuIChuYW1lcywgZW5jb2RpbmcpOwoKICAgICAgICAgICAgaWYgKElzUHVyZUFzY2lpKHJ1bi5TdGFuZGFyZE91dHB1dCkpCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIC8vIEFTQ0lJIGRlY29kZXMgaWRlbnRpY2FsbHkgdW5kZXIgYWxsIHRocmVlIGVuY29kaW5nczsgdGhlIG91dHB1dAogICAgICAgICAgICAgICAgLy8gcmVhbGx5IGRvZXMgbGlzdCBubyBwcm9maWxlLCBzbyByZXRyeWluZyB3b3VsZCBvbmx5IHdhc3RlIHNwYXducy4KICAgICAgICAgICAgICAgIEFwcExvZy5JbnN0YW5jZS5Mb2coQ2F0ZWdvcnksICJuZXRzaCDovpPlh7rkuLrnuq9BU0NJSeS4lOacquWMheWQq+mFjee9ruaWh+S7tu+8jOi3s+i/h+WFtuS9mee8lueggemHjeivlSIpOwogICAgICAgICAgICAgICAgYnJlYWs7CiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIEFwcExvZy5JbnN0YW5jZS5Mb2coQ2F0ZWdvcnksCiAgICAgICAgICAgICAgICAkIue8lueggSB7ZW5jb2RpbmcuV2ViTmFtZX0g5pyq6IO96Kej5p6Q5Ye66YWN572u5paH5Lu277yI6YCA5Ye656CBIHtydW4uRXhpdENvZGV977yJ77yM5bCd6K+V5LiL5LiA5Liq57yW56CBIik7CiAgICAgICAgfQoKICAgICAgICBpZiAoYmVzdC5Db3VudCA9PSAwKQogICAgICAgIHsKICAgICAgICAgICAgQXBwTG9nLkluc3RhbmNlLkxvZyhDYXRlZ29yeSwgIuaJgOaciee8lueggeWdh+acquiDveino+aekOWHuldpRmnphY3nva7mlofku7YiKTsKICAgICAgICB9CgogICAgICAgIHJldHVybiAoYmVzdCwgYmVzdEVuY29kaW5nKTsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+CiAgICAvLy8gRXh0cmFjdHMgcHJvZmlsZSBuYW1lcyBhcyAidGhlIHRleHQgYWZ0ZXIgdGhlIGxhc3QgY29sb24iIG9mIGV2ZXJ5IGxpbmUgdGhhdAogICAgLy8vIGNhcnJpZXMgYSB2YWx1ZS4gSGVhZGVyL2Zvb3RlciBsaW5lcyAoPGM+UHJvZmlsZXMgb24gaW50ZXJmYWNlIFdMQU46PC9jPiwgdGhlCiAgICAvLy8gPGM+LS0tLS0tLTwvYz4gcnVsZXMsIGJsYW5rIGxpbmVzKSBhcmUgZXhjbHVkZWQgYmVjYXVzZSB0aGV5IGVpdGhlciBoYXZlIG5vCiAgICAvLy8gY29sb24gb3Igbm90aGluZyBhZnRlciBpdC4gV2hlbiB0aGUgbGlzdGluZyBjb250YWlucyBhIHJ1bGUgbGluZSwgb25seSB0aGUKICAgIC8vLyBsaW5lcyBiZWxvdyB0aGUgZmlyc3QgcnVsZSBhcmUgY29uc2lkZXJlZCDigJQgdGhhdCBpcyB3aGVyZSB0aGUgcHJvZmlsZSBlbnRyaWVzCiAgICAvLy8gYWx3YXlzIGFyZSwgaW4gZXZlcnkgbG9jYWxlLgogICAgLy8vIDwvc3VtbWFyeT4KICAgIGludGVybmFsIHN0YXRpYyBMaXN0PHN0cmluZz4gUGFyc2VQcm9maWxlTmFtZXMoc3RyaW5nPyBvdXRwdXQpCiAgICB7CiAgICAgICAgdmFyIG5hbWVzID0gbmV3IExpc3Q8c3RyaW5nPigpOwogICAgICAgIGlmIChzdHJpbmcuSXNOdWxsT3JFbXB0eShvdXRwdXQpKSByZXR1cm4gbmFtZXM7CgogICAgICAgIHZhciBsaW5lcyA9IFNwbGl0TGluZXMob3V0cHV0KTsKICAgICAgICB2YXIgc3RhcnQgPSAwOwogICAgICAgIGZvciAodmFyIGkgPSAwOyBpIDwgbGluZXMuQ291bnQ7IGkrKykKICAgICAgICB7CiAgICAgICAgICAgIGlmICghSXNSdWxlTGluZShsaW5lc1tpXSkpIGNvbnRpbnVlOwogICAgICAgICAgICBzdGFydCA9IGkgKyAxOwogICAgICAgICAgICBicmVhazsKICAgICAgICB9CgogICAgICAgIHZhciBzZWVuID0gbmV3IEhhc2hTZXQ8c3RyaW5nPihTdHJpbmdDb21wYXJlci5PcmRpbmFsKTsKICAgICAgICBmb3IgKHZhciBpID0gc3RhcnQ7IGkgPCBsaW5lcy5Db3VudDsgaSsrKQogICAgICAgIHsKICAgICAgICAgICAgdmFyIGxpbmUgPSBsaW5lc1tpXS5UcmltKCk7CiAgICAgICAgICAgIGlmIChsaW5lLkxlbmd0aCA9PSAwIHx8IElzUnVsZUxpbmUobGluZSkpIGNvbnRpbnVlOwoKICAgICAgICAgICAgdmFyIGNvbG9uID0gTGFzdFNlcGFyYXRvcihsaW5lKTsKICAgICAgICAgICAgaWYgKGNvbG9uIDwgMCkgY29udGludWU7IC8vICJVc2VyIHByb2ZpbGVzIiwgIkdyb3VwIHBvbGljeSBwcm9maWxlcyAocmVhZCBvbmx5KSIKCiAgICAgICAgICAgIHZhciB2YWx1ZSA9IFVucXVvdGUobGluZVsoY29sb24gKyAxKS4uXSk7CiAgICAgICAgICAgIGlmICh2YWx1ZS5MZW5ndGggPT0gMCkgY29udGludWU7ICAvLyAiUHJvZmlsZXMgb24gaW50ZXJmYWNlIFdMQU46IgogICAgICAgICAgICBpZiAodmFsdWUuQ29udGFpbnMoJyInKSkgY29udGludWU7IC8vIGNhbm5vdCBiZSBhIHByb2ZpbGUgbmFtZSwgYW5kIHdvdWxkIGJyZWFrIHRoZSBuZXh0IGNvbW1hbmQgbGluZQogICAgICAgICAgICBpZiAoc2Vlbi5BZGQodmFsdWUpKSBuYW1lcy5BZGQodmFsdWUpOwogICAgICAgIH0KCiAgICAgICAgcmV0dXJuIG5hbWVzOwogICAgfQoKICAgIC8vIC0tLS0gb25lIHByb2ZpbGUgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIC8vLyA8c3VtbWFyeT5SZWFkcyBvbmUgcHJvZmlsZSwgcmV0cnlpbmcgdGhlIGtleSBsb29rdXAgd2l0aCB0aGUgb3RoZXIgZW5jb2RpbmdzIHdoZW4gbmVlZGVkLjwvc3VtbWFyeT4KICAgIHByaXZhdGUgc3RhdGljIGFzeW5jIFRhc2s8V2lmaVByb2ZpbGU/PiBSZWFkUHJvZmlsZUFzeW5jKHN0cmluZyBzc2lkLCBFbmNvZGluZyBwcmVmZXJyZWQsIENhbmNlbGxhdGlvblRva2VuIGN0KQogICAgewogICAgICAgIHZhciBhcmd1bWVudHMgPSAkIndsYW4gc2hvdyBwcm9maWxlIG5hbWU9XCJ7c3NpZH1cIiBrZXk9Y2xlYXIiOwogICAgICAgIHZhciBjYW5kaWRhdGVzID0gT3JkZXJlZEVuY29kaW5ncyhwcmVmZXJyZWQpOwoKICAgICAgICBOZXRzaFJ1bj8gbGFzdCA9IG51bGw7CiAgICAgICAgdmFyIGRldGFpbHMgPSBkZWZhdWx0KFByb2ZpbGVEZXRhaWxzKTsKCiAgICAgICAgZm9yZWFjaCAodmFyIGVuY29kaW5nIGluIGNhbmRpZGF0ZXMpCiAgICAgICAgewogICAgICAgICAgICBjdC5UaHJvd0lmQ2FuY2VsbGF0aW9uUmVxdWVzdGVkKCk7CgogICAgICAgICAgICB2YXIgcnVuID0gYXdhaXQgUnVuTmV0c2hBc3luYyhhcmd1bWVudHMsIGVuY29kaW5nLCBjdCkuQ29uZmlndXJlQXdhaXQoZmFsc2UpOwogICAgICAgICAgICBpZiAoIXJ1bi5TdGFydGVkKSByZXR1cm4gbnVsbDsKCiAgICAgICAgICAgIGxhc3QgPSBydW47CiAgICAgICAgICAgIGRldGFpbHMgPSBQYXJzZVByb2ZpbGVEZXRhaWxzKHJ1bi5TdGFuZGFyZE91dHB1dCk7CgogICAgICAgICAgICAvLyBTdG9wIGFzIHNvb24gYXMgdGhlIHRleHQgZGVjb2RlZCBjbGVhbmx5IChvciBpcyBBU0NJSSwgd2hpY2ggZGVjb2RlcwogICAgICAgICAgICAvLyB0aGUgc2FtZSBldmVyeXdoZXJlKSwgb3RoZXJ3aXNlIHRyeSB0aGUgbmV4dCBlbmNvZGluZy4KICAgICAgICAgICAgaWYgKCFDb250YWluc1JlcGxhY2VtZW50Q2hhcnMocnVuLlN0YW5kYXJkT3V0cHV0KSB8fCBJc1B1cmVBc2NpaShydW4uU3RhbmRhcmRPdXRwdXQpKSBicmVhazsKICAgICAgICB9CgogICAgICAgIGlmIChsYXN0IGlzIG51bGwpIHJldHVybiBudWxsOwoKICAgICAgICBpZiAoc3RyaW5nLklzTnVsbE9yV2hpdGVTcGFjZShsYXN0LlZhbHVlLlN0YW5kYXJkT3V0cHV0KSkKICAgICAgICB7CiAgICAgICAgICAgIEFwcExvZy5JbnN0YW5jZS5Mb2coQ2F0ZWdvcnksCiAgICAgICAgICAgICAgICAkIuivu+WPlumFjee9ruaWh+S7tiBcIntzc2lkfVwiIOaXoOi+k+WHuu+8iOmAgOWHuueggSB7bGFzdC5WYWx1ZS5FeGl0Q29kZX3vvInvvJp7VHJpbShsYXN0LlZhbHVlLlN0YW5kYXJkRXJyb3IpfSIpOwogICAgICAgICAgICByZXR1cm4gbnVsbDsKICAgICAgICB9CgogICAgICAgIHJldHVybiBuZXcgV2lmaVByb2ZpbGUKICAgICAgICB7CiAgICAgICAgICAgIFNzaWQgPSBzc2lkLAogICAgICAgICAgICBQYXNzd29yZCA9IGRldGFpbHMuUGFzc3dvcmQsCiAgICAgICAgICAgIEF1dGhlbnRpY2F0aW9uID0gZGV0YWlscy5BdXRoZW50aWNhdGlvbiwKICAgICAgICAgICAgRW5jcnlwdGlvbiA9IGRldGFpbHMuRW5jcnlwdGlvbiwKICAgICAgICAgICAgSXNPcGVuID0gZGV0YWlscy5Jc09wZW4sCiAgICAgICAgfTsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+VmFsdWVzIG9mIHRoZSB0aHJlZSBmaWVsZHMgdGhlIHZpZXdlciBzaG93cyBmb3Igb25lIHByb2ZpbGUuPC9zdW1tYXJ5PgogICAgaW50ZXJuYWwgcmVhZG9ubHkgcmVjb3JkIHN0cnVjdCBQcm9maWxlRGV0YWlscyhzdHJpbmcgUGFzc3dvcmQsIGJvb2wgSXNPcGVuLCBzdHJpbmcgQXV0aGVudGljYXRpb24sIHN0cmluZyBFbmNyeXB0aW9uKTsKCiAgICAvLy8gPHN1bW1hcnk+CiAgICAvLy8gUHVsbHMgdGhlIGNsZWFydGV4dCBrZXksIHRoZSBhdXRoZW50aWNhdGlvbiBtZXRob2QgYW5kIHRoZSBjaXBoZXIgb3V0IG9mIG9uZQogICAgLy8vIDxjPmtleT1jbGVhcjwvYz4gbGlzdGluZywgbG9jYWxlLWluZGVwZW5kZW50bHkuCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgaW50ZXJuYWwgc3RhdGljIFByb2ZpbGVEZXRhaWxzIFBhcnNlUHJvZmlsZURldGFpbHMoc3RyaW5nPyBvdXRwdXQpCiAgICB7CiAgICAgICAgdmFyIHBhc3N3b3JkID0gc3RyaW5nLkVtcHR5OwogICAgICAgIHZhciBhdXRoZW50aWNhdGlvbiA9IHN0cmluZy5FbXB0eTsKICAgICAgICB2YXIgZW5jcnlwdGlvbiA9IHN0cmluZy5FbXB0eTsKICAgICAgICB2YXIgaGFzS2V5TGluZSA9IGZhbHNlOwogICAgICAgIHZhciBrZXlJc01hcmtlciA9IGZhbHNlOwoKICAgICAgICBmb3JlYWNoICh2YXIgcmF3TGluZSBpbiBTcGxpdExpbmVzKG91dHB1dCA/PyBzdHJpbmcuRW1wdHkpKQogICAgICAgIHsKICAgICAgICAgICAgdmFyIGxpbmUgPSByYXdMaW5lLlRyaW0oKTsKICAgICAgICAgICAgaWYgKGxpbmUuTGVuZ3RoID09IDApIGNvbnRpbnVlOwoKICAgICAgICAgICAgdmFyIGNvbG9uID0gRmlyc3RTZXBhcmF0b3IobGluZSk7CiAgICAgICAgICAgIGlmIChjb2xvbiA8PSAwKSBjb250aW51ZTsgLy8gbm8gbGFiZWwsIG9yIHRoZSBsaW5lIHN0YXJ0cyB3aXRoIGEgY29sb24KCiAgICAgICAgICAgIHZhciBsYWJlbCA9IGxpbmVbLi5jb2xvbl0uVHJpbSgpOwogICAgICAgICAgICB2YXIgdmFsdWUgPSBsaW5lWyhjb2xvbiArIDEpLi5dLlRyaW0oKTsKICAgICAgICAgICAgaWYgKGxhYmVsLkxlbmd0aCA9PSAwIHx8IHZhbHVlLkxlbmd0aCA9PSAwKSBjb250aW51ZTsKCiAgICAgICAgICAgIGlmIChJc0tleUNvbnRlbnRMYWJlbChsYWJlbCkpCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIGhhc0tleUxpbmUgPSB0cnVlOwogICAgICAgICAgICAgICAgcGFzc3dvcmQgPSB2YWx1ZTsKICAgICAgICAgICAgICAgIGtleUlzTWFya2VyID0gSXNQcmVzZW5jZU1hcmtlcih2YWx1ZSk7CiAgICAgICAgICAgICAgICBjb250aW51ZTsKICAgICAgICAgICAgfQoKICAgICAgICAgICAgaWYgKGF1dGhlbnRpY2F0aW9uLkxlbmd0aCA9PSAwICYmIElzQXV0aGVudGljYXRpb25MYWJlbChsYWJlbCkpCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIGF1dGhlbnRpY2F0aW9uID0gdmFsdWU7CiAgICAgICAgICAgICAgICBjb250aW51ZTsKICAgICAgICAgICAgfQoKICAgICAgICAgICAgaWYgKGVuY3J5cHRpb24uTGVuZ3RoID09IDAgJiYgSXNFbmNyeXB0aW9uTGFiZWwobGFiZWwsIHZhbHVlKSkKICAgICAgICAgICAgewogICAgICAgICAgICAgICAgZW5jcnlwdGlvbiA9IHZhbHVlOwogICAgICAgICAgICB9CiAgICAgICAgfQoKICAgICAgICAvLyBBIHByb2ZpbGUgd2l0aCBubyBrZXkgbGluZSwgYW4gZW1wdHkga2V5LCBvciBhIGtleSB0aGF0IGlzIHJlYWxseSB0aGUKICAgICAgICAvLyAicHJlc2VudC/lrZjlnKgiIG1hcmtlciBpcyBhbiBvcGVuIChvciBrZXktbGVzcykgbmV0d29yay4KICAgICAgICB2YXIgaXNPcGVuID0gIWhhc0tleUxpbmUgfHwgcGFzc3dvcmQuTGVuZ3RoID09IDAgfHwga2V5SXNNYXJrZXI7CiAgICAgICAgaWYgKGlzT3BlbikgcGFzc3dvcmQgPSBzdHJpbmcuRW1wdHk7CgogICAgICAgIHJldHVybiBuZXcgUHJvZmlsZURldGFpbHMocGFzc3dvcmQsIGlzT3BlbiwgYXV0aGVudGljYXRpb24sIGVuY3J5cHRpb24pOwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT5MYWJlbCBjYXJyeWluZyB0aGUgY2xlYXJ0ZXh0IGtleTog5YWz6ZSu5YaF5a65IC8gS2V5IENvbnRlbnQgLyAia2V5IOKApiBjb250ZW50Ii48L3N1bW1hcnk+CiAgICBwcml2YXRlIHN0YXRpYyBib29sIElzS2V5Q29udGVudExhYmVsKHN0cmluZyBsYWJlbCkKICAgIHsKICAgICAgICBpZiAobGFiZWwuRW5kc1dpdGgoIuWFs+mUruWGheWuuSIsIFN0cmluZ0NvbXBhcmlzb24uT3JkaW5hbCkpIHJldHVybiB0cnVlOwogICAgICAgIGlmIChsYWJlbC5FbmRzV2l0aCgiS2V5IENvbnRlbnQiLCBTdHJpbmdDb21wYXJpc29uLk9yZGluYWxJZ25vcmVDYXNlKSkgcmV0dXJuIHRydWU7CiAgICAgICAgcmV0dXJuIGxhYmVsLkNvbnRhaW5zKCJrZXkiLCBTdHJpbmdDb21wYXJpc29uLk9yZGluYWxJZ25vcmVDYXNlKQogICAgICAgICAgICAgICAmJiBsYWJlbC5Db250YWlucygiY29udGVudCIsIFN0cmluZ0NvbXBhcmlzb24uT3JkaW5hbElnbm9yZUNhc2UpOwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT5MYWJlbCBjYXJyeWluZyB0aGUgYXV0aGVudGljYXRpb24gbWV0aG9kOiBBdXRoZW50aWNhdGlvbiAvIOi6q+S7vemqjOivgSAvIOiupOivgS48L3N1bW1hcnk+CiAgICBwcml2YXRlIHN0YXRpYyBib29sIElzQXV0aGVudGljYXRpb25MYWJlbChzdHJpbmcgbGFiZWwpID0+CiAgICAgICAgbGFiZWwuQ29udGFpbnMoIkF1dGhlbnRpY2F0aW9uIiwgU3RyaW5nQ29tcGFyaXNvbi5PcmRpbmFsSWdub3JlQ2FzZSkgfHwKICAgICAgICBsYWJlbC5Db250YWlucygi6K6k6K+BIiwgU3RyaW5nQ29tcGFyaXNvbi5PcmRpbmFsKSB8fAogICAgICAgIGxhYmVsLkNvbnRhaW5zKCLouqvku73pqozor4EiLCBTdHJpbmdDb21wYXJpc29uLk9yZGluYWwpOwoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBMYWJlbCBjYXJyeWluZyB0aGUgY2lwaGVyOiBDaXBoZXIgLyBFbmNyeXB0aW9uIC8g5Yqg5a+GLiBUaGUgQ2hpbmVzZSBuZXRzaCB1c2VzCiAgICAvLy8gPGM+5a+G56CBPC9jPiBmb3IgdGhpcyBmaWVsZCBhcyB3ZWxsLCBzbyB0aGF0IGxhYmVsIGlzIGFjY2VwdGVkIG9ubHkgd2hlbiBpdHMKICAgIC8vLyB2YWx1ZSBpcyBhIGtub3duIGNpcGhlciB0b2tlbiDigJQgb3RoZXJ3aXNlIGl0IHdvdWxkIGJlIG1pc3Rha2VuIGZvciBhIHBhc3N3b3JkLgogICAgLy8vIDwvc3VtbWFyeT4KICAgIHByaXZhdGUgc3RhdGljIGJvb2wgSXNFbmNyeXB0aW9uTGFiZWwoc3RyaW5nIGxhYmVsLCBzdHJpbmcgdmFsdWUpCiAgICB7CiAgICAgICAgaWYgKGxhYmVsLkNvbnRhaW5zKCJDaXBoZXIiLCBTdHJpbmdDb21wYXJpc29uLk9yZGluYWxJZ25vcmVDYXNlKSkgcmV0dXJuIHRydWU7CiAgICAgICAgaWYgKGxhYmVsLkNvbnRhaW5zKCJFbmNyeXB0aW9uIiwgU3RyaW5nQ29tcGFyaXNvbi5PcmRpbmFsSWdub3JlQ2FzZSkpIHJldHVybiB0cnVlOwogICAgICAgIGlmIChsYWJlbC5Db250YWlucygi5Yqg5a+GIiwgU3RyaW5nQ29tcGFyaXNvbi5PcmRpbmFsKSkgcmV0dXJuIHRydWU7CiAgICAgICAgcmV0dXJuIGxhYmVsLkVxdWFscygi5a+G56CBIiwgU3RyaW5nQ29tcGFyaXNvbi5PcmRpbmFsKSAmJiBDaXBoZXJUb2tlbnMuQ29udGFpbnModmFsdWUpOwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT5UcnVlIGZvciB0aGUgInRoZSBrZXkgZXhpc3RzIiBtYXJrZXJzIG5ldHNoIHByaW50cyBpbnN0ZWFkIG9mIGEgcmVhbCBrZXkuPC9zdW1tYXJ5PgogICAgcHJpdmF0ZSBzdGF0aWMgYm9vbCBJc1ByZXNlbmNlTWFya2VyKHN0cmluZyB2YWx1ZSkKICAgIHsKICAgICAgICBSZWFkT25seVNwYW48c3RyaW5nPiBtYXJrZXJzID0KICAgICAgICBbCiAgICAgICAgICAgICJwcmVzZW50IiwgImV4aXN0cyIsICJleGlzdHMuIiwgInByZXNlbnQuIiwKICAgICAgICAgICAgIuWtmOWcqCIsICLkuI3lrZjlnKgiLCAi5pegIiwgImFic2VudCIsICJub3QgcHJlc2VudCIsICJub25lIiwKICAgICAgICBdOwogICAgICAgIGZvcmVhY2ggKHZhciBtYXJrZXIgaW4gbWFya2VycykKICAgICAgICB7CiAgICAgICAgICAgIGlmICh2YWx1ZS5FcXVhbHMobWFya2VyLCBTdHJpbmdDb21wYXJpc29uLk9yZGluYWxJZ25vcmVDYXNlKSkgcmV0dXJuIHRydWU7CiAgICAgICAgfQogICAgICAgIHJldHVybiBmYWxzZTsKICAgIH0KCiAgICAvLyAtLS0tIHByb2Nlc3MgcGx1bWJpbmcgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCiAgICAvLy8gPHN1bW1hcnk+T3V0Y29tZSBvZiBvbmUgbmV0c2ggaW52b2NhdGlvbi48L3N1bW1hcnk+CiAgICBwcml2YXRlIHJlYWRvbmx5IHJlY29yZCBzdHJ1Y3QgTmV0c2hSdW4oYm9vbCBTdGFydGVkLCBpbnQgRXhpdENvZGUsIHN0cmluZyBTdGFuZGFyZE91dHB1dCwgc3RyaW5nIFN0YW5kYXJkRXJyb3IpOwoKICAgIC8vLyA8c3VtbWFyeT5SdW5zIG5ldHNoIHdpdGggdGhlIGdpdmVuIGVuY29kaW5nLCBjYXB0dXJpbmcgc3Rkb3V0K3N0ZGVyciBhbmQgd2FpdGluZyBmb3IgZXhpdC48L3N1bW1hcnk+CiAgICBwcml2YXRlIHN0YXRpYyBhc3luYyBUYXNrPE5ldHNoUnVuPiBSdW5OZXRzaEFzeW5jKHN0cmluZyBhcmd1bWVudHMsIEVuY29kaW5nIGVuY29kaW5nLCBDYW5jZWxsYXRpb25Ub2tlbiBjdCkKICAgIHsKICAgICAgICB2YXIgc3RhcnRJbmZvID0gbmV3IFByb2Nlc3NTdGFydEluZm8oTmV0c2gsIGFyZ3VtZW50cykKICAgICAgICB7CiAgICAgICAgICAgIFJlZGlyZWN0U3RhbmRhcmRPdXRwdXQgPSB0cnVlLAogICAgICAgICAgICBSZWRpcmVjdFN0YW5kYXJkRXJyb3IgPSB0cnVlLAogICAgICAgICAgICBVc2VTaGVsbEV4ZWN1dGUgPSBmYWxzZSwKICAgICAgICAgICAgQ3JlYXRlTm9XaW5kb3cgPSB0cnVlLAogICAgICAgICAgICBTdGFuZGFyZE91dHB1dEVuY29kaW5nID0gZW5jb2RpbmcsCiAgICAgICAgICAgIFN0YW5kYXJkRXJyb3JFbmNvZGluZyA9IGVuY29kaW5nLAogICAgICAgIH07CgogICAgICAgIFByb2Nlc3M/IHByb2Nlc3MgPSBudWxsOwogICAgICAgIHRyeQogICAgICAgIHsKICAgICAgICAgICAgcHJvY2VzcyA9IFByb2Nlc3MuU3RhcnQoc3RhcnRJbmZvKTsKICAgICAgICAgICAgaWYgKHByb2Nlc3MgaXMgbnVsbCkgcmV0dXJuIG5ldyBOZXRzaFJ1bihmYWxzZSwgLTEsIHN0cmluZy5FbXB0eSwgIlByb2Nlc3MuU3RhcnQg6L+U5ZueIG51bGwiKTsKCiAgICAgICAgICAgIHZhciBzdGRvdXRUYXNrID0gcHJvY2Vzcy5TdGFuZGFyZE91dHB1dC5SZWFkVG9FbmRBc3luYyhjdCk7CiAgICAgICAgICAgIHZhciBzdGRlcnJUYXNrID0gcHJvY2Vzcy5TdGFuZGFyZEVycm9yLlJlYWRUb0VuZEFzeW5jKGN0KTsKCiAgICAgICAgICAgIHVzaW5nIHZhciB0aW1lb3V0ID0gbmV3IENhbmNlbGxhdGlvblRva2VuU291cmNlKENvbW1hbmRUaW1lb3V0KTsKICAgICAgICAgICAgdXNpbmcgdmFyIGxpbmtlZCA9IENhbmNlbGxhdGlvblRva2VuU291cmNlLkNyZWF0ZUxpbmtlZFRva2VuU291cmNlKGN0LCB0aW1lb3V0LlRva2VuKTsKICAgICAgICAgICAgdHJ5CiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIGF3YWl0IHByb2Nlc3MuV2FpdEZvckV4aXRBc3luYyhsaW5rZWQuVG9rZW4pLkNvbmZpZ3VyZUF3YWl0KGZhbHNlKTsKICAgICAgICAgICAgfQogICAgICAgICAgICBjYXRjaCAoT3BlcmF0aW9uQ2FuY2VsZWRFeGNlcHRpb24pCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIFRyeUtpbGwocHJvY2Vzcyk7CiAgICAgICAgICAgICAgICBpZiAodGltZW91dC5Jc0NhbmNlbGxhdGlvblJlcXVlc3RlZCAmJiAhY3QuSXNDYW5jZWxsYXRpb25SZXF1ZXN0ZWQpCiAgICAgICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAgICAgQXBwTG9nLkluc3RhbmNlLkxvZyhDYXRlZ29yeSwgJCJuZXRzaCB7YXJndW1lbnRzfSDotoXml7bvvIh7Q29tbWFuZFRpbWVvdXQuVG90YWxTZWNvbmRzOjB9IOenku+8ie+8jOW3sue7iOatoiIpOwogICAgICAgICAgICAgICAgICAgIHJldHVybiBuZXcgTmV0c2hSdW4oZmFsc2UsIC0xLCBzdHJpbmcuRW1wdHksICJuZXRzaCDmiafooYzotoXml7YiKTsKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIHRocm93OwogICAgICAgICAgICB9CgogICAgICAgICAgICByZXR1cm4gbmV3IE5ldHNoUnVuKHRydWUsIFNhZmVFeGl0Q29kZShwcm9jZXNzKSwgYXdhaXQgU2FmZVJlYWRBc3luYyhzdGRvdXRUYXNrKSwgYXdhaXQgU2FmZVJlYWRBc3luYyhzdGRlcnJUYXNrKSk7CiAgICAgICAgfQogICAgICAgIGNhdGNoIChPcGVyYXRpb25DYW5jZWxlZEV4Y2VwdGlvbikKICAgICAgICB7CiAgICAgICAgICAgIHRocm93OwogICAgICAgIH0KICAgICAgICBjYXRjaCAoRXhjZXB0aW9uIGV4KQogICAgICAgIHsKICAgICAgICAgICAgQXBwTG9nLkluc3RhbmNlLkxvZyhDYXRlZ29yeSwgJCLmiafooYwgbmV0c2gge2FyZ3VtZW50c30g5aSx6LSlOiB7ZXguTWVzc2FnZX0iKTsKICAgICAgICAgICAgcmV0dXJuIG5ldyBOZXRzaFJ1bihmYWxzZSwgLTEsIHN0cmluZy5FbXB0eSwgZXguTWVzc2FnZSk7CiAgICAgICAgfQogICAgICAgIGZpbmFsbHkKICAgICAgICB7CiAgICAgICAgICAgIHByb2Nlc3M/LkRpc3Bvc2UoKTsKICAgICAgICB9CiAgICB9CgogICAgLy8vIDxzdW1tYXJ5PlRoZSBlbmNvZGluZ3MgdG8gdHJ5LCBpbiB0aGUgb3JpZ2luYWwncyBmYWxsYmFjayBvcmRlci48L3N1bW1hcnk+CiAgICBwcml2YXRlIHN0YXRpYyBMaXN0PEVuY29kaW5nPiBDYW5kaWRhdGVFbmNvZGluZ3MoKQogICAgewogICAgICAgIHZhciBsaXN0ID0gbmV3IExpc3Q8RW5jb2Rpbmc+KCk7CiAgICAgICAgZm9yZWFjaCAodmFyIGVuY29kaW5nIGluIG5ld1tdIHsgRW5jb2RpbmcuVVRGOCwgRW5jb2RpbmcuRGVmYXVsdCwgVGV4dEZpbGVFbmNvZGluZy5HYmsgfSkKICAgICAgICB7CiAgICAgICAgICAgIC8vIEVuY29kaW5nLkRlZmF1bHQgaXMgYWx3YXlzIFVURi04IG9uIC5ORVQgKENvcmUpLCBzbyBhbiBpZGVudGljYWwKICAgICAgICAgICAgLy8gYXR0ZW1wdCB3b3VsZCBvbmx5IGNvc3QgYW5vdGhlciBuZXRzaCBzcGF3bi4KICAgICAgICAgICAgaWYgKGxpc3QuQW55KGUgPT4gZS5Db2RlUGFnZSA9PSBlbmNvZGluZy5Db2RlUGFnZSkpIGNvbnRpbnVlOwogICAgICAgICAgICBsaXN0LkFkZChlbmNvZGluZyk7CiAgICAgICAgfQogICAgICAgIHJldHVybiBsaXN0OwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT5UaGUgY2FuZGlkYXRlIGVuY29kaW5ncyB3aXRoIDxwYXJhbXJlZiBuYW1lPSJwcmVmZXJyZWQiLz4gZmlyc3QuPC9zdW1tYXJ5PgogICAgcHJpdmF0ZSBzdGF0aWMgTGlzdDxFbmNvZGluZz4gT3JkZXJlZEVuY29kaW5ncyhFbmNvZGluZyBwcmVmZXJyZWQpCiAgICB7CiAgICAgICAgdmFyIGxpc3QgPSBuZXcgTGlzdDxFbmNvZGluZz4geyBwcmVmZXJyZWQgfTsKICAgICAgICBmb3JlYWNoICh2YXIgZW5jb2RpbmcgaW4gQ2FuZGlkYXRlRW5jb2RpbmdzKCkpCiAgICAgICAgewogICAgICAgICAgICBpZiAobGlzdC5BbnkoZSA9PiBlLkNvZGVQYWdlID09IGVuY29kaW5nLkNvZGVQYWdlKSkgY29udGludWU7CiAgICAgICAgICAgIGxpc3QuQWRkKGVuY29kaW5nKTsKICAgICAgICB9CiAgICAgICAgcmV0dXJuIGxpc3Q7CiAgICB9CgogICAgLy8vIDxzdW1tYXJ5PlVzYWJsZSBtZWFucyAibmFtZXMgd2VyZSBmb3VuZCBhbmQgdGhlIHRleHQgZGVjb2RlZCBjbGVhbmx5Ii48L3N1bW1hcnk+CiAgICBwcml2YXRlIHN0YXRpYyBib29sIElzVXNhYmxlKHN0cmluZyBvdXRwdXQsIExpc3Q8c3RyaW5nPiBuYW1lcykgPT4KICAgICAgICBuYW1lcy5Db3VudCA+IDAgJiYgIUNvbnRhaW5zUmVwbGFjZW1lbnRDaGFycyhvdXRwdXQpOwoKICAgIC8vLyA8c3VtbWFyeT5SYW5rcyBhbiBhdHRlbXB0OiBtb3JlIG5hbWVzIGlzIGJldHRlciwgdW5kZWNvZGFibGUgY2hhcmFjdGVycyBhcmUgd29yc2UuPC9zdW1tYXJ5PgogICAgcHJpdmF0ZSBzdGF0aWMgaW50IFNjb3JlKHN0cmluZyBvdXRwdXQsIExpc3Q8c3RyaW5nPiBuYW1lcykKICAgIHsKICAgICAgICBpZiAob3V0cHV0Lkxlbmd0aCA9PSAwKSByZXR1cm4gMDsKICAgICAgICB2YXIgcmVwbGFjZW1lbnRzID0gMDsKICAgICAgICBmb3JlYWNoICh2YXIgYyBpbiBvdXRwdXQpIGlmIChjID09IFJlcGxhY2VtZW50Q2hhcikgcmVwbGFjZW1lbnRzKys7CiAgICAgICAgcmV0dXJuIChuYW1lcy5Db3VudCAqIDEwMCkgLSBNYXRoLk1pbihyZXBsYWNlbWVudHMsIDk5KTsKICAgIH0KCiAgICBwcml2YXRlIHN0YXRpYyBib29sIENvbnRhaW5zUmVwbGFjZW1lbnRDaGFycyhzdHJpbmcgb3V0cHV0KSA9PiBvdXRwdXQuQ29udGFpbnMoUmVwbGFjZW1lbnRDaGFyKTsKCiAgICBwcml2YXRlIHN0YXRpYyBib29sIElzUHVyZUFzY2lpKHN0cmluZyB0ZXh0KQogICAgewogICAgICAgIGZvcmVhY2ggKHZhciBjIGluIHRleHQpIGlmIChjID4gMHg3RikgcmV0dXJuIGZhbHNlOwogICAgICAgIHJldHVybiB0cnVlOwogICAgfQoKICAgIHByaXZhdGUgc3RhdGljIExpc3Q8c3RyaW5nPiBTcGxpdExpbmVzKHN0cmluZyB0ZXh0KQogICAgewogICAgICAgIHZhciBsaW5lcyA9IG5ldyBMaXN0PHN0cmluZz4oKTsKICAgICAgICB2YXIgc3RhcnQgPSAwOwogICAgICAgIGZvciAodmFyIGkgPSAwOyBpIDw9IHRleHQuTGVuZ3RoOyBpKyspCiAgICAgICAgewogICAgICAgICAgICBpZiAoaSAhPSB0ZXh0Lkxlbmd0aCAmJiB0ZXh0W2ldICE9ICdcbicgJiYgdGV4dFtpXSAhPSAnXHInKSBjb250aW51ZTsKICAgICAgICAgICAgbGluZXMuQWRkKHRleHRbc3RhcnQuLmldKTsKICAgICAgICAgICAgaWYgKGkgIT0gdGV4dC5MZW5ndGggJiYgdGV4dFtpXSA9PSAnXHInICYmIGkgKyAxIDwgdGV4dC5MZW5ndGggJiYgdGV4dFtpICsgMV0gPT0gJ1xuJykgaSsrOwogICAgICAgICAgICBzdGFydCA9IGkgKyAxOwogICAgICAgIH0KICAgICAgICByZXR1cm4gbGluZXM7CiAgICB9CgogICAgLy8vIDxzdW1tYXJ5PlRydWUgZm9yIGEgIi0tLS0tLS0tIiBydWxlIGxpbmUgKHRoZSBzZWN0aW9uIHVuZGVybGluZXMgbmV0c2ggcHJpbnRzKS48L3N1bW1hcnk+CiAgICBwcml2YXRlIHN0YXRpYyBib29sIElzUnVsZUxpbmUoc3RyaW5nIGxpbmUpCiAgICB7CiAgICAgICAgdmFyIHNlZW5EYXNoID0gZmFsc2U7CiAgICAgICAgZm9yZWFjaCAodmFyIGMgaW4gbGluZSkKICAgICAgICB7CiAgICAgICAgICAgIGlmIChjIGlzICctJyBvciAnPScgb3IgJ18nKSB7IHNlZW5EYXNoID0gdHJ1ZTsgY29udGludWU7IH0KICAgICAgICAgICAgaWYgKGNoYXIuSXNXaGl0ZVNwYWNlKGMpIHx8IGMgPT0gJ1x1RkVGRicpIGNvbnRpbnVlOwogICAgICAgICAgICByZXR1cm4gZmFsc2U7CiAgICAgICAgfQogICAgICAgIHJldHVybiBzZWVuRGFzaDsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+SW5kZXggb2YgdGhlIGxhc3QgPGM+OjwvYz4gLyA8Yz7vvJo8L2M+IG9uIHRoZSBsaW5lLCBvciAtMS48L3N1bW1hcnk+CiAgICBwcml2YXRlIHN0YXRpYyBpbnQgTGFzdFNlcGFyYXRvcihzdHJpbmcgbGluZSkKICAgIHsKICAgICAgICBmb3IgKHZhciBpID0gbGluZS5MZW5ndGggLSAxOyBpID49IDA7IGktLSkKICAgICAgICB7CiAgICAgICAgICAgIGlmIChsaW5lW2ldIGlzICc6JyBvciAn77yaJykgcmV0dXJuIGk7CiAgICAgICAgfQogICAgICAgIHJldHVybiAtMTsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+SW5kZXggb2YgdGhlIGZpcnN0IDxjPjo8L2M+IC8gPGM+77yaPC9jPiBvbiB0aGUgbGluZSwgb3IgLTEuPC9zdW1tYXJ5PgogICAgcHJpdmF0ZSBzdGF0aWMgaW50IEZpcnN0U2VwYXJhdG9yKHN0cmluZyBsaW5lKQogICAgewogICAgICAgIGZvciAodmFyIGkgPSAwOyBpIDwgbGluZS5MZW5ndGg7IGkrKykKICAgICAgICB7CiAgICAgICAgICAgIGlmIChsaW5lW2ldIGlzICc6JyBvciAn77yaJykgcmV0dXJuIGk7CiAgICAgICAgfQogICAgICAgIHJldHVybiAtMTsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+VHJpbXMgd2hpdGVzcGFjZS9CT00gYW5kIHJlbW92ZXMgb25lIGxheWVyIG9mIHN1cnJvdW5kaW5nIGRvdWJsZSBxdW90ZXMuPC9zdW1tYXJ5PgogICAgcHJpdmF0ZSBzdGF0aWMgc3RyaW5nIFVucXVvdGUoc3RyaW5nIHZhbHVlKQogICAgewogICAgICAgIHZhciB0ZXh0ID0gdmFsdWUuVHJpbSgpLlRyaW0oJ1x1RkVGRicpLlRyaW0oKTsKICAgICAgICBpZiAodGV4dC5MZW5ndGggPj0gMiAmJiB0ZXh0WzBdID09ICciJyAmJiB0ZXh0W14xXSA9PSAnIicpIHJldHVybiB0ZXh0WzEuLl4xXS5UcmltKCk7CiAgICAgICAgcmV0dXJuIHRleHQ7CiAgICB9CgogICAgcHJpdmF0ZSBzdGF0aWMgc3RyaW5nIFRyaW0oc3RyaW5nPyB0ZXh0KSA9PiBzdHJpbmcuSXNOdWxsT3JXaGl0ZVNwYWNlKHRleHQpID8gc3RyaW5nLkVtcHR5IDogdGV4dC5UcmltKCk7CgogICAgcHJpdmF0ZSBzdGF0aWMgYXN5bmMgVGFzazxzdHJpbmc+IFNhZmVSZWFkQXN5bmMoVGFzazxzdHJpbmc+IHJlYWQpCiAgICB7CiAgICAgICAgdHJ5IHsgcmV0dXJuIGF3YWl0IHJlYWQuQ29uZmlndXJlQXdhaXQoZmFsc2UpOyB9CiAgICAgICAgY2F0Y2ggeyByZXR1cm4gc3RyaW5nLkVtcHR5OyB9CiAgICB9CgogICAgcHJpdmF0ZSBzdGF0aWMgaW50IFNhZmVFeGl0Q29kZShQcm9jZXNzIHByb2Nlc3MpCiAgICB7CiAgICAgICAgdHJ5IHsgcmV0dXJuIHByb2Nlc3MuSGFzRXhpdGVkID8gcHJvY2Vzcy5FeGl0Q29kZSA6IC0xOyB9CiAgICAgICAgY2F0Y2ggeyByZXR1cm4gLTE7IH0KICAgIH0KCiAgICBwcml2YXRlIHN0YXRpYyB2b2lkIFRyeUtpbGwoUHJvY2VzcyBwcm9jZXNzKQogICAgewogICAgICAgIHRyeQogICAgICAgIHsKICAgICAgICAgICAgaWYgKCFwcm9jZXNzLkhhc0V4aXRlZCkgcHJvY2Vzcy5LaWxsKGVudGlyZVByb2Nlc3NUcmVlOiB0cnVlKTsKICAgICAgICB9CiAgICAgICAgY2F0Y2gKICAgICAgICB7CiAgICAgICAgICAgIC8vIGFscmVhZHkgZ29uZSwgb3Igbm90IG91cnMgdG8ga2lsbAogICAgICAgIH0KICAgIH0KfQo=
+using System.Diagnostics;
+using System.Text;
+using IPScaner.Core.Logging;
+using IPScaner.Core.Models;
+using IPScaner.Core.Storage;
+
+namespace IPScaner.Core.Net;
+
+/// <summary>
+/// Reads the saved WLAN profiles and their cleartext keys by scraping
+/// <c>netsh wlan show profiles</c> / <c>netsh wlan show profile name="…" key=clear</c>.
+/// </summary>
+/// <remarks>
+/// <para>
+/// The original <c>FormWiFiViewer</c> matched the <em>localised</em> markers
+/// <c>所有用户配置文件</c> and <c>关键内容</c>, so on an English (or any non-Chinese)
+/// Windows every attempt returned <c>null</c> and the list stayed empty. This port
+/// is locale-independent: profile names are whatever follows the last colon on a
+/// line of the profile listing (header/footer lines have no value after their
+/// colon, or no colon at all), and the key is taken from the line whose label is
+/// <c>关键内容</c> / <c>Key Content</c> / contains both "key" and "content".
+/// Both <c>:</c> (U+003A) and <c>：</c> (U+FF1A) are accepted as separators.
+/// </para>
+/// <para>
+/// Encoding follows the original's Windows 11 24H2 workaround: the process is
+/// started with <see cref="Encoding.UTF8"/> and, when that produces no usable
+/// names (empty set, or replacement characters from a GBK console), the command is
+/// retried with <see cref="Encoding.Default"/> and then
+/// <see cref="TextFileEncoding.Gbk"/>; the attempt that produced usable output
+/// wins. Pure-ASCII output is accepted immediately because re-decoding it cannot
+/// change anything.
+/// </para>
+/// <para>This class never throws: any failure yields an empty list plus a log entry.</para>
+/// </remarks>
+public sealed class WifiService
+{
+    private const string Category = nameof(WifiService);
+    private const string Netsh = "netsh";
+    private const string ShowProfilesArguments = "wlan show profiles";
+
+    /// <summary>Replacement character produced when a byte sequence cannot be decoded.</summary>
+    private const char ReplacementChar = '\uFFFD';
+
+    /// <summary>A single netsh invocation is never expected to take this long.</summary>
+    private static readonly TimeSpan CommandTimeout = TimeSpan.FromSeconds(20);
+
+    /// <summary>Known cipher tokens, used to tell the Chinese "密码" (cipher) label from a password label.</summary>
+    private static readonly HashSet<string> CipherTokens = new(StringComparer.OrdinalIgnoreCase)
+    {
+        "CCMP", "CCMP-256", "GCMP", "GCMP-256", "TKIP", "WEP", "WEP-40", "WEP-104", "WEP-128",
+        "AES", "BIP", "None", "无", "其他", "未知", "Open", "开放",
+    };
+
+    /// <summary>
+    /// Enumerates every saved WLAN profile (all wireless interfaces) with its
+    /// cleartext key when one is stored.
+    /// </summary>
+    /// <returns>
+    /// One <see cref="WifiProfile"/> per unique profile; open networks are included
+    /// with <see cref="WifiProfile.IsOpen"/> set and an empty password. Empty on failure.
+    /// </returns>
+    public async Task<List<WifiProfile>> QueryAsync(CancellationToken ct = default)
+    {
+        var profiles = new List<WifiProfile>();
+        try
+        {
+            var (names, encoding) = await ReadProfileNamesAsync(ct).ConfigureAwait(false);
+            if (names.Count == 0)
+            {
+                AppLog.Instance.Log(Category, "未读取到任何已保存的WiFi配置文件（netsh 无输出、无无线网卡或全部解码失败）");
+                return profiles;
+            }
+
+            AppLog.Instance.Log(Category, $"读取到 {names.Count} 个WiFi配置文件，使用编码 {encoding.WebName}");
+
+            foreach (var name in names)
+            {
+                ct.ThrowIfCancellationRequested();
+                var profile = await ReadProfileAsync(name, encoding, ct).ConfigureAwait(false);
+                if (profile is not null) profiles.Add(profile);
+            }
+        }
+        catch (OperationCanceledException)
+        {
+            AppLog.Instance.Log(Category, $"读取WiFi密码已取消，已返回 {profiles.Count} 条结果");
+        }
+        catch (Exception ex)
+        {
+            AppLog.Instance.Log(Category, "读取WiFi密码失败: " + ex.Message);
+        }
+
+        return profiles;
+    }
+
+    // ---- profile listing ---------------------------------------------------
+
+    /// <summary>
+    /// Runs the profile listing under each candidate encoding until one yields a
+    /// usable result, and returns the parsed names with the encoding that produced them.
+    /// </summary>
+    private static async Task<(List<string> Names, Encoding Encoding)> ReadProfileNamesAsync(CancellationToken ct)
+    {
+        var candidates = CandidateEncodings();
+        var best = new List<string>();
+        var bestEncoding = candidates[0];
+        var bestScore = int.MinValue;
+
+        foreach (var encoding in candidates)
+        {
+            ct.ThrowIfCancellationRequested();
+
+            var run = await RunNetshAsync(ShowProfilesArguments, encoding, ct).ConfigureAwait(false);
+            if (!run.Started)
+            {
+                // netsh itself is unavailable — another encoding cannot help.
+                AppLog.Instance.Log(Category, $"netsh 启动失败: {run.StandardError}");
+                break;
+            }
+
+            var names = ParseProfileNames(run.StandardOutput);
+            var score = Score(run.StandardOutput, names);
+            if (score > bestScore)
+            {
+                bestScore = score;
+                best = names;
+                bestEncoding = encoding;
+            }
+
+            if (IsUsable(run.StandardOutput, names)) return (names, encoding);
+
+            if (IsPureAscii(run.StandardOutput))
+            {
+                // ASCII decodes identically under all three encodings; the output
+                // really does list no profile, so retrying would only waste spawns.
+                AppLog.Instance.Log(Category, "netsh 输出为纯ASCII且未包含配置文件，跳过其余编码重试");
+                break;
+            }
+
+            AppLog.Instance.Log(Category,
+                $"编码 {encoding.WebName} 未能解析出配置文件（退出码 {run.ExitCode}），尝试下一个编码");
+        }
+
+        if (best.Count == 0)
+        {
+            AppLog.Instance.Log(Category, "所有编码均未能解析出WiFi配置文件");
+        }
+
+        return (best, bestEncoding);
+    }
+
+    /// <summary>
+    /// Extracts profile names as "the text after the last colon" of every line that
+    /// carries a value. Header/footer lines (<c>Profiles on interface WLAN:</c>, the
+    /// <c>-------</c> rules, blank lines) are excluded because they either have no
+    /// colon or nothing after it. When the listing contains a rule line, only the
+    /// lines below the first rule are considered — that is where the profile entries
+    /// always are, in every locale.
+    /// </summary>
+    internal static List<string> ParseProfileNames(string? output)
+    {
+        var names = new List<string>();
+        if (string.IsNullOrEmpty(output)) return names;
+
+        var lines = SplitLines(output);
+        var start = 0;
+        for (var i = 0; i < lines.Count; i++)
+        {
+            if (!IsRuleLine(lines[i])) continue;
+            start = i + 1;
+            break;
+        }
+
+        var seen = new HashSet<string>(StringComparer.Ordinal);
+        for (var i = start; i < lines.Count; i++)
+        {
+            var line = lines[i].Trim();
+            if (line.Length == 0 || IsRuleLine(line)) continue;
+
+            var colon = LastSeparator(line);
+            if (colon < 0) continue; // "User profiles", "Group policy profiles (read only)"
+
+            var value = Unquote(line[(colon + 1)..]);
+            if (value.Length == 0) continue;  // "Profiles on interface WLAN:"
+            if (value.Contains('"')) continue; // cannot be a profile name, and would break the next command line
+            if (seen.Add(value)) names.Add(value);
+        }
+
+        return names;
+    }
+
+    // ---- one profile -------------------------------------------------------
+
+    /// <summary>Reads one profile, retrying the key lookup with the other encodings when needed.</summary>
+    private static async Task<WifiProfile?> ReadProfileAsync(string ssid, Encoding preferred, CancellationToken ct)
+    {
+        var arguments = $"wlan show profile name=\"{ssid}\" key=clear";
+        var candidates = OrderedEncodings(preferred);
+
+        NetshRun? last = null;
+        var details = default(ProfileDetails);
+
+        foreach (var encoding in candidates)
+        {
+            ct.ThrowIfCancellationRequested();
+
+            var run = await RunNetshAsync(arguments, encoding, ct).ConfigureAwait(false);
+            if (!run.Started) return null;
+
+            last = run;
+            details = ParseProfileDetails(run.StandardOutput);
+
+            // Stop as soon as the text decoded cleanly (or is ASCII, which decodes
+            // the same everywhere), otherwise try the next encoding.
+            if (!ContainsReplacementChars(run.StandardOutput) || IsPureAscii(run.StandardOutput)) break;
+        }
+
+        if (last is null) return null;
+
+        if (string.IsNullOrWhiteSpace(last.Value.StandardOutput))
+        {
+            AppLog.Instance.Log(Category,
+                $"读取配置文件 \"{ssid}\" 无输出（退出码 {last.Value.ExitCode}）：{Trim(last.Value.StandardError)}");
+            return null;
+        }
+
+        return new WifiProfile
+        {
+            Ssid = ssid,
+            Password = details.Password,
+            Authentication = details.Authentication,
+            Encryption = details.Encryption,
+            IsOpen = details.IsOpen,
+        };
+    }
+
+    /// <summary>Values of the three fields the viewer shows for one profile.</summary>
+    internal readonly record struct ProfileDetails(string Password, bool IsOpen, string Authentication, string Encryption);
+
+    /// <summary>
+    /// Pulls the cleartext key, the authentication method and the cipher out of one
+    /// <c>key=clear</c> listing, locale-independently.
+    /// </summary>
+    internal static ProfileDetails ParseProfileDetails(string? output)
+    {
+        var password = string.Empty;
+        var authentication = string.Empty;
+        var encryption = string.Empty;
+        var hasKeyLine = false;
+        var keyIsMarker = false;
+
+        foreach (var rawLine in SplitLines(output ?? string.Empty))
+        {
+            var line = rawLine.Trim();
+            if (line.Length == 0) continue;
+
+            var colon = FirstSeparator(line);
+            if (colon <= 0) continue; // no label, or the line starts with a colon
+
+            var label = line[..colon].Trim();
+            var value = line[(colon + 1)..].Trim();
+            if (label.Length == 0 || value.Length == 0) continue;
+
+            if (IsKeyContentLabel(label))
+            {
+                hasKeyLine = true;
+                password = value;
+                keyIsMarker = IsPresenceMarker(value);
+                continue;
+            }
+
+            if (authentication.Length == 0 && IsAuthenticationLabel(label))
+            {
+                authentication = value;
+                continue;
+            }
+
+            if (encryption.Length == 0 && IsEncryptionLabel(label, value))
+            {
+                encryption = value;
+            }
+        }
+
+        // A profile with no key line, an empty key, or a key that is really the
+        // "present/存在" marker is an open (or key-less) network.
+        var isOpen = !hasKeyLine || password.Length == 0 || keyIsMarker;
+        if (isOpen) password = string.Empty;
+
+        return new ProfileDetails(password, isOpen, authentication, encryption);
+    }
+
+    /// <summary>Label carrying the cleartext key: 关键内容 / Key Content / "key … content".</summary>
+    private static bool IsKeyContentLabel(string label)
+    {
+        if (label.EndsWith("关键内容", StringComparison.Ordinal)) return true;
+        if (label.EndsWith("Key Content", StringComparison.OrdinalIgnoreCase)) return true;
+        return label.Contains("key", StringComparison.OrdinalIgnoreCase)
+               && label.Contains("content", StringComparison.OrdinalIgnoreCase);
+    }
+
+    /// <summary>Label carrying the authentication method: Authentication / 身份验证 / 认证.</summary>
+    private static bool IsAuthenticationLabel(string label) =>
+        label.Contains("Authentication", StringComparison.OrdinalIgnoreCase) ||
+        label.Contains("认证", StringComparison.Ordinal) ||
+        label.Contains("身份验证", StringComparison.Ordinal);
+
+    /// <summary>
+    /// Label carrying the cipher: Cipher / Encryption / 加密. The Chinese netsh uses
+    /// <c>密码</c> for this field as well, so that label is accepted only when its
+    /// value is a known cipher token — otherwise it would be mistaken for a password.
+    /// </summary>
+    private static bool IsEncryptionLabel(string label, string value)
+    {
+        if (label.Contains("Cipher", StringComparison.OrdinalIgnoreCase)) return true;
+        if (label.Contains("Encryption", StringComparison.OrdinalIgnoreCase)) return true;
+        if (label.Contains("加密", StringComparison.Ordinal)) return true;
+        return label.Equals("密码", StringComparison.Ordinal) && CipherTokens.Contains(value);
+    }
+
+    /// <summary>True for the "the key exists" markers netsh prints instead of a real key.</summary>
+    private static bool IsPresenceMarker(string value)
+    {
+        ReadOnlySpan<string> markers =
+        [
+            "present", "exists", "exists.", "present.",
+            "存在", "不存在", "无", "absent", "not present", "none",
+        ];
+        foreach (var marker in markers)
+        {
+            if (value.Equals(marker, StringComparison.OrdinalIgnoreCase)) return true;
+        }
+        return false;
+    }
+
+    // ---- process plumbing --------------------------------------------------
+
+    /// <summary>Outcome of one netsh invocation.</summary>
+    private readonly record struct NetshRun(bool Started, int ExitCode, string StandardOutput, string StandardError);
+
+    /// <summary>Runs netsh with the given encoding, capturing stdout+stderr and waiting for exit.</summary>
+    private static async Task<NetshRun> RunNetshAsync(string arguments, Encoding encoding, CancellationToken ct)
+    {
+        var startInfo = new ProcessStartInfo(Netsh, arguments)
+        {
+            RedirectStandardOutput = true,
+            RedirectStandardError = true,
+            UseShellExecute = false,
+            CreateNoWindow = true,
+            StandardOutputEncoding = encoding,
+            StandardErrorEncoding = encoding,
+        };
+
+        Process? process = null;
+        try
+        {
+            process = Process.Start(startInfo);
+            if (process is null) return new NetshRun(false, -1, string.Empty, "Process.Start 返回 null");
+
+            var stdoutTask = process.StandardOutput.ReadToEndAsync(ct);
+            var stderrTask = process.StandardError.ReadToEndAsync(ct);
+
+            using var timeout = new CancellationTokenSource(CommandTimeout);
+            using var linked = CancellationTokenSource.CreateLinkedTokenSource(ct, timeout.Token);
+            try
+            {
+                await process.WaitForExitAsync(linked.Token).ConfigureAwait(false);
+            }
+            catch (OperationCanceledException)
+            {
+                TryKill(process);
+                if (timeout.IsCancellationRequested && !ct.IsCancellationRequested)
+                {
+                    AppLog.Instance.Log(Category, $"netsh {arguments} 超时（{CommandTimeout.TotalSeconds:0} 秒），已终止");
+                    return new NetshRun(false, -1, string.Empty, "netsh 执行超时");
+                }
+                throw;
+            }
+
+            return new NetshRun(true, SafeExitCode(process), await SafeReadAsync(stdoutTask), await SafeReadAsync(stderrTask));
+        }
+        catch (OperationCanceledException)
+        {
+            throw;
+        }
+        catch (Exception ex)
+        {
+            AppLog.Instance.Log(Category, $"执行 netsh {arguments} 失败: {ex.Message}");
+            return new NetshRun(false, -1, string.Empty, ex.Message);
+        }
+        finally
+        {
+            process?.Dispose();
+        }
+    }
+
+    /// <summary>The encodings to try, in the original's fallback order.</summary>
+    private static List<Encoding> CandidateEncodings()
+    {
+        var list = new List<Encoding>();
+        foreach (var encoding in new[] { Encoding.UTF8, Encoding.Default, TextFileEncoding.Gbk })
+        {
+            // Encoding.Default is always UTF-8 on .NET (Core), so an identical
+            // attempt would only cost another netsh spawn.
+            if (list.Any(e => e.CodePage == encoding.CodePage)) continue;
+            list.Add(encoding);
+        }
+        return list;
+    }
+
+    /// <summary>The candidate encodings with <paramref name="preferred"/> first.</summary>
+    private static List<Encoding> OrderedEncodings(Encoding preferred)
+    {
+        var list = new List<Encoding> { preferred };
+        foreach (var encoding in CandidateEncodings())
+        {
+            if (list.Any(e => e.CodePage == encoding.CodePage)) continue;
+            list.Add(encoding);
+        }
+        return list;
+    }
+
+    /// <summary>Usable means "names were found and the text decoded cleanly".</summary>
+    private static bool IsUsable(string output, List<string> names) =>
+        names.Count > 0 && !ContainsReplacementChars(output);
+
+    /// <summary>Ranks an attempt: more names is better, undecodable characters are worse.</summary>
+    private static int Score(string output, List<string> names)
+    {
+        if (output.Length == 0) return 0;
+        var replacements = 0;
+        foreach (var c in output) if (c == ReplacementChar) replacements++;
+        return (names.Count * 100) - Math.Min(replacements, 99);
+    }
+
+    private static bool ContainsReplacementChars(string output) => output.Contains(ReplacementChar);
+
+    private static bool IsPureAscii(string text)
+    {
+        foreach (var c in text) if (c > 0x7F) return false;
+        return true;
+    }
+
+    private static List<string> SplitLines(string text)
+    {
+        var lines = new List<string>();
+        var start = 0;
+        for (var i = 0; i <= text.Length; i++)
+        {
+            if (i != text.Length && text[i] != '\n' && text[i] != '\r') continue;
+            lines.Add(text[start..i]);
+            if (i != text.Length && text[i] == '\r' && i + 1 < text.Length && text[i + 1] == '\n') i++;
+            start = i + 1;
+        }
+        return lines;
+    }
+
+    /// <summary>True for a "--------" rule line (the section underlines netsh prints).</summary>
+    private static bool IsRuleLine(string line)
+    {
+        var seenDash = false;
+        foreach (var c in line)
+        {
+            if (c is '-' or '=' or '_') { seenDash = true; continue; }
+            if (char.IsWhiteSpace(c) || c == '\uFEFF') continue;
+            return false;
+        }
+        return seenDash;
+    }
+
+    /// <summary>Index of the last <c>:</c> / <c>：</c> on the line, or -1.</summary>
+    private static int LastSeparator(string line)
+    {
+        for (var i = line.Length - 1; i >= 0; i--)
+        {
+            if (line[i] is ':' or '：') return i;
+        }
+        return -1;
+    }
+
+    /// <summary>Index of the first <c>:</c> / <c>：</c> on the line, or -1.</summary>
+    private static int FirstSeparator(string line)
+    {
+        for (var i = 0; i < line.Length; i++)
+        {
+            if (line[i] is ':' or '：') return i;
+        }
+        return -1;
+    }
+
+    /// <summary>Trims whitespace/BOM and removes one layer of surrounding double quotes.</summary>
+    private static string Unquote(string value)
+    {
+        var text = value.Trim().Trim('\uFEFF').Trim();
+        if (text.Length >= 2 && text[0] == '"' && text[^1] == '"') return text[1..^1].Trim();
+        return text;
+    }
+
+    private static string Trim(string? text) => string.IsNullOrWhiteSpace(text) ? string.Empty : text.Trim();
+
+    private static async Task<string> SafeReadAsync(Task<string> read)
+    {
+        try { return await read.ConfigureAwait(false); }
+        catch { return string.Empty; }
+    }
+
+    private static int SafeExitCode(Process process)
+    {
+        try { return process.HasExited ? process.ExitCode : -1; }
+        catch { return -1; }
+    }
+
+    private static void TryKill(Process process)
+    {
+        try
+        {
+            if (!process.HasExited) process.Kill(entireProcessTree: true);
+        }
+        catch
+        {
+            // already gone, or not ours to kill
+        }
+    }
+}

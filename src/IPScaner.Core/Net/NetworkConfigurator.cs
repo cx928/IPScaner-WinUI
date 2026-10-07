@@ -1,1 +1,390 @@
-dXNpbmcgU3lzdGVtLkNvbXBvbmVudE1vZGVsOwp1c2luZyBTeXN0ZW0uRGlhZ25vc3RpY3M7CnVzaW5nIFN5c3RlbS5UZXh0Owp1c2luZyBJUFNjYW5lci5Db3JlLkxvZ2dpbmc7CnVzaW5nIElQU2NhbmVyLkNvcmUuU3RvcmFnZTsKCm5hbWVzcGFjZSBJUFNjYW5lci5Db3JlLk5ldDsKCi8vLyA8c3VtbWFyeT5PdXRjb21lIG9mIG9uZSBuZXR3b3JrLWNvbmZpZ3VyYXRpb24gY29tbWFuZC48L3N1bW1hcnk+Ci8vLyA8cGFyYW0gbmFtZT0iU3VjY2VzcyI+VHJ1ZSBvbmx5IHdoZW4gdGhlIHVuZGVybHlpbmcgPGM+bmV0c2g8L2M+IHByb2Nlc3MgZXhpdGVkIHdpdGggY29kZSAwLjwvcGFyYW0+Ci8vLyA8cGFyYW0gbmFtZT0iTWVzc2FnZSI+SHVtYW4tcmVhZGFibGUgKENoaW5lc2UpIHJlc3VsdCwgaW5jbHVkaW5nIG5ldHNoJ3Mgb3duIGVycm9yIHRleHQgb24gZmFpbHVyZS48L3BhcmFtPgovLy8gPHBhcmFtIG5hbWU9IkV4aXRDb2RlIj5uZXRzaCdzIGV4aXQgY29kZSwgb3IgPHNlZSBjcmVmPSJOZXR3b3JrQ29uZmlndXJhdG9yLk5vdFJ1bkV4aXRDb2RlIi8+IHdoZW4gbm90aGluZyB3YXMgZXhlY3V0ZWQuPC9wYXJhbT4KcHVibGljIHJlYWRvbmx5IHJlY29yZCBzdHJ1Y3QgTmV0Q29uZmlnUmVzdWx0KGJvb2wgU3VjY2Vzcywgc3RyaW5nIE1lc3NhZ2UsIGludCBFeGl0Q29kZSk7CgovLy8gPHN1bW1hcnk+Ci8vLyBBcHBsaWVzIElQIC8gc3VibmV0IG1hc2sgLyBnYXRld2F5IC8gRE5TIC8gYWRhcHRlci1zdGF0ZSBjaGFuZ2VzIHRocm91Z2gKLy8vIDxjPm5ldHNoPC9jPiwgdGhlIHdheSB0aGUgb3JpZ2luYWwgPGM+Rm9ybUxvY2FsSVA8L2M+IGRpZC4KLy8vIDwvc3VtbWFyeT4KLy8vIDxyZW1hcmtzPgovLy8gPHBhcmE+Ci8vLyBCZWhhdmlvdXJhbCBmaXggb3ZlciB0aGUgb3JpZ2luYWw6IDxjPkZvcm1Mb2NhbElQLkV4Y2VDbWQ8L2M+IHdyb3RlIHRoZSBjb21tYW5kCi8vLyBpbnRvIDxjPmNtZC5leGU8L2M+J3Mgc3RhbmRhcmQgaW5wdXQsIG5ldmVyIHdhaXRlZCBhbmQgbmV2ZXIgbG9va2VkIGF0IGFuIGV4aXQKLy8vIGNvZGUsIHNvIGl0IGFsd2F5cyByZXBvcnRlZCDmnKzlnLBJUOWcsOWdgOS/ruaUueaIkOWKnyBldmVuIHdoZW4gbmV0c2ggaGFkIHJlamVjdGVkIHRoZQovLy8gdmFsdWVzLiBIZXJlIGV2ZXJ5IGNvbW1hbmQgaXMgZXhlY3V0ZWQgZGlyZWN0bHkgKG5vIGNtZC5leGUpLCBhd2FpdGVkLCBhbmQgaXRzCi8vLyBzdGRvdXQrc3RkZXJyIHBsdXMgZXhpdCBjb2RlIGFyZSBjYXB0dXJlZDsgPHNlZSBjcmVmPSJOZXRDb25maWdSZXN1bHQuU3VjY2VzcyIvPgovLy8gaXMgPGM+RXhpdENvZGUgPT0gMDwvYz4gYW5kIHRoZSBtZXNzYWdlIGNhcnJpZXMgbmV0c2gncyByZWFsIHRleHQuCi8vLyA8L3BhcmE+Ci8vLyA8cGFyYT4KLy8vIElucHV0cyBhcmUgdmFsaWRhdGVkIHdpdGggPHNlZSBjcmVmPSJJcE1hdGguSXNWYWxpZElQdjQiLz4gPGVtPmJlZm9yZTwvZW0+IGFueQovLy8gcHJvY2VzcyBpcyBzdGFydGVkOyBhIG1hbGZvcm1lZCBhZGRyZXNzIHJldHVybnMgYSBmYWlsdXJlIHJlc3VsdCB3aXRoIGV4aXQgY29kZQovLy8gPHNlZSBjcmVmPSJOb3RSdW5FeGl0Q29kZSIvPiBhbmQgc3Bhd25zIG5vdGhpbmcuCi8vLyA8L3BhcmE+Ci8vLyA8cGFyYT4KLy8vIG5ldHNoIG91dHB1dCBpcyBkZWNvZGVkIHdpdGggPHNlZSBjcmVmPSJUZXh0RmlsZUVuY29kaW5nLkdiayIvPiAoY29kZSBwYWdlIDkzNikKLy8vIOKAlCBpdHMgbG9jYWxpemVkIHRleHQgb24gQ2hpbmVzZSBXaW5kb3dzIOKAlCBmb3IgYm90aCBzdGRvdXQgYW5kIHN0ZGVyciwgd2hpbGUKLy8vIHN0aWxsIGFjY2VwdGluZyBhIFVURi04IGNvbnNvbGUgKHNlZSA8Yz5EZWNvZGVOZXRzaEJ5dGVzPC9jPikuCi8vLyA8Yz5zZXQgYWRkcmVzczwvYz4vPGM+c2V0IGRuczwvYz4vPGM+c2V0IGludGVyZmFjZTwvYz4gcmVxdWlyZSBhbiBlbGV2YXRlZAovLy8gcHJvY2Vzczsgd2hlbiB0aGUgZXhpdCBjb2RlIG9yIHRoZSBvdXRwdXQgaW5kaWNhdGVzIGFjY2VzcyBkZW5pZWQgdGhlIG1lc3NhZ2UKLy8vIHNheXMgc28gZXhwbGljaXRseS4KLy8vIDwvcGFyYT4KLy8vIDwvcmVtYXJrcz4KcHVibGljIHNlYWxlZCBjbGFzcyBOZXR3b3JrQ29uZmlndXJhdG9yCnsKICAgIC8vLyA8c3VtbWFyeT5FeGl0IGNvZGUgdXNlZCB3aGVuIG5vIHByb2Nlc3Mgd2FzIHNwYXduZWQgKHZhbGlkYXRpb24gZmFpbHVyZSwgb3IgbmV0c2ggY291bGQgbm90IHN0YXJ0KS48L3N1bW1hcnk+CiAgICBwdWJsaWMgY29uc3QgaW50IE5vdFJ1bkV4aXRDb2RlID0gLTE7CgogICAgcHJpdmF0ZSBjb25zdCBzdHJpbmcgQ2F0ZWdvcnkgPSBuYW1lb2YoTmV0d29ya0NvbmZpZ3VyYXRvcik7CiAgICBwcml2YXRlIGNvbnN0IHN0cmluZyBOZXRzaCA9ICJuZXRzaCI7CgogICAgLy8vIDxzdW1tYXJ5PkEgbmV0c2ggY29uZmlndXJhdGlvbiBjb21tYW5kIG5vcm1hbGx5IHJldHVybnMgaW4gd2VsbCB1bmRlciBhIHNlY29uZC48L3N1bW1hcnk+CiAgICBwcml2YXRlIGNvbnN0IGludCBDb21tYW5kVGltZW91dFNlY29uZHMgPSA2MDsKCiAgICAvLy8gPHN1bW1hcnk+R3JhY2UgcGVyaW9kIGdpdmVuIHRvIG5ldHNoIHRvIGZpbmlzaCB3aGVuIHRoZSBjYWxsZXIgY2FuY2VscyBtaWQtZmxpZ2h0Ljwvc3VtbWFyeT4KICAgIHByaXZhdGUgc3RhdGljIHJlYWRvbmx5IFRpbWVTcGFuIENhbmNlbEdyYWNlID0gVGltZVNwYW4uRnJvbVNlY29uZHMoNSk7CgogICAgLy8gVGhlIGV4YWN0IGNvbW1hbmQgc2hhcGVzIHRoZSBvcmlnaW5hbCBpc3N1ZWQgKGxlZ2FjeSAiaW50ZXJmYWNlIGlwIiBuYW1lc3BhY2UsCiAgICAvLyBldmVyeSB2YWx1ZSBxdW90ZWQpIOKAlCBxdW90ZWQgaWRlbnRpY2FsbHkgc28gbmV0c2gncyBiZWhhdmlvdXIgYW5kIGVycm9yIHRleHQgbWF0Y2guCiAgICBwcml2YXRlIHN0YXRpYyByZWFkb25seSBzdHJpbmdbXSBBY2Nlc3NEZW5pZWRNYXJrZXJzID0KICAgIFsKICAgICAgICAi6ZyA6KaB5o+Q5Y2HIiwgIuaPkOWNhyIsICLpnIDopoHnrqHnkIblkZgiLCAi5Lul566h55CG5ZGY6Lqr5Lu9IiwgIueuoeeQhuWRmOadg+mZkCIsICLmi5Lnu53orr/pl64iLCAi6K6/6Zeu6KKr5ouS57udIiwKICAgICAgICAicmVxdWlyZXMgZWxldmF0aW9uIiwgImVsZXZhdGVkIiwgImFjY2VzcyBpcyBkZW5pZWQiLCAiYWNjZXNzIGRlbmllZCIsICJhZG1pbmlzdHJhdG9yIiwKICAgIF07CgogICAgLy8gLS0tLSBJUCBhZGRyZXNzIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgogICAgLy8vIDxzdW1tYXJ5PgogICAgLy8vIFNldHMgYSBzdGF0aWMgSVB2NCBhZGRyZXNzLiBUaGUgZ2F0ZXdheSBhcmd1bWVudCBpcyBvbWl0dGVkIGVudGlyZWx5IHdoZW4KICAgIC8vLyA8cGFyYW1yZWYgbmFtZT0iZ2F0ZXdheSIvPiBpcyBudWxsIG9yIGVtcHR5LCBtYXRjaGluZyBuZXRzaCdzIG9wdGlvbmFsIDR0aCB2YWx1ZS4KICAgIC8vLyA8L3N1bW1hcnk+CiAgICBwdWJsaWMgYXN5bmMgVGFzazxOZXRDb25maWdSZXN1bHQ+IFNldFN0YXRpY0FzeW5jKAogICAgICAgIHN0cmluZyBhZGFwdGVyTmFtZSwgc3RyaW5nIGlwLCBzdHJpbmcgc3VibmV0TWFzaywgc3RyaW5nPyBnYXRld2F5LCBDYW5jZWxsYXRpb25Ub2tlbiBjdCA9IGRlZmF1bHQpCiAgICB7CiAgICAgICAgaWYgKCFWYWxpZGF0ZUFkYXB0ZXJOYW1lKGFkYXB0ZXJOYW1lLCBvdXQgdmFyIG5hbWVFcnJvcikpIHJldHVybiBuYW1lRXJyb3I7CiAgICAgICAgaWYgKCFJcE1hdGguSXNWYWxpZElQdjQoaXApKQogICAgICAgICAgICByZXR1cm4gRmFpbHVyZSgkIklQ5Zyw5Z2A5qC85byP5LiN5q2j56Gu77yaXCJ7aXB9XCLvvIjlupTkuLogMTkyLjE2OC4xLjEwMCDov5nmoLfnmoTmoLzlvI/vvIkiKTsKCiAgICAgICAgaWYgKCFJcE1hdGguSXNWYWxpZElQdjQoc3VibmV0TWFzaykpCiAgICAgICAgICAgIHJldHVybiBGYWlsdXJlKCQi5a2Q572R5o6p56CB5qC85byP5LiN5q2j56Gu77yaXCJ7c3VibmV0TWFza31cIu+8iOW6lOS4uiAyNTUuMjU1LjI1NS4wIOi/meagt+eahOagvOW8j++8iSIpOwoKICAgICAgICB2YXIgZ3cgPSBnYXRld2F5Py5UcmltKCkgPz8gc3RyaW5nLkVtcHR5OwogICAgICAgIGlmIChndy5MZW5ndGggPiAwICYmICFJcE1hdGguSXNWYWxpZElQdjQoZ3cpKQogICAgICAgICAgICByZXR1cm4gRmFpbHVyZSgkIue9keWFs+WcsOWdgOagvOW8j+S4jeato+ehru+8mlwie2dhdGV3YXl9XCLvvIjlupTkuLogMTkyLjE2OC4xLjEg6L+Z5qC355qE5qC85byP77yJIik7CgogICAgICAgIHZhciBhcmd1bWVudHMgPSAkImludGVyZmFjZSBpcCBzZXQgYWRkcmVzcyBcInthZGFwdGVyTmFtZX1cIiBcInN0YXRpY1wiIFwie2lwfVwiIFwie3N1Ym5ldE1hc2t9XCIiOwogICAgICAgIGlmIChndy5MZW5ndGggPiAwKSBhcmd1bWVudHMgKz0gJCIgXCJ7Z3d9XCIiOwoKICAgICAgICB2YXIgZGVzY3JpcHRpb24gPSBndy5MZW5ndGggPiAwCiAgICAgICAgICAgID8gJCJ7YWRhcHRlck5hbWV9IOKGkiBJUCB7aXB977yM5o6p56CBIHtzdWJuZXRNYXNrfe+8jOe9keWFsyB7Z3d9IgogICAgICAgICAgICA6ICQie2FkYXB0ZXJOYW1lfSDihpIgSVAge2lwfe+8jOaOqeeggSB7c3VibmV0TWFza30iOwogICAgICAgIHJldHVybiBhd2FpdCBSdW5Bc3luYyhhcmd1bWVudHMsIGRlc2NyaXB0aW9uLCBjdCkuQ29uZmlndXJlQXdhaXQoZmFsc2UpOwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT5Td2l0Y2hlcyB0aGUgYWRhcHRlciBiYWNrIHRvIERIQ1A6IDxjPm5ldHNoIGludGVyZmFjZSBpcCBzZXQgYWRkcmVzcyAiJmx0O25hbWUmZ3Q7IiAiZGhjcCI8L2M+Ljwvc3VtbWFyeT4KICAgIHB1YmxpYyBhc3luYyBUYXNrPE5ldENvbmZpZ1Jlc3VsdD4gU2V0RGhjcEFzeW5jKHN0cmluZyBhZGFwdGVyTmFtZSwgQ2FuY2VsbGF0aW9uVG9rZW4gY3QgPSBkZWZhdWx0KQogICAgewogICAgICAgIGlmICghVmFsaWRhdGVBZGFwdGVyTmFtZShhZGFwdGVyTmFtZSwgb3V0IHZhciBuYW1lRXJyb3IpKSByZXR1cm4gbmFtZUVycm9yOwoKICAgICAgICB2YXIgYXJndW1lbnRzID0gJCJpbnRlcmZhY2UgaXAgc2V0IGFkZHJlc3MgXCJ7YWRhcHRlck5hbWV9XCIgXCJkaGNwXCIiOwogICAgICAgIHJldHVybiBhd2FpdCBSdW5Bc3luYyhhcmd1bWVudHMsICQie2FkYXB0ZXJOYW1lfSDihpIg6Ieq5Yqo6I635Y+WIElQIOWcsOWdgCIsIGN0KS5Db25maWd1cmVBd2FpdChmYWxzZSk7CiAgICB9CgogICAgLy8gLS0tLSBETlMgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgogICAgLy8vIDxzdW1tYXJ5PgogICAgLy8vIFNldHMgc3RhdGljIEROUyBzZXJ2ZXJzOiB0aGUgZmlyc3Qgb25lIHdpdGggPGM+c2V0IGRucyDigKYgc3RhdGljPC9jPiwgZXZlcnkKICAgIC8vLyBmdXJ0aGVyIG9uZSB3aXRoIDxjPmFkZCBkbnMg4oCmIGluZGV4PU48L2M+IChOIHN0YXJ0aW5nIGF0IDIpLCBhcyB0aGUgb3JpZ2luYWwgZGlkLgogICAgLy8vIDwvc3VtbWFyeT4KICAgIHB1YmxpYyBhc3luYyBUYXNrPE5ldENvbmZpZ1Jlc3VsdD4gU2V0RG5zU3RhdGljQXN5bmMoCiAgICAgICAgc3RyaW5nIGFkYXB0ZXJOYW1lLCBJUmVhZE9ubHlMaXN0PHN0cmluZz4gZG5zU2VydmVycywgQ2FuY2VsbGF0aW9uVG9rZW4gY3QgPSBkZWZhdWx0KQogICAgewogICAgICAgIGlmICghVmFsaWRhdGVBZGFwdGVyTmFtZShhZGFwdGVyTmFtZSwgb3V0IHZhciBuYW1lRXJyb3IpKSByZXR1cm4gbmFtZUVycm9yOwogICAgICAgIGlmIChkbnNTZXJ2ZXJzIGlzIG51bGwgfHwgZG5zU2VydmVycy5Db3VudCA9PSAwKQogICAgICAgICAgICByZXR1cm4gRmFpbHVyZSgi6K+36L6T5YWlRE5T5pyN5Yqh5Zmo5Zyw5Z2AIik7CgogICAgICAgIGZvciAodmFyIGkgPSAwOyBpIDwgZG5zU2VydmVycy5Db3VudDsgaSsrKQogICAgICAgIHsKICAgICAgICAgICAgaWYgKCFJcE1hdGguSXNWYWxpZElQdjQoZG5zU2VydmVyc1tpXSkpCiAgICAgICAgICAgICAgICByZXR1cm4gRmFpbHVyZSgkIuesrCB7aSArIDF9IOS4qkROU+WcsOWdgOagvOW8j+S4jeato+ehru+8mlwie2Ruc1NlcnZlcnNbaV19XCIiKTsKICAgICAgICB9CgogICAgICAgIHZhciBwcmltYXJ5ID0gZG5zU2VydmVyc1swXS5UcmltKCk7CiAgICAgICAgdmFyIHByaW1hcnlBcmd1bWVudHMgPSAkImludGVyZmFjZSBpcCBzZXQgZG5zIFwie2FkYXB0ZXJOYW1lfVwiIFwic3RhdGljXCIgXCJ7cHJpbWFyeX1cIiI7CiAgICAgICAgdmFyIHByaW1hcnlSZXN1bHQgPSBhd2FpdCBSdW5Bc3luYyhwcmltYXJ5QXJndW1lbnRzLCAkInthZGFwdGVyTmFtZX0g4oaSIOS4u0ROUyB7cHJpbWFyeX0iLCBjdCkuQ29uZmlndXJlQXdhaXQoZmFsc2UpOwogICAgICAgIGlmICghcHJpbWFyeVJlc3VsdC5TdWNjZXNzKSByZXR1cm4gcHJpbWFyeVJlc3VsdDsKCiAgICAgICAgZm9yICh2YXIgaSA9IDE7IGkgPCBkbnNTZXJ2ZXJzLkNvdW50OyBpKyspCiAgICAgICAgewogICAgICAgICAgICB2YXIgc2VydmVyID0gZG5zU2VydmVyc1tpXS5UcmltKCk7CiAgICAgICAgICAgIHZhciBpbmRleCA9IGkgKyAxOwogICAgICAgICAgICB2YXIgYXJndW1lbnRzID0gJCJpbnRlcmZhY2UgaXAgYWRkIGRucyBcInthZGFwdGVyTmFtZX1cIiBcIntzZXJ2ZXJ9XCIgaW5kZXg9e2luZGV4fSI7CiAgICAgICAgICAgIHZhciByZXN1bHQgPSBhd2FpdCBSdW5Bc3luYyhhcmd1bWVudHMsICQie2FkYXB0ZXJOYW1lfSDihpIg5aSH55SoRE5TIHtzZXJ2ZXJ977yIaW5kZXg9e2luZGV4fe+8iSIsIGN0KS5Db25maWd1cmVBd2FpdChmYWxzZSk7CiAgICAgICAgICAgIGlmIChyZXN1bHQuU3VjY2VzcykgY29udGludWU7CgogICAgICAgICAgICByZXR1cm4gbmV3IE5ldENvbmZpZ1Jlc3VsdCgKICAgICAgICAgICAgICAgIGZhbHNlLAogICAgICAgICAgICAgICAgJCLkuLtETlMge3ByaW1hcnl9IOiuvue9ruaIkOWKn++8jOS9hua3u+WKoOesrCB7aW5kZXh9IOS4qkROUyB7c2VydmVyfSDlpLHotKXvvJp7cmVzdWx0Lk1lc3NhZ2V9IiwKICAgICAgICAgICAgICAgIHJlc3VsdC5FeGl0Q29kZSk7CiAgICAgICAgfQoKICAgICAgICB2YXIgZG5zVGV4dCA9IHN0cmluZy5Kb2luKCIsICIsIGRuc1NlcnZlcnMuU2VsZWN0KGQgPT4gZC5UcmltKCkpKTsKICAgICAgICByZXR1cm4gbmV3IE5ldENvbmZpZ1Jlc3VsdCh0cnVlLCAkIuiuvue9ruaIkOWKn++8mnthZGFwdGVyTmFtZX0g55qERE5T5pyN5Yqh5ZmoIOKGkiB7ZG5zVGV4dH0iLCAwKTsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+U3dpdGNoZXMgRE5TIGJhY2sgdG8gREhDUDogPGM+bmV0c2ggaW50ZXJmYWNlIGlwIHNldCBkbnMgIiZsdDtuYW1lJmd0OyIgImRoY3AiPC9jPi48L3N1bW1hcnk+CiAgICBwdWJsaWMgYXN5bmMgVGFzazxOZXRDb25maWdSZXN1bHQ+IFNldERuc0RoY3BBc3luYyhzdHJpbmcgYWRhcHRlck5hbWUsIENhbmNlbGxhdGlvblRva2VuIGN0ID0gZGVmYXVsdCkKICAgIHsKICAgICAgICBpZiAoIVZhbGlkYXRlQWRhcHRlck5hbWUoYWRhcHRlck5hbWUsIG91dCB2YXIgbmFtZUVycm9yKSkgcmV0dXJuIG5hbWVFcnJvcjsKCiAgICAgICAgdmFyIGFyZ3VtZW50cyA9ICQiaW50ZXJmYWNlIGlwIHNldCBkbnMgXCJ7YWRhcHRlck5hbWV9XCIgXCJkaGNwXCIiOwogICAgICAgIHJldHVybiBhd2FpdCBSdW5Bc3luYyhhcmd1bWVudHMsICQie2FkYXB0ZXJOYW1lfSDihpIg6Ieq5Yqo6I635Y+WIEROUyDmnI3liqHlmagiLCBjdCkuQ29uZmlndXJlQXdhaXQoZmFsc2UpOwogICAgfQoKICAgIC8vIC0tLS0gYWRhcHRlciBzdGF0ZSAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIC8vLyA8c3VtbWFyeT5FbmFibGVzIHRoZSBhZGFwdGVyOiA8Yz5uZXRzaCBpbnRlcmZhY2Ugc2V0IGludGVyZmFjZSAiJmx0O25hbWUmZ3Q7IiBlbmFibGU8L2M+Ljwvc3VtbWFyeT4KICAgIHB1YmxpYyBhc3luYyBUYXNrPE5ldENvbmZpZ1Jlc3VsdD4gRW5hYmxlQWRhcHRlckFzeW5jKHN0cmluZyBhZGFwdGVyTmFtZSwgQ2FuY2VsbGF0aW9uVG9rZW4gY3QgPSBkZWZhdWx0KQogICAgewogICAgICAgIGlmICghVmFsaWRhdGVBZGFwdGVyTmFtZShhZGFwdGVyTmFtZSwgb3V0IHZhciBuYW1lRXJyb3IpKSByZXR1cm4gbmFtZUVycm9yOwoKICAgICAgICB2YXIgYXJndW1lbnRzID0gJCJpbnRlcmZhY2Ugc2V0IGludGVyZmFjZSBcInthZGFwdGVyTmFtZX1cIiBlbmFibGUiOwogICAgICAgIHJldHVybiBhd2FpdCBSdW5Bc3luYyhhcmd1bWVudHMsICQi572R5Y2hIHthZGFwdGVyTmFtZX0g5bey5ZCv55SoIiwgY3QpLkNvbmZpZ3VyZUF3YWl0KGZhbHNlKTsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+RGlzYWJsZXMgdGhlIGFkYXB0ZXI6IDxjPm5ldHNoIGludGVyZmFjZSBzZXQgaW50ZXJmYWNlICImbHQ7bmFtZSZndDsiIGRpc2FibGU8L2M+Ljwvc3VtbWFyeT4KICAgIHB1YmxpYyBhc3luYyBUYXNrPE5ldENvbmZpZ1Jlc3VsdD4gRGlzYWJsZUFkYXB0ZXJBc3luYyhzdHJpbmcgYWRhcHRlck5hbWUsIENhbmNlbGxhdGlvblRva2VuIGN0ID0gZGVmYXVsdCkKICAgIHsKICAgICAgICBpZiAoIVZhbGlkYXRlQWRhcHRlck5hbWUoYWRhcHRlck5hbWUsIG91dCB2YXIgbmFtZUVycm9yKSkgcmV0dXJuIG5hbWVFcnJvcjsKCiAgICAgICAgdmFyIGFyZ3VtZW50cyA9ICQiaW50ZXJmYWNlIHNldCBpbnRlcmZhY2UgXCJ7YWRhcHRlck5hbWV9XCIgZGlzYWJsZSI7CiAgICAgICAgcmV0dXJuIGF3YWl0IFJ1bkFzeW5jKGFyZ3VtZW50cywgJCLnvZHljaEge2FkYXB0ZXJOYW1lfSDlt7LnpoHnlKgiLCBjdCkuQ29uZmlndXJlQXdhaXQoZmFsc2UpOwogICAgfQoKICAgIC8vIC0tLS0gZXhlY3V0aW9uIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBSdW5zIG9uZSBuZXRzaCBjb21tYW5kIGxpbmUsIHdhaXRzIGZvciBpdCB0byBleGl0IGFuZCB0dXJucyB0aGUgZXhpdCBjb2RlIHBsdXMKICAgIC8vLyB0aGUgY2FwdHVyZWQgdGV4dCBpbnRvIGEgPHNlZSBjcmVmPSJOZXRDb25maWdSZXN1bHQiLz4uIE5ldmVyIHRocm93cy4KICAgIC8vLyA8L3N1bW1hcnk+CiAgICBwcml2YXRlIHN0YXRpYyBhc3luYyBUYXNrPE5ldENvbmZpZ1Jlc3VsdD4gUnVuQXN5bmMoc3RyaW5nIGFyZ3VtZW50cywgc3RyaW5nIGRlc2NyaXB0aW9uLCBDYW5jZWxsYXRpb25Ub2tlbiBjdCkKICAgIHsKICAgICAgICBBcHBMb2cuSW5zdGFuY2UuTG9nKENhdGVnb3J5LCAkIuaJp+ihjCBuZXRzaCB7YXJndW1lbnRzfSIpOwoKICAgICAgICBQcm9jZXNzPyBwcm9jZXNzID0gbnVsbDsKICAgICAgICB0cnkKICAgICAgICB7CiAgICAgICAgICAgIC8vIG5ldHNoJ3MgbmF0aXZlIG91dHB1dCBjb2RlIHBhZ2Ugb24gQ2hpbmVzZSBXaW5kb3dzOyBhbHNvIHRoZSBkZWNvZGVyJ3MKICAgICAgICAgICAgLy8gZmFsbGJhY2sgd2hlbiB0aGUgY2FwdHVyZWQgYnl0ZXMgdHVybiBvdXQgbm90IHRvIGJlIFVURi04IChzZWUgRGVjb2RlTmV0c2hCeXRlcykuCiAgICAgICAgICAgIHZhciBjb25zb2xlRW5jb2RpbmcgPSBUZXh0RmlsZUVuY29kaW5nLkdiazsKCiAgICAgICAgICAgIHZhciBzdGFydEluZm8gPSBuZXcgUHJvY2Vzc1N0YXJ0SW5mbyhOZXRzaCwgYXJndW1lbnRzKQogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICBSZWRpcmVjdFN0YW5kYXJkT3V0cHV0ID0gdHJ1ZSwKICAgICAgICAgICAgICAgIFJlZGlyZWN0U3RhbmRhcmRFcnJvciA9IHRydWUsCiAgICAgICAgICAgICAgICBVc2VTaGVsbEV4ZWN1dGUgPSBmYWxzZSwKICAgICAgICAgICAgICAgIENyZWF0ZU5vV2luZG93ID0gdHJ1ZSwKICAgICAgICAgICAgICAgIFN0YW5kYXJkT3V0cHV0RW5jb2RpbmcgPSBjb25zb2xlRW5jb2RpbmcsCiAgICAgICAgICAgICAgICBTdGFuZGFyZEVycm9yRW5jb2RpbmcgPSBjb25zb2xlRW5jb2RpbmcsCiAgICAgICAgICAgIH07CgogICAgICAgICAgICBwcm9jZXNzID0gUHJvY2Vzcy5TdGFydChzdGFydEluZm8pOwogICAgICAgICAgICBpZiAocHJvY2VzcyBpcyBudWxsKQogICAgICAgICAgICAgICAgcmV0dXJuIG5ldyBOZXRDb25maWdSZXN1bHQoZmFsc2UsICLml6Dms5XlkK/liqggbmV0c2jjgIIiLCBOb3RSdW5FeGl0Q29kZSk7CgogICAgICAgICAgICB2YXIgc3Rkb3V0VGFzayA9IFJlYWRBbGxCeXRlc0FzeW5jKHByb2Nlc3MuU3RhbmRhcmRPdXRwdXQuQmFzZVN0cmVhbSwgY3QpOwogICAgICAgICAgICB2YXIgc3RkZXJyVGFzayA9IFJlYWRBbGxCeXRlc0FzeW5jKHByb2Nlc3MuU3RhbmRhcmRFcnJvci5CYXNlU3RyZWFtLCBjdCk7CgogICAgICAgICAgICB1c2luZyAodmFyIHRpbWVvdXQgPSBuZXcgQ2FuY2VsbGF0aW9uVG9rZW5Tb3VyY2UoVGltZVNwYW4uRnJvbVNlY29uZHMoQ29tbWFuZFRpbWVvdXRTZWNvbmRzKSkpCiAgICAgICAgICAgIHVzaW5nICh2YXIgbGlua2VkID0gQ2FuY2VsbGF0aW9uVG9rZW5Tb3VyY2UuQ3JlYXRlTGlua2VkVG9rZW5Tb3VyY2UoY3QsIHRpbWVvdXQuVG9rZW4pKQogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICB0cnkKICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAvLyBEcmFpbiBib3RoIHBpcGVzIGZpcnN0IHNvIGEgY2hhdHR5IG5ldHNoIGNhbm5vdCBibG9jayBvbiBhIGZ1bGwKICAgICAgICAgICAgICAgICAgICAvLyBwaXBlIGJ1ZmZlciB3aGlsZSB3ZSB3YWl0IGZvciBpdCB0byBleGl0LgogICAgICAgICAgICAgICAgICAgIGF3YWl0IFRhc2suV2hlbkFsbChzdGRvdXRUYXNrLCBzdGRlcnJUYXNrKS5XYWl0QXN5bmMobGlua2VkLlRva2VuKS5Db25maWd1cmVBd2FpdChmYWxzZSk7CiAgICAgICAgICAgICAgICAgICAgYXdhaXQgcHJvY2Vzcy5XYWl0Rm9yRXhpdEFzeW5jKGxpbmtlZC5Ub2tlbikuQ29uZmlndXJlQXdhaXQoZmFsc2UpOwogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgY2F0Y2ggKE9wZXJhdGlvbkNhbmNlbGVkRXhjZXB0aW9uKQogICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgIHZhciB0aW1lZE91dCA9IHRpbWVvdXQuSXNDYW5jZWxsYXRpb25SZXF1ZXN0ZWQgJiYgIWN0LklzQ2FuY2VsbGF0aW9uUmVxdWVzdGVkOwogICAgICAgICAgICAgICAgICAgIGlmICghdGltZWRPdXQpIGF3YWl0IFdhaXRGb3JHcmFjZWZ1bEV4aXRBc3luYyhwcm9jZXNzKS5Db25maWd1cmVBd2FpdChmYWxzZSk7CiAgICAgICAgICAgICAgICAgICAgdmFyIHdhc0tpbGxlZCA9IFRyeUtpbGwocHJvY2Vzcyk7CiAgICAgICAgICAgICAgICAgICAgdmFyIGNvZGUgPSBTYWZlRXhpdENvZGUocHJvY2Vzcyk7CiAgICAgICAgICAgICAgICAgICAgdmFyIHJlYXNvbiA9IHRpbWVkT3V0CiAgICAgICAgICAgICAgICAgICAgICAgID8gJCJuZXRzaCDmiafooYzotoXml7bvvIh7Q29tbWFuZFRpbWVvdXRTZWNvbmRzfSDnp5LvvInvvIzlt7Lnu4jmraLvvJpuZXRzaCB7YXJndW1lbnRzfSIKICAgICAgICAgICAgICAgICAgICAgICAgOiAi5pON5L2c5bey5Y+W5raI44CCIjsKICAgICAgICAgICAgICAgICAgICBBcHBMb2cuSW5zdGFuY2UuTG9nKENhdGVnb3J5LCAkIntyZWFzb25977yI6YCA5Ye656CBIHtjb2Rlfe+8jOW3sue7iOatoj17d2FzS2lsbGVkfe+8iSIpOwogICAgICAgICAgICAgICAgICAgIHJldHVybiBuZXcgTmV0Q29uZmlnUmVzdWx0KGZhbHNlLCByZWFzb24sIGNvZGUpOwogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CgogICAgICAgICAgICB2YXIgc3Rkb3V0ID0gRGVjb2RlTmV0c2hCeXRlcyhhd2FpdCBzdGRvdXRUYXNrLkNvbmZpZ3VyZUF3YWl0KGZhbHNlKSwgY29uc29sZUVuY29kaW5nKTsKICAgICAgICAgICAgdmFyIHN0ZGVyciA9IERlY29kZU5ldHNoQnl0ZXMoYXdhaXQgc3RkZXJyVGFzay5Db25maWd1cmVBd2FpdChmYWxzZSksIGNvbnNvbGVFbmNvZGluZyk7CiAgICAgICAgICAgIHZhciBleGl0Q29kZSA9IFNhZmVFeGl0Q29kZShwcm9jZXNzKTsKICAgICAgICAgICAgdmFyIGRldGFpbCA9IENvbmRlbnNlKHN0ZG91dCwgc3RkZXJyKTsKCiAgICAgICAgICAgIGlmIChleGl0Q29kZSA9PSAwKQogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICB2YXIgbWVzc2FnZSA9ICQi6K6+572u5oiQ5Yqf77yae2Rlc2NyaXB0aW9ufSI7CiAgICAgICAgICAgICAgICBpZiAoZGV0YWlsLkxlbmd0aCA+IDApIG1lc3NhZ2UgKz0gJCLvvIhuZXRzaDoge2RldGFpbH3vvIkiOwogICAgICAgICAgICAgICAgQXBwTG9nLkluc3RhbmNlLkxvZyhDYXRlZ29yeSwgbWVzc2FnZSk7CiAgICAgICAgICAgICAgICByZXR1cm4gbmV3IE5ldENvbmZpZ1Jlc3VsdCh0cnVlLCBtZXNzYWdlLCAwKTsKICAgICAgICAgICAgfQoKICAgICAgICAgICAgaWYgKElzQWNjZXNzRGVuaWVkKGV4aXRDb2RlLCBkZXRhaWwpKQogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICB2YXIgZGVuaWVkID0gIuS/ruaUuee9kee7nOmFjee9rumcgOimgeeuoeeQhuWRmOadg+mZkO+8iOiuv+mXruiiq+aLkue7ne+8ieOAguivt+S7peeuoeeQhuWRmOi6q+S7vemHjeaWsOi/kOihjOacrOeoi+W6j+WQjuWGjeivleOAgiIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICArIChkZXRhaWwuTGVuZ3RoID4gMCA/ICQiIG5ldHNoOiB7ZGV0YWlsfSIgOiAkIiDpgIDlh7rnoIEge2V4aXRDb2RlfeOAgiIpOwogICAgICAgICAgICAgICAgQXBwTG9nLkluc3RhbmNlLkxvZyhDYXRlZ29yeSwgIm5ldHNoIOiuv+mXruiiq+aLkue7nTogIiArIGFyZ3VtZW50cyk7CiAgICAgICAgICAgICAgICByZXR1cm4gbmV3IE5ldENvbmZpZ1Jlc3VsdChmYWxzZSwgZGVuaWVkLCBleGl0Q29kZSk7CiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIHZhciBmYWlsdXJlID0gJCLorr7nva7lpLHotKXvvIhuZXRzaCDpgIDlh7rnoIEge2V4aXRDb2Rlfe+8ie+8mntkZXNjcmlwdGlvbn0iCiAgICAgICAgICAgICAgICAgICAgICAgICAgKyAoZGV0YWlsLkxlbmd0aCA+IDAgPyAkIuOAgm5ldHNoIOi/lOWbnu+8mntkZXRhaWx9IiA6ICLjgIJuZXRzaCDmnKrov5Tlm57ku7vkvZXkv6Hmga/jgIIiKTsKICAgICAgICAgICAgQXBwTG9nLkluc3RhbmNlLkxvZyhDYXRlZ29yeSwgZmFpbHVyZSk7CiAgICAgICAgICAgIHJldHVybiBuZXcgTmV0Q29uZmlnUmVzdWx0KGZhbHNlLCBmYWlsdXJlLCBleGl0Q29kZSk7CiAgICAgICAgfQogICAgICAgIGNhdGNoIChXaW4zMkV4Y2VwdGlvbiBleCkgd2hlbiAoZXguTmF0aXZlRXJyb3JDb2RlID09IDUpCiAgICAgICAgewogICAgICAgICAgICBBcHBMb2cuSW5zdGFuY2UuTG9nKENhdGVnb3J5LCAi5ZCv5YqoIG5ldHNoIOiiq+aLkue7nTogIiArIGV4Lk1lc3NhZ2UpOwogICAgICAgICAgICByZXR1cm4gbmV3IE5ldENvbmZpZ1Jlc3VsdCgKICAgICAgICAgICAgICAgIGZhbHNlLCAi5L+u5pS5572R57uc6YWN572u6ZyA6KaB566h55CG5ZGY5p2D6ZmQ77yI5peg5rOV5ZCv5YqoIG5ldHNo77yM6K6/6Zeu6KKr5ouS57ud77yJ44CC6K+35Lul566h55CG5ZGY6Lqr5Lu96YeN5paw6L+Q6KGM5pys56iL5bqP5ZCO5YaN6K+V44CCIiwgNSk7CiAgICAgICAgfQogICAgICAgIGNhdGNoIChFeGNlcHRpb24gZXgpCiAgICAgICAgewogICAgICAgICAgICBBcHBMb2cuSW5zdGFuY2UuTG9nKENhdGVnb3J5LCAkIuaJp+ihjCBuZXRzaCB7YXJndW1lbnRzfSDlpLHotKU6IHtleC5NZXNzYWdlfSIpOwogICAgICAgICAgICByZXR1cm4gbmV3IE5ldENvbmZpZ1Jlc3VsdChmYWxzZSwgJCLmiafooYwgbmV0c2gg5aSx6LSl77yae2V4Lk1lc3NhZ2V9IiwgTm90UnVuRXhpdENvZGUpOwogICAgICAgIH0KICAgICAgICBmaW5hbGx5CiAgICAgICAgewogICAgICAgICAgICBwcm9jZXNzPy5EaXNwb3NlKCk7CiAgICAgICAgfQogICAgfQoKICAgIC8vLyA8c3VtbWFyeT5UcnVlIHdoZW4gdGhlIGV4aXQgY29kZSBvciB0aGUgY2FwdHVyZWQgdGV4dCBzYXlzICJlbGV2YXRpb24gcmVxdWlyZWQiLjwvc3VtbWFyeT4KICAgIHByaXZhdGUgc3RhdGljIGJvb2wgSXNBY2Nlc3NEZW5pZWQoaW50IGV4aXRDb2RlLCBzdHJpbmcgZGV0YWlsKQogICAgewogICAgICAgIGlmIChleGl0Q29kZSA9PSA1KSByZXR1cm4gdHJ1ZTsgLy8gRVJST1JfQUNDRVNTX0RFTklFRAogICAgICAgIGlmIChkZXRhaWwuTGVuZ3RoID09IDApIHJldHVybiBmYWxzZTsKICAgICAgICBmb3JlYWNoICh2YXIgbWFya2VyIGluIEFjY2Vzc0RlbmllZE1hcmtlcnMpCiAgICAgICAgewogICAgICAgICAgICBpZiAoZGV0YWlsLkNvbnRhaW5zKG1hcmtlciwgU3RyaW5nQ29tcGFyaXNvbi5PcmRpbmFsSWdub3JlQ2FzZSkpIHJldHVybiB0cnVlOwogICAgICAgIH0KICAgICAgICByZXR1cm4gZmFsc2U7CiAgICB9CgogICAgLy8vIDxzdW1tYXJ5PgogICAgLy8vIEEgdXNlci1pc3N1ZWQgY2FuY2VsbGF0aW9uIHNob3VsZCBub3QgY3V0IGEgY29uZmlndXJhdGlvbiB3cml0ZSBpbiBoYWxmLCBzbwogICAgLy8vIG5ldHNoIGdldHMgYSBmZXcgc2Vjb25kcyB0byBmaW5pc2ggb24gaXRzIG93biBiZWZvcmUgaXQgaXMga2lsbGVkLgogICAgLy8vIDwvc3VtbWFyeT4KICAgIHByaXZhdGUgc3RhdGljIGFzeW5jIFRhc2sgV2FpdEZvckdyYWNlZnVsRXhpdEFzeW5jKFByb2Nlc3MgcHJvY2VzcykKICAgIHsKICAgICAgICB0cnkKICAgICAgICB7CiAgICAgICAgICAgIHVzaW5nIHZhciBncmFjZSA9IG5ldyBDYW5jZWxsYXRpb25Ub2tlblNvdXJjZShDYW5jZWxHcmFjZSk7CiAgICAgICAgICAgIGF3YWl0IHByb2Nlc3MuV2FpdEZvckV4aXRBc3luYyhncmFjZS5Ub2tlbikuQ29uZmlndXJlQXdhaXQoZmFsc2UpOwogICAgICAgIH0KICAgICAgICBjYXRjaAogICAgICAgIHsKICAgICAgICAgICAgLy8gc3RpbGwgcnVubmluZyAob3IgYWxyZWFkeSBnb25lKSDigJQgdGhlIGNhbGxlciBraWxscyBpdAogICAgICAgIH0KICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+Q29sbGFwc2VzIG5ldHNoJ3MgbXVsdGktbGluZSBvdXRwdXQgaW50byBvbmUgcmVhZGFibGUgbGluZS48L3N1bW1hcnk+CiAgICBwcml2YXRlIHN0YXRpYyBzdHJpbmcgQ29uZGVuc2Uoc3RyaW5nIHN0ZG91dCwgc3RyaW5nIHN0ZGVycikKICAgIHsKICAgICAgICB2YXIgdGV4dCA9IHN0cmluZy5Jc051bGxPcldoaXRlU3BhY2Uoc3Rkb3V0KSA/IHN0ZGVyciA6IHN0ZG91dDsKICAgICAgICBpZiAoc3RyaW5nLklzTnVsbE9yV2hpdGVTcGFjZSh0ZXh0KSkgcmV0dXJuIHN0cmluZy5FbXB0eTsKCiAgICAgICAgdmFyIHBhcnRzID0gdGV4dAogICAgICAgICAgICAuU3BsaXQoWydccicsICdcbiddLCBTdHJpbmdTcGxpdE9wdGlvbnMuUmVtb3ZlRW1wdHlFbnRyaWVzIHwgU3RyaW5nU3BsaXRPcHRpb25zLlRyaW1FbnRyaWVzKTsKICAgICAgICByZXR1cm4gc3RyaW5nLkpvaW4oIiAiLCBwYXJ0cyk7CiAgICB9CgogICAgLy8vIDxzdW1tYXJ5PlN0cmljdCBVVEYtODogdGhyb3dzIG9uIGJ5dGUgc2VxdWVuY2VzIHRoYXQgYXJlIG5vdCB2YWxpZCBVVEYtOC48L3N1bW1hcnk+CiAgICBwcml2YXRlIHN0YXRpYyByZWFkb25seSBVVEY4RW5jb2RpbmcgU3RyaWN0VXRmOCA9IG5ldyhlbmNvZGVyU2hvdWxkRW1pdFVURjhJZGVudGlmaWVyOiBmYWxzZSwgdGhyb3dPbkludmFsaWRCeXRlczogdHJ1ZSk7CgogICAgLy8vIDxzdW1tYXJ5PgogICAgLy8vIERlY29kZXMgY2FwdHVyZWQgbmV0c2ggYnl0ZXMuIDxwYXJhbXJlZiBuYW1lPSJmYWxsYmFjayIvPiBpcyB0aGUgY29uZmlndXJlZAogICAgLy8vIGNvbnNvbGUgY29kZSBwYWdlICg8c2VlIGNyZWY9IlRleHRGaWxlRW5jb2RpbmcuR2JrIi8+IOKAlCB3aGF0IG5ldHNoIHdyaXRlcyBvbiBhCiAgICAvLy8gQ2hpbmVzZSBzeXN0ZW0pLCBidXQgbmV0c2ggd3JpdGVzIFVURi04IHdoZXJlIGEgVVRGLTggY29uc29sZSBpcyBhY3RpdmUgKHRoZQogICAgLy8vICJCZXRhOiBVc2UgVW5pY29kZSBVVEYtOCBmb3Igd29ybGR3aWRlIGxhbmd1YWdlIHN1cHBvcnQiIG9wdGlvbiwgV2luZG93cyAxMQogICAgLy8vIDI0SDIgYmVoYXZpb3VyKSwgYW5kIEdCSy1kZWNvZGluZyB0aG9zZSBieXRlcyB5aWVsZHMgbW9qaWJha2UuIFZhbGlkIFVURi04IGlzIGEKICAgIC8vLyBkZWNpc2l2ZSBzaWduYWwg4oCUIENoaW5lc2UgR0JLIHRleHQgcHJhY3RpY2FsbHkgbmV2ZXIgZm9ybXMgdmFsaWQgVVRGLTgg4oCUIHNvIGl0CiAgICAvLy8gaXMgcHJlZmVycmVkLCBhbmQgdGhlIGNvbmZpZ3VyZWQgY29kZSBwYWdlIGlzIHVzZWQgZm9yIGV2ZXJ5dGhpbmcgZWxzZS4KICAgIC8vLyAoPHNlZSBjcmVmPSJQcm9jZXNzU3RhcnRJbmZvLlN0YW5kYXJkT3V0cHV0RW5jb2RpbmciLz4gLwogICAgLy8vIDxzZWUgY3JlZj0iUHJvY2Vzc1N0YXJ0SW5mby5TdGFuZGFyZEVycm9yRW5jb2RpbmciLz4gYXJlIHN0aWxsIHNldCB0byBHQks7IHRoaXMKICAgIC8vLyBpcyB0aGUgc2FtZSBzZXR0aW5nIGFwcGxpZWQgdG8gdGhlIHJhdyBieXRlcy4pCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgcHJpdmF0ZSBzdGF0aWMgc3RyaW5nIERlY29kZU5ldHNoQnl0ZXMoYnl0ZVtdIGJ5dGVzLCBFbmNvZGluZyBmYWxsYmFjaykKICAgIHsKICAgICAgICBpZiAoYnl0ZXMuTGVuZ3RoID09IDApIHJldHVybiBzdHJpbmcuRW1wdHk7CgogICAgICAgIHRyeQogICAgICAgIHsKICAgICAgICAgICAgcmV0dXJuIFN0cmljdFV0ZjguR2V0U3RyaW5nKGJ5dGVzKTsKICAgICAgICB9CiAgICAgICAgY2F0Y2ggKERlY29kZXJGYWxsYmFja0V4Y2VwdGlvbikKICAgICAgICB7CiAgICAgICAgICAgIHJldHVybiBmYWxsYmFjay5HZXRTdHJpbmcoYnl0ZXMpOwogICAgICAgIH0KICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+UmVhZHMgYSByZWRpcmVjdGVkIHBpcGUgdG8gRU9GIGFzIHJhdyBieXRlcy48L3N1bW1hcnk+CiAgICBwcml2YXRlIHN0YXRpYyBhc3luYyBUYXNrPGJ5dGVbXT4gUmVhZEFsbEJ5dGVzQXN5bmMoU3RyZWFtIHN0cmVhbSwgQ2FuY2VsbGF0aW9uVG9rZW4gY3QpCiAgICB7CiAgICAgICAgdXNpbmcgdmFyIGJ1ZmZlciA9IG5ldyBNZW1vcnlTdHJlYW0oKTsKICAgICAgICBhd2FpdCBzdHJlYW0uQ29weVRvQXN5bmMoYnVmZmVyLCBjdCkuQ29uZmlndXJlQXdhaXQoZmFsc2UpOwogICAgICAgIHJldHVybiBidWZmZXIuVG9BcnJheSgpOwogICAgfQoKICAgIHByaXZhdGUgc3RhdGljIGJvb2wgVmFsaWRhdGVBZGFwdGVyTmFtZShzdHJpbmc/IGFkYXB0ZXJOYW1lLCBvdXQgTmV0Q29uZmlnUmVzdWx0IGVycm9yKQogICAgewogICAgICAgIGlmIChzdHJpbmcuSXNOdWxsT3JXaGl0ZVNwYWNlKGFkYXB0ZXJOYW1lKSkKICAgICAgICB7CiAgICAgICAgICAgIGVycm9yID0gRmFpbHVyZSgi572R5Y2h5ZCN56ew5LiN6IO95Li656m6Iik7CiAgICAgICAgICAgIHJldHVybiBmYWxzZTsKICAgICAgICB9CgogICAgICAgIGlmIChhZGFwdGVyTmFtZS5Db250YWlucygnIicpKQogICAgICAgIHsKICAgICAgICAgICAgZXJyb3IgPSBGYWlsdXJlKCQi572R5Y2h5ZCN56ew5LiN5ZCI5rOV77yI5LiN6IO95YyF5ZCr5byV5Y+377yJ77yaXCJ7YWRhcHRlck5hbWV9XCIiKTsKICAgICAgICAgICAgcmV0dXJuIGZhbHNlOwogICAgICAgIH0KCiAgICAgICAgZXJyb3IgPSBkZWZhdWx0OwogICAgICAgIHJldHVybiB0cnVlOwogICAgfQoKICAgIHByaXZhdGUgc3RhdGljIE5ldENvbmZpZ1Jlc3VsdCBGYWlsdXJlKHN0cmluZyBtZXNzYWdlKSA9PiBuZXcoZmFsc2UsIG1lc3NhZ2UsIE5vdFJ1bkV4aXRDb2RlKTsKCiAgICBwcml2YXRlIHN0YXRpYyBpbnQgU2FmZUV4aXRDb2RlKFByb2Nlc3MgcHJvY2VzcykKICAgIHsKICAgICAgICB0cnkgeyByZXR1cm4gcHJvY2Vzcy5IYXNFeGl0ZWQgPyBwcm9jZXNzLkV4aXRDb2RlIDogTm90UnVuRXhpdENvZGU7IH0KICAgICAgICBjYXRjaCB7IHJldHVybiBOb3RSdW5FeGl0Q29kZTsgfQogICAgfQoKICAgIHByaXZhdGUgc3RhdGljIGJvb2wgVHJ5S2lsbChQcm9jZXNzIHByb2Nlc3MpCiAgICB7CiAgICAgICAgdHJ5CiAgICAgICAgewogICAgICAgICAgICBpZiAocHJvY2Vzcy5IYXNFeGl0ZWQpIHJldHVybiBmYWxzZTsKICAgICAgICAgICAgcHJvY2Vzcy5LaWxsKGVudGlyZVByb2Nlc3NUcmVlOiB0cnVlKTsKICAgICAgICAgICAgcmV0dXJuIHRydWU7CiAgICAgICAgfQogICAgICAgIGNhdGNoCiAgICAgICAgewogICAgICAgICAgICByZXR1cm4gZmFsc2U7CiAgICAgICAgfQogICAgfQp9Cg==
+using System.ComponentModel;
+using System.Diagnostics;
+using System.Text;
+using IPScaner.Core.Logging;
+using IPScaner.Core.Storage;
+
+namespace IPScaner.Core.Net;
+
+/// <summary>Outcome of one network-configuration command.</summary>
+/// <param name="Success">True only when the underlying <c>netsh</c> process exited with code 0.</param>
+/// <param name="Message">Human-readable (Chinese) result, including netsh's own error text on failure.</param>
+/// <param name="ExitCode">netsh's exit code, or <see cref="NetworkConfigurator.NotRunExitCode"/> when nothing was executed.</param>
+public readonly record struct NetConfigResult(bool Success, string Message, int ExitCode);
+
+/// <summary>
+/// Applies IP / subnet mask / gateway / DNS / adapter-state changes through
+/// <c>netsh</c>, the way the original <c>FormLocalIP</c> did.
+/// </summary>
+/// <remarks>
+/// <para>
+/// Behavioural fix over the original: <c>FormLocalIP.ExceCmd</c> wrote the command
+/// into <c>cmd.exe</c>'s standard input, never waited and never looked at an exit
+/// code, so it always reported 本地IP地址修改成功 even when netsh had rejected the
+/// values. Here every command is executed directly (no cmd.exe), awaited, and its
+/// stdout+stderr plus exit code are captured; <see cref="NetConfigResult.Success"/>
+/// is <c>ExitCode == 0</c> and the message carries netsh's real text.
+/// </para>
+/// <para>
+/// Inputs are validated with <see cref="IpMath.IsValidIPv4"/> <em>before</em> any
+/// process is started; a malformed address returns a failure result with exit code
+/// <see cref="NotRunExitCode"/> and spawns nothing.
+/// </para>
+/// <para>
+/// netsh output is decoded with <see cref="TextFileEncoding.Gbk"/> (code page 936)
+/// — its localized text on Chinese Windows — for both stdout and stderr, while
+/// still accepting a UTF-8 console (see <c>DecodeNetshBytes</c>).
+/// <c>set address</c>/<c>set dns</c>/<c>set interface</c> require an elevated
+/// process; when the exit code or the output indicates access denied the message
+/// says so explicitly.
+/// </para>
+/// </remarks>
+public sealed class NetworkConfigurator
+{
+    /// <summary>Exit code used when no process was spawned (validation failure, or netsh could not start).</summary>
+    public const int NotRunExitCode = -1;
+
+    private const string Category = nameof(NetworkConfigurator);
+    private const string Netsh = "netsh";
+
+    /// <summary>A netsh configuration command normally returns in well under a second.</summary>
+    private const int CommandTimeoutSeconds = 60;
+
+    /// <summary>Grace period given to netsh to finish when the caller cancels mid-flight.</summary>
+    private static readonly TimeSpan CancelGrace = TimeSpan.FromSeconds(5);
+
+    // The exact command shapes the original issued (legacy "interface ip" namespace,
+    // every value quoted) — quoted identically so netsh's behaviour and error text match.
+    private static readonly string[] AccessDeniedMarkers =
+    [
+        "需要提升", "提升", "需要管理员", "以管理员身份", "管理员权限", "拒绝访问", "访问被拒绝",
+        "requires elevation", "elevated", "access is denied", "access denied", "administrator",
+    ];
+
+    // ---- IP address --------------------------------------------------------
+
+    /// <summary>
+    /// Sets a static IPv4 address. The gateway argument is omitted entirely when
+    /// <paramref name="gateway"/> is null or empty, matching netsh's optional 4th value.
+    /// </summary>
+    public async Task<NetConfigResult> SetStaticAsync(
+        string adapterName, string ip, string subnetMask, string? gateway, CancellationToken ct = default)
+    {
+        if (!ValidateAdapterName(adapterName, out var nameError)) return nameError;
+        if (!IpMath.IsValidIPv4(ip))
+            return Failure($"IP地址格式不正确：\"{ip}\"（应为 192.168.1.100 这样的格式）");
+
+        if (!IpMath.IsValidIPv4(subnetMask))
+            return Failure($"子网掩码格式不正确：\"{subnetMask}\"（应为 255.255.255.0 这样的格式）");
+
+        var gw = gateway?.Trim() ?? string.Empty;
+        if (gw.Length > 0 && !IpMath.IsValidIPv4(gw))
+            return Failure($"网关地址格式不正确：\"{gateway}\"（应为 192.168.1.1 这样的格式）");
+
+        var arguments = $"interface ip set address \"{adapterName}\" \"static\" \"{ip}\" \"{subnetMask}\"";
+        if (gw.Length > 0) arguments += $" \"{gw}\"";
+
+        var description = gw.Length > 0
+            ? $"{adapterName} → IP {ip}，掩码 {subnetMask}，网关 {gw}"
+            : $"{adapterName} → IP {ip}，掩码 {subnetMask}";
+        return await RunAsync(arguments, description, ct).ConfigureAwait(false);
+    }
+
+    /// <summary>Switches the adapter back to DHCP: <c>netsh interface ip set address "&lt;name&gt;" "dhcp"</c>.</summary>
+    public async Task<NetConfigResult> SetDhcpAsync(string adapterName, CancellationToken ct = default)
+    {
+        if (!ValidateAdapterName(adapterName, out var nameError)) return nameError;
+
+        var arguments = $"interface ip set address \"{adapterName}\" \"dhcp\"";
+        return await RunAsync(arguments, $"{adapterName} → 自动获取 IP 地址", ct).ConfigureAwait(false);
+    }
+
+    // ---- DNS ---------------------------------------------------------------
+
+    /// <summary>
+    /// Sets static DNS servers: the first one with <c>set dns … static</c>, every
+    /// further one with <c>add dns … index=N</c> (N starting at 2), as the original did.
+    /// </summary>
+    public async Task<NetConfigResult> SetDnsStaticAsync(
+        string adapterName, IReadOnlyList<string> dnsServers, CancellationToken ct = default)
+    {
+        if (!ValidateAdapterName(adapterName, out var nameError)) return nameError;
+        if (dnsServers is null || dnsServers.Count == 0)
+            return Failure("请输入DNS服务器地址");
+
+        for (var i = 0; i < dnsServers.Count; i++)
+        {
+            if (!IpMath.IsValidIPv4(dnsServers[i]))
+                return Failure($"第 {i + 1} 个DNS地址格式不正确：\"{dnsServers[i]}\"");
+        }
+
+        var primary = dnsServers[0].Trim();
+        var primaryArguments = $"interface ip set dns \"{adapterName}\" \"static\" \"{primary}\"";
+        var primaryResult = await RunAsync(primaryArguments, $"{adapterName} → 主DNS {primary}", ct).ConfigureAwait(false);
+        if (!primaryResult.Success) return primaryResult;
+
+        for (var i = 1; i < dnsServers.Count; i++)
+        {
+            var server = dnsServers[i].Trim();
+            var index = i + 1;
+            var arguments = $"interface ip add dns \"{adapterName}\" \"{server}\" index={index}";
+            var result = await RunAsync(arguments, $"{adapterName} → 备用DNS {server}（index={index}）", ct).ConfigureAwait(false);
+            if (result.Success) continue;
+
+            return new NetConfigResult(
+                false,
+                $"主DNS {primary} 设置成功，但添加第 {index} 个DNS {server} 失败：{result.Message}",
+                result.ExitCode);
+        }
+
+        var dnsText = string.Join(", ", dnsServers.Select(d => d.Trim()));
+        return new NetConfigResult(true, $"设置成功：{adapterName} 的DNS服务器 → {dnsText}", 0);
+    }
+
+    /// <summary>Switches DNS back to DHCP: <c>netsh interface ip set dns "&lt;name&gt;" "dhcp"</c>.</summary>
+    public async Task<NetConfigResult> SetDnsDhcpAsync(string adapterName, CancellationToken ct = default)
+    {
+        if (!ValidateAdapterName(adapterName, out var nameError)) return nameError;
+
+        var arguments = $"interface ip set dns \"{adapterName}\" \"dhcp\"";
+        return await RunAsync(arguments, $"{adapterName} → 自动获取 DNS 服务器", ct).ConfigureAwait(false);
+    }
+
+    // ---- adapter state -----------------------------------------------------
+
+    /// <summary>Enables the adapter: <c>netsh interface set interface "&lt;name&gt;" enable</c>.</summary>
+    public async Task<NetConfigResult> EnableAdapterAsync(string adapterName, CancellationToken ct = default)
+    {
+        if (!ValidateAdapterName(adapterName, out var nameError)) return nameError;
+
+        var arguments = $"interface set interface \"{adapterName}\" enable";
+        return await RunAsync(arguments, $"网卡 {adapterName} 已启用", ct).ConfigureAwait(false);
+    }
+
+    /// <summary>Disables the adapter: <c>netsh interface set interface "&lt;name&gt;" disable</c>.</summary>
+    public async Task<NetConfigResult> DisableAdapterAsync(string adapterName, CancellationToken ct = default)
+    {
+        if (!ValidateAdapterName(adapterName, out var nameError)) return nameError;
+
+        var arguments = $"interface set interface \"{adapterName}\" disable";
+        return await RunAsync(arguments, $"网卡 {adapterName} 已禁用", ct).ConfigureAwait(false);
+    }
+
+    // ---- execution ---------------------------------------------------------
+
+    /// <summary>
+    /// Runs one netsh command line, waits for it to exit and turns the exit code plus
+    /// the captured text into a <see cref="NetConfigResult"/>. Never throws.
+    /// </summary>
+    private static async Task<NetConfigResult> RunAsync(string arguments, string description, CancellationToken ct)
+    {
+        AppLog.Instance.Log(Category, $"执行 netsh {arguments}");
+
+        Process? process = null;
+        try
+        {
+            // netsh's native output code page on Chinese Windows; also the decoder's
+            // fallback when the captured bytes turn out not to be UTF-8 (see DecodeNetshBytes).
+            var consoleEncoding = TextFileEncoding.Gbk;
+
+            var startInfo = new ProcessStartInfo(Netsh, arguments)
+            {
+                RedirectStandardOutput = true,
+                RedirectStandardError = true,
+                UseShellExecute = false,
+                CreateNoWindow = true,
+                StandardOutputEncoding = consoleEncoding,
+                StandardErrorEncoding = consoleEncoding,
+            };
+
+            process = Process.Start(startInfo);
+            if (process is null)
+                return new NetConfigResult(false, "无法启动 netsh。", NotRunExitCode);
+
+            var stdoutTask = ReadAllBytesAsync(process.StandardOutput.BaseStream, ct);
+            var stderrTask = ReadAllBytesAsync(process.StandardError.BaseStream, ct);
+
+            using (var timeout = new CancellationTokenSource(TimeSpan.FromSeconds(CommandTimeoutSeconds)))
+            using (var linked = CancellationTokenSource.CreateLinkedTokenSource(ct, timeout.Token))
+            {
+                try
+                {
+                    // Drain both pipes first so a chatty netsh cannot block on a full
+                    // pipe buffer while we wait for it to exit.
+                    await Task.WhenAll(stdoutTask, stderrTask).WaitAsync(linked.Token).ConfigureAwait(false);
+                    await process.WaitForExitAsync(linked.Token).ConfigureAwait(false);
+                }
+                catch (OperationCanceledException)
+                {
+                    var timedOut = timeout.IsCancellationRequested && !ct.IsCancellationRequested;
+                    if (!timedOut) await WaitForGracefulExitAsync(process).ConfigureAwait(false);
+                    var wasKilled = TryKill(process);
+                    var code = SafeExitCode(process);
+                    var reason = timedOut
+                        ? $"netsh 执行超时（{CommandTimeoutSeconds} 秒），已终止：netsh {arguments}"
+                        : "操作已取消。";
+                    AppLog.Instance.Log(Category, $"{reason}（退出码 {code}，已终止={wasKilled}）");
+                    return new NetConfigResult(false, reason, code);
+                }
+            }
+
+            var stdout = DecodeNetshBytes(await stdoutTask.ConfigureAwait(false), consoleEncoding);
+            var stderr = DecodeNetshBytes(await stderrTask.ConfigureAwait(false), consoleEncoding);
+            var exitCode = SafeExitCode(process);
+            var detail = Condense(stdout, stderr);
+
+            if (exitCode == 0)
+            {
+                var message = $"设置成功：{description}";
+                if (detail.Length > 0) message += $"（netsh: {detail}）";
+                AppLog.Instance.Log(Category, message);
+                return new NetConfigResult(true, message, 0);
+            }
+
+            if (IsAccessDenied(exitCode, detail))
+            {
+                var denied = "修改网络配置需要管理员权限（访问被拒绝）。请以管理员身份重新运行本程序后再试。"
+                             + (detail.Length > 0 ? $" netsh: {detail}" : $" 退出码 {exitCode}。");
+                AppLog.Instance.Log(Category, "netsh 访问被拒绝: " + arguments);
+                return new NetConfigResult(false, denied, exitCode);
+            }
+
+            var failure = $"设置失败（netsh 退出码 {exitCode}）：{description}"
+                          + (detail.Length > 0 ? $"。netsh 返回：{detail}" : "。netsh 未返回任何信息。");
+            AppLog.Instance.Log(Category, failure);
+            return new NetConfigResult(false, failure, exitCode);
+        }
+        catch (Win32Exception ex) when (ex.NativeErrorCode == 5)
+        {
+            AppLog.Instance.Log(Category, "启动 netsh 被拒绝: " + ex.Message);
+            return new NetConfigResult(
+                false, "修改网络配置需要管理员权限（无法启动 netsh，访问被拒绝）。请以管理员身份重新运行本程序后再试。", 5);
+        }
+        catch (Exception ex)
+        {
+            AppLog.Instance.Log(Category, $"执行 netsh {arguments} 失败: {ex.Message}");
+            return new NetConfigResult(false, $"执行 netsh 失败：{ex.Message}", NotRunExitCode);
+        }
+        finally
+        {
+            process?.Dispose();
+        }
+    }
+
+    /// <summary>True when the exit code or the captured text says "elevation required".</summary>
+    private static bool IsAccessDenied(int exitCode, string detail)
+    {
+        if (exitCode == 5) return true; // ERROR_ACCESS_DENIED
+        if (detail.Length == 0) return false;
+        foreach (var marker in AccessDeniedMarkers)
+        {
+            if (detail.Contains(marker, StringComparison.OrdinalIgnoreCase)) return true;
+        }
+        return false;
+    }
+
+    /// <summary>
+    /// A user-issued cancellation should not cut a configuration write in half, so
+    /// netsh gets a few seconds to finish on its own before it is killed.
+    /// </summary>
+    private static async Task WaitForGracefulExitAsync(Process process)
+    {
+        try
+        {
+            using var grace = new CancellationTokenSource(CancelGrace);
+            await process.WaitForExitAsync(grace.Token).ConfigureAwait(false);
+        }
+        catch
+        {
+            // still running (or already gone) — the caller kills it
+        }
+    }
+
+    /// <summary>Collapses netsh's multi-line output into one readable line.</summary>
+    private static string Condense(string stdout, string stderr)
+    {
+        var text = string.IsNullOrWhiteSpace(stdout) ? stderr : stdout;
+        if (string.IsNullOrWhiteSpace(text)) return string.Empty;
+
+        var parts = text
+            .Split(['\r', '\n'], StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+        return string.Join(" ", parts);
+    }
+
+    /// <summary>Strict UTF-8: throws on byte sequences that are not valid UTF-8.</summary>
+    private static readonly UTF8Encoding StrictUtf8 = new(encoderShouldEmitUTF8Identifier: false, throwOnInvalidBytes: true);
+
+    /// <summary>
+    /// Decodes captured netsh bytes. <paramref name="fallback"/> is the configured
+    /// console code page (<see cref="TextFileEncoding.Gbk"/> — what netsh writes on a
+    /// Chinese system), but netsh writes UTF-8 where a UTF-8 console is active (the
+    /// "Beta: Use Unicode UTF-8 for worldwide language support" option, Windows 11
+    /// 24H2 behaviour), and GBK-decoding those bytes yields mojibake. Valid UTF-8 is a
+    /// decisive signal — Chinese GBK text practically never forms valid UTF-8 — so it
+    /// is preferred, and the configured code page is used for everything else.
+    /// (<see cref="ProcessStartInfo.StandardOutputEncoding"/> /
+    /// <see cref="ProcessStartInfo.StandardErrorEncoding"/> are still set to GBK; this
+    /// is the same setting applied to the raw bytes.)
+    /// </summary>
+    private static string DecodeNetshBytes(byte[] bytes, Encoding fallback)
+    {
+        if (bytes.Length == 0) return string.Empty;
+
+        try
+        {
+            return StrictUtf8.GetString(bytes);
+        }
+        catch (DecoderFallbackException)
+        {
+            return fallback.GetString(bytes);
+        }
+    }
+
+    /// <summary>Reads a redirected pipe to EOF as raw bytes.</summary>
+    private static async Task<byte[]> ReadAllBytesAsync(Stream stream, CancellationToken ct)
+    {
+        using var buffer = new MemoryStream();
+        await stream.CopyToAsync(buffer, ct).ConfigureAwait(false);
+        return buffer.ToArray();
+    }
+
+    private static bool ValidateAdapterName(string? adapterName, out NetConfigResult error)
+    {
+        if (string.IsNullOrWhiteSpace(adapterName))
+        {
+            error = Failure("网卡名称不能为空");
+            return false;
+        }
+
+        if (adapterName.Contains('"'))
+        {
+            error = Failure($"网卡名称不合法（不能包含引号）：\"{adapterName}\"");
+            return false;
+        }
+
+        error = default;
+        return true;
+    }
+
+    private static NetConfigResult Failure(string message) => new(false, message, NotRunExitCode);
+
+    private static int SafeExitCode(Process process)
+    {
+        try { return process.HasExited ? process.ExitCode : NotRunExitCode; }
+        catch { return NotRunExitCode; }
+    }
+
+    private static bool TryKill(Process process)
+    {
+        try
+        {
+            if (process.HasExited) return false;
+            process.Kill(entireProcessTree: true);
+            return true;
+        }
+        catch
+        {
+            return false;
+        }
+    }
+}

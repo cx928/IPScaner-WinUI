@@ -1,1 +1,92 @@
-bmFtZXNwYWNlIElQU2NhbmVyLkNvcmUuU3RvcmFnZTsKCi8vLyA8c3VtbWFyeT4KLy8vIERlY2lkZXMgd2hlcmUgdGhlIGFwcGxpY2F0aW9uIGtlZXBzIGl0cyBkYXRhIGZpbGVzLgovLy8gPC9zdW1tYXJ5PgovLy8gPHJlbWFya3M+Ci8vLyBUaGUgb3JpZ2luYWwgdG9vbCB3cm90ZSA8Yz5JUFNjYW5lci5jZmc8L2M+LCA8Yz5JUFNjYW5lck1lbW8uZGF0PC9jPiwKLy8vIDxjPmNvbW1hbmQudHh0PC9jPiwgPGM+aXBTY2FuZXJfaGlzLnhtbDwvYz4gYW5kIDxjPkxvZ3NcPC9jPiBuZXh0IHRvIHRoZQovLy8gZXhlY3V0YWJsZS4gVGhhdCBpcyBjb3JyZWN0IGZvciB0aGUgZ3JlZW4vcG9ydGFibGUgYnVpbGQg4oCUIGl0IGlzIGV4YWN0bHkgd2h5Ci8vLyBzZXR0aW5ncyBzdXJ2aXZlIHdoZW4geW91IG1vdmUgdGhlIGZvbGRlciBhcm91bmQsIGFuZCBpdCBpcyB0aGUgbGF5b3V0IHRoZQovLy8gdG9vbCBoYXMgYWx3YXlzIHVzZWQuCi8vLyA8cGFyYT4KLy8vIEl0IGJyZWFrcyB0aGUgbW9tZW50IHRoZSBhcHAgaXMgaW5zdGFsbGVkIHVuZGVyIDxjPlByb2dyYW0gRmlsZXM8L2M+OiBhCi8vLyBzdGFuZGFyZCB1c2VyIGNhbm5vdCBjcmVhdGUgZmlsZXMgdGhlcmUsIC5ORVQgZG9lcyBub3Qgc2lsZW50bHkgdmlydHVhbGlzZQovLy8gdGhvc2Ugd3JpdGVzIHRoZSB3YXkgc29tZSAzMi1iaXQgYXBwcyBkbywgYW5kIHRoZSByZXN1bHQgaXMgYW4gYXBwbGljYXRpb24KLy8vIHRoYXQgYXBwZWFycyB0byBmb3JnZXQgZXZlcnkgc2V0dGluZyBvbiBlYWNoIGxhdW5jaC4KLy8vIDwvcGFyYT4KLy8vIDxwYXJhPgovLy8gU286IHVzZSB0aGUgYXBwbGljYXRpb24gZGlyZWN0b3J5IHdoZW4gaXQgaXMgd3JpdGFibGUgKHBvcnRhYmxlIG1vZGUsIGZ1bGx5Ci8vLyBiYWNrd2FyZCBjb21wYXRpYmxlKSwgb3RoZXJ3aXNlIGZhbGwgYmFjayB0byA8Yz4lQVBQREFUQSVcSVBTY2FuZXI8L2M+Ci8vLyAoaW5zdGFsbGVkIG1vZGUpLiBUaGUgc2FtZSBidWlsZCB0aGVyZWZvcmUgYmVoYXZlcyBjb3JyZWN0bHkgd2hldGhlciBpdCB3YXMKLy8vIHVuemlwcGVkIG9yIGluc3RhbGxlZC4KLy8vIDwvcGFyYT4KLy8vIDwvcmVtYXJrcz4KcHVibGljIHN0YXRpYyBjbGFzcyBBcHBQYXRocwp7CiAgICBwcml2YXRlIGNvbnN0IHN0cmluZyBQcm9kdWN0Rm9sZGVyTmFtZSA9ICJJUFNjYW5lciI7CgogICAgcHJpdmF0ZSBzdGF0aWMgcmVhZG9ubHkgTGF6eTxzdHJpbmc+IFJlc29sdmVkRGF0YURpcmVjdG9yeSA9IG5ldyhSZXNvbHZlLCBpc1RocmVhZFNhZmU6IHRydWUpOwogICAgcHJpdmF0ZSBzdGF0aWMgcmVhZG9ubHkgTGF6eTxib29sPiBSZXNvbHZlZElzUG9ydGFibGUgPSBuZXcoKCkgPT4gUmVzb2x2ZSgpID09IEFwcENvbnRleHQuQmFzZURpcmVjdG9yeS5UcmltRW5kKFBhdGguRGlyZWN0b3J5U2VwYXJhdG9yQ2hhciksIGlzVGhyZWFkU2FmZTogdHJ1ZSk7CgogICAgLy8vIDxzdW1tYXJ5PkRpcmVjdG9yeSB0aGF0IGhvbGRzIHRoZSBjb25maWcsIG1lbW8sIGhpc3RvcnksIGNvbW1hbmQgYW5kIGxvZyBmaWxlcy48L3N1bW1hcnk+CiAgICBwdWJsaWMgc3RhdGljIHN0cmluZyBEYXRhRGlyZWN0b3J5ID0+IFJlc29sdmVkRGF0YURpcmVjdG9yeS5WYWx1ZTsKCiAgICAvLy8gPHN1bW1hcnk+CiAgICAvLy8gVHJ1ZSB3aGVuIGRhdGEgbGl2ZXMgYmVzaWRlIHRoZSBleGVjdXRhYmxlICh0aGUgZ3JlZW4vcG9ydGFibGUgbGF5b3V0KSwKICAgIC8vLyBmYWxzZSB3aGVuIGl0IHdhcyByZWRpcmVjdGVkIHRvIHRoZSB1c2VyIHByb2ZpbGUgKGluc3RhbGxlZCBsYXlvdXQpLgogICAgLy8vIDwvc3VtbWFyeT4KICAgIHB1YmxpYyBzdGF0aWMgYm9vbCBJc1BvcnRhYmxlID0+IFJlc29sdmVkSXNQb3J0YWJsZS5WYWx1ZTsKCiAgICBwcml2YXRlIHN0YXRpYyBzdHJpbmcgUmVzb2x2ZSgpCiAgICB7CiAgICAgICAgdmFyIGFwcERpcmVjdG9yeSA9IEFwcENvbnRleHQuQmFzZURpcmVjdG9yeS5UcmltRW5kKFBhdGguRGlyZWN0b3J5U2VwYXJhdG9yQ2hhcik7CiAgICAgICAgaWYgKElzV3JpdGFibGUoYXBwRGlyZWN0b3J5KSkgcmV0dXJuIGFwcERpcmVjdG9yeTsKCiAgICAgICAgdmFyIHJvYW1pbmcgPSBQYXRoLkNvbWJpbmUoCiAgICAgICAgICAgIEVudmlyb25tZW50LkdldEZvbGRlclBhdGgoRW52aXJvbm1lbnQuU3BlY2lhbEZvbGRlci5BcHBsaWNhdGlvbkRhdGEpLAogICAgICAgICAgICBQcm9kdWN0Rm9sZGVyTmFtZSk7CgogICAgICAgIHRyeQogICAgICAgIHsKICAgICAgICAgICAgRGlyZWN0b3J5LkNyZWF0ZURpcmVjdG9yeShyb2FtaW5nKTsKICAgICAgICAgICAgcmV0dXJuIHJvYW1pbmc7CiAgICAgICAgfQogICAgICAgIGNhdGNoCiAgICAgICAgewogICAgICAgICAgICAvLyBMYXN0IHJlc29ydDogTG9jYWxBcHBsaWNhdGlvbkRhdGEsIHRoZW4gdGhlIHRlbXAgZGlyZWN0b3J5LiBBbnl0aGluZwogICAgICAgICAgICAvLyBpcyBiZXR0ZXIgdGhhbiB0aHJvd2luZyBkdXJpbmcgc3RhcnR1cC4KICAgICAgICAgICAgdHJ5CiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIHZhciBsb2NhbCA9IFBhdGguQ29tYmluZSgKICAgICAgICAgICAgICAgICAgICBFbnZpcm9ubWVudC5HZXRGb2xkZXJQYXRoKEVudmlyb25tZW50LlNwZWNpYWxGb2xkZXIuTG9jYWxBcHBsaWNhdGlvbkRhdGEpLAogICAgICAgICAgICAgICAgICAgIFByb2R1Y3RGb2xkZXJOYW1lKTsKICAgICAgICAgICAgICAgIERpcmVjdG9yeS5DcmVhdGVEaXJlY3RvcnkobG9jYWwpOwogICAgICAgICAgICAgICAgcmV0dXJuIGxvY2FsOwogICAgICAgICAgICB9CiAgICAgICAgICAgIGNhdGNoCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIHJldHVybiBQYXRoLkNvbWJpbmUoUGF0aC5HZXRUZW1wUGF0aCgpLCBQcm9kdWN0Rm9sZGVyTmFtZSk7CiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9CgogICAgLy8vIDxzdW1tYXJ5PlRydWUgd2hlbiBhIGZpbGUgY2FuIGFjdHVhbGx5IGJlIGNyZWF0ZWQgaW4gdGhlIGRpcmVjdG9yeS48L3N1bW1hcnk+CiAgICBwcml2YXRlIHN0YXRpYyBib29sIElzV3JpdGFibGUoc3RyaW5nIGRpcmVjdG9yeSkKICAgIHsKICAgICAgICB0cnkKICAgICAgICB7CiAgICAgICAgICAgIGlmICghRGlyZWN0b3J5LkV4aXN0cyhkaXJlY3RvcnkpKSByZXR1cm4gZmFsc2U7CiAgICAgICAgICAgIHZhciBwcm9iZSA9IFBhdGguQ29tYmluZShkaXJlY3RvcnksICIud3JpdGUtcHJvYmUtIiArIEd1aWQuTmV3R3VpZCgpLlRvU3RyaW5nKCJOIilbLi44XSk7CiAgICAgICAgICAgIHVzaW5nICh2YXIgc3RyZWFtID0gbmV3IEZpbGVTdHJlYW0ocHJvYmUsIEZpbGVNb2RlLkNyZWF0ZU5ldywgRmlsZUFjY2Vzcy5Xcml0ZSwgRmlsZVNoYXJlLk5vbmUsIDEsIEZpbGVPcHRpb25zLkRlbGV0ZU9uQ2xvc2UpKQogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICBzdHJlYW0uV3JpdGVCeXRlKDApOwogICAgICAgICAgICB9CiAgICAgICAgICAgIHJldHVybiB0cnVlOwogICAgICAgIH0KICAgICAgICBjYXRjaAogICAgICAgIHsKICAgICAgICAgICAgcmV0dXJuIGZhbHNlOwogICAgICAgIH0KICAgIH0KfQo=
+namespace IPScaner.Core.Storage;
+
+/// <summary>
+/// Decides where the application keeps its data files.
+/// </summary>
+/// <remarks>
+/// The original tool wrote <c>IPScaner.cfg</c>, <c>IPScanerMemo.dat</c>,
+/// <c>command.txt</c>, <c>ipScaner_his.xml</c> and <c>Logs\</c> next to the
+/// executable. That is correct for the green/portable build — it is exactly why
+/// settings survive when you move the folder around, and it is the layout the
+/// tool has always used.
+/// <para>
+/// It breaks the moment the app is installed under <c>Program Files</c>: a
+/// standard user cannot create files there, .NET does not silently virtualise
+/// those writes the way some 32-bit apps do, and the result is an application
+/// that appears to forget every setting on each launch.
+/// </para>
+/// <para>
+/// So: use the application directory when it is writable (portable mode, fully
+/// backward compatible), otherwise fall back to <c>%APPDATA%\IPScaner</c>
+/// (installed mode). The same build therefore behaves correctly whether it was
+/// unzipped or installed.
+/// </para>
+/// </remarks>
+public static class AppPaths
+{
+    private const string ProductFolderName = "IPScaner";
+
+    private static readonly Lazy<string> ResolvedDataDirectory = new(Resolve, isThreadSafe: true);
+    private static readonly Lazy<bool> ResolvedIsPortable = new(() => Resolve() == AppContext.BaseDirectory.TrimEnd(Path.DirectorySeparatorChar), isThreadSafe: true);
+
+    /// <summary>Directory that holds the config, memo, history, command and log files.</summary>
+    public static string DataDirectory => ResolvedDataDirectory.Value;
+
+    /// <summary>
+    /// True when data lives beside the executable (the green/portable layout),
+    /// false when it was redirected to the user profile (installed layout).
+    /// </summary>
+    public static bool IsPortable => ResolvedIsPortable.Value;
+
+    private static string Resolve()
+    {
+        var appDirectory = AppContext.BaseDirectory.TrimEnd(Path.DirectorySeparatorChar);
+        if (IsWritable(appDirectory)) return appDirectory;
+
+        var roaming = Path.Combine(
+            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+            ProductFolderName);
+
+        try
+        {
+            Directory.CreateDirectory(roaming);
+            return roaming;
+        }
+        catch
+        {
+            // Last resort: LocalApplicationData, then the temp directory. Anything
+            // is better than throwing during startup.
+            try
+            {
+                var local = Path.Combine(
+                    Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                    ProductFolderName);
+                Directory.CreateDirectory(local);
+                return local;
+            }
+            catch
+            {
+                return Path.Combine(Path.GetTempPath(), ProductFolderName);
+            }
+        }
+    }
+
+    /// <summary>True when a file can actually be created in the directory.</summary>
+    private static bool IsWritable(string directory)
+    {
+        try
+        {
+            if (!Directory.Exists(directory)) return false;
+            var probe = Path.Combine(directory, ".write-probe-" + Guid.NewGuid().ToString("N")[..8]);
+            using (var stream = new FileStream(probe, FileMode.CreateNew, FileAccess.Write, FileShare.None, 1, FileOptions.DeleteOnClose))
+            {
+                stream.WriteByte(0);
+            }
+            return true;
+        }
+        catch
+        {
+            return false;
+        }
+    }
+}

@@ -1,1 +1,265 @@
-dXNpbmcgWHVuaXQ7DQp1c2luZyBJUFNjYW5lci5Db3JlLk5ldDsKCm5hbWVzcGFjZSBJUFNjYW5lci5Db3JlLlRlc3RzOwoKLy8vIDxzdW1tYXJ5PgovLy8gQ292ZXJhZ2UgZm9yIDxzZWUgY3JlZj0iSXBNYXRoIi8+LiBUZXN0ICMxIG9mIHRoZSBwb3J0IGNoZWNrbGlzdCBpcyB0aGUKLy8vIHJlZ3Jlc3Npb24gZ3VhcmQgZm9yIHRoZSBvcmlnaW5hbCdzIHByZWZpeC1tYXRjaGluZyByZWdleC4KLy8vIDwvc3VtbWFyeT4KcHVibGljIGNsYXNzIElwTWF0aFRlc3RzCnsKICAgIC8vIC0tLS0gSXNWYWxpZElQdjQgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIFtUaGVvcnldCiAgICAvLyBUaGUgb3JpZ2luYWwgcmVnZXggbWF0Y2hlZCBhICpwcmVmaXgqIG9mIHRoZSB0ZXh0LCBzbyB0aGVzZSB0aHJlZSByZWFjaGVkCiAgICAvLyBJUEFkZHJlc3MuUGFyc2UgLyB0aGUgb2N0ZXQgc2hpZnQgYW5kIGJsZXcgdXAgd2l0aCBhbiBPdmVyZmxvd0V4Y2VwdGlvbiBvcgogICAgLy8gcHJvZHVjZWQgYSBib2d1cyBhZGRyZXNzLiBUaGV5IGFyZSB0aGUgcmVhc29uIHRoaXMgaGVscGVyIGV4aXN0cy4KICAgIFtJbmxpbmVEYXRhKCI5OTkuMS4xLjEiKV0KICAgIFtJbmxpbmVEYXRhKCIxMC4wLjAuMWFiYyIpXQogICAgW0lubGluZURhdGEoIjI1Ni4xLjEuMSIpXQogICAgLy8gUGxhaW4gbWFsZm9ybWVkIGlucHV0LgogICAgW0lubGluZURhdGEoIjEuMi4zIildCiAgICBbSW5saW5lRGF0YSgiMS4yLjMuNC41IildCiAgICBbSW5saW5lRGF0YSgiIildCiAgICBbSW5saW5lRGF0YSgiICAgIildCiAgICBbSW5saW5lRGF0YShudWxsKV0KICAgIFtJbmxpbmVEYXRhKCIxLjIuMy4iKV0KICAgIFtJbmxpbmVEYXRhKCIuMS4yLjMiKV0KICAgIFtJbmxpbmVEYXRhKCIxLi4zLjQiKV0KICAgIFtJbmxpbmVEYXRhKCIxLjIuMy4xMjM0IildCiAgICBbSW5saW5lRGF0YSgiLTEuMi4zLjQiKV0KICAgIFtJbmxpbmVEYXRhKCIxLjIuMy4tNCIpXQogICAgW0lubGluZURhdGEoIjB4MTAuMS4xLjEiKV0KICAgIFtJbmxpbmVEYXRhKCIxLjIuMy40YSIpXQogICAgW0lubGluZURhdGEoIjEsMiwzLDQiKV0KICAgIHB1YmxpYyB2b2lkIElzVmFsaWRJUHY0X1JlamVjdHNNYWxmb3JtZWRJbnB1dChzdHJpbmc/IHRleHQpCiAgICAgICAgPT4gQXNzZXJ0LkZhbHNlKElwTWF0aC5Jc1ZhbGlkSVB2NCh0ZXh0KSk7CgogICAgW1RoZW9yeV0KICAgIFtJbmxpbmVEYXRhKCIwLjAuMC4wIildCiAgICBbSW5saW5lRGF0YSgiMjU1LjI1NS4yNTUuMjU1IildCiAgICBbSW5saW5lRGF0YSgiMTkyLjE2OC4xLjEiKV0KICAgIFtJbmxpbmVEYXRhKCIxMC4wLjAuMSIpXQogICAgW0lubGluZURhdGEoIjEuMi4zLjQiKV0KICAgIFtJbmxpbmVEYXRhKCIgMTkyLjE2OC4xLjEgIildIC8vIHN1cnJvdW5kaW5nIHdoaXRlc3BhY2UgaXMgdHJpbW1lZCBsaWtlIHRoZSBvcmlnaW5hbAogICAgcHVibGljIHZvaWQgSXNWYWxpZElQdjRfQWNjZXB0c1dlbGxGb3JtZWRJbnB1dChzdHJpbmcgdGV4dCkKICAgICAgICA9PiBBc3NlcnQuVHJ1ZShJcE1hdGguSXNWYWxpZElQdjQodGV4dCkpOwoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgSXNWYWxpZElQdjRfQWNjZXB0c0JvdW5kYXJ5T2N0ZXRzRm9yRXZlcnlQb3NpdGlvbigpCiAgICB7CiAgICAgICAgQXNzZXJ0LlRydWUoSXBNYXRoLklzVmFsaWRJUHY0KCIyNTUuMC4wLjAiKSk7CiAgICAgICAgQXNzZXJ0LlRydWUoSXBNYXRoLklzVmFsaWRJUHY0KCIwLjI1NS4wLjAiKSk7CiAgICAgICAgQXNzZXJ0LlRydWUoSXBNYXRoLklzVmFsaWRJUHY0KCIwLjAuMjU1LjAiKSk7CiAgICAgICAgQXNzZXJ0LlRydWUoSXBNYXRoLklzVmFsaWRJUHY0KCIwLjAuMC4yNTUiKSk7CiAgICB9CgogICAgLy8gLS0tLSBQYXJzZU9jdGV0cyAvIFRyeVBhcnNlT2N0ZXRzIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIFBhcnNlT2N0ZXRzX1NwbGl0c0RvdHRlZFF1YWQoKQogICAgICAgID0+IEFzc2VydC5FcXVhbChbMTkyLCAxNjgsIDEsIDU1XSwgSXBNYXRoLlBhcnNlT2N0ZXRzKCIxOTIuMTY4LjEuNTUiKSk7CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBQYXJzZU9jdGV0c19UaHJvd3NGb3JtYXRFeGNlcHRpb25fSW5zdGVhZE9mT3ZlcmZsb3dpbmcoKQogICAgewogICAgICAgIC8vIFJlZ3Jlc3Npb246IHRoZSBvcmlnaW5hbCBjcmFzaGVkIHdpdGggT3ZlcmZsb3dFeGNlcHRpb24gLyBwcm9kdWNlZCBhCiAgICAgICAgLy8gd3JhcHBlZCBhZGRyZXNzIGZvciAiOTk5LjEuMS4xIiBhbmQgIjEwLjAuMC4xYWJjIi4KICAgICAgICBBc3NlcnQuVGhyb3dzPEZvcm1hdEV4Y2VwdGlvbj4oKCkgPT4gSXBNYXRoLlBhcnNlT2N0ZXRzKCI5OTkuMS4xLjEiKSk7CiAgICAgICAgQXNzZXJ0LlRocm93czxGb3JtYXRFeGNlcHRpb24+KCgpID0+IElwTWF0aC5QYXJzZU9jdGV0cygiMTAuMC4wLjFhYmMiKSk7CiAgICAgICAgQXNzZXJ0LlRocm93czxGb3JtYXRFeGNlcHRpb24+KCgpID0+IElwTWF0aC5QYXJzZU9jdGV0cygiMS4yLjMiKSk7CiAgICB9CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBUcnlQYXJzZU9jdGV0c19SZXR1cm5zRmFsc2VBbmRFbXB0eUFycmF5X0Zvck1hbGZvcm1lZElucHV0KCkKICAgIHsKICAgICAgICBBc3NlcnQuRmFsc2UoSXBNYXRoLlRyeVBhcnNlT2N0ZXRzKCI5OTkuMS4xLjEiLCBvdXQgdmFyIG9jdGV0cykpOwogICAgICAgIEFzc2VydC5FbXB0eShvY3RldHMpOwoKICAgICAgICBBc3NlcnQuRmFsc2UoSXBNYXRoLlRyeVBhcnNlT2N0ZXRzKCIxMC4wLjAuMWFiYyIsIG91dCBvY3RldHMpKTsKICAgICAgICBBc3NlcnQuRW1wdHkob2N0ZXRzKTsKCiAgICAgICAgQXNzZXJ0LkZhbHNlKElwTWF0aC5UcnlQYXJzZU9jdGV0cyhudWxsLCBvdXQgb2N0ZXRzKSk7CiAgICAgICAgQXNzZXJ0LkVtcHR5KG9jdGV0cyk7CiAgICB9CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBUcnlQYXJzZU9jdGV0c19SZXR1cm5zT2N0ZXRzX0ZvclZhbGlkSW5wdXQoKQogICAgewogICAgICAgIEFzc2VydC5UcnVlKElwTWF0aC5UcnlQYXJzZU9jdGV0cygiMC4wLjAuMCIsIG91dCB2YXIgemVyb3MpKTsKICAgICAgICBBc3NlcnQuRXF1YWwoWzAsIDAsIDAsIDBdLCB6ZXJvcyk7CgogICAgICAgIEFzc2VydC5UcnVlKElwTWF0aC5UcnlQYXJzZU9jdGV0cygiMjU1LjI1NS4yNTUuMjU1Iiwgb3V0IHZhciBtYXgpKTsKICAgICAgICBBc3NlcnQuRXF1YWwoWzI1NSwgMjU1LCAyNTUsIDI1NV0sIG1heCk7CiAgICB9CgogICAgLy8gLS0tLSBUb1VJbnQzMiAvIEZyb21VSW50MzIgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCiAgICBbVGhlb3J5XQogICAgW0lubGluZURhdGEoIjAuMC4wLjAiLCAwdSldCiAgICBbSW5saW5lRGF0YSgiMC4wLjAuMSIsIDF1KV0KICAgIFtJbmxpbmVEYXRhKCIxOTIuMTY4LjEuMSIsIDB4QzBBODAxMDF1KV0KICAgIFtJbmxpbmVEYXRhKCIyNTUuMjU1LjI1NS4yNTUiLCB1aW50Lk1heFZhbHVlKV0KICAgIHB1YmxpYyB2b2lkIFRvVUludDMyX0NvbnZlcnRzQmlnRW5kaWFuKHN0cmluZyBpcCwgdWludCBleHBlY3RlZCkKICAgICAgICA9PiBBc3NlcnQuRXF1YWwoZXhwZWN0ZWQsIElwTWF0aC5Ub1VJbnQzMihpcCkpOwoKICAgIFtUaGVvcnldCiAgICBbSW5saW5lRGF0YSgwdSwgIjAuMC4wLjAiKV0KICAgIFtJbmxpbmVEYXRhKDF1LCAiMC4wLjAuMSIpXQogICAgW0lubGluZURhdGEoMHhDMEE4MDEwMXUsICIxOTIuMTY4LjEuMSIpXQogICAgW0lubGluZURhdGEodWludC5NYXhWYWx1ZSwgIjI1NS4yNTUuMjU1LjI1NSIpXQogICAgcHVibGljIHZvaWQgRnJvbVVJbnQzMl9Db252ZXJ0c0JhY2sodWludCB2YWx1ZSwgc3RyaW5nIGV4cGVjdGVkKQogICAgICAgID0+IEFzc2VydC5FcXVhbChleHBlY3RlZCwgSXBNYXRoLkZyb21VSW50MzIodmFsdWUpKTsKCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIFRvVUludDMyX1Rocm93c0Zvck1hbGZvcm1lZElucHV0KCkKICAgICAgICA9PiBBc3NlcnQuVGhyb3dzPEZvcm1hdEV4Y2VwdGlvbj4oKCkgPT4gSXBNYXRoLlRvVUludDMyKCIxLjIuMyIpKTsKCiAgICAvLyAtLS0tIEdldFNlZ21lbnQgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCiAgICBbVGhlb3J5XQogICAgW0lubGluZURhdGEoIjE5Mi4xNjguMS41NSIsICIxOTIuMTY4LjEiKV0KICAgIFtJbmxpbmVEYXRhKCIxOTIuMTY4LjEiLCAiMTkyLjE2OC4xIildCiAgICBbSW5saW5lRGF0YSgiMTkyLjE2OCIsICIiKV0KICAgIFtJbmxpbmVEYXRhKCIxOTIiLCAiIildCiAgICBbSW5saW5lRGF0YSgiIiwgIiIpXQogICAgW0lubGluZURhdGEobnVsbCwgIiIpXQogICAgW0lubGluZURhdGEoIiAgICIsICIiKV0KICAgIC8vIEEgQ0lEUiBvciByYW5nZSBzdWZmaXggaXMgc2ltcGx5IHBhcnQgb2YgdGhlIGZvdXJ0aCB0b2tlbiwgd2hpY2ggaXMKICAgIC8vIGRpc2NhcmRlZCDigJQgZXhhY3RseSB3aGF0IHRoZSBvcmlnaW5hbCdzIFNwbGl0KCcuJykvVGFrZSgzKSBwcm9kdWNlZC4KICAgIFtJbmxpbmVEYXRhKCIxOTIuMTY4LjEuMC8yNCIsICIxOTIuMTY4LjEiKV0KICAgIFtJbmxpbmVEYXRhKCIxOTIuMTY4LjEuMS0xOTIuMTY4LjEuNTAiLCAiMTkyLjE2OC4xIildCiAgICBbSW5saW5lRGF0YSgiICAxOTIuMTY4LjEuNTUgICIsICIxOTIuMTY4LjEiKV0KICAgIHB1YmxpYyB2b2lkIEdldFNlZ21lbnRfUmV0dXJuc0ZpcnN0VGhyZWVPY3RldHMoc3RyaW5nPyBpcCwgc3RyaW5nIGV4cGVjdGVkKQogICAgICAgID0+IEFzc2VydC5FcXVhbChleHBlY3RlZCwgSXBNYXRoLkdldFNlZ21lbnQoaXApKTsKCiAgICAvLyAtLS0tIElzVmFsaWRTZWdtZW50IC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCiAgICBbVGhlb3J5XQogICAgW0lubGluZURhdGEoIjE5Mi4xNjguMSIsIHRydWUpXQogICAgW0lubGluZURhdGEoIjAuMC4wIiwgdHJ1ZSldCiAgICBbSW5saW5lRGF0YSgiMjU1LjI1NS4yNTUiLCB0cnVlKV0KICAgIFtJbmxpbmVEYXRhKCIxOTIuMTY4LjEuMSIsIGZhbHNlKV0KICAgIFtJbmxpbmVEYXRhKCIxOTIuMTY4IiwgZmFsc2UpXQogICAgW0lubGluZURhdGEoIjE5Mi4xNjguMS4wLzI0IiwgZmFsc2UpXQogICAgW0lubGluZURhdGEoIjk5OS4xNjguMSIsIGZhbHNlKV0KICAgIFtJbmxpbmVEYXRhKCJhLmIuYyIsIGZhbHNlKV0KICAgIFtJbmxpbmVEYXRhKCIiLCBmYWxzZSldCiAgICBbSW5saW5lRGF0YShudWxsLCBmYWxzZSldCiAgICBwdWJsaWMgdm9pZCBJc1ZhbGlkU2VnbWVudF9WYWxpZGF0ZXNUaHJlZU9jdGV0cyhzdHJpbmc/IHNlZ21lbnQsIGJvb2wgZXhwZWN0ZWQpCiAgICAgICAgPT4gQXNzZXJ0LkVxdWFsKGV4cGVjdGVkLCBJcE1hdGguSXNWYWxpZFNlZ21lbnQoc2VnbWVudCkpOwoKICAgIC8vIC0tLS0gR2V0UmFuZ2UgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgR2V0UmFuZ2VfSXNJbmNsdXNpdmVBbmRLZWVwc0hvc3RBZGRyZXNzZXMoKQogICAgewogICAgICAgIHZhciByYW5nZSA9IElwTWF0aC5HZXRSYW5nZSgiMTkyLjE2OC4xLjEiLCAiMTkyLjE2OC4xLjUiKTsKCiAgICAgICAgQXNzZXJ0LkVxdWFsKAogICAgICAgICAgICBbIjE5Mi4xNjguMS4xIiwgIjE5Mi4xNjguMS4yIiwgIjE5Mi4xNjguMS4zIiwgIjE5Mi4xNjguMS40IiwgIjE5Mi4xNjguMS41Il0sCiAgICAgICAgICAgIHJhbmdlKTsKICAgIH0KCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIEdldFJhbmdlX1NraXBzRG90WmVyb0FuZERvdDI1NV9CeURlZmF1bHQoKQogICAgewogICAgICAgIHZhciByYW5nZSA9IElwTWF0aC5HZXRSYW5nZSgiMTkyLjE2OC4xLjI1NCIsICIxOTIuMTY4LjIuMSIpOwoKICAgICAgICBBc3NlcnQuRXF1YWwoWyIxOTIuMTY4LjEuMjU0IiwgIjE5Mi4xNjguMi4xIl0sIHJhbmdlKTsKICAgIH0KCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIEdldFJhbmdlX0tlZXBzTmV0d29ya0FuZEJyb2FkY2FzdF9XaGVuU2tpcHBpbmdEaXNhYmxlZCgpCiAgICB7CiAgICAgICAgdmFyIHJhbmdlID0gSXBNYXRoLkdldFJhbmdlKCIxOTIuMTY4LjEuMjU0IiwgIjE5Mi4xNjguMi4xIiwgc2tpcE5ldHdvcmtBbmRCcm9hZGNhc3Q6IGZhbHNlKTsKCiAgICAgICAgQXNzZXJ0LkVxdWFsKFsiMTkyLjE2OC4xLjI1NCIsICIxOTIuMTY4LjEuMjU1IiwgIjE5Mi4xNjguMi4wIiwgIjE5Mi4xNjguMi4xIl0sIHJhbmdlKTsKICAgIH0KCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIEdldFJhbmdlX1JldHVybnNFbXB0eV9XaGVuU3RhcnRJc0FmdGVyRW5kKCkKICAgIHsKICAgICAgICBBc3NlcnQuRW1wdHkoSXBNYXRoLkdldFJhbmdlKCIxOTIuMTY4LjEuMTAiLCAiMTkyLjE2OC4xLjEiKSk7CiAgICB9CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBHZXRSYW5nZV9SZXR1cm5zRW1wdHlfRm9ySW52YWxpZEVuZHBvaW50cygpCiAgICB7CiAgICAgICAgQXNzZXJ0LkVtcHR5KElwTWF0aC5HZXRSYW5nZSgiOTk5LjEuMS4xIiwgIjE5Mi4xNjguMS4xIikpOwogICAgICAgIEFzc2VydC5FbXB0eShJcE1hdGguR2V0UmFuZ2UoIjE5Mi4xNjguMS4xIiwgIjEwLjAuMC4xYWJjIikpOwogICAgICAgIEFzc2VydC5FbXB0eShJcE1hdGguR2V0UmFuZ2UoIiIsICIiKSk7CiAgICB9CgogICAgW0ZhY3RdCiAgICBwdWJsaWMgdm9pZCBHZXRSYW5nZV9SZXR1cm5zU2luZ2xlQWRkcmVzc19Gb3JEZWdlbmVyYXRlUmFuZ2UoKQogICAgewogICAgICAgIEFzc2VydC5FcXVhbChbIjEwLjAuMC4xIl0sIElwTWF0aC5HZXRSYW5nZSgiMTAuMC4wLjEiLCAiMTAuMC4wLjEiKSk7CgogICAgICAgIC8vIC4wIGlzIGEgbmV0d29yayBhZGRyZXNzLCBzbyB0aGUgZGVmYXVsdCBydWxlIGRyb3BzIGl0LgogICAgICAgIEFzc2VydC5FbXB0eShJcE1hdGguR2V0UmFuZ2UoIjEwLjAuMC4wIiwgIjEwLjAuMC4wIikpOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgR2V0UmFuZ2VfSXNDYXBwZWRBdDY1NTM2QWRkcmVzc2VzKCkKICAgIHsKICAgICAgICB2YXIgcmFuZ2UgPSBJcE1hdGguR2V0UmFuZ2UoIjAuMC4wLjAiLCAiMjU1LjI1NS4yNTUuMjU1Iiwgc2tpcE5ldHdvcmtBbmRCcm9hZGNhc3Q6IGZhbHNlKTsKCiAgICAgICAgQXNzZXJ0LkVxdWFsKDY1NTM2LCByYW5nZS5Db3VudCk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKCIwLjAuMC4wIiwgcmFuZ2VbMF0pOwogICAgICAgIEFzc2VydC5FcXVhbCgiMC4wLjI1NS4yNTUiLCByYW5nZVteMV0pOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgR2V0UmFuZ2VfQ2FwQWxzb0FwcGxpZXNXaGVuU2tpcHBpbmdOZXR3b3JrQWRkcmVzc2VzKCkKICAgIHsKICAgICAgICB2YXIgcmFuZ2UgPSBJcE1hdGguR2V0UmFuZ2UoIjAuMC4wLjAiLCAiMjU1LjI1NS4yNTUuMjU1Iik7CgogICAgICAgIEFzc2VydC5FcXVhbCg2NTUzNiwgcmFuZ2UuQ291bnQpOwogICAgICAgIEFzc2VydC5FcXVhbCgiMC4wLjAuMSIsIHJhbmdlWzBdKTsKICAgIH0KCiAgICAvLyAtLS0tIEdldFNlZ21lbnRIb3N0cyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCiAgICBbRmFjdF0KICAgIHB1YmxpYyB2b2lkIEdldFNlZ21lbnRIb3N0c19FbnVtZXJhdGVzT25lVG8yNTRCeURlZmF1bHQoKQogICAgewogICAgICAgIHZhciBob3N0cyA9IElwTWF0aC5HZXRTZWdtZW50SG9zdHMoIjE5Mi4xNjguMSIpOwoKICAgICAgICBBc3NlcnQuRXF1YWwoMjU0LCBob3N0cy5Db3VudCk7CiAgICAgICAgQXNzZXJ0LkVxdWFsKCIxOTIuMTY4LjEuMSIsIGhvc3RzWzBdKTsKICAgICAgICBBc3NlcnQuRXF1YWwoIjE5Mi4xNjguMS4yNTQiLCBob3N0c1teMV0pOwogICAgICAgIEFzc2VydC5Eb2VzTm90Q29udGFpbigiMTkyLjE2OC4xLjAiLCBob3N0cyk7CiAgICAgICAgQXNzZXJ0LkRvZXNOb3RDb250YWluKCIxOTIuMTY4LjEuMjU1IiwgaG9zdHMpOwogICAgfQoKICAgIFtGYWN0XQogICAgcHVibGljIHZvaWQgR2V0U2VnbWVudEhvc3RzX0hvbm91cnNFeHBsaWNpdEJvdW5kcygpCiAgICB7CiAgICAgICAgdmFyIGhvc3RzID0gSXBNYXRoLkdldFNlZ21lbnRIb3N0cygiMTAuMC4wIiwgZmlyc3Q6IDEwLCBsYXN0OiAxMik7CgogICAgICAgIEFzc2VydC5FcXVhbChbIjEwLjAuMC4xMCIsICIxMC4wLjAuMTEiLCAiMTAuMC4wLjEyIl0sIGhvc3RzKTsKICAgIH0KCiAgICBbVGhlb3J5XQogICAgW0lubGluZURhdGEoIjE5Mi4xNjguMS41IildCiAgICBbSW5saW5lRGF0YSgiMTkyLjE2OCIpXQogICAgW0lubGluZURhdGEoIiIpXQogICAgW0lubGluZURhdGEoIjk5OS4xLjEiKV0KICAgIHB1YmxpYyB2b2lkIEdldFNlZ21lbnRIb3N0c19SZXR1cm5zRW1wdHlfRm9ySW52YWxpZFNlZ21lbnQoc3RyaW5nIHNlZ21lbnQpCiAgICAgICAgPT4gQXNzZXJ0LkVtcHR5KElwTWF0aC5HZXRTZWdtZW50SG9zdHMoc2VnbWVudCkpOwoKICAgIC8vIC0tLS0gSXNJZ25vcmFibGVMb2NhbEFkZHJlc3MgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgogICAgW1RoZW9yeV0KICAgIFtJbmxpbmVEYXRhKCIxMjcuMC4wLjEiLCB0cnVlKV0KICAgIFtJbmxpbmVEYXRhKCIxMjcuMS4yLjMiLCB0cnVlKV0KICAgIFtJbmxpbmVEYXRhKCIxNjkuMjU0LjEwLjIwIiwgdHJ1ZSldCiAgICBbSW5saW5lRGF0YSgiMTkyLjE2OC4xLjAiLCB0cnVlKV0gLy8gZW5kcyBpbiAuMCAtPiB0cmVhdGVkIGFzIGEgbmV0d29yayBhZGRyZXNzCiAgICBbSW5saW5lRGF0YSgiMTAuMC4wLjEwIiwgZmFsc2UpXQogICAgW0lubGluZURhdGEoIjE5Mi4xNjguMS41IiwgZmFsc2UpXQogICAgW0lubGluZURhdGEoIiIsIGZhbHNlKV0KICAgIHB1YmxpYyB2b2lkIElzSWdub3JhYmxlTG9jYWxBZGRyZXNzX01hdGNoZXNMb29wYmFja0FwaXBhQW5kRG90WmVybyhzdHJpbmcgaXAsIGJvb2wgZXhwZWN0ZWQpCiAgICAgICAgPT4gQXNzZXJ0LkVxdWFsKGV4cGVjdGVkLCBJcE1hdGguSXNJZ25vcmFibGVMb2NhbEFkZHJlc3MoaXApKTsKfQo=
+using Xunit;
+using IPScaner.Core.Net;
+
+namespace IPScaner.Core.Tests;
+
+/// <summary>
+/// Coverage for <see cref="IpMath"/>. Test #1 of the port checklist is the
+/// regression guard for the original's prefix-matching regex.
+/// </summary>
+public class IpMathTests
+{
+    // ---- IsValidIPv4 -------------------------------------------------------
+
+    [Theory]
+    // The original regex matched a *prefix* of the text, so these three reached
+    // IPAddress.Parse / the octet shift and blew up with an OverflowException or
+    // produced a bogus address. They are the reason this helper exists.
+    [InlineData("999.1.1.1")]
+    [InlineData("10.0.0.1abc")]
+    [InlineData("256.1.1.1")]
+    // Plain malformed input.
+    [InlineData("1.2.3")]
+    [InlineData("1.2.3.4.5")]
+    [InlineData("")]
+    [InlineData("   ")]
+    [InlineData(null)]
+    [InlineData("1.2.3.")]
+    [InlineData(".1.2.3")]
+    [InlineData("1..3.4")]
+    [InlineData("1.2.3.1234")]
+    [InlineData("-1.2.3.4")]
+    [InlineData("1.2.3.-4")]
+    [InlineData("0x10.1.1.1")]
+    [InlineData("1.2.3.4a")]
+    [InlineData("1,2,3,4")]
+    public void IsValidIPv4_RejectsMalformedInput(string? text)
+        => Assert.False(IpMath.IsValidIPv4(text));
+
+    [Theory]
+    [InlineData("0.0.0.0")]
+    [InlineData("255.255.255.255")]
+    [InlineData("192.168.1.1")]
+    [InlineData("10.0.0.1")]
+    [InlineData("1.2.3.4")]
+    [InlineData(" 192.168.1.1 ")] // surrounding whitespace is trimmed like the original
+    public void IsValidIPv4_AcceptsWellFormedInput(string text)
+        => Assert.True(IpMath.IsValidIPv4(text));
+
+    [Fact]
+    public void IsValidIPv4_AcceptsBoundaryOctetsForEveryPosition()
+    {
+        Assert.True(IpMath.IsValidIPv4("255.0.0.0"));
+        Assert.True(IpMath.IsValidIPv4("0.255.0.0"));
+        Assert.True(IpMath.IsValidIPv4("0.0.255.0"));
+        Assert.True(IpMath.IsValidIPv4("0.0.0.255"));
+    }
+
+    // ---- ParseOctets / TryParseOctets -------------------------------------
+
+    [Fact]
+    public void ParseOctets_SplitsDottedQuad()
+        => Assert.Equal([192, 168, 1, 55], IpMath.ParseOctets("192.168.1.55"));
+
+    [Fact]
+    public void ParseOctets_ThrowsFormatException_InsteadOfOverflowing()
+    {
+        // Regression: the original crashed with OverflowException / produced a
+        // wrapped address for "999.1.1.1" and "10.0.0.1abc".
+        Assert.Throws<FormatException>(() => IpMath.ParseOctets("999.1.1.1"));
+        Assert.Throws<FormatException>(() => IpMath.ParseOctets("10.0.0.1abc"));
+        Assert.Throws<FormatException>(() => IpMath.ParseOctets("1.2.3"));
+    }
+
+    [Fact]
+    public void TryParseOctets_ReturnsFalseAndEmptyArray_ForMalformedInput()
+    {
+        Assert.False(IpMath.TryParseOctets("999.1.1.1", out var octets));
+        Assert.Empty(octets);
+
+        Assert.False(IpMath.TryParseOctets("10.0.0.1abc", out octets));
+        Assert.Empty(octets);
+
+        Assert.False(IpMath.TryParseOctets(null, out octets));
+        Assert.Empty(octets);
+    }
+
+    [Fact]
+    public void TryParseOctets_ReturnsOctets_ForValidInput()
+    {
+        Assert.True(IpMath.TryParseOctets("0.0.0.0", out var zeros));
+        Assert.Equal([0, 0, 0, 0], zeros);
+
+        Assert.True(IpMath.TryParseOctets("255.255.255.255", out var max));
+        Assert.Equal([255, 255, 255, 255], max);
+    }
+
+    // ---- ToUInt32 / FromUInt32 --------------------------------------------
+
+    [Theory]
+    [InlineData("0.0.0.0", 0u)]
+    [InlineData("0.0.0.1", 1u)]
+    [InlineData("192.168.1.1", 0xC0A80101u)]
+    [InlineData("255.255.255.255", uint.MaxValue)]
+    public void ToUInt32_ConvertsBigEndian(string ip, uint expected)
+        => Assert.Equal(expected, IpMath.ToUInt32(ip));
+
+    [Theory]
+    [InlineData(0u, "0.0.0.0")]
+    [InlineData(1u, "0.0.0.1")]
+    [InlineData(0xC0A80101u, "192.168.1.1")]
+    [InlineData(uint.MaxValue, "255.255.255.255")]
+    public void FromUInt32_ConvertsBack(uint value, string expected)
+        => Assert.Equal(expected, IpMath.FromUInt32(value));
+
+    [Fact]
+    public void ToUInt32_ThrowsForMalformedInput()
+        => Assert.Throws<FormatException>(() => IpMath.ToUInt32("1.2.3"));
+
+    // ---- GetSegment --------------------------------------------------------
+
+    [Theory]
+    [InlineData("192.168.1.55", "192.168.1")]
+    [InlineData("192.168.1", "192.168.1")]
+    [InlineData("192.168", "")]
+    [InlineData("192", "")]
+    [InlineData("", "")]
+    [InlineData(null, "")]
+    [InlineData("   ", "")]
+    // A CIDR or range suffix is simply part of the fourth token, which is
+    // discarded — exactly what the original's Split('.')/Take(3) produced.
+    [InlineData("192.168.1.0/24", "192.168.1")]
+    [InlineData("192.168.1.1-192.168.1.50", "192.168.1")]
+    [InlineData("  192.168.1.55  ", "192.168.1")]
+    public void GetSegment_ReturnsFirstThreeOctets(string? ip, string expected)
+        => Assert.Equal(expected, IpMath.GetSegment(ip));
+
+    // ---- IsValidSegment ----------------------------------------------------
+
+    [Theory]
+    [InlineData("192.168.1", true)]
+    [InlineData("0.0.0", true)]
+    [InlineData("255.255.255", true)]
+    [InlineData("192.168.1.1", false)]
+    [InlineData("192.168", false)]
+    [InlineData("192.168.1.0/24", false)]
+    [InlineData("999.168.1", false)]
+    [InlineData("a.b.c", false)]
+    [InlineData("", false)]
+    [InlineData(null, false)]
+    public void IsValidSegment_ValidatesThreeOctets(string? segment, bool expected)
+        => Assert.Equal(expected, IpMath.IsValidSegment(segment));
+
+    // ---- GetRange ----------------------------------------------------------
+
+    [Fact]
+    public void GetRange_IsInclusiveAndKeepsHostAddresses()
+    {
+        var range = IpMath.GetRange("192.168.1.1", "192.168.1.5");
+
+        Assert.Equal(
+            ["192.168.1.1", "192.168.1.2", "192.168.1.3", "192.168.1.4", "192.168.1.5"],
+            range);
+    }
+
+    [Fact]
+    public void GetRange_SkipsDotZeroAndDot255_ByDefault()
+    {
+        var range = IpMath.GetRange("192.168.1.254", "192.168.2.1");
+
+        Assert.Equal(["192.168.1.254", "192.168.2.1"], range);
+    }
+
+    [Fact]
+    public void GetRange_KeepsNetworkAndBroadcast_WhenSkippingDisabled()
+    {
+        var range = IpMath.GetRange("192.168.1.254", "192.168.2.1", skipNetworkAndBroadcast: false);
+
+        Assert.Equal(["192.168.1.254", "192.168.1.255", "192.168.2.0", "192.168.2.1"], range);
+    }
+
+    [Fact]
+    public void GetRange_ReturnsEmpty_WhenStartIsAfterEnd()
+    {
+        Assert.Empty(IpMath.GetRange("192.168.1.10", "192.168.1.1"));
+    }
+
+    [Fact]
+    public void GetRange_ReturnsEmpty_ForInvalidEndpoints()
+    {
+        Assert.Empty(IpMath.GetRange("999.1.1.1", "192.168.1.1"));
+        Assert.Empty(IpMath.GetRange("192.168.1.1", "10.0.0.1abc"));
+        Assert.Empty(IpMath.GetRange("", ""));
+    }
+
+    [Fact]
+    public void GetRange_ReturnsSingleAddress_ForDegenerateRange()
+    {
+        Assert.Equal(["10.0.0.1"], IpMath.GetRange("10.0.0.1", "10.0.0.1"));
+
+        // .0 is a network address, so the default rule drops it.
+        Assert.Empty(IpMath.GetRange("10.0.0.0", "10.0.0.0"));
+    }
+
+    [Fact]
+    public void GetRange_IsCappedAt65536Addresses()
+    {
+        var range = IpMath.GetRange("0.0.0.0", "255.255.255.255", skipNetworkAndBroadcast: false);
+
+        Assert.Equal(65536, range.Count);
+        Assert.Equal("0.0.0.0", range[0]);
+        Assert.Equal("0.0.255.255", range[^1]);
+    }
+
+    [Fact]
+    public void GetRange_CapAlsoAppliesWhenSkippingNetworkAddresses()
+    {
+        var range = IpMath.GetRange("0.0.0.0", "255.255.255.255");
+
+        Assert.Equal(65536, range.Count);
+        Assert.Equal("0.0.0.1", range[0]);
+    }
+
+    // ---- GetSegmentHosts ---------------------------------------------------
+
+    [Fact]
+    public void GetSegmentHosts_EnumeratesOneTo254ByDefault()
+    {
+        var hosts = IpMath.GetSegmentHosts("192.168.1");
+
+        Assert.Equal(254, hosts.Count);
+        Assert.Equal("192.168.1.1", hosts[0]);
+        Assert.Equal("192.168.1.254", hosts[^1]);
+        Assert.DoesNotContain("192.168.1.0", hosts);
+        Assert.DoesNotContain("192.168.1.255", hosts);
+    }
+
+    [Fact]
+    public void GetSegmentHosts_HonoursExplicitBounds()
+    {
+        var hosts = IpMath.GetSegmentHosts("10.0.0", first: 10, last: 12);
+
+        Assert.Equal(["10.0.0.10", "10.0.0.11", "10.0.0.12"], hosts);
+    }
+
+    [Theory]
+    [InlineData("192.168.1.5")]
+    [InlineData("192.168")]
+    [InlineData("")]
+    [InlineData("999.1.1")]
+    public void GetSegmentHosts_ReturnsEmpty_ForInvalidSegment(string segment)
+        => Assert.Empty(IpMath.GetSegmentHosts(segment));
+
+    // ---- IsIgnorableLocalAddress ------------------------------------------
+
+    [Theory]
+    [InlineData("127.0.0.1", true)]
+    [InlineData("127.1.2.3", true)]
+    [InlineData("169.254.10.20", true)]
+    [InlineData("192.168.1.0", true)] // ends in .0 -> treated as a network address
+    [InlineData("10.0.0.10", false)]
+    [InlineData("192.168.1.5", false)]
+    [InlineData("", false)]
+    public void IsIgnorableLocalAddress_MatchesLoopbackApipaAndDotZero(string ip, bool expected)
+        => Assert.Equal(expected, IpMath.IsIgnorableLocalAddress(ip));
+}

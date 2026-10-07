@@ -1,1 +1,42 @@
-dXNpbmcgTWljcm9zb2Z0LlVJLlhhbWw7CnVzaW5nIE1pY3Jvc29mdC5VSS5YYW1sLkNvbnRyb2xzOwoKbmFtZXNwYWNlIElQU2NhbmVyLldpblVJLlZpZXdzOwoKLy8vIDxzdW1tYXJ5PgovLy8gU2hhcmVkIHBsYWNlaG9sZGVyIHNob3duIGZvciBhIGZlYXR1cmUgdGhhdCBoYXMgbm90IGJlZW4gcG9ydGVkIHlldCwgYW5kIHRoZQovLy8gaGVscGVyIHRoZSBpbnRlcmltIHBhZ2Ugc3R1YnMgdXNlIHRvIHJlbmRlciB0aGVtc2VsdmVzLgovLy8gPC9zdW1tYXJ5PgpwdWJsaWMgc2VhbGVkIHBhcnRpYWwgY2xhc3MgUGxhY2Vob2xkZXJQYWdlIDogUGFnZQp7CiAgICBwdWJsaWMgUGxhY2Vob2xkZXJQYWdlKCkKICAgIHsKICAgICAgICBDb250ZW50ID0gQnVpbGQoIuWKn+iDveW7uuiuvuS4rSIsICLor6Xlip/og73mraPlnKjnp7vmpI3kuK3vvIzmlazor7fmnJ/lvoXjgIIiKTsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+QnVpbGRzIGEgY29uc2lzdGVudCBlbXB0eS9wbGFjZWhvbGRlciBzdXJmYWNlLjwvc3VtbWFyeT4KICAgIHB1YmxpYyBzdGF0aWMgVUlFbGVtZW50IEJ1aWxkKHN0cmluZyB0aXRsZSwgc3RyaW5nIHN1YnRpdGxlKQogICAgewogICAgICAgIHZhciBwYW5lbCA9IG5ldyBTdGFja1BhbmVsCiAgICAgICAgewogICAgICAgICAgICBQYWRkaW5nID0gbmV3IFRoaWNrbmVzcygyOCwgMjQsIDI4LCAyNCksCiAgICAgICAgICAgIFNwYWNpbmcgPSA4LAogICAgICAgIH07CgogICAgICAgIHBhbmVsLkNoaWxkcmVuLkFkZChuZXcgVGV4dEJsb2NrCiAgICAgICAgewogICAgICAgICAgICBUZXh0ID0gdGl0bGUsCiAgICAgICAgICAgIEZvbnRTaXplID0gMjQsCiAgICAgICAgICAgIEZvbnRXZWlnaHQgPSBNaWNyb3NvZnQuVUkuVGV4dC5Gb250V2VpZ2h0cy5TZW1pQm9sZCwKICAgICAgICB9KTsKCiAgICAgICAgcGFuZWwuQ2hpbGRyZW4uQWRkKG5ldyBUZXh0QmxvY2sKICAgICAgICB7CiAgICAgICAgICAgIFRleHQgPSBzdWJ0aXRsZSwKICAgICAgICAgICAgVGV4dFdyYXBwaW5nID0gVGV4dFdyYXBwaW5nLldyYXAsCiAgICAgICAgICAgIE9wYWNpdHkgPSAwLjc1LAogICAgICAgIH0pOwoKICAgICAgICByZXR1cm4gbmV3IFNjcm9sbFZpZXdlciB7IENvbnRlbnQgPSBwYW5lbCwgVmVydGljYWxTY3JvbGxCYXJWaXNpYmlsaXR5ID0gU2Nyb2xsQmFyVmlzaWJpbGl0eS5BdXRvIH07CiAgICB9Cn0K
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+
+namespace IPScaner.WinUI.Views;
+
+/// <summary>
+/// Shared placeholder shown for a feature that has not been ported yet, and the
+/// helper the interim page stubs use to render themselves.
+/// </summary>
+public sealed partial class PlaceholderPage : Page
+{
+    public PlaceholderPage()
+    {
+        Content = Build("功能建设中", "该功能正在移植中，敬请期待。");
+    }
+
+    /// <summary>Builds a consistent empty/placeholder surface.</summary>
+    public static UIElement Build(string title, string subtitle)
+    {
+        var panel = new StackPanel
+        {
+            Padding = new Thickness(28, 24, 28, 24),
+            Spacing = 8,
+        };
+
+        panel.Children.Add(new TextBlock
+        {
+            Text = title,
+            FontSize = 24,
+            FontWeight = Microsoft.UI.Text.FontWeights.SemiBold,
+        });
+
+        panel.Children.Add(new TextBlock
+        {
+            Text = subtitle,
+            TextWrapping = TextWrapping.Wrap,
+            Opacity = 0.75,
+        });
+
+        return new ScrollViewer { Content = panel, VerticalScrollBarVisibility = ScrollBarVisibility.Auto };
+    }
+}

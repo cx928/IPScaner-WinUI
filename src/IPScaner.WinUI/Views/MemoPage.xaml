@@ -1,1 +1,135 @@
-PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPFBhZ2UKICAgIHg6Q2xhc3M9IklQU2NhbmVyLldpblVJLlZpZXdzLk1lbW9QYWdlIgogICAgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sL3ByZXNlbnRhdGlvbiIKICAgIHhtbG5zOng9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sIgogICAgeG1sbnM6ZD0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS9leHByZXNzaW9uL2JsZW5kLzIwMDgiCiAgICB4bWxuczptYz0iaHR0cDovL3NjaGVtYXMub3BlbnhtbGZvcm1hdHMub3JnL21hcmt1cC1jb21wYXRpYmlsaXR5LzIwMDYiCiAgICBtYzpJZ25vcmFibGU9ImQiDQogICAgTmF2aWdhdGlvbkNhY2hlTW9kZT0iUmVxdWlyZWQiPgoKICAgIDwhLS0KICAgICAgICDlpIfms6jnrqHnkIYg4oCUIG9uZSByb3cgcGVyIGVudHJ5IG9mIEFwcFNlcnZpY2VzLkN1cnJlbnQuTWVtbyAoSVBTY2FuZXJNZW1vLmRhdCkuCiAgICAgICAgUmVwbGFjZXMgdGhlIG9yaWdpbmFsIEZvcm1NZW1vTWFuYWdlciBkaWFsb2c7IHRoZSBjb2x1bW4gd2lkdGhzIGJlbG93IGFyZQogICAgICAgIGR1cGxpY2F0ZWQgaW4gTWVtb1BhZ2UueGFtbC5jcyAoSW5kZXhDb2x1bW5XaWR0aCAvIEtleUNvbHVtbldpZHRoIC8KICAgICAgICBUeXBlQ29sdW1uV2lkdGgpIGJlY2F1c2UgdGhlIHJvd3MgYXJlIGJ1aWx0IGluIGNvZGUuCgogICAgICAgIFRoZSBsYXlvdXQgaGFzIHRvIHN1cnZpdmUgYSBuYXJyb3cgbG9naWNhbCB3aWR0aCAodGhlIHNoZWxsIHdpbmRvdyBpcwogICAgICAgIDExODB4ODIwICpwaHlzaWNhbCogcGl4ZWxzLCBpLmUuIH43ODd4NTQ3IGF0IDE1MCUgc2NhbGluZyksIHNvIHRoZSB0b29sYmFyCiAgICAgICAgaXMgc3RhY2tlZCBpbiB0aHJlZSBjb21wYWN0IHJvd3MgaW5zdGVhZCBvZiBvbmUgbG9uZyBzdHJpcC4KICAgIC0tPgogICAgPEdyaWQgUGFkZGluZz0iMTYsMTIsMTYsMTIiIFJvd1NwYWNpbmc9IjEwIj4KICAgICAgICA8R3JpZC5Sb3dEZWZpbml0aW9ucz4KICAgICAgICAgICAgPFJvd0RlZmluaXRpb24gSGVpZ2h0PSJBdXRvIiAvPgogICAgICAgICAgICA8Um93RGVmaW5pdGlvbiBIZWlnaHQ9IioiIC8+CiAgICAgICAgICAgIDxSb3dEZWZpbml0aW9uIEhlaWdodD0iQXV0byIgLz4KICAgICAgICA8L0dyaWQuUm93RGVmaW5pdGlvbnM+CgogICAgICAgIDwhLS0gPT09PT09PT09PT09PT09PT0gcXVlcnkgKyBhY3Rpb25zID09PT09PT09PT09PT09PT09IC0tPgogICAgICAgIDxCb3JkZXIgR3JpZC5Sb3c9IjAiIFN0eWxlPSJ7U3RhdGljUmVzb3VyY2UgQ2FyZFN0eWxlfSI+CiAgICAgICAgICAgIDxTdGFja1BhbmVsIFNwYWNpbmc9IjgiPgogICAgICAgICAgICAgICAgPEdyaWQgQ29sdW1uU3BhY2luZz0iMTIiPgogICAgICAgICAgICAgICAgICAgIDxHcmlkLkNvbHVtbkRlZmluaXRpb25zPgogICAgICAgICAgICAgICAgICAgICAgICA8Q29sdW1uRGVmaW5pdGlvbiBXaWR0aD0iQXV0byIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgPENvbHVtbkRlZmluaXRpb24gV2lkdGg9IioiIC8+CiAgICAgICAgICAgICAgICAgICAgPC9HcmlkLkNvbHVtbkRlZmluaXRpb25zPgogICAgICAgICAgICAgICAgICAgIDxUZXh0QmxvY2sgR3JpZC5Db2x1bW49IjAiIFRleHQ9IuWkh+azqOS/oeaBr+euoeeQhiIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFN0eWxlPSJ7U3RhdGljUmVzb3VyY2UgU2VjdGlvbkhlYWRlclN0eWxlfSIgTWFyZ2luPSIwIiAvPgogICAgICAgICAgICAgICAgICAgIDxUZXh0QmxvY2sgR3JpZC5Db2x1bW49IjEiIFN0eWxlPSJ7U3RhdGljUmVzb3VyY2UgSGludFRleHRTdHlsZX0iCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBWZXJ0aWNhbEFsaWdubWVudD0iQ2VudGVyIiBUZXh0VHJpbW1pbmc9IkNoYXJhY3RlckVsbGlwc2lzIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgVGV4dD0iSVDmiJZNQUPlj6rloavkuIDkuKrljbPlj6/jgILoi6XlkIzml7blrZjlnKjvvIzku6VNQUPkuLrkuLvjgIIiIC8+CiAgICAgICAgICAgICAgICA8L0dyaWQ+CgogICAgICAgICAgICAgICAgPFN0YWNrUGFuZWwgT3JpZW50YXRpb249Ikhvcml6b250YWwiIFNwYWNpbmc9IjgiPgogICAgICAgICAgICAgICAgICAgIDxUZXh0QmxvY2sgVGV4dD0i5p+l6K+i5p2h5Lu2IiBTdHlsZT0ie1N0YXRpY1Jlc291cmNlIEZpZWxkTGFiZWxTdHlsZX0iIC8+CiAgICAgICAgICAgICAgICAgICAgPFRleHRCb3ggeDpOYW1lPSJGaWx0ZXJCb3giIFdpZHRoPSIxODAiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgUGxhY2Vob2xkZXJUZXh0PSLmn6Xor6JJUOaIluWkh+azqOS/oeaBryIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICBBdXRvbWF0aW9uUHJvcGVydGllcy5OYW1lPSLmn6Xor6JJUOaIluWkh+azqOS/oeaBryIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUb29sVGlwU2VydmljZS5Ub29sVGlwPSLmn6Xor6JJUOaIluWkh+azqOS/oeaBryIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0Q2hhbmdlZD0iT25GaWx0ZXJDaGFuZ2VkIiAvPgogICAgICAgICAgICAgICAgICAgIDxUZXh0QmxvY2sgeDpOYW1lPSJGaWx0ZXJIaW50VGV4dCIgU3R5bGU9IntTdGF0aWNSZXNvdXJjZSBIaW50VGV4dFN0eWxlfSIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFZlcnRpY2FsQWxpZ25tZW50PSJDZW50ZXIiIC8+CiAgICAgICAgICAgICAgICA8L1N0YWNrUGFuZWw+CgogICAgICAgICAgICAgICAgPFN0YWNrUGFuZWwgT3JpZW50YXRpb249Ikhvcml6b250YWwiIFNwYWNpbmc9IjgiPgogICAgICAgICAgICAgICAgICAgIDxCdXR0b24geDpOYW1lPSJBZGRCdXR0b24iIENvbnRlbnQ9IuaWsOWiniIgTWluV2lkdGg9IjYwIiBDbGljaz0iT25BZGRDbGljayIKICAgICAgICAgICAgICAgICAgICAgICAgICAgIEF1dG9tYXRpb25Qcm9wZXJ0aWVzLk5hbWU9IuaWsOWiniIKICAgICAgICAgICAgICAgICAgICAgICAgICAgIFRvb2xUaXBTZXJ2aWNlLlRvb2xUaXA9IuaWsOWinuS4gOadoeWkh+azqO+8iElQ5oiWTUFD77yJIiAvPgogICAgICAgICAgICAgICAgICAgIDxCdXR0b24geDpOYW1lPSJFZGl0QnV0dG9uIiBDb250ZW50PSLkv67mlLkiIE1pbldpZHRoPSI2MCIgSXNFbmFibGVkPSJGYWxzZSIgQ2xpY2s9Ik9uRWRpdENsaWNrIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgQXV0b21hdGlvblByb3BlcnRpZXMuTmFtZT0i5L+u5pS5IgogICAgICAgICAgICAgICAgICAgICAgICAgICAgVG9vbFRpcFNlcnZpY2UuVG9vbFRpcD0i5L+u5pS56YCJ5Lit6KGM55qE5aSH5rOo77yI5Y+M5Ye76KGM5Lqm5Y+v77yJIiAvPgogICAgICAgICAgICAgICAgICAgIDxCdXR0b24geDpOYW1lPSJEZWxldGVCdXR0b24iIENvbnRlbnQ9IuWIoOmZpCIgTWluV2lkdGg9IjYwIiBJc0VuYWJsZWQ9IkZhbHNlIiBDbGljaz0iT25EZWxldGVDbGljayIKICAgICAgICAgICAgICAgICAgICAgICAgICAgIEF1dG9tYXRpb25Qcm9wZXJ0aWVzLk5hbWU9IuWIoOmZpCIKICAgICAgICAgICAgICAgICAgICAgICAgICAgIFRvb2xUaXBTZXJ2aWNlLlRvb2xUaXA9IuWIoOmZpOmAieS4reeahOWkh+azqCIgLz4KICAgICAgICAgICAgICAgICAgICA8QnV0dG9uIHg6TmFtZT0iSW1wb3J0QnV0dG9uIiBDb250ZW50PSLku47liarotLTmnb/lr7zlhaUiIE1pbldpZHRoPSIxMjAiIENsaWNrPSJPbkltcG9ydENsaWNrIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgQXV0b21hdGlvblByb3BlcnRpZXMuTmFtZT0i5LuO5Ymq6LS05p2/5a+85YWlIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgVG9vbFRpcFNlcnZpY2UuVG9vbFRpcD0i5a+85YWl5Ymq6LS05p2/5pWw5o2u77yM5qC85byP5Li6MTkyLjE2OC4wLjE955uR5o6n5pyN5Yqh5ZmoIiAvPgogICAgICAgICAgICAgICAgPC9TdGFja1BhbmVsPgogICAgICAgICAgICA8L1N0YWNrUGFuZWw+CiAgICAgICAgPC9Cb3JkZXI+CgogICAgICAgIDwhLS0gPT09PT09PT09PT09PT09PT0gZGF0YSBsaXN0ID09PT09PT09PT09PT09PT09IC0tPgogICAgICAgIDxCb3JkZXIgR3JpZC5Sb3c9IjEiIFN0eWxlPSJ7U3RhdGljUmVzb3VyY2UgQ2FyZFN0eWxlfSIgUGFkZGluZz0iMTIsOCwxMiwxMiI+CiAgICAgICAgICAgIDxHcmlkIFJvd1NwYWNpbmc9IjYiPgogICAgICAgICAgICAgICAgPEdyaWQuUm93RGVmaW5pdGlvbnM+CiAgICAgICAgICAgICAgICAgICAgPFJvd0RlZmluaXRpb24gSGVpZ2h0PSJBdXRvIiAvPgogICAgICAgICAgICAgICAgICAgIDxSb3dEZWZpbml0aW9uIEhlaWdodD0iQXV0byIgLz4KICAgICAgICAgICAgICAgICAgICA8Um93RGVmaW5pdGlvbiBIZWlnaHQ9IkF1dG8iIC8+CiAgICAgICAgICAgICAgICAgICAgPFJvd0RlZmluaXRpb24gSGVpZ2h0PSIqIiAvPgogICAgICAgICAgICAgICAgPC9HcmlkLlJvd0RlZmluaXRpb25zPgoKICAgICAgICAgICAgICAgIDxUZXh0QmxvY2sgR3JpZC5Sb3c9IjAiIFRleHQ9IuaVsOaNruWIl+ihqCIgRm9udFdlaWdodD0iU2VtaUJvbGQiIC8+CgogICAgICAgICAgICAgICAgPEdyaWQgR3JpZC5Sb3c9IjEiIFBhZGRpbmc9IjgsMCw4LDQiIENvbHVtblNwYWNpbmc9IjEyIj4KICAgICAgICAgICAgICAgICAgICA8R3JpZC5Db2x1bW5EZWZpbml0aW9ucz4KICAgICAgICAgICAgICAgICAgICAgICAgPENvbHVtbkRlZmluaXRpb24gV2lkdGg9IjUwIiAvPgogICAgICAgICAgICAgICAgICAgICAgICA8Q29sdW1uRGVmaW5pdGlvbiBXaWR0aD0iMjAwIiAvPgogICAgICAgICAgICAgICAgICAgICAgICA8Q29sdW1uRGVmaW5pdGlvbiBXaWR0aD0iOTAiIC8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxDb2x1bW5EZWZpbml0aW9uIFdpZHRoPSIqIiAvPgogICAgICAgICAgICAgICAgICAgIDwvR3JpZC5Db2x1bW5EZWZpbml0aW9ucz4KICAgICAgICAgICAgICAgICAgICA8VGV4dEJsb2NrIEdyaWQuQ29sdW1uPSIwIiBUZXh0PSLluo/lj7ciIEZvbnRXZWlnaHQ9IlNlbWlCb2xkIiAvPgogICAgICAgICAgICAgICAgICAgIDxUZXh0QmxvY2sgR3JpZC5Db2x1bW49IjEiIFRleHQ9IumUrihJUOaIlk1BQykiIEZvbnRXZWlnaHQ9IlNlbWlCb2xkIiAvPgogICAgICAgICAgICAgICAgICAgIDxUZXh0QmxvY2sgR3JpZC5Db2x1bW49IjIiIFRleHQ9Iuexu+WeiyIgRm9udFdlaWdodD0iU2VtaUJvbGQiIC8+CiAgICAgICAgICAgICAgICAgICAgPFRleHRCbG9jayBHcmlkLkNvbHVtbj0iMyIgVGV4dD0i5aSH5rOoIiBGb250V2VpZ2h0PSJTZW1pQm9sZCIgLz4KICAgICAgICAgICAgICAgIDwvR3JpZD4KCiAgICAgICAgICAgICAgICA8Qm9yZGVyIEdyaWQuUm93PSIyIiBIZWlnaHQ9IjEiIEJhY2tncm91bmQ9IntUaGVtZVJlc291cmNlIERpdmlkZXJTdHJva2VDb2xvckRlZmF1bHRCcnVzaH0iIC8+CgogICAgICAgICAgICAgICAgPExpc3RWaWV3IHg6TmFtZT0iTWVtb0xpc3QiIEdyaWQuUm93PSIzIgogICAgICAgICAgICAgICAgICAgICAgICAgIFNlbGVjdGlvbk1vZGU9IlNpbmdsZSIKICAgICAgICAgICAgICAgICAgICAgICAgICBTZWxlY3Rpb25DaGFuZ2VkPSJPblNlbGVjdGlvbkNoYW5nZWQiCiAgICAgICAgICAgICAgICAgICAgICAgICAgRG91YmxlVGFwcGVkPSJPbkxpc3REb3VibGVUYXBwZWQiIC8+CgogICAgICAgICAgICAgICAgPFRleHRCbG9jayB4Ok5hbWU9IkVtcHR5SGludCIgR3JpZC5Sb3c9IjMiIE1heFdpZHRoPSI0NjAiCiAgICAgICAgICAgICAgICAgICAgICAgICAgIFN0eWxlPSJ7U3RhdGljUmVzb3VyY2UgSGludFRleHRTdHlsZX0iCiAgICAgICAgICAgICAgICAgICAgICAgICAgIFRleHRBbGlnbm1lbnQ9IkNlbnRlciIgSG9yaXpvbnRhbEFsaWdubWVudD0iQ2VudGVyIiBWZXJ0aWNhbEFsaWdubWVudD0iQ2VudGVyIgogICAgICAgICAgICAgICAgICAgICAgICAgICBWaXNpYmlsaXR5PSJDb2xsYXBzZWQiIC8+CiAgICAgICAgICAgIDwvR3JpZD4KICAgICAgICA8L0JvcmRlcj4KCiAgICAgICAgPCEtLSA9PT09PT09PT09PT09PT09PSBzdGF0dXMgKyBmaWxlIGFjdGlvbnMgPT09PT09PT09PT09PT09PT0gLS0+CiAgICAgICAgPEJvcmRlciBHcmlkLlJvdz0iMiIgU3R5bGU9IntTdGF0aWNSZXNvdXJjZSBDYXJkU3R5bGV9IiBQYWRkaW5nPSIxMiw4Ij4KICAgICAgICAgICAgPEdyaWQgQ29sdW1uU3BhY2luZz0iMTIiPgogICAgICAgICAgICAgICAgPEdyaWQuQ29sdW1uRGVmaW5pdGlvbnM+CiAgICAgICAgICAgICAgICAgICAgPENvbHVtbkRlZmluaXRpb24gV2lkdGg9IioiIC8+CiAgICAgICAgICAgICAgICAgICAgPENvbHVtbkRlZmluaXRpb24gV2lkdGg9IkF1dG8iIC8+CiAgICAgICAgICAgICAgICA8L0dyaWQuQ29sdW1uRGVmaW5pdGlvbnM+CgogICAgICAgICAgICAgICAgPFN0YWNrUGFuZWwgR3JpZC5Db2x1bW49IjAiIFNwYWNpbmc9IjIiPgogICAgICAgICAgICAgICAgICAgIDxUZXh0QmxvY2sgeDpOYW1lPSJTdGF0dXNUZXh0IiBTdHlsZT0ie1N0YXRpY1Jlc291cmNlIFN0YXR1c1RleHRTdHlsZX0iIC8+CiAgICAgICAgICAgICAgICAgICAgPFRleHRCbG9jayB4Ok5hbWU9IlBhdGhUZXh0IiBTdHlsZT0ie1N0YXRpY1Jlc291cmNlIEhpbnRUZXh0U3R5bGV9IiAvPgogICAgICAgICAgICAgICAgICAgIDxUZXh0QmxvY2sgeDpOYW1lPSJSZXNvbHZlVGV4dCIgU3R5bGU9IntTdGF0aWNSZXNvdXJjZSBIaW50VGV4dFN0eWxlfSIgLz4KICAgICAgICAgICAgICAgIDwvU3RhY2tQYW5lbD4KCiAgICAgICAgICAgICAgICA8U3RhY2tQYW5lbCBHcmlkLkNvbHVtbj0iMSIgT3JpZW50YXRpb249Ikhvcml6b250YWwiIFNwYWNpbmc9IjgiIFZlcnRpY2FsQWxpZ25tZW50PSJUb3AiPgogICAgICAgICAgICAgICAgICAgIDxCdXR0b24geDpOYW1lPSJTYXZlQnV0dG9uIiBDb250ZW50PSLkv53lrZgiIE1pbldpZHRoPSI2MCIgQ2xpY2s9Ik9uU2F2ZUNsaWNrIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgQXV0b21hdGlvblByb3BlcnRpZXMuTmFtZT0i5L+d5a2Y5aSH5rOo5paH5Lu2IgogICAgICAgICAgICAgICAgICAgICAgICAgICAgVG9vbFRpcFNlcnZpY2UuVG9vbFRpcD0i56uL5Y2z5YaZ5YWlIElQU2NhbmVyTWVtby5kYXTvvIjmlrDlop4v5L+u5pS5L+WIoOmZpC/lr7zlhaXlkI7kvJroh6rliqjkv53lrZjvvIkiIC8+CiAgICAgICAgICAgICAgICAgICAgPEJ1dHRvbiB4Ok5hbWU9IkNsZWFyQnV0dG9uIiBDb250ZW50PSLmuIXnqbrlhajpg6giIE1pbldpZHRoPSI4NCIgQ2xpY2s9Ik9uQ2xlYXJBbGxDbGljayIKICAgICAgICAgICAgICAgICAgICAgICAgICAgIEF1dG9tYXRpb25Qcm9wZXJ0aWVzLk5hbWU9Iua4heepuuWFqOmDqCIKICAgICAgICAgICAgICAgICAgICAgICAgICAgIFRvb2xUaXBTZXJ2aWNlLlRvb2xUaXA9IuWIoOmZpOWFqOmDqOWkh+azqO+8jOW5tuaKiuWkh+azqOaWh+S7tuWGmeS4uuepuuaWh+S7tiIgLz4KICAgICAgICAgICAgICAgIDwvU3RhY2tQYW5lbD4KICAgICAgICAgICAgPC9HcmlkPgogICAgICAgIDwvQm9yZGVyPgogICAgPC9HcmlkPgo8L1BhZ2U+Cg==
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="IPScaner.WinUI.Views.MemoPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    NavigationCacheMode="Required">
+
+    <!--
+        备注管理 — one row per entry of AppServices.Current.Memo (IPScanerMemo.dat).
+        Replaces the original FormMemoManager dialog; the column widths below are
+        duplicated in MemoPage.xaml.cs (IndexColumnWidth / KeyColumnWidth /
+        TypeColumnWidth) because the rows are built in code.
+
+        The layout has to survive a narrow logical width (the shell window is
+        1180x820 *physical* pixels, i.e. ~787x547 at 150% scaling), so the toolbar
+        is stacked in three compact rows instead of one long strip.
+    -->
+    <Grid Padding="16,12,16,12" RowSpacing="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- ================= query + actions ================= -->
+        <Border Grid.Row="0" Style="{StaticResource CardStyle}">
+            <StackPanel Spacing="8">
+                <Grid ColumnSpacing="12">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="备注信息管理"
+                               Style="{StaticResource SectionHeaderStyle}" Margin="0" />
+                    <TextBlock Grid.Column="1" Style="{StaticResource HintTextStyle}"
+                               VerticalAlignment="Center" TextTrimming="CharacterEllipsis"
+                               Text="IP或MAC只填一个即可。若同时存在，以MAC为主。" />
+                </Grid>
+
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <TextBlock Text="查询条件" Style="{StaticResource FieldLabelStyle}" />
+                    <TextBox x:Name="FilterBox" Width="180"
+                             PlaceholderText="查询IP或备注信息"
+                             AutomationProperties.Name="查询IP或备注信息"
+                             ToolTipService.ToolTip="查询IP或备注信息"
+                             TextChanged="OnFilterChanged" />
+                    <TextBlock x:Name="FilterHintText" Style="{StaticResource HintTextStyle}"
+                               VerticalAlignment="Center" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <Button x:Name="AddButton" Content="新增" MinWidth="60" Click="OnAddClick"
+                            AutomationProperties.Name="新增"
+                            ToolTipService.ToolTip="新增一条备注（IP或MAC）" />
+                    <Button x:Name="EditButton" Content="修改" MinWidth="60" IsEnabled="False" Click="OnEditClick"
+                            AutomationProperties.Name="修改"
+                            ToolTipService.ToolTip="修改选中行的备注（双击行亦可）" />
+                    <Button x:Name="DeleteButton" Content="删除" MinWidth="60" IsEnabled="False" Click="OnDeleteClick"
+                            AutomationProperties.Name="删除"
+                            ToolTipService.ToolTip="删除选中的备注" />
+                    <Button x:Name="ImportButton" Content="从剪贴板导入" MinWidth="120" Click="OnImportClick"
+                            AutomationProperties.Name="从剪贴板导入"
+                            ToolTipService.ToolTip="导入剪贴板数据，格式为192.168.0.1=监控服务器" />
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        <!-- ================= data list ================= -->
+        <Border Grid.Row="1" Style="{StaticResource CardStyle}" Padding="12,8,12,12">
+            <Grid RowSpacing="6">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Text="数据列表" FontWeight="SemiBold" />
+
+                <Grid Grid.Row="1" Padding="8,0,8,4" ColumnSpacing="12">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50" />
+                        <ColumnDefinition Width="200" />
+                        <ColumnDefinition Width="90" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="序号" FontWeight="SemiBold" />
+                    <TextBlock Grid.Column="1" Text="键(IP或MAC)" FontWeight="SemiBold" />
+                    <TextBlock Grid.Column="2" Text="类型" FontWeight="SemiBold" />
+                    <TextBlock Grid.Column="3" Text="备注" FontWeight="SemiBold" />
+                </Grid>
+
+                <Border Grid.Row="2" Height="1" Background="{ThemeResource DividerStrokeColorDefaultBrush}" />
+
+                <ListView x:Name="MemoList" Grid.Row="3"
+                          SelectionMode="Single"
+                          SelectionChanged="OnSelectionChanged"
+                          DoubleTapped="OnListDoubleTapped" />
+
+                <TextBlock x:Name="EmptyHint" Grid.Row="3" MaxWidth="460"
+                           Style="{StaticResource HintTextStyle}"
+                           TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"
+                           Visibility="Collapsed" />
+            </Grid>
+        </Border>
+
+        <!-- ================= status + file actions ================= -->
+        <Border Grid.Row="2" Style="{StaticResource CardStyle}" Padding="12,8">
+            <Grid ColumnSpacing="12">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" Spacing="2">
+                    <TextBlock x:Name="StatusText" Style="{StaticResource StatusTextStyle}" />
+                    <TextBlock x:Name="PathText" Style="{StaticResource HintTextStyle}" />
+                    <TextBlock x:Name="ResolveText" Style="{StaticResource HintTextStyle}" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="8" VerticalAlignment="Top">
+                    <Button x:Name="SaveButton" Content="保存" MinWidth="60" Click="OnSaveClick"
+                            AutomationProperties.Name="保存备注文件"
+                            ToolTipService.ToolTip="立即写入 IPScanerMemo.dat（新增/修改/删除/导入后会自动保存）" />
+                    <Button x:Name="ClearButton" Content="清空全部" MinWidth="84" Click="OnClearAllClick"
+                            AutomationProperties.Name="清空全部"
+                            ToolTipService.ToolTip="删除全部备注，并把备注文件写为空文件" />
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

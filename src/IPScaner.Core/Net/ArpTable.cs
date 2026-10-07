@@ -1,1 +1,211 @@
-dXNpbmcgU3lzdGVtLkRpYWdub3N0aWNzOwp1c2luZyBTeXN0ZW0uVGV4dC5SZWd1bGFyRXhwcmVzc2lvbnM7CnVzaW5nIElQU2NhbmVyLkNvcmUuQ2FjaGluZzsKdXNpbmcgSVBTY2FuZXIuQ29yZS5Mb2dnaW5nOwp1c2luZyBJUFNjYW5lci5Db3JlLk1vZGVsczsKCm5hbWVzcGFjZSBJUFNjYW5lci5Db3JlLk5ldDsKCi8vLyA8c3VtbWFyeT4KLy8vIFJlYWRzIE1BQyBhZGRyZXNzZXMgb3V0IG9mIHRoZSBXaW5kb3dzIEFSUCBjYWNoZS4KLy8vIDwvc3VtbWFyeT4KLy8vIDxyZW1hcmtzPgovLy8gQmVoYXZpb3VyYWxseSBlcXVpdmFsZW50IHRvIHRoZSBvcmlnaW5hbCA8Yz5VdGlsaXR5LkdldE1hY0FkZHJlc3NGcm9tQVJQPC9jPjoKLy8vIGEgaG9zdCB0aGF0IGlzIG9uZSBvZiBvdXIgb3duIGFkYXB0ZXIgYWRkcmVzc2VzIGlzIGFuc3dlcmVkIGZyb20gdGhlIGFkYXB0ZXIKLy8vIGxpc3QsIG90aGVyd2lzZSB0aGUgYWRkcmVzcyBpcyBsb29rZWQgdXAgaW4gdGhlIEFSUCB0YWJsZSwgYW5kIHRoZSB0YWJsZSBpcwovLy8gZmx1c2hlZCB3aXRoIDxjPmFycCAtZCAqPC9jPiBhdCBtb3N0IG9uY2UgcGVyIGhvdXIgc28gc3RhbGUgZW50cmllcyBkbyBub3QKLy8vIG1hc3F1ZXJhZGUgYXMgbGl2ZSBob3N0cy4KLy8vIDxwYXJhPgovLy8gT25lIGltcG9ydGFudCBkaWZmZXJlbmNlOiB0aGUgb3JpZ2luYWwgc3Bhd25lZCBhIGZyZXNoIDxjPmFycCAtYTwvYz4gcHJvY2VzcwovLy8gPGk+Zm9yIGV2ZXJ5IGhvc3Q8L2k+LCBzbyBhIC8yNCBzd2VlcCB3aXRoIG5hbWUgbG9va3VwIGVuYWJsZWQgbGF1bmNoZWQgfjI1NAovLy8gcHJvY2Vzc2VzLiBUaGlzIGNsYXNzIHNuYXBzaG90cyB0aGUgd2hvbGUgdGFibGUgb25jZSBhbmQgcmV1c2VzIGl0IGZvciBhIHNob3J0Ci8vLyB3aW5kb3csIHdoaWNoIHlpZWxkcyBpZGVudGljYWwgcmVzdWx0cyBmYXIgZmFzdGVyLgovLy8gPC9wYXJhPgovLy8gPC9yZW1hcmtzPgpwdWJsaWMgc2VhbGVkIHBhcnRpYWwgY2xhc3MgQXJwVGFibGUKewogICAgW0dlbmVyYXRlZFJlZ2V4KEAiXlxzKihcZHsxLDN9XC5cZHsxLDN9XC5cZHsxLDN9XC5cZHsxLDN9KVxzKyhbMC05QS1GYS1mXXsyfSg/OlstOl1bMC05QS1GYS1mXXsyfSl7NX0pXHMqIiwKICAgICAgICBSZWdleE9wdGlvbnMuQ29tcGlsZWQgfCBSZWdleE9wdGlvbnMuTXVsdGlsaW5lKV0KICAgIHByaXZhdGUgc3RhdGljIHBhcnRpYWwgUmVnZXggQXJwUm93UmVnZXgoKTsKCiAgICBbR2VuZXJhdGVkUmVnZXgoQCJeKFswLTlBLUZhLWZdezJ9Wy06XSl7NX1bMC05QS1GYS1mXXsyfSQiLCBSZWdleE9wdGlvbnMuQ29tcGlsZWQpXQogICAgcHJpdmF0ZSBzdGF0aWMgcGFydGlhbCBSZWdleCBNYWNPbmx5UmVnZXgoKTsKCiAgICBwcml2YXRlIHJlYWRvbmx5IFNlbWFwaG9yZVNsaW0gX2dhdGUgPSBuZXcoMSwgMSk7CiAgICBwcml2YXRlIHJlYWRvbmx5IFRpbWVTcGFuIF9zbmFwc2hvdFR0bDsKICAgIHByaXZhdGUgcmVhZG9ubHkgRnVuYzxJUmVhZE9ubHlMaXN0PEFkYXB0ZXJJbmZvPj4/IF9hZGFwdGVyUHJvdmlkZXI7CiAgICBwcml2YXRlIHJlYWRvbmx5IFRpbWVQcm92aWRlciBfY2xvY2s7CgogICAgcHJpdmF0ZSBEaWN0aW9uYXJ5PHN0cmluZywgc3RyaW5nPiBfc25hcHNob3QgPSBuZXcoU3RyaW5nQ29tcGFyZXIuT3JkaW5hbElnbm9yZUNhc2UpOwogICAgcHJpdmF0ZSBEYXRlVGltZU9mZnNldCBfc25hcHNob3RBdCA9IERhdGVUaW1lT2Zmc2V0Lk1pblZhbHVlOwogICAgcHJpdmF0ZSBEYXRlVGltZU9mZnNldCBfbGFzdEZsdXNoID0gRGF0ZVRpbWVPZmZzZXQuTWluVmFsdWU7CgogICAgcHVibGljIEFycFRhYmxlKAogICAgICAgIEZ1bmM8SVJlYWRPbmx5TGlzdDxBZGFwdGVySW5mbz4+PyBhZGFwdGVyUHJvdmlkZXIgPSBudWxsLAogICAgICAgIFRpbWVTcGFuPyBzbmFwc2hvdFR0bCA9IG51bGwsCiAgICAgICAgVGltZVByb3ZpZGVyPyBjbG9jayA9IG51bGwpCiAgICB7CiAgICAgICAgX2FkYXB0ZXJQcm92aWRlciA9IGFkYXB0ZXJQcm92aWRlcjsKICAgICAgICBfc25hcHNob3RUdGwgPSBzbmFwc2hvdFR0bCA/PyBUaW1lU3Bhbi5Gcm9tU2Vjb25kcygzKTsKICAgICAgICBfY2xvY2sgPSBjbG9jayA/PyBUaW1lUHJvdmlkZXIuU3lzdGVtOwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBSZXNvbHZlcyB0aGUgTUFDIGZvciBhbiBhZGRyZXNzLCBvciBudWxsIHdoZW4gaXQgaXMgbm90IGluIHRoZSBBUlAgY2FjaGUuCiAgICAvLy8gUmVzdWx0cyBhcmUgbWVtb2lzZWQgZm9yIGFuIGhvdXIsIG1hdGNoaW5nIHRoZSBvcmlnaW5hbCdzIGNhY2hlIHBvbGljeS4KICAgIC8vLyA8L3N1bW1hcnk+CiAgICBwdWJsaWMgYXN5bmMgVGFzazxzdHJpbmc/PiBHZXRNYWNBc3luYyhzdHJpbmcgaXBBZGRyZXNzLCBDYW5jZWxsYXRpb25Ub2tlbiBjdCA9IGRlZmF1bHQpCiAgICB7CiAgICAgICAgLy8gMS4gT3VyIG93biBhZGFwdGVycyBhbnN3ZXIgaW5zdGFudGx5IGFuZCBhdXRob3JpdGF0aXZlbHkuCiAgICAgICAgdmFyIGxvY2FsID0gVHJ5TG9jYWxBZGFwdGVyTWFjKGlwQWRkcmVzcyk7CiAgICAgICAgaWYgKGxvY2FsIGlzIG5vdCBudWxsKQogICAgICAgIHsKICAgICAgICAgICAgQXBwTG9nLkluc3RhbmNlLkxvZyhuYW1lb2YoQXJwVGFibGUpLCAkIuS7juacrOWcsOmAgumFjeWZqOS4reiOt+WPlntpcEFkZHJlc3N95a+55bqU55qETUFD44CQe2xvY2FsfeOAkSIpOwogICAgICAgICAgICByZXR1cm4gbG9jYWw7CiAgICAgICAgfQoKICAgICAgICAvLyAyLiBIb3VyLWxvbmcgY2FjaGUuCiAgICAgICAgaWYgKFNjYW5DYWNoZXMuTWFjQWRkcmVzc2VzLlRyeUdldChpcEFkZHJlc3MsIG91dCB2YXIgY2FjaGVkKSkgcmV0dXJuIGNhY2hlZDsKCiAgICAgICAgLy8gMy4gQ29uc3VsdCB0aGUgQVJQIHRhYmxlIHNuYXBzaG90LgogICAgICAgIGF3YWl0IEZsdXNoQXRNb3N0SG91cmx5QXN5bmMoY3QpLkNvbmZpZ3VyZUF3YWl0KGZhbHNlKTsKICAgICAgICB2YXIgdGFibGUgPSBhd2FpdCBHZXRTbmFwc2hvdEFzeW5jKGZvcmNlOiBmYWxzZSwgY3QpLkNvbmZpZ3VyZUF3YWl0KGZhbHNlKTsKICAgICAgICBpZiAodGFibGUuVHJ5R2V0VmFsdWUoaXBBZGRyZXNzLCBvdXQgdmFyIG1hYykpCiAgICAgICAgewogICAgICAgICAgICB2YXIgbm9ybWFsaXplZCA9IG1hYy5Ub1VwcGVySW52YXJpYW50KCk7CiAgICAgICAgICAgIFNjYW5DYWNoZXMuTWFjQWRkcmVzc2VzLlNldChpcEFkZHJlc3MsIG5vcm1hbGl6ZWQpOwogICAgICAgICAgICBBcHBMb2cuSW5zdGFuY2UuTG9nKG5hbWVvZihBcnBUYWJsZSksICQi5LuOQVJQ6KGo5Lit6I635Y+We2lwQWRkcmVzc33lr7nlupTnmoRNQUPjgJB7bm9ybWFsaXplZH3jgJEiKTsKICAgICAgICAgICAgcmV0dXJuIG5vcm1hbGl6ZWQ7CiAgICAgICAgfQoKICAgICAgICByZXR1cm4gbnVsbDsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+VHJ1ZSB3aGVuIHRoZSBBUlAgY2FjaGUga25vd3MgdGhlIGFkZHJlc3Mg4oCUIHRoZSB2MS4yOCBsaXZlbmVzcyBmYWxsYmFjay48L3N1bW1hcnk+CiAgICBwdWJsaWMgYXN5bmMgVGFzazxib29sPiBJc09ubGluZUJ5QXJwQXN5bmMoc3RyaW5nIGlwQWRkcmVzcywgQ2FuY2VsbGF0aW9uVG9rZW4gY3QgPSBkZWZhdWx0KSA9PgogICAgICAgICFzdHJpbmcuSXNOdWxsT3JFbXB0eShhd2FpdCBHZXRNYWNBc3luYyhpcEFkZHJlc3MsIGN0KS5Db25maWd1cmVBd2FpdChmYWxzZSkpOwoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBSZXR1cm5zIHRoZSB3aG9sZSBJUCDihpIgTUFDIG1hcCwgcnVubmluZyA8Yz5hcnAgLWE8L2M+IHdoZW4gdGhlIHNuYXBzaG90IGhhcwogICAgLy8vIGV4cGlyZWQuIENvbmN1cnJlbnQgY2FsbGVycyBzaGFyZSBvbmUgc25hcHNob3QuCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgcHVibGljIGFzeW5jIFRhc2s8SVJlYWRPbmx5RGljdGlvbmFyeTxzdHJpbmcsIHN0cmluZz4+IEdldFNuYXBzaG90QXN5bmMoYm9vbCBmb3JjZSwgQ2FuY2VsbGF0aW9uVG9rZW4gY3QgPSBkZWZhdWx0KQogICAgewogICAgICAgIGlmICghZm9yY2UgJiYgX2Nsb2NrLkdldFV0Y05vdygpIC0gX3NuYXBzaG90QXQgPCBfc25hcHNob3RUdGwpIHJldHVybiBfc25hcHNob3Q7CgogICAgICAgIGF3YWl0IF9nYXRlLldhaXRBc3luYyhjdCkuQ29uZmlndXJlQXdhaXQoZmFsc2UpOwogICAgICAgIHRyeQogICAgICAgIHsKICAgICAgICAgICAgaWYgKCFmb3JjZSAmJiBfY2xvY2suR2V0VXRjTm93KCkgLSBfc25hcHNob3RBdCA8IF9zbmFwc2hvdFR0bCkgcmV0dXJuIF9zbmFwc2hvdDsKICAgICAgICAgICAgX3NuYXBzaG90ID0gYXdhaXQgUmVhZEFycFRhYmxlQXN5bmMoY3QpLkNvbmZpZ3VyZUF3YWl0KGZhbHNlKTsKICAgICAgICAgICAgX3NuYXBzaG90QXQgPSBfY2xvY2suR2V0VXRjTm93KCk7CiAgICAgICAgICAgIHJldHVybiBfc25hcHNob3Q7CiAgICAgICAgfQogICAgICAgIGZpbmFsbHkKICAgICAgICB7CiAgICAgICAgICAgIF9nYXRlLlJlbGVhc2UoKTsKICAgICAgICB9CiAgICB9CgogICAgLy8vIDxzdW1tYXJ5PkRyb3BzIHRoZSBzbmFwc2hvdCBhbmQgdGhlIHBlci1hZGRyZXNzIGNhY2hlLjwvc3VtbWFyeT4KICAgIHB1YmxpYyB2b2lkIEludmFsaWRhdGUoKQogICAgewogICAgICAgIF9zbmFwc2hvdEF0ID0gRGF0ZVRpbWVPZmZzZXQuTWluVmFsdWU7CiAgICAgICAgX3NuYXBzaG90LkNsZWFyKCk7CiAgICAgICAgU2NhbkNhY2hlcy5NYWNBZGRyZXNzZXMuQ2xlYXIoKTsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+UnVucyA8Yz5hcnAgLWQgKjwvYz4sIGJ1dCBubyBtb3JlIHRoYW4gb25jZSBhbiBob3VyIGxpa2UgdGhlIG9yaWdpbmFsLjwvc3VtbWFyeT4KICAgIHByaXZhdGUgYXN5bmMgVGFzayBGbHVzaEF0TW9zdEhvdXJseUFzeW5jKENhbmNlbGxhdGlvblRva2VuIGN0KQogICAgewogICAgICAgIHZhciBub3cgPSBfY2xvY2suR2V0VXRjTm93KCk7CiAgICAgICAgaWYgKG5vdyAtIF9sYXN0Rmx1c2ggPCBUaW1lU3Bhbi5Gcm9tSG91cnMoMSkpIHJldHVybjsKICAgICAgICBfbGFzdEZsdXNoID0gbm93OwogICAgICAgIHRyeQogICAgICAgIHsKICAgICAgICAgICAgYXdhaXQgUnVuUHJvY2Vzc0FzeW5jKCJhcnAiLCAiLWQgKiIsIGN0KS5Db25maWd1cmVBd2FpdChmYWxzZSk7CiAgICAgICAgICAgIF9zbmFwc2hvdEF0ID0gRGF0ZVRpbWVPZmZzZXQuTWluVmFsdWU7CiAgICAgICAgfQogICAgICAgIGNhdGNoCiAgICAgICAgewogICAgICAgICAgICAvLyBGbHVzaGluZyBuZWVkcyBlbGV2YXRpb24gaW4gc29tZSBjb25maWd1cmF0aW9uczsgYSBmYWlsdXJlIGp1c3QKICAgICAgICAgICAgLy8gbWVhbnMgd2UgcmVhZCBhIHN0YWxlciB0YWJsZS4KICAgICAgICB9CiAgICB9CgogICAgcHJpdmF0ZSBhc3luYyBUYXNrPERpY3Rpb25hcnk8c3RyaW5nLCBzdHJpbmc+PiBSZWFkQXJwVGFibGVBc3luYyhDYW5jZWxsYXRpb25Ub2tlbiBjdCkKICAgIHsKICAgICAgICB2YXIgbWFwID0gbmV3IERpY3Rpb25hcnk8c3RyaW5nLCBzdHJpbmc+KFN0cmluZ0NvbXBhcmVyLk9yZGluYWxJZ25vcmVDYXNlKTsKICAgICAgICBzdHJpbmcgb3V0cHV0OwogICAgICAgIHRyeQogICAgICAgIHsKICAgICAgICAgICAgb3V0cHV0ID0gYXdhaXQgUnVuUHJvY2Vzc0FzeW5jKCJhcnAiLCAiLWEiLCBjdCkuQ29uZmlndXJlQXdhaXQoZmFsc2UpOwogICAgICAgIH0KICAgICAgICBjYXRjaCAoRXhjZXB0aW9uIGV4KQogICAgICAgIHsKICAgICAgICAgICAgQXBwTG9nLkluc3RhbmNlLkxvZyhuYW1lb2YoQXJwVGFibGUpLCAi6K+75Y+WQVJQ6KGo5aSx6LSlOiAiICsgZXguTWVzc2FnZSk7CiAgICAgICAgICAgIHJldHVybiBtYXA7CiAgICAgICAgfQoKICAgICAgICBmb3JlYWNoIChNYXRjaCBtIGluIEFycFJvd1JlZ2V4KCkuTWF0Y2hlcyhvdXRwdXQpKQogICAgICAgIHsKICAgICAgICAgICAgdmFyIGlwID0gbS5Hcm91cHNbMV0uVmFsdWU7CiAgICAgICAgICAgIHZhciBtYWMgPSBtLkdyb3Vwc1syXS5WYWx1ZTsKICAgICAgICAgICAgaWYgKCFNYWNPbmx5UmVnZXgoKS5Jc01hdGNoKG1hYykpIGNvbnRpbnVlOwogICAgICAgICAgICBtYXBbaXBdID0gbWFjOwogICAgICAgIH0KCiAgICAgICAgcmV0dXJuIG1hcDsKICAgIH0KCiAgICBwcml2YXRlIHN0cmluZz8gVHJ5TG9jYWxBZGFwdGVyTWFjKHN0cmluZyBpcEFkZHJlc3MpCiAgICB7CiAgICAgICAgaWYgKF9hZGFwdGVyUHJvdmlkZXIgaXMgbnVsbCkgcmV0dXJuIG51bGw7CiAgICAgICAgdHJ5CiAgICAgICAgewogICAgICAgICAgICB2YXIgbWF0Y2ggPSBfYWRhcHRlclByb3ZpZGVyKCkuRmlyc3RPckRlZmF1bHQoYSA9PgogICAgICAgICAgICAgICAgc3RyaW5nLkVxdWFscyhhLklQLCBpcEFkZHJlc3MsIFN0cmluZ0NvbXBhcmlzb24uT3JkaW5hbElnbm9yZUNhc2UpKTsKICAgICAgICAgICAgaWYgKG1hdGNoIGlzIG51bGwgfHwgc3RyaW5nLklzTnVsbE9yRW1wdHkobWF0Y2guTWFjKSkgcmV0dXJuIG51bGw7CiAgICAgICAgICAgIHJldHVybiBtYXRjaC5NYWMuUmVwbGFjZSgnOicsICctJyk7CiAgICAgICAgfQogICAgICAgIGNhdGNoCiAgICAgICAgewogICAgICAgICAgICByZXR1cm4gbnVsbDsKICAgICAgICB9CiAgICB9CgogICAgcHJpdmF0ZSBzdGF0aWMgYXN5bmMgVGFzazxzdHJpbmc+IFJ1blByb2Nlc3NBc3luYyhzdHJpbmcgZmlsZU5hbWUsIHN0cmluZyBhcmd1bWVudHMsIENhbmNlbGxhdGlvblRva2VuIGN0KQogICAgewogICAgICAgIHVzaW5nIHZhciBwcm9jZXNzID0gbmV3IFByb2Nlc3MKICAgICAgICB7CiAgICAgICAgICAgIFN0YXJ0SW5mbyA9IG5ldyBQcm9jZXNzU3RhcnRJbmZvKGZpbGVOYW1lLCBhcmd1bWVudHMpCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIFJlZGlyZWN0U3RhbmRhcmRPdXRwdXQgPSB0cnVlLAogICAgICAgICAgICAgICAgLy8gc3RkZXJyIG11c3QgYmUgY2FwdHVyZWQgdG9vOiBgYXJwIC1kICpgIHByaW50cyAi5ouS57ud6K6/6ZeuIiB3aGVuIHRoZQogICAgICAgICAgICAgICAgLy8gcHJvY2VzcyBpcyBub3QgZWxldmF0ZWQsIGFuZCBhbiB1bmNhcHR1cmVkIHN0cmVhbSB3cml0ZXMgdGhhdAogICAgICAgICAgICAgICAgLy8gc3RyYWlnaHQgb250byB0aGUgcGFyZW50IGNvbnNvbGUuCiAgICAgICAgICAgICAgICBSZWRpcmVjdFN0YW5kYXJkRXJyb3IgPSB0cnVlLAogICAgICAgICAgICAgICAgVXNlU2hlbGxFeGVjdXRlID0gZmFsc2UsCiAgICAgICAgICAgICAgICBDcmVhdGVOb1dpbmRvdyA9IHRydWUsCiAgICAgICAgICAgICAgICBTdGFuZGFyZE91dHB1dEVuY29kaW5nID0gU3lzdGVtLlRleHQuRW5jb2RpbmcuRGVmYXVsdCwKICAgICAgICAgICAgICAgIFN0YW5kYXJkRXJyb3JFbmNvZGluZyA9IFN5c3RlbS5UZXh0LkVuY29kaW5nLkRlZmF1bHQsCiAgICAgICAgICAgIH0sCiAgICAgICAgfTsKCiAgICAgICAgcHJvY2Vzcy5TdGFydCgpOwoKICAgICAgICAvLyBEcmFpbiBib3RoIHBpcGVzIGNvbmN1cnJlbnRseTsgcmVhZGluZyB0aGVtIGluIHNlcXVlbmNlIGNhbiBkZWFkbG9jay4KICAgICAgICB2YXIgc3Rkb3V0ID0gcHJvY2Vzcy5TdGFuZGFyZE91dHB1dC5SZWFkVG9FbmRBc3luYyhjdCk7CiAgICAgICAgdmFyIHN0ZGVyciA9IHByb2Nlc3MuU3RhbmRhcmRFcnJvci5SZWFkVG9FbmRBc3luYyhjdCk7CiAgICAgICAgYXdhaXQgVGFzay5XaGVuQWxsKHN0ZG91dCwgc3RkZXJyKS5Db25maWd1cmVBd2FpdChmYWxzZSk7CiAgICAgICAgYXdhaXQgcHJvY2Vzcy5XYWl0Rm9yRXhpdEFzeW5jKGN0KS5Db25maWd1cmVBd2FpdChmYWxzZSk7CgogICAgICAgIHZhciBlcnJvciA9IHN0ZGVyci5SZXN1bHQ7CiAgICAgICAgaWYgKCFzdHJpbmcuSXNOdWxsT3JXaGl0ZVNwYWNlKGVycm9yKSkKICAgICAgICB7CiAgICAgICAgICAgIEFwcExvZy5JbnN0YW5jZS5Mb2cobmFtZW9mKEFycFRhYmxlKSwgJCJ7ZmlsZU5hbWV9IHthcmd1bWVudHN9IC0+IHtlcnJvci5UcmltKCl9Iik7CiAgICAgICAgfQoKICAgICAgICByZXR1cm4gc3Rkb3V0LlJlc3VsdDsKICAgIH0KfQo=
+using System.Diagnostics;
+using System.Text.RegularExpressions;
+using IPScaner.Core.Caching;
+using IPScaner.Core.Logging;
+using IPScaner.Core.Models;
+
+namespace IPScaner.Core.Net;
+
+/// <summary>
+/// Reads MAC addresses out of the Windows ARP cache.
+/// </summary>
+/// <remarks>
+/// Behaviourally equivalent to the original <c>Utility.GetMacAddressFromARP</c>:
+/// a host that is one of our own adapter addresses is answered from the adapter
+/// list, otherwise the address is looked up in the ARP table, and the table is
+/// flushed with <c>arp -d *</c> at most once per hour so stale entries do not
+/// masquerade as live hosts.
+/// <para>
+/// One important difference: the original spawned a fresh <c>arp -a</c> process
+/// <i>for every host</i>, so a /24 sweep with name lookup enabled launched ~254
+/// processes. This class snapshots the whole table once and reuses it for a short
+/// window, which yields identical results far faster.
+/// </para>
+/// </remarks>
+public sealed partial class ArpTable
+{
+    [GeneratedRegex(@"^\s*(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s+([0-9A-Fa-f]{2}(?:[-:][0-9A-Fa-f]{2}){5})\s*",
+        RegexOptions.Compiled | RegexOptions.Multiline)]
+    private static partial Regex ArpRowRegex();
+
+    [GeneratedRegex(@"^([0-9A-Fa-f]{2}[-:]){5}[0-9A-Fa-f]{2}$", RegexOptions.Compiled)]
+    private static partial Regex MacOnlyRegex();
+
+    private readonly SemaphoreSlim _gate = new(1, 1);
+    private readonly TimeSpan _snapshotTtl;
+    private readonly Func<IReadOnlyList<AdapterInfo>>? _adapterProvider;
+    private readonly TimeProvider _clock;
+
+    private Dictionary<string, string> _snapshot = new(StringComparer.OrdinalIgnoreCase);
+    private DateTimeOffset _snapshotAt = DateTimeOffset.MinValue;
+    private DateTimeOffset _lastFlush = DateTimeOffset.MinValue;
+
+    public ArpTable(
+        Func<IReadOnlyList<AdapterInfo>>? adapterProvider = null,
+        TimeSpan? snapshotTtl = null,
+        TimeProvider? clock = null)
+    {
+        _adapterProvider = adapterProvider;
+        _snapshotTtl = snapshotTtl ?? TimeSpan.FromSeconds(3);
+        _clock = clock ?? TimeProvider.System;
+    }
+
+    /// <summary>
+    /// Resolves the MAC for an address, or null when it is not in the ARP cache.
+    /// Results are memoised for an hour, matching the original's cache policy.
+    /// </summary>
+    public async Task<string?> GetMacAsync(string ipAddress, CancellationToken ct = default)
+    {
+        // 1. Our own adapters answer instantly and authoritatively.
+        var local = TryLocalAdapterMac(ipAddress);
+        if (local is not null)
+        {
+            AppLog.Instance.Log(nameof(ArpTable), $"从本地适配器中获取{ipAddress}对应的MAC【{local}】");
+            return local;
+        }
+
+        // 2. Hour-long cache.
+        if (ScanCaches.MacAddresses.TryGet(ipAddress, out var cached)) return cached;
+
+        // 3. Consult the ARP table snapshot.
+        await FlushAtMostHourlyAsync(ct).ConfigureAwait(false);
+        var table = await GetSnapshotAsync(force: false, ct).ConfigureAwait(false);
+        if (table.TryGetValue(ipAddress, out var mac))
+        {
+            var normalized = mac.ToUpperInvariant();
+            ScanCaches.MacAddresses.Set(ipAddress, normalized);
+            AppLog.Instance.Log(nameof(ArpTable), $"从ARP表中获取{ipAddress}对应的MAC【{normalized}】");
+            return normalized;
+        }
+
+        return null;
+    }
+
+    /// <summary>True when the ARP cache knows the address — the v1.28 liveness fallback.</summary>
+    public async Task<bool> IsOnlineByArpAsync(string ipAddress, CancellationToken ct = default) =>
+        !string.IsNullOrEmpty(await GetMacAsync(ipAddress, ct).ConfigureAwait(false));
+
+    /// <summary>
+    /// Returns the whole IP → MAC map, running <c>arp -a</c> when the snapshot has
+    /// expired. Concurrent callers share one snapshot.
+    /// </summary>
+    public async Task<IReadOnlyDictionary<string, string>> GetSnapshotAsync(bool force, CancellationToken ct = default)
+    {
+        if (!force && _clock.GetUtcNow() - _snapshotAt < _snapshotTtl) return _snapshot;
+
+        await _gate.WaitAsync(ct).ConfigureAwait(false);
+        try
+        {
+            if (!force && _clock.GetUtcNow() - _snapshotAt < _snapshotTtl) return _snapshot;
+            _snapshot = await ReadArpTableAsync(ct).ConfigureAwait(false);
+            _snapshotAt = _clock.GetUtcNow();
+            return _snapshot;
+        }
+        finally
+        {
+            _gate.Release();
+        }
+    }
+
+    /// <summary>Drops the snapshot and the per-address cache.</summary>
+    public void Invalidate()
+    {
+        _snapshotAt = DateTimeOffset.MinValue;
+        _snapshot.Clear();
+        ScanCaches.MacAddresses.Clear();
+    }
+
+    /// <summary>Runs <c>arp -d *</c>, but no more than once an hour like the original.</summary>
+    private async Task FlushAtMostHourlyAsync(CancellationToken ct)
+    {
+        var now = _clock.GetUtcNow();
+        if (now - _lastFlush < TimeSpan.FromHours(1)) return;
+        _lastFlush = now;
+        try
+        {
+            await RunProcessAsync("arp", "-d *", ct).ConfigureAwait(false);
+            _snapshotAt = DateTimeOffset.MinValue;
+        }
+        catch
+        {
+            // Flushing needs elevation in some configurations; a failure just
+            // means we read a staler table.
+        }
+    }
+
+    private async Task<Dictionary<string, string>> ReadArpTableAsync(CancellationToken ct)
+    {
+        var map = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+        string output;
+        try
+        {
+            output = await RunProcessAsync("arp", "-a", ct).ConfigureAwait(false);
+        }
+        catch (Exception ex)
+        {
+            AppLog.Instance.Log(nameof(ArpTable), "读取ARP表失败: " + ex.Message);
+            return map;
+        }
+
+        foreach (Match m in ArpRowRegex().Matches(output))
+        {
+            var ip = m.Groups[1].Value;
+            var mac = m.Groups[2].Value;
+            if (!MacOnlyRegex().IsMatch(mac)) continue;
+            map[ip] = mac;
+        }
+
+        return map;
+    }
+
+    private string? TryLocalAdapterMac(string ipAddress)
+    {
+        if (_adapterProvider is null) return null;
+        try
+        {
+            var match = _adapterProvider().FirstOrDefault(a =>
+                string.Equals(a.IP, ipAddress, StringComparison.OrdinalIgnoreCase));
+            if (match is null || string.IsNullOrEmpty(match.Mac)) return null;
+            return match.Mac.Replace(':', '-');
+        }
+        catch
+        {
+            return null;
+        }
+    }
+
+    private static async Task<string> RunProcessAsync(string fileName, string arguments, CancellationToken ct)
+    {
+        using var process = new Process
+        {
+            StartInfo = new ProcessStartInfo(fileName, arguments)
+            {
+                RedirectStandardOutput = true,
+                // stderr must be captured too: `arp -d *` prints "拒绝访问" when the
+                // process is not elevated, and an uncaptured stream writes that
+                // straight onto the parent console.
+                RedirectStandardError = true,
+                UseShellExecute = false,
+                CreateNoWindow = true,
+                StandardOutputEncoding = System.Text.Encoding.Default,
+                StandardErrorEncoding = System.Text.Encoding.Default,
+            },
+        };
+
+        process.Start();
+
+        // Drain both pipes concurrently; reading them in sequence can deadlock.
+        var stdout = process.StandardOutput.ReadToEndAsync(ct);
+        var stderr = process.StandardError.ReadToEndAsync(ct);
+        await Task.WhenAll(stdout, stderr).ConfigureAwait(false);
+        await process.WaitForExitAsync(ct).ConfigureAwait(false);
+
+        var error = stderr.Result;
+        if (!string.IsNullOrWhiteSpace(error))
+        {
+            AppLog.Instance.Log(nameof(ArpTable), $"{fileName} {arguments} -> {error.Trim()}");
+        }
+
+        return stdout.Result;
+    }
+}

@@ -1,1 +1,207 @@
-dXNpbmcgU3lzdGVtLkRpYWdub3N0aWNzOwp1c2luZyBTeXN0ZW0uUnVudGltZS5JbnRlcm9wU2VydmljZXM7CnVzaW5nIElQU2NhbmVyLkNvcmUuTG9nZ2luZzsKdXNpbmcgTWljcm9zb2Z0LlVJOwp1c2luZyBNaWNyb3NvZnQuVUkuWGFtbDsKdXNpbmcgTWljcm9zb2Z0LlVJLlhhbWwuQ29udHJvbHM7CnVzaW5nIE1pY3Jvc29mdC5VSS5YYW1sLk1lZGlhOwp1c2luZyBXaW5kb3dzLkFwcGxpY2F0aW9uTW9kZWwuRGF0YVRyYW5zZmVyOwp1c2luZyBXaW5kb3dzLlVJOwoKbmFtZXNwYWNlIElQU2NhbmVyLldpblVJLlNlcnZpY2VzOwoKLy8vIDxzdW1tYXJ5PgovLy8gU21hbGwgVUkgaGVscGVycyBzaGFyZWQgYnkgZXZlcnkgcGFnZTogY29sb3VyIGNvbnZlcnNpb24sIGRpYWxvZ3MsIGNsaXBib2FyZAovLy8gYW5kIGVsZXZhdGlvbiByZXN0YXJ0LgovLy8gPC9zdW1tYXJ5PgovLy8gPHJlbWFya3M+Ci8vLyBXaW5VSSAzIGhhcyBubyA8Yz5NZXNzYWdlQm94PC9jPiwgc28gdGhlIG9yaWdpbmFsJ3MgbW9kYWwgcHJvbXB0cyBhcmUgYWxsCi8vLyBleHByZXNzZWQgYXMgPHNlZSBjcmVmPSJDb250ZW50RGlhbG9nIi8+LiBBIGRpYWxvZyBuZWVkcyBhIGxpdmUKLy8vIDxzZWUgY3JlZj0iWGFtbFJvb3QiLz4sIHdoaWNoIGlzIHdoeSBldmVyeSBoZWxwZXIgcmVxdWlyZXMgb25lLgovLy8gPC9yZW1hcmtzPgpwdWJsaWMgc3RhdGljIGNsYXNzIFVpS2l0CnsKICAgIC8vIC0tLS0gY29sb3VyIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBDb252ZXJ0cyB0aGUgdG9vbCdzIHNpZ25lZCBBUkdCIGludGVnZXIgKFdpbkZvcm1zIDxjPkNvbG9yLlRvQXJnYigpPC9jPgogICAgLy8vIGNvbnZlbnRpb24sIGUuZy4gU2t5Qmx1ZSA9IC03ODc2ODg1KSB0byBhIFdpblVJIDxzZWUgY3JlZj0iQ29sb3IiLz4uCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgcHVibGljIHN0YXRpYyBDb2xvciBDb2xvckZyb21BcmdiKGludCBhcmdiKQogICAgewogICAgICAgIHZhciB1ID0gdW5jaGVja2VkKCh1aW50KWFyZ2IpOwogICAgICAgIHJldHVybiBDb2xvci5Gcm9tQXJnYigKICAgICAgICAgICAgKGJ5dGUpKCh1ID4+IDI0KSAmIDB4RkYpLAogICAgICAgICAgICAoYnl0ZSkoKHUgPj4gMTYpICYgMHhGRiksCiAgICAgICAgICAgIChieXRlKSgodSA+PiA4KSAmIDB4RkYpLAogICAgICAgICAgICAoYnl0ZSkodSAmIDB4RkYpKTsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+Q29udmVydHMgYSBXaW5VSSBjb2xvdXIgYmFjayB0byB0aGUgc2lnbmVkIEFSR0IgaW50ZWdlciB0aGUgY29uZmlnIGZpbGUgc3RvcmVzLjwvc3VtbWFyeT4KICAgIHB1YmxpYyBzdGF0aWMgaW50IEFyZ2JGcm9tQ29sb3IoQ29sb3IgYykgPT4KICAgICAgICB1bmNoZWNrZWQoKGludCkoKCh1aW50KWMuQSA8PCAyNCkgfCAoKHVpbnQpYy5SIDw8IDE2KSB8ICgodWludCljLkcgPDwgOCkgfCBjLkIpKTsKCiAgICBwdWJsaWMgc3RhdGljIFNvbGlkQ29sb3JCcnVzaCBCcnVzaEZyb21BcmdiKGludCBhcmdiKSA9PiBuZXcoQ29sb3JGcm9tQXJnYihhcmdiKSk7CgogICAgLy8vIDxzdW1tYXJ5PlBpY2tzIGJsYWNrIG9yIHdoaXRlIHRleHQgZm9yIGxlZ2liaWxpdHkgb24gYSBnaXZlbiBiYWNrZ3JvdW5kLjwvc3VtbWFyeT4KICAgIHB1YmxpYyBzdGF0aWMgQ29sb3IgQ29udHJhc3RpbmdUZXh0Q29sb3IoQ29sb3IgYmFja2dyb3VuZCkKICAgIHsKICAgICAgICB2YXIgbHVtaW5hbmNlID0gKDAuMjk5ICogYmFja2dyb3VuZC5SICsgMC41ODcgKiBiYWNrZ3JvdW5kLkcgKyAwLjExNCAqIGJhY2tncm91bmQuQikgLyAyNTUuMDsKICAgICAgICByZXR1cm4gbHVtaW5hbmNlID4gMC41NSA/IENvbG9ycy5CbGFjayA6IENvbG9ycy5XaGl0ZTsKICAgIH0KCiAgICAvLyAtLS0tIGNsaXBib2FyZCAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCiAgICAvLy8gPHN1bW1hcnk+Q29waWVzIHRleHQgdG8gdGhlIHN5c3RlbSBjbGlwYm9hcmQsIHJlcG9ydGluZyBmYWlsdXJlIHJhdGhlciB0aGFuIHRocm93aW5nLjwvc3VtbWFyeT4KICAgIHB1YmxpYyBzdGF0aWMgYm9vbCBDb3B5VG9DbGlwYm9hcmQoc3RyaW5nIHRleHQpCiAgICB7CiAgICAgICAgdHJ5CiAgICAgICAgewogICAgICAgICAgICB2YXIgcGFja2FnZSA9IG5ldyBEYXRhUGFja2FnZSB7IFJlcXVlc3RlZE9wZXJhdGlvbiA9IERhdGFQYWNrYWdlT3BlcmF0aW9uLkNvcHkgfTsKICAgICAgICAgICAgcGFja2FnZS5TZXRUZXh0KHRleHQgPz8gc3RyaW5nLkVtcHR5KTsKICAgICAgICAgICAgQ2xpcGJvYXJkLlNldENvbnRlbnQocGFja2FnZSk7CiAgICAgICAgICAgIENsaXBib2FyZC5GbHVzaCgpOyAvLyBrZWVwcyB0aGUgY29udGVudCBhZnRlciB0aGUgYXBwIGV4aXRzCiAgICAgICAgICAgIHJldHVybiB0cnVlOwogICAgICAgIH0KICAgICAgICBjYXRjaCAoRXhjZXB0aW9uIGV4KQogICAgICAgIHsKICAgICAgICAgICAgQXBwTG9nLkluc3RhbmNlLkxvZyhuYW1lb2YoVWlLaXQpLCAi5YaZ5YWl5Ymq6LS05p2/5aSx6LSlOiAiICsgZXguTWVzc2FnZSk7CiAgICAgICAgICAgIHJldHVybiBmYWxzZTsKICAgICAgICB9CiAgICB9CgogICAgLy8vIDxzdW1tYXJ5PlJlYWRzIHRleHQgZnJvbSB0aGUgY2xpcGJvYXJkLCBvciBhbiBlbXB0eSBzdHJpbmcuPC9zdW1tYXJ5PgogICAgcHVibGljIHN0YXRpYyBhc3luYyBUYXNrPHN0cmluZz4gUmVhZENsaXBib2FyZEFzeW5jKCkKICAgIHsKICAgICAgICB0cnkKICAgICAgICB7CiAgICAgICAgICAgIHZhciB2aWV3ID0gQ2xpcGJvYXJkLkdldENvbnRlbnQoKTsKICAgICAgICAgICAgaWYgKCF2aWV3LkNvbnRhaW5zKFN0YW5kYXJkRGF0YUZvcm1hdHMuVGV4dCkpIHJldHVybiBzdHJpbmcuRW1wdHk7CiAgICAgICAgICAgIHJldHVybiBhd2FpdCB2aWV3LkdldFRleHRBc3luYygpOwogICAgICAgIH0KICAgICAgICBjYXRjaAogICAgICAgIHsKICAgICAgICAgICAgcmV0dXJuIHN0cmluZy5FbXB0eTsKICAgICAgICB9CiAgICB9CgogICAgLy8gLS0tLSBkaWFsb2dzIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgogICAgcHVibGljIHN0YXRpYyBhc3luYyBUYXNrIEluZm9Bc3luYyhYYW1sUm9vdD8gcm9vdCwgc3RyaW5nIHRpdGxlLCBzdHJpbmcgbWVzc2FnZSkKICAgIHsKICAgICAgICBpZiAocm9vdCBpcyBudWxsKSByZXR1cm47CiAgICAgICAgdmFyIGRpYWxvZyA9IG5ldyBDb250ZW50RGlhbG9nCiAgICAgICAgewogICAgICAgICAgICBYYW1sUm9vdCA9IHJvb3QsCiAgICAgICAgICAgIFRpdGxlID0gdGl0bGUsCiAgICAgICAgICAgIENvbnRlbnQgPSBuZXcgVGV4dEJsb2NrIHsgVGV4dCA9IG1lc3NhZ2UsIFRleHRXcmFwcGluZyA9IFRleHRXcmFwcGluZy5XcmFwIH0sCiAgICAgICAgICAgIENsb3NlQnV0dG9uVGV4dCA9ICLnoa7lrpoiLAogICAgICAgICAgICBEZWZhdWx0QnV0dG9uID0gQ29udGVudERpYWxvZ0J1dHRvbi5DbG9zZSwKICAgICAgICB9OwogICAgICAgIGF3YWl0IFNob3dTYWZlQXN5bmMoZGlhbG9nKTsKICAgIH0KCiAgICBwdWJsaWMgc3RhdGljIGFzeW5jIFRhc2s8Ym9vbD4gQ29uZmlybUFzeW5jKAogICAgICAgIFhhbWxSb290PyByb290LCBzdHJpbmcgdGl0bGUsIHN0cmluZyBtZXNzYWdlLAogICAgICAgIHN0cmluZyBwcmltYXJ5VGV4dCA9ICLnoa7lrpoiLCBzdHJpbmcgY2xvc2VUZXh0ID0gIuWPlua2iCIpCiAgICB7CiAgICAgICAgaWYgKHJvb3QgaXMgbnVsbCkgcmV0dXJuIGZhbHNlOwogICAgICAgIHZhciBkaWFsb2cgPSBuZXcgQ29udGVudERpYWxvZwogICAgICAgIHsKICAgICAgICAgICAgWGFtbFJvb3QgPSByb290LAogICAgICAgICAgICBUaXRsZSA9IHRpdGxlLAogICAgICAgICAgICBDb250ZW50ID0gbmV3IFRleHRCbG9jayB7IFRleHQgPSBtZXNzYWdlLCBUZXh0V3JhcHBpbmcgPSBUZXh0V3JhcHBpbmcuV3JhcCB9LAogICAgICAgICAgICBQcmltYXJ5QnV0dG9uVGV4dCA9IHByaW1hcnlUZXh0LAogICAgICAgICAgICBDbG9zZUJ1dHRvblRleHQgPSBjbG9zZVRleHQsCiAgICAgICAgICAgIERlZmF1bHRCdXR0b24gPSBDb250ZW50RGlhbG9nQnV0dG9uLlByaW1hcnksCiAgICAgICAgfTsKICAgICAgICByZXR1cm4gYXdhaXQgU2hvd1NhZmVBc3luYyhkaWFsb2cpID09IENvbnRlbnREaWFsb2dSZXN1bHQuUHJpbWFyeTsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+CiAgICAvLy8gU2hvd3MgYSBkaWFsb2csIHN3YWxsb3dpbmcgdGhlICJvbmx5IG9uZSBDb250ZW50RGlhbG9nIG1heSBiZSBvcGVuIiBlcnJvcgogICAgLy8vIHRoYXQgY29uY3VycmVudCBzY2FucyBjYW4gb3RoZXJ3aXNlIHRyaWdnZXIuCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgcHVibGljIHN0YXRpYyBhc3luYyBUYXNrPENvbnRlbnREaWFsb2dSZXN1bHQ+IFNob3dTYWZlQXN5bmMoQ29udGVudERpYWxvZyBkaWFsb2cpCiAgICB7CiAgICAgICAgdHJ5CiAgICAgICAgewogICAgICAgICAgICByZXR1cm4gYXdhaXQgZGlhbG9nLlNob3dBc3luYygpOwogICAgICAgIH0KICAgICAgICBjYXRjaCAoRXhjZXB0aW9uIGV4KQogICAgICAgIHsKICAgICAgICAgICAgQXBwTG9nLkluc3RhbmNlLkxvZyhuYW1lb2YoVWlLaXQpLCAi5pi+56S65a+56K+d5qGG5aSx6LSlOiAiICsgZXguTWVzc2FnZSk7CiAgICAgICAgICAgIHJldHVybiBDb250ZW50RGlhbG9nUmVzdWx0Lk5vbmU7CiAgICAgICAgfQogICAgfQoKICAgIC8vLyA8c3VtbWFyeT5TaG93cyBhIGRpYWxvZyB3aG9zZSBib2R5IGlzIGFyYml0cmFyeSBjb250ZW50IChhIGNvbG91ciBwaWNrZXIsIGEgZ3JpZC4uLikuPC9zdW1tYXJ5PgogICAgcHVibGljIHN0YXRpYyBhc3luYyBUYXNrPENvbnRlbnREaWFsb2dSZXN1bHQ+IFNob3dDb250ZW50QXN5bmMoCiAgICAgICAgWGFtbFJvb3Q/IHJvb3QsIHN0cmluZyB0aXRsZSwgb2JqZWN0IGNvbnRlbnQsCiAgICAgICAgc3RyaW5nPyBwcmltYXJ5VGV4dCA9IG51bGwsIHN0cmluZz8gc2Vjb25kYXJ5VGV4dCA9IG51bGwsIHN0cmluZyBjbG9zZVRleHQgPSAi5YWz6ZetIikKICAgIHsKICAgICAgICBpZiAocm9vdCBpcyBudWxsKSByZXR1cm4gQ29udGVudERpYWxvZ1Jlc3VsdC5Ob25lOwogICAgICAgIHZhciBkaWFsb2cgPSBuZXcgQ29udGVudERpYWxvZwogICAgICAgIHsKICAgICAgICAgICAgWGFtbFJvb3QgPSByb290LAogICAgICAgICAgICBUaXRsZSA9IHRpdGxlLAogICAgICAgICAgICBDb250ZW50ID0gY29udGVudCwKICAgICAgICAgICAgUHJpbWFyeUJ1dHRvblRleHQgPSBwcmltYXJ5VGV4dCA/PyBzdHJpbmcuRW1wdHksCiAgICAgICAgICAgIFNlY29uZGFyeUJ1dHRvblRleHQgPSBzZWNvbmRhcnlUZXh0ID8/IHN0cmluZy5FbXB0eSwKICAgICAgICAgICAgQ2xvc2VCdXR0b25UZXh0ID0gY2xvc2VUZXh0LAogICAgICAgIH07CiAgICAgICAgaWYgKHN0cmluZy5Jc051bGxPckVtcHR5KHByaW1hcnlUZXh0KSkgZGlhbG9nLlByaW1hcnlCdXR0b25UZXh0ID0gc3RyaW5nLkVtcHR5OwogICAgICAgIHJldHVybiBhd2FpdCBTaG93U2FmZUFzeW5jKGRpYWxvZyk7CiAgICB9CgogICAgLy8gLS0tLSB3aW5kb3cgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgogICAgLy8vIDxzdW1tYXJ5PlRoZSBtYWluIHdpbmRvdydzIFhhbWxSb290LCBmb3IgZGlhbG9ncyByYWlzZWQgZnJvbSBzZXJ2aWNlcy48L3N1bW1hcnk+CiAgICBwdWJsaWMgc3RhdGljIFhhbWxSb290PyBNYWluWGFtbFJvb3QgPT4gQXBwLk1haW5XaW5kb3c/LkNvbnRlbnQ/LlhhbWxSb290OwoKICAgIC8vLyA8c3VtbWFyeT5CcmluZ3MgdGhlIG1haW4gd2luZG93IHRvIHRoZSBmb3JlZ3JvdW5kLjwvc3VtbWFyeT4KICAgIHB1YmxpYyBzdGF0aWMgdm9pZCBBY3RpdmF0ZU1haW5XaW5kb3coKQogICAgewogICAgICAgIHZhciB3aW5kb3cgPSBBcHAuTWFpbldpbmRvdzsKICAgICAgICBpZiAod2luZG93IGlzIG51bGwpIHJldHVybjsKICAgICAgICB3aW5kb3cuQWN0aXZhdGUoKTsKICAgICAgICB2YXIgaHduZCA9IFdpblJULkludGVyb3AuV2luZG93TmF0aXZlLkdldFdpbmRvd0hhbmRsZSh3aW5kb3cpOwogICAgICAgIFNob3dXaW5kb3coaHduZCwgU1dfUkVTVE9SRSk7CiAgICAgICAgU2V0Rm9yZWdyb3VuZFdpbmRvdyhod25kKTsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+VHJ1ZSB3aGVuIHRoZSBjdXJyZW50IHByb2Nlc3MgaXMgZWxldmF0ZWQuPC9zdW1tYXJ5PgogICAgcHVibGljIHN0YXRpYyBib29sIElzRWxldmF0ZWQgPT4gQXBwU2VydmljZXMuQ3VycmVudC5Jc0VsZXZhdGVkOwoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBSZWxhdW5jaGVzIHRoZSBhcHAgd2l0aCBhIFVBQyBwcm9tcHQuIFVzZWQgYnkg5L+u5pS55pys5ZywSVAgYW5kIEFSUCBmbHVzaCwKICAgIC8vLyB3aGljaCBuZWVkIGFkbWluaXN0cmF0b3IgcmlnaHRzOyB0aGUgb3JpZ2luYWwgc2ltcGx5IGZvcmNlZCBlbGV2YXRpb24gb24KICAgIC8vLyBldmVyeSBzdGFydC4KICAgIC8vLyA8L3N1bW1hcnk+CiAgICBwdWJsaWMgc3RhdGljIGJvb2wgUmVzdGFydEVsZXZhdGVkKCkKICAgIHsKICAgICAgICB0cnkKICAgICAgICB7CiAgICAgICAgICAgIHZhciBwYXRoID0gRW52aXJvbm1lbnQuUHJvY2Vzc1BhdGg7CiAgICAgICAgICAgIGlmIChzdHJpbmcuSXNOdWxsT3JFbXB0eShwYXRoKSkgcmV0dXJuIGZhbHNlOwogICAgICAgICAgICBQcm9jZXNzLlN0YXJ0KG5ldyBQcm9jZXNzU3RhcnRJbmZvKHBhdGgpIHsgVXNlU2hlbGxFeGVjdXRlID0gdHJ1ZSwgVmVyYiA9ICJydW5hcyIgfSk7CiAgICAgICAgICAgIEFwcGxpY2F0aW9uLkN1cnJlbnQuRXhpdCgpOwogICAgICAgICAgICByZXR1cm4gdHJ1ZTsKICAgICAgICB9CiAgICAgICAgY2F0Y2ggKEV4Y2VwdGlvbiBleCkKICAgICAgICB7CiAgICAgICAgICAgIEFwcExvZy5JbnN0YW5jZS5Mb2cobmFtZW9mKFVpS2l0KSwgIuaPkOadg+mHjeWQr+iiq+WPlua2iOaIluWksei0pTogIiArIGV4Lk1lc3NhZ2UpOwogICAgICAgICAgICByZXR1cm4gZmFsc2U7CiAgICAgICAgfQogICAgfQoKICAgIC8vIC0tLS0gaW50ZXJvcCAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIHByaXZhdGUgY29uc3QgaW50IFNXX1JFU1RPUkUgPSA5OwoKICAgIFtEbGxJbXBvcnQoInVzZXIzMi5kbGwiKV0KICAgIHByaXZhdGUgc3RhdGljIGV4dGVybiBib29sIFNldEZvcmVncm91bmRXaW5kb3coSW50UHRyIGhXbmQpOwoKICAgIFtEbGxJbXBvcnQoInVzZXIzMi5kbGwiKV0KICAgIHByaXZhdGUgc3RhdGljIGV4dGVybiBib29sIFNob3dXaW5kb3coSW50UHRyIGhXbmQsIGludCBuQ21kU2hvdyk7Cn0K
+using System.Diagnostics;
+using System.Runtime.InteropServices;
+using IPScaner.Core.Logging;
+using Microsoft.UI;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Media;
+using Windows.ApplicationModel.DataTransfer;
+using Windows.UI;
+
+namespace IPScaner.WinUI.Services;
+
+/// <summary>
+/// Small UI helpers shared by every page: colour conversion, dialogs, clipboard
+/// and elevation restart.
+/// </summary>
+/// <remarks>
+/// WinUI 3 has no <c>MessageBox</c>, so the original's modal prompts are all
+/// expressed as <see cref="ContentDialog"/>. A dialog needs a live
+/// <see cref="XamlRoot"/>, which is why every helper requires one.
+/// </remarks>
+public static class UiKit
+{
+    // ---- colour ------------------------------------------------------------
+
+    /// <summary>
+    /// Converts the tool's signed ARGB integer (WinForms <c>Color.ToArgb()</c>
+    /// convention, e.g. SkyBlue = -7876885) to a WinUI <see cref="Color"/>.
+    /// </summary>
+    public static Color ColorFromArgb(int argb)
+    {
+        var u = unchecked((uint)argb);
+        return Color.FromArgb(
+            (byte)((u >> 24) & 0xFF),
+            (byte)((u >> 16) & 0xFF),
+            (byte)((u >> 8) & 0xFF),
+            (byte)(u & 0xFF));
+    }
+
+    /// <summary>Converts a WinUI colour back to the signed ARGB integer the config file stores.</summary>
+    public static int ArgbFromColor(Color c) =>
+        unchecked((int)(((uint)c.A << 24) | ((uint)c.R << 16) | ((uint)c.G << 8) | c.B));
+
+    public static SolidColorBrush BrushFromArgb(int argb) => new(ColorFromArgb(argb));
+
+    /// <summary>Picks black or white text for legibility on a given background.</summary>
+    public static Color ContrastingTextColor(Color background)
+    {
+        var luminance = (0.299 * background.R + 0.587 * background.G + 0.114 * background.B) / 255.0;
+        return luminance > 0.55 ? Colors.Black : Colors.White;
+    }
+
+    // ---- clipboard ---------------------------------------------------------
+
+    /// <summary>Copies text to the system clipboard, reporting failure rather than throwing.</summary>
+    public static bool CopyToClipboard(string text)
+    {
+        try
+        {
+            var package = new DataPackage { RequestedOperation = DataPackageOperation.Copy };
+            package.SetText(text ?? string.Empty);
+            Clipboard.SetContent(package);
+            Clipboard.Flush(); // keeps the content after the app exits
+            return true;
+        }
+        catch (Exception ex)
+        {
+            AppLog.Instance.Log(nameof(UiKit), "写入剪贴板失败: " + ex.Message);
+            return false;
+        }
+    }
+
+    /// <summary>Reads text from the clipboard, or an empty string.</summary>
+    public static async Task<string> ReadClipboardAsync()
+    {
+        try
+        {
+            var view = Clipboard.GetContent();
+            if (!view.Contains(StandardDataFormats.Text)) return string.Empty;
+            return await view.GetTextAsync();
+        }
+        catch
+        {
+            return string.Empty;
+        }
+    }
+
+    // ---- dialogs -----------------------------------------------------------
+
+    public static async Task InfoAsync(XamlRoot? root, string title, string message)
+    {
+        if (root is null) return;
+        var dialog = new ContentDialog
+        {
+            XamlRoot = root,
+            Title = title,
+            Content = new TextBlock { Text = message, TextWrapping = TextWrapping.Wrap },
+            CloseButtonText = "确定",
+            DefaultButton = ContentDialogButton.Close,
+        };
+        await ShowSafeAsync(dialog);
+    }
+
+    public static async Task<bool> ConfirmAsync(
+        XamlRoot? root, string title, string message,
+        string primaryText = "确定", string closeText = "取消")
+    {
+        if (root is null) return false;
+        var dialog = new ContentDialog
+        {
+            XamlRoot = root,
+            Title = title,
+            Content = new TextBlock { Text = message, TextWrapping = TextWrapping.Wrap },
+            PrimaryButtonText = primaryText,
+            CloseButtonText = closeText,
+            DefaultButton = ContentDialogButton.Primary,
+        };
+        return await ShowSafeAsync(dialog) == ContentDialogResult.Primary;
+    }
+
+    /// <summary>
+    /// Shows a dialog, swallowing the "only one ContentDialog may be open" error
+    /// that concurrent scans can otherwise trigger.
+    /// </summary>
+    public static async Task<ContentDialogResult> ShowSafeAsync(ContentDialog dialog)
+    {
+        try
+        {
+            return await dialog.ShowAsync();
+        }
+        catch (Exception ex)
+        {
+            AppLog.Instance.Log(nameof(UiKit), "显示对话框失败: " + ex.Message);
+            return ContentDialogResult.None;
+        }
+    }
+
+    /// <summary>Shows a dialog whose body is arbitrary content (a colour picker, a grid...).</summary>
+    public static async Task<ContentDialogResult> ShowContentAsync(
+        XamlRoot? root, string title, object content,
+        string? primaryText = null, string? secondaryText = null, string closeText = "关闭")
+    {
+        if (root is null) return ContentDialogResult.None;
+        var dialog = new ContentDialog
+        {
+            XamlRoot = root,
+            Title = title,
+            Content = content,
+            PrimaryButtonText = primaryText ?? string.Empty,
+            SecondaryButtonText = secondaryText ?? string.Empty,
+            CloseButtonText = closeText,
+        };
+        if (string.IsNullOrEmpty(primaryText)) dialog.PrimaryButtonText = string.Empty;
+        return await ShowSafeAsync(dialog);
+    }
+
+    // ---- window ------------------------------------------------------------
+
+    /// <summary>The main window's XamlRoot, for dialogs raised from services.</summary>
+    public static XamlRoot? MainXamlRoot => App.MainWindow?.Content?.XamlRoot;
+
+    /// <summary>Brings the main window to the foreground.</summary>
+    public static void ActivateMainWindow()
+    {
+        var window = App.MainWindow;
+        if (window is null) return;
+        window.Activate();
+        var hwnd = WinRT.Interop.WindowNative.GetWindowHandle(window);
+        ShowWindow(hwnd, SW_RESTORE);
+        SetForegroundWindow(hwnd);
+    }
+
+    /// <summary>True when the current process is elevated.</summary>
+    public static bool IsElevated => AppServices.Current.IsElevated;
+
+    /// <summary>
+    /// Relaunches the app with a UAC prompt. Used by 修改本地IP and ARP flush,
+    /// which need administrator rights; the original simply forced elevation on
+    /// every start.
+    /// </summary>
+    public static bool RestartElevated()
+    {
+        try
+        {
+            var path = Environment.ProcessPath;
+            if (string.IsNullOrEmpty(path)) return false;
+            Process.Start(new ProcessStartInfo(path) { UseShellExecute = true, Verb = "runas" });
+            Application.Current.Exit();
+            return true;
+        }
+        catch (Exception ex)
+        {
+            AppLog.Instance.Log(nameof(UiKit), "提权重启被取消或失败: " + ex.Message);
+            return false;
+        }
+    }
+
+    // ---- interop -----------------------------------------------------------
+
+    private const int SW_RESTORE = 9;
+
+    [DllImport("user32.dll")]
+    private static extern bool SetForegroundWindow(IntPtr hWnd);
+
+    [DllImport("user32.dll")]
+    private static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+}

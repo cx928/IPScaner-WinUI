@@ -1,1 +1,97 @@
-dXNpbmcgU3lzdGVtLkRpYWdub3N0aWNzOwp1c2luZyBTeXN0ZW0uTmV0Lk5ldHdvcmtJbmZvcm1hdGlvbjsKdXNpbmcgSVBTY2FuZXIuQ29yZS5Db25maWd1cmF0aW9uOwp1c2luZyBJUFNjYW5lci5Db3JlLk5ldDsKCi8vIEhlYWRsZXNzIGNoZWNrIG9mIHRoZSBsaXZlbmVzcyBjaGFpbiDigJQgbm8gR1VJLCBubyB3aW5kb3dzLgovLwovLyBUd28gdGhpbmdzIG5lZWQgYW5zd2VyaW5nOgovLyAgIDEuIERvZXMgU3lzdGVtLk5ldC5OZXR3b3JrSW5mb3JtYXRpb24uUGluZyBhY3R1YWxseSB3b3JrIG9uIHRoaXMgbWFjaGluZSwgb3IKLy8gICAgICBkb2VzIGV2ZXJ5IHByb2JlIGZhaWwgKHdoaWNoIHdvdWxkIG1ha2UgdGhlIHdob2xlIHNjYW5uZXIgdXNlbGVzcyB1bnRpbCB0aGUKLy8gICAgICBBUlAvVENQIGZhbGxiYWNrcyBhcmUgc3dpdGNoZWQgb24pPwovLyAgIDIuIERvZXMgQXJwVGFibGUgd29yaywgb3IgZG9lcyBpdCBjcmFzaCAvIGhhbmc/Cgp2YXIgYWRhcHRlcnMgPSBuZXcgQWRhcHRlclNlcnZpY2UoKS5HZXRBbGwoKTsKQ29uc29sZS5Xcml0ZUxpbmUoJCJhZGFwdGVyczoge2FkYXB0ZXJzLkNvdW50fSIpOwpmb3JlYWNoICh2YXIgYSBpbiBhZGFwdGVycykKewogICAgQ29uc29sZS5Xcml0ZUxpbmUoJCIgIHthLk5hbWUsLTI4fSB7YS5JUCwtMTZ9IG1hc2s9e2EuU3VibmV0TWFzaywtMTZ9IGd3PXthLkdhdGV3YXksLTE2fSBkaGNwPXthLklzRGhjcEVuYWJsZWR9IGRucz17c3RyaW5nLkpvaW4oJy8nLCBhLkRuc1NlcnZlcnMpfSIpOwp9Cgp2YXIgc2VnbWVudCA9IGFkYXB0ZXJzLkNvdW50ID4gMCA/IElwTWF0aC5HZXRTZWdtZW50KGFkYXB0ZXJzWzBdLklQKSA6ICIxMjcuMC4wIjsKQ29uc29sZS5Xcml0ZUxpbmUoKTsKCi8vIC0tLS0gMS4gcmF3IFBpbmcgYWdhaW5zdCBhIGNvdXBsZSBvZiB0YXJnZXRzIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQphc3luYyBUYXNrIFByb2JlUGluZyhzdHJpbmcgdGFyZ2V0KQp7CiAgICB0cnkKICAgIHsKICAgICAgICB1c2luZyB2YXIgcGluZyA9IG5ldyBQaW5nKCk7CiAgICAgICAgdmFyIHJlcGx5ID0gYXdhaXQgcGluZy5TZW5kUGluZ0FzeW5jKHRhcmdldCwgMTAwMCk7CiAgICAgICAgQ29uc29sZS5Xcml0ZUxpbmUoJCIgIHBpbmcge3RhcmdldCwtMTZ9IC0+IHtyZXBseS5TdGF0dXN9ICh7cmVwbHkuUm91bmR0cmlwVGltZX1tcykiKTsKICAgIH0KICAgIGNhdGNoIChFeGNlcHRpb24gZXgpCiAgICB7CiAgICAgICAgQ29uc29sZS5Xcml0ZUxpbmUoJCIgIHBpbmcge3RhcmdldCwtMTZ9IC0+IEVYQ0VQVElPTiB7ZXguR2V0VHlwZSgpLk5hbWV9OiB7ZXguTWVzc2FnZX0iKTsKICAgIH0KfQoKQ29uc29sZS5Xcml0ZUxpbmUoIj09IHJhdyBJQ01QID09Iik7CmF3YWl0IFByb2JlUGluZygiMTI3LjAuMC4xIik7CmF3YWl0IFByb2JlUGluZyhhZGFwdGVycy5Db3VudCA+IDAgPyBhZGFwdGVyc1swXS5HYXRld2F5IDogIjE5Mi4xNjguMS4xIik7CmlmIChhZGFwdGVycy5Db3VudCA+IDApIGF3YWl0IFByb2JlUGluZyhhZGFwdGVyc1swXS5JUCk7CkNvbnNvbGUuV3JpdGVMaW5lKCk7CgovLyAtLS0tIDIuIEFycFRhYmxlIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KQ29uc29sZS5Xcml0ZUxpbmUoIj09IEFycFRhYmxlID09Iik7CnZhciBzdyA9IFN0b3B3YXRjaC5TdGFydE5ldygpOwp0cnkKewogICAgdmFyIGFycCA9IG5ldyBBcnBUYWJsZSgoKSA9PiBhZGFwdGVycyk7CiAgICB2YXIgc25hcHNob3QgPSBhd2FpdCBhcnAuR2V0U25hcHNob3RBc3luYyhmb3JjZTogdHJ1ZSk7CiAgICBzdy5TdG9wKCk7CiAgICBDb25zb2xlLldyaXRlTGluZSgkIiAgc25hcHNob3Q6IHtzbmFwc2hvdC5Db3VudH0gZW50cmllcyBpbiB7c3cuRWxhcHNlZE1pbGxpc2Vjb25kc31tcyIpOwogICAgZm9yZWFjaCAodmFyIGt2IGluIHNuYXBzaG90LlRha2UoOCkpIENvbnNvbGUuV3JpdGVMaW5lKCQiICAgIHtrdi5LZXksLTE2fSB7a3YuVmFsdWV9Iik7CgogICAgLy8gVGhlIGxvY2FsIGFkYXB0ZXIgcGF0aCBtdXN0IGFuc3dlciB3aXRob3V0IHRvdWNoaW5nIHRoZSBBUlAgY2FjaGUuCiAgICBpZiAoYWRhcHRlcnMuQ291bnQgPiAwKQogICAgewogICAgICAgIHZhciBsb2NhbCA9IGF3YWl0IGFycC5HZXRNYWNBc3luYyhhZGFwdGVyc1swXS5JUCk7CiAgICAgICAgQ29uc29sZS5Xcml0ZUxpbmUoJCIgIGxvY2FsIGFkYXB0ZXIgTUFDIGZvciB7YWRhcHRlcnNbMF0uSVB9OiB7bG9jYWwgPz8gIjxudWxsPiJ9Iik7CiAgICB9Cn0KY2F0Y2ggKEV4Y2VwdGlvbiBleCkKewogICAgc3cuU3RvcCgpOwogICAgQ29uc29sZS5Xcml0ZUxpbmUoJCIgIEFycFRhYmxlIENSQVNIRUQgYWZ0ZXIge3N3LkVsYXBzZWRNaWxsaXNlY29uZHN9bXM6IHtleC5HZXRUeXBlKCkuTmFtZX06IHtleC5NZXNzYWdlfSIpOwogICAgQ29uc29sZS5Xcml0ZUxpbmUoZXguU3RhY2tUcmFjZSk7Cn0KQ29uc29sZS5Xcml0ZUxpbmUoKTsKCi8vIC0tLS0gMy4gZnVsbCBsaXZlbmVzcyBjaGFpbiwgYm90aCBmYWxsYmFjayBjb25maWd1cmF0aW9ucyAtLS0tLS0tLS0tLS0tLS0tLS0tLQp2YXIgbGl2ZW5lc3MgPSBuZXcgTGl2ZW5lc3NQcm9iZShuZXcgQXJwVGFibGUoKCkgPT4gYWRhcHRlcnMpKTsKdmFyIHRhcmdldHMgPSBuZXcgTGlzdDxzdHJpbmc+IHsgIjEyNy4wLjAuMSIgfTsKaWYgKGFkYXB0ZXJzLkNvdW50ID4gMCkKewogICAgdGFyZ2V0cy5BZGQoYWRhcHRlcnNbMF0uSVApOwogICAgaWYgKCFzdHJpbmcuSXNOdWxsT3JFbXB0eShhZGFwdGVyc1swXS5HYXRld2F5KSkgdGFyZ2V0cy5BZGQoYWRhcHRlcnNbMF0uR2F0ZXdheSk7CiAgICB0YXJnZXRzLkFkZCgkIntzZWdtZW50fS4yNTQiKTsKfQoKYXN5bmMgVGFzayBSdW5DaGFpbihzdHJpbmcgbGFiZWwsIEFwcENvbmZpZyBjZmcpCnsKICAgIENvbnNvbGUuV3JpdGVMaW5lKCQiPT0gbGl2ZW5lc3M6IHtsYWJlbH0gPT0iKTsKICAgIGZvcmVhY2ggKHZhciB0IGluIHRhcmdldHMpCiAgICB7CiAgICAgICAgdmFyIHIgPSBhd2FpdCBsaXZlbmVzcy5Qcm9iZUFzeW5jKHQsIGNmZyk7CiAgICAgICAgQ29uc29sZS5Xcml0ZUxpbmUoJCIgIHt0LC0xNn0gLT4ge3IuU3RhdHVzLC04fSB2aWEge3IuU291cmNlLC04fSBpY21wPXtyLlBpbmdTdGF0dXN9IHJ0dD17ci5Sb3VuZHRyaXBNc30iKTsKICAgIH0KICAgIENvbnNvbGUuV3JpdGVMaW5lKCk7Cn0KCmF3YWl0IFJ1bkNoYWluKCJkZWZhdWx0cyAobm8gZmFsbGJhY2tzKSIsIG5ldyBBcHBDb25maWcoKSk7CmF3YWl0IFJ1bkNoYWluKCJUQ1AgZmFsbGJhY2sgb24iLCBuZXcgQXBwQ29uZmlnIHsgUG9ydEluc3RlYWRQaW5nRW5hYmxlZCA9IHRydWUsIFBvcnRUaW1lb3V0ID0gNTAgfSk7CmF3YWl0IFJ1bkNoYWluKCJBUlAgZmFsbGJhY2sgb24iLCBuZXcgQXBwQ29uZmlnIHsgQVJQSW5zdGVhZFBpbmdFbmFibGVkID0gdHJ1ZSB9KTsKCkNvbnNvbGUuV3JpdGVMaW5lKCJkb25lIik7CnJldHVybiAwOwo=
+using System.Diagnostics;
+using System.Net.NetworkInformation;
+using IPScaner.Core.Configuration;
+using IPScaner.Core.Net;
+
+// Headless check of the liveness chain — no GUI, no windows.
+//
+// Two things need answering:
+//   1. Does System.Net.NetworkInformation.Ping actually work on this machine, or
+//      does every probe fail (which would make the whole scanner useless until the
+//      ARP/TCP fallbacks are switched on)?
+//   2. Does ArpTable work, or does it crash / hang?
+
+var adapters = new AdapterService().GetAll();
+Console.WriteLine($"adapters: {adapters.Count}");
+foreach (var a in adapters)
+{
+    Console.WriteLine($"  {a.Name,-28} {a.IP,-16} mask={a.SubnetMask,-16} gw={a.Gateway,-16} dhcp={a.IsDhcpEnabled} dns={string.Join('/', a.DnsServers)}");
+}
+
+var segment = adapters.Count > 0 ? IpMath.GetSegment(adapters[0].IP) : "127.0.0";
+Console.WriteLine();
+
+// ---- 1. raw Ping against a couple of targets ---------------------------------
+async Task ProbePing(string target)
+{
+    try
+    {
+        using var ping = new Ping();
+        var reply = await ping.SendPingAsync(target, 1000);
+        Console.WriteLine($"  ping {target,-16} -> {reply.Status} ({reply.RoundtripTime}ms)");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"  ping {target,-16} -> EXCEPTION {ex.GetType().Name}: {ex.Message}");
+    }
+}
+
+Console.WriteLine("== raw ICMP ==");
+await ProbePing("127.0.0.1");
+await ProbePing(adapters.Count > 0 ? adapters[0].Gateway : "192.168.1.1");
+if (adapters.Count > 0) await ProbePing(adapters[0].IP);
+Console.WriteLine();
+
+// ---- 2. ArpTable -------------------------------------------------------------
+Console.WriteLine("== ArpTable ==");
+var sw = Stopwatch.StartNew();
+try
+{
+    var arp = new ArpTable(() => adapters);
+    var snapshot = await arp.GetSnapshotAsync(force: true);
+    sw.Stop();
+    Console.WriteLine($"  snapshot: {snapshot.Count} entries in {sw.ElapsedMilliseconds}ms");
+    foreach (var kv in snapshot.Take(8)) Console.WriteLine($"    {kv.Key,-16} {kv.Value}");
+
+    // The local adapter path must answer without touching the ARP cache.
+    if (adapters.Count > 0)
+    {
+        var local = await arp.GetMacAsync(adapters[0].IP);
+        Console.WriteLine($"  local adapter MAC for {adapters[0].IP}: {local ?? "<null>"}");
+    }
+}
+catch (Exception ex)
+{
+    sw.Stop();
+    Console.WriteLine($"  ArpTable CRASHED after {sw.ElapsedMilliseconds}ms: {ex.GetType().Name}: {ex.Message}");
+    Console.WriteLine(ex.StackTrace);
+}
+Console.WriteLine();
+
+// ---- 3. full liveness chain, both fallback configurations --------------------
+var liveness = new LivenessProbe(new ArpTable(() => adapters));
+var targets = new List<string> { "127.0.0.1" };
+if (adapters.Count > 0)
+{
+    targets.Add(adapters[0].IP);
+    if (!string.IsNullOrEmpty(adapters[0].Gateway)) targets.Add(adapters[0].Gateway);
+    targets.Add($"{segment}.254");
+}
+
+async Task RunChain(string label, AppConfig cfg)
+{
+    Console.WriteLine($"== liveness: {label} ==");
+    foreach (var t in targets)
+    {
+        var r = await liveness.ProbeAsync(t, cfg);
+        Console.WriteLine($"  {t,-16} -> {r.Status,-8} via {r.Source,-8} icmp={r.PingStatus} rtt={r.RoundtripMs}");
+    }
+    Console.WriteLine();
+}
+
+await RunChain("defaults (no fallbacks)", new AppConfig());
+await RunChain("TCP fallback on", new AppConfig { PortInsteadPingEnabled = true, PortTimeout = 50 });
+await RunChain("ARP fallback on", new AppConfig { ARPInsteadPingEnabled = true });
+
+Console.WriteLine("done");
+return 0;

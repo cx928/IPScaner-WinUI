@@ -1,1 +1,193 @@
-dXNpbmcgU3lzdGVtLlNlY3VyaXR5LlByaW5jaXBhbDsKdXNpbmcgSVBTY2FuZXIuQ29yZS5DYWNoaW5nOwp1c2luZyBJUFNjYW5lci5Db3JlLkNvbW1hbmRzOwp1c2luZyBJUFNjYW5lci5Db3JlLkNvbmZpZ3VyYXRpb247CnVzaW5nIElQU2NhbmVyLkNvcmUuTG9nZ2luZzsKdXNpbmcgSVBTY2FuZXIuQ29yZS5NZW1vOwp1c2luZyBJUFNjYW5lci5Db3JlLk1vZGVsczsKdXNpbmcgSVBTY2FuZXIuQ29yZS5OZXQ7CnVzaW5nIElQU2NhbmVyLkNvcmUuU2hlbGw7CgpuYW1lc3BhY2UgSVBTY2FuZXIuV2luVUkuU2VydmljZXM7CgovLy8gPHN1bW1hcnk+Ci8vLyBQcm9jZXNzLXdpZGUgc2VydmljZSBjb250YWluZXIuIEEgc2luZ2xlIHNoYXJlZCBpbnN0YW5jZSBrZWVwcyBldmVyeSBwYWdlCi8vLyB3b3JraW5nIGFnYWluc3QgdGhlIHNhbWUgY29uZmlndXJhdGlvbiwgbWVtbyBzdG9yZSBhbmQgY2FjaGVzIOKAlCB0aGUgcm9sZSB0aGUKLy8vIG9yaWdpbmFsJ3Mgc3RhdGljIDxjPkdsb2JhbDwvYz4gY2xhc3MgcGxheWVkLCBidXQgZXhwbGljaXQgYW5kIHRlc3RhYmxlLgovLy8gPC9zdW1tYXJ5PgpwdWJsaWMgc2VhbGVkIGNsYXNzIEFwcFNlcnZpY2VzCnsKICAgIHByaXZhdGUgc3RhdGljIEFwcFNlcnZpY2VzPyBfY3VycmVudDsKCiAgICBwdWJsaWMgc3RhdGljIEFwcFNlcnZpY2VzIEN1cnJlbnQgPT4KICAgICAgICBfY3VycmVudCA/PyB0aHJvdyBuZXcgSW52YWxpZE9wZXJhdGlvbkV4Y2VwdGlvbigiQXBwU2VydmljZXMuSW5pdGlhbGl6ZSgpIGhhcyBub3QgcnVuIHlldC4iKTsKCiAgICBwdWJsaWMgc3RhdGljIHZvaWQgSW5pdGlhbGl6ZSgpCiAgICB7CiAgICAgICAgaWYgKF9jdXJyZW50IGlzIG5vdCBudWxsKSByZXR1cm47CiAgICAgICAgX2N1cnJlbnQgPSBuZXcgQXBwU2VydmljZXMoKTsKICAgICAgICBfY3VycmVudC5TdGFydCgpOwogICAgfQoKICAgIHByaXZhdGUgQXBwU2VydmljZXMoKQogICAgewogICAgICAgIENvbmZpZ1N0b3JlID0gbmV3IENvbmZpZ1N0b3JlKCk7CiAgICAgICAgTWVtbyA9IG5ldyBNZW1vU3RvcmUoKTsKICAgICAgICBEaXlDb21tYW5kcyA9IG5ldyBEaXlDb21tYW5kU3RvcmUoKTsKICAgICAgICBIaXN0b3J5ID0gbmV3IE5ldHdvcmtIaXN0b3J5KCk7CiAgICAgICAgU2hlbGwgPSBuZXcgU2hlbGxMYXVuY2hlcigpOwogICAgICAgIEFkYXB0ZXJzID0gbmV3IEFkYXB0ZXJTZXJ2aWNlKCk7CiAgICAgICAgQXJwID0gbmV3IEFycFRhYmxlKCgpID0+IEFkYXB0ZXJzLkdldEFsbCgpKTsKICAgICAgICBTY2FubmVyID0gbmV3IFNjYW5FbmdpbmUobmV3IExpdmVuZXNzUHJvYmUoQXJwKSwgbmV3IE5hbWVSZXNvbHZlcigpLCBBcnApOwogICAgICAgIFBvcnRTY2FubmVyID0gbmV3IFBvcnRTY2FubmVyKCk7CiAgICAgICAgTG9jYWxQb3J0cyA9IG5ldyBMb2NhbFBvcnRUYWJsZSgpOwogICAgICAgIFdpZmkgPSBuZXcgV2lmaVNlcnZpY2UoKTsKICAgICAgICBOZXR3b3JrQ29uZmlnID0gbmV3IE5ldHdvcmtDb25maWd1cmF0b3IoKTsKICAgIH0KCiAgICAvLyAtLS0tIHBlcnNpc3RlZCBzdGF0ZSAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCiAgICBwdWJsaWMgQ29uZmlnU3RvcmUgQ29uZmlnU3RvcmUgeyBnZXQ7IH0KCiAgICAvLy8gPHN1bW1hcnk+VGhlIGxpdmUgY29uZmlndXJhdGlvbi4gTXV0YXRlIGEgY2xvbmUsIHRoZW4gY2FsbCA8c2VlIGNyZWY9IkFwcGx5Q29uZmlnIi8+Ljwvc3VtbWFyeT4KICAgIHB1YmxpYyBBcHBDb25maWcgQ29uZmlnIHsgZ2V0OyBwcml2YXRlIHNldDsgfSA9IG5ldygpOwoKICAgIHB1YmxpYyBNZW1vU3RvcmUgTWVtbyB7IGdldDsgfQoKICAgIHB1YmxpYyBEaXlDb21tYW5kU3RvcmUgRGl5Q29tbWFuZHMgeyBnZXQ7IH0KCiAgICBwdWJsaWMgTmV0d29ya0hpc3RvcnkgSGlzdG9yeSB7IGdldDsgfQoKICAgIC8vIC0tLS0gZW5naW5lcyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIHB1YmxpYyBTaGVsbExhdW5jaGVyIFNoZWxsIHsgZ2V0OyB9CiAgICBwdWJsaWMgQWRhcHRlclNlcnZpY2UgQWRhcHRlcnMgeyBnZXQ7IH0KICAgIHB1YmxpYyBBcnBUYWJsZSBBcnAgeyBnZXQ7IH0KICAgIHB1YmxpYyBTY2FuRW5naW5lIFNjYW5uZXIgeyBnZXQ7IH0KICAgIHB1YmxpYyBQb3J0U2Nhbm5lciBQb3J0U2Nhbm5lciB7IGdldDsgfQogICAgcHVibGljIExvY2FsUG9ydFRhYmxlIExvY2FsUG9ydHMgeyBnZXQ7IH0KICAgIHB1YmxpYyBXaWZpU2VydmljZSBXaWZpIHsgZ2V0OyB9CiAgICBwdWJsaWMgTmV0d29ya0NvbmZpZ3VyYXRvciBOZXR3b3JrQ29uZmlnIHsgZ2V0OyB9CgogICAgLy8gLS0tLSBlbnZpcm9ubWVudCAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgogICAgLy8vIDxzdW1tYXJ5PgogICAgLy8vIFRydWUgd2hlbiBydW5uaW5nIGVsZXZhdGVkLiBVbmxpa2UgdGhlIG9yaWdpbmFsIOKAlCB3aGljaCBmb3JjZWQgVUFDIG9uIGV2ZXJ5CiAgICAvLy8gbGF1bmNoIOKAlCBlbGV2YXRpb24gaXMgb25seSByZXF1aXJlZCBmb3Ig5L+u5pS55pys5ZywSVAgYW5kIEFSUCBjYWNoZSBmbHVzaGluZywKICAgIC8vLyBzbyB0aGUgVUkgc3VyZmFjZXMgdGhpcyByYXRoZXIgdGhhbiByZWZ1c2luZyB0byBzdGFydC4KICAgIC8vLyA8L3N1bW1hcnk+CiAgICBwdWJsaWMgYm9vbCBJc0VsZXZhdGVkIHsgZ2V0OyBwcml2YXRlIHNldDsgfQoKICAgIC8vLyA8c3VtbWFyeT5BZGFwdGVycyBhcyBvZiB0aGUgbGFzdCA8c2VlIGNyZWY9IlJlZnJlc2hBZGFwdGVycyIvPiBjYWxsLjwvc3VtbWFyeT4KICAgIHB1YmxpYyBJUmVhZE9ubHlMaXN0PEFkYXB0ZXJJbmZvPiBBZGFwdGVyTGlzdCB7IGdldDsgcHJpdmF0ZSBzZXQ7IH0gPSBbXTsKCiAgICAvLy8gPHN1bW1hcnk+UmFpc2VkIGFmdGVyIHRoZSBjb25maWd1cmF0aW9uIGlzIHNhdmVkIG9yIHJlbG9hZGVkLjwvc3VtbWFyeT4KICAgIHB1YmxpYyBldmVudCBFdmVudEhhbmRsZXI8QXBwQ29uZmlnPj8gQ29uZmlnQ2hhbmdlZDsKCiAgICAvLy8gPHN1bW1hcnk+UmFpc2VkIHdoZW4gY2FjaGVzIGFyZSBjbGVhcmVkLCBzbyBvcGVuIHBhZ2VzIGNhbiByZS1yZW5kZXIuPC9zdW1tYXJ5PgogICAgcHVibGljIGV2ZW50IEV2ZW50SGFuZGxlcj8gQ2FjaGVzQ2xlYXJlZDsKCiAgICBwcml2YXRlIHZvaWQgU3RhcnQoKQogICAgewogICAgICAgIElzRWxldmF0ZWQgPSBEZXRlY3RFbGV2YXRpb24oKTsKCiAgICAgICAgQ29uZmlnID0gQ29uZmlnU3RvcmUuTG9hZCgpOwogICAgICAgIEFwcGx5TG9nZ2luZygpOwogICAgICAgIEFwcExvZy5JbnN0YW5jZS5Mb2cobmFtZW9mKEFwcFNlcnZpY2VzKSwgJCLphY3nva7mlofku7Y6IHtDb25maWdTdG9yZS5GaWxlUGF0aH0gKOWtmOWcqD17Q29uZmlnU3RvcmUuRXhpc3RzfSkiKTsKCiAgICAgICAgTWVtby5Mb2FkKCk7CiAgICAgICAgRGl5Q29tbWFuZHMuV3JpdGVUZW1wbGF0ZSgpOwoKICAgICAgICAvLyBBZGFwdGVyIGVudW1lcmF0aW9uIHRvdWNoZXMgV01JLWFkamFjZW50IEFQSXM7IGtlZXAgaXQgb2ZmIHRoZSBVSSB0aHJlYWQuCiAgICAgICAgXyA9IFRhc2suUnVuKCgpID0+CiAgICAgICAgewogICAgICAgICAgICB0cnkgeyBBZGFwdGVyTGlzdCA9IEFkYXB0ZXJzLkdldEFsbCgpOyB9CiAgICAgICAgICAgIGNhdGNoIChFeGNlcHRpb24gZXgpIHsgQXBwTG9nLkluc3RhbmNlLkxvZyhuYW1lb2YoQXBwU2VydmljZXMpLCAi5p6a5Li+572R5Y2h5aSx6LSlOiAiICsgZXguTWVzc2FnZSk7IH0KICAgICAgICB9KTsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+UGVyc2lzdHMgdGhlIGNvbmZpZ3VyYXRpb24gYW5kIG5vdGlmaWVzIGxpc3RlbmVycy48L3N1bW1hcnk+CiAgICBwdWJsaWMgdm9pZCBBcHBseUNvbmZpZyhBcHBDb25maWcgY29uZmlnKQogICAgewogICAgICAgIENvbmZpZyA9IGNvbmZpZzsKICAgICAgICBBcHBseUxvZ2dpbmcoKTsKICAgICAgICB0cnkKICAgICAgICB7CiAgICAgICAgICAgIENvbmZpZ1N0b3JlLlNhdmUoY29uZmlnKTsKICAgICAgICB9CiAgICAgICAgY2F0Y2ggKEV4Y2VwdGlvbiBleCkKICAgICAgICB7CiAgICAgICAgICAgIEFwcExvZy5JbnN0YW5jZS5Mb2cobmFtZW9mKEFwcFNlcnZpY2VzKSwgIuS/neWtmOmFjee9ruWksei0pTogIiArIGV4Lk1lc3NhZ2UpOwogICAgICAgIH0KICAgICAgICBDb25maWdDaGFuZ2VkPy5JbnZva2UodGhpcywgY29uZmlnKTsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+UmUtcmVhZHMgdGhlIGNvbmZpZ3VyYXRpb24gZnJvbSBkaXNrLjwvc3VtbWFyeT4KICAgIHB1YmxpYyB2b2lkIFJlbG9hZENvbmZpZygpCiAgICB7CiAgICAgICAgQ29uZmlnID0gQ29uZmlnU3RvcmUuTG9hZCgpOwogICAgICAgIEFwcGx5TG9nZ2luZygpOwogICAgICAgIENvbmZpZ0NoYW5nZWQ/Lkludm9rZSh0aGlzLCBDb25maWcpOwogICAgfQoKICAgIHByaXZhdGUgdm9pZCBBcHBseUxvZ2dpbmcoKSA9PiBBcHBMb2cuSW5zdGFuY2UuRW5hYmxlZCA9IENvbmZpZy5Mb2dFbmFibGVkOwoKICAgIC8vLyA8c3VtbWFyeT5Ecm9wcyBjYWNoZWQgaG9zdCBuYW1lcyBhbmQgTUFDcyBzbyB0aGUgbmV4dCBzY2FuIHJlLXF1ZXJpZXMgdGhlbS48L3N1bW1hcnk+CiAgICBwdWJsaWMgdm9pZCBDbGVhckNhY2hlcygpCiAgICB7CiAgICAgICAgU2NhbkNhY2hlcy5DbGVhckFsbCgpOwogICAgICAgIEFycC5JbnZhbGlkYXRlKCk7CiAgICAgICAgQ2FjaGVzQ2xlYXJlZD8uSW52b2tlKHRoaXMsIEV2ZW50QXJncy5FbXB0eSk7CiAgICB9CgogICAgLy8vIDxzdW1tYXJ5PlJlLWVudW1lcmF0ZXMgYWRhcHRlcnMgKGFmdGVyIGFuIElQIGNoYW5nZSwgb3Igb24gdXNlciByZXF1ZXN0KS48L3N1bW1hcnk+CiAgICBwdWJsaWMgSVJlYWRPbmx5TGlzdDxBZGFwdGVySW5mbz4gUmVmcmVzaEFkYXB0ZXJzKCkKICAgIHsKICAgICAgICB0cnkgeyBBZGFwdGVyTGlzdCA9IEFkYXB0ZXJzLkdldEFsbCgpOyB9CiAgICAgICAgY2F0Y2ggKEV4Y2VwdGlvbiBleCkgeyBBcHBMb2cuSW5zdGFuY2UuTG9nKG5hbWVvZihBcHBTZXJ2aWNlcyksICLliLfmlrDnvZHljaHlpLHotKU6ICIgKyBleC5NZXNzYWdlKTsgfQogICAgICAgIHJldHVybiBBZGFwdGVyTGlzdDsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+CiAgICAvLy8gVGhlIGJlc3QgZ3Vlc3MgYXQgdGhlIHNlZ21lbnQgdG8gc2Nhbi4KICAgIC8vLyA8L3N1bW1hcnk+CiAgICAvLy8gPHJlbWFya3M+CiAgICAvLy8gQSBnYXRld2F5IGlzIHRoZSBzdHJvbmdlc3Qgc2lnbmFsIHRoYXQgYW4gYWRhcHRlciBpcyB0aGUgcmVhbCBMQU4gbGluazoKICAgIC8vLyBtYWNoaW5lcyBjb21tb25seSBhbHNvIGNhcnJ5IFplcm9UaWVyLCBIeXBlci1WICgidkV0aGVybmV0IikgYW5kIElDUwogICAgLy8vIGFkYXB0ZXJzLCBhbmQgdGhlIG9yaWdpbmFsJ3Mgb25seSBmaWx0ZXIgd2FzIGEgaGFyZC1jb2RlZCAiVk13YXJlIiBuYW1lCiAgICAvLy8gY2hlY2suIFByZWZlcmVuY2Ugb3JkZXIgaXMgdXAgKyBnYXRld2F5LCB0aGVuIHVwLCB0aGVuIGFueXRoaW5nLgogICAgLy8vIDwvcmVtYXJrcz4KICAgIHB1YmxpYyBzdHJpbmcgR2V0RGVmYXVsdFNlZ21lbnQoKQogICAgewogICAgICAgIHZhciBjYW5kaWRhdGVzID0gQWRhcHRlckxpc3QuQ291bnQgPiAwID8gQWRhcHRlckxpc3QgOiBSZWZyZXNoQWRhcHRlcnMoKTsKCiAgICAgICAgZm9yZWFjaCAodmFyIHByZWRpY2F0ZSBpbiBuZXcgRnVuYzxBZGFwdGVySW5mbywgYm9vbD5bXQogICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAgYSA9PiBhLklzVXAgJiYgIXN0cmluZy5Jc051bGxPckVtcHR5KGEuR2F0ZXdheSksCiAgICAgICAgICAgICAgICAgICAgIGEgPT4gYS5Jc1VwLAogICAgICAgICAgICAgICAgICAgICBfID0+IHRydWUsCiAgICAgICAgICAgICAgICAgfSkKICAgICAgICB7CiAgICAgICAgICAgIGZvcmVhY2ggKHZhciBhZGFwdGVyIGluIGNhbmRpZGF0ZXMuV2hlcmUocHJlZGljYXRlKSkKICAgICAgICAgICAgewogICAgICAgICAgICAgICAgdmFyIHNlZ21lbnQgPSBJcE1hdGguR2V0U2VnbWVudChhZGFwdGVyLklQKTsKICAgICAgICAgICAgICAgIGlmIChJcE1hdGguSXNWYWxpZFNlZ21lbnQoc2VnbWVudCkpIHJldHVybiBzZWdtZW50OwogICAgICAgICAgICB9CiAgICAgICAgfQoKICAgICAgICByZXR1cm4gQWRhcHRlcnMuR2V0UHJpbWFyeVNlZ21lbnQoKSA/PyAiMTkyLjE2OC4xIjsKICAgIH0KCiAgICBwcml2YXRlIHN0YXRpYyBib29sIERldGVjdEVsZXZhdGlvbigpCiAgICB7CiAgICAgICAgdHJ5CiAgICAgICAgewogICAgICAgICAgICB1c2luZyB2YXIgaWRlbnRpdHkgPSBXaW5kb3dzSWRlbnRpdHkuR2V0Q3VycmVudCgpOwogICAgICAgICAgICByZXR1cm4gbmV3IFdpbmRvd3NQcmluY2lwYWwoaWRlbnRpdHkpLklzSW5Sb2xlKFdpbmRvd3NCdWlsdEluUm9sZS5BZG1pbmlzdHJhdG9yKTsKICAgICAgICB9CiAgICAgICAgY2F0Y2gKICAgICAgICB7CiAgICAgICAgICAgIHJldHVybiBmYWxzZTsKICAgICAgICB9CiAgICB9Cn0K
+using System.Security.Principal;
+using IPScaner.Core.Caching;
+using IPScaner.Core.Commands;
+using IPScaner.Core.Configuration;
+using IPScaner.Core.Logging;
+using IPScaner.Core.Memo;
+using IPScaner.Core.Models;
+using IPScaner.Core.Net;
+using IPScaner.Core.Shell;
+
+namespace IPScaner.WinUI.Services;
+
+/// <summary>
+/// Process-wide service container. A single shared instance keeps every page
+/// working against the same configuration, memo store and caches — the role the
+/// original's static <c>Global</c> class played, but explicit and testable.
+/// </summary>
+public sealed class AppServices
+{
+    private static AppServices? _current;
+
+    public static AppServices Current =>
+        _current ?? throw new InvalidOperationException("AppServices.Initialize() has not run yet.");
+
+    public static void Initialize()
+    {
+        if (_current is not null) return;
+        _current = new AppServices();
+        _current.Start();
+    }
+
+    private AppServices()
+    {
+        ConfigStore = new ConfigStore();
+        Memo = new MemoStore();
+        DiyCommands = new DiyCommandStore();
+        History = new NetworkHistory();
+        Shell = new ShellLauncher();
+        Adapters = new AdapterService();
+        Arp = new ArpTable(() => Adapters.GetAll());
+        Scanner = new ScanEngine(new LivenessProbe(Arp), new NameResolver(), Arp);
+        PortScanner = new PortScanner();
+        LocalPorts = new LocalPortTable();
+        Wifi = new WifiService();
+        NetworkConfig = new NetworkConfigurator();
+    }
+
+    // ---- persisted state ---------------------------------------------------
+
+    public ConfigStore ConfigStore { get; }
+
+    /// <summary>The live configuration. Mutate a clone, then call <see cref="ApplyConfig"/>.</summary>
+    public AppConfig Config { get; private set; } = new();
+
+    public MemoStore Memo { get; }
+
+    public DiyCommandStore DiyCommands { get; }
+
+    public NetworkHistory History { get; }
+
+    // ---- engines -----------------------------------------------------------
+
+    public ShellLauncher Shell { get; }
+    public AdapterService Adapters { get; }
+    public ArpTable Arp { get; }
+    public ScanEngine Scanner { get; }
+    public PortScanner PortScanner { get; }
+    public LocalPortTable LocalPorts { get; }
+    public WifiService Wifi { get; }
+    public NetworkConfigurator NetworkConfig { get; }
+
+    // ---- environment -------------------------------------------------------
+
+    /// <summary>
+    /// True when running elevated. Unlike the original — which forced UAC on every
+    /// launch — elevation is only required for 修改本地IP and ARP cache flushing,
+    /// so the UI surfaces this rather than refusing to start.
+    /// </summary>
+    public bool IsElevated { get; private set; }
+
+    /// <summary>Adapters as of the last <see cref="RefreshAdapters"/> call.</summary>
+    public IReadOnlyList<AdapterInfo> AdapterList { get; private set; } = [];
+
+    /// <summary>Raised after the configuration is saved or reloaded.</summary>
+    public event EventHandler<AppConfig>? ConfigChanged;
+
+    /// <summary>Raised when caches are cleared, so open pages can re-render.</summary>
+    public event EventHandler? CachesCleared;
+
+    private void Start()
+    {
+        IsElevated = DetectElevation();
+
+        Config = ConfigStore.Load();
+        ApplyLogging();
+        AppLog.Instance.Log(nameof(AppServices), $"配置文件: {ConfigStore.FilePath} (存在={ConfigStore.Exists})");
+
+        Memo.Load();
+        DiyCommands.WriteTemplate();
+
+        // Adapter enumeration touches WMI-adjacent APIs; keep it off the UI thread.
+        _ = Task.Run(() =>
+        {
+            try { AdapterList = Adapters.GetAll(); }
+            catch (Exception ex) { AppLog.Instance.Log(nameof(AppServices), "枚举网卡失败: " + ex.Message); }
+        });
+    }
+
+    /// <summary>Persists the configuration and notifies listeners.</summary>
+    public void ApplyConfig(AppConfig config)
+    {
+        Config = config;
+        ApplyLogging();
+        try
+        {
+            ConfigStore.Save(config);
+        }
+        catch (Exception ex)
+        {
+            AppLog.Instance.Log(nameof(AppServices), "保存配置失败: " + ex.Message);
+        }
+        ConfigChanged?.Invoke(this, config);
+    }
+
+    /// <summary>Re-reads the configuration from disk.</summary>
+    public void ReloadConfig()
+    {
+        Config = ConfigStore.Load();
+        ApplyLogging();
+        ConfigChanged?.Invoke(this, Config);
+    }
+
+    private void ApplyLogging() => AppLog.Instance.Enabled = Config.LogEnabled;
+
+    /// <summary>Drops cached host names and MACs so the next scan re-queries them.</summary>
+    public void ClearCaches()
+    {
+        ScanCaches.ClearAll();
+        Arp.Invalidate();
+        CachesCleared?.Invoke(this, EventArgs.Empty);
+    }
+
+    /// <summary>Re-enumerates adapters (after an IP change, or on user request).</summary>
+    public IReadOnlyList<AdapterInfo> RefreshAdapters()
+    {
+        try { AdapterList = Adapters.GetAll(); }
+        catch (Exception ex) { AppLog.Instance.Log(nameof(AppServices), "刷新网卡失败: " + ex.Message); }
+        return AdapterList;
+    }
+
+    /// <summary>
+    /// The best guess at the segment to scan.
+    /// </summary>
+    /// <remarks>
+    /// A gateway is the strongest signal that an adapter is the real LAN link:
+    /// machines commonly also carry ZeroTier, Hyper-V ("vEthernet") and ICS
+    /// adapters, and the original's only filter was a hard-coded "VMware" name
+    /// check. Preference order is up + gateway, then up, then anything.
+    /// </remarks>
+    public string GetDefaultSegment()
+    {
+        var candidates = AdapterList.Count > 0 ? AdapterList : RefreshAdapters();
+
+        foreach (var predicate in new Func<AdapterInfo, bool>[]
+                 {
+                     a => a.IsUp && !string.IsNullOrEmpty(a.Gateway),
+                     a => a.IsUp,
+                     _ => true,
+                 })
+        {
+            foreach (var adapter in candidates.Where(predicate))
+            {
+                var segment = IpMath.GetSegment(adapter.IP);
+                if (IpMath.IsValidSegment(segment)) return segment;
+            }
+        }
+
+        return Adapters.GetPrimarySegment() ?? "192.168.1";
+    }
+
+    private static bool DetectElevation()
+    {
+        try
+        {
+            using var identity = WindowsIdentity.GetCurrent();
+            return new WindowsPrincipal(identity).IsInRole(WindowsBuiltInRole.Administrator);
+        }
+        catch
+        {
+            return false;
+        }
+    }
+}

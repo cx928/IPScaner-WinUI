@@ -1,1 +1,156 @@
-dXNpbmcgU3lzdGVtLk5ldC5OZXR3b3JrSW5mb3JtYXRpb247CnVzaW5nIFN5c3RlbS5OZXQuU29ja2V0czsKdXNpbmcgSVBTY2FuZXIuQ29yZS5Mb2dnaW5nOwp1c2luZyBJUFNjYW5lci5Db3JlLk1vZGVsczsKCm5hbWVzcGFjZSBJUFNjYW5lci5Db3JlLk5ldDsKCi8vLyA8c3VtbWFyeT4KLy8vIEVudW1lcmF0ZXMgdGhlIG1hY2hpbmUncyBJUHY0IGFkYXB0ZXIgYmluZGluZ3Mg4oCUIHRoZSBzb3VyY2UgZm9yIHRoZSBhZGFwdGVyCi8vLyBjb21ibyBib3gsIHRoZSBsb2NhbC1JUCB3aW5kb3cgYW5kIHRoZSBkZXNrdG9wIGJhZGdlLgovLy8gPC9zdW1tYXJ5PgovLy8gPHJlbWFya3M+Ci8vLyBGaWx0ZXJpbmcgbWlycm9ycyB0aGUgb3JpZ2luYWwgPGM+VXRpbGl0eS5HZXRBbGxBZGFwdGVySVA8L2M+OiBvbmx5IEV0aGVybmV0Ci8vLyBhbmQgV2ktRmkgYWRhcHRlcnMsIFZNd2FyZSB2aXJ0dWFsIGFkYXB0ZXJzIGV4Y2x1ZGVkLCBhbmQgQVBJUEEgLyBsb29wYmFjayAvCi8vLyAiLjAiIGFkZHJlc3NlcyBza2lwcGVkLiBEdXBsaWNhdGUgYWRhcHRlciBuYW1lcyBnZXQgdGhlIG9yaWdpbmFsJ3MgIl8xIiwgIl8yIgovLy8gc3VmZml4IHNvIHRoZSBjb21ibyBib3ggc3RheXMgdW5hbWJpZ3VvdXMuCi8vLyA8L3JlbWFya3M+CnB1YmxpYyBzZWFsZWQgY2xhc3MgQWRhcHRlclNlcnZpY2UKewogICAgLy8vIDxzdW1tYXJ5PlJldHVybnMgZXZlcnkgdXNhYmxlIElQdjQgYmluZGluZywgb3JkZXJlZCBieSBhZGFwdGVyIG5hbWUgdGhlbiBzdGF0dXMuPC9zdW1tYXJ5PgogICAgcHVibGljIExpc3Q8QWRhcHRlckluZm8+IEdldEFsbCgpCiAgICB7CiAgICAgICAgdmFyIHJhdyA9IG5ldyBMaXN0PEFkYXB0ZXJJbmZvPigpOwoKICAgICAgICBOZXR3b3JrSW50ZXJmYWNlW10gaW50ZXJmYWNlczsKICAgICAgICB0cnkgeyBpbnRlcmZhY2VzID0gTmV0d29ya0ludGVyZmFjZS5HZXRBbGxOZXR3b3JrSW50ZXJmYWNlcygpOyB9CiAgICAgICAgY2F0Y2ggKEV4Y2VwdGlvbiBleCkKICAgICAgICB7CiAgICAgICAgICAgIEFwcExvZy5JbnN0YW5jZS5Mb2cobmFtZW9mKEFkYXB0ZXJTZXJ2aWNlKSwgIuaemuS4vue9keWNoeWksei0pTogIiArIGV4Lk1lc3NhZ2UpOwogICAgICAgICAgICByZXR1cm4gcmF3OwogICAgICAgIH0KCiAgICAgICAgZm9yZWFjaCAodmFyIG5pIGluIGludGVyZmFjZXMpCiAgICAgICAgewogICAgICAgICAgICB0cnkKICAgICAgICAgICAgewogICAgICAgICAgICAgICAgaWYgKG5pLk5ldHdvcmtJbnRlcmZhY2VUeXBlIGlzIG5vdCAoTmV0d29ya0ludGVyZmFjZVR5cGUuRXRoZXJuZXQgb3IgTmV0d29ya0ludGVyZmFjZVR5cGUuV2lyZWxlc3M4MDIxMSkpCiAgICAgICAgICAgICAgICAgICAgY29udGludWU7CiAgICAgICAgICAgICAgICBpZiAobmkuTmFtZS5Db250YWlucygiVk13YXJlIiwgU3RyaW5nQ29tcGFyaXNvbi5PcmRpbmFsSWdub3JlQ2FzZSkpCiAgICAgICAgICAgICAgICAgICAgY29udGludWU7CgogICAgICAgICAgICAgICAgdmFyIG1hYyA9IEZvcm1hdE1hYyhuaS5HZXRQaHlzaWNhbEFkZHJlc3MoKSk7CiAgICAgICAgICAgICAgICB2YXIgcHJvcHMgPSBuaS5HZXRJUFByb3BlcnRpZXMoKTsKICAgICAgICAgICAgICAgIHZhciBpcHY0ID0gVHJ5R2V0SVB2NFByb3BlcnRpZXMocHJvcHMpOwoKICAgICAgICAgICAgICAgIGZvcmVhY2ggKHZhciB1bmljYXN0IGluIHByb3BzLlVuaWNhc3RBZGRyZXNzZXMpCiAgICAgICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAgICAgaWYgKHVuaWNhc3QuQWRkcmVzcy5BZGRyZXNzRmFtaWx5ICE9IEFkZHJlc3NGYW1pbHkuSW50ZXJOZXR3b3JrKSBjb250aW51ZTsKICAgICAgICAgICAgICAgICAgICB2YXIgaXAgPSB1bmljYXN0LkFkZHJlc3MuVG9TdHJpbmcoKTsKICAgICAgICAgICAgICAgICAgICBpZiAoSXBNYXRoLklzSWdub3JhYmxlTG9jYWxBZGRyZXNzKGlwKSkgY29udGludWU7CgogICAgICAgICAgICAgICAgICAgIHZhciBpbmZvID0gbmV3IEFkYXB0ZXJJbmZvCiAgICAgICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgICAgICBOYW1lID0gbmkuTmFtZSwKICAgICAgICAgICAgICAgICAgICAgICAgRGVzY3JpcHRpb24gPSBuaS5EZXNjcmlwdGlvbiwKICAgICAgICAgICAgICAgICAgICAgICAgSVAgPSBpcCwKICAgICAgICAgICAgICAgICAgICAgICAgU3RhdHVzID0gKGludCluaS5PcGVyYXRpb25hbFN0YXR1cywKICAgICAgICAgICAgICAgICAgICAgICAgTWFjID0gbWFjLAogICAgICAgICAgICAgICAgICAgICAgICBTdWJuZXRNYXNrID0gU2FmZU1hc2sodW5pY2FzdCksCiAgICAgICAgICAgICAgICAgICAgICAgIElzRGhjcEVuYWJsZWQgPSBpcHY0Py5Jc0RoY3BFbmFibGVkID8/IGZhbHNlLAogICAgICAgICAgICAgICAgICAgICAgICBTcGVlZCA9IFRyeUdldFNwZWVkKG5pKSwKICAgICAgICAgICAgICAgICAgICB9OwoKICAgICAgICAgICAgICAgICAgICBmb3JlYWNoICh2YXIgZ3cgaW4gcHJvcHMuR2F0ZXdheUFkZHJlc3NlcykKICAgICAgICAgICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAgICAgICAgIGlmIChndy5BZGRyZXNzLkFkZHJlc3NGYW1pbHkgIT0gQWRkcmVzc0ZhbWlseS5JbnRlck5ldHdvcmspIGNvbnRpbnVlOwogICAgICAgICAgICAgICAgICAgICAgICBpbmZvLkdhdGV3YXkgPSBndy5BZGRyZXNzLlRvU3RyaW5nKCk7CiAgICAgICAgICAgICAgICAgICAgICAgIEFwcExvZy5JbnN0YW5jZS5Mb2cobmFtZW9mKEFkYXB0ZXJTZXJ2aWNlKSwgJCLor7vlj5Z7aW5mby5JUH0g572R5YWzOiB7aW5mby5HYXRld2F5fSIpOwogICAgICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICAgICAgZm9yZWFjaCAodmFyIGRucyBpbiBwcm9wcy5EbnNBZGRyZXNzZXMpCiAgICAgICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgICAgICBpZiAoZG5zLkFkZHJlc3NGYW1pbHkgIT0gQWRkcmVzc0ZhbWlseS5JbnRlck5ldHdvcmspIGNvbnRpbnVlOwogICAgICAgICAgICAgICAgICAgICAgICBpbmZvLkRuc1NlcnZlcnMuQWRkKGRucy5Ub1N0cmluZygpKTsKICAgICAgICAgICAgICAgICAgICAgICAgQXBwTG9nLkluc3RhbmNlLkxvZyhuYW1lb2YoQWRhcHRlclNlcnZpY2UpLCAkIuivu+WPlntpbmZvLklQfSBETlPmnI3liqHlmag6IHtkbnN9Iik7CiAgICAgICAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAgICAgICByYXcuQWRkKGluZm8pOwogICAgICAgICAgICAgICAgICAgIEFwcExvZy5JbnN0YW5jZS5Mb2cobmFtZW9mKEFkYXB0ZXJTZXJ2aWNlKSwgJCLor7vlj5bmnKzlnLDnvZHljaHkv6Hmga8ge2luZm99Iik7CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgICAgY2F0Y2ggKEV4Y2VwdGlvbiBleCkKICAgICAgICAgICAgewogICAgICAgICAgICAgICAgQXBwTG9nLkluc3RhbmNlLkxvZyhuYW1lb2YoQWRhcHRlclNlcnZpY2UpLCAkIui3s+i/h+e9keWNoSB7bmkuTmFtZX06IHtleC5NZXNzYWdlfSIpOwogICAgICAgICAgICB9CiAgICAgICAgfQoKICAgICAgICAvLyBTdGFibGUgb3JkZXJpbmcsIHRoZW4gZGUtZHVwbGljYXRlIGRpc3BsYXkgbmFtZXMuCiAgICAgICAgdmFyIG9yZGVyZWQgPSByYXcuT3JkZXJCeShhID0+IGEuTmFtZSwgU3RyaW5nQ29tcGFyZXIuT3JkaW5hbCkuVGhlbkJ5KGEgPT4gYS5TdGF0dXMpLlRvTGlzdCgpOwogICAgICAgIHZhciByZXN1bHQgPSBuZXcgTGlzdDxBZGFwdGVySW5mbz4oKTsKICAgICAgICBmb3JlYWNoICh2YXIgaXRlbSBpbiBvcmRlcmVkKQogICAgICAgIHsKICAgICAgICAgICAgdmFyIG5hbWUgPSBpdGVtLk5hbWU7CiAgICAgICAgICAgIHZhciBuID0gMTsKICAgICAgICAgICAgd2hpbGUgKHJlc3VsdC5BbnkociA9PiByLk5hbWUgPT0gbmFtZSkpIG5hbWUgPSAkIntpdGVtLk5hbWV9X3tuKyt9IjsKICAgICAgICAgICAgaXRlbS5OYW1lID0gbmFtZTsKICAgICAgICAgICAgcmVzdWx0LkFkZChpdGVtKTsKICAgICAgICB9CgogICAgICAgIHJldHVybiByZXN1bHQ7CiAgICB9CgogICAgLy8vIDxzdW1tYXJ5PgogICAgLy8vIFRoZSAxOTIuMTY4LjEgc3R5bGUgc2VnbWVudCBvZiB0aGUgZmlyc3QgdXNhYmxlIGFkYXB0ZXIg4oCUIHdoYXQgdGhlIG1haW4KICAgIC8vLyB3aW5kb3cgcHJlLWZpbGxzIGF0IHN0YXJ0dXAuCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgcHVibGljIHN0cmluZz8gR2V0UHJpbWFyeVNlZ21lbnQoKQogICAgewogICAgICAgIHZhciBhZGFwdGVycyA9IEdldEFsbCgpOwogICAgICAgIHZhciBwcmVmZXJyZWQgPSBhZGFwdGVycy5GaXJzdE9yRGVmYXVsdChhID0+IGEuSXNVcCAmJiAhc3RyaW5nLklzTnVsbE9yRW1wdHkoYS5JUCkpCiAgICAgICAgICAgICAgICAgICAgICAgID8/IGFkYXB0ZXJzLkZpcnN0T3JEZWZhdWx0KGEgPT4gIXN0cmluZy5Jc051bGxPckVtcHR5KGEuSVApKTsKICAgICAgICBpZiAocHJlZmVycmVkIGlzIG51bGwpIHJldHVybiBudWxsOwoKICAgICAgICB2YXIgc2VnbWVudCA9IElwTWF0aC5HZXRTZWdtZW50KHByZWZlcnJlZC5JUCk7CiAgICAgICAgcmV0dXJuIElwTWF0aC5Jc1ZhbGlkU2VnbWVudChzZWdtZW50KSA/IHNlZ21lbnQgOiBudWxsOwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT5BbGwgZGlzdGluY3Qgc2NhbiBzZWdtZW50cyBpbXBsaWVkIGJ5IHRoZSBjdXJyZW50IGFkYXB0ZXJzLjwvc3VtbWFyeT4KICAgIHB1YmxpYyBMaXN0PHN0cmluZz4gR2V0U2VnbWVudHMoKQogICAgewogICAgICAgIHZhciBzZWVuID0gbmV3IEhhc2hTZXQ8c3RyaW5nPihTdHJpbmdDb21wYXJlci5PcmRpbmFsKTsKICAgICAgICB2YXIgbGlzdCA9IG5ldyBMaXN0PHN0cmluZz4oKTsKICAgICAgICBmb3JlYWNoICh2YXIgYSBpbiBHZXRBbGwoKSkKICAgICAgICB7CiAgICAgICAgICAgIHZhciBzZWdtZW50ID0gSXBNYXRoLkdldFNlZ21lbnQoYS5JUCk7CiAgICAgICAgICAgIGlmIChJcE1hdGguSXNWYWxpZFNlZ21lbnQoc2VnbWVudCkgJiYgc2Vlbi5BZGQoc2VnbWVudCkpIGxpc3QuQWRkKHNlZ21lbnQpOwogICAgICAgIH0KICAgICAgICByZXR1cm4gbGlzdDsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+Rm9ybWF0cyBhIHBoeXNpY2FsIGFkZHJlc3MgYXMgdGhlIG9yaWdpbmFsIGRpZDogIjAwLTFBLTJCLTNDLTRELTVFIi48L3N1bW1hcnk+CiAgICBwdWJsaWMgc3RhdGljIHN0cmluZyBGb3JtYXRNYWMoUGh5c2ljYWxBZGRyZXNzIGFkZHJlc3MpCiAgICB7CiAgICAgICAgdmFyIGJ5dGVzID0gYWRkcmVzcy5HZXRBZGRyZXNzQnl0ZXMoKTsKICAgICAgICBpZiAoYnl0ZXMuTGVuZ3RoID09IDApIHJldHVybiBzdHJpbmcuRW1wdHk7CiAgICAgICAgcmV0dXJuIHN0cmluZy5Kb2luKCItIiwgYnl0ZXMuU2VsZWN0KGIgPT4gYi5Ub1N0cmluZygiWDIiKSkpOwogICAgfQoKICAgIHByaXZhdGUgc3RhdGljIElQdjRJbnRlcmZhY2VQcm9wZXJ0aWVzPyBUcnlHZXRJUHY0UHJvcGVydGllcyhJUEludGVyZmFjZVByb3BlcnRpZXMgcHJvcHMpCiAgICB7CiAgICAgICAgdHJ5IHsgcmV0dXJuIHByb3BzLkdldElQdjRQcm9wZXJ0aWVzKCk7IH0KICAgICAgICBjYXRjaCB7IHJldHVybiBudWxsOyB9CiAgICB9CgogICAgcHJpdmF0ZSBzdGF0aWMgc3RyaW5nIFNhZmVNYXNrKFVuaWNhc3RJUEFkZHJlc3NJbmZvcm1hdGlvbiB1bmljYXN0KQogICAgewogICAgICAgIHRyeSB7IHJldHVybiB1bmljYXN0LklQdjRNYXNrPy5Ub1N0cmluZygpID8/IHN0cmluZy5FbXB0eTsgfQogICAgICAgIGNhdGNoIHsgcmV0dXJuIHN0cmluZy5FbXB0eTsgfQogICAgfQoKICAgIHByaXZhdGUgc3RhdGljIGxvbmcgVHJ5R2V0U3BlZWQoTmV0d29ya0ludGVyZmFjZSBuaSkKICAgIHsKICAgICAgICB0cnkgeyByZXR1cm4gbmkuU3BlZWQ7IH0KICAgICAgICBjYXRjaCB7IHJldHVybiAwOyB9CiAgICB9Cn0K
+using System.Net.NetworkInformation;
+using System.Net.Sockets;
+using IPScaner.Core.Logging;
+using IPScaner.Core.Models;
+
+namespace IPScaner.Core.Net;
+
+/// <summary>
+/// Enumerates the machine's IPv4 adapter bindings — the source for the adapter
+/// combo box, the local-IP window and the desktop badge.
+/// </summary>
+/// <remarks>
+/// Filtering mirrors the original <c>Utility.GetAllAdapterIP</c>: only Ethernet
+/// and Wi-Fi adapters, VMware virtual adapters excluded, and APIPA / loopback /
+/// ".0" addresses skipped. Duplicate adapter names get the original's "_1", "_2"
+/// suffix so the combo box stays unambiguous.
+/// </remarks>
+public sealed class AdapterService
+{
+    /// <summary>Returns every usable IPv4 binding, ordered by adapter name then status.</summary>
+    public List<AdapterInfo> GetAll()
+    {
+        var raw = new List<AdapterInfo>();
+
+        NetworkInterface[] interfaces;
+        try { interfaces = NetworkInterface.GetAllNetworkInterfaces(); }
+        catch (Exception ex)
+        {
+            AppLog.Instance.Log(nameof(AdapterService), "枚举网卡失败: " + ex.Message);
+            return raw;
+        }
+
+        foreach (var ni in interfaces)
+        {
+            try
+            {
+                if (ni.NetworkInterfaceType is not (NetworkInterfaceType.Ethernet or NetworkInterfaceType.Wireless80211))
+                    continue;
+                if (ni.Name.Contains("VMware", StringComparison.OrdinalIgnoreCase))
+                    continue;
+
+                var mac = FormatMac(ni.GetPhysicalAddress());
+                var props = ni.GetIPProperties();
+                var ipv4 = TryGetIPv4Properties(props);
+
+                foreach (var unicast in props.UnicastAddresses)
+                {
+                    if (unicast.Address.AddressFamily != AddressFamily.InterNetwork) continue;
+                    var ip = unicast.Address.ToString();
+                    if (IpMath.IsIgnorableLocalAddress(ip)) continue;
+
+                    var info = new AdapterInfo
+                    {
+                        Name = ni.Name,
+                        Description = ni.Description,
+                        IP = ip,
+                        Status = (int)ni.OperationalStatus,
+                        Mac = mac,
+                        SubnetMask = SafeMask(unicast),
+                        IsDhcpEnabled = ipv4?.IsDhcpEnabled ?? false,
+                        Speed = TryGetSpeed(ni),
+                    };
+
+                    foreach (var gw in props.GatewayAddresses)
+                    {
+                        if (gw.Address.AddressFamily != AddressFamily.InterNetwork) continue;
+                        info.Gateway = gw.Address.ToString();
+                        AppLog.Instance.Log(nameof(AdapterService), $"读取{info.IP} 网关: {info.Gateway}");
+                    }
+
+                    foreach (var dns in props.DnsAddresses)
+                    {
+                        if (dns.AddressFamily != AddressFamily.InterNetwork) continue;
+                        info.DnsServers.Add(dns.ToString());
+                        AppLog.Instance.Log(nameof(AdapterService), $"读取{info.IP} DNS服务器: {dns}");
+                    }
+
+                    raw.Add(info);
+                    AppLog.Instance.Log(nameof(AdapterService), $"读取本地网卡信息 {info}");
+                }
+            }
+            catch (Exception ex)
+            {
+                AppLog.Instance.Log(nameof(AdapterService), $"跳过网卡 {ni.Name}: {ex.Message}");
+            }
+        }
+
+        // Stable ordering, then de-duplicate display names.
+        var ordered = raw.OrderBy(a => a.Name, StringComparer.Ordinal).ThenBy(a => a.Status).ToList();
+        var result = new List<AdapterInfo>();
+        foreach (var item in ordered)
+        {
+            var name = item.Name;
+            var n = 1;
+            while (result.Any(r => r.Name == name)) name = $"{item.Name}_{n++}";
+            item.Name = name;
+            result.Add(item);
+        }
+
+        return result;
+    }
+
+    /// <summary>
+    /// The 192.168.1 style segment of the first usable adapter — what the main
+    /// window pre-fills at startup.
+    /// </summary>
+    public string? GetPrimarySegment()
+    {
+        var adapters = GetAll();
+        var preferred = adapters.FirstOrDefault(a => a.IsUp && !string.IsNullOrEmpty(a.IP))
+                        ?? adapters.FirstOrDefault(a => !string.IsNullOrEmpty(a.IP));
+        if (preferred is null) return null;
+
+        var segment = IpMath.GetSegment(preferred.IP);
+        return IpMath.IsValidSegment(segment) ? segment : null;
+    }
+
+    /// <summary>All distinct scan segments implied by the current adapters.</summary>
+    public List<string> GetSegments()
+    {
+        var seen = new HashSet<string>(StringComparer.Ordinal);
+        var list = new List<string>();
+        foreach (var a in GetAll())
+        {
+            var segment = IpMath.GetSegment(a.IP);
+            if (IpMath.IsValidSegment(segment) && seen.Add(segment)) list.Add(segment);
+        }
+        return list;
+    }
+
+    /// <summary>Formats a physical address as the original did: "00-1A-2B-3C-4D-5E".</summary>
+    public static string FormatMac(PhysicalAddress address)
+    {
+        var bytes = address.GetAddressBytes();
+        if (bytes.Length == 0) return string.Empty;
+        return string.Join("-", bytes.Select(b => b.ToString("X2")));
+    }
+
+    private static IPv4InterfaceProperties? TryGetIPv4Properties(IPInterfaceProperties props)
+    {
+        try { return props.GetIPv4Properties(); }
+        catch { return null; }
+    }
+
+    private static string SafeMask(UnicastIPAddressInformation unicast)
+    {
+        try { return unicast.IPv4Mask?.ToString() ?? string.Empty; }
+        catch { return string.Empty; }
+    }
+
+    private static long TryGetSpeed(NetworkInterface ni)
+    {
+        try { return ni.Speed; }
+        catch { return 0; }
+    }
+}

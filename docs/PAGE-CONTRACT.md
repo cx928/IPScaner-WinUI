@@ -1,1 +1,230 @@
-IyBXaW5VSSBwYWdlIGltcGxlbWVudGF0aW9uIGNvbnRyYWN0CgpSZWFkIHRoaXMgZnVsbHkgYmVmb3JlIHdyaXRpbmcgY29kZS4gSXQgaXMgdGhlIGZyb3plbiBpbnRlcmZhY2UgYmV0d2VlbiB0aGUKcGFnZXMgYnVpbHQgaW4gcGFyYWxsZWwgYW5kIHRoZSBhbHJlYWR5LWZpbmlzaGVkIHNoZWxsLgoKIyMgMS4gV2hlcmUgeW91IHdvcmsKClRoZSByZWFsIHRyZWUgaXM6CgpgYGAKRTpcVXNlcnNcQWRtaW5pc3RyYXRvclxEb2N1bWVudHNcZGVlcHNlZWstaGFybmVzc1xkZWZhdWx0LXdvcmtzcGFjZVxpcHNjYW5lci13aW51aVwKICBzcmNcSVBTY2FuZXIuQ29yZVwgICAgICAgICAgICA8LSBGSU5JU0hFRC4gRG8gbm90IG1vZGlmeS4KICBzcmNcSVBTY2FuZXIuV2luVUlcICAgICAgICAgICA8LSB0aGUgYXBwLiBZb3UgYWRkIHBhZ2UgZmlsZXMgaGVyZS4KICBkb2NzXHJlXDAxLW1haW53aW5kb3cubWQgICAgICA8LSByZXZlcnNlLWVuZ2luZWVyaW5nIHNwZWNzIChzb3VyY2Ugb2YgdHJ1dGgpCiAgZG9jc1xyZVwwMi1jb25maWctbWVtby5tZAogIGRvY3NccmVcMDMtYmF0Y2hzY2FuLWNhbGMubWQKICBkb2NzXHJlXDA0LXBvcnRzY2FuLm1kCiAgZG9jc1xyZVwwNS1sb2NhbGlwLXdpZmktaW5mcmEubWQKYGBgCgoqKkRvIG5vdCBidWlsZCB0aGUgcmVhbCB0cmVlKiog4oCUIHNldmVyYWwgYWdlbnRzIHNoYXJlIGl0LiBJbnN0ZWFkOgoKYGBgcG93ZXJzaGVsbAojIDEuIGNvcHkgdG8geW91ciBvd24gc2NyYXRjaCBhcmVhIChleGNsdWRlIGJ1aWxkIG91dHB1dCkKJHNyYyA9ICJFOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXERvY3VtZW50c1xkZWVwc2Vlay1oYXJuZXNzXGRlZmF1bHQtd29ya3NwYWNlXGlwc2NhbmVyLXdpbnVpIgokZHN0ID0gIkU6XFVzZXJzXEFkbWluaXN0cmF0b3JcRG9jdW1lbnRzXGRlZXBzZWVrLWhhcm5lc3NcZGVmYXVsdC13b3Jrc3BhY2VcX3dvcmtcPFlPVVItTkFNRT5caXBzY2FuZXItd2ludWkiCnJvYm9jb3B5ICRzcmMgJGRzdCAvRSAvWEQgYmluIG9iaiAuZ2l0IF93b3JrIF92ZXJpZnkgfCBPdXQtTnVsbAoKIyAyLiBidWlsZCArIGl0ZXJhdGUgdGhlcmUKZG90bmV0IGJ1aWxkICIkZHN0XHNyY1xJUFNjYW5lci5XaW5VSVxJUFNjYW5lci5XaW5VSS5jc3Byb2oiIC1jIERlYnVnIC0tbm9sb2dvCgojIDMuIHJ1biBpdCB0byBjaGVjayB5b3VyIHBhZ2UgcmVuZGVycwomICIkZHN0XHNyY1xJUFNjYW5lci5XaW5VSVxiaW5cRGVidWdcbmV0OC4wLXdpbmRvd3MxMC4wLjE5MDQxLjBcd2luLXg2NFxJUFNjYW5lci5leGUiCmBgYAoKU2NyZWVuc2hvdCBoZWxwZXIgKHdvcmtzIG9uIGEgcnVubmluZyB3aW5kb3csIHotb3JkZXIgaW5kZXBlbmRlbnQpOgoKYGBgcG93ZXJzaGVsbAomICJDOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXC5kc2hcZHNoLXJ1bnRpbWVzXGRzaC1wcmltYXJ5LXJ1bnRpbWVcZGVwZW5kZW5jaWVzXHB5dGhvblxweXRob24uZXhlIiBgCiAgIiRzcmNcdG9vbHNcZ3JhYl93aW5kb3cucHkiICJJUFNjYW5lciIgIiRkc3Rcc2hvdC5wbmciCmBgYApDbGljayB0aHJvdWdoIHRvIHlvdXIgcGFnZSBmaXJzdCAodGhlIGFwcCBvcGVucyBvbiBJUOauteaJq+aPjzsgbmF2IGl0ZW1zIGFyZSBvbiB0aGUgbGVmdCkuCgoqKldoZW4gZG9uZSwgY29weSBPTkxZIHlvdXIgcGFnZSBmaWxlcyBiYWNrIGludG8gdGhlIHJlYWwgdHJlZS4qKiBOZXZlciBjb3B5CmBiaW5gLCBgb2JqYCwgYE1haW5XaW5kb3cuKmAsIGBBcHAuKmAgb3IgYW55dGhpbmcgdW5kZXIgYHNyY1xJUFNjYW5lci5Db3JlYC4KCiMjIDIuIEZpbGVzIHlvdSBvd24KCkVhY2ggcGFnZSBpcyBhIFhBTUwgYFBhZ2VgLiBUaGUgcmVhbCB0cmVlIGN1cnJlbnRseSBjb250YWlucyBhICoqc3R1YioqIGF0CmBzcmNcSVBTY2FuZXIuV2luVUlcVmlld3NcPE5hbWU+LmNzYCB0aGF0IHJlbmRlcnMgIuWKn+iDveW7uuiuvuS4rSIuCgpUbyBpbXBsZW1lbnQgeW91ciBwYWdlOgoxLiAqKkRlbGV0ZSoqIGBWaWV3c1w8TmFtZT4uY3NgICh0aGUgc3R1YikuCjIuICoqQWRkKiogYFZpZXdzXDxOYW1lPi54YW1sYCArIGBWaWV3c1w8TmFtZT4ueGFtbC5jc2AuCgpUaGUgc3R1YiBtdXN0IGJlIGRlbGV0ZWQg4oCUIGxlYXZpbmcgaXQgcHJvZHVjZXMgYSBkdXBsaWNhdGUgY2xhc3MgZGVmaW5pdGlvbi4KCkV4YWN0IHNoYXBlOgoKYGBgeG1sCjw/eG1sIHZlcnNpb249IjEuMCIgZW5jb2Rpbmc9InV0Zi04Ij8+CjxQYWdlIHg6Q2xhc3M9IklQU2NhbmVyLldpblVJLlZpZXdzLkJhdGNoU2NhblBhZ2UiCiAgICAgIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iCiAgICAgIHhtbG5zOng9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sIgogICAgICB4bWxuczpkPSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL2V4cHJlc3Npb24vYmxlbmQvMjAwOCIKICAgICAgeG1sbnM6bWM9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxmb3JtYXRzLm9yZy9tYXJrdXAtY29tcGF0aWJpbGl0eS8yMDA2IgogICAgICBtYzpJZ25vcmFibGU9ImQiPgogICAgLi4uCjwvUGFnZT4KYGBgCgpgYGBjc2hhcnAKbmFtZXNwYWNlIElQU2NhbmVyLldpblVJLlZpZXdzOwoKcHVibGljIHNlYWxlZCBwYXJ0aWFsIGNsYXNzIEJhdGNoU2NhblBhZ2UgOiBNaWNyb3NvZnQuVUkuWGFtbC5Db250cm9scy5QYWdlCnsKICAgIHB1YmxpYyBCYXRjaFNjYW5QYWdlKCkgPT4gSW5pdGlhbGl6ZUNvbXBvbmVudCgpOwp9CmBgYAoKIyMgMy4gV2hhdCB5b3UgbXVzdCBOT1QgY2hhbmdlCgpgTWFpbldpbmRvdy54YW1sKC5jcylgLCBgQXBwLnhhbWwoLmNzKWAsIGBTZXJ2aWNlc1wqYCwgYFZpZXdNb2RlbHNcKmAsIGBTdHlsZXNcKmAsCmBWaWV3c1xTY2FuUGFnZS4qYCwgYFZpZXdzXEFib3V0UGFnZS4qYCwgYFZpZXdzXFBsYWNlaG9sZGVyUGFnZS5jc2AsCmFueXRoaW5nIHVuZGVyIGBzcmNcSVBTY2FuZXIuQ29yZVxgLCBgSVBTY2FuZXIuV2luVUkuY3Nwcm9qYC4KCklmIHlvdSBuZWVkIGEgaGVscGVyLCBwdXQgaXQgKippbnNpZGUgeW91ciBvd24gcGFnZSBjbGFzcyoqIGFzIGEgcHJpdmF0ZSBtZW1iZXIsCm9yIGFzIGEgYHByaXZhdGUgc2VhbGVkYCBuZXN0ZWQgdHlwZS4gRG8gbm90IGFkZCBuZXcgdG9wLWxldmVsIHB1YmxpYyB0eXBlcyDigJQKdHdvIGFnZW50cyBjb3VsZCBwaWNrIHRoZSBzYW1lIG5hbWUuCgojIyA0LiBBdmFpbGFibGUgQVBJcwoKIyMjIGBJUFNjYW5lci5XaW5VSS5TZXJ2aWNlcy5BcHBTZXJ2aWNlcy5DdXJyZW50YAoKYGBgY3NoYXJwCkFwcENvbmZpZyBDb25maWcgeyBnZXQ7IH0gICAgICAgICAgICAgICAgIC8vIGxpdmUgY29uZmlnOyBzZWUgwqc1CnZvaWQgQXBwbHlDb25maWcoQXBwQ29uZmlnIGNvbmZpZyk7ICAgICAgIC8vIHNhdmUgKyByYWlzZSBDb25maWdDaGFuZ2VkCnZvaWQgUmVsb2FkQ29uZmlnKCk7CkNvbmZpZ1N0b3JlIENvbmZpZ1N0b3JlIHsgZ2V0OyB9ICAgICAgICAgIC8vIC5GaWxlUGF0aApNZW1vU3RvcmUgIE1lbW8geyBnZXQ7IH0gICAgICAgICAgICAgICAgICAvLyAuTG9va3VwKG1hYywgaXApLCAuU2V0KGtleSx2YWx1ZSksIC5TYXZlKCksIC5FbnRyaWVzLCAuUmVtb3ZlKCkKRGl5Q29tbWFuZFN0b3JlIERpeUNvbW1hbmRzIHsgZ2V0OyB9ICAgICAgLy8gLkxvYWQoKQpOZXR3b3JrSGlzdG9yeSBIaXN0b3J5IHsgZ2V0OyB9ICAgICAgICAgICAvLyAuTG9hZCgpLCAuQWRkKEFkYXB0ZXJJbmZvKSwgLlNhdmUoZW50cmllcykKU2hlbGxMYXVuY2hlciBTaGVsbCB7IGdldDsgfSAgICAgICAgICAgICAgLy8gLlJ1bkNvbW1hbmQoY21kLCB2aXNpYmxlKSwgLlJ1bkhvc3RBY3Rpb24oRXZlbnROYW1lLGlwLHBpbmdDb3VudCksIC5PcGVuVXJsLCAuT3BlblNoYXJlLCAuT3BlbkZvbGRlciwgLlJ1bkJ1aWx0SW5Ub29sCkFkYXB0ZXJTZXJ2aWNlIEFkYXB0ZXJzIHsgZ2V0OyB9ICAgICAgICAgIC8vIC5HZXRBbGwoKSwgLkdldFNlZ21lbnRzKCksIC5HZXRQcmltYXJ5U2VnbWVudCgpCkFycFRhYmxlIEFycCB7IGdldDsgfQpTY2FuRW5naW5lIFNjYW5uZXIgeyBnZXQ7IH0gICAgICAgICAgICAgICAvLyAuUnVuQXN5bmMoLi4uKSwgLlByb2JlT25jZUFzeW5jKGlwLCBjZmcsIGN0KQpQb3J0U2Nhbm5lciBQb3J0U2Nhbm5lciB7IGdldDsgfSAgICAgICAgICAvLyAuUnVuQXN5bmMoUG9ydFNjYW5SZXF1ZXN0LCBvblJlc3VsdCwgcHJvZ3Jlc3MsIGN0KQpMb2NhbFBvcnRUYWJsZSBMb2NhbFBvcnRzIHsgZ2V0OyB9ICAgICAgICAvLyAuUXVlcnlBc3luYyhpbmNsdWRlVGNwLCBpbmNsdWRlVWRwLCBpbmNsdWRlSXB2NiwgY3QpCldpZmlTZXJ2aWNlIFdpZmkgeyBnZXQ7IH0gICAgICAgICAgICAgICAgIC8vIC5RdWVyeUFzeW5jKGN0KQpOZXR3b3JrQ29uZmlndXJhdG9yIE5ldHdvcmtDb25maWcgeyBnZXQ7IH0vLyAuU2V0U3RhdGljQXN5bmMgLyAuU2V0RGhjcEFzeW5jIC8gLlNldERuc1N0YXRpY0FzeW5jIC8gLlNldERuc0RoY3BBc3luYyAvIC5FbmFibGVBZGFwdGVyQXN5bmMgLyAuRGlzYWJsZUFkYXB0ZXJBc3luYwpib29sIElzRWxldmF0ZWQgeyBnZXQ7IH0KSVJlYWRPbmx5TGlzdDxBZGFwdGVySW5mbz4gQWRhcHRlckxpc3QgeyBnZXQ7IH0KSVJlYWRPbmx5TGlzdDxBZGFwdGVySW5mbz4gUmVmcmVzaEFkYXB0ZXJzKCk7CnZvaWQgQ2xlYXJDYWNoZXMoKTsKc3RyaW5nIEdldERlZmF1bHRTZWdtZW50KCk7CmV2ZW50IEV2ZW50SGFuZGxlcjxBcHBDb25maWc+PyBDb25maWdDaGFuZ2VkOwpgYGAKCiMjIyBgSVBTY2FuZXIuV2luVUkuU2VydmljZXMuVWlLaXRgIChzdGF0aWMpCgpgYGBjc2hhcnAKQ29sb3IgQ29sb3JGcm9tQXJnYihpbnQgYXJnYik7ICAgICAgaW50IEFyZ2JGcm9tQ29sb3IoQ29sb3IgYyk7ClNvbGlkQ29sb3JCcnVzaCBCcnVzaEZyb21BcmdiKGludCBhcmdiKTsKQ29sb3IgQ29udHJhc3RpbmdUZXh0Q29sb3IoQ29sb3IgYmFja2dyb3VuZCk7CmJvb2wgQ29weVRvQ2xpcGJvYXJkKHN0cmluZyB0ZXh0KTsgIFRhc2s8c3RyaW5nPiBSZWFkQ2xpcGJvYXJkQXN5bmMoKTsKVGFzayBJbmZvQXN5bmMoWGFtbFJvb3QsIHN0cmluZyB0aXRsZSwgc3RyaW5nIG1lc3NhZ2UpOwpUYXNrPGJvb2w+IENvbmZpcm1Bc3luYyhYYW1sUm9vdCwgc3RyaW5nIHRpdGxlLCBzdHJpbmcgbWVzc2FnZSwgc3RyaW5nIHByaW1hcnk9IuehruWumiIsIHN0cmluZyBjbG9zZT0i5Y+W5raIIik7ClRhc2s8Q29udGVudERpYWxvZ1Jlc3VsdD4gU2hvd0NvbnRlbnRBc3luYyhYYW1sUm9vdCwgc3RyaW5nIHRpdGxlLCBvYmplY3QgY29udGVudCwgc3RyaW5nPyBwcmltYXJ5LCBzdHJpbmc/IHNlY29uZGFyeSwgc3RyaW5nIGNsb3NlPSLlhbPpl60iKTsKVGFzazxDb250ZW50RGlhbG9nUmVzdWx0PiBTaG93U2FmZUFzeW5jKENvbnRlbnREaWFsb2cgZGlhbG9nKTsKWGFtbFJvb3Q/IE1haW5YYW1sUm9vdDsgICB2b2lkIEFjdGl2YXRlTWFpbldpbmRvdygpOyAgIGJvb2wgSXNFbGV2YXRlZDsgICBib29sIFJlc3RhcnRFbGV2YXRlZCgpOwpgYGAKClBhc3MgYFhhbWxSb290YCAodGhlIHBhZ2UgcHJvcGVydHkpIHRvIHRoZSBkaWFsb2cgaGVscGVycy4gV2luVUkgaGFzICoqbm8KYE1lc3NhZ2VCb3hgKiog4oCUIHVzZSB0aGVzZSBmb3IgZXZlcnkgcHJvbXB0LgoKIyMjIGBJUFNjYW5lci5XaW5VSS5TZXJ2aWNlcy5OYXZpZ2F0aW9uQXJnc2AgKHN0YXRpYykKCmBgYGNzaGFycApzdHJpbmc/IFBlbmRpbmdQb3J0U2Nhbkhvc3QgeyBnZXQ7IHNldDsgfSAgIC8vICsgVGFrZVBvcnRTY2FuSG9zdCgpCnN0cmluZz8gUGVuZGluZ0JhdGNoU2VnbWVudCB7IGdldDsgc2V0OyB9ICAgLy8gKyBUYWtlQmF0Y2hTZWdtZW50KCkKc3RyaW5nPyBQZW5kaW5nTWVtb0tleSB7IGdldDsgc2V0OyB9ICAgICAgICAvLyArIFRha2VNZW1vS2V5KCkKYGBgCgpDcm9zcy1wYWdlIG5hdmlnYXRpb246IGBBcHAuTWFpbldpbmRvdz8uTmF2aWdhdGVUbygiYmF0Y2giKWAg4oCUIHZhbGlkIHRhZ3MgYXJlCmBzY2FuLCBiYXRjaCwgcG9ydHNjYW4sIGxvY2FscG9ydCwgbG9jYWxpcCwgd2lmaSwgY2FsYywgbWVtbywgY29uZmlnLCBhYm91dGAuCkZyb20gYSBwYWdlIHlvdSBjYW4gYWxzbyBzZXQgdGhlIHN0YXR1cyBiYXIgdmlhIGBBcHAuTWFpbldpbmRvdz8uU2V0U3RhdHVzKCLigKYiKWAuCgojIyMgQ29yZSB0eXBlcyB5b3Ugd2lsbCB1c2UKCk5hbWVzcGFjZSBgSVBzY2FuZXIuQ29yZS4qYCDigJQgYEFwcENvbmZpZ2AsIGBDb25maWdTdG9yZWAsIGBFdmVudE5hbWVgLApgSG9zdFJlc3VsdGAsIGBIb3N0U3RhdHVzYCwgYEhvc3RTdGF0dXNUZXh0YCwgYExpdmVuZXNzU291cmNlYCwgYEFkYXB0ZXJJbmZvYCwKYFBvcnRTY2FuUmVzdWx0YCwgYExvY2FsUG9ydEluZm9gLCBgV2lmaVByb2ZpbGVgLCBgRGl5Q29tbWFuZGAsCmBJcE1hdGhgLCBgU3VibmV0Q2FsY3VsYXRvcmAsIGBTdWJuZXRSZXN1bHRgLCBgVGNwUHJvYmVgLCBgUG9ydFNjYW5uZXJgLApgUG9ydFNjYW5SZXF1ZXN0YCwgYFNjYW5FbmdpbmVgLCBgU2NhblByb2dyZXNzYCwgYExvY2FsUG9ydFRhYmxlYCwKYFdpZmlTZXJ2aWNlYCwgYE5ldHdvcmtDb25maWd1cmF0b3JgLCBgTmV0Q29uZmlnUmVzdWx0YCwgYE5ldHdvcmtIaXN0b3J5YCwKYE1lbW9TdG9yZWAsIGBTaGVsbExhdW5jaGVyYCwgYFRhYmxlRXhwb3J0ZXJgLCBgVGV4dEZpbGVFbmNvZGluZ2AsCmBTZXJ2aWNlTmFtZXNgLCBgQXBwTG9nLkluc3RhbmNlLkxvZyhjYXRlZ29yeSwgbWVzc2FnZSlgLgoKYFRhYmxlRXhwb3J0ZXJgIGlzIGhvdyB5b3Ugd3JpdGUgb3V0cHV0OgpgYGBjc2hhcnAKc3RyaW5nIG5hbWUgPSBUYWJsZUV4cG9ydGVyLkJ1aWxkRmlsZU5hbWUoIklQ5om56YeP5omr5o+PIiwgIi5jc3YiKTsgIC8vIDxwcmVmaXg+LXl5eXlNTWRkSEhtbXNzLmNzdgpUYWJsZUV4cG9ydGVyLldyaXRlQ3N2KHBhdGgsIGhlYWRlcnMsIHJvd3MpOyAgICAgIC8vIFVURi04IHdpdGggQk9NLCBSRkM0MTgwIHF1b3RlZApUYWJsZUV4cG9ydGVyLldyaXRlWGxzeChwYXRoLCAiU2hlZXQxIiwgaGVhZGVycywgcm93cyk7ICAvLyByZWFsIC54bHN4CmBgYAoKV3JpdGUgZXhwb3J0cyB0byBgUGF0aC5Db21iaW5lKEFwcENvbnRleHQuQmFzZURpcmVjdG9yeSwgIuWvvOWHuiIpYCB3aXRoIGEKRG9jdW1lbnRzIGZhbGxiYWNrIGlmIHRoYXQgdGhyb3dzIChzZWUgYFNjYW5QYWdlLkV4cG9ydEZvbGRlcigpYCBmb3IgdGhlIHBhdHRlcm4pLgoKIyMgNS4gQ29uZmlndXJhdGlvbgoKYEFwcENvbmZpZ2AgbWlycm9ycyB0aGUgb3JpZ2luYWwgYElQU2NhbmVyLmNmZ2AuICoqTmV2ZXIgbXV0YXRlCmBBcHBTZXJ2aWNlcy5DdXJyZW50LkNvbmZpZ2AgaW4gcGxhY2UqKiDigJQgY2xvbmUsIGNoYW5nZSwgYXBwbHk6CgpgYGBjc2hhcnAKdmFyIGNmZyA9IEFwcFNlcnZpY2VzLkN1cnJlbnQuQ29uZmlnLkNsb25lKCk7CmNmZy5QaW5nVGltZW91dCA9IDgwMDsKQXBwU2VydmljZXMuQ3VycmVudC5BcHBseUNvbmZpZyhjZmcpOwpgYGAKCk51bWVyaWMgcmFuZ2VzIHRoZSBvcmlnaW5hbCBVSSBlbmZvcmNlZCAoY2xhbXAsIGRvICoqbm90KiogdGhyb3cg4oCUIHRoZSBvcmlnaW5hbApjcmFzaGVkIG9uIGEgaGFuZC1lZGl0ZWQgY2ZnKToKCnwgU2V0dGluZyB8IFJhbmdlIHwgU3RlcCB8IERlZmF1bHQgfAp8LS0tfC0tLXwtLS18LS0tfAp8IGBQaW5nVGltZW91dGAgfCAxMOKAkzUwMDAgfCAxMDAgfCA1MDAgfAp8IGBQaW5nQ291bnRgIHwgMeKAkzEwMCB8IDEgfCA0IHwKfCBgRG91YmxlQ2xpY2tUaW1lYCB8IDEwMOKAkzUwMCB8IDUwIHwgMjAwIHwKfCBgUG9ydFRpbWVvdXRgIHwgMTDigJMyMDAwIHwgNTAgfCA1MCB8CnwgYEJ0bkZvbnRTaXplYCB8IDfigJMxMiB8IDEgfCA5IHwKfCBgRGVza3RvcE92ZXJsYXlPZmZzZXRYL1lgIHwg4oiSNTAw4oCTNTAwMCB8IDEwIHwgMTAwIHwKfCBgRGVza3RvcE92ZXJsYXlPcGFjaXR5YCB8IDDigJMxMDAgfCAxMCB8IDcwIHwKfCBgRGVza3RvcE92ZXJsYXlMb2NhdGlvbmAgfCAw4oCTMyB8IDEgfCAyIHwKCkNvbG91cnMgYXJlICoqc2lnbmVkIEFSR0IgaW50cyoqIChXaW5Gb3JtcyBgQ29sb3IuVG9BcmdiKClgKSwgZS5nLiBTa3lCbHVlCmAtNzg3Njg4NWAsIExpbWVHcmVlbiBgLTEzNDQ3ODg2YCwgSW5kaWFuUmVkIGAtMzMxODY5MmAsIEJsdWUgYC0xNjc3Njk2MWAsCkJsYWNrIGAtMTY3NzcyMTZgLCBZZWxsb3cgYC0yNTZgLiBDb252ZXJ0IHdpdGggYFVpS2l0LkNvbG9yRnJvbUFyZ2JgIC8KYFVpS2l0LkFyZ2JGcm9tQ29sb3JgLiBUaGUgb3JpZ2luYWwgdXNlZCBhIGBDb2xvckRpYWxvZ2AsIHdoaWNoIFdpblVJIGxhY2tzIOKAlApidWlsZCBhbiBpbmxpbmUgc3dhdGNoIGdyaWQgb3IgYSBzbWFsbCBgQ29sb3JQaWNrZXJgIGZyb20KYE1pY3Jvc29mdC5VSS5YYW1sLkNvbnRyb2xzYCAoYXZhaWxhYmxlIGluIFdpblVJIDMpIGluc2lkZSBhIGBDb250ZW50RGlhbG9nYC4KCiMjIDYuIFN0eWxlIHJ1bGVzCgotIEFsbCB1c2VyLWZhY2luZyB0ZXh0IGlzICoqU2ltcGxpZmllZCBDaGluZXNlKiosIG1hdGNoaW5nIHRoZSBleGFjdCBzdHJpbmdzIGluCiAgYGRvY3NccmVcKi5tZGAuIERvIG5vdCBpbnZlbnQgbmV3IHdvcmRpbmcgd2hlcmUgdGhlIHNwZWMgcXVvdGVzIG9uZS4KLSBVc2UgdGhlIHNoYXJlZCBzdHlsZXM6IGBDYXJkU3R5bGVgLCBgU2VjdGlvbkhlYWRlclN0eWxlYCwgYEhpbnRUZXh0U3R5bGVgLAogIGBGaWVsZExhYmVsU3R5bGVgLCBgU3RhdHVzVGV4dFN0eWxlYCwgYExlZ2VuZFN3YXRjaFN0eWxlYCwgYElwQmxvY2tCdXR0b25TdHlsZWAKICAoYWxsIGluIGBTdHlsZXNcQXBwU3R5bGVzLnhhbWxgLCBhbHJlYWR5IG1lcmdlZCBhcHAtd2lkZSkuCi0gTG9uZy1ydW5uaW5nIHdvcmsgbXVzdCBiZSBgYXN5bmNgLCBtdXN0IHNob3cgcHJvZ3Jlc3MsIGFuZCBtdXN0IGJlCiAgKipjYW5jZWxsYWJsZSoqIHZpYSBhIGBDYW5jZWxsYXRpb25Ub2tlblNvdXJjZWAgY2FuY2VsbGVkIGluIGBVbmxvYWRlZGAuCi0gTmV2ZXIgdG91Y2ggVUkgZnJvbSBhIGJhY2tncm91bmQgdGhyZWFkOiBgRGlzcGF0Y2hlclF1ZXVlLlRyeUVucXVldWUoLi4uKWAuCi0gV3JhcCByaXNreSBJL08gaW4gdHJ5L2NhdGNoIGFuZCBsb2cgdmlhIGBBcHBMb2cuSW5zdGFuY2UuTG9nKG5hbWVvZihZb3VyUGFnZSksIG1zZylgLgotIGBOdWxsYWJsZWAgaXMgZW5hYmxlZCDigJQgbm8gbnVsbGFibGUgd2FybmluZ3MuCi0gVGhlIGJ1aWxkIG11c3QgZmluaXNoIHdpdGggKiowIGVycm9ycyBhbmQgMCB3YXJuaW5ncyoqLgoKIyMgNy4gRmlkZWxpdHkgdnMuIGltcHJvdmVtZW50CgpUaGUgZ29hbCBpcyBhIGZhaXRoZnVsIHBvcnQgdGhhdCBhbHNvIGZpeGVzIHJlYWwgZGVmZWN0cy4gV2hlcmUgdGhlIHNwZWNzIGxpc3QgYQpidWcgKHNpbGVudCBmYWlsdXJlcywgdW5yZWFjaGFibGUgY29kZSwgbG9jYWxlLWRlcGVuZGVudCBwYXJzaW5nLCB1bmJvdW5kZWQKY29uY3VycmVuY3ksIHVuY2FuY2VsbGFibGUgd2FpdHMpLCBmaXggaXQgYW5kIG5vdGUgaXQgaW4gYSBzaG9ydCBjb21tZW50LiBXaGVyZQp0aGUgc3BlYyBxdW90ZXMgZXhhY3QgQ2hpbmVzZSBzdHJpbmdzLCB1c2VyLXZpc2libGUgZm9ybWF0cyBvciBmaWxlIGZvcm1hdHMsCm1hdGNoIHRoZW0gZXhhY3RseSDigJQgdGhvc2UgYXJlIGNvbXBhdGliaWxpdHkgc3VyZmFjZSwgbm90IGJ1Z3MuCgojIyA4LiBSZXBvcnQgZm9ybWF0CgpXaGVuIGZpbmlzaGVkLCByZXBvcnQ6CjEuIHRoZSBwYWdlIGZpbGVzIHlvdSBwcm9kdWNlZCAocmVhbC10cmVlIHBhdGhzKSwKMi4gdGhlIGV4YWN0IGJ1aWxkIGNvbW1hbmQgYW5kIGl0cyByZXN1bHQgKDAgZXJyb3JzIC8gMCB3YXJuaW5ncyksCjMuIHdoYXQgeW91IHZlcmlmaWVkIGJ5IHJ1bm5pbmcgdGhlIGFwcCBhbmQgd2hhdCB5b3Ugc2F3LAo0LiBhbnkgZGV2aWF0aW9uIGZyb20gdGhlIHNwZWMgYW5kIHdoeSwKNS4gYW55dGhpbmcgeW91IGNvdWxkIG5vdCB2ZXJpZnkuCg==
+# WinUI page implementation contract
+
+Read this fully before writing code. It is the frozen interface between the
+pages built in parallel and the already-finished shell.
+
+## 1. Where you work
+
+The real tree is:
+
+```
+E:\Users\Administrator\Documents\deepseek-harness\default-workspace\ipscaner-winui\
+  src\IPScaner.Core\            <- FINISHED. Do not modify.
+  src\IPScaner.WinUI\           <- the app. You add page files here.
+  docs\re\01-mainwindow.md      <- reverse-engineering specs (source of truth)
+  docs\re\02-config-memo.md
+  docs\re\03-batchscan-calc.md
+  docs\re\04-portscan.md
+  docs\re\05-localip-wifi-infra.md
+```
+
+**Do not build the real tree** — several agents share it. Instead:
+
+```powershell
+# 1. copy to your own scratch area (exclude build output)
+$src = "E:\Users\Administrator\Documents\deepseek-harness\default-workspace\ipscaner-winui"
+$dst = "E:\Users\Administrator\Documents\deepseek-harness\default-workspace\_work\<YOUR-NAME>\ipscaner-winui"
+robocopy $src $dst /E /XD bin obj .git _work _verify | Out-Null
+
+# 2. build + iterate there
+dotnet build "$dst\src\IPScaner.WinUI\IPScaner.WinUI.csproj" -c Debug --nologo
+
+# 3. run it to check your page renders
+& "$dst\src\IPScaner.WinUI\bin\Debug\net8.0-windows10.0.19041.0\win-x64\IPScaner.exe"
+```
+
+Screenshot helper (works on a running window, z-order independent):
+
+```powershell
+& "C:\Users\Administrator\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\python\python.exe" `
+  "$src\tools\grab_window.py" "IPScaner" "$dst\shot.png"
+```
+Click through to your page first (the app opens on IP段扫描; nav items are on the left).
+
+**When done, copy ONLY your page files back into the real tree.** Never copy
+`bin`, `obj`, `MainWindow.*`, `App.*` or anything under `src\IPScaner.Core`.
+
+## 2. Files you own
+
+Each page is a XAML `Page`. The real tree currently contains a **stub** at
+`src\IPScaner.WinUI\Views\<Name>.cs` that renders "功能建设中".
+
+To implement your page:
+1. **Delete** `Views\<Name>.cs` (the stub).
+2. **Add** `Views\<Name>.xaml` + `Views\<Name>.xaml.cs`.
+
+The stub must be deleted — leaving it produces a duplicate class definition.
+
+Exact shape:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<Page x:Class="IPScaner.WinUI.Views.BatchScanPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d">
+    ...
+</Page>
+```
+
+```csharp
+namespace IPScaner.WinUI.Views;
+
+public sealed partial class BatchScanPage : Microsoft.UI.Xaml.Controls.Page
+{
+    public BatchScanPage() => InitializeComponent();
+}
+```
+
+## 3. What you must NOT change
+
+`MainWindow.xaml(.cs)`, `App.xaml(.cs)`, `Services\*`, `ViewModels\*`, `Styles\*`,
+`Views\ScanPage.*`, `Views\AboutPage.*`, `Views\PlaceholderPage.cs`,
+anything under `src\IPScaner.Core\`, `IPScaner.WinUI.csproj`.
+
+If you need a helper, put it **inside your own page class** as a private member,
+or as a `private sealed` nested type. Do not add new top-level public types —
+two agents could pick the same name.
+
+## 4. Available APIs
+
+### `IPScaner.WinUI.Services.AppServices.Current`
+
+```csharp
+AppConfig Config { get; }                 // live config; see §5
+void ApplyConfig(AppConfig config);       // save + raise ConfigChanged
+void ReloadConfig();
+ConfigStore ConfigStore { get; }          // .FilePath
+MemoStore  Memo { get; }                  // .Lookup(mac, ip), .Set(key,value), .Save(), .Entries, .Remove()
+DiyCommandStore DiyCommands { get; }      // .Load()
+NetworkHistory History { get; }           // .Load(), .Add(AdapterInfo), .Save(entries)
+ShellLauncher Shell { get; }              // .RunCommand(cmd, visible), .RunHostAction(EventName,ip,pingCount), .OpenUrl, .OpenShare, .OpenFolder, .RunBuiltInTool
+AdapterService Adapters { get; }          // .GetAll(), .GetSegments(), .GetPrimarySegment()
+ArpTable Arp { get; }
+ScanEngine Scanner { get; }               // .RunAsync(...), .ProbeOnceAsync(ip, cfg, ct)
+PortScanner PortScanner { get; }          // .RunAsync(PortScanRequest, onResult, progress, ct)
+LocalPortTable LocalPorts { get; }        // .QueryAsync(includeTcp, includeUdp, includeIpv6, ct)
+WifiService Wifi { get; }                 // .QueryAsync(ct)
+NetworkConfigurator NetworkConfig { get; }// .SetStaticAsync / .SetDhcpAsync / .SetDnsStaticAsync / .SetDnsDhcpAsync / .EnableAdapterAsync / .DisableAdapterAsync
+bool IsElevated { get; }
+IReadOnlyList<AdapterInfo> AdapterList { get; }
+IReadOnlyList<AdapterInfo> RefreshAdapters();
+void ClearCaches();
+string GetDefaultSegment();
+event EventHandler<AppConfig>? ConfigChanged;
+```
+
+### `IPScaner.WinUI.Services.UiKit` (static)
+
+```csharp
+Color ColorFromArgb(int argb);      int ArgbFromColor(Color c);
+SolidColorBrush BrushFromArgb(int argb);
+Color ContrastingTextColor(Color background);
+bool CopyToClipboard(string text);  Task<string> ReadClipboardAsync();
+Task InfoAsync(XamlRoot, string title, string message);
+Task<bool> ConfirmAsync(XamlRoot, string title, string message, string primary="确定", string close="取消");
+Task<ContentDialogResult> ShowContentAsync(XamlRoot, string title, object content, string? primary, string? secondary, string close="关闭");
+Task<ContentDialogResult> ShowSafeAsync(ContentDialog dialog);
+XamlRoot? MainXamlRoot;   void ActivateMainWindow();   bool IsElevated;   bool RestartElevated();
+```
+
+Pass `XamlRoot` (the page property) to the dialog helpers. WinUI has **no
+`MessageBox`** — use these for every prompt.
+
+### `IPScaner.WinUI.Services.NavigationArgs` (static)
+
+```csharp
+string? PendingPortScanHost { get; set; }   // + TakePortScanHost()
+string? PendingBatchSegment { get; set; }   // + TakeBatchSegment()
+string? PendingMemoKey { get; set; }        // + TakeMemoKey()
+```
+
+Cross-page navigation: `App.MainWindow?.NavigateTo("batch")` — valid tags are
+`scan, batch, portscan, localport, localip, wifi, calc, memo, config, about`.
+From a page you can also set the status bar via `App.MainWindow?.SetStatus("…")`.
+
+### Core types you will use
+
+Namespace `IPscaner.Core.*` — `AppConfig`, `ConfigStore`, `EventName`,
+`HostResult`, `HostStatus`, `HostStatusText`, `LivenessSource`, `AdapterInfo`,
+`PortScanResult`, `LocalPortInfo`, `WifiProfile`, `DiyCommand`,
+`IpMath`, `SubnetCalculator`, `SubnetResult`, `TcpProbe`, `PortScanner`,
+`PortScanRequest`, `ScanEngine`, `ScanProgress`, `LocalPortTable`,
+`WifiService`, `NetworkConfigurator`, `NetConfigResult`, `NetworkHistory`,
+`MemoStore`, `ShellLauncher`, `TableExporter`, `TextFileEncoding`,
+`ServiceNames`, `AppLog.Instance.Log(category, message)`.
+
+`TableExporter` is how you write output:
+```csharp
+string name = TableExporter.BuildFileName("IP批量扫描", ".csv");  // <prefix>-yyyyMMddHHmmss.csv
+TableExporter.WriteCsv(path, headers, rows);      // UTF-8 with BOM, RFC4180 quoted
+TableExporter.WriteXlsx(path, "Sheet1", headers, rows);  // real .xlsx
+```
+
+Write exports to `Path.Combine(AppContext.BaseDirectory, "导出")` with a
+Documents fallback if that throws (see `ScanPage.ExportFolder()` for the pattern).
+
+## 5. Configuration
+
+`AppConfig` mirrors the original `IPScaner.cfg`. **Never mutate
+`AppServices.Current.Config` in place** — clone, change, apply:
+
+```csharp
+var cfg = AppServices.Current.Config.Clone();
+cfg.PingTimeout = 800;
+AppServices.Current.ApplyConfig(cfg);
+```
+
+Numeric ranges the original UI enforced (clamp, do **not** throw — the original
+crashed on a hand-edited cfg):
+
+| Setting | Range | Step | Default |
+|---|---|---|---|
+| `PingTimeout` | 10–5000 | 100 | 500 |
+| `PingCount` | 1–100 | 1 | 4 |
+| `DoubleClickTime` | 100–500 | 50 | 200 |
+| `PortTimeout` | 10–2000 | 50 | 50 |
+| `BtnFontSize` | 7–12 | 1 | 9 |
+| `DesktopOverlayOffsetX/Y` | −500–5000 | 10 | 100 |
+| `DesktopOverlayOpacity` | 0–100 | 10 | 70 |
+| `DesktopOverlayLocation` | 0–3 | 1 | 2 |
+
+Colours are **signed ARGB ints** (WinForms `Color.ToArgb()`), e.g. SkyBlue
+`-7876885`, LimeGreen `-13447886`, IndianRed `-3318692`, Blue `-16776961`,
+Black `-16777216`, Yellow `-256`. Convert with `UiKit.ColorFromArgb` /
+`UiKit.ArgbFromColor`. The original used a `ColorDialog`, which WinUI lacks —
+build an inline swatch grid or a small `ColorPicker` from
+`Microsoft.UI.Xaml.Controls` (available in WinUI 3) inside a `ContentDialog`.
+
+## 6. Style rules
+
+- All user-facing text is **Simplified Chinese**, matching the exact strings in
+  `docs\re\*.md`. Do not invent new wording where the spec quotes one.
+- Use the shared styles: `CardStyle`, `SectionHeaderStyle`, `HintTextStyle`,
+  `FieldLabelStyle`, `StatusTextStyle`, `LegendSwatchStyle`, `IpBlockButtonStyle`
+  (all in `Styles\AppStyles.xaml`, already merged app-wide).
+- Long-running work must be `async`, must show progress, and must be
+  **cancellable** via a `CancellationTokenSource` cancelled in `Unloaded`.
+- Never touch UI from a background thread: `DispatcherQueue.TryEnqueue(...)`.
+- Wrap risky I/O in try/catch and log via `AppLog.Instance.Log(nameof(YourPage), msg)`.
+- `Nullable` is enabled — no nullable warnings.
+- The build must finish with **0 errors and 0 warnings**.
+
+## 7. Fidelity vs. improvement
+
+The goal is a faithful port that also fixes real defects. Where the specs list a
+bug (silent failures, unreachable code, locale-dependent parsing, unbounded
+concurrency, uncancellable waits), fix it and note it in a short comment. Where
+the spec quotes exact Chinese strings, user-visible formats or file formats,
+match them exactly — those are compatibility surface, not bugs.
+
+## 8. Report format
+
+When finished, report:
+1. the page files you produced (real-tree paths),
+2. the exact build command and its result (0 errors / 0 warnings),
+3. what you verified by running the app and what you saw,
+4. any deviation from the spec and why,
+5. anything you could not verify.

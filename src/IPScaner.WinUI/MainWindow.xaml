@@ -1,1 +1,140 @@
-PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPFdpbmRvdwogICAgeDpDbGFzcz0iSVBTY2FuZXIuV2luVUkuTWFpbldpbmRvdyIKICAgIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iCiAgICB4bWxuczp4PSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbCIKICAgIHhtbG5zOm11eGM9InVzaW5nOk1pY3Jvc29mdC5VSS5YYW1sLkNvbnRyb2xzIgogICAgeG1sbnM6ZD0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS9leHByZXNzaW9uL2JsZW5kLzIwMDgiCiAgICB4bWxuczptYz0iaHR0cDovL3NjaGVtYXMub3BlbnhtbGZvcm1hdHMub3JnL21hcmt1cC1jb21wYXRpYmlsaXR5LzIwMDYiCiAgICBtYzpJZ25vcmFibGU9ImQiCiAgICBUaXRsZT0i5bGA5Z+f572RSVDmiavmj4/lt6XlhbciPgoKICAgIDxHcmlkIHg6TmFtZT0iUm9vdEdyaWQiIEJhY2tncm91bmQ9IntUaGVtZVJlc291cmNlIEFwcGxpY2F0aW9uUGFnZUJhY2tncm91bmRUaGVtZUJydXNofSI+CiAgICAgICAgPEdyaWQuUm93RGVmaW5pdGlvbnM+CiAgICAgICAgICAgIDxSb3dEZWZpbml0aW9uIEhlaWdodD0iQXV0byIgLz4KICAgICAgICAgICAgPFJvd0RlZmluaXRpb24gSGVpZ2h0PSIqIiAvPgogICAgICAgICAgICA8Um93RGVmaW5pdGlvbiBIZWlnaHQ9IkF1dG8iIC8+CiAgICAgICAgPC9HcmlkLlJvd0RlZmluaXRpb25zPgoKICAgICAgICA8IS0tIEN1c3RvbSB0aXRsZSBiYXIgLS0+CiAgICAgICAgPEdyaWQgeDpOYW1lPSJBcHBUaXRsZUJhciIgR3JpZC5Sb3c9IjAiIEhlaWdodD0iNDAiIFBhZGRpbmc9IjEyLDAsMTIsMCIKICAgICAgICAgICAgICBCYWNrZ3JvdW5kPSJ7VGhlbWVSZXNvdXJjZSBMYXllckZpbGxDb2xvckRlZmF1bHRCcnVzaH0iPgogICAgICAgICAgICA8R3JpZC5Db2x1bW5EZWZpbml0aW9ucz4KICAgICAgICAgICAgICAgIDxDb2x1bW5EZWZpbml0aW9uIFdpZHRoPSJBdXRvIiAvPgogICAgICAgICAgICAgICAgPENvbHVtbkRlZmluaXRpb24gV2lkdGg9IioiIC8+CiAgICAgICAgICAgICAgICA8Q29sdW1uRGVmaW5pdGlvbiBXaWR0aD0iQXV0byIgLz4KICAgICAgICAgICAgPC9HcmlkLkNvbHVtbkRlZmluaXRpb25zPgoKICAgICAgICAgICAgPFN0YWNrUGFuZWwgR3JpZC5Db2x1bW49IjAiIE9yaWVudGF0aW9uPSJIb3Jpem9udGFsIiBTcGFjaW5nPSI4IiBWZXJ0aWNhbEFsaWdubWVudD0iQ2VudGVyIj4KICAgICAgICAgICAgICAgIDxGb250SWNvbiBHbHlwaD0iJiN4RTk2ODsiIEZvbnRTaXplPSIxNiIgLz4KICAgICAgICAgICAgICAgIDxUZXh0QmxvY2sgVGV4dD0i5bGA5Z+f572RSVDmiavmj4/lt6XlhbciIEZvbnRXZWlnaHQ9IlNlbWlCb2xkIiBWZXJ0aWNhbEFsaWdubWVudD0iQ2VudGVyIiAvPgogICAgICAgICAgICAgICAgPFRleHRCbG9jayB4Ok5hbWU9IlZlcnNpb25UZXh0IiBUZXh0PSJXaW5VSSAxLjI4LjIiIFZlcnRpY2FsQWxpZ25tZW50PSJDZW50ZXIiCiAgICAgICAgICAgICAgICAgICAgICAgICAgIEZvbnRTaXplPSIxMiIgRm9yZWdyb3VuZD0ie1RoZW1lUmVzb3VyY2UgVGV4dEZpbGxDb2xvclNlY29uZGFyeUJydXNofSIgLz4KICAgICAgICAgICAgPC9TdGFja1BhbmVsPgoKICAgICAgICAgICAgPFN0YWNrUGFuZWwgR3JpZC5Db2x1bW49IjIiIE9yaWVudGF0aW9uPSJIb3Jpem9udGFsIiBTcGFjaW5nPSI4IiBWZXJ0aWNhbEFsaWdubWVudD0iQ2VudGVyIj4KICAgICAgICAgICAgICAgIDxCb3JkZXIgeDpOYW1lPSJFbGV2YXRpb25CYWRnZSIgQ29ybmVyUmFkaXVzPSIxMCIgUGFkZGluZz0iOCwyLDgsMiIKICAgICAgICAgICAgICAgICAgICAgICAgQmFja2dyb3VuZD0ie1RoZW1lUmVzb3VyY2UgU3lzdGVtRmlsbENvbG9yQ2F1dGlvbkJhY2tncm91bmRCcnVzaH0iCiAgICAgICAgICAgICAgICAgICAgICAgIFZpc2liaWxpdHk9IkNvbGxhcHNlZCIgVG9vbFRpcFNlcnZpY2UuVG9vbFRpcD0i6YOo5YiG5Yqf6IO977yI5L+u5pS55pys5ZywSVDjgIHmuIXnqbpBUlDnvJPlrZjvvInpnIDopoHnrqHnkIblkZjmnYPpmZAiPgogICAgICAgICAgICAgICAgICAgIDxUZXh0QmxvY2sgeDpOYW1lPSJFbGV2YXRpb25UZXh0IiBGb250U2l6ZT0iMTEiIFRleHQ9IuacquaPkOadgyIgLz4KICAgICAgICAgICAgICAgIDwvQm9yZGVyPgogICAgICAgICAgICAgICAgPEJ1dHRvbiB4Ok5hbWU9IkVsZXZhdGVCdXR0b24iIENvbnRlbnQ9IuS7peeuoeeQhuWRmOi6q+S7vemHjeWQryIgRm9udFNpemU9IjEyIgogICAgICAgICAgICAgICAgICAgICAgICBWaXNpYmlsaXR5PSJDb2xsYXBzZWQiIENsaWNrPSJPblJlc3RhcnRFbGV2YXRlZCIgLz4KICAgICAgICAgICAgPC9TdGFja1BhbmVsPgogICAgICAgIDwvR3JpZD4KCiAgICAgICAgPCEtLSBTaGVsbCAtLT4KICAgICAgICA8bXV4YzpOYXZpZ2F0aW9uVmlldwogICAgICAgICAgICB4Ok5hbWU9Ik5hdiIKICAgICAgICAgICAgR3JpZC5Sb3c9IjEiCiAgICAgICAgICAgIElzU2V0dGluZ3NWaXNpYmxlPSJGYWxzZSIKICAgICAgICAgICAgSXNCYWNrQnV0dG9uVmlzaWJsZT0iQ29sbGFwc2VkIgogICAgICAgICAgICBQYW5lRGlzcGxheU1vZGU9IkxlZnQiCiAgICAgICAgICAgIE9wZW5QYW5lTGVuZ3RoPSIyMjgiCiAgICAgICAgICAgIElzUGFuZVRvZ2dsZUJ1dHRvblZpc2libGU9IlRydWUiCiAgICAgICAgICAgIFNlbGVjdGlvbkNoYW5nZWQ9Ik9uTmF2U2VsZWN0aW9uQ2hhbmdlZCI+CgogICAgICAgICAgICA8bXV4YzpOYXZpZ2F0aW9uVmlldy5NZW51SXRlbXM+CiAgICAgICAgICAgICAgICA8bXV4YzpOYXZpZ2F0aW9uVmlld0l0ZW0gQ29udGVudD0iSVDmrrXmiavmj48iIFRhZz0ic2NhbiIgVG9vbFRpcFNlcnZpY2UuVG9vbFRpcD0iUGluZyDmiavmj4/mlbTkuKogLzI0IOe9keautSI+CiAgICAgICAgICAgICAgICAgICAgPG11eGM6TmF2aWdhdGlvblZpZXdJdGVtLkljb24+CiAgICAgICAgICAgICAgICAgICAgICAgIDxGb250SWNvbiBHbHlwaD0iJiN4RTc3NDsiIC8+CiAgICAgICAgICAgICAgICAgICAgPC9tdXhjOk5hdmlnYXRpb25WaWV3SXRlbS5JY29uPgogICAgICAgICAgICAgICAgPC9tdXhjOk5hdmlnYXRpb25WaWV3SXRlbT4KICAgICAgICAgICAgICAgIDxtdXhjOk5hdmlnYXRpb25WaWV3SXRlbSBDb250ZW50PSJJUOaJuemHj+aJq+aPjyIgVGFnPSJiYXRjaCIgVG9vbFRpcFNlcnZpY2UuVG9vbFRpcD0i5oyJ572R5q6144CBSVDojIPlm7TmiJbmjqnnoIHkvY3mibnph4/miavmj48iPgogICAgICAgICAgICAgICAgICAgIDxtdXhjOk5hdmlnYXRpb25WaWV3SXRlbS5JY29uPgogICAgICAgICAgICAgICAgICAgICAgICA8Rm9udEljb24gR2x5cGg9IiYjeEU4QTk7IiAvPgogICAgICAgICAgICAgICAgICAgIDwvbXV4YzpOYXZpZ2F0aW9uVmlld0l0ZW0uSWNvbj4KICAgICAgICAgICAgICAgIDwvbXV4YzpOYXZpZ2F0aW9uVmlld0l0ZW0+CiAgICAgICAgICAgICAgICA8bXV4YzpOYXZpZ2F0aW9uVmlld0l0ZW0gQ29udGVudD0i56uv5Y+j5omr5o+PIiBUYWc9InBvcnRzY2FuIiBUb29sVGlwU2VydmljZS5Ub29sVGlwPSLmiavmj4/nm67moIfkuLvmnLrlvIDmlL7nmoTnq6/lj6MiPgogICAgICAgICAgICAgICAgICAgIDxtdXhjOk5hdmlnYXRpb25WaWV3SXRlbS5JY29uPgogICAgICAgICAgICAgICAgICAgICAgICA8Rm9udEljb24gR2x5cGg9IiYjeEU5Njg7IiAvPgogICAgICAgICAgICAgICAgICAgIDwvbXV4YzpOYXZpZ2F0aW9uVmlld0l0ZW0uSWNvbj4KICAgICAgICAgICAgICAgIDwvbXV4YzpOYXZpZ2F0aW9uVmlld0l0ZW0+CiAgICAgICAgICAgICAgICA8bXV4YzpOYXZpZ2F0aW9uVmlld0l0ZW0gQ29udGVudD0i5pys5py656uv5Y+j5Y2g55SoIiBUYWc9ImxvY2FscG9ydCIgVG9vbFRpcFNlcnZpY2UuVG9vbFRpcD0i5p+l55yL5pys5py6IFRDUC9VRFAg56uv5Y+j5Y2g55So5oOF5Ya1Ij4KICAgICAgICAgICAgICAgICAgICA8bXV4YzpOYXZpZ2F0aW9uVmlld0l0ZW0uSWNvbj4KICAgICAgICAgICAgICAgICAgICAgICAgPEZvbnRJY29uIEdseXBoPSImI3hFOUQ5OyIgLz4KICAgICAgICAgICAgICAgICAgICA8L211eGM6TmF2aWdhdGlvblZpZXdJdGVtLkljb24+CiAgICAgICAgICAgICAgICA8L211eGM6TmF2aWdhdGlvblZpZXdJdGVtPgogICAgICAgICAgICAgICAgPG11eGM6TmF2aWdhdGlvblZpZXdJdGVtU2VwYXJhdG9yIC8+CiAgICAgICAgICAgICAgICA8bXV4YzpOYXZpZ2F0aW9uVmlld0l0ZW0gQ29udGVudD0i5L+u5pS55pys5ZywSVAiIFRhZz0ibG9jYWxpcCIgVG9vbFRpcFNlcnZpY2UuVG9vbFRpcD0i5L+u5pS5572R5Y2hIElQ44CB5o6p56CB44CB572R5YWz5LiOIEROUyI+CiAgICAgICAgICAgICAgICAgICAgPG11eGM6TmF2aWdhdGlvblZpZXdJdGVtLkljb24+CiAgICAgICAgICAgICAgICAgICAgICAgIDxGb250SWNvbiBHbHlwaD0iJiN4RTcyQzsiIC8+CiAgICAgICAgICAgICAgICAgICAgPC9tdXhjOk5hdmlnYXRpb25WaWV3SXRlbS5JY29uPgogICAgICAgICAgICAgICAgPC9tdXhjOk5hdmlnYXRpb25WaWV3SXRlbT4KICAgICAgICAgICAgICAgIDxtdXhjOk5hdmlnYXRpb25WaWV3SXRlbSBDb250ZW50PSJXaUZp5a+G56CB5p+l55yLIiBUYWc9IndpZmkiIFRvb2xUaXBTZXJ2aWNlLlRvb2xUaXA9Iuafpeeci+W3suS/neWtmOeahCBXaUZpIOWQjeensOS4juWvhueggSI+CiAgICAgICAgICAgICAgICAgICAgPG11eGM6TmF2aWdhdGlvblZpZXdJdGVtLkljb24+CiAgICAgICAgICAgICAgICAgICAgICAgIDxGb250SWNvbiBHbHlwaD0iJiN4RTcwMTsiIC8+CiAgICAgICAgICAgICAgICAgICAgPC9tdXhjOk5hdmlnYXRpb25WaWV3SXRlbS5JY29uPgogICAgICAgICAgICAgICAgPC9tdXhjOk5hdmlnYXRpb25WaWV3SXRlbT4KICAgICAgICAgICAgICAgIDxtdXhjOk5hdmlnYXRpb25WaWV3SXRlbSBDb250ZW50PSJJUOWcsOWdgOiuoeeul+WZqCIgVGFnPSJjYWxjIiBUb29sVGlwU2VydmljZS5Ub29sVGlwPSLmoLnmja4gSVAg5ZKM5o6p56CB5L2N6K6h566X572R57uc5Zyw5Z2AIj4KICAgICAgICAgICAgICAgICAgICA8bXV4YzpOYXZpZ2F0aW9uVmlld0l0ZW0uSWNvbj4KICAgICAgICAgICAgICAgICAgICAgICAgPEZvbnRJY29uIEdseXBoPSImI3hFOEVGOyIgLz4KICAgICAgICAgICAgICAgICAgICA8L211eGM6TmF2aWdhdGlvblZpZXdJdGVtLkljb24+CiAgICAgICAgICAgICAgICA8L211eGM6TmF2aWdhdGlvblZpZXdJdGVtPgogICAgICAgICAgICAgICAgPG11eGM6TmF2aWdhdGlvblZpZXdJdGVtIENvbnRlbnQ9IuWkh+azqOeuoeeQhiIgVGFnPSJtZW1vIiBUb29sVGlwU2VydmljZS5Ub29sVGlwPSLnu7TmiqQgSVAgLyBNQUMg55qE5aSH5rOo5L+h5oGvIj4KICAgICAgICAgICAgICAgICAgICA8bXV4YzpOYXZpZ2F0aW9uVmlld0l0ZW0uSWNvbj4KICAgICAgICAgICAgICAgICAgICAgICAgPEZvbnRJY29uIEdseXBoPSImI3hFNzBCOyIgLz4KICAgICAgICAgICAgICAgICAgICA8L211eGM6TmF2aWdhdGlvblZpZXdJdGVtLkljb24+CiAgICAgICAgICAgICAgICA8L211eGM6TmF2aWdhdGlvblZpZXdJdGVtPgogICAgICAgICAgICA8L211eGM6TmF2aWdhdGlvblZpZXcuTWVudUl0ZW1zPgoKICAgICAgICAgICAgPG11eGM6TmF2aWdhdGlvblZpZXcuRm9vdGVyTWVudUl0ZW1zPgogICAgICAgICAgICAgICAgPG11eGM6TmF2aWdhdGlvblZpZXdJdGVtIENvbnRlbnQ9IumAiemhuemFjee9riIgVGFnPSJjb25maWciPgogICAgICAgICAgICAgICAgICAgIDxtdXhjOk5hdmlnYXRpb25WaWV3SXRlbS5JY29uPgogICAgICAgICAgICAgICAgICAgICAgICA8Rm9udEljb24gR2x5cGg9IiYjeEU3MTM7IiAvPgogICAgICAgICAgICAgICAgICAgIDwvbXV4YzpOYXZpZ2F0aW9uVmlld0l0ZW0uSWNvbj4KICAgICAgICAgICAgICAgIDwvbXV4YzpOYXZpZ2F0aW9uVmlld0l0ZW0+CiAgICAgICAgICAgICAgICA8bXV4YzpOYXZpZ2F0aW9uVmlld0l0ZW0gQ29udGVudD0i5YWz5LqOIiBUYWc9ImFib3V0Ij4KICAgICAgICAgICAgICAgICAgICA8bXV4YzpOYXZpZ2F0aW9uVmlld0l0ZW0uSWNvbj4KICAgICAgICAgICAgICAgICAgICAgICAgPEZvbnRJY29uIEdseXBoPSImI3hFOTQ2OyIgLz4KICAgICAgICAgICAgICAgICAgICA8L211eGM6TmF2aWdhdGlvblZpZXdJdGVtLkljb24+CiAgICAgICAgICAgICAgICA8L211eGM6TmF2aWdhdGlvblZpZXdJdGVtPgogICAgICAgICAgICA8L211eGM6TmF2aWdhdGlvblZpZXcuRm9vdGVyTWVudUl0ZW1zPgoKICAgICAgICAgICAgPEZyYW1lIHg6TmFtZT0iQ29udGVudEZyYW1lIiAvPgogICAgICAgIDwvbXV4YzpOYXZpZ2F0aW9uVmlldz4KCiAgICAgICAgPCEtLSBTdGF0dXMgYmFyOiBtaXJyb3JzIHRoZSBvcmlnaW5hbCBTdGF0dXNTdHJpcCAtLT4KICAgICAgICA8Qm9yZGVyIEdyaWQuUm93PSIyIiBCYWNrZ3JvdW5kPSJ7VGhlbWVSZXNvdXJjZSBMYXllckZpbGxDb2xvckRlZmF1bHRCcnVzaH0iCiAgICAgICAgICAgICAgICBCb3JkZXJUaGlja25lc3M9IjAsMSwwLDAiIEJvcmRlckJydXNoPSJ7VGhlbWVSZXNvdXJjZSBEaXZpZGVyU3Ryb2tlQ29sb3JEZWZhdWx0QnJ1c2h9IgogICAgICAgICAgICAgICAgUGFkZGluZz0iMTIsNiwxMiw2Ij4KICAgICAgICAgICAgPEdyaWQ+CiAgICAgICAgICAgICAgICA8R3JpZC5Db2x1bW5EZWZpbml0aW9ucz4KICAgICAgICAgICAgICAgICAgICA8Q29sdW1uRGVmaW5pdGlvbiBXaWR0aD0iQXV0byIgLz4KICAgICAgICAgICAgICAgICAgICA8Q29sdW1uRGVmaW5pdGlvbiBXaWR0aD0iKiIgLz4KICAgICAgICAgICAgICAgICAgICA8Q29sdW1uRGVmaW5pdGlvbiBXaWR0aD0iQXV0byIgLz4KICAgICAgICAgICAgICAgIDwvR3JpZC5Db2x1bW5EZWZpbml0aW9ucz4KCiAgICAgICAgICAgICAgICA8VGV4dEJsb2NrIHg6TmFtZT0iU3RhdHVzVGV4dCIgR3JpZC5Db2x1bW49IjAiIFN0eWxlPSJ7U3RhdGljUmVzb3VyY2UgU3RhdHVzVGV4dFN0eWxlfSIKICAgICAgICAgICAgICAgICAgICAgICAgICAgTWluV2lkdGg9IjIyMCIgVGV4dD0i5bCx57uqIiAvPgoKICAgICAgICAgICAgICAgIDxUZXh0QmxvY2sgeDpOYW1lPSJUaXBUZXh0IiBHcmlkLkNvbHVtbj0iMSIgU3R5bGU9IntTdGF0aWNSZXNvdXJjZSBIaW50VGV4dFN0eWxlfSIKICAgICAgICAgICAgICAgICAgICAgICAgICAgVmVydGljYWxBbGlnbm1lbnQ9IkNlbnRlciIgTWFyZ2luPSIxNiwwLDE2LDAiCiAgICAgICAgICAgICAgICAgICAgICAgICAgIFRleHRUcmltbWluZz0iQ2hhcmFjdGVyRWxsaXBzaXMiIFRleHRXcmFwcGluZz0iTm9XcmFwIiAvPgoKICAgICAgICAgICAgICAgIDxUZXh0QmxvY2sgeDpOYW1lPSJDbG9ja1RleHQiIEdyaWQuQ29sdW1uPSIyIiBTdHlsZT0ie1N0YXRpY1Jlc291cmNlIFN0YXR1c1RleHRTdHlsZX0iCiAgICAgICAgICAgICAgICAgICAgICAgICAgIFRleHQ9Ii0tOi0tOi0tIiAvPgogICAgICAgICAgICA8L0dyaWQ+CiAgICAgICAgPC9Cb3JkZXI+CiAgICA8L0dyaWQ+CjwvV2luZG93Pgo=
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="IPScaner.WinUI.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="局域网IP扫描工具">
+
+    <Grid x:Name="RootGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Custom title bar -->
+        <Grid x:Name="AppTitleBar" Grid.Row="0" Height="40" Padding="12,0,12,0"
+              Background="{ThemeResource LayerFillColorDefaultBrush}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Orientation="Horizontal" Spacing="8" VerticalAlignment="Center">
+                <FontIcon Glyph="&#xE968;" FontSize="16" />
+                <TextBlock Text="局域网IP扫描工具" FontWeight="SemiBold" VerticalAlignment="Center" />
+                <TextBlock x:Name="VersionText" Text="WinUI 1.28.2" VerticalAlignment="Center"
+                           FontSize="12" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+            </StackPanel>
+
+            <StackPanel Grid.Column="2" Orientation="Horizontal" Spacing="8" VerticalAlignment="Center">
+                <Border x:Name="ElevationBadge" CornerRadius="10" Padding="8,2,8,2"
+                        Background="{ThemeResource SystemFillColorCautionBackgroundBrush}"
+                        Visibility="Collapsed" ToolTipService.ToolTip="部分功能（修改本地IP、清空ARP缓存）需要管理员权限">
+                    <TextBlock x:Name="ElevationText" FontSize="11" Text="未提权" />
+                </Border>
+                <Button x:Name="ElevateButton" Content="以管理员身份重启" FontSize="12"
+                        Visibility="Collapsed" Click="OnRestartElevated" />
+            </StackPanel>
+        </Grid>
+
+        <!-- Shell -->
+        <muxc:NavigationView
+            x:Name="Nav"
+            Grid.Row="1"
+            IsSettingsVisible="False"
+            IsBackButtonVisible="Collapsed"
+            PaneDisplayMode="Left"
+            OpenPaneLength="228"
+            IsPaneToggleButtonVisible="True"
+            SelectionChanged="OnNavSelectionChanged">
+
+            <muxc:NavigationView.MenuItems>
+                <muxc:NavigationViewItem Content="IP段扫描" Tag="scan" ToolTipService.ToolTip="Ping 扫描整个 /24 网段">
+                    <muxc:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE774;" />
+                    </muxc:NavigationViewItem.Icon>
+                </muxc:NavigationViewItem>
+                <muxc:NavigationViewItem Content="IP批量扫描" Tag="batch" ToolTipService.ToolTip="按网段、IP范围或掩码位批量扫描">
+                    <muxc:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE8A9;" />
+                    </muxc:NavigationViewItem.Icon>
+                </muxc:NavigationViewItem>
+                <muxc:NavigationViewItem Content="端口扫描" Tag="portscan" ToolTipService.ToolTip="扫描目标主机开放的端口">
+                    <muxc:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE968;" />
+                    </muxc:NavigationViewItem.Icon>
+                </muxc:NavigationViewItem>
+                <muxc:NavigationViewItem Content="本机端口占用" Tag="localport" ToolTipService.ToolTip="查看本机 TCP/UDP 端口占用情况">
+                    <muxc:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE9D9;" />
+                    </muxc:NavigationViewItem.Icon>
+                </muxc:NavigationViewItem>
+                <muxc:NavigationViewItemSeparator />
+                <muxc:NavigationViewItem Content="修改本地IP" Tag="localip" ToolTipService.ToolTip="修改网卡 IP、掩码、网关与 DNS">
+                    <muxc:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE72C;" />
+                    </muxc:NavigationViewItem.Icon>
+                </muxc:NavigationViewItem>
+                <muxc:NavigationViewItem Content="WiFi密码查看" Tag="wifi" ToolTipService.ToolTip="查看已保存的 WiFi 名称与密码">
+                    <muxc:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE701;" />
+                    </muxc:NavigationViewItem.Icon>
+                </muxc:NavigationViewItem>
+                <muxc:NavigationViewItem Content="IP地址计算器" Tag="calc" ToolTipService.ToolTip="根据 IP 和掩码位计算网络地址">
+                    <muxc:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE8EF;" />
+                    </muxc:NavigationViewItem.Icon>
+                </muxc:NavigationViewItem>
+                <muxc:NavigationViewItem Content="备注管理" Tag="memo" ToolTipService.ToolTip="维护 IP / MAC 的备注信息">
+                    <muxc:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE70B;" />
+                    </muxc:NavigationViewItem.Icon>
+                </muxc:NavigationViewItem>
+            </muxc:NavigationView.MenuItems>
+
+            <muxc:NavigationView.FooterMenuItems>
+                <muxc:NavigationViewItem Content="选项配置" Tag="config">
+                    <muxc:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE713;" />
+                    </muxc:NavigationViewItem.Icon>
+                </muxc:NavigationViewItem>
+                <muxc:NavigationViewItem Content="关于" Tag="about">
+                    <muxc:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE946;" />
+                    </muxc:NavigationViewItem.Icon>
+                </muxc:NavigationViewItem>
+            </muxc:NavigationView.FooterMenuItems>
+
+            <Frame x:Name="ContentFrame" />
+        </muxc:NavigationView>
+
+        <!-- Status bar: mirrors the original StatusStrip -->
+        <Border Grid.Row="2" Background="{ThemeResource LayerFillColorDefaultBrush}"
+                BorderThickness="0,1,0,0" BorderBrush="{ThemeResource DividerStrokeColorDefaultBrush}"
+                Padding="12,6,12,6">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock x:Name="StatusText" Grid.Column="0" Style="{StaticResource StatusTextStyle}"
+                           MinWidth="220" Text="就绪" />
+
+                <TextBlock x:Name="TipText" Grid.Column="1" Style="{StaticResource HintTextStyle}"
+                           VerticalAlignment="Center" Margin="16,0,16,0"
+                           TextTrimming="CharacterEllipsis" TextWrapping="NoWrap" />
+
+                <TextBlock x:Name="ClockText" Grid.Column="2" Style="{StaticResource StatusTextStyle}"
+                           Text="--:--:--" />
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

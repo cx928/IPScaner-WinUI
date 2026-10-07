@@ -1,1 +1,293 @@
-IyBJUFNjYW5lciBXaW5VSSDigJQg5bGA5Z+f572RSVDmiavmj4/lt6XlhbfvvIhXaW5VSSAzIOmHjeaehOeJiO+8iQoKW0lQU2NhbmVyIFYxLjI4LjJdKEU6L0lQU2NhbmVyJTIwVjEuMjguMi5leGUpIOaYr+S4gOasoeaAp+aJk+WMheeahCAuTkVUIEZyYW1ld29yayAvIFdpbkZvcm1zIOWNleaWh+S7tueoi+W6jwrvvIgyOTkgS0LvvIwxNSDkuKrnqpfkvZPvvIznuqYgNywwMDAg6KGM5Y+N57yW6K+R5rqQ56CB77yJ44CC5pys6aG555uu5oqK5a6D6YeN5p6E5Li6ICoqV2luZG93cyBBcHAgU0RLIC8gV2luVUkgMyoqIOW6lOeUqO+8mgoKLSDnlYzpnaLvvJoqKldpblVJIDMqKu+8iEZsdWVudCBEZXNpZ27jgIFNaWNhL+S4u+mimOaEn+efpeOAgU5hdmlnYXRpb25WaWV3IOWkluWjs++8iQotIOW8leaTju+8muaLhuWIhuS4uueLrOeri+OAgeWPr+WNleWFg+a1i+ivleeahOexu+W6kyAqKmBJUFNjYW5lci5Db3JlYCoqCi0g5pWw5o2u77yaKirkuI7ml6fniYjmlofku7bmoLzlvI/lrozlhajlhbzlrrkqKu+8jOWPr+ebtOaOpeayv+eUqOW3suacieeahOmFjee9ruaWh+S7tuS4juWkh+azqAotIOebruagh+ahhuaetu+8mmAuTkVUIDhgIC8gYG5ldDguMC13aW5kb3dzMTAuMC4xOTA0MS4wYO+8jCoq6Z2e5omT5YyF77yIdW5wYWNrYWdlZO+8iSoqIOmDqOe9sgoKLS0tCgojIyAxLiDnm67lvZXnu5PmnoQKCmBgYAppcHNjYW5lci13aW51aS8K4pSc4pSAIElQU2NhbmVyLldpblVJLnNsbgrilJzilIAgc3JjLwrilIIgIOKUnOKUgCBJUFNjYW5lci5Db3JlLyAgICAgICAgICAgICAg5omr5o+P5byV5pOO5LiO5pWw5o2u5bGC77yI5pegIFVJIOS+nei1lu+8iQrilIIgIOKUgiAg4pSc4pSAIENvbmZpZ3VyYXRpb24vICAgICAgICAgICBBcHBDb25maWfvvIg9IElQU2NhbmVyLmNmZ++8ieOAgUNvbmZpZ1N0b3Jl44CBRXZlbnROYW1lCuKUgiAg4pSCICDilJzilIAgTW9kZWxzLyAgICAgICAgICAgICAgICAgIEhvc3RSZXN1bHTjgIFBZGFwdGVySW5mb+OAgVBvcnRTY2FuUmVzdWx044CBTG9jYWxQb3J0SW5mb+OAgVdpZmlQcm9maWxlCuKUgiAg4pSCICDilJzilIAgTmV0LyAgICAgICAgICAgICAgICAgICAgIElwTWF0aOOAgVN1Ym5ldENhbGN1bGF0b3LjgIFMaXZlbmVzc1Byb2Jl44CBU2NhbkVuZ2luZeOAgQrilIIgIOKUgiAg4pSCICAgICAgICAgICAgICAgICAgICAgICAgICAgQXJwVGFibGXjgIFOYW1lUmVzb2x2ZXLjgIFUY3BQcm9iZeOAgVBvcnRTY2FubmVy44CBCuKUgiAg4pSCICDilIIgICAgICAgICAgICAgICAgICAgICAgICAgICBMb2NhbFBvcnRUYWJsZeOAgUFkYXB0ZXJTZXJ2aWNl44CBV2lmaVNlcnZpY2XjgIFOZXR3b3JrQ29uZmlndXJhdG9yCuKUgiAg4pSCICDilJzilIAgTWVtby8gICAgICAgICAgICAgICAgICAgIE1lbW9TdG9yZe+8iD0gSVBTY2FuZXJNZW1vLmRhdO+8iQrilIIgIOKUgiAg4pSc4pSAIENvbW1hbmRzLyAgICAgICAgICAgICAgICBEaXlDb21tYW5kU3RvcmXvvIg9IGNvbW1hbmQudHh077yJCuKUgiAg4pSCICDilJzilIAgRXhwb3J0LyAgICAgICAgICAgICAgICAgIFRhYmxlRXhwb3J0ZXLvvIhDU1YgKyDnnJ8gLnhsc3jvvIkK4pSCICDilIIgIOKUnOKUgCBMb2dnaW5nLyAgICAgICAgICAgICAgICAgQXBwTG9n77yIPSBMb2dzXHl5eXktTU0tZGQubG9n77yJCuKUgiAg4pSCICDilJzilIAgQ2FjaGluZy8gICAgICAgICAgICAgICAgIEV4cGlyaW5nQ2FjaGXvvIjmm7/ku6MgU3lzdGVtLlJ1bnRpbWUuQ2FjaGluZ++8iQrilIIgIOKUgiAg4pSc4pSAIFNoZWxsLyAgICAgICAgICAgICAgICAgICBTaGVsbExhdW5jaGVy77yIcGluZy90cmFjZXJ0L25ldHN0YXQv5YWx5Lqr55uu5b2VL+aOp+WItumdouadv++8iQrilIIgIOKUgiAg4pSU4pSAIFN0b3JhZ2UvICAgICAgICAgICAgICAgICBUZXh0RmlsZUVuY29kaW5n77yIQk9NL0dCSyDmjqLmtYvvvInjgIFBcHBQYXRoc++8iOaVsOaNruebruW9leino+aekO+8iQrilIIgIOKUlOKUgCBJUFNjYW5lci5XaW5VSS8gICAgICAgICAgICAgV2luVUkgMyDlupTnlKgK4pSCICAgICDilJzilIAgQXBwLnhhbWwoLmNzKSAgICAgICAgICAgIOW6lOeUqOWFpeWPowrilIIgICAgIOKUnOKUgCBNYWluV2luZG93LnhhbWwoLmNzKSAgICAg5aSW5aOz77ya6Ieq5a6a5LmJ5qCH6aKY5qCPICsgTmF2aWdhdGlvblZpZXcgKyDnirbmgIHmoI8gKyDmiZjnm5ggKyDmoYzpnaLlj6DliqDnqpcK4pSCICAgICDilJzilIAgVmlld3MvICAgICAgICAgICAgICAgICAgIDEwIOS4quWKn+iDvemhtemdogrilIIgICAgIOKUnOKUgCBWaWV3TW9kZWxzLyAgICAgICAgICAgICAgSXBCbG9ja+OAgUFwcENvbmZpZ0NvbG9ycwrilIIgICAgIOKUnOKUgCBTZXJ2aWNlcy8gICAgICAgICAgICAgICAgQXBwU2VydmljZXPjgIFVaUtpdOOAgU5hdmlnYXRpb25Bcmdz44CBVHJheUljb27jgIFEZXNrdG9wT3ZlcmxheQrilIIgICAgIOKUnOKUgCBTdHlsZXMvQXBwU3R5bGVzLnhhbWwgICAg5YWx5Lqr5qC35byPCuKUgiAgICAg4pSU4pSAIEFzc2V0cy9hcHAuaWNvICAgICAgICAgICDlupTnlKjlm77moIfvvIjlkIzml7bkvpvnqpflj6Plm77moIfkuI7miZjnm5jlm77moIfor7vlj5bvvIkK4pSc4pSAIHRlc3RzL0lQU2NhbmVyLkNvcmUuVGVzdHMvICAgICB4VW5pdCDmtYvor5XvvIgzNTYg5Liq77yJCuKUnOKUgCBidWlsZC8K4pSCICDilJzilIAgcGFja2FnZS5wczEgICAgICAgICAgICAgICAgIOS4gOmUruS6p+WHuiBwb3J0YWJsZS9tc2kvc2V0dXAuZXhlCuKUgiAg4pSc4pSAIHB1Ymxpc2gtZ2l0aHViLnBzMSAgICAgICAgICDlu7rku5PlupMgKyDmjqjmupDnoIEgKyDlj5EgUmVsZWFzZe+8iOi1sCBSRVNUIEFQSe+8jOaXoOmcgCBnaXTvvIkK4pSCICDilJTilIAgaW5zdGFsbGVyLyAgICAgICAgICAgICAgICAgIFdpWCAud3hzIOaooeadv+S4jiBJRXhwcmVzcyAuc2VkIOaooeadvwrilJzilIAgYXJ0aWZhY3RzLyAgICAgICAgICAgICAgICAgICAgIOaJk+WMhei+k+WHuu+8iOW3suWcqCAuZ2l0aWdub3JlIOS4re+8jOS7heS9nCBSZWxlYXNlIOi1hOa6kO+8iQrilJzilIAgZG9jcy8K4pSCICDilJzilIAgcmUvICAgICAgICAgICAgICAgICAgICAgICAgIOmAhuWQkeW3peeoi+inhOagvO+8iDAx4oCTMDXvvIzop4Egwqc277yJCuKUgiAg4pSc4pSAIHZlcmlmaWNhdGlvbi8gICAgICAgICAgICAgICDlkITpobXpnaLnmoTov5DooYzpqozor4HmiKrlm74K4pSCICDilJTilIAgUEFHRS1DT05UUkFDVC5tZCAgICAgICAgICAgIOmhtemdouWunueOsOWlkee6pgrilJTilIAgdG9vbHMvZ3JhYl93aW5kb3cucHkgICAgICAgICAgIOeql+WPo+aIquWbvui+heWKqeiEmuacrApgYGAKCi0tLQoKIyMgMi4g5p6E5bu65LiO6L+Q6KGMCgrliY3nva7vvJoqKi5ORVQgOCBTREsqKu+8iOaIluabtOmrmO+8iSsgKipXaW5kb3dzIEFwcCBSdW50aW1lIDEuOCoq77yI5pys5py65bey5a6J6KOFIGBNaWNyb3NvZnQuV2luZG93c0FwcFJ1bnRpbWUuMS44YO+8ieOAggoKYGBgcG93ZXJzaGVsbApjZCBpcHNjYW5lci13aW51aQoKZG90bmV0IGJ1aWxkIElQU2NhbmVyLldpblVJLnNsbiAtYyBEZWJ1ZwoKIyDov5DooYwKLlxzcmNcSVBTY2FuZXIuV2luVUlcYmluXERlYnVnXG5ldDguMC13aW5kb3dzMTAuMC4xOTA0MS4wXHdpbi14NjRcSVBTY2FuZXIuZXhlCgojIOa1i+ivlQpkb3RuZXQgdGVzdCB0ZXN0c1xJUFNjYW5lci5Db3JlLlRlc3RzXElQU2NhbmVyLkNvcmUuVGVzdHMuY3Nwcm9qCmBgYAoK5Y+R5biD77yI6Ieq5YyF5ZCr44CB5Y2V55uu5b2V77yJ77yaCgpgYGBwb3dlcnNoZWxsCmRvdG5ldCBwdWJsaXNoIHNyY1xJUFNjYW5lci5XaW5VSVxJUFNjYW5lci5XaW5VSS5jc3Byb2ogLWMgUmVsZWFzZSAtciB3aW4teDY0IGAKICAtcDpXaW5kb3dzQXBwU0RLU2VsZkNvbnRhaW5lZD10cnVlIC1wOlNlbGZDb250YWluZWQ9dHJ1ZQpgYGAKCi0tLQoKIyMgMy4g5omT5YyF5LiO5Y+R5biDCgrkuIDmnaHlkb3ku6Tkuqflh7rlhajpg6jlj5HluIPlvaLmgIHvvIjovpPlh7rliLAgYGFydGlmYWN0cy9g77yJ77yaCgpgYGBwb3dlcnNoZWxsCnB3c2ggLUZpbGUgYnVpbGRccGFja2FnZS5wczEgLVZlcnNpb24gMS4yOC4yCmBgYAoKfCDkuqfniakgfCDlpKflsI8gfCDor7TmmI4gfAp8LS0tfC0tLXwtLS18CnwgYElQU2NhbmVyLTx2ZXI+LXdpbi14NjQtcG9ydGFibGUuemlwYCB8IH44NCBNQiB8ICoq5YWN5a6J6KOFKirjgILlhoXnva4gLk5FVCA4ICsgV2luZG93cyBBcHAgU0RL77yM6Kej5Y6L5Y2z55So77yM5LiN5YaZ5rOo5YaM6KGoIHwKfCBgSVBTY2FuZXItPHZlcj4td2luLXg2NC1wb3J0YWJsZS1saXRlLnppcGAgfCB+MTEgTUIgfCAqKuWFjeWuieijhe+8iOeyvueugO+8iSoq44CC6ZyA6aKE6KOFIC5ORVQgOCDmoYzpnaLov5DooYzml7YgKyBXaW5kb3dzIEFwcCBSdW50aW1lIDEuOCB8CnwgYElQU2NhbmVyLTx2ZXI+LXdpbi14NjQubXNpYCB8IH42NSBNQiB8ICoq5a6J6KOF54mIKirvvIhXaVjvvInjgILoo4XlhaUgYFByb2dyYW0gRmlsZXNg77yM5Yib5bu65byA5aeL6I+c5Y2V5LiO5qGM6Z2i5b+r5o235pa55byPIHwKfCBgSVBTY2FuZXItPHZlcj4td2luLXg2NC1zZXR1cC5leGVgIHwgfjY1IE1CIHwgKirlronoo4XniYgqKu+8iElFeHByZXNzIOW8leWvvOeoi+W6j++8jOWGhemDqOiwg+eUqOS4iumdoueahCBNU0nvvIkgfAoK5omT5YyF5L6d6LWW77yaYC5ORVQgOCBTREtg44CBYGRvdG5ldCB0b29sIGluc3RhbGwgLS1nbG9iYWwgd2l4IC0tdmVyc2lvbiA1Lipg77yIKirlv4XpobsgdjUqKu+8jOingeS4i++8ieOAgQpXaW5kb3dzIOiHquW4pueahCBgaWV4cHJlc3MuZXhlYOOAgmA3LVppcGAg5Y+v6YCJ44CCCgo+ICoq5Li65LuA5LmI6ZSB5a6aIFdpWCB2NSoq77yaV2lYIHY2L3Y3IOimgeaxguaOpeWPlyBPcGVuIFNvdXJjZSBNYWludGVuYW5jZSBGZWXvvIhPU01G77yJRVVMQe+8jAo+IOWPr+iDvea2ieWPiuWVhuS4muaOiOadg+i0ueeUqO+8m3Y1IOaYr+acgOWQjuS4gOS4quWFjeivpeadoeasvueahOeJiOacrOOAggoKKirmlbDmja7nm67lvZUqKu+8muWFjeWuieijheeJiOaKiiBgSVBTY2FuZXIuY2ZnYCAvIGBJUFNjYW5lck1lbW8uZGF0YCAvIGBjb21tYW5kLnR4dGAgLyBgaXBTY2FuZXJfaGlzLnhtbGAgLyBgTG9nc1xgCuaUvuWcqOeoi+W6j+ebruW9le+8iOS4juaXp+eJiOS4gOiHtO+8jOmFjee9rumaj+aWh+S7tuWkuei1sO+8ie+8m+WuieijheeJiOWboCBgUHJvZ3JhbSBGaWxlc2Ag5LiN5Y+v5YaZ77yM55SxCmBJUFNjYW5lci5Db3JlLlN0b3JhZ2UuQXBwUGF0aHNgIOiHquWKqOWbnumAgOWIsCBgJUFQUERBVEElXElQU2NhbmVyYOOAguWQjOS4gOS4quaehOW7uuS4pOenjeW9ouaAgemDveato+ehruOAggoKIyMjIOWPkeW4g+WIsCBHaXRIdWIKCuacrOacuuayoeaciSBnaXQgLyBnaO+8jOWboOatpCBgYnVpbGRccHVibGlzaC1naXRodWIucHMxYCDotbAgKipHaXRIdWIgUkVTVCBBUEkqKu+8mgrlu7rku5PlupMg4oaSIOeUqCBHaXQgRGF0YSBBUEkg5LiA5qyh5oCn5o+Q5Lqk5YWo6YOo5rqQ56CBIOKGkiDlu7ogUmVsZWFzZSDihpIg5LiK5LygIDQg5Liq5a6J6KOF5YyF44CCCgpgYGBwb3dlcnNoZWxsCiRlbnY6R0lUSFVCX1RPS0VOID0gImdpdGh1Yl9wYXRfeHh4IiAgICMg6ZyA6KaBIENvbnRlbnRzOlJXICsgQWRtaW5pc3RyYXRpb246UlcKcHdzaCAtRmlsZSBidWlsZFxwdWJsaXNoLWdpdGh1Yi5wczEgLVJlcG8gSVBTY2FuZXItV2luVUkgLVZpc2liaWxpdHkgcHVibGljCmBgYAoK6ISa5pys5Y+v6YeN5aSN5omn6KGM77ya5LuT5bqT5bey5a2Y5Zyo5pe25aSN55So77yM5YiG5pSv5bey5a2Y5Zyo5pe26L+95Yqg5o+Q5Lqk77yMUmVsZWFzZSDlt7LlrZjlnKjml7booaXkvKDnvLrlpLHotYTmupDjgIIKCi0tLQoKIyMgNC4g5Yqf6IO95a+554WnCgrljp/niYggcmVhZG1lIOWIl+WHuueahCAxMSDpobnlip/og73lhajpg6jkv53nlZnvvJoKCnwgIyB8IOWOn+WKn+iDvSB8IOaWsOWunueOsCB8IOmhtemdoiB8CnwtLS18LS0tfC0tLXwtLS18CnwgMSB8IElQ5q615omr5o+P77yIMjU0IOWwj+iJsuWdl++8iSB8IGBTY2FuUGFnZWAgKyBgSXBCbG9ja2DvvIzoibLlnZfog4zmma/ljbPnirbmgIEgfCBJUOauteaJq+aPjyB8CnwgMiB8IOS/ruaUueacrOWcsElQIHwgYExvY2FsSXBQYWdlYCArIGBOZXR3b3JrQ29uZmlndXJhdG9yYCB8IOS/ruaUueacrOWcsElQIHwKfCAzIHwgSVDmibnph4/miavmj4/vvIjljZXnvZHmrrUv6IyD5Zu0L+aOqeeggeS9je+8jOWumuaXtu+8iSB8IGBCYXRjaFNjYW5QYWdlYCB8IElQ5om56YeP5omr5o+PIHwKfCA0IHwgSVDlnLDlnYDorqHnrpflmaggfCBgQ2FsY3VsYXRvclBhZ2VgICsgYFN1Ym5ldENhbGN1bGF0b3JgIHwgSVDlnLDlnYDorqHnrpflmaggfAp8IDUgfCDnm67moIfnq6/lj6Pmiavmj48gfCBgUG9ydFNjYW5QYWdlYCArIGBQb3J0U2Nhbm5lcmAgfCDnq6/lj6Pmiavmj48gfAp8IDYgfCDmnKzmnLrnq6/lj6PljaDnlKjmn6XnnIsgfCBgTG9jYWxQb3J0UGFnZWAgKyBgTG9jYWxQb3J0VGFibGVgIHwg5pys5py656uv5Y+j5Y2g55SoIHwKfCA3IHwgV2lGaeWvhueggeafpeeciyB8IGBXaWZpUGFnZWAgKyBgV2lmaVNlcnZpY2VgIHwgV2lGaeWvhueggeafpeeciyB8CnwgOCB8IFdpbmRvd3Plkb3ku6TvvIgxOCDkuKogKyDoh6rlrprkuYnvvIkgfCBgU2hlbGxMYXVuY2hlci5CdWlsdEluVG9vbHNgICsgYERpeUNvbW1hbmRTdG9yZWAgfCDkvqfovrkv5Y+z6ZSu6I+c5Y2VIHwKfCA5IHwg5aSH5rOo566h55CGIHwgYE1lbW9QYWdlYCArIGBNZW1vU3RvcmVgIHwg5aSH5rOo566h55CGIHwKfCAxMCB8IOahjOmdouaYvuekuuacrOacuklQIHwgYERlc2t0b3BPdmVybGF5YO+8iGBXU19FWF9MQVlFUkVEXHxUUkFOU1BBUkVOVFx8VE9PTFdJTkRPV2DvvIkrIOmAiemhuemFjee9riDCtyDmoYzpnaIgfCDmoYzpnaLlj6DliqDnqpcgfAp8IDExIHwg5YWz5LqOIHwgYEFib3V0UGFnZWAgfCDlhbPkuo4gfAoK5Y+m5aSW6KGl5Zue5LqG5Y6f54mI55qEKirns7vnu5/miZjnm5jlm77moIcqKu+8iGBUcmF5SWNvbmDvvIxgU2hlbGxfTm90aWZ5SWNvbmAgUC9JbnZva2XvvInkuI4qKuacgOWwj+WMluWIsOaJmOebmCoqCu+8iGBIaWRlTWFpbkVuYWJsZWRg77yJ6KGM5Li677ybV2luVUkgMyDmnKzouqvkuI3mj5DkvpsgYE5vdGlmeUljb25g77yM5Zug5q2k5Lul5raI5oGv56qX5Y+jICsgYFNoZWxsX05vdGlmeUljb25gIOWunueOsOOAggoKLS0tCgojIyA1LiDmlbDmja7mlofku7blhbzlrrnmgKcKCuaWsOeJiOacrOivu+WGmeS4juaXp+eJiCoq5a6M5YWo55u45ZCM55qE5paH5Lu2KirjgILnqIvluo/mlL7lnKjml6fniYjlkIznm67lvZXljbPlj6/ml6DnvJ3msr/nlKjlhajpg6jorr7nva7jgIIKCnwg5paH5Lu2IHwg5L2N572uIHwg5qC85byPIHwKfC0tLXwtLS18LS0tfAp8IGBJUFNjYW5lci5jZmdgIHwg56iL5bqP55uu5b2VIHwgWE1MIOagueWFg+e0oCBgcm9vdGDvvIzlhajpg6jorr7nva7kuLoqKueJueaApyoq77ybYDw/eG1sIHZlcnNpb249IjEuMCI/PmDvvIjml6AgYGVuY29kaW5nYO+8ie+8jFVURi04IOaXoCBCT00gfAp8IGBJUFNjYW5lck1lbW8uZGF0YCB8IOeoi+W6j+ebruW9lSB8IGDplK495YC8YCDpgJDooYzvvJtgI2Ag5rOo6YeK77yb5o2i6KGM6L2s5LmJ5Li6IGBedl5g77ybVVRGLTgg5bimIEJPTe+8iOaXp+eJiCBgSVBTY2FuZXIuZGF0YCDoh6rliqjov4Hnp7vvvIkgfAp8IGBjb21tYW5kLnR4dGAgfCDnqIvluo/nm67lvZUgfCBg5ZCN56ewIOWRveS7pGDvvIzpppbkuKrnqbrmoLzliY3kuLroj5zljZXlkI3vvJtgI2Ag5rOo6YeKIHwKfCBgaXBTY2FuZXJfaGlzLnhtbGAgfCDnqIvluo/nm67lvZUgfCBgPHJvb3Q+PGFycmF5PjxBZGFwdGVySW5mbyDigKYvPjwvYXJyYXk+PC9yb290PmAgfAp8IGBMb2dzXHl5eXktTU0tZGQubG9nYCB8IOeoi+W6j+ebruW9lSB8IGB5eXl5LU1NLWRkIEhIOm1tOnNzIC0g57G7LuaWueazlSAg5paH5pysYO+8jOS/neeVmSAzMCDlpKkgfAoKYEFwcENvbmZpZ2Ag55qE5bGe5oCnKirlo7DmmI7pobrluo/liLvmhI/kuI7ml6fniYggYENvbmZpZ0luZm9gIOS4gOiHtCoq4oCU4oCUYFhtbFNlcmlhbGl6ZXJgIOaMieWjsOaYjumhuuW6j+i+k+WHuueJueaAp++8jArpobrluo/mlLnlj5jkvJrnlKjkuI3lkIznmoTnibnmgKfmjpLliJfph43lhpnnlKjmiLflt7LmnInnmoQgYC5jZmdg44CC6aKc6Imy5LiA5b6L5LulKirmnInnrKblj7cgQVJHQiDmlbTmlbAqKuWtmOWCqArvvIhXaW5Gb3JtcyBgQ29sb3IuVG9BcmdiKClgIOe6puWumu+8ie+8jOS+i+WmguWkqeiTnSBgLTc4NzY4ODVg44CB5p+g5qqs57u/IGAtMTM0NDc4ODZg44CB5Y2w5bqm57qiIGAtMzMxODY5MmDjgIIKCi0tLQoKIyMgNi4g6YCG5ZCR5bel56iL6KeE5qC8CgpgZG9jcy9yZS9gIOS4i+aYr+aMieeql+S9k+aVtOeQhueahOWunueOsOe6p+inhOagvO+8jOWdh+S7juWPjee8luivkea6kOeggemAkOihjOaPkOWPlu+8iOWQq+eyvuehruS4reaWh+S4suOAgeaOp+S7tuWHoOS9leOAgQpBUEkg6LCD55So5LiO5a6e5rWL6KGM5Li677yJ77yM5piv5pys6aG555uu55qE6KGM5Li65L6d5o2u77yaCgp8IOaWh+ahoyB8IOimhuebliB8CnwtLS18LS0tfAp8IGAwMS1tYWlud2luZG93Lm1kYCB8IOS4u+eql+S9k++8mjI5IOmhueiPnOWNleagkeOAgeaJq+aPj+W8leaTjuaxguWAvOmhuuW6j+OAgeiJsuWdly/lj4zlh7sv5Y+z6ZSu6I+c5Y2V44CB5a+85Ye644CB5byC5Yqo55uR5rWL44CB5omY55uY44CB6I+c5Y2V5Zu65a6aIHwKfCBgMDItY29uZmlnLW1lbW8ubWRgIHwg6YCJ6aG56YWN572u77yIMyDkuKrpgInpobnljaHjgIEyNyDkuKrmjqfku7bjgIHmlbDlgLzojIPlm7TvvInjgIHlpIfms6jns7vnu5/kuI7liarotLTmnb/lr7zlhaXop6PmnpAgfAp8IGAwMy1iYXRjaHNjYW4tY2FsYy5tZGAgfCBJUOaJuemHj+aJq+aPj++8iOS4ieenjeaooeW8j+OAgeWIl+OAgeaOkuW6j+OAgeWumuaXtuOAgeWvvOWHuu+8ieOAgeWcsOWdgOiuoeeul+WZqCB8CnwgYDA0LXBvcnRzY2FuLm1kYCB8IOebruagh+err+WPo+aJq+aPj++8iOWbm+enjeW9ouaAge+8ieOAgeacrOacuuerr+WPo+WNoOeUqO+8iOWOnyBgbmV0c3RhdGAg6Kej5p6Q5LiO5pu/5LujIEFQSe+8iSB8CnwgYDA1LWxvY2FsaXAtd2lmaS1pbmZyYS5tZGAgfCDkv67mlLnmnKzlnLBJUOOAgVdpRmkg5p+l55yL44CBYFV0aWxpdHlgL2BMb2dUb29sYC9gWG1sVXRpbGl0eWAvYFByb2dyYW1gL+ahjOmdouWPoOWKoOeqlyB8CgotLS0KCiMjIDcuIOmHjeaehOS4reS/ruWkjeeahOe8uumZtwoK5Y6f54mI5a2Y5Zyo6Iul5bmy55yf5a6e57y66Zm344CC5Lul5LiL5Li6KirmnInmhI/kv67lpI0qKueahOa4heWNle+8iOWFtuS9meihjOS4uuWwvemHj+mAkOS9jeS/neaMge+8ie+8mgoKIyMjIOaJq+aPj+ato+ehruaApwotICoqQVJQIOWtkOS4suivr+WMuemFjSoq77ya5Y6f54mI55SoIGB0ZXh0LkNvbnRhaW5zKGlwKWAg6Kej5p6QIGBhcnAgLWFg77yMYDE5Mi4xNjguMS41YCDkvJrlkb3kuK0gYDE5Mi4xNjguMS41MGDjgIIKICDnjrDmlLnkuLrmraPliJnnsr7noa7ljLnphY3mlbTooYzjgIIKLSAqKuWBnOatouaJq+aPj+WQjuS7jeS8muaUueWGmeiJsuWdlyoq77ya5Y6f54mI44CM5YGc5q2i44CN5Y+q5YGc5q2i5rS+5Y+R77yM5Zyo6YCU57uT5p6c57un57ut5Zue6LCD77yM5LiU5Zue6LCD6YeM6YeN5paw6K+75Y+W5bey6Kej6ZSB55qECiAgSVAg6L6T5YWl5qGG77yM5a+86Ie057uT5p6c6JC95Yiw6ZSZ6K+v572R5q6144CC546w55SxIGBDYW5jZWxsYXRpb25Ub2tlbmAg5Y+W5raI5bm25Lii5byD5Zyo6YCU57uT5p6c44CCCi0gKirmr4/lj7DkuLvmnLrlkK/liqjkuIDmrKEgYGFycCAtYWAg5a2Q6L+b56iLKirvvJovMjQg5YWo572R5q615byA5ZCv5Li75py65ZCN5p+l6K+i5Lya5ouJ6LW357qmIDI1NCDkuKrov5vnqIvjgIIKICDnjrDmlbTooajor7vlj5bkuIDmrKHjgIHlpI3nlKggMyDnp5LjgIIKLSAqKjI1NCDkuKrlubblj5HmjqLmtYvml6DkuIrpmZAqKu+8mueOsOm7mOiupCA2NCDlubblj5HvvIhgU2NhbkVuZ2luZS5EZWZhdWx0Q29uY3VycmVuY3lg77yJ77yM5Li75py65ZCN6Kej5p6Q54us56uL6ZmQ5rWBIDE244CCCgojIyMg5YGl5aOu5oCnCi0gKipJUCDmoKHpqowqKu+8muWOn+eJiOato+WImeWPquWMuemFjeWJjee8gO+8jGA5OTkuOTk5Ljk5OS4xYOOAgWAxMC4wLjAuMWFiY2Ag5Z2H5Y+v6YCa6L+H5bm25pyA57uI5oqbCiAgYE92ZXJmbG93RXhjZXB0aW9uYO+8m+eOsOmAkOauteiMg+WbtOagoemqjOOAggotICoq6YWN572u5pWw5YC86LaK55WMKirvvJrljp/niYjmiorphY3nva7lgLznm7TmjqXotYvnu5kgYE51bWVyaWNVcERvd24uVmFsdWVg77yM6LaK55WM5Lya5oqb5byC5bi46Ie06YCJ6aG556qX5Y+j5peg5rOV5omT5byA77ybCiAg546w5LiA5b6L6ZKz5L2N44CCCi0gKipJUHY0L0lQdjYg5LiO54q25oCBKirvvJrmnKzmnLrnq6/lj6Pljp/niYjpnaAgYG5ldHN0YXQgLWFub2Ag5paH5pys6Kej5p6Q77yM55yL5LiN5YiwIFRDUCDnirbmgIHkuI4gSVB2NiDooYzvvIzkuJTkvp3otZYKICDns7vnu5/ljLrln5/orr7nva7vvJvnjrDmlLnnlKggYEdldEV4dGVuZGVkVGNwVGFibGVgL2BHZXRFeHRlbmRlZFVkcFRhYmxlYO+8iOS/neeVmSBgbmV0c3RhdGAg5Zue6YCA6Lev5b6E77yJ77yMCiAg5bm25paw5aKe54q25oCB5YiX44CCCi0gKipXaUZpIOino+aekOS+nei1luS4reaWh+agh+iusCoq77ya5Y6f54mI5Yy56YWNIGDmiYDmnInnlKjmiLfphY3nva7mlofku7ZgIC8gYOWFs+mUruWGheWuuWDvvIzlnKjoi7HmlocgV2luZG93cyDkuIoqKui/lOWbnuepuuWIl+ihqCoqCiAg77yI5pys5py65a6e5rWLIG5ldHNoIOi+k+WHuuiLseaWh+agh+iusO+8jOWOn+eJiOehruWunuWPluS4jeWIsOS7u+S9lee7k+aenO+8ie+8m+eOsOaMiee7k+aehOino+aekO+8jOWFvOWuueS4reiLseaWh+S4juWFqC/ljYrop5LlhpLlj7fjgIIKICDlkIzml7bkv67lpI0gV2luMTEgMjRIMiDnmoTnvJbnoIHlm57pgIDvvIhVVEYtOCDihpIgR0JL77yJ44CCCi0gKirkv67mlLnmnKzlnLBJUCDmsLjov5zmiqXmiJDlip8qKu+8muWOn+eJiOaKiiBuZXRzaCDlkb3ku6Tlhpnov5sgYGNtZC5leGVgIOagh+WHhui+k+WFpeWQjuS4jeetieW+heOAgeS4jeivu+mAgOWHuuegge+8jAogIOaXoOadoeS7tuaPkOekuuOAjOacrOWcsElQ5Zyw5Z2A5L+u5pS55oiQ5Yqf44CN77yb546w562J5b6F6YCA5Ye644CB5o2V6I636L6T5Ye644CB5oyJ55yf5a6e6YCA5Ye656CB5oql5ZGK44CCCgojIyMg5Yqf6IO95Y+v6L6+5oCnCi0gKirnq6/lj6PojIPlm7Tlhpnms5UqKu+8muWOn+eJiOWPquaMiSBgLGAg5YiG5Ymy5bm2IGBpbnQuVHJ5UGFyc2Vg77yMYDEwMDAtMjAwMGAg6KKr6Z2Z6buY5Lii5byD77yb546w5pSv5oyB6IyD5Zu05LiOCiAgYGFsbGAvYOWFqOmDqOerr+WPo2DjgIIKLSAqKuaOqeeggeS9jSAvMzHjgIEvMzIqKu+8muWOn+eJiOeVjOmdouaKiuaOqeeggeS9jeS4iumZkOiuvuS4uiAzMO+8jGBOZXR3b3JrQ2FsY3VsYXRvcmAg5Lit55qEIGB0d28gaG9zdHNgL2BvbmUgaG9zdGAKICDliIbmlK/mmK8qKuS4jeWPr+i+vuatu+S7o+eggSoq77yb546w5byA5pS+IDDigJMzMuOAggotICoq6aaW5qyh54K55Ye75YiX5aS05o6S5bqP5pa55ZCRKirvvJrljp/niYjluIPlsJTmoIflv5flnKjmjpLluo/lkI7miY3nv7vovazvvIzpppbmrKHngrnlh7vkuLrpmY3luo/kuJTlhajlsYDlhbHnlKjvvJvnjrDmlLnkuLrmjInliJforrDlvZXjgIEKICDpppbmrKHljYfluo/vvIzlubblnKjnu5PmnpzliLfmlrDlkI7kv53mjIHjgIIKLSAqKuWumuaXtuaJq+aPj+S4jeWPr+WPlua2iCoq77ya5Y6f54mI55SoIGBUaHJlYWQuU2xlZXAo5YiG6ZKfKWAg562J5b6F77yM5Y+W5raI6KaB562J552h55yg57uT5p2f77yb546w55SoIGBUYXNrLkRlbGF5KHRva2VuKWDjgIIKLSAqKuWvvOWHuue8lueggSoq77yaQ1NWIOe7n+S4gCBVVEYtOCAqKuW4piBCT00qKu+8iOWOn+eJiOaJuemHj+aJq+aPj+S4jeW4piBCT03vvIxFeGNlbCDkuK3mlofkubHnoIHvvInvvJvlubbmlrDlop7nnJ/mraPnmoQKICBgLnhsc3hgIOi+k+WHuu+8iOiHquihjOeUn+aIkCBTcHJlYWRzaGVldE1M77yM5peg56ys5LiJ5pa55L6d6LWW77yJ44CCCi0gKirmj5DmnYPmqKHlnosqKu+8muWOn+eJiOavj+asoeWQr+WKqOmDveiHquaIkSBgcnVuYXNgIOW8uuWItiBVQUPvvJvnjrDkuLogYGFzSW52b2tlcmDvvIzku4XjgIzkv67mlLnmnKzlnLBJUOOAjeOAjOa4heepukFSUOe8k+WtmOOAjQogIOmcgOimgeaPkOadg++8jOeVjOmdouaPkOS+m+aMiemcgOaPkOadg+WFpeWPo+S4juW+veagh+OAggoKLS0tCgojIyA4LiDpqozor4EKCi0gYGRvdG5ldCBidWlsZCBJUFNjYW5lci5XaW5VSS5zbG5g77yaKiowIOmUmeivryAwIOitpuWRiioq77yI5YWo6YOoIDExIOS4qumhtemdouaOpeWFpeWQjumHjeaWsOmqjOivge+8ieOAggotIGBkb3RuZXQgdGVzdGDvvJoqKjM1NiDkuKrmtYvor5Xlhajpg6jpgJrov4cqKu+8iDAg5aSx6LSl77yJ77yM6KaG55uWIGBJcE1hdGhg44CBYFN1Ym5ldENhbGN1bGF0b3Jg44CBYEFwcENvbmZpZ2DjgIEKICBgQ29uZmlnU3RvcmVg44CBYE1lbW9TdG9yZWDjgIFgUG9ydFNjYW5uZXJgIOino+aekOOAgWBUYWJsZUV4cG9ydGVyYOOAgWBFeHBpcmluZ0NhY2hlYOOAgWBUZXh0RmlsZUVuY29kaW5nYOOAggotICoq6YWN572u5paH5Lu25a2X6IqC57qn5YW85a65KirvvJrmiorlrp7pmYXnmoQgYEU6XElQU2NhbmVyLmNmZ2DvvIg2OTEg5a2X6IqC77yJ6K+75YWl5YaN5YaZ5Zue77yM6L6T5Ye65LiO5Y6f5Lu2CiAgKirpgJDlrZfoioLlrozlhajnm7jlkIwqKu+8iGBfdmVyaWZ5XGNmZ2DvvInjgILov5nlkIzml7bpqozor4HkuobjgIwuTkVUIEZyYW1ld29yayDnmoQgYFhtbFRleHRXcml0ZXJgIOS4jeWGmQogIGBlbmNvZGluZ2Ag5bGe5oCn44CB6ICMIC5ORVQgOCDkvJrlhpnjgI3ov5nkuIDlt67lvILlt7LooqvmraPnoa7lpITnkIbjgIIKLSAqKmAueGxzeGAg55yf5a6e5Y+v55SoKirvvJpgVGFibGVFeHBvcnRlci5Xcml0ZVhsc3hgIOeUn+aIkOeahOW3peewv+eUqCBvcGVucHl4bCDlm57or7vpgJrov4fvvIzkuK3mloflrozlpb3jgIEKICDmlbDlrZfmjInmlbDlgLznsbvlnovlhpnlhaXjgIIKLSBgTG9jYWxQb3J0VGFibGVg77yaSVAgSGVscGVyIOWOn+eUn+WMlui3r+W+hOS4jiBgbmV0c3RhdGAg5Zue6YCA6Lev5b6EKirpgJDooYzkuIDoh7QqKu+8iDU0OCDooYwgLyBUQ1AgMTg0IC8gVURQIDM2NO+8ie+8jAogIOW8gOWQryBJUHY2IOWQjiA2NzAg6KGM77yb57uT5p6E5L2T5q2l6ZW/57uPIGBNYXJzaGFsLlNpemVPZmAg5LiO6KGM5pWw5a+56LSm6aqM6K+B44CCCi0gYFdpZmlTZXJ2aWNlYO+8muacrOacuuivu+WIsCAyIOS4quW3suS/neWtmOmFjee9ru+8iCoq6Iux5paHKiogbmV0c2gg6L6T5Ye677yM6K+B5piO5bey5pGG6ISx5Lit5paH5qCH6K6w5L6d6LWW77yJ44CCCi0gYE5ldHdvcmtDb25maWd1cmF0b3Jg77ya6Z2e5rOV6L6T5YWl5ZyoKirkuI3lkK/liqjov5vnqIsqKueahOWJjeaPkOS4i+i/lOWbnuWksei0pe+8iDEuMSBtc++8jOi/m+eoi+aVsCAw4oaSMO+8ieOAggotIGBOZXR3b3JrSGlzdG9yeWDvvJpgPD94bWwgdmVyc2lvbj0iMS4wIj8+YCDml6AgQk9N77yMYDxBZGFwdGVySW5mbyDigKYvPmAg57uT5p6E77yM5Y+v5Yqg6L295pen54mI5YaZ5Ye655qE5paH5Lu244CCCi0g5ZCE5Yqf6IO96aG16Z2i5Zyo5byA5Y+R6L+H56iL5Lit5Z2H55Sx5a6e546w6ICF5ZyoKirov5DooYzkuK3nmoTlupTnlKgqKuS4iumAkOmhuemqjOivge+8iOaIquWbvuingSBgZG9jcy92ZXJpZmljYXRpb24vYO+8ie+8jAogIOWMheaLrO+8mumAiemhuemFjee9rui2iueVjOWAvOmSs+S9jeOAgeiuoeeul+WZqCBgLzMxYCBgLzMyYCDooYzkuLrjgIHlpIfms6jmoKHpqozkuI7liarotLTmnb/lr7zlhaXpooTop4jjgIFXaUZpIOaYjuaWh+WIh+aNouS4juWvvOWHuuOAgQogIOS/ruaUueacrOWcsElQIOeahOacquaPkOadg+WRiuitpuS4juWOhuWPsuWbnuWhq+OAggotIOmbhuaIkOWQjueahOacgOe7iOeoi+W6jyoq5LuF5Lul57yW6K+RICsg5Y2V5YWD5rWL6K+V6aqM6K+BKirvvIjnlKjmiLfopoHmsYLlh4/lsJHlvLnnqpfvvIzmnKrlho3mrKHlkK/liqggR1VJ77yJ44CCCiAg5ZCE6aG16Z2i5Zyo6ZuG5oiQ5YmN55qE6L+Q6KGM6aqM6K+B57uT5p6c6K6w5b2V5ZyoIGBkb2NzL3ZlcmlmaWNhdGlvbi9gIOeahOaIquWbvuS4reOAggoKIyMjIDcuMSDmnKzmnLrnjq/looPlrp7mtYvvvIjph43opoHvvIkKCueUqCBgX3ZlcmlmeVxuZXRgIOWBmuS6huaXoOeVjOmdouWunua1i++8jOWPkeeOsOS4pOS7tuW9seWTjeS9v+eUqOeahOS6i++8mgoKMS4gKirmnKzmnLrnmoQgUGluZyDosIPnlKjooqvmi6bmiKrjgIIqKiBgU3lzdGVtLk5ldC5OZXR3b3JrSW5mb3JtYXRpb24uUGluZ2Ag5a+5Kirku7vkvZUqKuWcsOWdgO+8iOWQqyBgMTI3LjAuMC4xYO+8iQogICDpg73mipsgYFBpbmdFeGNlcHRpb246IEFuIGV4Y2VwdGlvbiBvY2N1cnJlZCBkdXJpbmcgYSBQaW5nIHJlcXVlc3Rg77yMYElQU3RhdHVzYCDkuLogYFVua25vd25g44CCCiAgIOi/meS4jeaYr+Wvueerr+S4jeWbnuWMhe+8jOiAjOaYr+acrOacuiBJQ01QIOiDveWKm+iiq+mZkOWItu+8iOivpeacuuijheaciSAzNjAg5a6J5YWo5Y2r5aOr562J6L2v5Lu277yJ44CCCiAgIOWQjuaenO+8mioq5Zyo6buY6K6k6YWN572u5LiL77yI5Lik5Liq5aSH6YCJ5L6m5rWL5Z2H5Li65YWz6Zet77yJ77yM5pW05q615omr5o+P5Lya5YWo6YOo5pi+56S644CM5LiN6YCa44CNKiog4oCU4oCUIOaXp+eJiOWcqOWQjOagt+eOr+Wig+S4iwogICDkuZ/mmK/ov5nkuKrooajnjrDvvIzov5nmraPmmK8gdjEuMjgg5pu05paw6K+05piO6YeM44CM5L+u5aSN6YOo5YiG55S16ISR56aBUElOR+WvvOiHtOaYvuekuuS4jeWcqOe6v+OAjeimgeino+WGs+eahOmXrumimOOAggogICDkvaDnmoQgYEU6XElQU2NhbmVyLmNmZ2Ag5Lit5bey57uP6K6+572u5LqGIGBQb3J0SW5zdGVhZFBpbmdFbmFibGVkPSJ0cnVlImDvvIjnq6/lj6MgYDgwLDEzNSw0NDUsNTAwLDMzODlg77yJ77yMCiAgIOaJgOS7peWunua1i+i1sCBUQ1Ag5aSH6YCJ6Lev5b6E5pe257uT5p6c5q2j56Gu77yaYDE5Mi4xNjguMzIuNDcgLyAuMjAwIOKGkiDlnKjnur8gKFRDUClg44CCCiAgIOS4uuatpOaWsOWinuS6hioq6L+Q6KGM5pe25o+Q56S6KirvvJrlvZPkuIDova7miavmj4/kuK0gSUNNUCDlhajpg6jlpLHotKXkuJTkuKTkuKrlpIfpgInpg73mnKrlkK/nlKjml7bvvIzkuLvnlYzpnaLkvJrlvLnnqpfor7TmmI7ljp/lm6DvvIwKICAg5bm25Y+v5LiA6ZSu5ZCv55So44CQUGluZ+Wksei0peaXtuS+pua1i+err+WPo+OAkeWQjuiHquWKqOmHjeaJq+OAggoyLiAqKmBhcnAgLWFgIOWPr+eUqO+8jEFSUCDlpIfpgInlt6XkvZzmraPluLgqKu+8iDM2IOadoeihqOmhueOAgTEwMyBtc++8ieOAguS9huacquaPkOadg+aXtiBgYXJwIC1kICpgIOS8muWksei0pe+8jAogICDml6flrp7njrDkvJrmioogYOaLkue7neiuv+mXrmAg55u05o6l5omT5Yiw54i26L+b56iL5o6n5Yi25Y+w77yb546w5bey5pS55Li65o2V6I63IHN0ZGVyciDlubblhpnlhaXml6Xlv5fjgIIKCuWPpuWkluiusOW9leS4gOS4quW3peWFt+mZt+mYse+8mmB0b29sc1xncmFiX3dpbmRvdy5weWAg5Y6f5YWI55SoIGBQcmludFdpbmRvdyhQV19SRU5ERVJGVUxMQ09OVEVOVClgIOaIquWbvu+8jAoqKuS8muiuqSBXaW5VSSAzIOeql+WPo+WcqOmaj+WQjueahOahhuaetuiwg+W6puS4reWboCBgQWNjZXNzVmlvbGF0aW9uRXhjZXB0aW9uYCDltKnmuoMqKu+8iOihqOeOsOS4uueci+S8vOaXoOWFs+eahOmhtemdoiBidWfvvInjgIIK6K+l6ISa5pys5bey5pS55Li66buY6K6k5L2/55So5bGP5bmVIEJpdEJsdO+8jOW5tuS/neeVmSBgLS1wcmludHdpbmRvd2Ag5LuF55So5LqOIFdpbjMyL1dpbkZvcm1zIOeql+WPo+OAggoKLS0tCgojIyA5LiDlt7Lnn6Xlt67ot50KCi0g5Li755WM6Z2i55qEICoqSVAg5byC5Yqo55uR5rWLKirvvIh2MS4yNu+8muWvueavlOWJjeWQjuaJq+aPj+W3ruW8gu+8jOagh+iusOOAkOS4iue6v+OAkeOAkOS4i+e6v+OAke+8ieWwmuacquWunueOsO+8mwogIOaJuemHj+aJq+aPj+mhteaciee7k+aenOWvueavlOaJgOmcgOeahOaVsOaNru+8jOS9huS4u+eVjOmdouayoeacieWfuue6v+W/q+eFpyBVSeOAggotIOS4u+eVjOmdouiPnOWNleagj+Wwmuacquenu+akjeWOn+eJiOeahCAyOSDpobnoj5zljZXmoJHvvIjlv6vmjbflt6XlhbcgLyDlpJbpg6jlt6XlhbcgLyDmiJHnmoTlkb3ku6QgLyDoj5zljZXlm7rlrprvvInjgIIKICDnm7jlhbPog73lipvlt7LlnKggYFNoZWxsTGF1bmNoZXIuQnVpbHRJblRvb2xzYO+8iDE4IOS4quezu+e7n+W3peWFt++8ieS4jiBgRGl5Q29tbWFuZFN0b3JlYCDkuK3lsLHnu6rvvIwKICDlj7PplK7oj5zljZXlt7Lmj5DkvpsgcGluZyAvIHRyYWNlcnQgLyB0ZWxuZXQgLyBuZXRzdGF0IC8gYXJwIC8g572R6aG1IC8g5YWx5Lqr55uu5b2VIOWFqOmDqOWKqOS9nOOAggotIGBTdGFyTWVudWDvvIjoj5zljZXlm7rlrprvvInlj6/or7vlhpnphY3nva7vvIzkvYbmnKrmjqXlhaUgVUnjgIIKLSDku4XlnKggV2luZG93cyAxMSBJbnNpZGVyIFByZXZpZXfvvIh6aC1DTu+8jHg2NO+8jDE1MCUgRFBJ77yJ5Y2V5py66aqM6K+B77yb6Iux5paH5Yy65Z+f6K6+572u5LiL55qECiAgYG5ldHN0YXRgIOaWh+acrOWbnumAgOOAgemdnuaPkOadg+S4i+eahOi/m+eoi+i3r+W+hOino+aekOacquWunua1i+OAggotICoq5omY55uY5Zu+5qCH5ZyoIERTSCDnjq/looPkuIvlj6/og73kuI3mmL7npLoqKu+8muWunua1i+eUsSBEU0gg5ZCv5Yqo55qEIC5ORVQg6L+b56iL6L+Q6KGM5ZyoKirkvY7lrozmlbTmgKfnuqfliKsqKgogIO+8iFJJRCAweDEwMDDvvInvvIzmraTml7YgYFNoZWxsX05vdGlmeUljb24oTklNX0FERClgIOS8muiiq+ezu+e7n+S7pSBgRVJST1JfQUNDRVNTX0RFTklFRCAoNSlgIOaLkue7neOAggogIOeUqOWQjOS4gOS4qiBjdHlwZXMg6ISa5pys5YGaIEEvQiDlr7nnhafvvJrku44gcHdzaO+8iEhpZ2jvvIwweDMwMDDvvInlkK/liqgg4oaSIGBOSU1fQUREIG9rPVRydWVg44CBCiAgYFNoZWxsX05vdGlmeUljb25HZXRSZWN0IGhyPTB4MGDvvIznn6nlvaIgYCgxMzMyLDEwMzIpLSgxMzY4LDEwODApYO+8m+S7juS9juWujOaVtOaApyAuTkVUIOeItui/m+eoi+WQr+WKqAogIOKGkiBgb2s9RmFsc2UgZXJyPTVg44CCKirov5nmmK/njq/looPpmZDliLbvvIzkuI3mmK/ku6PnoIHnvLrpmbcqKu+8jOato+W4uOWPjOWHu+i/kOihjOaXtuS4jeWPl+W9seWTjeOAggotIOato+W4uOWJjeWPsOS8muivneS4i+eahOm8oOaghy/plK7nm5jovpPlhaXlnKjmnKzmnLrooqvlsY/olL3vvIhgR2V0Rm9yZWdyb3VuZFdpbmRvdygpYCDov5Tlm54gMO+8ie+8jOWboOatpOaJmOebmOWPs+mUruiPnOWNlQogICoq6I+c5Y2V6aG555qE55yf5a6e54K55Ye7KirmnKrog73pqozor4HvvIzlkb3ku6TliIblj5Hku4Xnu4/ku6PnoIHlrqHmn6XjgIIKCiMjIyDmoYzpnaLlj6DliqDnqpfkuI7miZjnm5jvvIjlt7Llrp7mtYvvvIkKCi0g5Zub5Liq6KeS5a6a5L2N5LiOIGBTY3JlZW4uUHJpbWFyeVNjcmVlbi5Cb3VuZHNgIOivreS5ieS4gOiHtO+8iOS4jeaOkumZpOS7u+WKoeagj+OAgeS7heS4u+Wxj++8ie+8mgogIOWBj+enuyAxMDAsMTAwIOaXtiBgbG9jMCAoMTAwLDEwMClgIC8gYGxvYzEgKDEwMTYsMTAwKWAgLyBgbG9jMiAoMTAxNiw3MDUpYCAvIGBsb2MzICgxMDAsNzA1KWDvvIgxOTIww5cxMDgw77yJ44CCCi0g5omp5bGV5qC35byP5a6e5rWLIGAweDgwMWEwYCA9IGBMQVlFUkVEfFRSQU5TUEFSRU5UfFRPT0xXSU5ET1dg77ybYEdldExheWVyZWRXaW5kb3dBdHRyaWJ1dGVzYAogIOi/lOWbniBgTFdBX0FMUEhBYO+8jOmAj+aYjuW6piA3MCUg4oaSIGFscGhhIDE3OO+8jDIwJSDihpIgYWxwaGEgNTHjgIIqKldpblVJIDMg55qEIERDb21wIOWGheWuueehruWunumBteW+qgogIGBMV0FfQUxQSEFgKirvvIjmiKrlm77lj6/op4HmoYzpnaLpgI/lh7rvvInvvIzov5nmmK/lrp7njrDliY3mnIDlpKfnmoTkuI3noa7lrprngrnjgIIKLSDpvKDmoIfnqb/pgI/vvJrlnKjop5LmoIfkuK3lv4PosIPnlKggYFdpbmRvd0Zyb21Qb2ludGAg6L+U5Zue5YW2KirkuIvmlrkqKueql+WPo+OAggotIOWGheWuueS4juWOn+eJiOmAkOmhueS4gOiHtO+8jOWQq+Wkmue9keWNoemmluihjO+8mgogIGDmnKzlnLBJUOWcsOWdgO+8mjE5Mi4xNjguMzIuNDc7IDE3Mi4yNC4yNTIuMTYwOyAxNzIuMjMuMzIuMTsgMTkyLjE2OC4xMzcuMWAgKwogIOWQjeensCAvIE1BQyAvIOaOqeeggSAvIOe9keWFsyAvIERIQ1AgLyBETlPjgIIKICDpobrluKbkv67mjonljp/niYjkuIDkuKrnu4TlkIggYnVn77ya5a6D5Y+q5ZyoIGBGaXJzdE9yRGVmYXVsdChyID0+IHIuSVAgPT0gImlwMTsgaXAyIilgIOWRveS4reaXtuaJjei+k+WHuuaYjue7huihjO+8jAogIOWNs+Wkmue9keWNoeacuuWZqOS4iioq5rC46L+c5LiN6L6T5Ye6KirjgIIKLSDotornlYzlgY/np7vvvIjiiJI1MDAg5LiOIDUwMDDvvIzljp/niYjkvJrorqnnqpflj6Pot5Hlh7rlsY/luZXvvInkvJrooqvlpLnlm57lsY/luZXlhoXvvJtgV01fQ0xPU0Ug4oaSIERpc3Bvc2VgIOWQjuaXoOaui+eVmeeql+WPo+OAggotIOacgOWwj+WMluWIsOaJmOebmO+8mmBIaWRlTWFpbkVuYWJsZWQ9dHJ1ZWAg5pe25pyA5bCP5YyWIOKGkiDnqpflj6MgYHZpc2libGU9RmFsc2Vg77yI5LuO5Lu75Yqh5qCP5LiOIEFsdCtUYWIg5raI5aSx77yJ77ybCiAgYD1mYWxzZWAg5pe25q2j5bi45pyA5bCP5YyW44CC5omY55uY5Y+M5Ye75Y+v5oGi5aSN44CC6YCA5Ye65YmN5Lya5by55Ye6IGDmmK/lkKbnoa7orqTpgIDlh7rnqIvluo/vvJ9g77yI5LiO5Y6f54mI5LiA6Ie077yJ44CCCg==
+# IPScaner WinUI — 局域网IP扫描工具（WinUI 3 重构版）
+
+[IPScaner V1.28.2](E:/IPScaner%20V1.28.2.exe) 是一次性打包的 .NET Framework / WinForms 单文件程序
+（299 KB，15 个窗体，约 7,000 行反编译源码）。本项目把它重构为 **Windows App SDK / WinUI 3** 应用：
+
+- 界面：**WinUI 3**（Fluent Design、Mica/主题感知、NavigationView 外壳）
+- 引擎：拆分为独立、可单元测试的类库 **`IPScaner.Core`**
+- 数据：**与旧版文件格式完全兼容**，可直接沿用已有的配置文件与备注
+- 目标框架：`.NET 8` / `net8.0-windows10.0.19041.0`，**非打包（unpackaged）** 部署
+
+---
+
+## 1. 目录结构
+
+```
+ipscaner-winui/
+├─ IPScaner.WinUI.sln
+├─ src/
+│  ├─ IPScaner.Core/              扫描引擎与数据层（无 UI 依赖）
+│  │  ├─ Configuration/           AppConfig（= IPScaner.cfg）、ConfigStore、EventName
+│  │  ├─ Models/                  HostResult、AdapterInfo、PortScanResult、LocalPortInfo、WifiProfile
+│  │  ├─ Net/                     IpMath、SubnetCalculator、LivenessProbe、ScanEngine、
+│  │  │                           ArpTable、NameResolver、TcpProbe、PortScanner、
+│  │  │                           LocalPortTable、AdapterService、WifiService、NetworkConfigurator
+│  │  ├─ Memo/                    MemoStore（= IPScanerMemo.dat）
+│  │  ├─ Commands/                DiyCommandStore（= command.txt）
+│  │  ├─ Export/                  TableExporter（CSV + 真 .xlsx）
+│  │  ├─ Logging/                 AppLog（= Logs\yyyy-MM-dd.log）
+│  │  ├─ Caching/                 ExpiringCache（替代 System.Runtime.Caching）
+│  │  ├─ Shell/                   ShellLauncher（ping/tracert/netstat/共享目录/控制面板）
+│  │  └─ Storage/                 TextFileEncoding（BOM/GBK 探测）、AppPaths（数据目录解析）
+│  └─ IPScaner.WinUI/             WinUI 3 应用
+│     ├─ App.xaml(.cs)            应用入口
+│     ├─ MainWindow.xaml(.cs)     外壳：自定义标题栏 + NavigationView + 状态栏 + 托盘 + 桌面叠加窗
+│     ├─ Views/                   10 个功能页面
+│     ├─ ViewModels/              IpBlock、AppConfigColors
+│     ├─ Services/                AppServices、UiKit、NavigationArgs、TrayIcon、DesktopOverlay
+│     ├─ Styles/AppStyles.xaml    共享样式
+│     └─ Assets/app.ico           应用图标（同时供窗口图标与托盘图标读取）
+├─ tests/IPScaner.Core.Tests/     xUnit 测试（356 个）
+├─ build/
+│  ├─ package.ps1                 一键产出 portable/msi/setup.exe
+│  ├─ publish-github.ps1          建仓库 + 推源码 + 发 Release（走 REST API，无需 git）
+│  └─ installer/                  WiX .wxs 模板与 IExpress .sed 模板
+├─ artifacts/                     打包输出（已在 .gitignore 中，仅作 Release 资源）
+├─ docs/
+│  ├─ re/                         逆向工程规格（01–05，见 §6）
+│  ├─ verification/               各页面的运行验证截图
+│  └─ PAGE-CONTRACT.md            页面实现契约
+└─ tools/grab_window.py           窗口截图辅助脚本
+```
+
+---
+
+## 2. 构建与运行
+
+前置：**.NET 8 SDK**（或更高）+ **Windows App Runtime 1.8**（本机已安装 `Microsoft.WindowsAppRuntime.1.8`）。
+
+```powershell
+cd ipscaner-winui
+
+dotnet build IPScaner.WinUI.sln -c Debug
+
+# 运行
+.\src\IPScaner.WinUI\bin\Debug\net8.0-windows10.0.19041.0\win-x64\IPScaner.exe
+
+# 测试
+dotnet test tests\IPScaner.Core.Tests\IPScaner.Core.Tests.csproj
+```
+
+发布（自包含、单目录）：
+
+```powershell
+dotnet publish src\IPScaner.WinUI\IPScaner.WinUI.csproj -c Release -r win-x64 `
+  -p:WindowsAppSDKSelfContained=true -p:SelfContained=true
+```
+
+---
+
+## 3. 打包与发布
+
+一条命令产出全部发布形态（输出到 `artifacts/`）：
+
+```powershell
+pwsh -File build\package.ps1 -Version 1.28.2
+```
+
+| 产物 | 大小 | 说明 |
+|---|---|---|
+| `IPScaner-<ver>-win-x64-portable.zip` | ~84 MB | **免安装**。内置 .NET 8 + Windows App SDK，解压即用，不写注册表 |
+| `IPScaner-<ver>-win-x64-portable-lite.zip` | ~11 MB | **免安装（精简）**。需预装 .NET 8 桌面运行时 + Windows App Runtime 1.8 |
+| `IPScaner-<ver>-win-x64.msi` | ~65 MB | **安装版**（WiX）。装入 `Program Files`，创建开始菜单与桌面快捷方式 |
+| `IPScaner-<ver>-win-x64-setup.exe` | ~65 MB | **安装版**（IExpress 引导程序，内部调用上面的 MSI） |
+
+打包依赖：`.NET 8 SDK`、`dotnet tool install --global wix --version 5.*`（**必须 v5**，见下）、
+Windows 自带的 `iexpress.exe`。`7-Zip` 可选。
+
+> **为什么锁定 WiX v5**：WiX v6/v7 要求接受 Open Source Maintenance Fee（OSMF）EULA，
+> 可能涉及商业授权费用；v5 是最后一个免该条款的版本。
+
+**数据目录**：免安装版把 `IPScaner.cfg` / `IPScanerMemo.dat` / `command.txt` / `ipScaner_his.xml` / `Logs\`
+放在程序目录（与旧版一致，配置随文件夹走）；安装版因 `Program Files` 不可写，由
+`IPScaner.Core.Storage.AppPaths` 自动回退到 `%APPDATA%\IPScaner`。同一个构建两种形态都正确。
+
+### 发布到 GitHub
+
+本机没有 git / gh，因此 `build\publish-github.ps1` 走 **GitHub REST API**：
+建仓库 → 用 Git Data API 一次性提交全部源码 → 建 Release → 上传 4 个安装包。
+
+```powershell
+$env:GITHUB_TOKEN = "github_pat_xxx"   # 需要 Contents:RW + Administration:RW
+pwsh -File build\publish-github.ps1 -Repo IPScaner-WinUI -Visibility public
+```
+
+脚本可重复执行：仓库已存在时复用，分支已存在时追加提交，Release 已存在时补传缺失资源。
+
+---
+
+## 4. 功能对照
+
+原版 readme 列出的 11 项功能全部保留：
+
+| # | 原功能 | 新实现 | 页面 |
+|---|---|---|---|
+| 1 | IP段扫描（254 小色块） | `ScanPage` + `IpBlock`，色块背景即状态 | IP段扫描 |
+| 2 | 修改本地IP | `LocalIpPage` + `NetworkConfigurator` | 修改本地IP |
+| 3 | IP批量扫描（单网段/范围/掩码位，定时） | `BatchScanPage` | IP批量扫描 |
+| 4 | IP地址计算器 | `CalculatorPage` + `SubnetCalculator` | IP地址计算器 |
+| 5 | 目标端口扫描 | `PortScanPage` + `PortScanner` | 端口扫描 |
+| 6 | 本机端口占用查看 | `LocalPortPage` + `LocalPortTable` | 本机端口占用 |
+| 7 | WiFi密码查看 | `WifiPage` + `WifiService` | WiFi密码查看 |
+| 8 | Windows命令（18 个 + 自定义） | `ShellLauncher.BuiltInTools` + `DiyCommandStore` | 侧边/右键菜单 |
+| 9 | 备注管理 | `MemoPage` + `MemoStore` | 备注管理 |
+| 10 | 桌面显示本机IP | `DesktopOverlay`（`WS_EX_LAYERED\|TRANSPARENT\|TOOLWINDOW`）+ 选项配置 · 桌面 | 桌面叠加窗 |
+| 11 | 关于 | `AboutPage` | 关于 |
+
+另外补回了原版的**系统托盘图标**（`TrayIcon`，`Shell_NotifyIcon` P/Invoke）与**最小化到托盘**
+（`HideMainEnabled`）行为；WinUI 3 本身不提供 `NotifyIcon`，因此以消息窗口 + `Shell_NotifyIcon` 实现。
+
+---
+
+## 5. 数据文件兼容性
+
+新版本读写与旧版**完全相同的文件**。程序放在旧版同目录即可无缝沿用全部设置。
+
+| 文件 | 位置 | 格式 |
+|---|---|---|
+| `IPScaner.cfg` | 程序目录 | XML 根元素 `root`，全部设置为**特性**；`<?xml version="1.0"?>`（无 `encoding`），UTF-8 无 BOM |
+| `IPScanerMemo.dat` | 程序目录 | `键=值` 逐行；`#` 注释；换行转义为 `^v^`；UTF-8 带 BOM（旧版 `IPScaner.dat` 自动迁移） |
+| `command.txt` | 程序目录 | `名称 命令`，首个空格前为菜单名；`#` 注释 |
+| `ipScaner_his.xml` | 程序目录 | `<root><array><AdapterInfo …/></array></root>` |
+| `Logs\yyyy-MM-dd.log` | 程序目录 | `yyyy-MM-dd HH:mm:ss - 类.方法  文本`，保留 30 天 |
+
+`AppConfig` 的属性**声明顺序刻意与旧版 `ConfigInfo` 一致**——`XmlSerializer` 按声明顺序输出特性，
+顺序改变会用不同的特性排列重写用户已有的 `.cfg`。颜色一律以**有符号 ARGB 整数**存储
+（WinForms `Color.ToArgb()` 约定），例如天蓝 `-7876885`、柠檬绿 `-13447886`、印度红 `-3318692`。
+
+---
+
+## 6. 逆向工程规格
+
+`docs/re/` 下是按窗体整理的实现级规格，均从反编译源码逐行提取（含精确中文串、控件几何、
+API 调用与实测行为），是本项目的行为依据：
+
+| 文档 | 覆盖 |
+|---|---|
+| `01-mainwindow.md` | 主窗体：29 项菜单树、扫描引擎求值顺序、色块/双击/右键菜单、导出、异动监测、托盘、菜单固定 |
+| `02-config-memo.md` | 选项配置（3 个选项卡、27 个控件、数值范围）、备注系统与剪贴板导入解析 |
+| `03-batchscan-calc.md` | IP批量扫描（三种模式、列、排序、定时、导出）、地址计算器 |
+| `04-portscan.md` | 目标端口扫描（四种形态）、本机端口占用（原 `netstat` 解析与替代 API） |
+| `05-localip-wifi-infra.md` | 修改本地IP、WiFi 查看、`Utility`/`LogTool`/`XmlUtility`/`Program`/桌面叠加窗 |
+
+---
+
+## 7. 重构中修复的缺陷
+
+原版存在若干真实缺陷。以下为**有意修复**的清单（其余行为尽量逐位保持）：
+
+### 扫描正确性
+- **ARP 子串误匹配**：原版用 `text.Contains(ip)` 解析 `arp -a`，`192.168.1.5` 会命中 `192.168.1.50`。
+  现改为正则精确匹配整行。
+- **停止扫描后仍会改写色块**：原版「停止」只停止派发，在途结果继续回调，且回调里重新读取已解锁的
+  IP 输入框，导致结果落到错误网段。现由 `CancellationToken` 取消并丢弃在途结果。
+- **每台主机启动一次 `arp -a` 子进程**：/24 全网段开启主机名查询会拉起约 254 个进程。
+  现整表读取一次、复用 3 秒。
+- **254 个并发探测无上限**：现默认 64 并发（`ScanEngine.DefaultConcurrency`），主机名解析独立限流 16。
+
+### 健壮性
+- **IP 校验**：原版正则只匹配前缀，`999.999.999.1`、`10.0.0.1abc` 均可通过并最终抛
+  `OverflowException`；现逐段范围校验。
+- **配置数值越界**：原版把配置值直接赋给 `NumericUpDown.Value`，越界会抛异常致选项窗口无法打开；
+  现一律钳位。
+- **IPv4/IPv6 与状态**：本机端口原版靠 `netstat -ano` 文本解析，看不到 TCP 状态与 IPv6 行，且依赖
+  系统区域设置；现改用 `GetExtendedTcpTable`/`GetExtendedUdpTable`（保留 `netstat` 回退路径），
+  并新增状态列。
+- **WiFi 解析依赖中文标记**：原版匹配 `所有用户配置文件` / `关键内容`，在英文 Windows 上**返回空列表**
+  （本机实测 netsh 输出英文标记，原版确实取不到任何结果）；现按结构解析，兼容中英文与全/半角冒号。
+  同时修复 Win11 24H2 的编码回退（UTF-8 → GBK）。
+- **修改本地IP 永远报成功**：原版把 netsh 命令写进 `cmd.exe` 标准输入后不等待、不读退出码，
+  无条件提示「本地IP地址修改成功」；现等待退出、捕获输出、按真实退出码报告。
+
+### 功能可达性
+- **端口范围写法**：原版只按 `,` 分割并 `int.TryParse`，`1000-2000` 被静默丢弃；现支持范围与
+  `all`/`全部端口`。
+- **掩码位 /31、/32**：原版界面把掩码位上限设为 30，`NetworkCalculator` 中的 `two hosts`/`one host`
+  分支是**不可达死代码**；现开放 0–32。
+- **首次点击列头排序方向**：原版布尔标志在排序后才翻转，首次点击为降序且全局共用；现改为按列记录、
+  首次升序，并在结果刷新后保持。
+- **定时扫描不可取消**：原版用 `Thread.Sleep(分钟)` 等待，取消要等睡眠结束；现用 `Task.Delay(token)`。
+- **导出编码**：CSV 统一 UTF-8 **带 BOM**（原版批量扫描不带 BOM，Excel 中文乱码）；并新增真正的
+  `.xlsx` 输出（自行生成 SpreadsheetML，无第三方依赖）。
+- **提权模型**：原版每次启动都自我 `runas` 强制 UAC；现为 `asInvoker`，仅「修改本地IP」「清空ARP缓存」
+  需要提权，界面提供按需提权入口与徽标。
+
+---
+
+## 8. 验证
+
+- `dotnet build IPScaner.WinUI.sln`：**0 错误 0 警告**（全部 11 个页面接入后重新验证）。
+- `dotnet test`：**356 个测试全部通过**（0 失败），覆盖 `IpMath`、`SubnetCalculator`、`AppConfig`、
+  `ConfigStore`、`MemoStore`、`PortScanner` 解析、`TableExporter`、`ExpiringCache`、`TextFileEncoding`。
+- **配置文件字节级兼容**：把实际的 `E:\IPScaner.cfg`（691 字节）读入再写回，输出与原件
+  **逐字节完全相同**（`_verify\cfg`）。这同时验证了「.NET Framework 的 `XmlTextWriter` 不写
+  `encoding` 属性、而 .NET 8 会写」这一差异已被正确处理。
+- **`.xlsx` 真实可用**：`TableExporter.WriteXlsx` 生成的工簿用 openpyxl 回读通过，中文完好、
+  数字按数值类型写入。
+- `LocalPortTable`：IP Helper 原生化路径与 `netstat` 回退路径**逐行一致**（548 行 / TCP 184 / UDP 364），
+  开启 IPv6 后 670 行；结构体步长经 `Marshal.SizeOf` 与行数对账验证。
+- `WifiService`：本机读到 2 个已保存配置（**英文** netsh 输出，证明已摆脱中文标记依赖）。
+- `NetworkConfigurator`：非法输入在**不启动进程**的前提下返回失败（1.1 ms，进程数 0→0）。
+- `NetworkHistory`：`<?xml version="1.0"?>` 无 BOM，`<AdapterInfo …/>` 结构，可加载旧版写出的文件。
+- 各功能页面在开发过程中均由实现者在**运行中的应用**上逐项验证（截图见 `docs/verification/`），
+  包括：选项配置越界值钳位、计算器 `/31` `/32` 行为、备注校验与剪贴板导入预览、WiFi 明文切换与导出、
+  修改本地IP 的未提权告警与历史回填。
+- 集成后的最终程序**仅以编译 + 单元测试验证**（用户要求减少弹窗，未再次启动 GUI）。
+  各页面在集成前的运行验证结果记录在 `docs/verification/` 的截图中。
+
+### 7.1 本机环境实测（重要）
+
+用 `_verify\net` 做了无界面实测，发现两件影响使用的事：
+
+1. **本机的 Ping 调用被拦截。** `System.Net.NetworkInformation.Ping` 对**任何**地址（含 `127.0.0.1`）
+   都抛 `PingException: An exception occurred during a Ping request`，`IPStatus` 为 `Unknown`。
+   这不是对端不回包，而是本机 ICMP 能力被限制（该机装有 360 安全卫士等软件）。
+   后果：**在默认配置下（两个备选侦测均为关闭），整段扫描会全部显示「不通」** —— 旧版在同样环境下
+   也是这个表现，这正是 v1.28 更新说明里「修复部分电脑禁PING导致显示不在线」要解决的问题。
+   你的 `E:\IPScaner.cfg` 中已经设置了 `PortInsteadPingEnabled="true"`（端口 `80,135,445,500,3389`），
+   所以实测走 TCP 备选路径时结果正确：`192.168.32.47 / .200 → 在线 (TCP)`。
+   为此新增了**运行时提示**：当一轮扫描中 ICMP 全部失败且两个备选都未启用时，主界面会弹窗说明原因，
+   并可一键启用【Ping失败时侦测端口】后自动重扫。
+2. **`arp -a` 可用，ARP 备选工作正常**（36 条表项、103 ms）。但未提权时 `arp -d *` 会失败，
+   旧实现会把 `拒绝访问` 直接打到父进程控制台；现已改为捕获 stderr 并写入日志。
+
+另外记录一个工具陷阱：`tools\grab_window.py` 原先用 `PrintWindow(PW_RENDERFULLCONTENT)` 截图，
+**会让 WinUI 3 窗口在随后的框架调度中因 `AccessViolationException` 崩溃**（表现为看似无关的页面 bug）。
+该脚本已改为默认使用屏幕 BitBlt，并保留 `--printwindow` 仅用于 Win32/WinForms 窗口。
+
+---
+
+## 9. 已知差距
+
+- 主界面的 **IP 异动监测**（v1.26：对比前后扫描差异，标记【上线】【下线】）尚未实现；
+  批量扫描页有结果对比所需的数据，但主界面没有基线快照 UI。
+- 主界面菜单栏尚未移植原版的 29 项菜单树（快捷工具 / 外部工具 / 我的命令 / 菜单固定）。
+  相关能力已在 `ShellLauncher.BuiltInTools`（18 个系统工具）与 `DiyCommandStore` 中就绪，
+  右键菜单已提供 ping / tracert / telnet / netstat / arp / 网页 / 共享目录 全部动作。
+- `StarMenu`（菜单固定）可读写配置，但未接入 UI。
+- 仅在 Windows 11 Insider Preview（zh-CN，x64，150% DPI）单机验证；英文区域设置下的
+  `netstat` 文本回退、非提权下的进程路径解析未实测。
+- **托盘图标在 DSH 环境下可能不显示**：实测由 DSH 启动的 .NET 进程运行在**低完整性级别**
+  （RID 0x1000），此时 `Shell_NotifyIcon(NIM_ADD)` 会被系统以 `ERROR_ACCESS_DENIED (5)` 拒绝。
+  用同一个 ctypes 脚本做 A/B 对照：从 pwsh（High，0x3000）启动 → `NIM_ADD ok=True`、
+  `Shell_NotifyIconGetRect hr=0x0`，矩形 `(1332,1032)-(1368,1080)`；从低完整性 .NET 父进程启动
+  → `ok=False err=5`。**这是环境限制，不是代码缺陷**，正常双击运行时不受影响。
+- 正常前台会话下的鼠标/键盘输入在本机被屏蔽（`GetForegroundWindow()` 返回 0），因此托盘右键菜单
+  **菜单项的真实点击**未能验证，命令分发仅经代码审查。
+
+### 桌面叠加窗与托盘（已实测）
+
+- 四个角定位与 `Screen.PrimaryScreen.Bounds` 语义一致（不排除任务栏、仅主屏）：
+  偏移 100,100 时 `loc0 (100,100)` / `loc1 (1016,100)` / `loc2 (1016,705)` / `loc3 (100,705)`（1920×1080）。
+- 扩展样式实测 `0x801a0` = `LAYERED|TRANSPARENT|TOOLWINDOW`；`GetLayeredWindowAttributes`
+  返回 `LWA_ALPHA`，透明度 70% → alpha 178，20% → alpha 51。**WinUI 3 的 DComp 内容确实遵循
+  `LWA_ALPHA`**（截图可见桌面透出），这是实现前最大的不确定点。
+- 鼠标穿透：在角标中心调用 `WindowFromPoint` 返回其**下方**窗口。
+- 内容与原版逐项一致，含多网卡首行：
+  `本地IP地址：192.168.32.47; 172.24.252.160; 172.23.32.1; 192.168.137.1` +
+  名称 / MAC / 掩码 / 网关 / DHCP / DNS。
+  顺带修掉原版一个组合 bug：它只在 `FirstOrDefault(r => r.IP == "ip1; ip2")` 命中时才输出明细行，
+  即多网卡机器上**永远不输出**。
+- 越界偏移（−500 与 5000，原版会让窗口跑出屏幕）会被夹回屏幕内；`WM_CLOSE → Dispose` 后无残留窗口。
+- 最小化到托盘：`HideMainEnabled=true` 时最小化 → 窗口 `visible=False`（从任务栏与 Alt+Tab 消失）；
+  `=false` 时正常最小化。托盘双击可恢复。退出前会弹出 `是否确认退出程序？`（与原版一致）。

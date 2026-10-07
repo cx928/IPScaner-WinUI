@@ -1,1 +1,199 @@
-dXNpbmcgU3lzdGVtLkNvbGxlY3Rpb25zLkNvbmN1cnJlbnQ7CnVzaW5nIElQU2NhbmVyLkNvcmUuQ29uZmlndXJhdGlvbjsKdXNpbmcgSVBTY2FuZXIuQ29yZS5Mb2dnaW5nOwp1c2luZyBJUFNjYW5lci5Db3JlLk1vZGVsczsKCm5hbWVzcGFjZSBJUFNjYW5lci5Db3JlLk5ldDsKCi8vLyA8c3VtbWFyeT5JbnB1dHMgZm9yIG9uZSBwb3J0LXNjYW4gcnVuLjwvc3VtbWFyeT4KcHVibGljIHNlYWxlZCBjbGFzcyBQb3J0U2NhblJlcXVlc3QKewogICAgLy8vIDxzdW1tYXJ5Pkhvc3RzIHRvIHNjYW4gKGFkZHJlc3NlcyBvciBuYW1lcykuPC9zdW1tYXJ5PgogICAgcHVibGljIElSZWFkT25seUxpc3Q8c3RyaW5nPiBUYXJnZXRzIHsgZ2V0OyBpbml0OyB9ID0gW107CgogICAgLy8vIDxzdW1tYXJ5PlBvcnRzIHRvIHRyeSBvbiBlYWNoIGhvc3QuPC9zdW1tYXJ5PgogICAgcHVibGljIElSZWFkT25seUxpc3Q8aW50PiBQb3J0cyB7IGdldDsgaW5pdDsgfSA9IFtdOwoKICAgIHB1YmxpYyBpbnQgVGltZW91dE1zIHsgZ2V0OyBpbml0OyB9ID0gNTA7CgogICAgLy8vIDxzdW1tYXJ5PkNvbmN1cnJlbnQgY29ubmVjdCBhdHRlbXB0cy4gVGhlIG9yaWdpbmFsIGFsbG93ZWQgMTAwMCBwcm9jZXNzLXdpZGUuPC9zdW1tYXJ5PgogICAgcHVibGljIGludCBDb25jdXJyZW5jeSB7IGdldDsgaW5pdDsgfSA9IDI1NjsKCiAgICAvLy8gPHN1bW1hcnk+UmVwb3J0IGNsb3NlZCBwb3J0cyB0b28sIG5vdCBqdXN0IG9wZW4gb25lcy48L3N1bW1hcnk+CiAgICBwdWJsaWMgYm9vbCBSZXBvcnRDbG9zZWQgeyBnZXQ7IGluaXQ7IH0KCiAgICBwdWJsaWMgaW50IFRvdGFsUHJvYmVzID0+IFRhcmdldHMuQ291bnQgKiBQb3J0cy5Db3VudDsKfQoKLy8vIDxzdW1tYXJ5PgovLy8gVGFyZ2V0IHBvcnQgc2Nhbm5lciAo55uu5qCH56uv5Y+j5omr5o+PKS4KLy8vIDwvc3VtbWFyeT4KLy8vIDxyZW1hcmtzPgovLy8gUHJvYmUgc2VtYW50aWNzIG1hdGNoIHRoZSBvcmlnaW5hbDogYSBwbGFpbiBUQ1AgY29ubmVjdCB3aXRoCi8vLyA8c2VlIGNyZWY9IlBvcnRTY2FuUmVxdWVzdC5UaW1lb3V0TXMiLz4sIG5vIHJldHJ5LCBhbmQgb25seSBzdWNjZXNzZnVsbHkKLy8vIG9wZW5lZCBwb3J0cyBhcmUgcmVwb3J0ZWQgYnkgZGVmYXVsdC4KLy8vIDxwYXJhPgovLy8gVHdvIGludGVudGlvbmFsIGltcHJvdmVtZW50cyBvdmVyIHRoZSBvcmlnaW5hbDogcG9ydCBsaXN0cyBhY2NlcHQgcmFuZ2VzCi8vLyAoIjgwLDQ0MywxMDAwLTIwMDAiKSBpbnN0ZWFkIG9mIHNpbGVudGx5IGRyb3BwaW5nIHRoZW0sIGFuZCBjb25jdXJyZW5jeSBpcyBhCi8vLyByZWFsIGJvdW5kZWQgc2VtYXBob3JlIHJhdGhlciB0aGFuIDEwMDAgdGFza3MgZWFjaCBwYXJraW5nIGEgdGhyZWFkLXBvb2wKLy8vIHRocmVhZCBpbnNpZGUgYSBibG9ja2luZyB3YWl0LgovLy8gPC9wYXJhPgovLy8gPC9yZW1hcmtzPgpwdWJsaWMgc2VhbGVkIGNsYXNzIFBvcnRTY2FubmVyCnsKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBQYXJzZXMgYSBwb3J0IGxpc3QuIEFjY2VwdHMgY29tbWEv44CBL3NwYWNlIHNlcGFyYXRvcnMsIHJhbmdlcyB3aXRoICctJywKICAgIC8vLyBhbmQgdGhlIGtleXdvcmQgImFsbCIgKG9yIOWFqOmDqCkgZm9yIDEtNjU1MzUuCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgcHVibGljIHN0YXRpYyBMaXN0PGludD4gUGFyc2VQb3J0cyhzdHJpbmc/IHRleHQsIGJvb2wgYWxsb3dBbGwgPSB0cnVlKQogICAgewogICAgICAgIHZhciBwb3J0cyA9IG5ldyBTb3J0ZWRTZXQ8aW50PigpOwogICAgICAgIGlmIChzdHJpbmcuSXNOdWxsT3JXaGl0ZVNwYWNlKHRleHQpKSByZXR1cm4gW107CgogICAgICAgIHZhciBub3JtYWxpemVkID0gdGV4dC5SZXBsYWNlKCfvvIwnLCAnLCcpLlJlcGxhY2UoJ+OAgScsICcsJykuUmVwbGFjZSgnICcsICcsJykuUmVwbGFjZSgnOycsICcsJyk7CiAgICAgICAgZm9yZWFjaCAodmFyIHRva2VuIGluIG5vcm1hbGl6ZWQuU3BsaXQoJywnLCBTdHJpbmdTcGxpdE9wdGlvbnMuUmVtb3ZlRW1wdHlFbnRyaWVzKSkKICAgICAgICB7CiAgICAgICAgICAgIHZhciB0ID0gdG9rZW4uVHJpbSgpOwogICAgICAgICAgICBpZiAodC5MZW5ndGggPT0gMCkgY29udGludWU7CgogICAgICAgICAgICBpZiAoYWxsb3dBbGwgJiYgKHQuRXF1YWxzKCJhbGwiLCBTdHJpbmdDb21wYXJpc29uLk9yZGluYWxJZ25vcmVDYXNlKSB8fCB0ID09ICLlhajpg6giIHx8IHQgPT0gIuWFqOmDqOerr+WPoyIpKQogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICByZXR1cm4gWy4uIEVudW1lcmFibGUuUmFuZ2UoMSwgNjU1MzUpXTsKICAgICAgICAgICAgfQoKICAgICAgICAgICAgdmFyIGRhc2ggPSB0LkluZGV4T2YoJy0nKTsKICAgICAgICAgICAgaWYgKGRhc2ggPiAwKQogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICB2YXIgbG9UZXh0ID0gdFsuLmRhc2hdLlRyaW0oKTsKICAgICAgICAgICAgICAgIHZhciBoaVRleHQgPSB0WyhkYXNoICsgMSkuLl0uVHJpbSgpOwogICAgICAgICAgICAgICAgaWYgKGludC5UcnlQYXJzZShsb1RleHQsIG91dCB2YXIgbG8pICYmIGludC5UcnlQYXJzZShoaVRleHQsIG91dCB2YXIgaGkpKQogICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgIGlmIChsbyA+IGhpKSAobG8sIGhpKSA9IChoaSwgbG8pOwogICAgICAgICAgICAgICAgICAgIGxvID0gTWF0aC5NYXgoMSwgbG8pOwogICAgICAgICAgICAgICAgICAgIGhpID0gTWF0aC5NaW4oNjU1MzUsIGhpKTsKICAgICAgICAgICAgICAgICAgICAvLyBDYXAgYSBzaW5nbGUgcmFuZ2Ugc28gIjEtNjU1MzUiIGNhbm5vdCBiZSB0eXBlZCBieSBhY2NpZGVudAogICAgICAgICAgICAgICAgICAgIC8vIGludG8gYSAyNTQtaG9zdCBzY2FuIHdpdGhvdXQgdGhlIGNhbGxlciByZWFsaXNpbmcuCiAgICAgICAgICAgICAgICAgICAgaWYgKGhpIC0gbG8gPiAyMDAwMCkgaGkgPSBsbyArIDIwMDAwOwogICAgICAgICAgICAgICAgICAgIGZvciAodmFyIHAgPSBsbzsgcCA8PSBoaTsgcCsrKSBwb3J0cy5BZGQocCk7CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICBjb250aW51ZTsKICAgICAgICAgICAgfQoKICAgICAgICAgICAgaWYgKGludC5UcnlQYXJzZSh0LCBvdXQgdmFyIHBvcnQpICYmIHBvcnQgaXMgPj0gMSBhbmQgPD0gNjU1MzUpIHBvcnRzLkFkZChwb3J0KTsKICAgICAgICB9CgogICAgICAgIHJldHVybiBbLi4gcG9ydHNdOwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT5QYXJzZXMgdGhlIGhvc3QgbGlzdDogYSBzZWdtZW50LCBhIHJhbmdlLCBhIENJRFIsIG9yIGEgc2luZ2xlIGFkZHJlc3MuPC9zdW1tYXJ5PgogICAgcHVibGljIHN0YXRpYyBMaXN0PHN0cmluZz4gUGFyc2VUYXJnZXRzKHN0cmluZz8gdGV4dCkKICAgIHsKICAgICAgICB2YXIgcmVzdWx0ID0gbmV3IExpc3Q8c3RyaW5nPigpOwogICAgICAgIGlmIChzdHJpbmcuSXNOdWxsT3JXaGl0ZVNwYWNlKHRleHQpKSByZXR1cm4gcmVzdWx0OwoKICAgICAgICB2YXIgdCA9IHRleHQuVHJpbSgpOwoKICAgICAgICAvLyAiMTkyLjE2OC4xLjEtMTkyLjE2OC4xLjUwIiBvciAiMTkyLjE2OC4xLjEtNTAiCiAgICAgICAgdmFyIGRhc2ggPSB0LkluZGV4T2YoJy0nKTsKICAgICAgICBpZiAoZGFzaCA+IDApCiAgICAgICAgewogICAgICAgICAgICB2YXIgbGVmdCA9IHRbLi5kYXNoXS5UcmltKCk7CiAgICAgICAgICAgIHZhciByaWdodCA9IHRbKGRhc2ggKyAxKS4uXS5UcmltKCk7CiAgICAgICAgICAgIGlmIChJcE1hdGguSXNWYWxpZElQdjQobGVmdCkpCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIHZhciBlbmQgPSByaWdodC5Db250YWlucygnLicpCiAgICAgICAgICAgICAgICAgICAgPyByaWdodAogICAgICAgICAgICAgICAgICAgIDogSXBNYXRoLkdldFNlZ21lbnQobGVmdCkgKyAiLiIgKyByaWdodDsKICAgICAgICAgICAgICAgIGlmIChJcE1hdGguSXNWYWxpZElQdjQoZW5kKSkgcmV0dXJuIElwTWF0aC5HZXRSYW5nZShsZWZ0LCBlbmQsIHNraXBOZXR3b3JrQW5kQnJvYWRjYXN0OiBmYWxzZSk7CiAgICAgICAgICAgIH0KICAgICAgICB9CgogICAgICAgIC8vICIxOTIuMTY4LjEuMC8yNCIKICAgICAgICB2YXIgc2xhc2ggPSB0LkluZGV4T2YoJy8nKTsKICAgICAgICBpZiAoc2xhc2ggPiAwKQogICAgICAgIHsKICAgICAgICAgICAgdmFyIGlwUGFydCA9IHRbLi5zbGFzaF0uVHJpbSgpOwogICAgICAgICAgICB2YXIgYml0cyA9IFN1Ym5ldENhbGN1bGF0b3IuQml0c0Zyb21NYXNrKHRbKHNsYXNoICsgMSkuLl0uVHJpbSgpKTsKICAgICAgICAgICAgaWYgKGJpdHMgPj0gMCAmJiBJcE1hdGguSXNWYWxpZElQdjQoaXBQYXJ0KSkgcmV0dXJuIFN1Ym5ldENhbGN1bGF0b3IuSG9zdHNGb3JNYXNrKGlwUGFydCwgYml0cyk7CiAgICAgICAgfQoKICAgICAgICAvLyAiMTkyLjE2OC4xIiAtPiAuMSAuLiAuMjU0CiAgICAgICAgaWYgKElwTWF0aC5Jc1ZhbGlkU2VnbWVudCh0KSkgcmV0dXJuIElwTWF0aC5HZXRTZWdtZW50SG9zdHModCk7CgogICAgICAgIGlmIChJcE1hdGguSXNWYWxpZElQdjQodCkpIHJldHVybiBbdF07CgogICAgICAgIHJldHVybiByZXN1bHQ7CiAgICB9CgogICAgLy8vIDxzdW1tYXJ5PgogICAgLy8vIFJ1bnMgYSBzY2FuLCBpbnZva2luZyA8cGFyYW1yZWYgbmFtZT0ib25SZXN1bHQiLz4gZm9yIGV2ZXJ5IHByb2JlIHRoZQogICAgLy8vIGNhbGxlciBhc2tlZCB0byBzZWUgYW5kIHJlcG9ydGluZyBwcm9ncmVzcyBhcyBwYWlycyBjb21wbGV0ZS4KICAgIC8vLyA8L3N1bW1hcnk+CiAgICBwdWJsaWMgYXN5bmMgVGFzayBSdW5Bc3luYygKICAgICAgICBQb3J0U2NhblJlcXVlc3QgcmVxdWVzdCwKICAgICAgICBGdW5jPFBvcnRTY2FuUmVzdWx0LCBUYXNrPiBvblJlc3VsdCwKICAgICAgICBJUHJvZ3Jlc3M8U2NhblByb2dyZXNzPj8gcHJvZ3Jlc3MgPSBudWxsLAogICAgICAgIENhbmNlbGxhdGlvblRva2VuIGN0ID0gZGVmYXVsdCkKICAgIHsKICAgICAgICBBcmd1bWVudE51bGxFeGNlcHRpb24uVGhyb3dJZk51bGwocmVxdWVzdCk7CiAgICAgICAgQXJndW1lbnROdWxsRXhjZXB0aW9uLlRocm93SWZOdWxsKG9uUmVzdWx0KTsKCiAgICAgICAgdmFyIHRvdGFsID0gcmVxdWVzdC5Ub3RhbFByb2JlczsKICAgICAgICBpZiAodG90YWwgPT0gMCkgcmV0dXJuOwoKICAgICAgICB2YXIgY29tcGxldGVkID0gMDsKICAgICAgICB2YXIgZ2F0ZSA9IG5ldyBTZW1hcGhvcmVTbGltKE1hdGguTWF4KDEsIHJlcXVlc3QuQ29uY3VycmVuY3kpKTsKICAgICAgICB2YXIgcmVzdWx0cyA9IG5ldyBDb25jdXJyZW50QmFnPFBvcnRTY2FuUmVzdWx0PigpOwoKICAgICAgICB2YXIgdGFza3MgPSBuZXcgTGlzdDxUYXNrPih0b3RhbCk7CiAgICAgICAgZm9yZWFjaCAodmFyIGlwIGluIHJlcXVlc3QuVGFyZ2V0cykKICAgICAgICB7CiAgICAgICAgICAgIGZvcmVhY2ggKHZhciBwb3J0IGluIHJlcXVlc3QuUG9ydHMpCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIHRhc2tzLkFkZChUYXNrLlJ1bihhc3luYyAoKSA9PgogICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgIGF3YWl0IGdhdGUuV2FpdEFzeW5jKGN0KS5Db25maWd1cmVBd2FpdChmYWxzZSk7CiAgICAgICAgICAgICAgICAgICAgdHJ5CiAgICAgICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgICAgICB2YXIgZWxhcHNlZCA9IGF3YWl0IFRjcFByb2JlLk1lYXN1cmVBc3luYyhpcCwgcG9ydCwgcmVxdWVzdC5UaW1lb3V0TXMsIGN0KS5Db25maWd1cmVBd2FpdChmYWxzZSk7CiAgICAgICAgICAgICAgICAgICAgICAgIHZhciByZXN1bHQgPSBuZXcgUG9ydFNjYW5SZXN1bHQKICAgICAgICAgICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgSVAgPSBpcCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIFBvcnQgPSBwb3J0LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgSXNPcGVuID0gZWxhcHNlZCA+PSAwLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgRWxhcHNlZE1zID0gZWxhcHNlZCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIFNlcnZpY2UgPSBTZXJ2aWNlTmFtZXMuRGVzY3JpYmUocG9ydCksCiAgICAgICAgICAgICAgICAgICAgICAgIH07CgogICAgICAgICAgICAgICAgICAgICAgICByZXN1bHRzLkFkZChyZXN1bHQpOwogICAgICAgICAgICAgICAgICAgICAgICBpZiAocmVzdWx0LklzT3BlbiB8fCByZXF1ZXN0LlJlcG9ydENsb3NlZCkgYXdhaXQgb25SZXN1bHQocmVzdWx0KS5Db25maWd1cmVBd2FpdChmYWxzZSk7CgogICAgICAgICAgICAgICAgICAgICAgICB2YXIgZG9uZSA9IEludGVybG9ja2VkLkluY3JlbWVudChyZWYgY29tcGxldGVkKTsKICAgICAgICAgICAgICAgICAgICAgICAgcHJvZ3Jlc3M/LlJlcG9ydChuZXcgU2NhblByb2dyZXNzKGRvbmUsIHRvdGFsLCAkIntpcH06e3BvcnR9IikpOwogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICBjYXRjaCAoT3BlcmF0aW9uQ2FuY2VsZWRFeGNlcHRpb24pCiAgICAgICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgICAgICAvLyBjYW5jZWxsZWQg4oCUIHN0b3AgcXVpZXRseQogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICBjYXRjaCAoRXhjZXB0aW9uIGV4KQogICAgICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAgICAgQXBwTG9nLkluc3RhbmNlLkxvZyhuYW1lb2YoUG9ydFNjYW5uZXIpLCAkIntpcH06e3BvcnR9IOaJq+aPj+Wksei0pToge2V4Lk1lc3NhZ2V9Iik7CiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgIGZpbmFsbHkKICAgICAgICAgICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAgICAgICAgIGdhdGUuUmVsZWFzZSgpOwogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0sIGN0KSk7CiAgICAgICAgICAgIH0KICAgICAgICB9CgogICAgICAgIHRyeQogICAgICAgIHsKICAgICAgICAgICAgYXdhaXQgVGFzay5XaGVuQWxsKHRhc2tzKS5Db25maWd1cmVBd2FpdChmYWxzZSk7CiAgICAgICAgfQogICAgICAgIGNhdGNoIChPcGVyYXRpb25DYW5jZWxlZEV4Y2VwdGlvbikKICAgICAgICB7CiAgICAgICAgICAgIC8vIGV4cGVjdGVkIG9uIHN0b3AKICAgICAgICB9CiAgICB9Cn0K
+using System.Collections.Concurrent;
+using IPScaner.Core.Configuration;
+using IPScaner.Core.Logging;
+using IPScaner.Core.Models;
+
+namespace IPScaner.Core.Net;
+
+/// <summary>Inputs for one port-scan run.</summary>
+public sealed class PortScanRequest
+{
+    /// <summary>Hosts to scan (addresses or names).</summary>
+    public IReadOnlyList<string> Targets { get; init; } = [];
+
+    /// <summary>Ports to try on each host.</summary>
+    public IReadOnlyList<int> Ports { get; init; } = [];
+
+    public int TimeoutMs { get; init; } = 50;
+
+    /// <summary>Concurrent connect attempts. The original allowed 1000 process-wide.</summary>
+    public int Concurrency { get; init; } = 256;
+
+    /// <summary>Report closed ports too, not just open ones.</summary>
+    public bool ReportClosed { get; init; }
+
+    public int TotalProbes => Targets.Count * Ports.Count;
+}
+
+/// <summary>
+/// Target port scanner (目标端口扫描).
+/// </summary>
+/// <remarks>
+/// Probe semantics match the original: a plain TCP connect with
+/// <see cref="PortScanRequest.TimeoutMs"/>, no retry, and only successfully
+/// opened ports are reported by default.
+/// <para>
+/// Two intentional improvements over the original: port lists accept ranges
+/// ("80,443,1000-2000") instead of silently dropping them, and concurrency is a
+/// real bounded semaphore rather than 1000 tasks each parking a thread-pool
+/// thread inside a blocking wait.
+/// </para>
+/// </remarks>
+public sealed class PortScanner
+{
+    /// <summary>
+    /// Parses a port list. Accepts comma/、/space separators, ranges with '-',
+    /// and the keyword "all" (or 全部) for 1-65535.
+    /// </summary>
+    public static List<int> ParsePorts(string? text, bool allowAll = true)
+    {
+        var ports = new SortedSet<int>();
+        if (string.IsNullOrWhiteSpace(text)) return [];
+
+        var normalized = text.Replace('，', ',').Replace('、', ',').Replace(' ', ',').Replace(';', ',');
+        foreach (var token in normalized.Split(',', StringSplitOptions.RemoveEmptyEntries))
+        {
+            var t = token.Trim();
+            if (t.Length == 0) continue;
+
+            if (allowAll && (t.Equals("all", StringComparison.OrdinalIgnoreCase) || t == "全部" || t == "全部端口"))
+            {
+                return [.. Enumerable.Range(1, 65535)];
+            }
+
+            var dash = t.IndexOf('-');
+            if (dash > 0)
+            {
+                var loText = t[..dash].Trim();
+                var hiText = t[(dash + 1)..].Trim();
+                if (int.TryParse(loText, out var lo) && int.TryParse(hiText, out var hi))
+                {
+                    if (lo > hi) (lo, hi) = (hi, lo);
+                    lo = Math.Max(1, lo);
+                    hi = Math.Min(65535, hi);
+                    // Cap a single range so "1-65535" cannot be typed by accident
+                    // into a 254-host scan without the caller realising.
+                    if (hi - lo > 20000) hi = lo + 20000;
+                    for (var p = lo; p <= hi; p++) ports.Add(p);
+                }
+                continue;
+            }
+
+            if (int.TryParse(t, out var port) && port is >= 1 and <= 65535) ports.Add(port);
+        }
+
+        return [.. ports];
+    }
+
+    /// <summary>Parses the host list: a segment, a range, a CIDR, or a single address.</summary>
+    public static List<string> ParseTargets(string? text)
+    {
+        var result = new List<string>();
+        if (string.IsNullOrWhiteSpace(text)) return result;
+
+        var t = text.Trim();
+
+        // "192.168.1.1-192.168.1.50" or "192.168.1.1-50"
+        var dash = t.IndexOf('-');
+        if (dash > 0)
+        {
+            var left = t[..dash].Trim();
+            var right = t[(dash + 1)..].Trim();
+            if (IpMath.IsValidIPv4(left))
+            {
+                var end = right.Contains('.')
+                    ? right
+                    : IpMath.GetSegment(left) + "." + right;
+                if (IpMath.IsValidIPv4(end)) return IpMath.GetRange(left, end, skipNetworkAndBroadcast: false);
+            }
+        }
+
+        // "192.168.1.0/24"
+        var slash = t.IndexOf('/');
+        if (slash > 0)
+        {
+            var ipPart = t[..slash].Trim();
+            var bits = SubnetCalculator.BitsFromMask(t[(slash + 1)..].Trim());
+            if (bits >= 0 && IpMath.IsValidIPv4(ipPart)) return SubnetCalculator.HostsForMask(ipPart, bits);
+        }
+
+        // "192.168.1" -> .1 .. .254
+        if (IpMath.IsValidSegment(t)) return IpMath.GetSegmentHosts(t);
+
+        if (IpMath.IsValidIPv4(t)) return [t];
+
+        return result;
+    }
+
+    /// <summary>
+    /// Runs a scan, invoking <paramref name="onResult"/> for every probe the
+    /// caller asked to see and reporting progress as pairs complete.
+    /// </summary>
+    public async Task RunAsync(
+        PortScanRequest request,
+        Func<PortScanResult, Task> onResult,
+        IProgress<ScanProgress>? progress = null,
+        CancellationToken ct = default)
+    {
+        ArgumentNullException.ThrowIfNull(request);
+        ArgumentNullException.ThrowIfNull(onResult);
+
+        var total = request.TotalProbes;
+        if (total == 0) return;
+
+        var completed = 0;
+        var gate = new SemaphoreSlim(Math.Max(1, request.Concurrency));
+        var results = new ConcurrentBag<PortScanResult>();
+
+        var tasks = new List<Task>(total);
+        foreach (var ip in request.Targets)
+        {
+            foreach (var port in request.Ports)
+            {
+                tasks.Add(Task.Run(async () =>
+                {
+                    await gate.WaitAsync(ct).ConfigureAwait(false);
+                    try
+                    {
+                        var elapsed = await TcpProbe.MeasureAsync(ip, port, request.TimeoutMs, ct).ConfigureAwait(false);
+                        var result = new PortScanResult
+                        {
+                            IP = ip,
+                            Port = port,
+                            IsOpen = elapsed >= 0,
+                            ElapsedMs = elapsed,
+                            Service = ServiceNames.Describe(port),
+                        };
+
+                        results.Add(result);
+                        if (result.IsOpen || request.ReportClosed) await onResult(result).ConfigureAwait(false);
+
+                        var done = Interlocked.Increment(ref completed);
+                        progress?.Report(new ScanProgress(done, total, $"{ip}:{port}"));
+                    }
+                    catch (OperationCanceledException)
+                    {
+                        // cancelled — stop quietly
+                    }
+                    catch (Exception ex)
+                    {
+                        AppLog.Instance.Log(nameof(PortScanner), $"{ip}:{port} 扫描失败: {ex.Message}");
+                    }
+                    finally
+                    {
+                        gate.Release();
+                    }
+                }, ct));
+            }
+        }
+
+        try
+        {
+            await Task.WhenAll(tasks).ConfigureAwait(false);
+        }
+        catch (OperationCanceledException)
+        {
+            // expected on stop
+        }
+    }
+}

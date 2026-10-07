@@ -1,1 +1,76 @@
-dXNpbmcgSVBTY2FuZXIuQ29yZS5Nb2RlbHM7CnVzaW5nIElQU2NhbmVyLkNvcmUuU3RvcmFnZTsKCm5hbWVzcGFjZSBJUFNjYW5lci5Db3JlLkNvbW1hbmRzOwoKLy8vIDxzdW1tYXJ5PgovLy8gVXNlci1kZWZpbmVkIGxhdW5jaGVycyByZWFkIGZyb20gPGM+Y29tbWFuZC50eHQ8L2M+ICjmiJHnmoTlkb3ku6QpLgovLy8gPC9zdW1tYXJ5PgovLy8gPHJlbWFya3M+Ci8vLyBGb3JtYXQgcHJlc2VydmVkIGZyb20gdGhlIG9yaWdpbmFsOiBvbmUgY29tbWFuZCBwZXIgbGluZSwgdGhlIGZpcnN0Ci8vLyB3aGl0ZXNwYWNlLWRlbGltaXRlZCB0b2tlbiBpcyB0aGUgbWVudSBjYXB0aW9uIGFuZCB0aGUgcmVtYWluZGVyIGlzIHRoZQovLy8gY29tbWFuZCBsaW5lOyBhIGxlYWRpbmcgJyMnIGNvbW1lbnRzIHRoZSBsaW5lIG91dC4gRW5jb2RpbmcgaXMgc25pZmZlZCBzbwovLy8gR0JLLXNhdmVkIGZpbGVzIGtlZXAgd29ya2luZy4KLy8vIDwvcmVtYXJrcz4KcHVibGljIHNlYWxlZCBjbGFzcyBEaXlDb21tYW5kU3RvcmUKewogICAgcHVibGljIGNvbnN0IHN0cmluZyBGaWxlTmFtZSA9ICJjb21tYW5kLnR4dCI7CgogICAgcHVibGljIHN0cmluZyBGaWxlUGF0aCB7IGdldDsgfQoKICAgIHB1YmxpYyBEaXlDb21tYW5kU3RvcmUoc3RyaW5nPyBmaWxlUGF0aCA9IG51bGwpCiAgICAgICAgPT4gRmlsZVBhdGggPSBmaWxlUGF0aCA/PyBQYXRoLkNvbWJpbmUoU3RvcmFnZS5BcHBQYXRocy5EYXRhRGlyZWN0b3J5LCBGaWxlTmFtZSk7CgogICAgcHVibGljIExpc3Q8RGl5Q29tbWFuZD4gTG9hZCgpCiAgICB7CiAgICAgICAgdmFyIGxpc3QgPSBuZXcgTGlzdDxEaXlDb21tYW5kPigpOwogICAgICAgIGlmICghRmlsZS5FeGlzdHMoRmlsZVBhdGgpKSByZXR1cm4gbGlzdDsKCiAgICAgICAgc3RyaW5nW10gbGluZXM7CiAgICAgICAgdHJ5IHsgbGluZXMgPSBUZXh0RmlsZUVuY29kaW5nLlJlYWRBbGxMaW5lcyhGaWxlUGF0aCk7IH0KICAgICAgICBjYXRjaCB7IHJldHVybiBsaXN0OyB9CgogICAgICAgIGZvcmVhY2ggKHZhciByYXcgaW4gbGluZXMpCiAgICAgICAgewogICAgICAgICAgICBpZiAoc3RyaW5nLklzTnVsbE9yV2hpdGVTcGFjZShyYXcpKSBjb250aW51ZTsKICAgICAgICAgICAgaWYgKHJhdy5UcmltU3RhcnQoKS5TdGFydHNXaXRoKCcjJykpIGNvbnRpbnVlOwoKICAgICAgICAgICAgdmFyIHBhcnRzID0gcmF3LlRyaW0oKS5TcGxpdCgnICcsIDIsIFN0cmluZ1NwbGl0T3B0aW9ucy5SZW1vdmVFbXB0eUVudHJpZXMpOwogICAgICAgICAgICBpZiAocGFydHMuTGVuZ3RoID09IDApIGNvbnRpbnVlOwoKICAgICAgICAgICAgbGlzdC5BZGQobmV3IERpeUNvbW1hbmQKICAgICAgICAgICAgewogICAgICAgICAgICAgICAgTmFtZSA9IHBhcnRzWzBdLAogICAgICAgICAgICAgICAgQ29tbWFuZCA9IHBhcnRzLkxlbmd0aCA+IDEgPyBwYXJ0c1sxXS5UcmltKCkgOiBwYXJ0c1swXSwKICAgICAgICAgICAgfSk7CiAgICAgICAgfQoKICAgICAgICByZXR1cm4gbGlzdDsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+V3JpdGVzIGEgc3RhcnRlciBmaWxlIHNvIHVzZXJzIGhhdmUgc29tZXRoaW5nIHRvIGVkaXQuPC9zdW1tYXJ5PgogICAgcHVibGljIHZvaWQgV3JpdGVUZW1wbGF0ZShib29sIG92ZXJ3cml0ZSA9IGZhbHNlKQogICAgewogICAgICAgIGlmIChGaWxlLkV4aXN0cyhGaWxlUGF0aCkgJiYgIW92ZXJ3cml0ZSkgcmV0dXJuOwoKICAgICAgICB2YXIgdGV4dCA9IHN0cmluZy5Kb2luKEVudmlyb25tZW50Lk5ld0xpbmUsCiAgICAgICAgWwogICAgICAgICAgICAiIyDmiJHnmoTlkb3ku6Qg4oCU4oCUIOavj+ihjOS4gOadoe+8jOesrOS4gOS4quepuuagvOWJjeaYr+iPnOWNleWQjeensO+8jOWQjumdouaYr+imgeaJp+ihjOeahOWRveS7pOaIlueoi+W6j+i3r+W+hOOAgiIsCiAgICAgICAgICAgICIjIOS7pSAjIOW8gOWktOeahOihjOS8muiiq+W/veeVpeOAgiIsCiAgICAgICAgICAgICIjIOekuuS+i++8miIsCiAgICAgICAgICAgICLorrDkuovmnKwgbm90ZXBhZC5leGUiLAogICAgICAgICAgICAi6K6h566X5ZmoIGNhbGMuZXhlIiwKICAgICAgICAgICAgQCLkuIvovb3nm67lvZUgZXhwbG9yZXIuZXhlIEM6XFVzZXJzXFB1YmxpY1xEb3dubG9hZHMiLAogICAgICAgICAgICAi5pys5py655uR5ZCs56uv5Y+jIG5ldHN0YXQgLWFubyB8IGZpbmRzdHIgTElTVEVOSU5HICZwYXVzZSIsCiAgICAgICAgXSk7CgogICAgICAgIHRyeQogICAgICAgIHsKICAgICAgICAgICAgRmlsZS5Xcml0ZUFsbFRleHQoRmlsZVBhdGgsIHRleHQgKyBFbnZpcm9ubWVudC5OZXdMaW5lLCBUZXh0RmlsZUVuY29kaW5nLlV0ZjhOb0JvbSk7CiAgICAgICAgfQogICAgICAgIGNhdGNoCiAgICAgICAgewogICAgICAgICAgICAvLyBiZXN0IGVmZm9ydCDigJQgdGhlIG1lbnUgc2ltcGx5IHN0YXlzIGVtcHR5CiAgICAgICAgfQogICAgfQp9Cg==
+using IPScaner.Core.Models;
+using IPScaner.Core.Storage;
+
+namespace IPScaner.Core.Commands;
+
+/// <summary>
+/// User-defined launchers read from <c>command.txt</c> (我的命令).
+/// </summary>
+/// <remarks>
+/// Format preserved from the original: one command per line, the first
+/// whitespace-delimited token is the menu caption and the remainder is the
+/// command line; a leading '#' comments the line out. Encoding is sniffed so
+/// GBK-saved files keep working.
+/// </remarks>
+public sealed class DiyCommandStore
+{
+    public const string FileName = "command.txt";
+
+    public string FilePath { get; }
+
+    public DiyCommandStore(string? filePath = null)
+        => FilePath = filePath ?? Path.Combine(Storage.AppPaths.DataDirectory, FileName);
+
+    public List<DiyCommand> Load()
+    {
+        var list = new List<DiyCommand>();
+        if (!File.Exists(FilePath)) return list;
+
+        string[] lines;
+        try { lines = TextFileEncoding.ReadAllLines(FilePath); }
+        catch { return list; }
+
+        foreach (var raw in lines)
+        {
+            if (string.IsNullOrWhiteSpace(raw)) continue;
+            if (raw.TrimStart().StartsWith('#')) continue;
+
+            var parts = raw.Trim().Split(' ', 2, StringSplitOptions.RemoveEmptyEntries);
+            if (parts.Length == 0) continue;
+
+            list.Add(new DiyCommand
+            {
+                Name = parts[0],
+                Command = parts.Length > 1 ? parts[1].Trim() : parts[0],
+            });
+        }
+
+        return list;
+    }
+
+    /// <summary>Writes a starter file so users have something to edit.</summary>
+    public void WriteTemplate(bool overwrite = false)
+    {
+        if (File.Exists(FilePath) && !overwrite) return;
+
+        var text = string.Join(Environment.NewLine,
+        [
+            "# 我的命令 —— 每行一条，第一个空格前是菜单名称，后面是要执行的命令或程序路径。",
+            "# 以 # 开头的行会被忽略。",
+            "# 示例：",
+            "记事本 notepad.exe",
+            "计算器 calc.exe",
+            @"下载目录 explorer.exe C:\Users\Public\Downloads",
+            "本机监听端口 netstat -ano | findstr LISTENING &pause",
+        ]);
+
+        try
+        {
+            File.WriteAllText(FilePath, text + Environment.NewLine, TextFileEncoding.Utf8NoBom);
+        }
+        catch
+        {
+            // best effort — the menu simply stays empty
+        }
+    }
+}

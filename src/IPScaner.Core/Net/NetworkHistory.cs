@@ -1,1 +1,192 @@
-dXNpbmcgU3lzdGVtLlhtbDsKdXNpbmcgU3lzdGVtLlhtbC5TZXJpYWxpemF0aW9uOwp1c2luZyBJUFNjYW5lci5Db3JlLkxvZ2dpbmc7CnVzaW5nIElQU2NhbmVyLkNvcmUuTW9kZWxzOwp1c2luZyBJUFNjYW5lci5Db3JlLlN0b3JhZ2U7CgpuYW1lc3BhY2UgSVBTY2FuZXIuQ29yZS5OZXQ7CgovLy8gPHN1bW1hcnk+UGVyc2lzdHMgcHJldmlvdXNseSBhcHBsaWVkIHN0YXRpYy1JUCBzZXR0aW5ncyB0byBpcFNjYW5lcl9oaXMueG1sLjwvc3VtbWFyeT4KLy8vIDxyZW1hcmtzPgovLy8gPHBhcmE+Ci8vLyBUaGUgb24tZGlzayBjb250cmFjdCBpcyB0aGUgb3JpZ2luYWwncywgYnl0ZSBmb3IgYnl0ZSwgc28gYW4gZXhpc3RpbmcgaGlzdG9yeQovLy8gZmlsZSBrZWVwcyBsb2FkaW5nIGFuZCBhIG5ldyBvbmUgaXMgaW5kaXN0aW5ndWlzaGFibGUgZnJvbSB3aGF0IHRoZSBXaW5Gb3JtcwovLy8gdG9vbCB3cm90ZToKLy8vIDwvcGFyYT4KLy8vIDxjb2RlPgovLy8gJmx0Oz94bWwgdmVyc2lvbj0iMS4wIj8mZ3Q7Ci8vLyAmbHQ7cm9vdCZndDsKLy8vICAgJmx0O2FycmF5Jmd0OwovLy8gICAgICZsdDtBZGFwdGVySW5mbyBOYW1lPSLku6XlpKrnvZEiIElQPSIxOTIuMTY4LjEuMTAwIiBTdWJuZXRNYXNrPSIyNTUuMjU1LjI1NS4wIiBHYXRld2F5PSIxOTIuMTY4LjEuMSIgRE5TPSIyMjMuNS41LjUiIC8mZ3Q7Ci8vLyAgICZsdDsvYXJyYXkmZ3Q7Ci8vLyAmbHQ7L3Jvb3QmZ3Q7Ci8vLyA8L2NvZGU+Ci8vLyA8cGFyYT4KLy8vIFVURi04IHdpdGhvdXQgQk9NLCBhbiBlbXB0eSA8c2VlIGNyZWY9IlhtbFNlcmlhbGl6ZXJOYW1lc3BhY2VzIi8+IHNvIG5vCi8vLyA8Yz54bWxuczp4c2k8L2M+LzxjPnhtbG5zOnhzZDwvYz4gYW5kIG5vIDxjPmVuY29kaW5nPC9jPiBhdHRyaWJ1dGUgYXJlIGVtaXR0ZWQsCi8vLyBhbmQgYW4gPHNlZSBjcmVmPSJYbWxUZXh0V3JpdGVyIi8+IGNvbnN0cnVjdGVkIHdpdGggYSBudWxsIGVuY29kaW5nIOKAlCBleGFjdGx5IGhvdwovLy8gPGM+WG1sU2VyaWFsaXplci5TZXJpYWxpemUoU3RyZWFtLCDigKYpPC9jPiBidWlsdCB0aGUgb3JpZ2luYWwgZG9jdW1lbnQuCi8vLyA8L3BhcmE+Ci8vLyA8cGFyYT4KLy8vIE9ubHkgPGM+TmFtZSwgSVAsIFN1Ym5ldE1hc2ssIEdhdGV3YXksIEROUzwvYz4gYXJlIHBlcnNpc3RlZCwgYmVjYXVzZSB0aGUgb3RoZXIKLy8vIDxzZWUgY3JlZj0iQWRhcHRlckluZm8iLz4gbWVtYmVycyBhcmUgPGM+W1htbElnbm9yZV08L2M+LiBSZWNvcmRzIGFyZSB1bmlxdWUgb24KLy8vIDxjPihOYW1lLCBJUCk8L2M+IGFuZCBzdG9yZWQgbmV3ZXN0LWZpcnN0OyB0aGUgbGlzdCBpcyBjYXBwZWQgYXQKLy8vIDxzZWUgY3JlZj0iTWF4RW50cmllcyIvPi4gQSBjb3JydXB0IG9yIHVucmVhZGFibGUgZmlsZSBuZXZlciB0aHJvd3Mg4oCUIGl0IGlzCi8vLyByZXBvcnRlZCB0byB0aGUgbG9nIGFuZCByZWFkIGFzIGFuIGVtcHR5IGhpc3RvcnkuCi8vLyA8L3BhcmE+Ci8vLyA8L3JlbWFya3M+CnB1YmxpYyBzZWFsZWQgY2xhc3MgTmV0d29ya0hpc3RvcnkKewogICAgcHJpdmF0ZSBjb25zdCBzdHJpbmcgQ2F0ZWdvcnkgPSBuYW1lb2YoTmV0d29ya0hpc3RvcnkpOwoKICAgIC8vLyA8c3VtbWFyeT5GaWxlIG5hbWUgdXNlZCB3aGVuIG5vIGV4cGxpY2l0IHBhdGggaXMgc3VwcGxpZWQuPC9zdW1tYXJ5PgogICAgcHVibGljIGNvbnN0IHN0cmluZyBEZWZhdWx0RmlsZU5hbWUgPSAiaXBTY2FuZXJfaGlzLnhtbCI7CgogICAgLy8vIDxzdW1tYXJ5Pk5ld2VzdCBlbnRyaWVzIGtlcHQ7IG9sZGVyIG9uZXMgYXJlIGRyb3BwZWQgb24gd3JpdGUuPC9zdW1tYXJ5PgogICAgcHVibGljIGNvbnN0IGludCBNYXhFbnRyaWVzID0gMTAwOwoKICAgIHByaXZhdGUgcmVhZG9ubHkgb2JqZWN0IF9nYXRlID0gbmV3KCk7CgogICAgLy8vIDxwYXJhbSBuYW1lPSJmaWxlUGF0aCI+CiAgICAvLy8gSGlzdG9yeSBmaWxlIHRvIHVzZTsgZGVmYXVsdHMgdG8gPGM+aXBTY2FuZXJfaGlzLnhtbDwvYz4gaW4gdGhlIHdyaXRhYmxlCiAgICAvLy8gZGF0YSBkaXJlY3RvcnkgKGJlc2lkZSB0aGUgZXhlY3V0YWJsZSBmb3IgdGhlIHBvcnRhYmxlIGJ1aWxkLCBvdGhlcndpc2UKICAgIC8vLyA8Yz4lQVBQREFUQSVcSVBTY2FuZXI8L2M+IOKAlCBzZWUgPHNlZSBjcmVmPSJTdG9yYWdlLkFwcFBhdGhzIi8+KS4KICAgIC8vLyB0aGUgZXhlLXJlbGF0aXZlIGxvY2F0aW9uIHRoZSBvcmlnaW5hbCB1c2VkLgogICAgLy8vIDwvcGFyYW0+CiAgICBwdWJsaWMgTmV0d29ya0hpc3Rvcnkoc3RyaW5nPyBmaWxlUGF0aCA9IG51bGwpCiAgICB7CiAgICAgICAgRmlsZVBhdGggPSBzdHJpbmcuSXNOdWxsT3JXaGl0ZVNwYWNlKGZpbGVQYXRoKQogICAgICAgICAgICA/IFBhdGguQ29tYmluZShTdG9yYWdlLkFwcFBhdGhzLkRhdGFEaXJlY3RvcnksIERlZmF1bHRGaWxlTmFtZSkKICAgICAgICAgICAgOiBmaWxlUGF0aDsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+QWJzb2x1dGUgb3IgY2FsbGVyLXN1cHBsaWVkIHBhdGggb2YgdGhlIGhpc3RvcnkgZmlsZS48L3N1bW1hcnk+CiAgICBwdWJsaWMgc3RyaW5nIEZpbGVQYXRoIHsgZ2V0OyB9CgogICAgLy8vIDxzdW1tYXJ5PgogICAgLy8vIFJlYWRzIHRoZSBzdG9yZWQgaGlzdG9yeSBpbiBmaWxlIG9yZGVyIChuZXdlc3QgZmlyc3QgZm9yIGZpbGVzIHRoaXMgY2xhc3MKICAgIC8vLyB3cm90ZSkuIFJldHVybnMgYW4gZW1wdHkgbGlzdCB3aGVuIHRoZSBmaWxlIGlzIG1pc3NpbmcsIGVtcHR5IG9yIGNvcnJ1cHQuCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgcHVibGljIExpc3Q8QWRhcHRlckluZm8+IExvYWQoKQogICAgewogICAgICAgIGxvY2sgKF9nYXRlKQogICAgICAgIHsKICAgICAgICAgICAgcmV0dXJuIExvYWRDb3JlKCk7CiAgICAgICAgfQogICAgfQoKICAgIC8vLyA8c3VtbWFyeT5PdmVyd3JpdGVzIHRoZSBmaWxlIHdpdGggPHBhcmFtcmVmIG5hbWU9ImVudHJpZXMiLz4sIGtlZXBpbmcgYXQgbW9zdCA8c2VlIGNyZWY9Ik1heEVudHJpZXMiLz4uPC9zdW1tYXJ5PgogICAgcHVibGljIHZvaWQgU2F2ZShJRW51bWVyYWJsZTxBZGFwdGVySW5mbz4gZW50cmllcykKICAgIHsKICAgICAgICBsb2NrIChfZ2F0ZSkKICAgICAgICB7CiAgICAgICAgICAgIFNhdmVDb3JlKGVudHJpZXMpOwogICAgICAgIH0KICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+CiAgICAvLy8gSW5zZXJ0cyBvbmUgcmVjb3JkIGF0IHRoZSB0b3AsIHJlcGxhY2luZyBhbnkgZXhpc3RpbmcgcmVjb3JkIHdpdGggdGhlIHNhbWUKICAgIC8vLyA8Yz4oTmFtZSwgSVApPC9jPiBwYWlyLCB0aGVuIHdyaXRlcyB0aGUgZmlsZS4KICAgIC8vLyA8L3N1bW1hcnk+CiAgICBwdWJsaWMgdm9pZCBBZGQoQWRhcHRlckluZm8gZW50cnkpCiAgICB7CiAgICAgICAgaWYgKGVudHJ5IGlzIG51bGwpIHJldHVybjsKCiAgICAgICAgbG9jayAoX2dhdGUpCiAgICAgICAgewogICAgICAgICAgICB2YXIgbGlzdCA9IExvYWRDb3JlKCk7CiAgICAgICAgICAgIGxpc3QuUmVtb3ZlQWxsKGUgPT4gU2FtZUtleShlLCBlbnRyeSkpOwogICAgICAgICAgICBsaXN0Lkluc2VydCgwLCBlbnRyeSk7CiAgICAgICAgICAgIGlmIChsaXN0LkNvdW50ID4gTWF4RW50cmllcykgbGlzdC5SZW1vdmVSYW5nZShNYXhFbnRyaWVzLCBsaXN0LkNvdW50IC0gTWF4RW50cmllcyk7CiAgICAgICAgICAgIFNhdmVDb3JlKGxpc3QpOwogICAgICAgIH0KICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+CiAgICAvLy8gQ2xlYXJzIHRoZSBoaXN0b3J5LiBUaGUgZmlsZSBpcyByZXdyaXR0ZW4gYXMgYW4gZW1wdHkgKGJ1dCBzdGlsbCB2YWxpZCkKICAgIC8vLyA8Yz4mbHQ7cm9vdCZndDsmbHQ7YXJyYXkgLyZndDsmbHQ7L3Jvb3QmZ3Q7PC9jPiBkb2N1bWVudCwgc28gdGhlIG5leHQgbG9hZCByZXR1cm5zIG5vdGhpbmcuCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgcHVibGljIHZvaWQgQ2xlYXIoKQogICAgewogICAgICAgIGxvY2sgKF9nYXRlKQogICAgICAgIHsKICAgICAgICAgICAgU2F2ZUNvcmUoW10pOwogICAgICAgICAgICBBcHBMb2cuSW5zdGFuY2UuTG9nKENhdGVnb3J5LCAi5bey5riF56m65Y6G5Y+y6K6w5b2VOiAiICsgRmlsZVBhdGgpOwogICAgICAgIH0KICAgIH0KCiAgICAvLyAtLS0tIGltcGxlbWVudGF0aW9uIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCiAgICBwcml2YXRlIExpc3Q8QWRhcHRlckluZm8+IExvYWRDb3JlKCkKICAgIHsKICAgICAgICB2YXIgbGlzdCA9IG5ldyBMaXN0PEFkYXB0ZXJJbmZvPigpOwogICAgICAgIHRyeQogICAgICAgIHsKICAgICAgICAgICAgaWYgKCFGaWxlLkV4aXN0cyhGaWxlUGF0aCkpIHJldHVybiBsaXN0OwoKICAgICAgICAgICAgdmFyIHNlcmlhbGl6ZXIgPSBuZXcgWG1sU2VyaWFsaXplcih0eXBlb2YoQWRhcHRlckluZm9Db2xsZWN0aW9uKSk7CiAgICAgICAgICAgIHVzaW5nIHZhciBzdHJlYW0gPSBuZXcgRmlsZVN0cmVhbShGaWxlUGF0aCwgRmlsZU1vZGUuT3BlbiwgRmlsZUFjY2Vzcy5SZWFkLCBGaWxlU2hhcmUuUmVhZFdyaXRlKTsKICAgICAgICAgICAgaWYgKHNlcmlhbGl6ZXIuRGVzZXJpYWxpemUoc3RyZWFtKSBpcyBub3QgQWRhcHRlckluZm9Db2xsZWN0aW9uIGNvbGxlY3Rpb24pIHJldHVybiBsaXN0OwoKICAgICAgICAgICAgZm9yZWFjaCAodmFyIGl0ZW0gaW4gY29sbGVjdGlvbi5BZGFwdGVyTGlzdCA/PyBbXSkKICAgICAgICAgICAgewogICAgICAgICAgICAgICAgaWYgKGl0ZW0gaXMgbm90IG51bGwpIGxpc3QuQWRkKGl0ZW0pOwogICAgICAgICAgICB9CgogICAgICAgICAgICBpZiAobGlzdC5Db3VudCA+IE1heEVudHJpZXMpCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIEFwcExvZy5JbnN0YW5jZS5Mb2coQ2F0ZWdvcnksCiAgICAgICAgICAgICAgICAgICAgJCLljoblj7LorrDlvZXmlofku7bljIXlkKsge2xpc3QuQ291bnR9IOadoeiusOW9le+8jOi2hei/h+S4iumZkCB7TWF4RW50cmllc33vvIzkv53lrZjml7blsIbooqvmiKrmlq0iKTsKICAgICAgICAgICAgfQogICAgICAgIH0KICAgICAgICBjYXRjaCAoRXhjZXB0aW9uIGV4KQogICAgICAgIHsKICAgICAgICAgICAgLy8gQSBjb3JydXB0IGhpc3RvcnkgbXVzdCBuZXZlciB0YWtlIHRoZSB3aW5kb3cgZG93biAodGhlIG9yaWdpbmFsIGxldCB0aGUKICAgICAgICAgICAgLy8gZXhjZXB0aW9uIGVzY2FwZSBpbnRvIHRoZSBXaW5Gb3JtcyB0aHJlYWQgaGFuZGxlciBhbmQgbG9zdCB0aGUgaGlzdG9yeSkuCiAgICAgICAgICAgIEFwcExvZy5JbnN0YW5jZS5Mb2coQ2F0ZWdvcnksICQi6K+75Y+W5Y6G5Y+y6K6w5b2V5aSx6LSl77yI5oyJ56m66K6w5b2V5aSE55CG77yJOiB7RmlsZVBhdGh9IC0ge2V4Lk1lc3NhZ2V9Iik7CiAgICAgICAgICAgIHJldHVybiBbXTsKICAgICAgICB9CgogICAgICAgIHJldHVybiBsaXN0OwogICAgfQoKICAgIHByaXZhdGUgdm9pZCBTYXZlQ29yZShJRW51bWVyYWJsZTxBZGFwdGVySW5mbz4/IGVudHJpZXMpCiAgICB7CiAgICAgICAgdHJ5CiAgICAgICAgewogICAgICAgICAgICB2YXIgY29sbGVjdGlvbiA9IG5ldyBBZGFwdGVySW5mb0NvbGxlY3Rpb24oKTsKICAgICAgICAgICAgaWYgKGVudHJpZXMgaXMgbm90IG51bGwpCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIGZvcmVhY2ggKHZhciBlbnRyeSBpbiBlbnRyaWVzKQogICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgIGlmIChlbnRyeSBpcyBudWxsKSBjb250aW51ZTsKICAgICAgICAgICAgICAgICAgICBjb2xsZWN0aW9uLkFkYXB0ZXJMaXN0LkFkZChlbnRyeSk7CiAgICAgICAgICAgICAgICAgICAgaWYgKGNvbGxlY3Rpb24uQWRhcHRlckxpc3QuQ291bnQgPj0gTWF4RW50cmllcykgYnJlYWs7CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIHZhciBkaXJlY3RvcnkgPSBQYXRoLkdldERpcmVjdG9yeU5hbWUoRmlsZVBhdGgpOwogICAgICAgICAgICBpZiAoIXN0cmluZy5Jc051bGxPckVtcHR5KGRpcmVjdG9yeSkpIERpcmVjdG9yeS5DcmVhdGVEaXJlY3RvcnkoZGlyZWN0b3J5KTsKCiAgICAgICAgICAgIHZhciBzZXJpYWxpemVyID0gbmV3IFhtbFNlcmlhbGl6ZXIodHlwZW9mKEFkYXB0ZXJJbmZvQ29sbGVjdGlvbikpOwogICAgICAgICAgICB2YXIgbmFtZXNwYWNlcyA9IG5ldyBYbWxTZXJpYWxpemVyTmFtZXNwYWNlcygpOwogICAgICAgICAgICBuYW1lc3BhY2VzLkFkZCgiIiwgIiIpOyAvLyBubyB4bWxuczp4c2kgLyB4bWxuczp4c2QsIGxpa2UgWG1sVXRpbGl0eS5TYXZlWG1sCgogICAgICAgICAgICB1c2luZyB2YXIgc3RyZWFtID0gbmV3IEZpbGVTdHJlYW0oRmlsZVBhdGgsIEZpbGVNb2RlLkNyZWF0ZSwgRmlsZUFjY2Vzcy5Xcml0ZSwgRmlsZVNoYXJlLk5vbmUpOwogICAgICAgICAgICAvLyBOdWxsIGVuY29kaW5nID09IHRoZSBvcmlnaW5hbCdzIGBYbWxTZXJpYWxpemVyLlNlcmlhbGl6ZShTdHJlYW0sIOKApilgOgogICAgICAgICAgICAvLyBieXRlcyBhcmUgVVRGLTggd2l0aG91dCBCT00gYW5kIHRoZSBkZWNsYXJhdGlvbiBzdGF5cyBgPD94bWwgdmVyc2lvbj0iMS4wIj8+YC4KICAgICAgICAgICAgdXNpbmcgdmFyIHdyaXRlciA9IG5ldyBYbWxUZXh0V3JpdGVyKHN0cmVhbSwgbnVsbCkgeyBGb3JtYXR0aW5nID0gRm9ybWF0dGluZy5JbmRlbnRlZCB9OwogICAgICAgICAgICBzZXJpYWxpemVyLlNlcmlhbGl6ZSh3cml0ZXIsIGNvbGxlY3Rpb24sIG5hbWVzcGFjZXMpOwoKICAgICAgICAgICAgQXBwTG9nLkluc3RhbmNlLkxvZyhDYXRlZ29yeSwgJCLkv53lrZjljoblj7LorrDlvZUge2NvbGxlY3Rpb24uQWRhcHRlckxpc3QuQ291bnR9IOadoToge0ZpbGVQYXRofSIpOwogICAgICAgIH0KICAgICAgICBjYXRjaCAoRXhjZXB0aW9uIGV4KQogICAgICAgIHsKICAgICAgICAgICAgQXBwTG9nLkluc3RhbmNlLkxvZyhDYXRlZ29yeSwgJCLkv53lrZjljoblj7LorrDlvZXlpLHotKU6IHtGaWxlUGF0aH0gLSB7ZXguTWVzc2FnZX0iKTsKICAgICAgICB9CiAgICB9CgogICAgcHJpdmF0ZSBzdGF0aWMgYm9vbCBTYW1lS2V5KEFkYXB0ZXJJbmZvIGEsIEFkYXB0ZXJJbmZvIGIpID0+CiAgICAgICAgc3RyaW5nLkVxdWFscyhhLk5hbWUsIGIuTmFtZSwgU3RyaW5nQ29tcGFyaXNvbi5PcmRpbmFsKSAmJgogICAgICAgIHN0cmluZy5FcXVhbHMoYS5JUCwgYi5JUCwgU3RyaW5nQ29tcGFyaXNvbi5PcmRpbmFsKTsKfQo=
+using System.Xml;
+using System.Xml.Serialization;
+using IPScaner.Core.Logging;
+using IPScaner.Core.Models;
+using IPScaner.Core.Storage;
+
+namespace IPScaner.Core.Net;
+
+/// <summary>Persists previously applied static-IP settings to ipScaner_his.xml.</summary>
+/// <remarks>
+/// <para>
+/// The on-disk contract is the original's, byte for byte, so an existing history
+/// file keeps loading and a new one is indistinguishable from what the WinForms
+/// tool wrote:
+/// </para>
+/// <code>
+/// &lt;?xml version="1.0"?&gt;
+/// &lt;root&gt;
+///   &lt;array&gt;
+///     &lt;AdapterInfo Name="以太网" IP="192.168.1.100" SubnetMask="255.255.255.0" Gateway="192.168.1.1" DNS="223.5.5.5" /&gt;
+///   &lt;/array&gt;
+/// &lt;/root&gt;
+/// </code>
+/// <para>
+/// UTF-8 without BOM, an empty <see cref="XmlSerializerNamespaces"/> so no
+/// <c>xmlns:xsi</c>/<c>xmlns:xsd</c> and no <c>encoding</c> attribute are emitted,
+/// and an <see cref="XmlTextWriter"/> constructed with a null encoding — exactly how
+/// <c>XmlSerializer.Serialize(Stream, …)</c> built the original document.
+/// </para>
+/// <para>
+/// Only <c>Name, IP, SubnetMask, Gateway, DNS</c> are persisted, because the other
+/// <see cref="AdapterInfo"/> members are <c>[XmlIgnore]</c>. Records are unique on
+/// <c>(Name, IP)</c> and stored newest-first; the list is capped at
+/// <see cref="MaxEntries"/>. A corrupt or unreadable file never throws — it is
+/// reported to the log and read as an empty history.
+/// </para>
+/// </remarks>
+public sealed class NetworkHistory
+{
+    private const string Category = nameof(NetworkHistory);
+
+    /// <summary>File name used when no explicit path is supplied.</summary>
+    public const string DefaultFileName = "ipScaner_his.xml";
+
+    /// <summary>Newest entries kept; older ones are dropped on write.</summary>
+    public const int MaxEntries = 100;
+
+    private readonly object _gate = new();
+
+    /// <param name="filePath">
+    /// History file to use; defaults to <c>ipScaner_his.xml</c> in the writable
+    /// data directory (beside the executable for the portable build, otherwise
+    /// <c>%APPDATA%\IPScaner</c> — see <see cref="Storage.AppPaths"/>).
+    /// the exe-relative location the original used.
+    /// </param>
+    public NetworkHistory(string? filePath = null)
+    {
+        FilePath = string.IsNullOrWhiteSpace(filePath)
+            ? Path.Combine(Storage.AppPaths.DataDirectory, DefaultFileName)
+            : filePath;
+    }
+
+    /// <summary>Absolute or caller-supplied path of the history file.</summary>
+    public string FilePath { get; }
+
+    /// <summary>
+    /// Reads the stored history in file order (newest first for files this class
+    /// wrote). Returns an empty list when the file is missing, empty or corrupt.
+    /// </summary>
+    public List<AdapterInfo> Load()
+    {
+        lock (_gate)
+        {
+            return LoadCore();
+        }
+    }
+
+    /// <summary>Overwrites the file with <paramref name="entries"/>, keeping at most <see cref="MaxEntries"/>.</summary>
+    public void Save(IEnumerable<AdapterInfo> entries)
+    {
+        lock (_gate)
+        {
+            SaveCore(entries);
+        }
+    }
+
+    /// <summary>
+    /// Inserts one record at the top, replacing any existing record with the same
+    /// <c>(Name, IP)</c> pair, then writes the file.
+    /// </summary>
+    public void Add(AdapterInfo entry)
+    {
+        if (entry is null) return;
+
+        lock (_gate)
+        {
+            var list = LoadCore();
+            list.RemoveAll(e => SameKey(e, entry));
+            list.Insert(0, entry);
+            if (list.Count > MaxEntries) list.RemoveRange(MaxEntries, list.Count - MaxEntries);
+            SaveCore(list);
+        }
+    }
+
+    /// <summary>
+    /// Clears the history. The file is rewritten as an empty (but still valid)
+    /// <c>&lt;root&gt;&lt;array /&gt;&lt;/root&gt;</c> document, so the next load returns nothing.
+    /// </summary>
+    public void Clear()
+    {
+        lock (_gate)
+        {
+            SaveCore([]);
+            AppLog.Instance.Log(Category, "已清空历史记录: " + FilePath);
+        }
+    }
+
+    // ---- implementation ----------------------------------------------------
+
+    private List<AdapterInfo> LoadCore()
+    {
+        var list = new List<AdapterInfo>();
+        try
+        {
+            if (!File.Exists(FilePath)) return list;
+
+            var serializer = new XmlSerializer(typeof(AdapterInfoCollection));
+            using var stream = new FileStream(FilePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+            if (serializer.Deserialize(stream) is not AdapterInfoCollection collection) return list;
+
+            foreach (var item in collection.AdapterList ?? [])
+            {
+                if (item is not null) list.Add(item);
+            }
+
+            if (list.Count > MaxEntries)
+            {
+                AppLog.Instance.Log(Category,
+                    $"历史记录文件包含 {list.Count} 条记录，超过上限 {MaxEntries}，保存时将被截断");
+            }
+        }
+        catch (Exception ex)
+        {
+            // A corrupt history must never take the window down (the original let the
+            // exception escape into the WinForms thread handler and lost the history).
+            AppLog.Instance.Log(Category, $"读取历史记录失败（按空记录处理）: {FilePath} - {ex.Message}");
+            return [];
+        }
+
+        return list;
+    }
+
+    private void SaveCore(IEnumerable<AdapterInfo>? entries)
+    {
+        try
+        {
+            var collection = new AdapterInfoCollection();
+            if (entries is not null)
+            {
+                foreach (var entry in entries)
+                {
+                    if (entry is null) continue;
+                    collection.AdapterList.Add(entry);
+                    if (collection.AdapterList.Count >= MaxEntries) break;
+                }
+            }
+
+            var directory = Path.GetDirectoryName(FilePath);
+            if (!string.IsNullOrEmpty(directory)) Directory.CreateDirectory(directory);
+
+            var serializer = new XmlSerializer(typeof(AdapterInfoCollection));
+            var namespaces = new XmlSerializerNamespaces();
+            namespaces.Add("", ""); // no xmlns:xsi / xmlns:xsd, like XmlUtility.SaveXml
+
+            using var stream = new FileStream(FilePath, FileMode.Create, FileAccess.Write, FileShare.None);
+            // Null encoding == the original's `XmlSerializer.Serialize(Stream, …)`:
+            // bytes are UTF-8 without BOM and the declaration stays `<?xml version="1.0"?>`.
+            using var writer = new XmlTextWriter(stream, null) { Formatting = Formatting.Indented };
+            serializer.Serialize(writer, collection, namespaces);
+
+            AppLog.Instance.Log(Category, $"保存历史记录 {collection.AdapterList.Count} 条: {FilePath}");
+        }
+        catch (Exception ex)
+        {
+            AppLog.Instance.Log(Category, $"保存历史记录失败: {FilePath} - {ex.Message}");
+        }
+    }
+
+    private static bool SameKey(AdapterInfo a, AdapterInfo b) =>
+        string.Equals(a.Name, b.Name, StringComparison.Ordinal) &&
+        string.Equals(a.IP, b.IP, StringComparison.Ordinal);
+}

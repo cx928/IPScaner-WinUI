@@ -1,1 +1,218 @@
-dXNpbmcgU3lzdGVtLlRleHQ7CnVzaW5nIElQU2NhbmVyLkNvcmUuU3RvcmFnZTsKCm5hbWVzcGFjZSBJUFNjYW5lci5Db3JlLk1lbW87CgovLy8gPHN1bW1hcnk+Ci8vLyBUaGUgdXNlcidzIG5vdGVzIGFib3V0IGhvc3RzICjlpIfms6jnrqHnkIYpLgovLy8gPC9zdW1tYXJ5PgovLy8gPHJlbWFya3M+Ci8vLyBPbi1kaXNrIGZvcm1hdCBpcyBwcmVzZXJ2ZWQgZXhhY3RseSBzbyBhbiBleGlzdGluZyBJUFNjYW5lck1lbW8uZGF0IGtlZXBzCi8vLyB3b3JraW5nOgovLy8gPGNvZGU+Ci8vLyAxOTIuMTY4LjEuMTA96LSi5Yqh6YOo5omT5Y2w5py6Ci8vLyAwMC0xQS0yQi0zQy00RC01RT3kuInmpbzmnLrmiL8KLy8vIDwvY29kZT4KLy8vIE9uZSA8Yz5LRVk9VkFMVUU8L2M+IGVudHJ5IHBlciBsaW5lLCA8Yz4jPC9jPiBzdGFydHMgYSBjb21tZW50LCBhbmQgYW4gZW1iZWRkZWQKLy8vIG5ld2xpbmUgaXMgc3RvcmVkIGFzIHRoZSB0d28tY2hhcmFjdGVyIGVzY2FwZSA8Yz5edl48L2M+LiBWYWx1ZXMgbWF5IGNvbnRhaW4KLy8vICc9JyAob25seSB0aGUgZmlyc3Qgb25lIHNlcGFyYXRlcykuIEZpbGVzIGFyZSB3cml0dGVuIGFzIFVURi04IHdpdGggYSBCT00sCi8vLyBtYXRjaGluZyB0aGUgb3JpZ2luYWwgd3JpdGVyLgovLy8gPHBhcmE+Ci8vLyBBIGtleSBpcyBlaXRoZXIgYW4gSVB2NCBhZGRyZXNzIG9yIGEgTUFDIGFkZHJlc3MuIDxiPk1BQyB3aW5zPC9iPjogd2hlbiBhIGhvc3QKLy8vIGhhcyBib3RoLCB0aGUgTUFDIGVudHJ5IGlzIHVzZWQsIHNvIGEgbm90ZSBmb2xsb3dzIGEgbWFjaGluZSB3aG9zZSBESENQIGxlYXNlCi8vLyBjaGFuZ2VkICh0aGlzIGlzIHRoZSBkb2N1bWVudGVkIHYxLjI3IGJlaGF2aW91cikuCi8vLyA8L3BhcmE+Ci8vLyA8L3JlbWFya3M+CnB1YmxpYyBzZWFsZWQgcGFydGlhbCBjbGFzcyBNZW1vU3RvcmUKewogICAgcHVibGljIGNvbnN0IHN0cmluZyBGaWxlTmFtZSA9ICJJUFNjYW5lck1lbW8uZGF0IjsKCiAgICAvLy8gPHN1bW1hcnk+TGVnYWN5IGZpbGUgbmFtZSwgbWlncmF0ZWQgb24gZmlyc3QgbG9hZC48L3N1bW1hcnk+CiAgICBwdWJsaWMgY29uc3Qgc3RyaW5nIExlZ2FjeUZpbGVOYW1lID0gIklQU2NhbmVyLmRhdCI7CgogICAgcHJpdmF0ZSBjb25zdCBzdHJpbmcgTmV3bGluZUVzY2FwZSA9ICJedl4iOwoKICAgIHByaXZhdGUgcmVhZG9ubHkgRGljdGlvbmFyeTxzdHJpbmcsIHN0cmluZz4gX2VudHJpZXMgPSBuZXcoU3RyaW5nQ29tcGFyZXIuT3JkaW5hbElnbm9yZUNhc2UpOwoKICAgIHB1YmxpYyBzdHJpbmcgRmlsZVBhdGggeyBnZXQ7IH0KCiAgICBwdWJsaWMgTWVtb1N0b3JlKHN0cmluZz8gZmlsZVBhdGggPSBudWxsKQogICAgICAgID0+IEZpbGVQYXRoID0gZmlsZVBhdGggPz8gUGF0aC5Db21iaW5lKFN0b3JhZ2UuQXBwUGF0aHMuRGF0YURpcmVjdG9yeSwgRmlsZU5hbWUpOwoKICAgIHB1YmxpYyBpbnQgQ291bnQgPT4gX2VudHJpZXMuQ291bnQ7CgogICAgLy8vIDxzdW1tYXJ5PlNuYXBzaG90IG9mIGV2ZXJ5IGVudHJ5Ljwvc3VtbWFyeT4KICAgIHB1YmxpYyBJUmVhZE9ubHlEaWN0aW9uYXJ5PHN0cmluZywgc3RyaW5nPiBFbnRyaWVzID0+IF9lbnRyaWVzOwoKICAgIC8vIC0tLS0gcGVyc2lzdGVuY2UgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBMb2FkcyB0aGUgbWVtbyBmaWxlLCBmaXJzdCBtaWdyYXRpbmcgYSBsZWdhY3kgPGM+SVBTY2FuZXIuZGF0PC9jPiBpZiB0aGUKICAgIC8vLyBjdXJyZW50IGZpbGUgZG9lcyBub3QgZXhpc3QgeWV0LgogICAgLy8vIDwvc3VtbWFyeT4KICAgIHB1YmxpYyB2b2lkIExvYWQoKQogICAgewogICAgICAgIFRyeU1pZ3JhdGVMZWdhY3koKTsKCiAgICAgICAgX2VudHJpZXMuQ2xlYXIoKTsKICAgICAgICBpZiAoIUZpbGUuRXhpc3RzKEZpbGVQYXRoKSkgcmV0dXJuOwoKICAgICAgICBzdHJpbmdbXSBsaW5lczsKICAgICAgICB0cnkgeyBsaW5lcyA9IFRleHRGaWxlRW5jb2RpbmcuUmVhZEFsbExpbmVzKEZpbGVQYXRoKTsgfQogICAgICAgIGNhdGNoIHsgcmV0dXJuOyB9CgogICAgICAgIGZvcmVhY2ggKHZhciByYXcgaW4gbGluZXMpCiAgICAgICAgewogICAgICAgICAgICBpZiAoc3RyaW5nLklzTnVsbE9yV2hpdGVTcGFjZShyYXcpKSBjb250aW51ZTsKICAgICAgICAgICAgaWYgKHJhdy5TdGFydHNXaXRoKCcjJykpIGNvbnRpbnVlOwoKICAgICAgICAgICAgdmFyIGlkeCA9IHJhdy5JbmRleE9mKCc9Jyk7CiAgICAgICAgICAgIGlmIChpZHggPD0gMCkgY29udGludWU7CgogICAgICAgICAgICB2YXIga2V5ID0gTm9ybWFsaXplS2V5KHJhd1suLmlkeF0pOwogICAgICAgICAgICBpZiAoa2V5Lkxlbmd0aCA9PSAwKSBjb250aW51ZTsKCiAgICAgICAgICAgIC8vIFJlam9pbiB0aGUgcmVtYWluZGVyIHNvICc9JyBpbnNpZGUgYSBub3RlIHN1cnZpdmVzLgogICAgICAgICAgICB2YXIgdmFsdWUgPSByYXdbKGlkeCArIDEpLi5dLlJlcGxhY2UoTmV3bGluZUVzY2FwZSwgRW52aXJvbm1lbnQuTmV3TGluZSk7CiAgICAgICAgICAgIF9lbnRyaWVzW2tleV0gPSB2YWx1ZTsKICAgICAgICB9CiAgICB9CgogICAgLy8vIDxzdW1tYXJ5PldyaXRlcyBldmVyeSBub24tZW1wdHkgZW50cnkgYmFjayB0byBkaXNrLjwvc3VtbWFyeT4KICAgIHB1YmxpYyB2b2lkIFNhdmUoc3RyaW5nPyBmaWxlUGF0aCA9IG51bGwpCiAgICB7CiAgICAgICAgdmFyIHBhdGggPSBmaWxlUGF0aCA/PyBGaWxlUGF0aDsKICAgICAgICB2YXIgc2IgPSBuZXcgU3RyaW5nQnVpbGRlcigpOwogICAgICAgIGZvcmVhY2ggKHZhciAoa2V5LCB2YWx1ZSkgaW4gX2VudHJpZXMpCiAgICAgICAgewogICAgICAgICAgICBpZiAoc3RyaW5nLklzTnVsbE9yRW1wdHkodmFsdWUpKSBjb250aW51ZTsKICAgICAgICAgICAgc2IuQXBwZW5kTGluZShrZXkgKyAiPSIgKyB2YWx1ZS5SZXBsYWNlKCJcclxuIiwgTmV3bGluZUVzY2FwZSkuUmVwbGFjZSgiXG4iLCBOZXdsaW5lRXNjYXBlKSk7CiAgICAgICAgfQoKICAgICAgICB2YXIgZGlyID0gUGF0aC5HZXREaXJlY3RvcnlOYW1lKHBhdGgpOwogICAgICAgIGlmICghc3RyaW5nLklzTnVsbE9yRW1wdHkoZGlyKSkgRGlyZWN0b3J5LkNyZWF0ZURpcmVjdG9yeShkaXIpOwogICAgICAgIEZpbGUuV3JpdGVBbGxUZXh0KHBhdGgsIHNiLlRvU3RyaW5nKCksIFRleHRGaWxlRW5jb2RpbmcuVXRmOEJvbSk7CiAgICB9CgogICAgcHJpdmF0ZSB2b2lkIFRyeU1pZ3JhdGVMZWdhY3koKQogICAgewogICAgICAgIGlmIChGaWxlLkV4aXN0cyhGaWxlUGF0aCkpIHJldHVybjsKICAgICAgICB2YXIgbGVnYWN5ID0gUGF0aC5Db21iaW5lKFBhdGguR2V0RGlyZWN0b3J5TmFtZShGaWxlUGF0aCkgPz8gIi4iLCBMZWdhY3lGaWxlTmFtZSk7CiAgICAgICAgaWYgKCFGaWxlLkV4aXN0cyhsZWdhY3kpKSByZXR1cm47CiAgICAgICAgdHJ5IHsgRmlsZS5Nb3ZlKGxlZ2FjeSwgRmlsZVBhdGgpOyB9CiAgICAgICAgY2F0Y2ggeyAvKiBrZWVwIGdvaW5nIHdpdGggd2hhdGV2ZXIgaXMgcmVhZGFibGUgKi8gfQogICAgfQoKICAgIC8vIC0tLS0gbG9va3VwIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBSZXNvbHZlcyBhIG5vdGUgYnkgTUFDIGZpcnN0LCB0aGVuIGJ5IElQICh2MS4yNyBwcmVjZWRlbmNlKS4KICAgIC8vLyBSZXR1cm5zIGFuIGVtcHR5IHN0cmluZyB3aGVuIG5vdGhpbmcgbWF0Y2hlcy4KICAgIC8vLyA8L3N1bW1hcnk+CiAgICAvLy8gPHJlbWFya3M+CiAgICAvLy8gQm90aCBhcmd1bWVudHMgYXJlIGNhbm9uaWNhbGlzZWQgZmlyc3Q6IHRoZSBBUlAgdGFibGUgY2FuIHJlcG9ydCBhIE1BQwogICAgLy8vIHdpdGggZWl0aGVyICctJyBvciAnOicgc2VwYXJhdG9ycyBkZXBlbmRpbmcgb24gdGhlIHNvdXJjZSwgYW5kIHRyZWF0aW5nCiAgICAvLy8gdGhvc2UgYXMgZGlmZmVyZW50IGtleXMgc2lsZW50bHkgbG9zZXMgYSBub3RlIHRoZSB1c2VyIGNhbiBzZWUgb24gc2NyZWVuLgogICAgLy8vIDwvcmVtYXJrcz4KICAgIHB1YmxpYyBzdHJpbmcgTG9va3VwKHN0cmluZz8gbWFjLCBzdHJpbmc/IGlwQWRkcmVzcyA9IG51bGwpCiAgICB7CiAgICAgICAgaWYgKCFzdHJpbmcuSXNOdWxsT3JFbXB0eShtYWMpICYmIF9lbnRyaWVzLlRyeUdldFZhbHVlKE5vcm1hbGl6ZUtleShtYWMpLCBvdXQgdmFyIGJ5TWFjKSkgcmV0dXJuIGJ5TWFjOwogICAgICAgIGlmICghc3RyaW5nLklzTnVsbE9yRW1wdHkoaXBBZGRyZXNzKSAmJiBfZW50cmllcy5UcnlHZXRWYWx1ZShpcEFkZHJlc3MuVHJpbSgpLCBvdXQgdmFyIGJ5SXApKSByZXR1cm4gYnlJcDsKICAgICAgICByZXR1cm4gc3RyaW5nLkVtcHR5OwogICAgfQoKICAgIHB1YmxpYyBib29sIFRyeUdldChzdHJpbmcga2V5LCBvdXQgc3RyaW5nIHZhbHVlKSA9PiBfZW50cmllcy5UcnlHZXRWYWx1ZShOb3JtYWxpemVLZXkoa2V5KSwgb3V0IHZhbHVlISk7CgogICAgLy8vIDxzdW1tYXJ5PlRydWUgd2hlbiB0aGUga2V5IGlzIGEgTUFDIHJhdGhlciB0aGFuIGFuIElQLjwvc3VtbWFyeT4KICAgIHB1YmxpYyBzdGF0aWMgYm9vbCBJc01hY0tleShzdHJpbmcga2V5KQogICAgewogICAgICAgIGlmIChzdHJpbmcuSXNOdWxsT3JXaGl0ZVNwYWNlKGtleSkpIHJldHVybiBmYWxzZTsKICAgICAgICB2YXIgdGV4dCA9IGtleS5UcmltKCk7CiAgICAgICAgaWYgKHRleHQuQ29udGFpbnMoJy4nKSkgcmV0dXJuIGZhbHNlOyAvLyBJUHY0IGRvdHRlZCBxdWFkCiAgICAgICAgcmV0dXJuIE1hY0tleVJlZ2V4KCkuSXNNYXRjaCh0ZXh0KTsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+CiAgICAvLy8gQ2Fub25pY2FsIGtleSBmb3JtOiBNQUNzIGJlY29tZSB1cHBlci1jYXNlIGRhc2gtc2VwYXJhdGVkLCBldmVyeXRoaW5nIGVsc2UKICAgIC8vLyBpcyBvbmx5IHRyaW1tZWQuIFRoaXMgaXMgd2hhdCBtYWtlcyBhIG5vdGUgd3JpdHRlbiBhcyAiMDA6MUE64oCmIiBtYXRjaCBhCiAgICAvLy8gbG9va3VwIGZvciAiMDAtMUEt4oCmIiBhbmQgdmljZSB2ZXJzYS4KICAgIC8vLyA8L3N1bW1hcnk+CiAgICBwdWJsaWMgc3RhdGljIHN0cmluZyBOb3JtYWxpemVLZXkoc3RyaW5nIGtleSkKICAgIHsKICAgICAgICBpZiAoc3RyaW5nLklzTnVsbE9yV2hpdGVTcGFjZShrZXkpKSByZXR1cm4gc3RyaW5nLkVtcHR5OwogICAgICAgIHZhciB0ZXh0ID0ga2V5LlRyaW0oKTsKICAgICAgICBpZiAoIU1hY0tleVJlZ2V4KCkuSXNNYXRjaCh0ZXh0KSkgcmV0dXJuIHRleHQ7CiAgICAgICAgcmV0dXJuIHRleHQuVG9VcHBlckludmFyaWFudCgpLlJlcGxhY2UoJzonLCAnLScpOwogICAgfQoKICAgIFtTeXN0ZW0uVGV4dC5SZWd1bGFyRXhwcmVzc2lvbnMuR2VuZXJhdGVkUmVnZXgoQCJeKFswLTlBLUZhLWZdezJ9Wy06XSl7NX1bMC05QS1GYS1mXXsyfSQiKV0KICAgIHByaXZhdGUgc3RhdGljIHBhcnRpYWwgU3lzdGVtLlRleHQuUmVndWxhckV4cHJlc3Npb25zLlJlZ2V4IE1hY0tleVJlZ2V4KCk7CgogICAgLy8gLS0tLSBtdXRhdGlvbiAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgogICAgLy8vIDxzdW1tYXJ5PkFkZHMgb3IgdXBkYXRlcyBhIG5vdGUuIEFuIGVtcHR5IHZhbHVlIHJlbW92ZXMgdGhlIGVudHJ5Ljwvc3VtbWFyeT4KICAgIHB1YmxpYyB2b2lkIFNldChzdHJpbmcga2V5LCBzdHJpbmc/IHZhbHVlKQogICAgewogICAgICAgIHZhciBjYW5vbmljYWwgPSBOb3JtYWxpemVLZXkoa2V5KTsKICAgICAgICBpZiAoY2Fub25pY2FsLkxlbmd0aCA9PSAwKSByZXR1cm47CiAgICAgICAgaWYgKHN0cmluZy5Jc051bGxPckVtcHR5KHZhbHVlKSkgX2VudHJpZXMuUmVtb3ZlKGNhbm9uaWNhbCk7CiAgICAgICAgZWxzZSBfZW50cmllc1tjYW5vbmljYWxdID0gdmFsdWU7CiAgICB9CgogICAgcHVibGljIGJvb2wgUmVtb3ZlKHN0cmluZyBrZXkpID0+IF9lbnRyaWVzLlJlbW92ZShOb3JtYWxpemVLZXkoa2V5KSk7CgogICAgcHVibGljIHZvaWQgQ2xlYXIoKSA9PiBfZW50cmllcy5DbGVhcigpOwoKICAgIC8vLyA8c3VtbWFyeT5SZXBsYWNlcyBldmVyeSBlbnRyeSAodXNlZCBieSB0aGUgY2xpcGJvYXJkLWltcG9ydCBmZWF0dXJlKS48L3N1bW1hcnk+CiAgICBwdWJsaWMgdm9pZCBSZXBsYWNlQWxsKElFbnVtZXJhYmxlPEtleVZhbHVlUGFpcjxzdHJpbmcsIHN0cmluZz4+IGl0ZW1zKQogICAgewogICAgICAgIF9lbnRyaWVzLkNsZWFyKCk7CiAgICAgICAgZm9yZWFjaCAodmFyIChrLCB2KSBpbiBpdGVtcykgU2V0KGssIHYpOwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBQYXJzZXMgcGFzdGVkIHRleHQgaW50byBtZW1vIGVudHJpZXMgKOS7juWJqui0tOadv+WvvOWFpSkuCiAgICAvLy8gQWNjZXB0cywgcGVyIGxpbmUsIGVpdGhlciA8Yz5LRVk9VkFMVUU8L2M+LCA8Yz5LRVkmbHQ7VEFCJmd0O1ZBTFVFPC9jPiwKICAgIC8vLyA8Yz5LRVksVkFMVUU8L2M+IG9yIDxjPktFWSBWQUxVRTwvYz47IGEgYmFyZSBrZXkgd2l0aCBubyB2YWx1ZSBpcyBza2lwcGVkLgogICAgLy8vIExpbmVzIGJlZ2lubmluZyB3aXRoICcjJyBhcmUgaWdub3JlZC4KICAgIC8vLyA8L3N1bW1hcnk+CiAgICBwdWJsaWMgc3RhdGljIExpc3Q8S2V5VmFsdWVQYWlyPHN0cmluZywgc3RyaW5nPj4gUGFyc2VDbGlwYm9hcmQoc3RyaW5nIHRleHQpCiAgICB7CiAgICAgICAgdmFyIHJlc3VsdCA9IG5ldyBMaXN0PEtleVZhbHVlUGFpcjxzdHJpbmcsIHN0cmluZz4+KCk7CiAgICAgICAgaWYgKHN0cmluZy5Jc051bGxPcldoaXRlU3BhY2UodGV4dCkpIHJldHVybiByZXN1bHQ7CgogICAgICAgIGZvcmVhY2ggKHZhciByYXdMaW5lIGluIHRleHQuU3BsaXQoJ1xuJykpCiAgICAgICAgewogICAgICAgICAgICB2YXIgbGluZSA9IHJhd0xpbmUuVHJpbSgnXHInLCAnICcsICdcdCcpOwogICAgICAgICAgICBpZiAobGluZS5MZW5ndGggPT0gMCB8fCBsaW5lLlN0YXJ0c1dpdGgoJyMnKSkgY29udGludWU7CgogICAgICAgICAgICBzdHJpbmc/IGtleSA9IG51bGwsIHZhbHVlID0gbnVsbDsKCiAgICAgICAgICAgIHZhciBlcSA9IGxpbmUuSW5kZXhPZignPScpOwogICAgICAgICAgICBpZiAoZXEgPiAwKQogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICBrZXkgPSBsaW5lWy4uZXFdLlRyaW0oKTsKICAgICAgICAgICAgICAgIHZhbHVlID0gbGluZVsoZXEgKyAxKS4uXS5UcmltKCk7CiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxzZQogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICB2YXIgc2VwID0gbGluZS5JbmRleE9mQW55KFsnXHQnLCAnLCddKTsKICAgICAgICAgICAgICAgIGlmIChzZXAgPCAwKQogICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgIC8vIEZhbGwgYmFjayB0byB0aGUgZmlyc3QgcnVuIG9mIHdoaXRlc3BhY2UuCiAgICAgICAgICAgICAgICAgICAgc2VwID0gbGluZS5JbmRleE9mKCcgJyk7CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICBpZiAoc2VwID4gMCkKICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICBrZXkgPSBsaW5lWy4uc2VwXS5UcmltKCk7CiAgICAgICAgICAgICAgICAgICAgdmFsdWUgPSBsaW5lWyhzZXAgKyAxKS4uXS5UcmltKCk7CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGlmIChzdHJpbmcuSXNOdWxsT3JXaGl0ZVNwYWNlKGtleSkgfHwgc3RyaW5nLklzTnVsbE9yV2hpdGVTcGFjZSh2YWx1ZSkpIGNvbnRpbnVlOwogICAgICAgICAgICByZXN1bHQuQWRkKG5ldyBLZXlWYWx1ZVBhaXI8c3RyaW5nLCBzdHJpbmc+KGtleSwgdmFsdWUpKTsKICAgICAgICB9CgogICAgICAgIHJldHVybiByZXN1bHQ7CiAgICB9Cn0K
+using System.Text;
+using IPScaner.Core.Storage;
+
+namespace IPScaner.Core.Memo;
+
+/// <summary>
+/// The user's notes about hosts (备注管理).
+/// </summary>
+/// <remarks>
+/// On-disk format is preserved exactly so an existing IPScanerMemo.dat keeps
+/// working:
+/// <code>
+/// 192.168.1.10=财务部打印机
+/// 00-1A-2B-3C-4D-5E=三楼机房
+/// </code>
+/// One <c>KEY=VALUE</c> entry per line, <c>#</c> starts a comment, and an embedded
+/// newline is stored as the two-character escape <c>^v^</c>. Values may contain
+/// '=' (only the first one separates). Files are written as UTF-8 with a BOM,
+/// matching the original writer.
+/// <para>
+/// A key is either an IPv4 address or a MAC address. <b>MAC wins</b>: when a host
+/// has both, the MAC entry is used, so a note follows a machine whose DHCP lease
+/// changed (this is the documented v1.27 behaviour).
+/// </para>
+/// </remarks>
+public sealed partial class MemoStore
+{
+    public const string FileName = "IPScanerMemo.dat";
+
+    /// <summary>Legacy file name, migrated on first load.</summary>
+    public const string LegacyFileName = "IPScaner.dat";
+
+    private const string NewlineEscape = "^v^";
+
+    private readonly Dictionary<string, string> _entries = new(StringComparer.OrdinalIgnoreCase);
+
+    public string FilePath { get; }
+
+    public MemoStore(string? filePath = null)
+        => FilePath = filePath ?? Path.Combine(Storage.AppPaths.DataDirectory, FileName);
+
+    public int Count => _entries.Count;
+
+    /// <summary>Snapshot of every entry.</summary>
+    public IReadOnlyDictionary<string, string> Entries => _entries;
+
+    // ---- persistence -------------------------------------------------------
+
+    /// <summary>
+    /// Loads the memo file, first migrating a legacy <c>IPScaner.dat</c> if the
+    /// current file does not exist yet.
+    /// </summary>
+    public void Load()
+    {
+        TryMigrateLegacy();
+
+        _entries.Clear();
+        if (!File.Exists(FilePath)) return;
+
+        string[] lines;
+        try { lines = TextFileEncoding.ReadAllLines(FilePath); }
+        catch { return; }
+
+        foreach (var raw in lines)
+        {
+            if (string.IsNullOrWhiteSpace(raw)) continue;
+            if (raw.StartsWith('#')) continue;
+
+            var idx = raw.IndexOf('=');
+            if (idx <= 0) continue;
+
+            var key = NormalizeKey(raw[..idx]);
+            if (key.Length == 0) continue;
+
+            // Rejoin the remainder so '=' inside a note survives.
+            var value = raw[(idx + 1)..].Replace(NewlineEscape, Environment.NewLine);
+            _entries[key] = value;
+        }
+    }
+
+    /// <summary>Writes every non-empty entry back to disk.</summary>
+    public void Save(string? filePath = null)
+    {
+        var path = filePath ?? FilePath;
+        var sb = new StringBuilder();
+        foreach (var (key, value) in _entries)
+        {
+            if (string.IsNullOrEmpty(value)) continue;
+            sb.AppendLine(key + "=" + value.Replace("\r\n", NewlineEscape).Replace("\n", NewlineEscape));
+        }
+
+        var dir = Path.GetDirectoryName(path);
+        if (!string.IsNullOrEmpty(dir)) Directory.CreateDirectory(dir);
+        File.WriteAllText(path, sb.ToString(), TextFileEncoding.Utf8Bom);
+    }
+
+    private void TryMigrateLegacy()
+    {
+        if (File.Exists(FilePath)) return;
+        var legacy = Path.Combine(Path.GetDirectoryName(FilePath) ?? ".", LegacyFileName);
+        if (!File.Exists(legacy)) return;
+        try { File.Move(legacy, FilePath); }
+        catch { /* keep going with whatever is readable */ }
+    }
+
+    // ---- lookup ------------------------------------------------------------
+
+    /// <summary>
+    /// Resolves a note by MAC first, then by IP (v1.27 precedence).
+    /// Returns an empty string when nothing matches.
+    /// </summary>
+    /// <remarks>
+    /// Both arguments are canonicalised first: the ARP table can report a MAC
+    /// with either '-' or ':' separators depending on the source, and treating
+    /// those as different keys silently loses a note the user can see on screen.
+    /// </remarks>
+    public string Lookup(string? mac, string? ipAddress = null)
+    {
+        if (!string.IsNullOrEmpty(mac) && _entries.TryGetValue(NormalizeKey(mac), out var byMac)) return byMac;
+        if (!string.IsNullOrEmpty(ipAddress) && _entries.TryGetValue(ipAddress.Trim(), out var byIp)) return byIp;
+        return string.Empty;
+    }
+
+    public bool TryGet(string key, out string value) => _entries.TryGetValue(NormalizeKey(key), out value!);
+
+    /// <summary>True when the key is a MAC rather than an IP.</summary>
+    public static bool IsMacKey(string key)
+    {
+        if (string.IsNullOrWhiteSpace(key)) return false;
+        var text = key.Trim();
+        if (text.Contains('.')) return false; // IPv4 dotted quad
+        return MacKeyRegex().IsMatch(text);
+    }
+
+    /// <summary>
+    /// Canonical key form: MACs become upper-case dash-separated, everything else
+    /// is only trimmed. This is what makes a note written as "00:1A:…" match a
+    /// lookup for "00-1A-…" and vice versa.
+    /// </summary>
+    public static string NormalizeKey(string key)
+    {
+        if (string.IsNullOrWhiteSpace(key)) return string.Empty;
+        var text = key.Trim();
+        if (!MacKeyRegex().IsMatch(text)) return text;
+        return text.ToUpperInvariant().Replace(':', '-');
+    }
+
+    [System.Text.RegularExpressions.GeneratedRegex(@"^([0-9A-Fa-f]{2}[-:]){5}[0-9A-Fa-f]{2}$")]
+    private static partial System.Text.RegularExpressions.Regex MacKeyRegex();
+
+    // ---- mutation ----------------------------------------------------------
+
+    /// <summary>Adds or updates a note. An empty value removes the entry.</summary>
+    public void Set(string key, string? value)
+    {
+        var canonical = NormalizeKey(key);
+        if (canonical.Length == 0) return;
+        if (string.IsNullOrEmpty(value)) _entries.Remove(canonical);
+        else _entries[canonical] = value;
+    }
+
+    public bool Remove(string key) => _entries.Remove(NormalizeKey(key));
+
+    public void Clear() => _entries.Clear();
+
+    /// <summary>Replaces every entry (used by the clipboard-import feature).</summary>
+    public void ReplaceAll(IEnumerable<KeyValuePair<string, string>> items)
+    {
+        _entries.Clear();
+        foreach (var (k, v) in items) Set(k, v);
+    }
+
+    /// <summary>
+    /// Parses pasted text into memo entries (从剪贴板导入).
+    /// Accepts, per line, either <c>KEY=VALUE</c>, <c>KEY&lt;TAB&gt;VALUE</c>,
+    /// <c>KEY,VALUE</c> or <c>KEY VALUE</c>; a bare key with no value is skipped.
+    /// Lines beginning with '#' are ignored.
+    /// </summary>
+    public static List<KeyValuePair<string, string>> ParseClipboard(string text)
+    {
+        var result = new List<KeyValuePair<string, string>>();
+        if (string.IsNullOrWhiteSpace(text)) return result;
+
+        foreach (var rawLine in text.Split('\n'))
+        {
+            var line = rawLine.Trim('\r', ' ', '\t');
+            if (line.Length == 0 || line.StartsWith('#')) continue;
+
+            string? key = null, value = null;
+
+            var eq = line.IndexOf('=');
+            if (eq > 0)
+            {
+                key = line[..eq].Trim();
+                value = line[(eq + 1)..].Trim();
+            }
+            else
+            {
+                var sep = line.IndexOfAny(['\t', ',']);
+                if (sep < 0)
+                {
+                    // Fall back to the first run of whitespace.
+                    sep = line.IndexOf(' ');
+                }
+                if (sep > 0)
+                {
+                    key = line[..sep].Trim();
+                    value = line[(sep + 1)..].Trim();
+                }
+            }
+
+            if (string.IsNullOrWhiteSpace(key) || string.IsNullOrWhiteSpace(value)) continue;
+            result.Add(new KeyValuePair<string, string>(key, value));
+        }
+
+        return result;
+    }
+}

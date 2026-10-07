@@ -1,1 +1,140 @@
-PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPFBhZ2UKICAgIHg6Q2xhc3M9IklQU2NhbmVyLldpblVJLlZpZXdzLlNjYW5QYWdlIgogICAgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sL3ByZXNlbnRhdGlvbiIKICAgIHhtbG5zOng9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sIgogICAgeG1sbnM6bXV4Yz0idXNpbmc6TWljcm9zb2Z0LlVJLlhhbWwuQ29udHJvbHMiCiAgICB4bWxuczp2bT0idXNpbmc6SVBTY2FuZXIuV2luVUkuVmlld01vZGVscyIKICAgIHhtbG5zOmQ9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vZXhwcmVzc2lvbi9ibGVuZC8yMDA4IgogICAgeG1sbnM6bWM9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxmb3JtYXRzLm9yZy9tYXJrdXAtY29tcGF0aWJpbGl0eS8yMDA2IgogICAgbWM6SWdub3JhYmxlPSJkIgogICAgTmF2aWdhdGlvbkNhY2hlTW9kZT0iUmVxdWlyZWQiPgoKICAgIDxHcmlkIFBhZGRpbmc9IjE2LDEyLDE2LDEyIiBSb3dTcGFjaW5nPSIxMCI+CiAgICAgICAgPEdyaWQuUm93RGVmaW5pdGlvbnM+CiAgICAgICAgICAgIDxSb3dEZWZpbml0aW9uIEhlaWdodD0iQXV0byIgLz4KICAgICAgICAgICAgPFJvd0RlZmluaXRpb24gSGVpZ2h0PSJBdXRvIiAvPgogICAgICAgICAgICA8Um93RGVmaW5pdGlvbiBIZWlnaHQ9IioiIC8+CiAgICAgICAgPC9HcmlkLlJvd0RlZmluaXRpb25zPgoKICAgICAgICA8IS0tID09PT09PT09PT09PT09PT09IHRvb2xiYXIgPT09PT09PT09PT09PT09PT0gLS0+CiAgICAgICAgPEJvcmRlciBHcmlkLlJvdz0iMCIgU3R5bGU9IntTdGF0aWNSZXNvdXJjZSBDYXJkU3R5bGV9Ij4KICAgICAgICAgICAgPFN0YWNrUGFuZWwgU3BhY2luZz0iOCI+CiAgICAgICAgICAgICAgICA8U3RhY2tQYW5lbCBPcmllbnRhdGlvbj0iSG9yaXpvbnRhbCIgU3BhY2luZz0iOCI+CiAgICAgICAgICAgICAgICAgICAgPFRleHRCbG9jayBUZXh0PSJJUOautSIgU3R5bGU9IntTdGF0aWNSZXNvdXJjZSBGaWVsZExhYmVsU3R5bGV9IiAvPgogICAgICAgICAgICAgICAgICAgIDxUZXh0Qm94IHg6TmFtZT0iU2VnbWVudEJveCIgV2lkdGg9IjE0MCIgUGxhY2Vob2xkZXJUZXh0PSIxOTIuMTY4LjEiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgVG9vbFRpcFNlcnZpY2UuVG9vbFRpcD0i6L6T5YWl5YmN5LiJ5q6177yM5L6L5aaCIDE5Mi4xNjguMSIgLz4KICAgICAgICAgICAgICAgICAgICA8Q29tYm9Cb3ggeDpOYW1lPSJBZGFwdGVyQ29tYm8iIFdpZHRoPSIyMTAiIFBsYWNlaG9sZGVyVGV4dD0i6YCJ5oup572R5Y2hIC8g572R5q61IgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUb29sVGlwU2VydmljZS5Ub29sVGlwPSLku47mnKzmnLrnvZHljaHlv6vpgJ/loavlhaXnvZHmrrUiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFNlbGVjdGlvbkNoYW5nZWQ9Ik9uQWRhcHRlclNlbGVjdGVkIiAvPgogICAgICAgICAgICAgICAgICAgIDxCdXR0b24geDpOYW1lPSJTdGFydEJ1dHRvbiIgQ29udGVudD0i5byA5aeLIiBDbGljaz0iT25TdGFydENsaWNrIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgU3R5bGU9IntTdGF0aWNSZXNvdXJjZSBBY2NlbnRCdXR0b25TdHlsZX0iIE1pbldpZHRoPSI3NiIgLz4KICAgICAgICAgICAgICAgICAgICA8QnV0dG9uIHg6TmFtZT0iU3RvcEJ1dHRvbiIgQ29udGVudD0i5YGc5q2iIiBDbGljaz0iT25TdG9wQ2xpY2siIE1pbldpZHRoPSI3NiIgSXNFbmFibGVkPSJGYWxzZSIgLz4KICAgICAgICAgICAgICAgIDwvU3RhY2tQYW5lbD4KCiAgICAgICAgICAgICAgICA8U3RhY2tQYW5lbCBPcmllbnRhdGlvbj0iSG9yaXpvbnRhbCIgU3BhY2luZz0iOCI+CiAgICAgICAgICAgICAgICAgICAgPFRvZ2dsZUJ1dHRvbiB4Ok5hbWU9Ikhvc3ROYW1lVG9nZ2xlIiBDb250ZW50PSLkuLvmnLrlkI3mn6Xor6IiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUb29sVGlwU2VydmljZS5Ub29sVGlwPSLlvIDlkK/lkI7mmL7npLrorqHnrpfmnLrlkI3np7DkuI5NQUPvvIzkvJrmmI7mmL7pmY3kvY7miavmj4/pgJ/luqYiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBDbGljaz0iT25Ib3N0TmFtZVRvZ2dsZWQiIC8+CiAgICAgICAgICAgICAgICAgICAgPFRvZ2dsZUJ1dHRvbiB4Ok5hbWU9Ikxpc3RWaWV3VG9nZ2xlIiBDb250ZW50PSLliJfooajop4blm74iCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUb29sVGlwU2VydmljZS5Ub29sVGlwPSLlnKjoibLlnZfop4blm77kuI7liJfooajop4blm77kuYvpl7TliIfmjaIiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBDbGljaz0iT25MaXN0Vmlld1RvZ2dsZWQiIC8+CiAgICAgICAgICAgICAgICAgICAgPEJ1dHRvbiBDb250ZW50PSLmuIXnqbrnvJPlrZgiIENsaWNrPSJPbkNsZWFyQ2FjaGVzQ2xpY2siCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBUb29sVGlwU2VydmljZS5Ub29sVGlwPSLmuIXpmaTlt7LnvJPlrZjnmoTkuLvmnLrlkI3kuI5NQUPlnLDlnYAiIC8+CiAgICAgICAgICAgICAgICAgICAgPEJ1dHRvbiBDb250ZW50PSLlr7zlh7rnu5PmnpwiIENsaWNrPSJPbkV4cG9ydENsaWNrIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgVG9vbFRpcFNlcnZpY2UuVG9vbFRpcD0i5a+85Ye65Li6IENTViAvIEV4Y2VsIiAvPgogICAgICAgICAgICAgICAgICAgIDxCdXR0b24gQ29udGVudD0i5aSN5Yi25YWo6YOo5q2j5bi4IiBDbGljaz0iT25Db3B5T25saW5lQ2xpY2siIC8+CiAgICAgICAgICAgICAgICAgICAgPEJ1dHRvbiBDb250ZW50PSLlpIfms6jnrqHnkIYiIENsaWNrPSJPbk9wZW5NZW1vQ2xpY2siIC8+CiAgICAgICAgICAgICAgICAgICAgPFRleHRCbG9jayB4Ok5hbWU9IlByb2dyZXNzVGV4dCIgU3R5bGU9IntTdGF0aWNSZXNvdXJjZSBIaW50VGV4dFN0eWxlfSIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFZlcnRpY2FsQWxpZ25tZW50PSJDZW50ZXIiIE1hcmdpbj0iOCwwLDAsMCIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFRleHRUcmltbWluZz0iQ2hhcmFjdGVyRWxsaXBzaXMiIC8+CiAgICAgICAgICAgICAgICA8L1N0YWNrUGFuZWw+CiAgICAgICAgICAgIDwvU3RhY2tQYW5lbD4KICAgICAgICA8L0JvcmRlcj4KCiAgICAgICAgPCEtLSA9PT09PT09PT09PT09PT09PSBsZWdlbmQgPT09PT09PT09PT09PT09PT0gLS0+CiAgICAgICAgPFN0YWNrUGFuZWwgR3JpZC5Sb3c9IjEiIE9yaWVudGF0aW9uPSJIb3Jpem9udGFsIiBTcGFjaW5nPSIxOCI+CiAgICAgICAgICAgIDxTdGFja1BhbmVsIE9yaWVudGF0aW9uPSJIb3Jpem9udGFsIiBTcGFjaW5nPSI2Ij4KICAgICAgICAgICAgICAgIDxCb3JkZXIgeDpOYW1lPSJMZWdlbmRPbmxpbmUiIFN0eWxlPSJ7U3RhdGljUmVzb3VyY2UgTGVnZW5kU3dhdGNoU3R5bGV9IiAvPgogICAgICAgICAgICAgICAgPEh5cGVybGlua0J1dHRvbiB4Ok5hbWU9Ik9ubGluZUxpbmsiIENsaWNrPSJPbkNvcHlPbmxpbmVDbGljayIgUGFkZGluZz0iMiwwLDIsMCIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgVG9vbFRpcFNlcnZpY2UuVG9vbFRpcD0i54K55Ye75aSN5Yi25omA5pyJ6YCa6K6v44CQ5q2j5bi444CR55qESVDlnLDlnYAiIC8+CiAgICAgICAgICAgIDwvU3RhY2tQYW5lbD4KICAgICAgICAgICAgPFN0YWNrUGFuZWwgT3JpZW50YXRpb249Ikhvcml6b250YWwiIFNwYWNpbmc9IjYiPgogICAgICAgICAgICAgICAgPEJvcmRlciB4Ok5hbWU9IkxlZ2VuZE9mZmxpbmUiIFN0eWxlPSJ7U3RhdGljUmVzb3VyY2UgTGVnZW5kU3dhdGNoU3R5bGV9IiAvPgogICAgICAgICAgICAgICAgPEh5cGVybGlua0J1dHRvbiB4Ok5hbWU9Ik9mZmxpbmVMaW5rIiBDbGljaz0iT25Db3B5T2ZmbGluZUNsaWNrIiBQYWRkaW5nPSIyLDAsMiwwIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUb29sVGlwU2VydmljZS5Ub29sVGlwPSLngrnlh7vlpI3liLbmiYDmnInpgJrorq/jgJDlvILluLjjgJHnmoRJUOWcsOWdgCIgLz4KICAgICAgICAgICAgPC9TdGFja1BhbmVsPgogICAgICAgICAgICA8U3RhY2tQYW5lbCBPcmllbnRhdGlvbj0iSG9yaXpvbnRhbCIgU3BhY2luZz0iNiI+CiAgICAgICAgICAgICAgICA8Qm9yZGVyIHg6TmFtZT0iTGVnZW5kUGVuZGluZyIgU3R5bGU9IntTdGF0aWNSZXNvdXJjZSBMZWdlbmRTd2F0Y2hTdHlsZX0iIC8+CiAgICAgICAgICAgICAgICA8VGV4dEJsb2NrIHg6TmFtZT0iUGVuZGluZ1RleHQiIFN0eWxlPSJ7U3RhdGljUmVzb3VyY2UgU3RhdHVzVGV4dFN0eWxlfSIgVGV4dD0i5b6F5qOA5rWLIDI1NCIgLz4KICAgICAgICAgICAgPC9TdGFja1BhbmVsPgogICAgICAgICAgICA8VGV4dEJsb2NrIHg6TmFtZT0iU3VtbWFyeVRleHQiIFN0eWxlPSJ7U3RhdGljUmVzb3VyY2UgU3RhdHVzVGV4dFN0eWxlfSIgVGV4dD0i5bCa5pyq5omr5o+PIiAvPgogICAgICAgIDwvU3RhY2tQYW5lbD4KCiAgICAgICAgPCEtLSA9PT09PT09PT09PT09PT09PSBibG9ja3MgPT09PT09PT09PT09PT09PT0gLS0+CiAgICAgICAgPFNjcm9sbFZpZXdlciB4Ok5hbWU9IkJsb2NrU2Nyb2xsIiBHcmlkLlJvdz0iMiIgUGFkZGluZz0iNCIKICAgICAgICAgICAgICAgICAgICAgIFZlcnRpY2FsU2Nyb2xsQmFyVmlzaWJpbGl0eT0iQXV0byIgSG9yaXpvbnRhbFNjcm9sbEJhclZpc2liaWxpdHk9IkRpc2FibGVkIj4KICAgICAgICAgICAgPEl0ZW1zUmVwZWF0ZXIgeDpOYW1lPSJCbG9ja1JlcGVhdGVyIiBJdGVtc1NvdXJjZT0ie3g6QmluZCBCbG9ja3N9Ij4KICAgICAgICAgICAgICAgIDxJdGVtc1JlcGVhdGVyLkxheW91dD4KICAgICAgICAgICAgICAgICAgICA8VW5pZm9ybUdyaWRMYXlvdXQgTWluSXRlbVdpZHRoPSI1OCIgTWluSXRlbUhlaWdodD0iMzgiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE1pblJvd1NwYWNpbmc9IjIiIE1pbkNvbHVtblNwYWNpbmc9IjIiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEl0ZW1zU3RyZXRjaD0iTm9uZSIgLz4KICAgICAgICAgICAgICAgIDwvSXRlbXNSZXBlYXRlci5MYXlvdXQ+CiAgICAgICAgICAgICAgICA8SXRlbXNSZXBlYXRlci5JdGVtVGVtcGxhdGU+CiAgICAgICAgICAgICAgICAgICAgPERhdGFUZW1wbGF0ZSB4OkRhdGFUeXBlPSJ2bTpJcEJsb2NrIj4KICAgICAgICAgICAgICAgICAgICAgICAgPEJ1dHRvbiBTdHlsZT0ie1N0YXRpY1Jlc291cmNlIElwQmxvY2tCdXR0b25TdHlsZX0iCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQmFja2dyb3VuZD0ie3g6QmluZCBCYWNrZ3JvdW5kLCBNb2RlPU9uZVdheX0iCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgRm9yZWdyb3VuZD0ie3g6QmluZCBGb3JlZ3JvdW5kLCBNb2RlPU9uZVdheX0iCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQ29udGVudD0ie3g6QmluZCBMYWJlbH0iCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgVG9vbFRpcFNlcnZpY2UuVG9vbFRpcD0ie3g6QmluZCBUb29sdGlwLCBNb2RlPU9uZVdheX0iCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgVGFwcGVkPSJPbkJsb2NrVGFwcGVkIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIERvdWJsZVRhcHBlZD0iT25CbG9ja0RvdWJsZVRhcHBlZCIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBSaWdodFRhcHBlZD0iT25CbG9ja1JpZ2h0VGFwcGVkIiAvPgogICAgICAgICAgICAgICAgICAgIDwvRGF0YVRlbXBsYXRlPgogICAgICAgICAgICAgICAgPC9JdGVtc1JlcGVhdGVyLkl0ZW1UZW1wbGF0ZT4KICAgICAgICAgICAgPC9JdGVtc1JlcGVhdGVyPgogICAgICAgIDwvU2Nyb2xsVmlld2VyPgoKICAgICAgICA8IS0tID09PT09PT09PT09PT09PT09IGxpc3QgdmlldyA9PT09PT09PT09PT09PT09PSAtLT4KICAgICAgICA8TGlzdFZpZXcgeDpOYW1lPSJSZXN1bHRMaXN0IiBHcmlkLlJvdz0iMiIgVmlzaWJpbGl0eT0iQ29sbGFwc2VkIgogICAgICAgICAgICAgICAgICBTZWxlY3Rpb25Nb2RlPSJTaW5nbGUiIElzSXRlbUNsaWNrRW5hYmxlZD0iVHJ1ZSIKICAgICAgICAgICAgICAgICAgSXRlbUNsaWNrPSJPbkxpc3RJdGVtQ2xpY2siPgogICAgICAgICAgICA8TGlzdFZpZXcuSGVhZGVyVGVtcGxhdGU+CiAgICAgICAgICAgICAgICA8RGF0YVRlbXBsYXRlPgogICAgICAgICAgICAgICAgICAgIDxHcmlkIFBhZGRpbmc9IjEyLDYiIENvbHVtblNwYWNpbmc9IjEyIj4KICAgICAgICAgICAgICAgICAgICAgICAgPEdyaWQuQ29sdW1uRGVmaW5pdGlvbnM+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Q29sdW1uRGVmaW5pdGlvbiBXaWR0aD0iMTQwIiAvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPENvbHVtbkRlZmluaXRpb24gV2lkdGg9IjgwIiAvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPENvbHVtbkRlZmluaXRpb24gV2lkdGg9IjIwMCIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxDb2x1bW5EZWZpbml0aW9uIFdpZHRoPSIxNzAiIC8+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Q29sdW1uRGVmaW5pdGlvbiBXaWR0aD0iKiIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgPC9HcmlkLkNvbHVtbkRlZmluaXRpb25zPgogICAgICAgICAgICAgICAgICAgICAgICA8VGV4dEJsb2NrIEdyaWQuQ29sdW1uPSIwIiBUZXh0PSJJUCIgRm9udFdlaWdodD0iU2VtaUJvbGQiIC8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxUZXh0QmxvY2sgR3JpZC5Db2x1bW49IjEiIFRleHQ9IueKtuaAgSIgRm9udFdlaWdodD0iU2VtaUJvbGQiIC8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxUZXh0QmxvY2sgR3JpZC5Db2x1bW49IjIiIFRleHQ9IuS4u+acuuWQjSIgRm9udFdlaWdodD0iU2VtaUJvbGQiIC8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxUZXh0QmxvY2sgR3JpZC5Db2x1bW49IjMiIFRleHQ9Ik1BQyIgRm9udFdlaWdodD0iU2VtaUJvbGQiIC8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxUZXh0QmxvY2sgR3JpZC5Db2x1bW49IjQiIFRleHQ9IuWkh+azqCIgRm9udFdlaWdodD0iU2VtaUJvbGQiIC8+CiAgICAgICAgICAgICAgICAgICAgPC9HcmlkPgogICAgICAgICAgICAgICAgPC9EYXRhVGVtcGxhdGU+CiAgICAgICAgICAgIDwvTGlzdFZpZXcuSGVhZGVyVGVtcGxhdGU+CiAgICAgICAgICAgIDxMaXN0Vmlldy5JdGVtVGVtcGxhdGU+CiAgICAgICAgICAgICAgICA8RGF0YVRlbXBsYXRlIHg6RGF0YVR5cGU9InZtOklwQmxvY2siPgogICAgICAgICAgICAgICAgICAgIDxHcmlkIFBhZGRpbmc9IjEyLDQiIENvbHVtblNwYWNpbmc9IjEyIj4KICAgICAgICAgICAgICAgICAgICAgICAgPEdyaWQuQ29sdW1uRGVmaW5pdGlvbnM+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Q29sdW1uRGVmaW5pdGlvbiBXaWR0aD0iMTQwIiAvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPENvbHVtbkRlZmluaXRpb24gV2lkdGg9IjgwIiAvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPENvbHVtbkRlZmluaXRpb24gV2lkdGg9IjIwMCIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxDb2x1bW5EZWZpbml0aW9uIFdpZHRoPSIxNzAiIC8+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Q29sdW1uRGVmaW5pdGlvbiBXaWR0aD0iKiIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgPC9HcmlkLkNvbHVtbkRlZmluaXRpb25zPgogICAgICAgICAgICAgICAgICAgICAgICA8VGV4dEJsb2NrIEdyaWQuQ29sdW1uPSIwIiBUZXh0PSJ7eDpCaW5kIElwfSIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgPFRleHRCbG9jayBHcmlkLkNvbHVtbj0iMSIgVGV4dD0ie3g6QmluZCBTdGF0dXNUZXh0LCBNb2RlPU9uZVdheX0iIC8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxUZXh0QmxvY2sgR3JpZC5Db2x1bW49IjIiIFRleHQ9Int4OkJpbmQgSG9zdE5hbWUsIE1vZGU9T25lV2F5fSIgVGV4dFRyaW1taW5nPSJDaGFyYWN0ZXJFbGxpcHNpcyIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgPFRleHRCbG9jayBHcmlkLkNvbHVtbj0iMyIgVGV4dD0ie3g6QmluZCBNYWMsIE1vZGU9T25lV2F5fSIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgPFRleHRCbG9jayBHcmlkLkNvbHVtbj0iNCIgVGV4dD0ie3g6QmluZCBNZW1vLCBNb2RlPU9uZVdheX0iIFRleHRUcmltbWluZz0iQ2hhcmFjdGVyRWxsaXBzaXMiIC8+CiAgICAgICAgICAgICAgICAgICAgPC9HcmlkPgogICAgICAgICAgICAgICAgPC9EYXRhVGVtcGxhdGU+CiAgICAgICAgICAgIDwvTGlzdFZpZXcuSXRlbVRlbXBsYXRlPgogICAgICAgIDwvTGlzdFZpZXc+CiAgICA8L0dyaWQ+CjwvUGFnZT4K
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="IPScaner.WinUI.Views.ScanPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    xmlns:vm="using:IPScaner.WinUI.ViewModels"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    NavigationCacheMode="Required">
+
+    <Grid Padding="16,12,16,12" RowSpacing="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- ================= toolbar ================= -->
+        <Border Grid.Row="0" Style="{StaticResource CardStyle}">
+            <StackPanel Spacing="8">
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <TextBlock Text="IP段" Style="{StaticResource FieldLabelStyle}" />
+                    <TextBox x:Name="SegmentBox" Width="140" PlaceholderText="192.168.1"
+                             ToolTipService.ToolTip="输入前三段，例如 192.168.1" />
+                    <ComboBox x:Name="AdapterCombo" Width="210" PlaceholderText="选择网卡 / 网段"
+                              ToolTipService.ToolTip="从本机网卡快速填入网段"
+                              SelectionChanged="OnAdapterSelected" />
+                    <Button x:Name="StartButton" Content="开始" Click="OnStartClick"
+                            Style="{StaticResource AccentButtonStyle}" MinWidth="76" />
+                    <Button x:Name="StopButton" Content="停止" Click="OnStopClick" MinWidth="76" IsEnabled="False" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <ToggleButton x:Name="HostNameToggle" Content="主机名查询"
+                                  ToolTipService.ToolTip="开启后显示计算机名称与MAC，会明显降低扫描速度"
+                                  Click="OnHostNameToggled" />
+                    <ToggleButton x:Name="ListViewToggle" Content="列表视图"
+                                  ToolTipService.ToolTip="在色块视图与列表视图之间切换"
+                                  Click="OnListViewToggled" />
+                    <Button Content="清空缓存" Click="OnClearCachesClick"
+                            ToolTipService.ToolTip="清除已缓存的主机名与MAC地址" />
+                    <Button Content="导出结果" Click="OnExportClick"
+                            ToolTipService.ToolTip="导出为 CSV / Excel" />
+                    <Button Content="复制全部正常" Click="OnCopyOnlineClick" />
+                    <Button Content="备注管理" Click="OnOpenMemoClick" />
+                    <TextBlock x:Name="ProgressText" Style="{StaticResource HintTextStyle}"
+                               VerticalAlignment="Center" Margin="8,0,0,0"
+                               TextTrimming="CharacterEllipsis" />
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        <!-- ================= legend ================= -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="18">
+            <StackPanel Orientation="Horizontal" Spacing="6">
+                <Border x:Name="LegendOnline" Style="{StaticResource LegendSwatchStyle}" />
+                <HyperlinkButton x:Name="OnlineLink" Click="OnCopyOnlineClick" Padding="2,0,2,0"
+                                 ToolTipService.ToolTip="点击复制所有通讯【正常】的IP地址" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Spacing="6">
+                <Border x:Name="LegendOffline" Style="{StaticResource LegendSwatchStyle}" />
+                <HyperlinkButton x:Name="OfflineLink" Click="OnCopyOfflineClick" Padding="2,0,2,0"
+                                 ToolTipService.ToolTip="点击复制所有通讯【异常】的IP地址" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Spacing="6">
+                <Border x:Name="LegendPending" Style="{StaticResource LegendSwatchStyle}" />
+                <TextBlock x:Name="PendingText" Style="{StaticResource StatusTextStyle}" Text="待检测 254" />
+            </StackPanel>
+            <TextBlock x:Name="SummaryText" Style="{StaticResource StatusTextStyle}" Text="尚未扫描" />
+        </StackPanel>
+
+        <!-- ================= blocks ================= -->
+        <ScrollViewer x:Name="BlockScroll" Grid.Row="2" Padding="4"
+                      VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            <ItemsRepeater x:Name="BlockRepeater" ItemsSource="{x:Bind Blocks}">
+                <ItemsRepeater.Layout>
+                    <UniformGridLayout MinItemWidth="58" MinItemHeight="38"
+                                       MinRowSpacing="2" MinColumnSpacing="2"
+                                       ItemsStretch="None" />
+                </ItemsRepeater.Layout>
+                <ItemsRepeater.ItemTemplate>
+                    <DataTemplate x:DataType="vm:IpBlock">
+                        <Button Style="{StaticResource IpBlockButtonStyle}"
+                                Background="{x:Bind Background, Mode=OneWay}"
+                                Foreground="{x:Bind Foreground, Mode=OneWay}"
+                                Content="{x:Bind Label}"
+                                ToolTipService.ToolTip="{x:Bind Tooltip, Mode=OneWay}"
+                                Tapped="OnBlockTapped"
+                                DoubleTapped="OnBlockDoubleTapped"
+                                RightTapped="OnBlockRightTapped" />
+                    </DataTemplate>
+                </ItemsRepeater.ItemTemplate>
+            </ItemsRepeater>
+        </ScrollViewer>
+
+        <!-- ================= list view ================= -->
+        <ListView x:Name="ResultList" Grid.Row="2" Visibility="Collapsed"
+                  SelectionMode="Single" IsItemClickEnabled="True"
+                  ItemClick="OnListItemClick">
+            <ListView.HeaderTemplate>
+                <DataTemplate>
+                    <Grid Padding="12,6" ColumnSpacing="12">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="140" />
+                            <ColumnDefinition Width="80" />
+                            <ColumnDefinition Width="200" />
+                            <ColumnDefinition Width="170" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="IP" FontWeight="SemiBold" />
+                        <TextBlock Grid.Column="1" Text="状态" FontWeight="SemiBold" />
+                        <TextBlock Grid.Column="2" Text="主机名" FontWeight="SemiBold" />
+                        <TextBlock Grid.Column="3" Text="MAC" FontWeight="SemiBold" />
+                        <TextBlock Grid.Column="4" Text="备注" FontWeight="SemiBold" />
+                    </Grid>
+                </DataTemplate>
+            </ListView.HeaderTemplate>
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="vm:IpBlock">
+                    <Grid Padding="12,4" ColumnSpacing="12">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="140" />
+                            <ColumnDefinition Width="80" />
+                            <ColumnDefinition Width="200" />
+                            <ColumnDefinition Width="170" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="{x:Bind Ip}" />
+                        <TextBlock Grid.Column="1" Text="{x:Bind StatusText, Mode=OneWay}" />
+                        <TextBlock Grid.Column="2" Text="{x:Bind HostName, Mode=OneWay}" TextTrimming="CharacterEllipsis" />
+                        <TextBlock Grid.Column="3" Text="{x:Bind Mac, Mode=OneWay}" />
+                        <TextBlock Grid.Column="4" Text="{x:Bind Memo, Mode=OneWay}" TextTrimming="CharacterEllipsis" />
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Page>

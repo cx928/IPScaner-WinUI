@@ -1,1 +1,375 @@
-dXNpbmcgSVBTY2FuZXIuQ29yZS5FeHBvcnQ7CnVzaW5nIElQU2NhbmVyLkNvcmUuTG9nZ2luZzsKdXNpbmcgSVBTY2FuZXIuQ29yZS5Nb2RlbHM7CnVzaW5nIElQU2NhbmVyLldpblVJLlNlcnZpY2VzOwp1c2luZyBNaWNyb3NvZnQuVUk7CnVzaW5nIE1pY3Jvc29mdC5VSS5YYW1sOwp1c2luZyBNaWNyb3NvZnQuVUkuWGFtbC5Db250cm9sczsKdXNpbmcgTWljcm9zb2Z0LlVJLlhhbWwuSW5wdXQ7CnVzaW5nIE1pY3Jvc29mdC5VSS5YYW1sLk1lZGlhOwp1c2luZyBXaW5kb3dzLlVJOwoKbmFtZXNwYWNlIElQU2NhbmVyLldpblVJLlZpZXdzOwoKLy8vIDxzdW1tYXJ5PgovLy8gV2lGaeWvhueggeafpeeciyDigJQgdGhlIHBhZ2UgZm9ybSBvZiB0aGUgb3JpZ2luYWwgPGM+Rm9ybVdpRmlWaWV3ZXI8L2M+Ci8vLyAodGl0bGUgV2lGaeWvhueggeafpeeci+WZqCkuCi8vLyA8L3N1bW1hcnk+Ci8vLyA8cmVtYXJrcz4KLy8vIDxwYXJhPgovLy8gQWxsIGRhdGEgY29tZXMgZnJvbSA8c2VlIGNyZWY9IklQc2NhbmVyLkNvcmUuTmV0LldpZmlTZXJ2aWNlLlF1ZXJ5QXN5bmMiLz4sIHdoaWNoCi8vLyBhbHJlYWR5IGZpeGVkIHRoZSBvcmlnaW5hbCdzIHdvcnN0IGRlZmVjdDogPGM+Rm9ybVdpRmlWaWV3ZXI8L2M+IG1hdGNoZWQgdGhlCi8vLyA8ZW0+bG9jYWxpc2VkPC9lbT4gY29uc29sZSBtYXJrZXJzIDxjPuaJgOacieeUqOaIt+mFjee9ruaWh+S7tjwvYz4gLyA8Yz7lhbPplK7lhoXlrrk8L2M+LCBzbyBvbiBhbgovLy8gRW5nbGlzaCBXaW5kb3dzIGl0IHNpbGVudGx5IGxpc3RlZCBub3RoaW5nLiBUaGlzIHBhZ2UgdGhlcmVmb3JlIGNvbnRhaW5zIG5vIG1hcmtlcgovLy8gc3RyaW5ncywgbm8gY29kZS1wYWdlIGd1ZXNzaW5nIGFuZCBubyBsb2NhbGUtZGVwZW5kZW50IHBhcnNpbmcgb2YgaXRzIG93biDigJQgaXQgb25seQovLy8gY29uc3VtZXMgPHNlZSBjcmVmPSJXaWZpUHJvZmlsZSIvPiBmaWVsZHMuCi8vLyA8L3BhcmE+Ci8vLyA8cGFyYT4KLy8vIEltcHJvdmVtZW50IG92ZXIgdGhlIG9yaWdpbmFsOiBwYXNzd29yZHMgYXJlIG1hc2tlZCBieSBkZWZhdWx0IGFuZCByZXZlYWxlZCB3aXRoIHRoZQovLy8g5pi+56S65a+G56CBIHRvZ2dsZSAodGhlIFdpbkZvcm1zIGdyaWQgYWx3YXlzIHNob3dlZCB0aGUgY2xlYXJ0ZXh0IGtleSkuIEV4cG9ydCBhbmQKLy8vIOWkjeWItuWvhueggSBhbHdheXMgdXNlIHRoZSByZWFsIGtleS4KLy8vIDwvcGFyYT4KLy8vIDwvcmVtYXJrcz4KcHVibGljIHNlYWxlZCBwYXJ0aWFsIGNsYXNzIFdpZmlQYWdlIDogUGFnZQp7CiAgICAvLy8gPHN1bW1hcnk+VGhlIG9yaWdpbmFsIHdpbmRvdyB0aXRsZSwgdXNlZCBhcyBldmVyeSBtZXNzYWdlLWJveCBjYXB0aW9uLjwvc3VtbWFyeT4KICAgIHByaXZhdGUgY29uc3Qgc3RyaW5nIERpYWxvZ1RpdGxlID0gIldpRmnlr4bnoIHmn6XnnIvlmagiOwoKICAgIC8vLyA8c3VtbWFyeT5GaXhlZC13aWR0aCBtYXNrLCBzbyB0aGUgdG9nZ2xlIGRvZXMgbm90IGxlYWsgdGhlIHBhc3N3b3JkIGxlbmd0aC48L3N1bW1hcnk+CiAgICBwcml2YXRlIGNvbnN0IHN0cmluZyBNYXNrZWRQYXNzd29yZCA9ICLil4/il4/il4/il4/il4/il4/il4/il48iOwoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBUaGUgZ3JpZCBjb2x1bW5zIOKAlCB0aGUgc2luZ2xlIHNvdXJjZSBvZiB0cnV0aCBmb3IgdGhlIGNhcHRpb24gcm93IGFuZCBldmVyeSBkYXRhCiAgICAvLy8gcm93LCBzbyB0aGUgdHdvIGNhbiBuZXZlciBkcmlmdCBhcGFydC4gU3RhciB3aWR0aHMga2VlcCB0aGUgdGFibGUgaW5zaWRlIHRoZSBzaGVsbAogICAgLy8vIHdpbmRvdyAoMTE4MHg4MjAgcGh5c2ljYWwgcGl4ZWxzIOKJiCA3ODd4NTQ3IHVuaXRzIGF0IDE1MCUgRFBJLCBpLmUuIG9ubHkgfjQ4MAogICAgLy8vIHVzYWJsZSB1bml0cyBwZXIgY2FyZCkgd2hpbGUgc3RpbGwgZ3Jvd2luZyB3aGVuIHRoZSB3aW5kb3cgaXMgbWF4aW1pemVkLgogICAgLy8vIDwvc3VtbWFyeT4KICAgIHByaXZhdGUgc3RhdGljIHJlYWRvbmx5IChzdHJpbmcgSGVhZGVyLCBHcmlkTGVuZ3RoIFdpZHRoKVtdIENvbHVtbnMgPQogICAgWwogICAgICAgICgi5bqP5Y+3IiwgbmV3IEdyaWRMZW5ndGgoNDApKSwKICAgICAgICAoIldpRmnlkI3np7AiLCBuZXcgR3JpZExlbmd0aCgxLjUsIEdyaWRVbml0VHlwZS5TdGFyKSksCiAgICAgICAgKCLlr4bnoIEiLCBuZXcgR3JpZExlbmd0aCgxLjUsIEdyaWRVbml0VHlwZS5TdGFyKSksCiAgICAgICAgKCLorqTor4HmlrnlvI8iLCBuZXcgR3JpZExlbmd0aCgxLjQsIEdyaWRVbml0VHlwZS5TdGFyKSksCiAgICAgICAgKCLliqDlr4bmlrnlvI8iLCBuZXcgR3JpZExlbmd0aCgwLjksIEdyaWRVbml0VHlwZS5TdGFyKSksCiAgICBdOwoKICAgIC8vIEluc3RhbmNlIGZpZWxkczogYSBCcnVzaCBpcyBhIERlcGVuZGVuY3lPYmplY3Qgd2l0aCBVSS10aHJlYWQgYWZmaW5pdHkuCiAgICBwcml2YXRlIHJlYWRvbmx5IEJydXNoIF9yb3dCYWNrZ3JvdW5kID0gbmV3IFNvbGlkQ29sb3JCcnVzaChDb2xvcnMuVHJhbnNwYXJlbnQpOwogICAgcHJpdmF0ZSByZWFkb25seSBCcnVzaCBfc2VsZWN0ZWRSb3dCYWNrZ3JvdW5kID0gbmV3IFNvbGlkQ29sb3JCcnVzaChDb2xvci5Gcm9tQXJnYigweDM4LCAweDAwLCAweDc4LCAweEQ0KSk7CgogICAgcHJpdmF0ZSBMaXN0PFdpZmlQcm9maWxlPiBfcHJvZmlsZXMgPSBbXTsKICAgIHByaXZhdGUgQ2FuY2VsbGF0aW9uVG9rZW5Tb3VyY2U/IF9jdHM7CiAgICBwcml2YXRlIEJvcmRlcj8gX3NlbGVjdGVkUm93OwogICAgcHJpdmF0ZSBXaWZpUHJvZmlsZT8gX3NlbGVjdGVkOwogICAgcHJpdmF0ZSBib29sIF9sb2FkaW5nOwogICAgcHJpdmF0ZSBib29sIF9zaG93UGFzc3dvcmRzOwoKICAgIHB1YmxpYyBXaWZpUGFnZSgpCiAgICB7CiAgICAgICAgSW5pdGlhbGl6ZUNvbXBvbmVudCgpOwogICAgICAgIEJ1aWxkSGVhZGVyKCk7CgogICAgICAgIExvYWRlZCArPSBPblBhZ2VMb2FkZWQ7CiAgICAgICAgVW5sb2FkZWQgKz0gKF8sIF8pID0+IENhbmNlbFBlbmRpbmdXb3JrKCk7CiAgICB9CgogICAgLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CiAgICAvLyBsb2FkCiAgICAvLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCiAgICBwcml2YXRlIHZvaWQgT25QYWdlTG9hZGVkKG9iamVjdCBzZW5kZXIsIFJvdXRlZEV2ZW50QXJncyBlKSA9PiBfID0gTG9hZFByb2ZpbGVzQXN5bmMoKTsKCiAgICBwcml2YXRlIHZvaWQgQ2FuY2VsUGVuZGluZ1dvcmsoKQogICAgewogICAgICAgIHRyeSB7IF9jdHM/LkNhbmNlbCgpOyB9CiAgICAgICAgY2F0Y2ggeyAvKiBhbHJlYWR5IGdvbmUgKi8gfQogICAgfQoKICAgIHByaXZhdGUgYXN5bmMgdm9pZCBPblJlZnJlc2hDbGljayhvYmplY3Qgc2VuZGVyLCBSb3V0ZWRFdmVudEFyZ3MgZSkgPT4gYXdhaXQgTG9hZFByb2ZpbGVzQXN5bmMoKTsKCiAgICBwcml2YXRlIGFzeW5jIFRhc2sgTG9hZFByb2ZpbGVzQXN5bmMoKQogICAgewogICAgICAgIGlmIChfbG9hZGluZykgcmV0dXJuOwoKICAgICAgICBfbG9hZGluZyA9IHRydWU7CiAgICAgICAgUmVmcmVzaEJ1dHRvbi5Jc0VuYWJsZWQgPSBmYWxzZTsKICAgICAgICBFeHBvcnRCdXR0b24uSXNFbmFibGVkID0gZmFsc2U7CiAgICAgICAgQnVzeVJpbmcuSXNBY3RpdmUgPSB0cnVlOwogICAgICAgIEVtcHR5QmFyLklzT3BlbiA9IGZhbHNlOwogICAgICAgIFN0YXR1c1RleHQuVGV4dCA9ICLmraPlnKjor7vlj5ZXaUZp6YWN572uLi4uIjsgLy8gdGhlIG9yaWdpbmFsJ3Mgc3RhdHVzVGlwCgogICAgICAgIHZhciBjdHMgPSBuZXcgQ2FuY2VsbGF0aW9uVG9rZW5Tb3VyY2UoKTsKICAgICAgICBfY3RzID0gY3RzOwoKICAgICAgICB0cnkKICAgICAgICB7CiAgICAgICAgICAgIF9wcm9maWxlcyA9IGF3YWl0IEFwcFNlcnZpY2VzLkN1cnJlbnQuV2lmaS5RdWVyeUFzeW5jKGN0cy5Ub2tlbik7CiAgICAgICAgfQogICAgICAgIGNhdGNoIChPcGVyYXRpb25DYW5jZWxlZEV4Y2VwdGlvbikKICAgICAgICB7CiAgICAgICAgICAgIFN0YXR1c1RleHQuVGV4dCA9ICLlt7Llj5bmtojor7vlj5ZXaUZp6YWN572uIjsKICAgICAgICAgICAgcmV0dXJuOwogICAgICAgIH0KICAgICAgICBjYXRjaCAoRXhjZXB0aW9uIGV4KQogICAgICAgIHsKICAgICAgICAgICAgQXBwTG9nLkluc3RhbmNlLkxvZyhuYW1lb2YoV2lmaVBhZ2UpLCAi6K+75Y+WV2lGaeWvhueggeWksei0pTogIiArIGV4Lk1lc3NhZ2UpOwogICAgICAgICAgICBfcHJvZmlsZXMgPSBbXTsKICAgICAgICAgICAgU3RhdHVzVGV4dC5UZXh0ID0gIuivu+WPlldpRmnkv53lrZjlr4bnoIHlpLHotKXvvJoiICsgZXguTWVzc2FnZTsKICAgICAgICB9CiAgICAgICAgZmluYWxseQogICAgICAgIHsKICAgICAgICAgICAgaWYgKFJlZmVyZW5jZUVxdWFscyhfY3RzLCBjdHMpKSBfY3RzID0gbnVsbDsKICAgICAgICAgICAgY3RzLkRpc3Bvc2UoKTsKICAgICAgICAgICAgX2xvYWRpbmcgPSBmYWxzZTsKICAgICAgICAgICAgQnVzeVJpbmcuSXNBY3RpdmUgPSBmYWxzZTsKICAgICAgICAgICAgUmVmcmVzaEJ1dHRvbi5Jc0VuYWJsZWQgPSB0cnVlOwogICAgICAgICAgICBFeHBvcnRCdXR0b24uSXNFbmFibGVkID0gdHJ1ZTsKICAgICAgICB9CgogICAgICAgIFJlYnVpbGRSb3dzKCk7CgogICAgICAgIGlmIChfcHJvZmlsZXMuQ291bnQgPT0gMCkKICAgICAgICB7CiAgICAgICAgICAgIC8vIE5ldmVyIGxlYXZlIGEgYmxhbmsgZ3JpZDogc2F5IHdoYXQgdG8gY2hlY2sgaW5zdGVhZC4KICAgICAgICAgICAgRW1wdHlCYXIuSXNPcGVuID0gdHJ1ZTsKICAgICAgICAgICAgU3RhdHVzVGV4dC5UZXh0ID0gIuivu+WPlldpRmnkv53lrZjlr4bnoIHlpLHotKXvvIzmsqHmnInlj6/mmL7npLrnmoTphY3nva4iOwogICAgICAgIH0KICAgICAgICBlbHNlCiAgICAgICAgewogICAgICAgICAgICBFbXB0eUJhci5Jc09wZW4gPSBmYWxzZTsKICAgICAgICAgICAgU3RhdHVzVGV4dC5UZXh0ID0gIldpRmnkv53lrZjlr4bnoIHliqDovb3lrozmr5UiOyAvLyB0aGUgb3JpZ2luYWwncyBjb21wbGV0aW9uIHN0YXR1c1RpcAogICAgICAgIH0KICAgIH0KCiAgICAvLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KICAgIC8vIGdyaWQKICAgIC8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKICAgIHByaXZhdGUgdm9pZCBCdWlsZEhlYWRlcigpCiAgICB7CiAgICAgICAgSGVhZGVyR3JpZC5Db2x1bW5EZWZpbml0aW9ucy5DbGVhcigpOwogICAgICAgIEhlYWRlckdyaWQuQ2hpbGRyZW4uQ2xlYXIoKTsKCiAgICAgICAgZm9yICh2YXIgaSA9IDA7IGkgPCBDb2x1bW5zLkxlbmd0aDsgaSsrKQogICAgICAgIHsKICAgICAgICAgICAgSGVhZGVyR3JpZC5Db2x1bW5EZWZpbml0aW9ucy5BZGQobmV3IENvbHVtbkRlZmluaXRpb24geyBXaWR0aCA9IENvbHVtbnNbaV0uV2lkdGggfSk7CiAgICAgICAgICAgIHZhciBjYXB0aW9uID0gbmV3IFRleHRCbG9jawogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICBUZXh0ID0gQ29sdW1uc1tpXS5IZWFkZXIsCiAgICAgICAgICAgICAgICBGb250V2VpZ2h0ID0gTWljcm9zb2Z0LlVJLlRleHQuRm9udFdlaWdodHMuU2VtaUJvbGQsCiAgICAgICAgICAgICAgICBPcGFjaXR5ID0gMC43NSwKICAgICAgICAgICAgICAgIFZlcnRpY2FsQWxpZ25tZW50ID0gVmVydGljYWxBbGlnbm1lbnQuQ2VudGVyLAogICAgICAgICAgICAgICAgTWFyZ2luID0gbmV3IFRoaWNrbmVzcygxMiwgMCwgMCwgMCksCiAgICAgICAgICAgIH07CiAgICAgICAgICAgIEdyaWQuU2V0Q29sdW1uKGNhcHRpb24sIGkpOwogICAgICAgICAgICBIZWFkZXJHcmlkLkNoaWxkcmVuLkFkZChjYXB0aW9uKTsKICAgICAgICB9CiAgICB9CgogICAgLy8vIDxzdW1tYXJ5PlJlYnVpbGRzIGV2ZXJ5IHJvdywga2VlcGluZyB0aGUgc2VsZWN0aW9uIHdoZW4gdGhlIHNhbWUgaXRlbSBpcyBzdGlsbCBsaXN0ZWQuPC9zdW1tYXJ5PgogICAgcHJpdmF0ZSB2b2lkIFJlYnVpbGRSb3dzKCkKICAgIHsKICAgICAgICB2YXIgcHJldmlvdXMgPSBfc2VsZWN0ZWQ7CgogICAgICAgIFJvd3NQYW5lbC5DaGlsZHJlbi5DbGVhcigpOwogICAgICAgIF9zZWxlY3RlZFJvdyA9IG51bGw7CiAgICAgICAgX3NlbGVjdGVkID0gbnVsbDsKCiAgICAgICAgZm9yICh2YXIgaSA9IDA7IGkgPCBfcHJvZmlsZXMuQ291bnQ7IGkrKykKICAgICAgICB7CiAgICAgICAgICAgIHZhciBwcm9maWxlID0gX3Byb2ZpbGVzW2ldOwogICAgICAgICAgICB2YXIgcm93ID0gQnVpbGRSb3coaSArIDEsIHByb2ZpbGUpOwogICAgICAgICAgICBSb3dzUGFuZWwuQ2hpbGRyZW4uQWRkKHJvdyk7CiAgICAgICAgICAgIGlmIChSZWZlcmVuY2VFcXVhbHMocHJvZmlsZSwgcHJldmlvdXMpKSBTZWxlY3RSb3cocm93LCBwcm9maWxlKTsKICAgICAgICB9CgogICAgICAgIFN1bW1hcnlUZXh0LlRleHQgPSAkIuWFsSB7X3Byb2ZpbGVzLkNvdW50fSDkuKrlt7Lkv53lrZjnmoQgV2lGaSI7CiAgICAgICAgQ29weUJ1dHRvbi5Jc0VuYWJsZWQgPSBfcHJvZmlsZXMuQ291bnQgPiAwOwogICAgfQoKICAgIHByaXZhdGUgQm9yZGVyIEJ1aWxkUm93KGludCBpbmRleCwgV2lmaVByb2ZpbGUgcHJvZmlsZSkKICAgIHsKICAgICAgICB2YXIgZ3JpZCA9IG5ldyBHcmlkIHsgQ29sdW1uU3BhY2luZyA9IDgsIFBhZGRpbmcgPSBuZXcgVGhpY2tuZXNzKDEyLCA2LCAxMiwgNikgfTsKICAgICAgICBmb3JlYWNoICh2YXIgY29sdW1uIGluIENvbHVtbnMpIGdyaWQuQ29sdW1uRGVmaW5pdGlvbnMuQWRkKG5ldyBDb2x1bW5EZWZpbml0aW9uIHsgV2lkdGggPSBjb2x1bW4uV2lkdGggfSk7CgogICAgICAgIEFkZENlbGwoZ3JpZCwgMCwgaW5kZXguVG9TdHJpbmcoKSwgc2Vjb25kYXJ5OiB0cnVlKTsKICAgICAgICBBZGRDZWxsKGdyaWQsIDEsIHByb2ZpbGUuU3NpZCk7CiAgICAgICAgQWRkQ2VsbChncmlkLCAyLCBQYXNzd29yZFRleHQocHJvZmlsZSkpOwogICAgICAgIEFkZENlbGwoZ3JpZCwgMywgT3JEYXNoKHByb2ZpbGUuQXV0aGVudGljYXRpb24pKTsKICAgICAgICBBZGRDZWxsKGdyaWQsIDQsIE9yRGFzaChwcm9maWxlLkVuY3J5cHRpb24pKTsKCiAgICAgICAgdmFyIHJvdyA9IG5ldyBCb3JkZXIKICAgICAgICB7CiAgICAgICAgICAgIENvcm5lclJhZGl1cyA9IG5ldyBDb3JuZXJSYWRpdXMoNCksCiAgICAgICAgICAgIEJhY2tncm91bmQgPSBfcm93QmFja2dyb3VuZCwKICAgICAgICAgICAgQ2hpbGQgPSBncmlkLAogICAgICAgICAgICBUYWcgPSBwcm9maWxlLAogICAgICAgIH07CgogICAgICAgIC8vIEEgbXVsdGktbGluZSB0b29sdGlwIGNhcnJpZXMgdGhlIHZhbHVlcyB0aGUgbmFycm93IGNvbHVtbnMgaGF2ZSB0byB0cmltLgogICAgICAgIHZhciBkZXRhaWxzID0gJCJ7cHJvZmlsZS5Tc2lkfVxu6K6k6K+BIHtPckRhc2gocHJvZmlsZS5BdXRoZW50aWNhdGlvbil9IMK3IOWKoOWvhiB7T3JEYXNoKHByb2ZpbGUuRW5jcnlwdGlvbil9IjsKICAgICAgICBUb29sVGlwU2VydmljZS5TZXRUb29sVGlwKHJvdywgbmV3IFRleHRCbG9jawogICAgICAgIHsKICAgICAgICAgICAgVGV4dCA9IHN0cmluZy5Jc051bGxPckVtcHR5KHByb2ZpbGUuUGFzc3dvcmQpCiAgICAgICAgICAgICAgICA/IGRldGFpbHMgKyAiXG7lvIDmlL7nvZHnu5zvvIzmsqHmnInkv53lrZjlr4bnoIEiCiAgICAgICAgICAgICAgICA6IGRldGFpbHMgKyAiXG7ljZXlh7vpgInkuK3vvIzlj4zlh7vlpI3liLblr4bnoIEiLAogICAgICAgICAgICBUZXh0V3JhcHBpbmcgPSBUZXh0V3JhcHBpbmcuV3JhcCwKICAgICAgICB9KTsKCiAgICAgICAgcm93LlRhcHBlZCArPSBPblJvd1RhcHBlZDsKICAgICAgICByb3cuRG91YmxlVGFwcGVkICs9IE9uUm93RG91YmxlVGFwcGVkOwogICAgICAgIHJldHVybiByb3c7CiAgICB9CgogICAgcHJpdmF0ZSBzdGF0aWMgdm9pZCBBZGRDZWxsKEdyaWQgZ3JpZCwgaW50IGNvbHVtbiwgc3RyaW5nIHRleHQsIGJvb2wgc2Vjb25kYXJ5ID0gZmFsc2UpCiAgICB7CiAgICAgICAgdmFyIGJsb2NrID0gbmV3IFRleHRCbG9jawogICAgICAgIHsKICAgICAgICAgICAgVGV4dCA9IHRleHQsCiAgICAgICAgICAgIFRleHRUcmltbWluZyA9IFRleHRUcmltbWluZy5DaGFyYWN0ZXJFbGxpcHNpcywKICAgICAgICAgICAgVmVydGljYWxBbGlnbm1lbnQgPSBWZXJ0aWNhbEFsaWdubWVudC5DZW50ZXIsCiAgICAgICAgfTsKICAgICAgICBpZiAoc2Vjb25kYXJ5KSBibG9jay5PcGFjaXR5ID0gMC43OwoKICAgICAgICBHcmlkLlNldENvbHVtbihibG9jaywgY29sdW1uKTsKICAgICAgICBncmlkLkNoaWxkcmVuLkFkZChibG9jayk7CiAgICB9CgogICAgcHJpdmF0ZSBzdHJpbmcgUGFzc3dvcmRUZXh0KFdpZmlQcm9maWxlIHByb2ZpbGUpCiAgICB7CiAgICAgICAgaWYgKHByb2ZpbGUuUGFzc3dvcmQuTGVuZ3RoID09IDApIHJldHVybiAi77yI5peg77yJIjsKICAgICAgICByZXR1cm4gX3Nob3dQYXNzd29yZHMgPyBwcm9maWxlLlBhc3N3b3JkIDogTWFza2VkUGFzc3dvcmQ7CiAgICB9CgogICAgcHJpdmF0ZSBzdGF0aWMgc3RyaW5nIE9yRGFzaChzdHJpbmcgdmFsdWUpID0+IHZhbHVlLkxlbmd0aCA+IDAgPyB2YWx1ZSA6ICLigJQiOwoKICAgIC8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQogICAgLy8gc2VsZWN0aW9uICsgY29weQogICAgLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CgogICAgcHJpdmF0ZSB2b2lkIE9uUm93VGFwcGVkKG9iamVjdCBzZW5kZXIsIFRhcHBlZFJvdXRlZEV2ZW50QXJncyBlKQogICAgewogICAgICAgIGlmIChzZW5kZXIgaXMgQm9yZGVyIHsgVGFnOiBXaWZpUHJvZmlsZSBwcm9maWxlIH0gcm93KSBTZWxlY3RSb3cocm93LCBwcm9maWxlKTsKICAgIH0KCiAgICBwcml2YXRlIHZvaWQgT25Sb3dEb3VibGVUYXBwZWQob2JqZWN0IHNlbmRlciwgRG91YmxlVGFwcGVkUm91dGVkRXZlbnRBcmdzIGUpCiAgICB7CiAgICAgICAgaWYgKHNlbmRlciBpcyBub3QgQm9yZGVyIHsgVGFnOiBXaWZpUHJvZmlsZSBwcm9maWxlIH0gcm93KSByZXR1cm47CiAgICAgICAgU2VsZWN0Um93KHJvdywgcHJvZmlsZSk7CiAgICAgICAgXyA9IENvcHlQYXNzd29yZEFzeW5jKHByb2ZpbGUpOwogICAgICAgIGUuSGFuZGxlZCA9IHRydWU7CiAgICB9CgogICAgcHJpdmF0ZSB2b2lkIFNlbGVjdFJvdyhCb3JkZXIgcm93LCBXaWZpUHJvZmlsZSBwcm9maWxlKQogICAgewogICAgICAgIGlmIChfc2VsZWN0ZWRSb3cgaXMgbm90IG51bGwpIF9zZWxlY3RlZFJvdy5CYWNrZ3JvdW5kID0gX3Jvd0JhY2tncm91bmQ7CiAgICAgICAgX3NlbGVjdGVkUm93ID0gcm93OwogICAgICAgIF9zZWxlY3RlZCA9IHByb2ZpbGU7CiAgICAgICAgcm93LkJhY2tncm91bmQgPSBfc2VsZWN0ZWRSb3dCYWNrZ3JvdW5kOwogICAgfQoKICAgIHByaXZhdGUgYXN5bmMgdm9pZCBPbkNvcHlQYXNzd29yZENsaWNrKG9iamVjdCBzZW5kZXIsIFJvdXRlZEV2ZW50QXJncyBlKQogICAgewogICAgICAgIC8vIFdpdGggYSBzaW5nbGUgc2F2ZWQgcHJvZmlsZSB0aGVyZSBpcyBub3RoaW5nIHRvIGRpc2FtYmlndWF0ZS4KICAgICAgICB2YXIgcHJvZmlsZSA9IF9zZWxlY3RlZCA/PyAoX3Byb2ZpbGVzLkNvdW50ID09IDEgPyBfcHJvZmlsZXNbMF0gOiBudWxsKTsKICAgICAgICBpZiAocHJvZmlsZSBpcyBudWxsKQogICAgICAgIHsKICAgICAgICAgICAgYXdhaXQgVWlLaXQuSW5mb0FzeW5jKFhhbWxSb290LCBEaWFsb2dUaXRsZSwgIuivt+WFiOmAieS4reS4gOihjO+8jOWGjeWkjeWItuWvhueggeOAgiIpOwogICAgICAgICAgICByZXR1cm47CiAgICAgICAgfQoKICAgICAgICBhd2FpdCBDb3B5UGFzc3dvcmRBc3luYyhwcm9maWxlKTsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+CiAgICAvLy8gQ29waWVzIHRoZSBjbGVhcnRleHQga2V5LiBMaWtlIHRoZSBvcmlnaW5hbCAod2hvc2UgRGF0YUdyaWRWaWV3IGhhZCBubyBjb3B5CiAgICAvLy8gaGFuZGxlciBvZiBpdHMgb3duKSwgdGhpcyBpcyBkZWxpYmVyYXRlbHkgc2lsZW50IOKAlCBubyBkaWFsb2csIHN0YXR1cyB0ZXh0IG9ubHkuCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgcHJpdmF0ZSBhc3luYyBUYXNrIENvcHlQYXNzd29yZEFzeW5jKFdpZmlQcm9maWxlIHByb2ZpbGUpCiAgICB7CiAgICAgICAgaWYgKHByb2ZpbGUuUGFzc3dvcmQuTGVuZ3RoID09IDApCiAgICAgICAgewogICAgICAgICAgICBhd2FpdCBVaUtpdC5JbmZvQXN5bmMoWGFtbFJvb3QsIERpYWxvZ1RpdGxlLCBwcm9maWxlLklzT3BlbgogICAgICAgICAgICAgICAgPyAkIuOAkHtwcm9maWxlLlNzaWR944CR5piv5byA5pS+572R57uc77yM5rKh5pyJ5L+d5a2Y5a+G56CB44CCIgogICAgICAgICAgICAgICAgOiAkIuOAkHtwcm9maWxlLlNzaWR944CR5rKh5pyJ6K+75Y+W5Yiw5L+d5a2Y55qE5a+G56CB44CCIik7CiAgICAgICAgICAgIHJldHVybjsKICAgICAgICB9CgogICAgICAgIFVpS2l0LkNvcHlUb0NsaXBib2FyZChwcm9maWxlLlBhc3N3b3JkKTsKICAgICAgICBTdGF0dXNUZXh0LlRleHQgPSAkIuW3suWkjeWItuOAkHtwcm9maWxlLlNzaWR944CR55qE5a+G56CBIjsKICAgIH0KCiAgICAvLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KICAgIC8vIHBhc3N3b3JkIHZpc2liaWxpdHkKICAgIC8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKICAgIHByaXZhdGUgdm9pZCBPblNob3dQYXNzd29yZFRvZ2dsZWQob2JqZWN0IHNlbmRlciwgUm91dGVkRXZlbnRBcmdzIGUpCiAgICB7CiAgICAgICAgX3Nob3dQYXNzd29yZHMgPSBTaG93UGFzc3dvcmRUb2dnbGUuSXNDaGVja2VkID09IHRydWU7CiAgICAgICAgU3RhdHVzVGV4dC5UZXh0ID0gX3Nob3dQYXNzd29yZHMgPyAi5bey5pi+56S65piO5paH5a+G56CBIiA6ICLlt7LpmpDol4/lr4bnoIEiOwogICAgICAgIGlmIChfcHJvZmlsZXMuQ291bnQgPiAwKSBSZWJ1aWxkUm93cygpOwogICAgfQoKICAgIC8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQogICAgLy8gZXhwb3J0CiAgICAvLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCiAgICBwcml2YXRlIGFzeW5jIHZvaWQgT25FeHBvcnRDbGljayhvYmplY3Qgc2VuZGVyLCBSb3V0ZWRFdmVudEFyZ3MgZSkKICAgIHsKICAgICAgICBpZiAoX3Byb2ZpbGVzLkNvdW50ID09IDApCiAgICAgICAgewogICAgICAgICAgICBhd2FpdCBVaUtpdC5JbmZvQXN5bmMoWGFtbFJvb3QsIERpYWxvZ1RpdGxlLCAi5b2T5YmN5rKh5pyJ5Y+v5a+85Ye655qEV2lGaeiusOW9leOAgiIpOwogICAgICAgICAgICByZXR1cm47CiAgICAgICAgfQoKICAgICAgICB0cnkKICAgICAgICB7CiAgICAgICAgICAgIHZhciBmb2xkZXIgPSBFeHBvcnRGb2xkZXIoKTsKICAgICAgICAgICAgRGlyZWN0b3J5LkNyZWF0ZURpcmVjdG9yeShmb2xkZXIpOwoKICAgICAgICAgICAgLy8gVGhlIG9yaWdpbmFsIHdyb3RlIGEgZml4ZWQgIldpRmnlr4bnoIEuY3N2IiB3aXRob3V0IHF1b3Rpbmc7IHRoaXMgcG9ydCBrZWVwcyB0aGUKICAgICAgICAgICAgLy8gV2lGaeWvhueggSBwcmVmaXggYnV0IHVzZXMgdGhlIHNoYXJlZCB0aW1lc3RhbXBlZCBDU1YveGxzeCBleHBvcnRlcnMuIEV4cG9ydGluZwogICAgICAgICAgICAvLyBhbHdheXMgd3JpdGVzIHRoZSByZWFsIGtleXMsIHdoYXRldmVyIHRoZSDmmL7npLrlr4bnoIEgdG9nZ2xlIHNheXMuCiAgICAgICAgICAgIHZhciBoZWFkZXJzID0gbmV3W10geyAiV2lGaeWQjeensCIsICLlr4bnoIEiLCAi6K6k6K+B5pa55byPIiwgIuWKoOWvhuaWueW8jyIgfTsKICAgICAgICAgICAgdmFyIHJvd3MgPSBfcHJvZmlsZXMKICAgICAgICAgICAgICAgIC5TZWxlY3QocCA9PiBuZXdbXSB7IHAuU3NpZCwgcC5QYXNzd29yZCwgcC5BdXRoZW50aWNhdGlvbiwgcC5FbmNyeXB0aW9uIH0pCiAgICAgICAgICAgICAgICAuVG9MaXN0KCk7CgogICAgICAgICAgICB2YXIgY3N2UGF0aCA9IFBhdGguQ29tYmluZShmb2xkZXIsIFRhYmxlRXhwb3J0ZXIuQnVpbGRGaWxlTmFtZSgiV2lGaeWvhueggSIsICIuY3N2IikpOwogICAgICAgICAgICBUYWJsZUV4cG9ydGVyLldyaXRlQ3N2KGNzdlBhdGgsIGhlYWRlcnMsIHJvd3MpOwoKICAgICAgICAgICAgdmFyIHhsc3hQYXRoID0gUGF0aC5Db21iaW5lKGZvbGRlciwgVGFibGVFeHBvcnRlci5CdWlsZEZpbGVOYW1lKCJXaUZp5a+G56CBIiwgIi54bHN4IikpOwogICAgICAgICAgICBUYWJsZUV4cG9ydGVyLldyaXRlWGxzeCh4bHN4UGF0aCwgIldpRmnlr4bnoIEiLCBoZWFkZXJzLCByb3dzKTsKCiAgICAgICAgICAgIFN0YXR1c1RleHQuVGV4dCA9ICQi5bey5a+85Ye6IHtyb3dzLkNvdW50fSDmnaHorrDlvZXvvJp7UGF0aC5HZXRGaWxlTmFtZShjc3ZQYXRoKX3jgIF7UGF0aC5HZXRGaWxlTmFtZSh4bHN4UGF0aCl9IjsKCiAgICAgICAgICAgIHZhciBvcGVuID0gYXdhaXQgVWlLaXQuQ29uZmlybUFzeW5jKFhhbWxSb290LCBEaWFsb2dUaXRsZSwKICAgICAgICAgICAgICAgICLlr4bnoIHlr7zlh7rmiJDlip/jgILmmK/lkKbopoHmiZPlvIBFeGNlbOaWh+aho++8nyIsICLmiZPlvIDmlofku7blpLkiLCAi5YWz6ZetIik7CiAgICAgICAgICAgIGlmIChvcGVuKSBBcHBTZXJ2aWNlcy5DdXJyZW50LlNoZWxsLk9wZW5Gb2xkZXIoZm9sZGVyKTsKICAgICAgICB9CiAgICAgICAgY2F0Y2ggKEV4Y2VwdGlvbiBleCkKICAgICAgICB7CiAgICAgICAgICAgIEFwcExvZy5JbnN0YW5jZS5Mb2cobmFtZW9mKFdpZmlQYWdlKSwgIuWvvOWHuldpRmnlr4bnoIHlpLHotKU6ICIgKyBleC5NZXNzYWdlKTsKICAgICAgICAgICAgYXdhaXQgVWlLaXQuSW5mb0FzeW5jKFhhbWxSb290LCAi5a+85Ye65aSx6LSlIiwgZXguTWVzc2FnZSk7CiAgICAgICAgfQogICAgfQoKICAgIC8vLyA8c3VtbWFyeT5QcmVmZXJzIHRoZSBhcHBsaWNhdGlvbiBkaXJlY3RvcnksIGZhbGxpbmcgYmFjayB0byBEb2N1bWVudHMgd2hlbiByZWFkLW9ubHkuPC9zdW1tYXJ5PgogICAgcHJpdmF0ZSBzdGF0aWMgc3RyaW5nIEV4cG9ydEZvbGRlcigpCiAgICB7CiAgICAgICAgdmFyIGFwcERpciA9IFBhdGguQ29tYmluZShBcHBDb250ZXh0LkJhc2VEaXJlY3RvcnksICLlr7zlh7oiKTsKICAgICAgICB0cnkKICAgICAgICB7CiAgICAgICAgICAgIERpcmVjdG9yeS5DcmVhdGVEaXJlY3RvcnkoYXBwRGlyKTsKICAgICAgICAgICAgdmFyIHByb2JlID0gUGF0aC5Db21iaW5lKGFwcERpciwgIi53cml0ZXRlc3QiKTsKICAgICAgICAgICAgRmlsZS5Xcml0ZUFsbFRleHQocHJvYmUsICJ4Iik7CiAgICAgICAgICAgIEZpbGUuRGVsZXRlKHByb2JlKTsKICAgICAgICAgICAgcmV0dXJuIGFwcERpcjsKICAgICAgICB9CiAgICAgICAgY2F0Y2gKICAgICAgICB7CiAgICAgICAgICAgIHJldHVybiBQYXRoLkNvbWJpbmUoCiAgICAgICAgICAgICAgICBFbnZpcm9ubWVudC5HZXRGb2xkZXJQYXRoKEVudmlyb25tZW50LlNwZWNpYWxGb2xkZXIuTXlEb2N1bWVudHMpLCAiSVBTY2FuZXIiLCAi5a+85Ye6Iik7CiAgICAgICAgfQogICAgfQp9Cg==
+using IPScaner.Core.Export;
+using IPScaner.Core.Logging;
+using IPScaner.Core.Models;
+using IPScaner.WinUI.Services;
+using Microsoft.UI;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Input;
+using Microsoft.UI.Xaml.Media;
+using Windows.UI;
+
+namespace IPScaner.WinUI.Views;
+
+/// <summary>
+/// WiFi密码查看 — the page form of the original <c>FormWiFiViewer</c>
+/// (title WiFi密码查看器).
+/// </summary>
+/// <remarks>
+/// <para>
+/// All data comes from <see cref="IPscaner.Core.Net.WifiService.QueryAsync"/>, which
+/// already fixed the original's worst defect: <c>FormWiFiViewer</c> matched the
+/// <em>localised</em> console markers <c>所有用户配置文件</c> / <c>关键内容</c>, so on an
+/// English Windows it silently listed nothing. This page therefore contains no marker
+/// strings, no code-page guessing and no locale-dependent parsing of its own — it only
+/// consumes <see cref="WifiProfile"/> fields.
+/// </para>
+/// <para>
+/// Improvement over the original: passwords are masked by default and revealed with the
+/// 显示密码 toggle (the WinForms grid always showed the cleartext key). Export and
+/// 复制密码 always use the real key.
+/// </para>
+/// </remarks>
+public sealed partial class WifiPage : Page
+{
+    /// <summary>The original window title, used as every message-box caption.</summary>
+    private const string DialogTitle = "WiFi密码查看器";
+
+    /// <summary>Fixed-width mask, so the toggle does not leak the password length.</summary>
+    private const string MaskedPassword = "●●●●●●●●";
+
+    /// <summary>
+    /// The grid columns — the single source of truth for the caption row and every data
+    /// row, so the two can never drift apart. Star widths keep the table inside the shell
+    /// window (1180x820 physical pixels ≈ 787x547 units at 150% DPI, i.e. only ~480
+    /// usable units per card) while still growing when the window is maximized.
+    /// </summary>
+    private static readonly (string Header, GridLength Width)[] Columns =
+    [
+        ("序号", new GridLength(40)),
+        ("WiFi名称", new GridLength(1.5, GridUnitType.Star)),
+        ("密码", new GridLength(1.5, GridUnitType.Star)),
+        ("认证方式", new GridLength(1.4, GridUnitType.Star)),
+        ("加密方式", new GridLength(0.9, GridUnitType.Star)),
+    ];
+
+    // Instance fields: a Brush is a DependencyObject with UI-thread affinity.
+    private readonly Brush _rowBackground = new SolidColorBrush(Colors.Transparent);
+    private readonly Brush _selectedRowBackground = new SolidColorBrush(Color.FromArgb(0x38, 0x00, 0x78, 0xD4));
+
+    private List<WifiProfile> _profiles = [];
+    private CancellationTokenSource? _cts;
+    private Border? _selectedRow;
+    private WifiProfile? _selected;
+    private bool _loading;
+    private bool _showPasswords;
+
+    public WifiPage()
+    {
+        InitializeComponent();
+        BuildHeader();
+
+        Loaded += OnPageLoaded;
+        Unloaded += (_, _) => CancelPendingWork();
+    }
+
+    // =====================================================================
+    // load
+    // =====================================================================
+
+    private void OnPageLoaded(object sender, RoutedEventArgs e) => _ = LoadProfilesAsync();
+
+    private void CancelPendingWork()
+    {
+        try { _cts?.Cancel(); }
+        catch { /* already gone */ }
+    }
+
+    private async void OnRefreshClick(object sender, RoutedEventArgs e) => await LoadProfilesAsync();
+
+    private async Task LoadProfilesAsync()
+    {
+        if (_loading) return;
+
+        _loading = true;
+        RefreshButton.IsEnabled = false;
+        ExportButton.IsEnabled = false;
+        BusyRing.IsActive = true;
+        EmptyBar.IsOpen = false;
+        StatusText.Text = "正在读取WiFi配置..."; // the original's statusTip
+
+        var cts = new CancellationTokenSource();
+        _cts = cts;
+
+        try
+        {
+            _profiles = await AppServices.Current.Wifi.QueryAsync(cts.Token);
+        }
+        catch (OperationCanceledException)
+        {
+            StatusText.Text = "已取消读取WiFi配置";
+            return;
+        }
+        catch (Exception ex)
+        {
+            AppLog.Instance.Log(nameof(WifiPage), "读取WiFi密码失败: " + ex.Message);
+            _profiles = [];
+            StatusText.Text = "读取WiFi保存密码失败：" + ex.Message;
+        }
+        finally
+        {
+            if (ReferenceEquals(_cts, cts)) _cts = null;
+            cts.Dispose();
+            _loading = false;
+            BusyRing.IsActive = false;
+            RefreshButton.IsEnabled = true;
+            ExportButton.IsEnabled = true;
+        }
+
+        RebuildRows();
+
+        if (_profiles.Count == 0)
+        {
+            // Never leave a blank grid: say what to check instead.
+            EmptyBar.IsOpen = true;
+            StatusText.Text = "读取WiFi保存密码失败，没有可显示的配置";
+        }
+        else
+        {
+            EmptyBar.IsOpen = false;
+            StatusText.Text = "WiFi保存密码加载完毕"; // the original's completion statusTip
+        }
+    }
+
+    // =====================================================================
+    // grid
+    // =====================================================================
+
+    private void BuildHeader()
+    {
+        HeaderGrid.ColumnDefinitions.Clear();
+        HeaderGrid.Children.Clear();
+
+        for (var i = 0; i < Columns.Length; i++)
+        {
+            HeaderGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = Columns[i].Width });
+            var caption = new TextBlock
+            {
+                Text = Columns[i].Header,
+                FontWeight = Microsoft.UI.Text.FontWeights.SemiBold,
+                Opacity = 0.75,
+                VerticalAlignment = VerticalAlignment.Center,
+                Margin = new Thickness(12, 0, 0, 0),
+            };
+            Grid.SetColumn(caption, i);
+            HeaderGrid.Children.Add(caption);
+        }
+    }
+
+    /// <summary>Rebuilds every row, keeping the selection when the same item is still listed.</summary>
+    private void RebuildRows()
+    {
+        var previous = _selected;
+
+        RowsPanel.Children.Clear();
+        _selectedRow = null;
+        _selected = null;
+
+        for (var i = 0; i < _profiles.Count; i++)
+        {
+            var profile = _profiles[i];
+            var row = BuildRow(i + 1, profile);
+            RowsPanel.Children.Add(row);
+            if (ReferenceEquals(profile, previous)) SelectRow(row, profile);
+        }
+
+        SummaryText.Text = $"共 {_profiles.Count} 个已保存的 WiFi";
+        CopyButton.IsEnabled = _profiles.Count > 0;
+    }
+
+    private Border BuildRow(int index, WifiProfile profile)
+    {
+        var grid = new Grid { ColumnSpacing = 8, Padding = new Thickness(12, 6, 12, 6) };
+        foreach (var column in Columns) grid.ColumnDefinitions.Add(new ColumnDefinition { Width = column.Width });
+
+        AddCell(grid, 0, index.ToString(), secondary: true);
+        AddCell(grid, 1, profile.Ssid);
+        AddCell(grid, 2, PasswordText(profile));
+        AddCell(grid, 3, OrDash(profile.Authentication));
+        AddCell(grid, 4, OrDash(profile.Encryption));
+
+        var row = new Border
+        {
+            CornerRadius = new CornerRadius(4),
+            Background = _rowBackground,
+            Child = grid,
+            Tag = profile,
+        };
+
+        // A multi-line tooltip carries the values the narrow columns have to trim.
+        var details = $"{profile.Ssid}\n认证 {OrDash(profile.Authentication)} · 加密 {OrDash(profile.Encryption)}";
+        ToolTipService.SetToolTip(row, new TextBlock
+        {
+            Text = string.IsNullOrEmpty(profile.Password)
+                ? details + "\n开放网络，没有保存密码"
+                : details + "\n单击选中，双击复制密码",
+            TextWrapping = TextWrapping.Wrap,
+        });
+
+        row.Tapped += OnRowTapped;
+        row.DoubleTapped += OnRowDoubleTapped;
+        return row;
+    }
+
+    private static void AddCell(Grid grid, int column, string text, bool secondary = false)
+    {
+        var block = new TextBlock
+        {
+            Text = text,
+            TextTrimming = TextTrimming.CharacterEllipsis,
+            VerticalAlignment = VerticalAlignment.Center,
+        };
+        if (secondary) block.Opacity = 0.7;
+
+        Grid.SetColumn(block, column);
+        grid.Children.Add(block);
+    }
+
+    private string PasswordText(WifiProfile profile)
+    {
+        if (profile.Password.Length == 0) return "（无）";
+        return _showPasswords ? profile.Password : MaskedPassword;
+    }
+
+    private static string OrDash(string value) => value.Length > 0 ? value : "—";
+
+    // =====================================================================
+    // selection + copy
+    // =====================================================================
+
+    private void OnRowTapped(object sender, TappedRoutedEventArgs e)
+    {
+        if (sender is Border { Tag: WifiProfile profile } row) SelectRow(row, profile);
+    }
+
+    private void OnRowDoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+    {
+        if (sender is not Border { Tag: WifiProfile profile } row) return;
+        SelectRow(row, profile);
+        _ = CopyPasswordAsync(profile);
+        e.Handled = true;
+    }
+
+    private void SelectRow(Border row, WifiProfile profile)
+    {
+        if (_selectedRow is not null) _selectedRow.Background = _rowBackground;
+        _selectedRow = row;
+        _selected = profile;
+        row.Background = _selectedRowBackground;
+    }
+
+    private async void OnCopyPasswordClick(object sender, RoutedEventArgs e)
+    {
+        // With a single saved profile there is nothing to disambiguate.
+        var profile = _selected ?? (_profiles.Count == 1 ? _profiles[0] : null);
+        if (profile is null)
+        {
+            await UiKit.InfoAsync(XamlRoot, DialogTitle, "请先选中一行，再复制密码。");
+            return;
+        }
+
+        await CopyPasswordAsync(profile);
+    }
+
+    /// <summary>
+    /// Copies the cleartext key. Like the original (whose DataGridView had no copy
+    /// handler of its own), this is deliberately silent — no dialog, status text only.
+    /// </summary>
+    private async Task CopyPasswordAsync(WifiProfile profile)
+    {
+        if (profile.Password.Length == 0)
+        {
+            await UiKit.InfoAsync(XamlRoot, DialogTitle, profile.IsOpen
+                ? $"【{profile.Ssid}】是开放网络，没有保存密码。"
+                : $"【{profile.Ssid}】没有读取到保存的密码。");
+            return;
+        }
+
+        UiKit.CopyToClipboard(profile.Password);
+        StatusText.Text = $"已复制【{profile.Ssid}】的密码";
+    }
+
+    // =====================================================================
+    // password visibility
+    // =====================================================================
+
+    private void OnShowPasswordToggled(object sender, RoutedEventArgs e)
+    {
+        _showPasswords = ShowPasswordToggle.IsChecked == true;
+        StatusText.Text = _showPasswords ? "已显示明文密码" : "已隐藏密码";
+        if (_profiles.Count > 0) RebuildRows();
+    }
+
+    // =====================================================================
+    // export
+    // =====================================================================
+
+    private async void OnExportClick(object sender, RoutedEventArgs e)
+    {
+        if (_profiles.Count == 0)
+        {
+            await UiKit.InfoAsync(XamlRoot, DialogTitle, "当前没有可导出的WiFi记录。");
+            return;
+        }
+
+        try
+        {
+            var folder = ExportFolder();
+            Directory.CreateDirectory(folder);
+
+            // The original wrote a fixed "WiFi密码.csv" without quoting; this port keeps the
+            // WiFi密码 prefix but uses the shared timestamped CSV/xlsx exporters. Exporting
+            // always writes the real keys, whatever the 显示密码 toggle says.
+            var headers = new[] { "WiFi名称", "密码", "认证方式", "加密方式" };
+            var rows = _profiles
+                .Select(p => new[] { p.Ssid, p.Password, p.Authentication, p.Encryption })
+                .ToList();
+
+            var csvPath = Path.Combine(folder, TableExporter.BuildFileName("WiFi密码", ".csv"));
+            TableExporter.WriteCsv(csvPath, headers, rows);
+
+            var xlsxPath = Path.Combine(folder, TableExporter.BuildFileName("WiFi密码", ".xlsx"));
+            TableExporter.WriteXlsx(xlsxPath, "WiFi密码", headers, rows);
+
+            StatusText.Text = $"已导出 {rows.Count} 条记录：{Path.GetFileName(csvPath)}、{Path.GetFileName(xlsxPath)}";
+
+            var open = await UiKit.ConfirmAsync(XamlRoot, DialogTitle,
+                "密码导出成功。是否要打开Excel文档？", "打开文件夹", "关闭");
+            if (open) AppServices.Current.Shell.OpenFolder(folder);
+        }
+        catch (Exception ex)
+        {
+            AppLog.Instance.Log(nameof(WifiPage), "导出WiFi密码失败: " + ex.Message);
+            await UiKit.InfoAsync(XamlRoot, "导出失败", ex.Message);
+        }
+    }
+
+    /// <summary>Prefers the application directory, falling back to Documents when read-only.</summary>
+    private static string ExportFolder()
+    {
+        var appDir = Path.Combine(AppContext.BaseDirectory, "导出");
+        try
+        {
+            Directory.CreateDirectory(appDir);
+            var probe = Path.Combine(appDir, ".writetest");
+            File.WriteAllText(probe, "x");
+            File.Delete(probe);
+            return appDir;
+        }
+        catch
+        {
+            return Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "IPScaner", "导出");
+        }
+    }
+}

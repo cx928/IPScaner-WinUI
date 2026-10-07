@@ -1,1 +1,75 @@
-bmFtZXNwYWNlIElQU2NhbmVyLkNvcmUuTW9kZWxzOwoKLy8vIDxzdW1tYXJ5Pk9uZSBwcm9iZWQgVENQIHBvcnQgb24gb25lIGhvc3QuPC9zdW1tYXJ5PgpwdWJsaWMgc2VhbGVkIGNsYXNzIFBvcnRTY2FuUmVzdWx0CnsKICAgIHB1YmxpYyByZXF1aXJlZCBzdHJpbmcgSVAgeyBnZXQ7IGluaXQ7IH0KICAgIHB1YmxpYyByZXF1aXJlZCBpbnQgUG9ydCB7IGdldDsgaW5pdDsgfQoKICAgIC8vLyA8c3VtbWFyeT5UcnVlIHdoZW4gdGhlIFRDUCBoYW5kc2hha2UgY29tcGxldGVkLjwvc3VtbWFyeT4KICAgIHB1YmxpYyBib29sIElzT3BlbiB7IGdldDsgc2V0OyB9CgogICAgLy8vIDxzdW1tYXJ5PkNvbm5lY3QgdGltZSBpbiBtcywgb3IgLTEgd2hlbiBjbG9zZWQvZmlsdGVyZWQuPC9zdW1tYXJ5PgogICAgcHVibGljIGxvbmcgRWxhcHNlZE1zIHsgZ2V0OyBzZXQ7IH0gPSAtMTsKCiAgICAvLy8gPHN1bW1hcnk+V2VsbC1rbm93biBzZXJ2aWNlIG5hbWUgZm9yIHRoZSBwb3J0LCB3aGVuIHdlIGNhbiBuYW1lIGl0Ljwvc3VtbWFyeT4KICAgIHB1YmxpYyBzdHJpbmcgU2VydmljZSB7IGdldDsgc2V0OyB9ID0gc3RyaW5nLkVtcHR5OwoKICAgIC8vLyA8c3VtbWFyeT5DbGlwYm9hcmQvZXhwb3J0IGxpbmU6ICIxOTIuMTY4LjEuMTA6ODAgIOW8gOaUviIuPC9zdW1tYXJ5PgogICAgcHVibGljIG92ZXJyaWRlIHN0cmluZyBUb1N0cmluZygpID0+CiAgICAgICAgJCJ7SVB9OntQb3J0fVx0eyhJc09wZW4gPyAi5byA5pS+IiA6ICLlhbPpl60iKX0iICsgKEVsYXBzZWRNcyA+PSAwID8gJCJcdHtFbGFwc2VkTXN9bXMiIDogc3RyaW5nLkVtcHR5KTsKfQoKLy8vIDxzdW1tYXJ5PgovLy8gT25lIHJvdyBvZiB0aGUgbG9jYWwgVENQL1VEUCBlbmRwb2ludCB0YWJsZSAo5pys5py656uv5Y+j5Y2g55So5p+l55yLKS4KLy8vIDwvc3VtbWFyeT4KcHVibGljIHNlYWxlZCBjbGFzcyBMb2NhbFBvcnRJbmZvCnsKICAgIHB1YmxpYyBzdHJpbmcgUHJvdG9jb2wgeyBnZXQ7IHNldDsgfSA9ICJUQ1AiOwogICAgcHVibGljIHN0cmluZyBMb2NhbEFkZHJlc3MgeyBnZXQ7IHNldDsgfSA9IHN0cmluZy5FbXB0eTsKICAgIHB1YmxpYyBpbnQgTG9jYWxQb3J0IHsgZ2V0OyBzZXQ7IH0KICAgIHB1YmxpYyBzdHJpbmcgUmVtb3RlQWRkcmVzcyB7IGdldDsgc2V0OyB9ID0gc3RyaW5nLkVtcHR5OwogICAgcHVibGljIGludCBSZW1vdGVQb3J0IHsgZ2V0OyBzZXQ7IH0KCiAgICAvLy8gPHN1bW1hcnk+VENQIHN0YXRlOyBVRFAgcm93cyBjYXJyeSA8c2VlIGNyZWY9IlVkcFN0YXRlIi8+Ljwvc3VtbWFyeT4KICAgIHB1YmxpYyBzdHJpbmcgU3RhdGUgeyBnZXQ7IHNldDsgfSA9IHN0cmluZy5FbXB0eTsKCiAgICBwdWJsaWMgY29uc3Qgc3RyaW5nIFVkcFN0YXRlID0gIlVEUCI7CgogICAgcHVibGljIGludCBQaWQgeyBnZXQ7IHNldDsgfQogICAgcHVibGljIHN0cmluZyBQcm9jZXNzTmFtZSB7IGdldDsgc2V0OyB9ID0gc3RyaW5nLkVtcHR5OwogICAgcHVibGljIHN0cmluZyBQcm9jZXNzUGF0aCB7IGdldDsgc2V0OyB9ID0gc3RyaW5nLkVtcHR5OwoKICAgIC8vLyA8c3VtbWFyeT5QSURzIHdlIGNvdWxkIG5vdCByZXNvbHZlLCBvciB0aGF0IGhhdmUgYWxyZWFkeSBleGl0ZWQuPC9zdW1tYXJ5PgogICAgcHVibGljIGJvb2wgUHJvY2Vzc01pc3NpbmcgeyBnZXQ7IHNldDsgfQoKICAgIHB1YmxpYyBvdmVycmlkZSBzdHJpbmcgVG9TdHJpbmcoKSA9PgogICAgICAgICQiUG9ydDp7TG9jYWxQb3J0fe+8jFBJRDoge1BpZH0sIE5hbWU6IHtQcm9jZXNzTmFtZX0sIFBhdGg6IHtQcm9jZXNzUGF0aH0iOwp9CgovLy8gPHN1bW1hcnk+QSBzYXZlZCBXTEFOIHByb2ZpbGUgYW5kIGl0cyByZWNvdmVyZWQgY2xlYXJ0ZXh0IGtleS48L3N1bW1hcnk+CnB1YmxpYyBzZWFsZWQgY2xhc3MgV2lmaVByb2ZpbGUKewogICAgcHVibGljIHJlcXVpcmVkIHN0cmluZyBTc2lkIHsgZ2V0OyBpbml0OyB9CiAgICBwdWJsaWMgc3RyaW5nIFBhc3N3b3JkIHsgZ2V0OyBzZXQ7IH0gPSBzdHJpbmcuRW1wdHk7CgogICAgLy8vIDxzdW1tYXJ5PuiupOivgeaWueW8jywgZS5nLiBXUEEyLVBlcnNvbmFsLjwvc3VtbWFyeT4KICAgIHB1YmxpYyBzdHJpbmcgQXV0aGVudGljYXRpb24geyBnZXQ7IHNldDsgfSA9IHN0cmluZy5FbXB0eTsKCiAgICAvLy8gPHN1bW1hcnk+5Yqg5a+G5pa55byPLCBlLmcuIENDTVAuPC9zdW1tYXJ5PgogICAgcHVibGljIHN0cmluZyBFbmNyeXB0aW9uIHsgZ2V0OyBzZXQ7IH0gPSBzdHJpbmcuRW1wdHk7CgogICAgLy8vIDxzdW1tYXJ5PlRydWUgZm9yIG9wZW4gbmV0d29ya3MsIHdoaWNoIGhhdmUgbm8ga2V5Ljwvc3VtbWFyeT4KICAgIHB1YmxpYyBib29sIElzT3BlbiB7IGdldDsgc2V0OyB9CgogICAgcHVibGljIG92ZXJyaWRlIHN0cmluZyBUb1N0cmluZygpID0+ICQic3NpZDp7U3NpZH0sIHB3ZDp7UGFzc3dvcmR9IjsKfQoKLy8vIDxzdW1tYXJ5Pk9uZSB1c2VyLWRlZmluZWQgbGF1bmNoZXIgcGFyc2VkIG91dCBvZiBjb21tYW5kLnR4dC48L3N1bW1hcnk+CnB1YmxpYyBzZWFsZWQgY2xhc3MgRGl5Q29tbWFuZAp7CiAgICBwdWJsaWMgcmVxdWlyZWQgc3RyaW5nIE5hbWUgeyBnZXQ7IGluaXQ7IH0KICAgIHB1YmxpYyByZXF1aXJlZCBzdHJpbmcgQ29tbWFuZCB7IGdldDsgaW5pdDsgfQoKICAgIHB1YmxpYyBvdmVycmlkZSBzdHJpbmcgVG9TdHJpbmcoKSA9PiAkIntOYW1lfSAtPiB7Q29tbWFuZH0iOwp9Cg==
+namespace IPScaner.Core.Models;
+
+/// <summary>One probed TCP port on one host.</summary>
+public sealed class PortScanResult
+{
+    public required string IP { get; init; }
+    public required int Port { get; init; }
+
+    /// <summary>True when the TCP handshake completed.</summary>
+    public bool IsOpen { get; set; }
+
+    /// <summary>Connect time in ms, or -1 when closed/filtered.</summary>
+    public long ElapsedMs { get; set; } = -1;
+
+    /// <summary>Well-known service name for the port, when we can name it.</summary>
+    public string Service { get; set; } = string.Empty;
+
+    /// <summary>Clipboard/export line: "192.168.1.10:80  开放".</summary>
+    public override string ToString() =>
+        $"{IP}:{Port}\t{(IsOpen ? "开放" : "关闭")}" + (ElapsedMs >= 0 ? $"\t{ElapsedMs}ms" : string.Empty);
+}
+
+/// <summary>
+/// One row of the local TCP/UDP endpoint table (本机端口占用查看).
+/// </summary>
+public sealed class LocalPortInfo
+{
+    public string Protocol { get; set; } = "TCP";
+    public string LocalAddress { get; set; } = string.Empty;
+    public int LocalPort { get; set; }
+    public string RemoteAddress { get; set; } = string.Empty;
+    public int RemotePort { get; set; }
+
+    /// <summary>TCP state; UDP rows carry <see cref="UdpState"/>.</summary>
+    public string State { get; set; } = string.Empty;
+
+    public const string UdpState = "UDP";
+
+    public int Pid { get; set; }
+    public string ProcessName { get; set; } = string.Empty;
+    public string ProcessPath { get; set; } = string.Empty;
+
+    /// <summary>PIDs we could not resolve, or that have already exited.</summary>
+    public bool ProcessMissing { get; set; }
+
+    public override string ToString() =>
+        $"Port:{LocalPort}，PID: {Pid}, Name: {ProcessName}, Path: {ProcessPath}";
+}
+
+/// <summary>A saved WLAN profile and its recovered cleartext key.</summary>
+public sealed class WifiProfile
+{
+    public required string Ssid { get; init; }
+    public string Password { get; set; } = string.Empty;
+
+    /// <summary>认证方式, e.g. WPA2-Personal.</summary>
+    public string Authentication { get; set; } = string.Empty;
+
+    /// <summary>加密方式, e.g. CCMP.</summary>
+    public string Encryption { get; set; } = string.Empty;
+
+    /// <summary>True for open networks, which have no key.</summary>
+    public bool IsOpen { get; set; }
+
+    public override string ToString() => $"ssid:{Ssid}, pwd:{Password}";
+}
+
+/// <summary>One user-defined launcher parsed out of command.txt.</summary>
+public sealed class DiyCommand
+{
+    public required string Name { get; init; }
+    public required string Command { get; init; }
+
+    public override string ToString() => $"{Name} -> {Command}";
+}

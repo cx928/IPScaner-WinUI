@@ -1,1 +1,191 @@
-dXNpbmcgSVBTY2FuZXIuQ29yZS5Db25maWd1cmF0aW9uOwp1c2luZyBJUFNjYW5lci5Db3JlLkxvZ2dpbmc7CnVzaW5nIElQU2NhbmVyLkNvcmUuTW9kZWxzOwoKbmFtZXNwYWNlIElQU2NhbmVyLkNvcmUuTmV0OwoKLy8vIDxzdW1tYXJ5PlByb2dyZXNzIHNuYXBzaG90IGZvciBhIHJ1bm5pbmcgc3dlZXAuPC9zdW1tYXJ5PgpwdWJsaWMgcmVhZG9ubHkgcmVjb3JkIHN0cnVjdCBTY2FuUHJvZ3Jlc3MoaW50IENvbXBsZXRlZCwgaW50IFRvdGFsLCBzdHJpbmcgQ3VycmVudElQKQp7CiAgICBwdWJsaWMgZG91YmxlIEZyYWN0aW9uID0+IFRvdGFsIDw9IDAgPyAwIDogKGRvdWJsZSlDb21wbGV0ZWQgLyBUb3RhbDsKfQoKLy8vIDxzdW1tYXJ5PgovLy8gRHJpdmVzIGEgZnVsbCBhZGRyZXNzIHN3ZWVwOiBwcm9iZXMgZXZlcnkgdGFyZ2V0IHdpdGggYm91bmRlZCBjb25jdXJyZW5jeSwKLy8vIHRoZW4gZW5yaWNoZXMgdGhlIHN1cnZpdm9ycyB3aXRoIGhvc3QgbmFtZSBhbmQgTUFDLgovLy8gPC9zdW1tYXJ5PgovLy8gPHJlbWFya3M+Ci8vLyBUaGUgb3JpZ2luYWwgZGlzcGF0Y2hlZCBvbmUgPGM+UGluZy5TZW5kQXN5bmM8L2M+IGV2ZXJ5IDEwJm5ic3A7bXMgd2l0aCBubwovLy8gY29uY3VycmVuY3kgY2VpbGluZyBhbmQgbXV0YXRlZCBXaW5Gb3JtcyBjb250cm9scyBzdHJhaWdodCBmcm9tIHRoZSBjYWxsYmFjawovLy8gdGhyZWFkLiBUaGlzIGVuZ2luZSBrZWVwcyB0aGUgc2FtZSBvYnNlcnZhYmxlIHJlc3VsdHMgYnV0OgovLy8gPGxpc3QgdHlwZT0iYnVsbGV0Ij4KLy8vIDxpdGVtPmNhcHMgaW4tZmxpZ2h0IHByb2JlcyAoPHNlZSBjcmVmPSJEZWZhdWx0Q29uY3VycmVuY3kiLz4pLDwvaXRlbT4KLy8vIDxpdGVtPnJlcG9ydHMgcmVzdWx0cyB0aHJvdWdoIDxzZWUgY3JlZj0iSVByb2dyZXNze1R9Ii8+IHNvIHRoZSBVSSBkZWNpZGVzIGhvdwovLy8gdG8gbWFyc2hhbCB0byBpdHMgb3duIHRocmVhZCwgYW5kPC9pdGVtPgovLy8gPGl0ZW0+aG9ub3VycyBjYW5jZWxsYXRpb24gcHJvbXB0bHkuPC9pdGVtPgovLy8gPC9saXN0PgovLy8gRWFjaCBob3N0IGlzIHJlcG9ydGVkIHR3aWNlIHdoZW4gbmFtZSBsb29rdXAgaXMgb24g4oCUIG9uY2UgYXMgc29vbiBhcyBsaXZlbmVzcwovLy8gaXMga25vd24gKHNvIGJsb2NrcyBjb2xvdXIgaW4gaW1tZWRpYXRlbHksIGFzIGJlZm9yZSkgYW5kIGFnYWluIG9uY2UgdGhlCi8vLyBob3N0IG5hbWUgYW5kIE1BQyBhcnJpdmUuCi8vLyA8L3JlbWFya3M+CnB1YmxpYyBzZWFsZWQgY2xhc3MgU2NhbkVuZ2luZQp7CiAgICBwdWJsaWMgY29uc3QgaW50IERlZmF1bHRDb25jdXJyZW5jeSA9IDY0OwoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBIb3N0LW5hbWUgbG9va3VwcyBhcmUgZmFyIG1vcmUgZXhwZW5zaXZlIHRoYW4gcGluZ3MsIHNvIHRoZXkgcnVuIG9uIGEKICAgIC8vLyBzbWFsbGVyIGdhdGUgdG8gc3RvcCByZXZlcnNlLUROUyBmcm9tIHN0YXJ2aW5nIHRoZSBwcm9iZSBwb29sLgogICAgLy8vIDwvc3VtbWFyeT4KICAgIHB1YmxpYyBjb25zdCBpbnQgRGVmYXVsdEVucmljaG1lbnRDb25jdXJyZW5jeSA9IDE2OwoKICAgIHByaXZhdGUgcmVhZG9ubHkgTGl2ZW5lc3NQcm9iZSBfcHJvYmU7CiAgICBwcml2YXRlIHJlYWRvbmx5IE5hbWVSZXNvbHZlciBfbmFtZXM7CiAgICBwcml2YXRlIHJlYWRvbmx5IEFycFRhYmxlIF9hcnA7CgogICAgcHVibGljIFNjYW5FbmdpbmUoTGl2ZW5lc3NQcm9iZSBwcm9iZSwgTmFtZVJlc29sdmVyIG5hbWVzLCBBcnBUYWJsZSBhcnApCiAgICB7CiAgICAgICAgX3Byb2JlID0gcHJvYmU7CiAgICAgICAgX25hbWVzID0gbmFtZXM7CiAgICAgICAgX2FycCA9IGFycDsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+Q29udmVuaWVuY2UgZmFjdG9yeSB3aXJpbmcgdGhlIHN0YW5kYXJkIGNvbGxhYm9yYXRvcnMgdG9nZXRoZXIuPC9zdW1tYXJ5PgogICAgcHVibGljIHN0YXRpYyBTY2FuRW5naW5lIENyZWF0ZURlZmF1bHQoQWRhcHRlclNlcnZpY2U/IGFkYXB0ZXJzID0gbnVsbCkKICAgIHsKICAgICAgICB2YXIgYWRhcHRlclNlcnZpY2UgPSBhZGFwdGVycyA/PyBuZXcgQWRhcHRlclNlcnZpY2UoKTsKICAgICAgICB2YXIgYXJwID0gbmV3IEFycFRhYmxlKCgpID0+IGFkYXB0ZXJTZXJ2aWNlLkdldEFsbCgpKTsKICAgICAgICByZXR1cm4gbmV3IFNjYW5FbmdpbmUobmV3IExpdmVuZXNzUHJvYmUoYXJwKSwgbmV3IE5hbWVSZXNvbHZlcigpLCBhcnApOwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBQcm9iZXMgYSBzaW5nbGUgaG9zdCBhbmQgcmV0dXJucyBhbiBlbnJpY2hlZCByZXN1bHQg4oCUIHRoZSBjbGljay1hLWJsb2NrCiAgICAvLy8gcGF0aC4gTmFtZSBhbmQgTUFDIGFyZSBvbmx5IGxvb2tlZCB1cCB3aGVuIHRoZSBob3N0IGFuc3dlcmVkIGFuZAogICAgLy8vIDxzZWUgY3JlZj0iQXBwQ29uZmlnLlF1ZXJ5SG9zdE5hbWVFbmFibGVkIi8+IGlzIG9uLCBtYXRjaGluZyBhIHN3ZWVwLgogICAgLy8vIDwvc3VtbWFyeT4KICAgIHB1YmxpYyBhc3luYyBUYXNrPEhvc3RSZXN1bHQ+IFByb2JlT25jZUFzeW5jKHN0cmluZyBpcCwgQXBwQ29uZmlnIGNvbmZpZywgQ2FuY2VsbGF0aW9uVG9rZW4gY3QgPSBkZWZhdWx0KQogICAgewogICAgICAgIHZhciB2ZXJkaWN0ID0gYXdhaXQgX3Byb2JlLlByb2JlQXN5bmMoaXAsIGNvbmZpZywgY3QpLkNvbmZpZ3VyZUF3YWl0KGZhbHNlKTsKCiAgICAgICAgdmFyIGhvc3QgPSBuZXcgSG9zdFJlc3VsdAogICAgICAgIHsKICAgICAgICAgICAgSVAgPSBpcCwKICAgICAgICAgICAgTGFzdE9jdGV0ID0gSXBNYXRoLlRyeVBhcnNlT2N0ZXRzKGlwLCBvdXQgdmFyIG8pID8gb1szXSA6IDAsCiAgICAgICAgICAgIFN0YXR1cyA9IHZlcmRpY3QuU3RhdHVzLAogICAgICAgICAgICBTb3VyY2UgPSB2ZXJkaWN0LlNvdXJjZSwKICAgICAgICAgICAgUGluZ1N0YXR1cyA9IHZlcmRpY3QuUGluZ1N0YXR1cywKICAgICAgICB9OwogICAgICAgIGhvc3QuQXBwbHlSb3VuZHRyaXAodmVyZGljdC5Sb3VuZHRyaXBNcyk7CgogICAgICAgIGlmIChob3N0LlN0YXR1cyA9PSBIb3N0U3RhdHVzLk9ubGluZSAmJiBjb25maWcuUXVlcnlIb3N0TmFtZUVuYWJsZWQpCiAgICAgICAgewogICAgICAgICAgICB2YXIgbmFtZSA9IGF3YWl0IF9uYW1lcy5SZXNvbHZlQXN5bmMoaXAsIGN0KS5Db25maWd1cmVBd2FpdChmYWxzZSk7CiAgICAgICAgICAgIHZhciBtYWMgPSBhd2FpdCBfYXJwLkdldE1hY0FzeW5jKGlwLCBjdCkuQ29uZmlndXJlQXdhaXQoZmFsc2UpID8/IHN0cmluZy5FbXB0eTsKICAgICAgICAgICAgaWYgKG5hbWUgIT0gTmFtZVJlc29sdmVyLlVua25vd24pIGhvc3QuSG9zdE5hbWUgPSBuYW1lOwogICAgICAgICAgICBob3N0Lk1hYyA9IG1hYzsKICAgICAgICB9CgogICAgICAgIHJldHVybiBob3N0OwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBQcm9iZXMgZXZlcnkgYWRkcmVzcyBpbiA8cGFyYW1yZWYgbmFtZT0idGFyZ2V0cyIvPi4gUmVzdWx0cyBzdHJlYW0gdGhyb3VnaAogICAgLy8vIDxwYXJhbXJlZiBuYW1lPSJvblJlc3VsdCIvPiBhcyB0aGV5IGJlY29tZSBhdmFpbGFibGUuCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgcHVibGljIGFzeW5jIFRhc2sgUnVuQXN5bmMoCiAgICAgICAgSVJlYWRPbmx5TGlzdDxzdHJpbmc+IHRhcmdldHMsCiAgICAgICAgQXBwQ29uZmlnIGNvbmZpZywKICAgICAgICBGdW5jPEhvc3RSZXN1bHQsIFRhc2s+IG9uUmVzdWx0LAogICAgICAgIElQcm9ncmVzczxTY2FuUHJvZ3Jlc3M+PyBwcm9ncmVzcyA9IG51bGwsCiAgICAgICAgaW50IGNvbmN1cnJlbmN5ID0gRGVmYXVsdENvbmN1cnJlbmN5LAogICAgICAgIENhbmNlbGxhdGlvblRva2VuIGN0ID0gZGVmYXVsdCkKICAgIHsKICAgICAgICBBcmd1bWVudE51bGxFeGNlcHRpb24uVGhyb3dJZk51bGwodGFyZ2V0cyk7CiAgICAgICAgQXJndW1lbnROdWxsRXhjZXB0aW9uLlRocm93SWZOdWxsKGNvbmZpZyk7CiAgICAgICAgQXJndW1lbnROdWxsRXhjZXB0aW9uLlRocm93SWZOdWxsKG9uUmVzdWx0KTsKCiAgICAgICAgaWYgKHRhcmdldHMuQ291bnQgPT0gMCkgcmV0dXJuOwoKICAgICAgICB2YXIgdG90YWwgPSB0YXJnZXRzLkNvdW50OwogICAgICAgIHZhciBjb21wbGV0ZWQgPSAwOwogICAgICAgIHZhciBnYXRlID0gbmV3IFNlbWFwaG9yZVNsaW0oTWF0aC5NYXgoMSwgY29uY3VycmVuY3kpKTsKICAgICAgICB2YXIgZW5yaWNoR2F0ZSA9IG5ldyBTZW1hcGhvcmVTbGltKERlZmF1bHRFbnJpY2htZW50Q29uY3VycmVuY3kpOwogICAgICAgIHZhciBlbnJpY2hUYXNrcyA9IG5ldyBMaXN0PFRhc2s+KCk7CiAgICAgICAgdmFyIHJlc3VsdExvY2sgPSBuZXcgb2JqZWN0KCk7CiAgICAgICAgdmFyIHJlc3VsdHMgPSBuZXcgRGljdGlvbmFyeTxzdHJpbmcsIEhvc3RSZXN1bHQ+KFN0cmluZ0NvbXBhcmVyLk9yZGluYWxJZ25vcmVDYXNlKTsKCiAgICAgICAgdmFyIHByb2JlVGFza3MgPSB0YXJnZXRzLlNlbGVjdChhc3luYyBpcCA9PgogICAgICAgIHsKICAgICAgICAgICAgYXdhaXQgZ2F0ZS5XYWl0QXN5bmMoY3QpLkNvbmZpZ3VyZUF3YWl0KGZhbHNlKTsKICAgICAgICAgICAgdHJ5CiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIHZhciB2ZXJkaWN0ID0gYXdhaXQgX3Byb2JlLlByb2JlQXN5bmMoaXAsIGNvbmZpZywgY3QpLkNvbmZpZ3VyZUF3YWl0KGZhbHNlKTsKCiAgICAgICAgICAgICAgICB2YXIgaG9zdCA9IG5ldyBIb3N0UmVzdWx0CiAgICAgICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAgICAgSVAgPSBpcCwKICAgICAgICAgICAgICAgICAgICBMYXN0T2N0ZXQgPSBJcE1hdGguVHJ5UGFyc2VPY3RldHMoaXAsIG91dCB2YXIgbykgPyBvWzNdIDogMCwKICAgICAgICAgICAgICAgICAgICBTdGF0dXMgPSB2ZXJkaWN0LlN0YXR1cywKICAgICAgICAgICAgICAgICAgICBTb3VyY2UgPSB2ZXJkaWN0LlNvdXJjZSwKICAgICAgICAgICAgICAgICAgICBQaW5nU3RhdHVzID0gdmVyZGljdC5QaW5nU3RhdHVzLAogICAgICAgICAgICAgICAgfTsKICAgICAgICAgICAgICAgIGhvc3QuQXBwbHlSb3VuZHRyaXAodmVyZGljdC5Sb3VuZHRyaXBNcyk7CgogICAgICAgICAgICAgICAgbG9jayAocmVzdWx0TG9jaykgcmVzdWx0c1tpcF0gPSBob3N0OwoKICAgICAgICAgICAgICAgIHZhciBkb25lID0gSW50ZXJsb2NrZWQuSW5jcmVtZW50KHJlZiBjb21wbGV0ZWQpOwogICAgICAgICAgICAgICAgcHJvZ3Jlc3M/LlJlcG9ydChuZXcgU2NhblByb2dyZXNzKGRvbmUsIHRvdGFsLCBpcCkpOwogICAgICAgICAgICAgICAgYXdhaXQgb25SZXN1bHQoaG9zdCkuQ29uZmlndXJlQXdhaXQoZmFsc2UpOwoKICAgICAgICAgICAgICAgIGlmICh2ZXJkaWN0LlN0YXR1cyA9PSBIb3N0U3RhdHVzLk9ubGluZSAmJiBjb25maWcuUXVlcnlIb3N0TmFtZUVuYWJsZWQpCiAgICAgICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAgICAgdmFyIGVucmljaCA9IFRhc2suUnVuKGFzeW5jICgpID0+CiAgICAgICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgICAgICBhd2FpdCBlbnJpY2hHYXRlLldhaXRBc3luYyhjdCkuQ29uZmlndXJlQXdhaXQoZmFsc2UpOwogICAgICAgICAgICAgICAgICAgICAgICB0cnkKICAgICAgICAgICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgdmFyIG5hbWUgPSBhd2FpdCBfbmFtZXMuUmVzb2x2ZUFzeW5jKGlwLCBjdCkuQ29uZmlndXJlQXdhaXQoZmFsc2UpOwogICAgICAgICAgICAgICAgICAgICAgICAgICAgdmFyIG1hYyA9IGF3YWl0IF9hcnAuR2V0TWFjQXN5bmMoaXAsIGN0KS5Db25maWd1cmVBd2FpdChmYWxzZSkgPz8gc3RyaW5nLkVtcHR5OwoKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGxvY2sgKHJlc3VsdExvY2spCiAgICAgICAgICAgICAgICAgICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgKCFyZXN1bHRzLlRyeUdldFZhbHVlKGlwLCBvdXQgdmFyIGN1cnJlbnQpKSByZXR1cm47CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgKG5hbWUgIT0gTmFtZVJlc29sdmVyLlVua25vd24pIGN1cnJlbnQuSG9zdE5hbWUgPSBuYW1lOwogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGN1cnJlbnQuTWFjID0gbWFjOwogICAgICAgICAgICAgICAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGF3YWl0IG9uUmVzdWx0KGhvc3QpLkNvbmZpZ3VyZUF3YWl0KGZhbHNlKTsKICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgICAgICBmaW5hbGx5CiAgICAgICAgICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGVucmljaEdhdGUuUmVsZWFzZSgpOwogICAgICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgfSwgY3QpOwoKICAgICAgICAgICAgICAgICAgICBsb2NrIChyZXN1bHRMb2NrKSBlbnJpY2hUYXNrcy5BZGQoZW5yaWNoKTsKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICBjYXRjaCAoT3BlcmF0aW9uQ2FuY2VsZWRFeGNlcHRpb24pCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIC8vIENhbmNlbGxhdGlvbiBpcyBleHBlY3RlZDsgdGhlIGNhbGxlciBpbnNwZWN0cyB0aGUgdG9rZW4uCiAgICAgICAgICAgIH0KICAgICAgICAgICAgY2F0Y2ggKEV4Y2VwdGlvbiBleCkKICAgICAgICAgICAgewogICAgICAgICAgICAgICAgQXBwTG9nLkluc3RhbmNlLkxvZyhuYW1lb2YoU2NhbkVuZ2luZSksICQi5omr5o+PIHtpcH0g5Ye66ZSZOiB7ZXguTWVzc2FnZX0iKTsKICAgICAgICAgICAgfQogICAgICAgICAgICBmaW5hbGx5CiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIGdhdGUuUmVsZWFzZSgpOwogICAgICAgICAgICB9CiAgICAgICAgfSkuVG9MaXN0KCk7CgogICAgICAgIGF3YWl0IFRhc2suV2hlbkFsbChwcm9iZVRhc2tzKS5Db25maWd1cmVBd2FpdChmYWxzZSk7CgogICAgICAgIC8vIExldCBwZW5kaW5nIG5hbWUvTUFDIGxvb2t1cHMgZmluaXNoIHNvIHRoZSBncmlkIHNldHRsZXMgYmVmb3JlICLmiavmj4/lrozmr5UiLgogICAgICAgIGlmIChlbnJpY2hUYXNrcy5Db3VudCA+IDApCiAgICAgICAgewogICAgICAgICAgICB0cnkgeyBhd2FpdCBUYXNrLldoZW5BbGwoZW5yaWNoVGFza3MpLldhaXRBc3luYyhjdCkuQ29uZmlndXJlQXdhaXQoZmFsc2UpOyB9CiAgICAgICAgICAgIGNhdGNoIChPcGVyYXRpb25DYW5jZWxlZEV4Y2VwdGlvbikgeyAvKiBjYW5jZWxsZWQgKi8gfQogICAgICAgICAgICBjYXRjaCAoRXhjZXB0aW9uIGV4KSB7IEFwcExvZy5JbnN0YW5jZS5Mb2cobmFtZW9mKFNjYW5FbmdpbmUpLCAi6KGl5YWF5L+h5oGv5aSx6LSlOiAiICsgZXguTWVzc2FnZSk7IH0KICAgICAgICB9CiAgICB9Cn0K
+using IPScaner.Core.Configuration;
+using IPScaner.Core.Logging;
+using IPScaner.Core.Models;
+
+namespace IPScaner.Core.Net;
+
+/// <summary>Progress snapshot for a running sweep.</summary>
+public readonly record struct ScanProgress(int Completed, int Total, string CurrentIP)
+{
+    public double Fraction => Total <= 0 ? 0 : (double)Completed / Total;
+}
+
+/// <summary>
+/// Drives a full address sweep: probes every target with bounded concurrency,
+/// then enriches the survivors with host name and MAC.
+/// </summary>
+/// <remarks>
+/// The original dispatched one <c>Ping.SendAsync</c> every 10&nbsp;ms with no
+/// concurrency ceiling and mutated WinForms controls straight from the callback
+/// thread. This engine keeps the same observable results but:
+/// <list type="bullet">
+/// <item>caps in-flight probes (<see cref="DefaultConcurrency"/>),</item>
+/// <item>reports results through <see cref="IProgress{T}"/> so the UI decides how
+/// to marshal to its own thread, and</item>
+/// <item>honours cancellation promptly.</item>
+/// </list>
+/// Each host is reported twice when name lookup is on — once as soon as liveness
+/// is known (so blocks colour in immediately, as before) and again once the
+/// host name and MAC arrive.
+/// </remarks>
+public sealed class ScanEngine
+{
+    public const int DefaultConcurrency = 64;
+
+    /// <summary>
+    /// Host-name lookups are far more expensive than pings, so they run on a
+    /// smaller gate to stop reverse-DNS from starving the probe pool.
+    /// </summary>
+    public const int DefaultEnrichmentConcurrency = 16;
+
+    private readonly LivenessProbe _probe;
+    private readonly NameResolver _names;
+    private readonly ArpTable _arp;
+
+    public ScanEngine(LivenessProbe probe, NameResolver names, ArpTable arp)
+    {
+        _probe = probe;
+        _names = names;
+        _arp = arp;
+    }
+
+    /// <summary>Convenience factory wiring the standard collaborators together.</summary>
+    public static ScanEngine CreateDefault(AdapterService? adapters = null)
+    {
+        var adapterService = adapters ?? new AdapterService();
+        var arp = new ArpTable(() => adapterService.GetAll());
+        return new ScanEngine(new LivenessProbe(arp), new NameResolver(), arp);
+    }
+
+    /// <summary>
+    /// Probes a single host and returns an enriched result — the click-a-block
+    /// path. Name and MAC are only looked up when the host answered and
+    /// <see cref="AppConfig.QueryHostNameEnabled"/> is on, matching a sweep.
+    /// </summary>
+    public async Task<HostResult> ProbeOnceAsync(string ip, AppConfig config, CancellationToken ct = default)
+    {
+        var verdict = await _probe.ProbeAsync(ip, config, ct).ConfigureAwait(false);
+
+        var host = new HostResult
+        {
+            IP = ip,
+            LastOctet = IpMath.TryParseOctets(ip, out var o) ? o[3] : 0,
+            Status = verdict.Status,
+            Source = verdict.Source,
+            PingStatus = verdict.PingStatus,
+        };
+        host.ApplyRoundtrip(verdict.RoundtripMs);
+
+        if (host.Status == HostStatus.Online && config.QueryHostNameEnabled)
+        {
+            var name = await _names.ResolveAsync(ip, ct).ConfigureAwait(false);
+            var mac = await _arp.GetMacAsync(ip, ct).ConfigureAwait(false) ?? string.Empty;
+            if (name != NameResolver.Unknown) host.HostName = name;
+            host.Mac = mac;
+        }
+
+        return host;
+    }
+
+    /// <summary>
+    /// Probes every address in <paramref name="targets"/>. Results stream through
+    /// <paramref name="onResult"/> as they become available.
+    /// </summary>
+    public async Task RunAsync(
+        IReadOnlyList<string> targets,
+        AppConfig config,
+        Func<HostResult, Task> onResult,
+        IProgress<ScanProgress>? progress = null,
+        int concurrency = DefaultConcurrency,
+        CancellationToken ct = default)
+    {
+        ArgumentNullException.ThrowIfNull(targets);
+        ArgumentNullException.ThrowIfNull(config);
+        ArgumentNullException.ThrowIfNull(onResult);
+
+        if (targets.Count == 0) return;
+
+        var total = targets.Count;
+        var completed = 0;
+        var gate = new SemaphoreSlim(Math.Max(1, concurrency));
+        var enrichGate = new SemaphoreSlim(DefaultEnrichmentConcurrency);
+        var enrichTasks = new List<Task>();
+        var resultLock = new object();
+        var results = new Dictionary<string, HostResult>(StringComparer.OrdinalIgnoreCase);
+
+        var probeTasks = targets.Select(async ip =>
+        {
+            await gate.WaitAsync(ct).ConfigureAwait(false);
+            try
+            {
+                var verdict = await _probe.ProbeAsync(ip, config, ct).ConfigureAwait(false);
+
+                var host = new HostResult
+                {
+                    IP = ip,
+                    LastOctet = IpMath.TryParseOctets(ip, out var o) ? o[3] : 0,
+                    Status = verdict.Status,
+                    Source = verdict.Source,
+                    PingStatus = verdict.PingStatus,
+                };
+                host.ApplyRoundtrip(verdict.RoundtripMs);
+
+                lock (resultLock) results[ip] = host;
+
+                var done = Interlocked.Increment(ref completed);
+                progress?.Report(new ScanProgress(done, total, ip));
+                await onResult(host).ConfigureAwait(false);
+
+                if (verdict.Status == HostStatus.Online && config.QueryHostNameEnabled)
+                {
+                    var enrich = Task.Run(async () =>
+                    {
+                        await enrichGate.WaitAsync(ct).ConfigureAwait(false);
+                        try
+                        {
+                            var name = await _names.ResolveAsync(ip, ct).ConfigureAwait(false);
+                            var mac = await _arp.GetMacAsync(ip, ct).ConfigureAwait(false) ?? string.Empty;
+
+                            lock (resultLock)
+                            {
+                                if (!results.TryGetValue(ip, out var current)) return;
+                                if (name != NameResolver.Unknown) current.HostName = name;
+                                current.Mac = mac;
+                            }
+
+                            await onResult(host).ConfigureAwait(false);
+                        }
+                        finally
+                        {
+                            enrichGate.Release();
+                        }
+                    }, ct);
+
+                    lock (resultLock) enrichTasks.Add(enrich);
+                }
+            }
+            catch (OperationCanceledException)
+            {
+                // Cancellation is expected; the caller inspects the token.
+            }
+            catch (Exception ex)
+            {
+                AppLog.Instance.Log(nameof(ScanEngine), $"扫描 {ip} 出错: {ex.Message}");
+            }
+            finally
+            {
+                gate.Release();
+            }
+        }).ToList();
+
+        await Task.WhenAll(probeTasks).ConfigureAwait(false);
+
+        // Let pending name/MAC lookups finish so the grid settles before "扫描完毕".
+        if (enrichTasks.Count > 0)
+        {
+            try { await Task.WhenAll(enrichTasks).WaitAsync(ct).ConfigureAwait(false); }
+            catch (OperationCanceledException) { /* cancelled */ }
+            catch (Exception ex) { AppLog.Instance.Log(nameof(ScanEngine), "补充信息失败: " + ex.Message); }
+        }
+    }
+}

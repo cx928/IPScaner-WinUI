@@ -1,1 +1,35 @@
-IyBCdWlsZCBvdXRwdXQKYmluLwpvYmovCltEZF1lYnVnLwpbUnJdZWxlYXNlLwp4NjQvCkFSTTY0LwoqLnVzZXIKKi5zdW8KLnZzLwoKIyBQYWNrYWdpbmcgb3V0cHV0IOKAlCB0aGUgaW5zdGFsbGVycyBhcmUgYXR0YWNoZWQgdG8gR2l0SHViIFJlbGVhc2VzIGluc3RlYWQgb2YKIyBiZWluZyBjb21taXR0ZWQsIHNvIHRoZSByZXBvc2l0b3J5IHN0YXlzIHNtYWxsLgphcnRpZmFjdHMvCl93b3JrLwoKIyBWZXJpZmljYXRpb24gaGFybmVzcyBidWlsZCBvdXRwdXQgKHRoZSBoYXJuZXNzIHNvdXJjZXMgdGhlbXNlbHZlcyBhcmUgdHJhY2tlZCkKX3ZlcmlmeS8qKi9iaW4vCl92ZXJpZnkvKiovb2JqLwoKIyBSdW50aW1lIGRhdGEgZmlsZXMgd3JpdHRlbiBuZXh0IHRvIHRoZSBleGVjdXRhYmxlIGJ5IHRoZSBwb3J0YWJsZSBidWlsZC4KIyBBIGRldmVsb3BlcidzIG93biBjb25maWcvbWVtby9oaXN0b3J5IG11c3QgbmV2ZXIgYmUgY29tbWl0dGVkLgpJUFNjYW5lci5jZmcKSVBTY2FuZXJNZW1vLmRhdApJUFNjYW5lci5kYXQKaXBTY2FuZXJfaGlzLnhtbApjb21tYW5kLnR4dApMb2dzLwrlr7zlh7ovCiouYnJva2VuCioudG1wCgojIFRvb2xpbmcKKi5sb2cKIWRvY3MvKiovKi5sb2cK
+# Build output
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+ARM64/
+*.user
+*.suo
+.vs/
+
+# Packaging output — the installers are attached to GitHub Releases instead of
+# being committed, so the repository stays small.
+artifacts/
+_work/
+
+# Verification harness build output (the harness sources themselves are tracked)
+_verify/**/bin/
+_verify/**/obj/
+
+# Runtime data files written next to the executable by the portable build.
+# A developer's own config/memo/history must never be committed.
+IPScaner.cfg
+IPScanerMemo.dat
+IPScaner.dat
+ipScaner_his.xml
+command.txt
+Logs/
+导出/
+*.broken
+*.tmp
+
+# Tooling
+*.log
+!docs/**/*.log

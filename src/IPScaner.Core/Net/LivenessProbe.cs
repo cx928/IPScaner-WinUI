@@ -1,1 +1,106 @@
-dXNpbmcgU3lzdGVtLk5ldC5OZXR3b3JrSW5mb3JtYXRpb247CnVzaW5nIElQU2NhbmVyLkNvcmUuQ29uZmlndXJhdGlvbjsKdXNpbmcgSVBTY2FuZXIuQ29yZS5Mb2dnaW5nOwp1c2luZyBJUFNjYW5lci5Db3JlLk1vZGVsczsKCm5hbWVzcGFjZSBJUFNjYW5lci5Db3JlLk5ldDsKCi8vLyA8c3VtbWFyeT5WZXJkaWN0IG9mIGEgc2luZ2xlIGxpdmVuZXNzIHByb2JlLjwvc3VtbWFyeT4KcHVibGljIHJlYWRvbmx5IHJlY29yZCBzdHJ1Y3QgTGl2ZW5lc3NSZXN1bHQoCiAgICBIb3N0U3RhdHVzIFN0YXR1cywKICAgIExpdmVuZXNzU291cmNlIFNvdXJjZSwKICAgIElQU3RhdHVzIFBpbmdTdGF0dXMsCiAgICBsb25nIFJvdW5kdHJpcE1zKQp7CiAgICBwdWJsaWMgc3RhdGljIExpdmVuZXNzUmVzdWx0IE9mZmxpbmUoSVBTdGF0dXMgc3RhdHVzKSA9PgogICAgICAgIG5ldyhIb3N0U3RhdHVzLk9mZmxpbmUsIExpdmVuZXNzU291cmNlLk5vbmUsIHN0YXR1cywgaW50Lk1heFZhbHVlKTsKfQoKLy8vIDxzdW1tYXJ5PgovLy8gRGVjaWRlcyB3aGV0aGVyIGEgaG9zdCBpcyByZWFjaGFibGUuCi8vLyA8L3N1bW1hcnk+Ci8vLyA8cmVtYXJrcz4KLy8vIFRoaXMgaXMgdGhlIG1lY2hhbmlzbSB0aGUgdjEuMjggY2hhbmdlbG9nIHJld29ya2VkICgi5L+u5aSN6YOo5YiG55S16ISR56aBUElOR+WvvOiHtOaYvuekuuS4jeWcqOe6v+eahOmXrumimCIpLgovLy8gVGhlIGV2YWx1YXRpb24gb3JkZXIgaXMgcHJlc2VydmVkIGV4YWN0bHkgZnJvbSB0aGUgb3JpZ2luYWwKLy8vIDxjPkZvcm1NYWluLlBpbmdfUGluZ0NvbXBsZXRlZDwvYz46Ci8vLyA8bGlzdCB0eXBlPSJudW1iZXIiPgovLy8gPGl0ZW0+SUNNUCBlY2hvIHdpdGggPHNlZSBjcmVmPSJBcHBDb25maWcuUGluZ1RpbWVvdXQiLz4uIFN1Y2Nlc3Mgd2lucyBvdXRyaWdodC48L2l0ZW0+Ci8vLyA8aXRlbT5JZiA8c2VlIGNyZWY9IkFwcENvbmZpZy5BUlBJbnN0ZWFkUGluZ0VuYWJsZWQiLz46IGEgcG9wdWxhdGVkIEFSUCBlbnRyeSBjb3VudHMgYXMgb25saW5lLjwvaXRlbT4KLy8vIDxpdGVtPklmIDxzZWUgY3JlZj0iQXBwQ29uZmlnLlBvcnRJbnN0ZWFkUGluZ0VuYWJsZWQiLz46IGFueSBvcGVuIHBvcnQgZnJvbQovLy8gPHNlZSBjcmVmPSJBcHBDb25maWcuUHJlUG9ydEFycmF5Ii8+IGNvdW50cyBhcyBvbmxpbmUuPC9pdGVtPgovLy8gPGl0ZW0+T3RoZXJ3aXNlIHRoZSBob3N0IGlzIG9mZmxpbmUuPC9pdGVtPgovLy8gPC9saXN0PgovLy8gTm90ZSB0aGF0IEFSUCBpcyBjb25zdWx0ZWQgPGk+YmVmb3JlPC9pPiB0aGUgVENQIHByb2JlLCBhbmQgdGhhdCBkaXNhYmxpbmcgYm90aAovLy8gZmFsbGJhY2tzIHJlcHJvZHVjZXMgdGhlIG9sZCAi56aBUElORyA9IOS4jeWcqOe6vyIgYmVoYXZpb3VyLgovLy8gPC9yZW1hcmtzPgpwdWJsaWMgc2VhbGVkIGNsYXNzIExpdmVuZXNzUHJvYmUKewogICAgcHJpdmF0ZSByZWFkb25seSBBcnBUYWJsZSBfYXJwOwoKICAgIHB1YmxpYyBMaXZlbmVzc1Byb2JlKEFycFRhYmxlIGFycCkgPT4gX2FycCA9IGFycDsKCiAgICAvLy8gPHN1bW1hcnk+UnVucyB0aGUgZnVsbCBmYWxsYmFjayBjaGFpbiBmb3Igb25lIGFkZHJlc3MuPC9zdW1tYXJ5PgogICAgcHVibGljIGFzeW5jIFRhc2s8TGl2ZW5lc3NSZXN1bHQ+IFByb2JlQXN5bmMoc3RyaW5nIGlwQWRkcmVzcywgQXBwQ29uZmlnIGNvbmZpZywgQ2FuY2VsbGF0aW9uVG9rZW4gY3QgPSBkZWZhdWx0KQogICAgewogICAgICAgIHZhciBwaW5nU3RhdHVzID0gYXdhaXQgUGluZ0FzeW5jKGlwQWRkcmVzcywgY29uZmlnLlBpbmdUaW1lb3V0LCBjdCkuQ29uZmlndXJlQXdhaXQoZmFsc2UpOwogICAgICAgIGlmIChwaW5nU3RhdHVzLlN0YXR1cyA9PSBJUFN0YXR1cy5TdWNjZXNzKQogICAgICAgIHsKICAgICAgICAgICAgQXBwTG9nLkluc3RhbmNlLkxvZyhuYW1lb2YoTGl2ZW5lc3NQcm9iZSksICQie2lwQWRkcmVzc30g5Zyo57q/IChQaW5nIHtwaW5nU3RhdHVzLlJvdW5kdHJpcFRpbWV9bXMpIik7CiAgICAgICAgICAgIHJldHVybiBuZXcgTGl2ZW5lc3NSZXN1bHQoSG9zdFN0YXR1cy5PbmxpbmUsIExpdmVuZXNzU291cmNlLkljbXAsIElQU3RhdHVzLlN1Y2Nlc3MsIHBpbmdTdGF0dXMuUm91bmR0cmlwVGltZSk7CiAgICAgICAgfQoKICAgICAgICB2YXIgcG9ydHMgPSBjb25maWcuR2V0UHJlUG9ydHMoKTsKICAgICAgICB2YXIgcG9ydEZhbGxiYWNrQXZhaWxhYmxlID0gY29uZmlnLlBvcnRJbnN0ZWFkUGluZ0VuYWJsZWQgJiYgcG9ydHMuQ291bnQgPiAwOwoKICAgICAgICBpZiAoY29uZmlnLkFSUEluc3RlYWRQaW5nRW5hYmxlZCkKICAgICAgICB7CiAgICAgICAgICAgIGlmIChhd2FpdCBfYXJwLklzT25saW5lQnlBcnBBc3luYyhpcEFkZHJlc3MsIGN0KS5Db25maWd1cmVBd2FpdChmYWxzZSkpCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIEFwcExvZy5JbnN0YW5jZS5Mb2cobmFtZW9mKExpdmVuZXNzUHJvYmUpLCAkIntpcEFkZHJlc3N9IOWcqOe6vyAoQVJQKSIpOwogICAgICAgICAgICAgICAgcmV0dXJuIG5ldyBMaXZlbmVzc1Jlc3VsdChIb3N0U3RhdHVzLk9ubGluZSwgTGl2ZW5lc3NTb3VyY2UuQXJwLCBwaW5nU3RhdHVzLlN0YXR1cywgaW50Lk1heFZhbHVlKTsKICAgICAgICAgICAgfQoKICAgICAgICAgICAgaWYgKHBvcnRGYWxsYmFja0F2YWlsYWJsZSAmJgogICAgICAgICAgICAgICAgYXdhaXQgVGNwUHJvYmUuQW55UG9ydE9wZW5Bc3luYyhpcEFkZHJlc3MsIHBvcnRzLCBjb25maWcuUG9ydFRpbWVvdXQsIG51bGwsIGN0KS5Db25maWd1cmVBd2FpdChmYWxzZSkpCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIEFwcExvZy5JbnN0YW5jZS5Mb2cobmFtZW9mKExpdmVuZXNzUHJvYmUpLCAkIntpcEFkZHJlc3N9IOWcqOe6vyAoVENQKSIpOwogICAgICAgICAgICAgICAgcmV0dXJuIG5ldyBMaXZlbmVzc1Jlc3VsdChIb3N0U3RhdHVzLk9ubGluZSwgTGl2ZW5lc3NTb3VyY2UuVGNwUG9ydCwgcGluZ1N0YXR1cy5TdGF0dXMsIGludC5NYXhWYWx1ZSk7CiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIHJldHVybiBMaXZlbmVzc1Jlc3VsdC5PZmZsaW5lKHBpbmdTdGF0dXMuU3RhdHVzKTsKICAgICAgICB9CgogICAgICAgIGlmIChwb3J0RmFsbGJhY2tBdmFpbGFibGUgJiYKICAgICAgICAgICAgYXdhaXQgVGNwUHJvYmUuQW55UG9ydE9wZW5Bc3luYyhpcEFkZHJlc3MsIHBvcnRzLCBjb25maWcuUG9ydFRpbWVvdXQsIG51bGwsIGN0KS5Db25maWd1cmVBd2FpdChmYWxzZSkpCiAgICAgICAgewogICAgICAgICAgICBBcHBMb2cuSW5zdGFuY2UuTG9nKG5hbWVvZihMaXZlbmVzc1Byb2JlKSwgJCJ7aXBBZGRyZXNzfSDlnKjnur8gKFRDUCkiKTsKICAgICAgICAgICAgcmV0dXJuIG5ldyBMaXZlbmVzc1Jlc3VsdChIb3N0U3RhdHVzLk9ubGluZSwgTGl2ZW5lc3NTb3VyY2UuVGNwUG9ydCwgcGluZ1N0YXR1cy5TdGF0dXMsIGludC5NYXhWYWx1ZSk7CiAgICAgICAgfQoKICAgICAgICByZXR1cm4gTGl2ZW5lc3NSZXN1bHQuT2ZmbGluZShwaW5nU3RhdHVzLlN0YXR1cyk7CiAgICB9CgogICAgLy8vIDxzdW1tYXJ5PgogICAgLy8vIFNlbmRzIGEgc2luZ2xlIElDTVAgZWNoby4gTmV2ZXIgdGhyb3dzOiBhbiBleGNlcHRpb24gaXMgcmVwb3J0ZWQgYXMKICAgIC8vLyA8c2VlIGNyZWY9IklQU3RhdHVzLlVua25vd24iLz4gc28gdGhlIGNhbGxlciBjYW4gY29udGludWUgdGhlIHN3ZWVwLgogICAgLy8vIDwvc3VtbWFyeT4KICAgIHB1YmxpYyBzdGF0aWMgYXN5bmMgVGFzazwoSVBTdGF0dXMgU3RhdHVzLCBsb25nIFJvdW5kdHJpcFRpbWUpPiBQaW5nQXN5bmMoCiAgICAgICAgc3RyaW5nIGlwQWRkcmVzcywgaW50IHRpbWVvdXRNcywgQ2FuY2VsbGF0aW9uVG9rZW4gY3QgPSBkZWZhdWx0KQogICAgewogICAgICAgIHRyeQogICAgICAgIHsKICAgICAgICAgICAgdXNpbmcgdmFyIHBpbmcgPSBuZXcgUGluZygpOwogICAgICAgICAgICB2YXIgcmVwbHkgPSBhd2FpdCBwaW5nLlNlbmRQaW5nQXN5bmMoaXBBZGRyZXNzLCB0aW1lb3V0TXMpLldhaXRBc3luYyhjdCkuQ29uZmlndXJlQXdhaXQoZmFsc2UpOwogICAgICAgICAgICByZXR1cm4gKHJlcGx5LlN0YXR1cywgcmVwbHkuU3RhdHVzID09IElQU3RhdHVzLlN1Y2Nlc3MgPyByZXBseS5Sb3VuZHRyaXBUaW1lIDogLTEpOwogICAgICAgIH0KICAgICAgICBjYXRjaCAoT3BlcmF0aW9uQ2FuY2VsZWRFeGNlcHRpb24pCiAgICAgICAgewogICAgICAgICAgICB0aHJvdzsKICAgICAgICB9CiAgICAgICAgY2F0Y2ggKEV4Y2VwdGlvbiBleCkKICAgICAgICB7CiAgICAgICAgICAgIEFwcExvZy5JbnN0YW5jZS5Mb2cobmFtZW9mKExpdmVuZXNzUHJvYmUpLCAkIlBpbmcge2lwQWRkcmVzc30g5byC5bi4OiB7ZXguTWVzc2FnZX0iKTsKICAgICAgICAgICAgcmV0dXJuIChJUFN0YXR1cy5Vbmtub3duLCAtMSk7CiAgICAgICAgfQogICAgfQp9Cg==
+using System.Net.NetworkInformation;
+using IPScaner.Core.Configuration;
+using IPScaner.Core.Logging;
+using IPScaner.Core.Models;
+
+namespace IPScaner.Core.Net;
+
+/// <summary>Verdict of a single liveness probe.</summary>
+public readonly record struct LivenessResult(
+    HostStatus Status,
+    LivenessSource Source,
+    IPStatus PingStatus,
+    long RoundtripMs)
+{
+    public static LivenessResult Offline(IPStatus status) =>
+        new(HostStatus.Offline, LivenessSource.None, status, int.MaxValue);
+}
+
+/// <summary>
+/// Decides whether a host is reachable.
+/// </summary>
+/// <remarks>
+/// This is the mechanism the v1.28 changelog reworked ("修复部分电脑禁PING导致显示不在线的问题").
+/// The evaluation order is preserved exactly from the original
+/// <c>FormMain.Ping_PingCompleted</c>:
+/// <list type="number">
+/// <item>ICMP echo with <see cref="AppConfig.PingTimeout"/>. Success wins outright.</item>
+/// <item>If <see cref="AppConfig.ARPInsteadPingEnabled"/>: a populated ARP entry counts as online.</item>
+/// <item>If <see cref="AppConfig.PortInsteadPingEnabled"/>: any open port from
+/// <see cref="AppConfig.PrePortArray"/> counts as online.</item>
+/// <item>Otherwise the host is offline.</item>
+/// </list>
+/// Note that ARP is consulted <i>before</i> the TCP probe, and that disabling both
+/// fallbacks reproduces the old "禁PING = 不在线" behaviour.
+/// </remarks>
+public sealed class LivenessProbe
+{
+    private readonly ArpTable _arp;
+
+    public LivenessProbe(ArpTable arp) => _arp = arp;
+
+    /// <summary>Runs the full fallback chain for one address.</summary>
+    public async Task<LivenessResult> ProbeAsync(string ipAddress, AppConfig config, CancellationToken ct = default)
+    {
+        var pingStatus = await PingAsync(ipAddress, config.PingTimeout, ct).ConfigureAwait(false);
+        if (pingStatus.Status == IPStatus.Success)
+        {
+            AppLog.Instance.Log(nameof(LivenessProbe), $"{ipAddress} 在线 (Ping {pingStatus.RoundtripTime}ms)");
+            return new LivenessResult(HostStatus.Online, LivenessSource.Icmp, IPStatus.Success, pingStatus.RoundtripTime);
+        }
+
+        var ports = config.GetPrePorts();
+        var portFallbackAvailable = config.PortInsteadPingEnabled && ports.Count > 0;
+
+        if (config.ARPInsteadPingEnabled)
+        {
+            if (await _arp.IsOnlineByArpAsync(ipAddress, ct).ConfigureAwait(false))
+            {
+                AppLog.Instance.Log(nameof(LivenessProbe), $"{ipAddress} 在线 (ARP)");
+                return new LivenessResult(HostStatus.Online, LivenessSource.Arp, pingStatus.Status, int.MaxValue);
+            }
+
+            if (portFallbackAvailable &&
+                await TcpProbe.AnyPortOpenAsync(ipAddress, ports, config.PortTimeout, null, ct).ConfigureAwait(false))
+            {
+                AppLog.Instance.Log(nameof(LivenessProbe), $"{ipAddress} 在线 (TCP)");
+                return new LivenessResult(HostStatus.Online, LivenessSource.TcpPort, pingStatus.Status, int.MaxValue);
+            }
+
+            return LivenessResult.Offline(pingStatus.Status);
+        }
+
+        if (portFallbackAvailable &&
+            await TcpProbe.AnyPortOpenAsync(ipAddress, ports, config.PortTimeout, null, ct).ConfigureAwait(false))
+        {
+            AppLog.Instance.Log(nameof(LivenessProbe), $"{ipAddress} 在线 (TCP)");
+            return new LivenessResult(HostStatus.Online, LivenessSource.TcpPort, pingStatus.Status, int.MaxValue);
+        }
+
+        return LivenessResult.Offline(pingStatus.Status);
+    }
+
+    /// <summary>
+    /// Sends a single ICMP echo. Never throws: an exception is reported as
+    /// <see cref="IPStatus.Unknown"/> so the caller can continue the sweep.
+    /// </summary>
+    public static async Task<(IPStatus Status, long RoundtripTime)> PingAsync(
+        string ipAddress, int timeoutMs, CancellationToken ct = default)
+    {
+        try
+        {
+            using var ping = new Ping();
+            var reply = await ping.SendPingAsync(ipAddress, timeoutMs).WaitAsync(ct).ConfigureAwait(false);
+            return (reply.Status, reply.Status == IPStatus.Success ? reply.RoundtripTime : -1);
+        }
+        catch (OperationCanceledException)
+        {
+            throw;
+        }
+        catch (Exception ex)
+        {
+            AppLog.Instance.Log(nameof(LivenessProbe), $"Ping {ipAddress} 异常: {ex.Message}");
+            return (IPStatus.Unknown, -1);
+        }
+    }
+}

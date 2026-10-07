@@ -1,1 +1,64 @@
-dXNpbmcgU3lzdGVtLk5ldC5OZXR3b3JrSW5mb3JtYXRpb247CgpuYW1lc3BhY2UgSVBTY2FuZXIuQ29yZS5Nb2RlbHM7CgovLy8gPHN1bW1hcnk+Ci8vLyBSZXN1bHQgb2YgcHJvYmluZyBvbmUgSVB2NCBob3N0LiBUaGlzIGlzIHRoZSBzaW5nbGUgcmVjb3JkIHR5cGUgc2hhcmVkIGJ5IHRoZQovLy8gbWFpbiBncmlkLCB0aGUgYmF0Y2gtc2NhbiBncmlkIGFuZCBhbGwgZXhwb3J0cywgc28gZXZlcnkgc3VyZmFjZSByZXBvcnRzIHRoZQovLy8gc2FtZSBmYWN0cy4KLy8vIDwvc3VtbWFyeT4KcHVibGljIHNlYWxlZCBjbGFzcyBIb3N0UmVzdWx0CnsKICAgIHB1YmxpYyByZXF1aXJlZCBzdHJpbmcgSVAgeyBnZXQ7IGluaXQ7IH0KCiAgICAvLy8gPHN1bW1hcnk+RmluYWwgb2N0ZXQsIGZvciB0aGUgMS4uMjU0IGNvbG91ci1ibG9jayBncmlkLjwvc3VtbWFyeT4KICAgIHB1YmxpYyBpbnQgTGFzdE9jdGV0IHsgZ2V0OyBpbml0OyB9CgogICAgcHVibGljIEhvc3RTdGF0dXMgU3RhdHVzIHsgZ2V0OyBzZXQ7IH0gPSBIb3N0U3RhdHVzLlBlbmRpbmc7CgogICAgLy8vIDxzdW1tYXJ5PldoaWNoIHByb2JlIGNvbmZpcm1lZCBsaXZlbmVzcyAob3IgdGhlIGxhc3Qgb25lIHRyaWVkKS48L3N1bW1hcnk+CiAgICBwdWJsaWMgTGl2ZW5lc3NTb3VyY2UgU291cmNlIHsgZ2V0OyBzZXQ7IH0gPSBMaXZlbmVzc1NvdXJjZS5Ob25lOwoKICAgIHB1YmxpYyBzdHJpbmcgSG9zdE5hbWUgeyBnZXQ7IHNldDsgfSA9IHN0cmluZy5FbXB0eTsKCiAgICBwdWJsaWMgc3RyaW5nIE1hYyB7IGdldDsgc2V0OyB9ID0gc3RyaW5nLkVtcHR5OwoKICAgIC8vLyA8c3VtbWFyeT5Vc2VyIG1lbW8sIHJlc29sdmVkIGJ5IE1BQyBmaXJzdCBhbmQgSVAgc2Vjb25kLjwvc3VtbWFyeT4KICAgIHB1YmxpYyBzdHJpbmcgTWVtbyB7IGdldDsgc2V0OyB9ID0gc3RyaW5nLkVtcHR5OwoKICAgIC8vLyA8c3VtbWFyeT5JQ01QIHJvdW5kLXRyaXAgaW4gbXM7IDxzZWUgY3JlZj0iaW50Lk1heFZhbHVlIi8+IHdoZW4gdW5rbm93bi48L3N1bW1hcnk+CiAgICBwdWJsaWMgbG9uZyBSb3VuZHRyaXBNcyB7IGdldDsgc2V0OyB9ID0gaW50Lk1heFZhbHVlOwoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBXaGF0IHRoZSB0b29sdGlwIC8gZGV0YWlsIHBhbmUgc2hvd3M6IDxjPiZsdDsxbXM8L2M+LCA8Yz4xMm1zPC9jPiBvciA8Yz5UaW1lb3V0PC9jPi4KICAgIC8vLyBNYXRjaGVzIHRoZSBvcmlnaW5hbCBQaW5nUmVwbHlJbmZvIGZvcm1hdHRpbmcuCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgcHVibGljIHN0cmluZyBUaW1lVGV4dCB7IGdldDsgc2V0OyB9ID0gIlRpbWVvdXQiOwoKICAgIC8vLyA8c3VtbWFyeT5UcnVlIHdoaWxlIGEgcHJvYmUgaXMgaW4gZmxpZ2h0Ljwvc3VtbWFyeT4KICAgIHB1YmxpYyBib29sIElzQnVzeSB7IGdldDsgc2V0OyB9CgogICAgLy8vIDxzdW1tYXJ5PlRoZSByYXcgPHNlZSBjcmVmPSJJUFN0YXR1cyIvPiwga2VwdCBmb3IgdGhlIGRldGFpbCB3aW5kb3cuPC9zdW1tYXJ5PgogICAgcHVibGljIElQU3RhdHVzIFBpbmdTdGF0dXMgeyBnZXQ7IHNldDsgfSA9IElQU3RhdHVzLlVua25vd247CgogICAgLy8vIDxzdW1tYXJ5PuaJueasoeaJq+aPj+e9keagvOS4reeahOeKtuaAgeWIl+aWh+acrO+8iE9LIC8gTkfvvInjgII8L3N1bW1hcnk+CiAgICBwdWJsaWMgc3RyaW5nIFN0YXR1c0NvZGUgPT4gSG9zdFN0YXR1c1RleHQuQ29kZShTdGF0dXMpOwoKICAgIC8vLyA8c3VtbWFyeT5TZXRzIHRoZSB0aW1pbmcgZmllbGRzIGZyb20gYW4gSUNNUCByb3VuZC10cmlwIHZhbHVlLjwvc3VtbWFyeT4KICAgIHB1YmxpYyB2b2lkIEFwcGx5Um91bmR0cmlwKGxvbmcgbXMpCiAgICB7CiAgICAgICAgUm91bmR0cmlwTXMgPSBtczsKICAgICAgICBUaW1lVGV4dCA9IG1zIDwgMCA/ICJUaW1lb3V0IiA6IG1zIDwgMSA/ICI8MW1zIiA6IG1zICsgIm1zIjsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+TWFya3MgdGhlIGhvc3QgdW5yZWFjaGFibGUgYW5kIGNsZWFycyBhbnkgc3RhbGUgaWRlbnRpdHkgZGF0YS48L3N1bW1hcnk+CiAgICBwdWJsaWMgdm9pZCBNYXJrT2ZmbGluZSgpCiAgICB7CiAgICAgICAgU3RhdHVzID0gSG9zdFN0YXR1cy5PZmZsaW5lOwogICAgICAgIFNvdXJjZSA9IExpdmVuZXNzU291cmNlLk5vbmU7CiAgICAgICAgSG9zdE5hbWUgPSBzdHJpbmcuRW1wdHk7CiAgICAgICAgTWFjID0gc3RyaW5nLkVtcHR5OwogICAgICAgIFJvdW5kdHJpcE1zID0gaW50Lk1heFZhbHVlOwogICAgICAgIFRpbWVUZXh0ID0gIlRpbWVvdXQiOwogICAgfQp9Cg==
+using System.Net.NetworkInformation;
+
+namespace IPScaner.Core.Models;
+
+/// <summary>
+/// Result of probing one IPv4 host. This is the single record type shared by the
+/// main grid, the batch-scan grid and all exports, so every surface reports the
+/// same facts.
+/// </summary>
+public sealed class HostResult
+{
+    public required string IP { get; init; }
+
+    /// <summary>Final octet, for the 1..254 colour-block grid.</summary>
+    public int LastOctet { get; init; }
+
+    public HostStatus Status { get; set; } = HostStatus.Pending;
+
+    /// <summary>Which probe confirmed liveness (or the last one tried).</summary>
+    public LivenessSource Source { get; set; } = LivenessSource.None;
+
+    public string HostName { get; set; } = string.Empty;
+
+    public string Mac { get; set; } = string.Empty;
+
+    /// <summary>User memo, resolved by MAC first and IP second.</summary>
+    public string Memo { get; set; } = string.Empty;
+
+    /// <summary>ICMP round-trip in ms; <see cref="int.MaxValue"/> when unknown.</summary>
+    public long RoundtripMs { get; set; } = int.MaxValue;
+
+    /// <summary>
+    /// What the tooltip / detail pane shows: <c>&lt;1ms</c>, <c>12ms</c> or <c>Timeout</c>.
+    /// Matches the original PingReplyInfo formatting.
+    /// </summary>
+    public string TimeText { get; set; } = "Timeout";
+
+    /// <summary>True while a probe is in flight.</summary>
+    public bool IsBusy { get; set; }
+
+    /// <summary>The raw <see cref="IPStatus"/>, kept for the detail window.</summary>
+    public IPStatus PingStatus { get; set; } = IPStatus.Unknown;
+
+    /// <summary>批次扫描网格中的状态列文本（OK / NG）。</summary>
+    public string StatusCode => HostStatusText.Code(Status);
+
+    /// <summary>Sets the timing fields from an ICMP round-trip value.</summary>
+    public void ApplyRoundtrip(long ms)
+    {
+        RoundtripMs = ms;
+        TimeText = ms < 0 ? "Timeout" : ms < 1 ? "<1ms" : ms + "ms";
+    }
+
+    /// <summary>Marks the host unreachable and clears any stale identity data.</summary>
+    public void MarkOffline()
+    {
+        Status = HostStatus.Offline;
+        Source = LivenessSource.None;
+        HostName = string.Empty;
+        Mac = string.Empty;
+        RoundtripMs = int.MaxValue;
+        TimeText = "Timeout";
+    }
+}

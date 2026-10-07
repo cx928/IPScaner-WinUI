@@ -1,1 +1,65 @@
-PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPFBhZ2UKICAgIHg6Q2xhc3M9IklQU2NhbmVyLldpblVJLlZpZXdzLkFib3V0UGFnZSIKICAgIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iCiAgICB4bWxuczp4PSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbCIKICAgIHhtbG5zOmQ9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vZXhwcmVzc2lvbi9ibGVuZC8yMDA4IgogICAgeG1sbnM6bWM9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxmb3JtYXRzLm9yZy9tYXJrdXAtY29tcGF0aWJpbGl0eS8yMDA2IgogICAgbWM6SWdub3JhYmxlPSJkIgogICAgTmF2aWdhdGlvbkNhY2hlTW9kZT0iUmVxdWlyZWQiPgoKICAgIDxTY3JvbGxWaWV3ZXIgUGFkZGluZz0iMjgsMjQsMjgsMjQiIFZlcnRpY2FsU2Nyb2xsQmFyVmlzaWJpbGl0eT0iQXV0byI+CiAgICAgICAgPFN0YWNrUGFuZWwgU3BhY2luZz0iMTQiIE1heFdpZHRoPSI4NjAiIEhvcml6b250YWxBbGlnbm1lbnQ9IkxlZnQiPgoKICAgICAgICAgICAgPFN0YWNrUGFuZWwgT3JpZW50YXRpb249Ikhvcml6b250YWwiIFNwYWNpbmc9IjEyIj4KICAgICAgICAgICAgICAgIDxGb250SWNvbiBHbHlwaD0iJiN4RTk2ODsiIEZvbnRTaXplPSIzNCIgLz4KICAgICAgICAgICAgICAgIDxTdGFja1BhbmVsIFZlcnRpY2FsQWxpZ25tZW50PSJDZW50ZXIiPgogICAgICAgICAgICAgICAgICAgIDxUZXh0QmxvY2sgVGV4dD0i5bGA5Z+f572RSVDmiavmj4/lt6XlhbciIEZvbnRTaXplPSIyNiIgRm9udFdlaWdodD0iU2VtaUJvbGQiIC8+CiAgICAgICAgICAgICAgICAgICAgPFRleHRCbG9jayB4Ok5hbWU9IlZlcnNpb25MaW5lIiBTdHlsZT0ie1N0YXRpY1Jlc291cmNlIEhpbnRUZXh0U3R5bGV9IiAvPgogICAgICAgICAgICAgICAgPC9TdGFja1BhbmVsPgogICAgICAgICAgICA8L1N0YWNrUGFuZWw+CgogICAgICAgICAgICA8Qm9yZGVyIFN0eWxlPSJ7U3RhdGljUmVzb3VyY2UgQ2FyZFN0eWxlfSI+CiAgICAgICAgICAgICAgICA8U3RhY2tQYW5lbCBTcGFjaW5nPSI2Ij4KICAgICAgICAgICAgICAgICAgICA8VGV4dEJsb2NrIFRleHQ9IuWFs+S6juacrOasoemHjeaehCIgU3R5bGU9IntTdGF0aWNSZXNvdXJjZSBTZWN0aW9uSGVhZGVyU3R5bGV9IiAvPgogICAgICAgICAgICAgICAgICAgIDxUZXh0QmxvY2sgU3R5bGU9IntTdGF0aWNSZXNvdXJjZSBIaW50VGV4dFN0eWxlfSIgVGV4dFdyYXBwaW5nPSJXcmFwIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgVGV4dD0i5pys56iL5bqP5pivIElQU2NhbmVyIFYxLjI4LjLvvIhXaW5Gb3JtcyAvIC5ORVQgRnJhbWV3b3Jr77yJ55qEIFdpblVJIDMg6YeN5p6E54mI44CC5Y6f5pyJ55qE5YWo6YOoIDExIOmhueWKn+iDveWdh+W3suenu+akje+8mklQ5q615omr5o+P44CB5L+u5pS55pys5ZywSVDjgIFJUOaJuemHj+aJq+aPj+OAgUlQ5Zyw5Z2A6K6h566X5Zmo44CB55uu5qCH56uv5Y+j5omr5o+P44CB5pys5py656uv5Y+j5Y2g55So5p+l55yL44CBV2lGaeWvhueggeafpeeci+OAgVdpbmRvd3Plkb3ku6TjgIHlpIfms6jnrqHnkIbjgIHmoYzpnaLmmL7npLrmnKzmnLpJUOOAgeWFs+S6juOAgiIgLz4KICAgICAgICAgICAgICAgICAgICA8VGV4dEJsb2NrIFN0eWxlPSJ7U3RhdGljUmVzb3VyY2UgSGludFRleHRTdHlsZX0iIFRleHRXcmFwcGluZz0iV3JhcCIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFRleHQ9IueVjOmdouWxguS9v+eUqCBXaW5kb3dzIEFwcCBTREsgLyBXaW5VSSAz77yM5omr5o+P5byV5pOO5ouG5YiG5Li654us56uL55qEIElQU2NhbmVyLkNvcmUg57G75bqT77yM5Y+v5Y2V54us5rWL6K+V44CC6YWN572u5paH5Lu2IElQU2NhbmVyLmNmZ+OAgeWkh+azqOaWh+S7tiBJUFNjYW5lck1lbW8uZGF044CB6Ieq5a6a5LmJ5ZG95LukIGNvbW1hbmQudHh0IOS4juWOhuWPsiBJUCDmlofku7YgaXBTY2FuZXJfaGlzLnhtbCDnmoTmoLzlvI/kuI7ml6fniYjlrozlhajlhbzlrrnvvIzlj6/nm7TmjqXmsr/nlKjljp/mnInmlofku7bjgIIiIC8+CiAgICAgICAgICAgICAgICA8L1N0YWNrUGFuZWw+CiAgICAgICAgICAgIDwvQm9yZGVyPgoKICAgICAgICAgICAgPEJvcmRlciBTdHlsZT0ie1N0YXRpY1Jlc291cmNlIENhcmRTdHlsZX0iPgogICAgICAgICAgICAgICAgPFN0YWNrUGFuZWwgU3BhY2luZz0iNiI+CiAgICAgICAgICAgICAgICAgICAgPFRleHRCbG9jayBUZXh0PSLov5DooYznjq/looMiIFN0eWxlPSJ7U3RhdGljUmVzb3VyY2UgU2VjdGlvbkhlYWRlclN0eWxlfSIgLz4KICAgICAgICAgICAgICAgICAgICA8VGV4dEJsb2NrIHg6TmFtZT0iRW52aXJvbm1lbnRMaW5lIiBTdHlsZT0ie1N0YXRpY1Jlc291cmNlIEhpbnRUZXh0U3R5bGV9IiAvPgogICAgICAgICAgICAgICAgICAgIDxUZXh0QmxvY2sgeDpOYW1lPSJQYXRoTGluZSIgU3R5bGU9IntTdGF0aWNSZXNvdXJjZSBIaW50VGV4dFN0eWxlfSIgLz4KICAgICAgICAgICAgICAgICAgICA8VGV4dEJsb2NrIHg6TmFtZT0iRWxldmF0aW9uTGluZSIgU3R5bGU9IntTdGF0aWNSZXNvdXJjZSBIaW50VGV4dFN0eWxlfSIgLz4KICAgICAgICAgICAgICAgIDwvU3RhY2tQYW5lbD4KICAgICAgICAgICAgPC9Cb3JkZXI+CgogICAgICAgICAgICA8Qm9yZGVyIFN0eWxlPSJ7U3RhdGljUmVzb3VyY2UgQ2FyZFN0eWxlfSI+CiAgICAgICAgICAgICAgICA8U3RhY2tQYW5lbCBTcGFjaW5nPSI2Ij4KICAgICAgICAgICAgICAgICAgICA8VGV4dEJsb2NrIFRleHQ9IuS4juaXp+eJiOeahOW3ruW8giIgU3R5bGU9IntTdGF0aWNSZXNvdXJjZSBTZWN0aW9uSGVhZGVyU3R5bGV9IiAvPgogICAgICAgICAgICAgICAgICAgIDxUZXh0QmxvY2sgU3R5bGU9IntTdGF0aWNSZXNvdXJjZSBIaW50VGV4dFN0eWxlfSIgVGV4dFdyYXBwaW5nPSJXcmFwIiBUZXh0PSLigKIg5LiN5YaN5by65Yi25q+P5qyh5ZCv5Yqo6K+35rGC566h55CG5ZGY5p2D6ZmQ77yb5LuF5Zyo44CQ5L+u5pS55pys5ZywSVDjgJHlkozmuIXnqbpBUlDnvJPlrZjml7bpnIDopoHvvIznlYzpnaLkuIrmj5DkvpvmjInpnIDmj5DmnYPlhaXlj6PjgIIiIC8+CiAgICAgICAgICAgICAgICAgICAgPFRleHRCbG9jayBTdHlsZT0ie1N0YXRpY1Jlc291cmNlIEhpbnRUZXh0U3R5bGV9IiBUZXh0V3JhcHBpbmc9IldyYXAiIFRleHQ9IuKAoiDmiavmj4/lubblj5Hlj5fmjqfvvIjpu5jorqQgNjQg5bm25Y+R77yJ77yM5YGc5q2i5omr5o+P5Lya56uL5Y2z5Y+W5raI5bm25Lii5byD5Zyo6YCU57uT5p6c77yM5LiN5YaN5Ye6546w5pen54mI5YGc5q2i5ZCO6Imy5Z2X5LuN6KKr5pS55YaZ55qE6Zeu6aKY44CCIiAvPgogICAgICAgICAgICAgICAgICAgIDxUZXh0QmxvY2sgU3R5bGU9IntTdGF0aWNSZXNvdXJjZSBIaW50VGV4dFN0eWxlfSIgVGV4dFdyYXBwaW5nPSJXcmFwIiBUZXh0PSLigKIgQVJQIOihqOS4gOasoeivu+WPluOAgeWkjeeUqCAzIOenku+8jOabv+S7o+aXp+eJiOavj+WPsOS4u+acuuWQr+WKqOS4gOasoSBhcnAgLWEg5a2Q6L+b56iL55qE5YGa5rOV77ybTUFDIOWMuemFjeeUseWtkOS4suaUueS4uueyvuehruWMuemFjeOAgiIgLz4KICAgICAgICAgICAgICAgICAgICA8VGV4dEJsb2NrIFN0eWxlPSJ7U3RhdGljUmVzb3VyY2UgSGludFRleHRTdHlsZX0iIFRleHRXcmFwcGluZz0iV3JhcCIgVGV4dD0i4oCiIOerr+WPo+WIl+ihqOaUr+aMgeiMg+WbtOWGmeazle+8iOWmgiA4MCw0NDMsMTAwMC0yMDAw77yJ77yb5pys5py656uv5Y+j5Y2g55So5pS555SoIEdldEV4dGVuZGVkVGNwVGFibGUvVURQIEFQSe+8jOWPr+aYvuekuiBUQ1Ag54q25oCB5LiOIElQdjbvvIzkuI3lho3kvp3otZYgbmV0c3RhdCDmlofmnKzop6PmnpDjgIIiIC8+CiAgICAgICAgICAgICAgICAgICAgPFRleHRCbG9jayBTdHlsZT0ie1N0YXRpY1Jlc291cmNlIEhpbnRUZXh0U3R5bGV9IiBUZXh0V3JhcHBpbmc9IldyYXAiIFRleHQ9IuKAoiBXaUZpIOWvhueggeino+aekOS4jeWGjeS+nei1luS4reaWh+agh+iusO+8jOiLseaWh+eJiCBXaW5kb3dzIOWQjOagt+WPr+eUqOOAgiIgLz4KICAgICAgICAgICAgICAgICAgICA8VGV4dEJsb2NrIFN0eWxlPSJ7U3RhdGljUmVzb3VyY2UgSGludFRleHRTdHlsZX0iIFRleHRXcmFwcGluZz0iV3JhcCIgVGV4dD0i4oCiIOWvvOWHuuS4jeWGjeWPquWGmSBDU1bvvJrmlrDlop7nnJ/mraPnmoQgLnhsc3jvvJtDU1Yg6buY6K6k5bimIFVURi04IEJPTe+8jOmBv+WFjSBFeGNlbCDkuK3mlofkubHnoIHjgIIiIC8+CiAgICAgICAgICAgICAgICAgICAgPFRleHRCbG9jayBTdHlsZT0ie1N0YXRpY1Jlc291cmNlIEhpbnRUZXh0U3R5bGV9IiBUZXh0V3JhcHBpbmc9IldyYXAiIFRleHQ9IuKAoiDmjqnnoIHkvY3ovpPlhaXmlK/mjIEgMOKAkzMy77yI5pen54mI55WM6Z2i5LiK6ZmQ5Li6IDMw77yMLzMxIOS4jiAvMzIg5LiN5Y+v6L6+77yJ44CCIiAvPgogICAgICAgICAgICAgICAgPC9TdGFja1BhbmVsPgogICAgICAgICAgICA8L0JvcmRlcj4KCiAgICAgICAgICAgIDxCb3JkZXIgU3R5bGU9IntTdGF0aWNSZXNvdXJjZSBDYXJkU3R5bGV9Ij4KICAgICAgICAgICAgICAgIDxTdGFja1BhbmVsIFNwYWNpbmc9IjYiPgogICAgICAgICAgICAgICAgICAgIDxUZXh0QmxvY2sgVGV4dD0i5pu05paw6K+05piOIiBTdHlsZT0ie1N0YXRpY1Jlc291cmNlIFNlY3Rpb25IZWFkZXJTdHlsZX0iIC8+CiAgICAgICAgICAgICAgICAgICAgPFRleHRCbG9jayB4Ok5hbWU9IkNoYW5nZWxvZ1RleHQiIFN0eWxlPSJ7U3RhdGljUmVzb3VyY2UgSGludFRleHRTdHlsZX0iIFRleHRXcmFwcGluZz0iV3JhcCIgLz4KICAgICAgICAgICAgICAgIDwvU3RhY2tQYW5lbD4KICAgICAgICAgICAgPC9Cb3JkZXI+CgogICAgICAgICAgICA8VGV4dEJsb2NrIFN0eWxlPSJ7U3RhdGljUmVzb3VyY2UgSGludFRleHRTdHlsZX0iCiAgICAgICAgICAgICAgICAgICAgICAgVGV4dD0i5Y6f5aeL54mI5pysIENvcHlyaWdodCDCqSBjaGVuaHV4aWFuZ0BxcS5jb20gMjAxOS0yMDI1IiAvPgogICAgICAgIDwvU3RhY2tQYW5lbD4KICAgIDwvU2Nyb2xsVmlld2VyPgo8L1BhZ2U+Cg==
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="IPScaner.WinUI.Views.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    NavigationCacheMode="Required">
+
+    <ScrollViewer Padding="28,24,28,24" VerticalScrollBarVisibility="Auto">
+        <StackPanel Spacing="14" MaxWidth="860" HorizontalAlignment="Left">
+
+            <StackPanel Orientation="Horizontal" Spacing="12">
+                <FontIcon Glyph="&#xE968;" FontSize="34" />
+                <StackPanel VerticalAlignment="Center">
+                    <TextBlock Text="局域网IP扫描工具" FontSize="26" FontWeight="SemiBold" />
+                    <TextBlock x:Name="VersionLine" Style="{StaticResource HintTextStyle}" />
+                </StackPanel>
+            </StackPanel>
+
+            <Border Style="{StaticResource CardStyle}">
+                <StackPanel Spacing="6">
+                    <TextBlock Text="关于本次重构" Style="{StaticResource SectionHeaderStyle}" />
+                    <TextBlock Style="{StaticResource HintTextStyle}" TextWrapping="Wrap"
+                               Text="本程序是 IPScaner V1.28.2（WinForms / .NET Framework）的 WinUI 3 重构版。原有的全部 11 项功能均已移植：IP段扫描、修改本地IP、IP批量扫描、IP地址计算器、目标端口扫描、本机端口占用查看、WiFi密码查看、Windows命令、备注管理、桌面显示本机IP、关于。" />
+                    <TextBlock Style="{StaticResource HintTextStyle}" TextWrapping="Wrap"
+                               Text="界面层使用 Windows App SDK / WinUI 3，扫描引擎拆分为独立的 IPScaner.Core 类库，可单独测试。配置文件 IPScaner.cfg、备注文件 IPScanerMemo.dat、自定义命令 command.txt 与历史 IP 文件 ipScaner_his.xml 的格式与旧版完全兼容，可直接沿用原有文件。" />
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource CardStyle}">
+                <StackPanel Spacing="6">
+                    <TextBlock Text="运行环境" Style="{StaticResource SectionHeaderStyle}" />
+                    <TextBlock x:Name="EnvironmentLine" Style="{StaticResource HintTextStyle}" />
+                    <TextBlock x:Name="PathLine" Style="{StaticResource HintTextStyle}" />
+                    <TextBlock x:Name="ElevationLine" Style="{StaticResource HintTextStyle}" />
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource CardStyle}">
+                <StackPanel Spacing="6">
+                    <TextBlock Text="与旧版的差异" Style="{StaticResource SectionHeaderStyle}" />
+                    <TextBlock Style="{StaticResource HintTextStyle}" TextWrapping="Wrap" Text="• 不再强制每次启动请求管理员权限；仅在【修改本地IP】和清空ARP缓存时需要，界面上提供按需提权入口。" />
+                    <TextBlock Style="{StaticResource HintTextStyle}" TextWrapping="Wrap" Text="• 扫描并发受控（默认 64 并发），停止扫描会立即取消并丢弃在途结果，不再出现旧版停止后色块仍被改写的问题。" />
+                    <TextBlock Style="{StaticResource HintTextStyle}" TextWrapping="Wrap" Text="• ARP 表一次读取、复用 3 秒，替代旧版每台主机启动一次 arp -a 子进程的做法；MAC 匹配由子串改为精确匹配。" />
+                    <TextBlock Style="{StaticResource HintTextStyle}" TextWrapping="Wrap" Text="• 端口列表支持范围写法（如 80,443,1000-2000）；本机端口占用改用 GetExtendedTcpTable/UDP API，可显示 TCP 状态与 IPv6，不再依赖 netstat 文本解析。" />
+                    <TextBlock Style="{StaticResource HintTextStyle}" TextWrapping="Wrap" Text="• WiFi 密码解析不再依赖中文标记，英文版 Windows 同样可用。" />
+                    <TextBlock Style="{StaticResource HintTextStyle}" TextWrapping="Wrap" Text="• 导出不再只写 CSV：新增真正的 .xlsx；CSV 默认带 UTF-8 BOM，避免 Excel 中文乱码。" />
+                    <TextBlock Style="{StaticResource HintTextStyle}" TextWrapping="Wrap" Text="• 掩码位输入支持 0–32（旧版界面上限为 30，/31 与 /32 不可达）。" />
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource CardStyle}">
+                <StackPanel Spacing="6">
+                    <TextBlock Text="更新说明" Style="{StaticResource SectionHeaderStyle}" />
+                    <TextBlock x:Name="ChangelogText" Style="{StaticResource HintTextStyle}" TextWrapping="Wrap" />
+                </StackPanel>
+            </Border>
+
+            <TextBlock Style="{StaticResource HintTextStyle}"
+                       Text="原始版本 Copyright © chenhuxiang@qq.com 2019-2025" />
+        </StackPanel>
+    </ScrollViewer>
+</Page>

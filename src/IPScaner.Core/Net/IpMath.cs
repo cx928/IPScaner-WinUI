@@ -1,1 +1,146 @@
-dXNpbmcgU3lzdGVtLk5ldDsKdXNpbmcgU3lzdGVtLk5ldC5Tb2NrZXRzOwoKbmFtZXNwYWNlIElQU2NhbmVyLkNvcmUuTmV0OwoKLy8vIDxzdW1tYXJ5PgovLy8gSVB2NCBwYXJzaW5nIGFuZCBlbnVtZXJhdGlvbiBoZWxwZXJzLiBQdXJlIGZ1bmN0aW9ucyDigJQgbm8gSS9PLCBubyBXaW5kb3dzCi8vLyBkZXBlbmRlbmNpZXMg4oCUIHNvIHRoZXkgYXJlIGRpcmVjdGx5IHVuaXQtdGVzdGFibGUuCi8vLyA8L3N1bW1hcnk+CnB1YmxpYyBzdGF0aWMgY2xhc3MgSXBNYXRoCnsKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBBY2NlcHRzIGEgc3RyaWN0IGRvdHRlZCBxdWFkLiBVbmxpa2UgdGhlIG9yaWdpbmFsICh3aG9zZSByZWdleCBtYXRjaGVkIGEKICAgIC8vLyBwcmVmaXggYW5kIGxldCAiOTk5LjEuMS4xIiB0aHJvdWdoIHRvIGFuIE92ZXJmbG93RXhjZXB0aW9uKSBldmVyeSBvY3RldCBpcwogICAgLy8vIHJhbmdlLWNoZWNrZWQgaGVyZS4KICAgIC8vLyA8L3N1bW1hcnk+CiAgICBwdWJsaWMgc3RhdGljIGJvb2wgSXNWYWxpZElQdjQoc3RyaW5nPyB0ZXh0KQogICAgewogICAgICAgIGlmIChzdHJpbmcuSXNOdWxsT3JXaGl0ZVNwYWNlKHRleHQpKSByZXR1cm4gZmFsc2U7CiAgICAgICAgdmFyIHBhcnRzID0gdGV4dC5UcmltKCkuU3BsaXQoJy4nKTsKICAgICAgICBpZiAocGFydHMuTGVuZ3RoICE9IDQpIHJldHVybiBmYWxzZTsKICAgICAgICBmb3JlYWNoICh2YXIgcCBpbiBwYXJ0cykKICAgICAgICB7CiAgICAgICAgICAgIGlmIChwLkxlbmd0aCBpcyAwIG9yID4gMykgcmV0dXJuIGZhbHNlOwogICAgICAgICAgICBmb3JlYWNoICh2YXIgYyBpbiBwKSBpZiAoYyBpcyA8ICcwJyBvciA+ICc5JykgcmV0dXJuIGZhbHNlOwogICAgICAgICAgICBpZiAoIWludC5UcnlQYXJzZShwLCBvdXQgdmFyIHYpIHx8IHYgPiAyNTUpIHJldHVybiBmYWxzZTsKICAgICAgICB9CiAgICAgICAgcmV0dXJuIHRydWU7CiAgICB9CgogICAgLy8vIDxzdW1tYXJ5PlNwbGl0cyBhIGRvdHRlZCBxdWFkIGludG8gZm91ciBvY3RldHM7IHRocm93cyB3aGVuIG1hbGZvcm1lZC48L3N1bW1hcnk+CiAgICBwdWJsaWMgc3RhdGljIGludFtdIFBhcnNlT2N0ZXRzKHN0cmluZyBpcCkKICAgIHsKICAgICAgICBpZiAoIUlzVmFsaWRJUHY0KGlwKSkgdGhyb3cgbmV3IEZvcm1hdEV4Y2VwdGlvbigkIuS4jeaYr+WQiOazleeahElQdjTlnLDlnYA6IHtpcH0iKTsKICAgICAgICByZXR1cm4gWy4uIGlwLlNwbGl0KCcuJykuU2VsZWN0KGludC5QYXJzZSldOwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT5UcmllcyB0byBwYXJzZSBhIGRvdHRlZCBxdWFkIGludG8gZm91ciBvY3RldHMuPC9zdW1tYXJ5PgogICAgcHVibGljIHN0YXRpYyBib29sIFRyeVBhcnNlT2N0ZXRzKHN0cmluZz8gaXAsIG91dCBpbnRbXSBvY3RldHMpCiAgICB7CiAgICAgICAgb2N0ZXRzID0gW107CiAgICAgICAgaWYgKCFJc1ZhbGlkSVB2NChpcCkpIHJldHVybiBmYWxzZTsKICAgICAgICBvY3RldHMgPSBbLi4gaXAhLlRyaW0oKS5TcGxpdCgnLicpLlNlbGVjdChpbnQuUGFyc2UpXTsKICAgICAgICByZXR1cm4gdHJ1ZTsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+CiAgICAvLy8gVGhlICIxOTIuMTY4LjEiIHBvcnRpb24gb2YgYW4gYWRkcmVzcyDigJQgd2hhdCB0aGUgbWFpbiB3aW5kb3cgc2NhbnMuCiAgICAvLy8gUmV0dXJucyBhbiBlbXB0eSBzdHJpbmcgd2hlbiBmZXdlciB0aGFuIHRocmVlIG9jdGV0cyBhcmUgcHJlc2VudCwgd2hpY2ggaXMKICAgIC8vLyB0aGUgb3JpZ2luYWwncyB2YWxpZGF0aW9uIHNpZ25hbCAoIuivt+i+k+WFpUlQ5q615L+h5oGv77yM5q+U5aaCMTkyLjE2OC4xIikuCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgcHVibGljIHN0YXRpYyBzdHJpbmcgR2V0U2VnbWVudChzdHJpbmc/IGlwKQogICAgewogICAgICAgIGlmIChzdHJpbmcuSXNOdWxsT3JXaGl0ZVNwYWNlKGlwKSkgcmV0dXJuIHN0cmluZy5FbXB0eTsKICAgICAgICB2YXIgcGFydHMgPSBpcC5UcmltKCkuU3BsaXQoJy4nKTsKICAgICAgICByZXR1cm4gcGFydHMuTGVuZ3RoID49IDMgPyBzdHJpbmcuSm9pbigiLiIsIHBhcnRzLlRha2UoMykpIDogc3RyaW5nLkVtcHR5OwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT5WYWxpZGF0ZXMgYSB0aHJlZS1vY3RldCBzZWdtZW50IHN1Y2ggYXMgIjE5Mi4xNjguMSIuPC9zdW1tYXJ5PgogICAgcHVibGljIHN0YXRpYyBib29sIElzVmFsaWRTZWdtZW50KHN0cmluZz8gc2VnbWVudCkKICAgIHsKICAgICAgICBpZiAoc3RyaW5nLklzTnVsbE9yV2hpdGVTcGFjZShzZWdtZW50KSkgcmV0dXJuIGZhbHNlOwogICAgICAgIHZhciBwYXJ0cyA9IHNlZ21lbnQuVHJpbSgpLlNwbGl0KCcuJyk7CiAgICAgICAgaWYgKHBhcnRzLkxlbmd0aCAhPSAzKSByZXR1cm4gZmFsc2U7CiAgICAgICAgZm9yZWFjaCAodmFyIHAgaW4gcGFydHMpCiAgICAgICAgewogICAgICAgICAgICBpZiAocC5MZW5ndGggaXMgMCBvciA+IDMpIHJldHVybiBmYWxzZTsKICAgICAgICAgICAgZm9yZWFjaCAodmFyIGMgaW4gcCkgaWYgKGMgaXMgPCAnMCcgb3IgPiAnOScpIHJldHVybiBmYWxzZTsKICAgICAgICAgICAgaWYgKCFpbnQuVHJ5UGFyc2UocCwgb3V0IHZhciB2KSB8fCB2ID4gMjU1KSByZXR1cm4gZmFsc2U7CiAgICAgICAgfQogICAgICAgIHJldHVybiB0cnVlOwogICAgfQoKICAgIHB1YmxpYyBzdGF0aWMgdWludCBUb1VJbnQzMihzdHJpbmcgaXApCiAgICB7CiAgICAgICAgdmFyIG8gPSBQYXJzZU9jdGV0cyhpcCk7CiAgICAgICAgcmV0dXJuICgodWludClvWzBdIDw8IDI0KSB8ICgodWludClvWzFdIDw8IDE2KSB8ICgodWludClvWzJdIDw8IDgpIHwgKHVpbnQpb1szXTsKICAgIH0KCiAgICBwdWJsaWMgc3RhdGljIHN0cmluZyBGcm9tVUludDMyKHVpbnQgdmFsdWUpID0+CiAgICAgICAgJCJ7KHZhbHVlID4+IDI0KSAmIDB4RkZ9LnsodmFsdWUgPj4gMTYpICYgMHhGRn0ueyh2YWx1ZSA+PiA4KSAmIDB4RkZ9Lnt2YWx1ZSAmIDB4RkZ9IjsKCiAgICAvLy8gPHN1bW1hcnk+CiAgICAvLy8gRW51bWVyYXRlcyBhbiBpbmNsdXNpdmUgSVB2NCByYW5nZS4gV2hlbiA8cGFyYW1yZWYgbmFtZT0ic2tpcE5ldHdvcmtBbmRCcm9hZGNhc3QiLz4KICAgIC8vLyBpcyB0cnVlICh0aGUgb3JpZ2luYWwncyBkZWZhdWx0KSBhZGRyZXNzZXMgZW5kaW5nIGluIC4wIG9yIC4yNTUgYXJlIGRyb3BwZWQKICAgIC8vLyDigJQgdGhlIHNhbWUgcnVsZSB0aGUgYmF0Y2gtc2NhbiBhbmQgbWFzayBtb2RlcyByZWxpZWQgb24uCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgcHVibGljIHN0YXRpYyBMaXN0PHN0cmluZz4gR2V0UmFuZ2Uoc3RyaW5nIHN0YXJ0SXAsIHN0cmluZyBlbmRJcCwgYm9vbCBza2lwTmV0d29ya0FuZEJyb2FkY2FzdCA9IHRydWUpCiAgICB7CiAgICAgICAgdmFyIGxpc3QgPSBuZXcgTGlzdDxzdHJpbmc+KCk7CiAgICAgICAgaWYgKCFJc1ZhbGlkSVB2NChzdGFydElwKSB8fCAhSXNWYWxpZElQdjQoZW5kSXApKSByZXR1cm4gbGlzdDsKCiAgICAgICAgdWludCBzdGFydCA9IFRvVUludDMyKHN0YXJ0SXApLCBlbmQgPSBUb1VJbnQzMihlbmRJcCk7CiAgICAgICAgaWYgKHN0YXJ0ID4gZW5kKSByZXR1cm4gbGlzdDsKCiAgICAgICAgLy8gR3VhcmQgYWdhaW5zdCBhIGNhbGxlciBhc2tpbmcgZm9yIHRoZSB3aG9sZSBhZGRyZXNzIHNwYWNlLgogICAgICAgIGNvbnN0IGludCBtYXhDb3VudCA9IDY1NTM2OwogICAgICAgIGZvciAodWludCB2ID0gc3RhcnQ7IHYgPD0gZW5kOyB2KyspCiAgICAgICAgewogICAgICAgICAgICB2YXIgbGFzdCA9IHYgJiAweEZGOwogICAgICAgICAgICBpZiAoIXNraXBOZXR3b3JrQW5kQnJvYWRjYXN0IHx8IChsYXN0ICE9IDAgJiYgbGFzdCAhPSAyNTUpKQogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICBsaXN0LkFkZChGcm9tVUludDMyKHYpKTsKICAgICAgICAgICAgICAgIGlmIChsaXN0LkNvdW50ID49IG1heENvdW50KSBicmVhazsKICAgICAgICAgICAgfQogICAgICAgICAgICBpZiAodiA9PSB1aW50Lk1heFZhbHVlKSBicmVhazsgLy8gYXZvaWQgb3ZlcmZsb3cgd3JhcAogICAgICAgIH0KICAgICAgICByZXR1cm4gbGlzdDsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+RW51bWVyYXRlcyB0aGUgaG9zdCBhZGRyZXNzZXMgb2YgYSBzZWdtZW50OiAiMTkyLjE2OC4xIiAtPiAuMSAuLiAuMjU0Ljwvc3VtbWFyeT4KICAgIHB1YmxpYyBzdGF0aWMgTGlzdDxzdHJpbmc+IEdldFNlZ21lbnRIb3N0cyhzdHJpbmcgc2VnbWVudCwgaW50IGZpcnN0ID0gMSwgaW50IGxhc3QgPSAyNTQpCiAgICB7CiAgICAgICAgdmFyIGxpc3QgPSBuZXcgTGlzdDxzdHJpbmc+KCk7CiAgICAgICAgaWYgKCFJc1ZhbGlkU2VnbWVudChzZWdtZW50KSkgcmV0dXJuIGxpc3Q7CiAgICAgICAgZm9yICh2YXIgaSA9IGZpcnN0OyBpIDw9IGxhc3Q7IGkrKykgbGlzdC5BZGQoJCJ7c2VnbWVudH0ue2l9Iik7CiAgICAgICAgcmV0dXJuIGxpc3Q7CiAgICB9CgogICAgLy8vIDxzdW1tYXJ5PlRydWUgZm9yIGxvb3BiYWNrLCBBUElQQSBhbmQgMC54IGFkZHJlc3Nlcywgd2hpY2ggYWRhcHRlcnMgbmV2ZXIgc2hvdy48L3N1bW1hcnk+CiAgICBwdWJsaWMgc3RhdGljIGJvb2wgSXNJZ25vcmFibGVMb2NhbEFkZHJlc3Moc3RyaW5nIGlwKSA9PgogICAgICAgIGlwLlN0YXJ0c1dpdGgoIjE2OS4yNTQiLCBTdHJpbmdDb21wYXJpc29uLk9yZGluYWwpIHx8CiAgICAgICAgaXAuU3RhcnRzV2l0aCgiMTI3LiIsIFN0cmluZ0NvbXBhcmlzb24uT3JkaW5hbCkgfHwKICAgICAgICBpcC5FbmRzV2l0aCgiLjAiLCBTdHJpbmdDb21wYXJpc29uLk9yZGluYWwpOwoKICAgIC8vLyA8c3VtbWFyeT5QaW5nL0hUVFAtc2FmZSBob3N0IGxpdGVyYWwgZm9yIGEgdXNlci1zdXBwbGllZCBhZGRyZXNzLjwvc3VtbWFyeT4KICAgIHB1YmxpYyBzdGF0aWMgYm9vbCBUcnlSZXNvbHZlKHN0cmluZyBob3N0T3JJcCwgb3V0IElQQWRkcmVzcz8gYWRkcmVzcykKICAgIHsKICAgICAgICBhZGRyZXNzID0gbnVsbDsKICAgICAgICBpZiAoSVBBZGRyZXNzLlRyeVBhcnNlKGhvc3RPcklwLCBvdXQgdmFyIGRpcmVjdCkpCiAgICAgICAgewogICAgICAgICAgICBhZGRyZXNzID0gZGlyZWN0OwogICAgICAgICAgICByZXR1cm4gdHJ1ZTsKICAgICAgICB9CiAgICAgICAgdHJ5CiAgICAgICAgewogICAgICAgICAgICB2YXIgYWRkcnMgPSBEbnMuR2V0SG9zdEFkZHJlc3Nlcyhob3N0T3JJcCk7CiAgICAgICAgICAgIGFkZHJlc3MgPSBhZGRycy5GaXJzdE9yRGVmYXVsdChhID0+IGEuQWRkcmVzc0ZhbWlseSA9PSBBZGRyZXNzRmFtaWx5LkludGVyTmV0d29yayk7CiAgICAgICAgICAgIHJldHVybiBhZGRyZXNzIGlzIG5vdCBudWxsOwogICAgICAgIH0KICAgICAgICBjYXRjaAogICAgICAgIHsKICAgICAgICAgICAgcmV0dXJuIGZhbHNlOwogICAgICAgIH0KICAgIH0KfQo=
+using System.Net;
+using System.Net.Sockets;
+
+namespace IPScaner.Core.Net;
+
+/// <summary>
+/// IPv4 parsing and enumeration helpers. Pure functions — no I/O, no Windows
+/// dependencies — so they are directly unit-testable.
+/// </summary>
+public static class IpMath
+{
+    /// <summary>
+    /// Accepts a strict dotted quad. Unlike the original (whose regex matched a
+    /// prefix and let "999.1.1.1" through to an OverflowException) every octet is
+    /// range-checked here.
+    /// </summary>
+    public static bool IsValidIPv4(string? text)
+    {
+        if (string.IsNullOrWhiteSpace(text)) return false;
+        var parts = text.Trim().Split('.');
+        if (parts.Length != 4) return false;
+        foreach (var p in parts)
+        {
+            if (p.Length is 0 or > 3) return false;
+            foreach (var c in p) if (c is < '0' or > '9') return false;
+            if (!int.TryParse(p, out var v) || v > 255) return false;
+        }
+        return true;
+    }
+
+    /// <summary>Splits a dotted quad into four octets; throws when malformed.</summary>
+    public static int[] ParseOctets(string ip)
+    {
+        if (!IsValidIPv4(ip)) throw new FormatException($"不是合法的IPv4地址: {ip}");
+        return [.. ip.Split('.').Select(int.Parse)];
+    }
+
+    /// <summary>Tries to parse a dotted quad into four octets.</summary>
+    public static bool TryParseOctets(string? ip, out int[] octets)
+    {
+        octets = [];
+        if (!IsValidIPv4(ip)) return false;
+        octets = [.. ip!.Trim().Split('.').Select(int.Parse)];
+        return true;
+    }
+
+    /// <summary>
+    /// The "192.168.1" portion of an address — what the main window scans.
+    /// Returns an empty string when fewer than three octets are present, which is
+    /// the original's validation signal ("请输入IP段信息，比如192.168.1").
+    /// </summary>
+    public static string GetSegment(string? ip)
+    {
+        if (string.IsNullOrWhiteSpace(ip)) return string.Empty;
+        var parts = ip.Trim().Split('.');
+        return parts.Length >= 3 ? string.Join(".", parts.Take(3)) : string.Empty;
+    }
+
+    /// <summary>Validates a three-octet segment such as "192.168.1".</summary>
+    public static bool IsValidSegment(string? segment)
+    {
+        if (string.IsNullOrWhiteSpace(segment)) return false;
+        var parts = segment.Trim().Split('.');
+        if (parts.Length != 3) return false;
+        foreach (var p in parts)
+        {
+            if (p.Length is 0 or > 3) return false;
+            foreach (var c in p) if (c is < '0' or > '9') return false;
+            if (!int.TryParse(p, out var v) || v > 255) return false;
+        }
+        return true;
+    }
+
+    public static uint ToUInt32(string ip)
+    {
+        var o = ParseOctets(ip);
+        return ((uint)o[0] << 24) | ((uint)o[1] << 16) | ((uint)o[2] << 8) | (uint)o[3];
+    }
+
+    public static string FromUInt32(uint value) =>
+        $"{(value >> 24) & 0xFF}.{(value >> 16) & 0xFF}.{(value >> 8) & 0xFF}.{value & 0xFF}";
+
+    /// <summary>
+    /// Enumerates an inclusive IPv4 range. When <paramref name="skipNetworkAndBroadcast"/>
+    /// is true (the original's default) addresses ending in .0 or .255 are dropped
+    /// — the same rule the batch-scan and mask modes relied on.
+    /// </summary>
+    public static List<string> GetRange(string startIp, string endIp, bool skipNetworkAndBroadcast = true)
+    {
+        var list = new List<string>();
+        if (!IsValidIPv4(startIp) || !IsValidIPv4(endIp)) return list;
+
+        uint start = ToUInt32(startIp), end = ToUInt32(endIp);
+        if (start > end) return list;
+
+        // Guard against a caller asking for the whole address space.
+        const int maxCount = 65536;
+        for (uint v = start; v <= end; v++)
+        {
+            var last = v & 0xFF;
+            if (!skipNetworkAndBroadcast || (last != 0 && last != 255))
+            {
+                list.Add(FromUInt32(v));
+                if (list.Count >= maxCount) break;
+            }
+            if (v == uint.MaxValue) break; // avoid overflow wrap
+        }
+        return list;
+    }
+
+    /// <summary>Enumerates the host addresses of a segment: "192.168.1" -> .1 .. .254.</summary>
+    public static List<string> GetSegmentHosts(string segment, int first = 1, int last = 254)
+    {
+        var list = new List<string>();
+        if (!IsValidSegment(segment)) return list;
+        for (var i = first; i <= last; i++) list.Add($"{segment}.{i}");
+        return list;
+    }
+
+    /// <summary>True for loopback, APIPA and 0.x addresses, which adapters never show.</summary>
+    public static bool IsIgnorableLocalAddress(string ip) =>
+        ip.StartsWith("169.254", StringComparison.Ordinal) ||
+        ip.StartsWith("127.", StringComparison.Ordinal) ||
+        ip.EndsWith(".0", StringComparison.Ordinal);
+
+    /// <summary>Ping/HTTP-safe host literal for a user-supplied address.</summary>
+    public static bool TryResolve(string hostOrIp, out IPAddress? address)
+    {
+        address = null;
+        if (IPAddress.TryParse(hostOrIp, out var direct))
+        {
+            address = direct;
+            return true;
+        }
+        try
+        {
+            var addrs = Dns.GetHostAddresses(hostOrIp);
+            address = addrs.FirstOrDefault(a => a.AddressFamily == AddressFamily.InterNetwork);
+            return address is not null;
+        }
+        catch
+        {
+            return false;
+        }
+    }
+}

@@ -1,1 +1,182 @@
-dXNpbmcgU3lzdGVtLklPLkNvbXByZXNzaW9uOwp1c2luZyBTeXN0ZW0uVGV4dDsKdXNpbmcgSVBTY2FuZXIuQ29yZS5TdG9yYWdlOwoKbmFtZXNwYWNlIElQU2NhbmVyLkNvcmUuRXhwb3J0OwoKLy8vIDxzdW1tYXJ5PgovLy8gUmVzdWx0IGV4cG9ydCBoZWxwZXJzIOKAlCBDU1YgYW5kIHJlYWwgLnhsc3guCi8vLyA8L3N1bW1hcnk+Ci8vLyA8cmVtYXJrcz4KLy8vIFRoZSBvcmlnaW5hbCAi5a+85Ye65YiwRXhjZWwiIHdyb3RlIGEgYmFyZSBDU1Ygd2l0aCBubyBlbmNvZGluZyBhcmd1bWVudCwgd2hpY2gKLy8vIHByb2R1Y2VzIFVURi04IDxpPndpdGhvdXQ8L2k+IGEgQk9NOyBFeGNlbCBvbiBhIENoaW5lc2UgbG9jYWxlIHRoZW4gcmVuZGVycyB0aGUKLy8vIENoaW5lc2UgY29sdW1uIGhlYWRlcnMgYXMgbW9qaWJha2UuIEhlcmU6Ci8vLyA8bGlzdCB0eXBlPSJidWxsZXQiPgovLy8gPGl0ZW0+PHNlZSBjcmVmPSJXcml0ZUNzdiIvPiB3cml0ZXMgVVRGLTggPGI+d2l0aDwvYj4gYSBCT00gYnkgZGVmYXVsdCBzbyB0aGUKLy8vIGZpbGUgb3BlbnMgY29ycmVjdGx5IG9uIGRvdWJsZS1jbGljaywgYW5kIHF1b3RlcyBmaWVsZHMgcGVyIFJGQyZuYnNwOzQxODAuPC9pdGVtPgovLy8gPGl0ZW0+PHNlZSBjcmVmPSJXcml0ZVhsc3giLz4gZW1pdHMgYSBnZW51aW5lIFNwcmVhZHNoZWV0TUwgd29ya2Jvb2sgd2l0aCBubwovLy8gdGhpcmQtcGFydHkgZGVwZW5kZW5jeSwgc28gIuWvvOWHuuWIsEV4Y2VsIiByZWFsbHkgcHJvZHVjZXMgYW4gLnhsc3guPC9pdGVtPgovLy8gPC9saXN0PgovLy8gVGhlIG9yaWdpbmFsJ3MgZmlsZS1uYW1pbmcgY29udmVudGlvbiBpcyBwcmVzZXJ2ZWQuCi8vLyA8L3JlbWFya3M+CnB1YmxpYyBzdGF0aWMgY2xhc3MgVGFibGVFeHBvcnRlcgp7CiAgICAvLy8gPHN1bW1hcnk+QnVpbGRzIHRoZSBvcmlnaW5hbCdzIHRpbWVzdGFtcGVkIGZpbGUgbmFtZSwgZS5nLiAiSVDmibnph4/miavmj48tMjAyNjA4MTJfMTc0ODI4LmNzdiIuPC9zdW1tYXJ5PgogICAgcHVibGljIHN0YXRpYyBzdHJpbmcgQnVpbGRGaWxlTmFtZShzdHJpbmcgcHJlZml4LCBzdHJpbmcgZXh0ZW5zaW9uLCBEYXRlVGltZT8gdGltZXN0YW1wID0gbnVsbCkKICAgIHsKICAgICAgICB2YXIgc3RhbXAgPSAodGltZXN0YW1wID8/IERhdGVUaW1lLk5vdykuVG9TdHJpbmcoInl5eXlNTWRkSEhtbXNzIik7CiAgICAgICAgdmFyIGV4dCA9IGV4dGVuc2lvbi5TdGFydHNXaXRoKCcuJykgPyBleHRlbnNpb24gOiAiLiIgKyBleHRlbnNpb247CiAgICAgICAgcmV0dXJuICQie3ByZWZpeH0te3N0YW1wfXtleHR9IjsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+V3JpdGVzIGEgQ1NWIGZpbGUuPC9zdW1tYXJ5PgogICAgcHVibGljIHN0YXRpYyB2b2lkIFdyaXRlQ3N2KAogICAgICAgIHN0cmluZyBwYXRoLAogICAgICAgIElSZWFkT25seUxpc3Q8c3RyaW5nPiBoZWFkZXJzLAogICAgICAgIElFbnVtZXJhYmxlPElSZWFkT25seUxpc3Q8c3RyaW5nPj4gcm93cywKICAgICAgICBib29sIHdpdGhCb20gPSB0cnVlKQogICAgewogICAgICAgIHZhciBzYiA9IG5ldyBTdHJpbmdCdWlsZGVyKCk7CiAgICAgICAgc2IuQXBwZW5kTGluZShzdHJpbmcuSm9pbigiLCIsIGhlYWRlcnMuU2VsZWN0KEVzY2FwZSkpKTsKICAgICAgICBmb3JlYWNoICh2YXIgcm93IGluIHJvd3MpIHNiLkFwcGVuZExpbmUoc3RyaW5nLkpvaW4oIiwiLCByb3cuU2VsZWN0KEVzY2FwZSkpKTsKCiAgICAgICAgdmFyIGRpciA9IFBhdGguR2V0RGlyZWN0b3J5TmFtZShwYXRoKTsKICAgICAgICBpZiAoIXN0cmluZy5Jc051bGxPckVtcHR5KGRpcikpIERpcmVjdG9yeS5DcmVhdGVEaXJlY3RvcnkoZGlyKTsKCiAgICAgICAgRmlsZS5Xcml0ZUFsbFRleHQocGF0aCwgc2IuVG9TdHJpbmcoKSwgd2l0aEJvbSA/IFRleHRGaWxlRW5jb2RpbmcuVXRmOEJvbSA6IFRleHRGaWxlRW5jb2RpbmcuVXRmOE5vQm9tKTsKICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+UkZDIDQxODAgZmllbGQgZXNjYXBpbmc6IHF1b3RlIHdoZW4gdGhlIHZhbHVlIGNvbnRhaW5zICwgIiBvciBhIG5ld2xpbmUuPC9zdW1tYXJ5PgogICAgcHVibGljIHN0YXRpYyBzdHJpbmcgRXNjYXBlKHN0cmluZz8gdmFsdWUpCiAgICB7CiAgICAgICAgdmFyIHYgPSB2YWx1ZSA/PyBzdHJpbmcuRW1wdHk7CiAgICAgICAgaWYgKHYuSW5kZXhPZkFueShbJywnLCAnIicsICdccicsICdcbiddKSA8IDApIHJldHVybiB2OwogICAgICAgIHJldHVybiAiXCIiICsgdi5SZXBsYWNlKCJcIiIsICJcIlwiIikgKyAiXCIiOwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBXcml0ZXMgYSBtaW5pbWFsIGJ1dCB2YWxpZCAueGxzeCB3b3JrYm9vayAob25lIHNoZWV0LCBpbmxpbmUgc3RyaW5ncykuCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgcHVibGljIHN0YXRpYyB2b2lkIFdyaXRlWGxzeCgKICAgICAgICBzdHJpbmcgcGF0aCwKICAgICAgICBzdHJpbmcgc2hlZXROYW1lLAogICAgICAgIElSZWFkT25seUxpc3Q8c3RyaW5nPiBoZWFkZXJzLAogICAgICAgIElFbnVtZXJhYmxlPElSZWFkT25seUxpc3Q8c3RyaW5nPj4gcm93cykKICAgIHsKICAgICAgICB2YXIgZGlyID0gUGF0aC5HZXREaXJlY3RvcnlOYW1lKHBhdGgpOwogICAgICAgIGlmICghc3RyaW5nLklzTnVsbE9yRW1wdHkoZGlyKSkgRGlyZWN0b3J5LkNyZWF0ZURpcmVjdG9yeShkaXIpOwoKICAgICAgICAvLyBBIHBhY2thZ2UgbXVzdCBiZSBjcmVhdGVkIGZyb20gc2NyYXRjaCBlYWNoIHRpbWUuCiAgICAgICAgaWYgKEZpbGUuRXhpc3RzKHBhdGgpKSBGaWxlLkRlbGV0ZShwYXRoKTsKCiAgICAgICAgdXNpbmcgdmFyIHppcCA9IFppcEZpbGUuT3BlbihwYXRoLCBaaXBBcmNoaXZlTW9kZS5DcmVhdGUpOwoKICAgICAgICBBZGRFbnRyeSh6aXAsICJbQ29udGVudF9UeXBlc10ueG1sIiwgIiIiCiAgICAgICAgICAgIDw/eG1sIHZlcnNpb249IjEuMCIgZW5jb2Rpbmc9IlVURi04IiBzdGFuZGFsb25lPSJ5ZXMiPz4KICAgICAgICAgICAgPFR5cGVzIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvcGFja2FnZS8yMDA2L2NvbnRlbnQtdHlwZXMiPgogICAgICAgICAgICAgIDxEZWZhdWx0IEV4dGVuc2lvbj0icmVscyIgQ29udGVudFR5cGU9ImFwcGxpY2F0aW9uL3ZuZC5vcGVueG1sZm9ybWF0cy1wYWNrYWdlLnJlbGF0aW9uc2hpcHMreG1sIi8+CiAgICAgICAgICAgICAgPERlZmF1bHQgRXh0ZW5zaW9uPSJ4bWwiIENvbnRlbnRUeXBlPSJhcHBsaWNhdGlvbi94bWwiLz4KICAgICAgICAgICAgICA8T3ZlcnJpZGUgUGFydE5hbWU9Ii94bC93b3JrYm9vay54bWwiIENvbnRlbnRUeXBlPSJhcHBsaWNhdGlvbi92bmQub3BlbnhtbGZvcm1hdHMtb2ZmaWNlZG9jdW1lbnQuc3ByZWFkc2hlZXRtbC5zaGVldC5tYWluK3htbCIvPgogICAgICAgICAgICAgIDxPdmVycmlkZSBQYXJ0TmFtZT0iL3hsL3dvcmtzaGVldHMvc2hlZXQxLnhtbCIgQ29udGVudFR5cGU9ImFwcGxpY2F0aW9uL3ZuZC5vcGVueG1sZm9ybWF0cy1vZmZpY2Vkb2N1bWVudC5zcHJlYWRzaGVldG1sLndvcmtzaGVldCt4bWwiLz4KICAgICAgICAgICAgPC9UeXBlcz4KICAgICAgICAgICAgIiIiKTsKCiAgICAgICAgQWRkRW50cnkoemlwLCAiX3JlbHMvLnJlbHMiLCAiIiIKICAgICAgICAgICAgPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PgogICAgICAgICAgICA8UmVsYXRpb25zaGlwcyB4bWxucz0iaHR0cDovL3NjaGVtYXMub3BlbnhtbGZvcm1hdHMub3JnL3BhY2thZ2UvMjAwNi9yZWxhdGlvbnNoaXBzIj4KICAgICAgICAgICAgICA8UmVsYXRpb25zaGlwIElkPSJySWQxIiBUeXBlPSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvb2ZmaWNlRG9jdW1lbnQvMjAwNi9yZWxhdGlvbnNoaXBzL29mZmljZURvY3VtZW50IiBUYXJnZXQ9InhsL3dvcmtib29rLnhtbCIvPgogICAgICAgICAgICA8L1JlbGF0aW9uc2hpcHM+CiAgICAgICAgICAgICIiIik7CgogICAgICAgIEFkZEVudHJ5KHppcCwgInhsL3dvcmtib29rLnhtbCIsICQiIiIKICAgICAgICAgICAgPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PgogICAgICAgICAgICA8d29ya2Jvb2sgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxmb3JtYXRzLm9yZy9zcHJlYWRzaGVldG1sLzIwMDYvbWFpbiIgeG1sbnM6cj0iaHR0cDovL3NjaGVtYXMub3BlbnhtbGZvcm1hdHMub3JnL29mZmljZURvY3VtZW50LzIwMDYvcmVsYXRpb25zaGlwcyI+CiAgICAgICAgICAgICAgPHNoZWV0cz48c2hlZXQgbmFtZT0ie1htbChTYWZlU2hlZXROYW1lKHNoZWV0TmFtZSkpfSIgc2hlZXRJZD0iMSIgcjppZD0icklkMSIvPjwvc2hlZXRzPgogICAgICAgICAgICA8L3dvcmtib29rPgogICAgICAgICAgICAiIiIpOwoKICAgICAgICBBZGRFbnRyeSh6aXAsICJ4bC9fcmVscy93b3JrYm9vay54bWwucmVscyIsICIiIgogICAgICAgICAgICA8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCIgc3RhbmRhbG9uZT0ieWVzIj8+CiAgICAgICAgICAgIDxSZWxhdGlvbnNoaXBzIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvcGFja2FnZS8yMDA2L3JlbGF0aW9uc2hpcHMiPgogICAgICAgICAgICAgIDxSZWxhdGlvbnNoaXAgSWQ9InJJZDEiIFR5cGU9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxmb3JtYXRzLm9yZy9vZmZpY2VEb2N1bWVudC8yMDA2L3JlbGF0aW9uc2hpcHMvd29ya3NoZWV0IiBUYXJnZXQ9IndvcmtzaGVldHMvc2hlZXQxLnhtbCIvPgogICAgICAgICAgICA8L1JlbGF0aW9uc2hpcHM+CiAgICAgICAgICAgICIiIik7CgogICAgICAgIEFkZEVudHJ5KHppcCwgInhsL3dvcmtzaGVldHMvc2hlZXQxLnhtbCIsIEJ1aWxkU2hlZXQoaGVhZGVycywgcm93cykpOwogICAgfQoKICAgIHByaXZhdGUgc3RhdGljIHN0cmluZyBCdWlsZFNoZWV0KElSZWFkT25seUxpc3Q8c3RyaW5nPiBoZWFkZXJzLCBJRW51bWVyYWJsZTxJUmVhZE9ubHlMaXN0PHN0cmluZz4+IHJvd3MpCiAgICB7CiAgICAgICAgdmFyIHNiID0gbmV3IFN0cmluZ0J1aWxkZXIoKTsKICAgICAgICBzYi5BcHBlbmQoIiIiPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PiIiIik7CiAgICAgICAgc2IuQXBwZW5kKCIiIjx3b3Jrc2hlZXQgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxmb3JtYXRzLm9yZy9zcHJlYWRzaGVldG1sLzIwMDYvbWFpbiI+PHNoZWV0RGF0YT4iIiIpOwoKICAgICAgICB2YXIgcm93SW5kZXggPSAxOwogICAgICAgIHNiLkFwcGVuZCgkIjxyb3cgcj1cIntyb3dJbmRleH1cIj4iKTsKICAgICAgICBmb3IgKHZhciBjID0gMDsgYyA8IGhlYWRlcnMuQ291bnQ7IGMrKykKICAgICAgICB7CiAgICAgICAgICAgIHNiLkFwcGVuZCgkIjxjIHI9XCJ7Q29sdW1uKGMpfXtyb3dJbmRleH1cIiB0PVwiaW5saW5lU3RyXCI+PGlzPjx0IHhtbDpzcGFjZT1cInByZXNlcnZlXCI+e1htbChoZWFkZXJzW2NdKX08L3Q+PC9pcz48L2M+Iik7CiAgICAgICAgfQogICAgICAgIHNiLkFwcGVuZCgiPC9yb3c+Iik7CgogICAgICAgIGZvcmVhY2ggKHZhciByb3cgaW4gcm93cykKICAgICAgICB7CiAgICAgICAgICAgIHJvd0luZGV4Kys7CiAgICAgICAgICAgIHNiLkFwcGVuZCgkIjxyb3cgcj1cIntyb3dJbmRleH1cIj4iKTsKICAgICAgICAgICAgZm9yICh2YXIgYyA9IDA7IGMgPCByb3cuQ291bnQ7IGMrKykKICAgICAgICAgICAgewogICAgICAgICAgICAgICAgdmFyIHZhbHVlID0gcm93W2NdID8/IHN0cmluZy5FbXB0eTsKICAgICAgICAgICAgICAgIC8vIE51bWJlcnMgYXJlIHdyaXR0ZW4gYXMgbnVtYmVycyBzbyBFeGNlbCBjYW4gc3VtL3NvcnQgdGhlbS4KICAgICAgICAgICAgICAgIGlmIChjID4gMCAmJiBsb25nLlRyeVBhcnNlKHZhbHVlLCBvdXQgXykpCiAgICAgICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAgICAgc2IuQXBwZW5kKCQiPGMgcj1cIntDb2x1bW4oYyl9e3Jvd0luZGV4fVwiPjx2Pnt2YWx1ZX08L3Y+PC9jPiIpOwogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgZWxzZQogICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgIHNiLkFwcGVuZCgkIjxjIHI9XCJ7Q29sdW1uKGMpfXtyb3dJbmRleH1cIiB0PVwiaW5saW5lU3RyXCI+PGlzPjx0IHhtbDpzcGFjZT1cInByZXNlcnZlXCI+e1htbCh2YWx1ZSl9PC90PjwvaXM+PC9jPiIpOwogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgICAgIHNiLkFwcGVuZCgiPC9yb3c+Iik7CiAgICAgICAgfQoKICAgICAgICBzYi5BcHBlbmQoIjwvc2hlZXREYXRhPjwvd29ya3NoZWV0PiIpOwogICAgICAgIHJldHVybiBzYi5Ub1N0cmluZygpOwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT4wIC0+IEEsIDI1IC0+IFosIDI2IC0+IEFBIC4uLjwvc3VtbWFyeT4KICAgIHB1YmxpYyBzdGF0aWMgc3RyaW5nIENvbHVtbihpbnQgaW5kZXgpCiAgICB7CiAgICAgICAgdmFyIHJlc3VsdCA9IHN0cmluZy5FbXB0eTsKICAgICAgICB2YXIgaSA9IGluZGV4OwogICAgICAgIGRvCiAgICAgICAgewogICAgICAgICAgICByZXN1bHQgPSAoY2hhcikoJ0EnICsgaSAlIDI2KSArIHJlc3VsdDsKICAgICAgICAgICAgaSA9IGkgLyAyNiAtIDE7CiAgICAgICAgfSB3aGlsZSAoaSA+PSAwKTsKICAgICAgICByZXR1cm4gcmVzdWx0OwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT5FeGNlbCBmb3JiaWRzIDogXCAvID8gKiBbIF0gaW4gc2hlZXQgbmFtZXMgYW5kIGNhcHMgdGhlbSBhdCAzMSBjaGFycy48L3N1bW1hcnk+CiAgICBwdWJsaWMgc3RhdGljIHN0cmluZyBTYWZlU2hlZXROYW1lKHN0cmluZz8gbmFtZSkKICAgIHsKICAgICAgICB2YXIgY2xlYW5lZCA9IG5ldyBzdHJpbmcoKG5hbWUgPz8gIlNoZWV0MSIpLldoZXJlKGMgPT4gYyBpcyBub3QgKCc6JyBvciAnXFwnIG9yICcvJyBvciAnPycgb3IgJyonIG9yICdbJyBvciAnXScpKS5Ub0FycmF5KCkpOwogICAgICAgIGlmIChzdHJpbmcuSXNOdWxsT3JXaGl0ZVNwYWNlKGNsZWFuZWQpKSBjbGVhbmVkID0gIlNoZWV0MSI7CiAgICAgICAgcmV0dXJuIGNsZWFuZWQuTGVuZ3RoID4gMzEgPyBjbGVhbmVkWy4uMzFdIDogY2xlYW5lZDsKICAgIH0KCiAgICBwcml2YXRlIHN0YXRpYyBzdHJpbmcgWG1sKHN0cmluZz8gdmFsdWUpID0+CiAgICAgICAgKHZhbHVlID8/IHN0cmluZy5FbXB0eSkKICAgICAgICAgICAgLlJlcGxhY2UoIiYiLCAiJmFtcDsiKQogICAgICAgICAgICAuUmVwbGFjZSgiPCIsICImbHQ7IikKICAgICAgICAgICAgLlJlcGxhY2UoIj4iLCAiJmd0OyIpCiAgICAgICAgICAgIC5SZXBsYWNlKCJcIiIsICImcXVvdDsiKQogICAgICAgICAgICAuUmVwbGFjZSgiJyIsICImYXBvczsiKTsKCiAgICBwcml2YXRlIHN0YXRpYyB2b2lkIEFkZEVudHJ5KFppcEFyY2hpdmUgemlwLCBzdHJpbmcgbmFtZSwgc3RyaW5nIGNvbnRlbnQpCiAgICB7CiAgICAgICAgdmFyIGVudHJ5ID0gemlwLkNyZWF0ZUVudHJ5KG5hbWUsIENvbXByZXNzaW9uTGV2ZWwuT3B0aW1hbCk7CiAgICAgICAgdXNpbmcgdmFyIHN0cmVhbSA9IGVudHJ5Lk9wZW4oKTsKICAgICAgICB1c2luZyB2YXIgd3JpdGVyID0gbmV3IFN0cmVhbVdyaXRlcihzdHJlYW0sIG5ldyBVVEY4RW5jb2RpbmcoZmFsc2UpKTsKICAgICAgICB3cml0ZXIuV3JpdGUoY29udGVudCk7CiAgICB9Cn0K
+using System.IO.Compression;
+using System.Text;
+using IPScaner.Core.Storage;
+
+namespace IPScaner.Core.Export;
+
+/// <summary>
+/// Result export helpers — CSV and real .xlsx.
+/// </summary>
+/// <remarks>
+/// The original "导出到Excel" wrote a bare CSV with no encoding argument, which
+/// produces UTF-8 <i>without</i> a BOM; Excel on a Chinese locale then renders the
+/// Chinese column headers as mojibake. Here:
+/// <list type="bullet">
+/// <item><see cref="WriteCsv"/> writes UTF-8 <b>with</b> a BOM by default so the
+/// file opens correctly on double-click, and quotes fields per RFC&nbsp;4180.</item>
+/// <item><see cref="WriteXlsx"/> emits a genuine SpreadsheetML workbook with no
+/// third-party dependency, so "导出到Excel" really produces an .xlsx.</item>
+/// </list>
+/// The original's file-naming convention is preserved.
+/// </remarks>
+public static class TableExporter
+{
+    /// <summary>Builds the original's timestamped file name, e.g. "IP批量扫描-20260812_174828.csv".</summary>
+    public static string BuildFileName(string prefix, string extension, DateTime? timestamp = null)
+    {
+        var stamp = (timestamp ?? DateTime.Now).ToString("yyyyMMddHHmmss");
+        var ext = extension.StartsWith('.') ? extension : "." + extension;
+        return $"{prefix}-{stamp}{ext}";
+    }
+
+    /// <summary>Writes a CSV file.</summary>
+    public static void WriteCsv(
+        string path,
+        IReadOnlyList<string> headers,
+        IEnumerable<IReadOnlyList<string>> rows,
+        bool withBom = true)
+    {
+        var sb = new StringBuilder();
+        sb.AppendLine(string.Join(",", headers.Select(Escape)));
+        foreach (var row in rows) sb.AppendLine(string.Join(",", row.Select(Escape)));
+
+        var dir = Path.GetDirectoryName(path);
+        if (!string.IsNullOrEmpty(dir)) Directory.CreateDirectory(dir);
+
+        File.WriteAllText(path, sb.ToString(), withBom ? TextFileEncoding.Utf8Bom : TextFileEncoding.Utf8NoBom);
+    }
+
+    /// <summary>RFC 4180 field escaping: quote when the value contains , " or a newline.</summary>
+    public static string Escape(string? value)
+    {
+        var v = value ?? string.Empty;
+        if (v.IndexOfAny([',', '"', '\r', '\n']) < 0) return v;
+        return "\"" + v.Replace("\"", "\"\"") + "\"";
+    }
+
+    /// <summary>
+    /// Writes a minimal but valid .xlsx workbook (one sheet, inline strings).
+    /// </summary>
+    public static void WriteXlsx(
+        string path,
+        string sheetName,
+        IReadOnlyList<string> headers,
+        IEnumerable<IReadOnlyList<string>> rows)
+    {
+        var dir = Path.GetDirectoryName(path);
+        if (!string.IsNullOrEmpty(dir)) Directory.CreateDirectory(dir);
+
+        // A package must be created from scratch each time.
+        if (File.Exists(path)) File.Delete(path);
+
+        using var zip = ZipFile.Open(path, ZipArchiveMode.Create);
+
+        AddEntry(zip, "[Content_Types].xml", """
+            <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+            <Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
+              <Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/>
+              <Default Extension="xml" ContentType="application/xml"/>
+              <Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/>
+              <Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>
+            </Types>
+            """);
+
+        AddEntry(zip, "_rels/.rels", """
+            <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+            <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+              <Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/>
+            </Relationships>
+            """);
+
+        AddEntry(zip, "xl/workbook.xml", $"""
+            <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+            <workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+              <sheets><sheet name="{Xml(SafeSheetName(sheetName))}" sheetId="1" r:id="rId1"/></sheets>
+            </workbook>
+            """);
+
+        AddEntry(zip, "xl/_rels/workbook.xml.rels", """
+            <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+            <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+              <Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/>
+            </Relationships>
+            """);
+
+        AddEntry(zip, "xl/worksheets/sheet1.xml", BuildSheet(headers, rows));
+    }
+
+    private static string BuildSheet(IReadOnlyList<string> headers, IEnumerable<IReadOnlyList<string>> rows)
+    {
+        var sb = new StringBuilder();
+        sb.Append("""<?xml version="1.0" encoding="UTF-8" standalone="yes"?>""");
+        sb.Append("""<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><sheetData>""");
+
+        var rowIndex = 1;
+        sb.Append($"<row r=\"{rowIndex}\">");
+        for (var c = 0; c < headers.Count; c++)
+        {
+            sb.Append($"<c r=\"{Column(c)}{rowIndex}\" t=\"inlineStr\"><is><t xml:space=\"preserve\">{Xml(headers[c])}</t></is></c>");
+        }
+        sb.Append("</row>");
+
+        foreach (var row in rows)
+        {
+            rowIndex++;
+            sb.Append($"<row r=\"{rowIndex}\">");
+            for (var c = 0; c < row.Count; c++)
+            {
+                var value = row[c] ?? string.Empty;
+                // Numbers are written as numbers so Excel can sum/sort them.
+                if (c > 0 && long.TryParse(value, out _))
+                {
+                    sb.Append($"<c r=\"{Column(c)}{rowIndex}\"><v>{value}</v></c>");
+                }
+                else
+                {
+                    sb.Append($"<c r=\"{Column(c)}{rowIndex}\" t=\"inlineStr\"><is><t xml:space=\"preserve\">{Xml(value)}</t></is></c>");
+                }
+            }
+            sb.Append("</row>");
+        }
+
+        sb.Append("</sheetData></worksheet>");
+        return sb.ToString();
+    }
+
+    /// <summary>0 -> A, 25 -> Z, 26 -> AA ...</summary>
+    public static string Column(int index)
+    {
+        var result = string.Empty;
+        var i = index;
+        do
+        {
+            result = (char)('A' + i % 26) + result;
+            i = i / 26 - 1;
+        } while (i >= 0);
+        return result;
+    }
+
+    /// <summary>Excel forbids : \ / ? * [ ] in sheet names and caps them at 31 chars.</summary>
+    public static string SafeSheetName(string? name)
+    {
+        var cleaned = new string((name ?? "Sheet1").Where(c => c is not (':' or '\\' or '/' or '?' or '*' or '[' or ']')).ToArray());
+        if (string.IsNullOrWhiteSpace(cleaned)) cleaned = "Sheet1";
+        return cleaned.Length > 31 ? cleaned[..31] : cleaned;
+    }
+
+    private static string Xml(string? value) =>
+        (value ?? string.Empty)
+            .Replace("&", "&amp;")
+            .Replace("<", "&lt;")
+            .Replace(">", "&gt;")
+            .Replace("\"", "&quot;")
+            .Replace("'", "&apos;");
+
+    private static void AddEntry(ZipArchive zip, string name, string content)
+    {
+        var entry = zip.CreateEntry(name, CompressionLevel.Optimal);
+        using var stream = entry.Open();
+        using var writer = new StreamWriter(stream, new UTF8Encoding(false));
+        writer.Write(content);
+    }
+}

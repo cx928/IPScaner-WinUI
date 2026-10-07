@@ -1,1 +1,136 @@
-dXNpbmcgU3lzdGVtLkRpYWdub3N0aWNzOwp1c2luZyBJUFNjYW5lci5Db3JlLkNvbmZpZ3VyYXRpb247CnVzaW5nIElQU2NhbmVyLkNvcmUuTmV0OwoKbmFtZXNwYWNlIElQU2NhbmVyLkNvcmUuU2hlbGw7CgovLy8gPHN1bW1hcnk+Ci8vLyBMYXVuY2hlcyB0aGUgZXh0ZXJuYWwgaGVscGVycyB0aGUgdG9vbCByZWxpZXMgb246IGNtZCB3aW5kb3dzIChwaW5nLCB0cmFjZXJ0LAovLy8gbmV0c3RhdCwgYXJwKSwgRXhwbG9yZXIsIGFuZCBDb250cm9sLVBhbmVsIGFwcGxldHMuCi8vLyA8L3N1bW1hcnk+Ci8vLyA8cmVtYXJrcz4KLy8vIFRoZSBvcmlnaW5hbCBjb25jYXRlbmF0ZWQgcmF3IHVzZXIgdGV4dCBpbnRvIGEgPGM+Y21kLmV4ZSAvYzwvYz4gY29tbWFuZCBsaW5lLgovLy8gRXZlcnkgYWRkcmVzcyB0aGF0IHJlYWNoZXMgdGhpcyBjbGFzcyBpcyB2YWxpZGF0ZWQgYXMgYSBkb3R0ZWQgcXVhZCBmaXJzdCwgc28KLy8vIGEgaG9zdGlsZSAiSVAiIHR5cGVkIGludG8gdGhlIHNjYW4gYm94IGNhbm5vdCBpbmplY3Qgc2hlbGwgbWV0YWNoYXJhY3RlcnMuCi8vLyA8L3JlbWFya3M+CnB1YmxpYyBzZWFsZWQgY2xhc3MgU2hlbGxMYXVuY2hlcgp7CiAgICAvLy8gPHN1bW1hcnk+V2luZG93cyB0b29scyBleHBvc2VkIGJ5IHRoZSDlv6vmjbflt6XlhbcgbWVudSAobmFtZSAtPiBjb21tYW5kKS48L3N1bW1hcnk+CiAgICBwdWJsaWMgc3RhdGljIHJlYWRvbmx5IChzdHJpbmcgTmFtZSwgc3RyaW5nIENvbW1hbmQsIHN0cmluZyBIaW50KVtdIEJ1aWx0SW5Ub29scyA9CiAgICBbCiAgICAgICAgKCLnvZHnu5zov57mjqUiLCAibmNwYS5jcGwiLCAi5omT5byA572R57uc6L+e5o6l6Z2i5p2/IiksCiAgICAgICAgKCLnqIvluo/lkozlip/og70iLCAiYXBwd2l6LmNwbCIsICLljbjovb3miJbmm7TmlLnnqIvluo8iKSwKICAgICAgICAoIuacjeWKoSIsICJzZXJ2aWNlcy5tc2MiLCAi566h55CGIFdpbmRvd3Mg5pyN5YqhIiksCiAgICAgICAgKCLorr7lpIfnrqHnkIblmagiLCAiZGV2bWdtdC5tc2MiLCAi5p+l55yL56Gs5Lu26K6+5aSHIiksCiAgICAgICAgKCLorqHnrpfmnLrnrqHnkIYiLCAiY29tcG1nbXQubXNjIiwgIuejgeebmOOAgeacjeWKoeOAgeS6i+S7tuafpeeci+WZqCIpLAogICAgICAgICgi5Lu75Yqh566h55CG5ZmoIiwgInRhc2ttZ3IiLCAi5p+l55yL6L+Q6KGM5Lit55qE6L+b56iLIiksCiAgICAgICAgKCLotYTmupDnm5Hop4blmagiLCAicmVzbW9uIiwgIuWunuaXtuafpeeci+i1hOa6kOWNoOeUqCIpLAogICAgICAgICgi5o6n5Yi26Z2i5p2/IiwgImNvbnRyb2wiLCAi5omT5byA5o6n5Yi26Z2i5p2/IiksCiAgICAgICAgKCLns7vnu5/kv6Hmga8iLCAibXNpbmZvMzIiLCAi5p+l55yL57O757uf6K+m57uG6YWN572uIiksCiAgICAgICAgKCLms6jlhozooajnvJbovpHlmagiLCAicmVnZWRpdCIsICLnvJbovpHms6jlhozooagiKSwKICAgICAgICAoIuS6i+S7tuafpeeci+WZqCIsICJldmVudHZ3ci5tc2MiLCAi5p+l55yL57O757uf5pel5b+XIiksCiAgICAgICAgKCLno4Hnm5jnrqHnkIYiLCAiZGlza21nbXQubXNjIiwgIueuoeeQhuejgeebmOWIhuWMuiIpLAogICAgICAgICgi6Ziy54Gr5aKZIiwgIndmLm1zYyIsICLpq5jnuqflronlhaggV2luZG93cyDpmLLngavlopkiKSwKICAgICAgICAoIui/nOeoi+ahjOmdoiIsICJtc3RzYyIsICLov5znqIvmoYzpnaLov57mjqUiKSwKICAgICAgICAoIuezu+e7n+mFjee9riIsICJtc2NvbmZpZyIsICLlkK/liqjpobnkuI7lvJXlr7zphY3nva4iKSwKICAgICAgICAoIuWRveS7pOaPkOekuuespiIsICJjbWQiLCAi5omT5byA5ZG95Luk5o+Q56S656ymIiksCiAgICAgICAgKCJQb3dlclNoZWxsIiwgInBvd2Vyc2hlbGwiLCAi5omT5byAIFBvd2VyU2hlbGwiKSwKICAgICAgICAoIuiuoeeul+WZqCIsICJjYWxjIiwgIuaJk+W8gOiuoeeul+WZqCIpLAogICAgXTsKCiAgICAvLy8gPHN1bW1hcnk+UnVucyBhIGNvbW1hbmQgdGhyb3VnaCBjbWQuZXhlLCBvcHRpb25hbGx5IHdpdGggYSB2aXNpYmxlIHdpbmRvdy48L3N1bW1hcnk+CiAgICBwdWJsaWMgdm9pZCBSdW5Db21tYW5kKHN0cmluZyBjb21tYW5kLCBib29sIHZpc2libGUgPSB0cnVlKQogICAgewogICAgICAgIGlmIChzdHJpbmcuSXNOdWxsT3JXaGl0ZVNwYWNlKGNvbW1hbmQpKSByZXR1cm47CgogICAgICAgIC8vIEEgYmFyZSBleGlzdGluZyBmaWxlIHBhdGggaXMgbGF1bmNoZWQgZGlyZWN0bHksIGFzIHRoZSBvcmlnaW5hbCBkaWQuCiAgICAgICAgaWYgKEZpbGUuRXhpc3RzKGNvbW1hbmQpKQogICAgICAgIHsKICAgICAgICAgICAgU2FmZVN0YXJ0KG5ldyBQcm9jZXNzU3RhcnRJbmZvKGNvbW1hbmQpIHsgVXNlU2hlbGxFeGVjdXRlID0gdHJ1ZSB9KTsKICAgICAgICAgICAgcmV0dXJuOwogICAgICAgIH0KCiAgICAgICAgU2FmZVN0YXJ0KG5ldyBQcm9jZXNzU3RhcnRJbmZvKCJjbWQuZXhlIiwgIi9jICIgKyBjb21tYW5kKQogICAgICAgIHsKICAgICAgICAgICAgVXNlU2hlbGxFeGVjdXRlID0gdHJ1ZSwKICAgICAgICAgICAgV2luZG93U3R5bGUgPSB2aXNpYmxlID8gUHJvY2Vzc1dpbmRvd1N0eWxlLk5vcm1hbCA6IFByb2Nlc3NXaW5kb3dTdHlsZS5IaWRkZW4sCiAgICAgICAgfSk7CiAgICB9CgogICAgLy8vIDxzdW1tYXJ5Pk9wZW5zIGFuIGh0dHAocykgVVJMIGluIHRoZSBkZWZhdWx0IGJyb3dzZXIuPC9zdW1tYXJ5PgogICAgcHVibGljIHZvaWQgT3BlblVybChzdHJpbmcgdXJsKQogICAgewogICAgICAgIGlmIChzdHJpbmcuSXNOdWxsT3JXaGl0ZVNwYWNlKHVybCkpIHJldHVybjsKICAgICAgICBpZiAoIXVybC5TdGFydHNXaXRoKCJodHRwOi8vIiwgU3RyaW5nQ29tcGFyaXNvbi5PcmRpbmFsSWdub3JlQ2FzZSkgJiYKICAgICAgICAgICAgIXVybC5TdGFydHNXaXRoKCJodHRwczovLyIsIFN0cmluZ0NvbXBhcmlzb24uT3JkaW5hbElnbm9yZUNhc2UpKQogICAgICAgIHsKICAgICAgICAgICAgdXJsID0gImh0dHA6Ly8iICsgdXJsOwogICAgICAgIH0KICAgICAgICBTYWZlU3RhcnQobmV3IFByb2Nlc3NTdGFydEluZm8odXJsKSB7IFVzZVNoZWxsRXhlY3V0ZSA9IHRydWUgfSk7CiAgICB9CgogICAgLy8vIDxzdW1tYXJ5Pk9wZW5zIGEgVU5DIHNoYXJlIGluIEV4cGxvcmVyLjwvc3VtbWFyeT4KICAgIHB1YmxpYyB2b2lkIE9wZW5TaGFyZShzdHJpbmcgaG9zdCkKICAgIHsKICAgICAgICBpZiAoIUlwTWF0aC5Jc1ZhbGlkSVB2NChob3N0KSkgcmV0dXJuOwogICAgICAgIFNhZmVTdGFydChuZXcgUHJvY2Vzc1N0YXJ0SW5mbygiZXhwbG9yZXIuZXhlIiwgJEAiXFx7aG9zdH0iKSB7IFVzZVNoZWxsRXhlY3V0ZSA9IHRydWUgfSk7CiAgICB9CgogICAgLy8vIDxzdW1tYXJ5Pk9wZW5zIEV4cGxvcmVyIGF0IGEgZm9sZGVyIChvciBzZWxlY3RzIGEgZmlsZSkuPC9zdW1tYXJ5PgogICAgcHVibGljIHZvaWQgT3BlbkZvbGRlcihzdHJpbmcgcGF0aCkKICAgIHsKICAgICAgICBpZiAoc3RyaW5nLklzTnVsbE9yV2hpdGVTcGFjZShwYXRoKSkgcmV0dXJuOwogICAgICAgIHZhciBhcmdzID0gRmlsZS5FeGlzdHMocGF0aCkgPyAkIi9zZWxlY3QsXCJ7cGF0aH1cIiIgOiAkIlwie3BhdGh9XCIiOwogICAgICAgIFNhZmVTdGFydChuZXcgUHJvY2Vzc1N0YXJ0SW5mbygiZXhwbG9yZXIuZXhlIiwgYXJncykgeyBVc2VTaGVsbEV4ZWN1dGUgPSB0cnVlIH0pOwogICAgfQoKICAgIC8vLyA8c3VtbWFyeT4KICAgIC8vLyBCdWlsZHMgYW5kIGxhdW5jaGVzIHRoZSBjb21tYW5kIGZvciBvbmUgb2YgdGhlIDxzZWUgY3JlZj0iRXZlbnROYW1lIi8+CiAgICAvLy8gYWN0aW9ucyDigJQgdGhlIGV4YWN0IGNvbW1hbmQgbGluZXMgdGhlIG9yaWdpbmFsIHVzZWQgZm9yIGRvdWJsZS1jbGljayBhbmQKICAgIC8vLyBmb3IgdGhlIGNvbG91ci1ibG9jayBjb250ZXh0IG1lbnUuCiAgICAvLy8gPC9zdW1tYXJ5PgogICAgcHVibGljIHZvaWQgUnVuSG9zdEFjdGlvbihFdmVudE5hbWUgYWN0aW9uLCBzdHJpbmcgaXAsIGludCBwaW5nQ291bnQgPSA0KQogICAgewogICAgICAgIGlmICghSXBNYXRoLklzVmFsaWRJUHY0KGlwKSkgcmV0dXJuOwoKICAgICAgICBzd2l0Y2ggKGFjdGlvbikKICAgICAgICB7CiAgICAgICAgICAgIGNhc2UgRXZlbnROYW1lLlBpbmc6CiAgICAgICAgICAgICAgICBSdW5Db21tYW5kKCQicGluZyB7aXB9IC1uIHtwaW5nQ291bnR9ICZwYXVzZSIpOwogICAgICAgICAgICAgICAgYnJlYWs7CiAgICAgICAgICAgIGNhc2UgRXZlbnROYW1lLlRyYWNlcnQ6CiAgICAgICAgICAgICAgICBSdW5Db21tYW5kKCQidHJhY2VydCB7aXB9ICZwYXVzZSIpOwogICAgICAgICAgICAgICAgYnJlYWs7CiAgICAgICAgICAgIGNhc2UgRXZlbnROYW1lLlRlbG5ldDoKICAgICAgICAgICAgICAgIFJ1bkNvbW1hbmQoJCJ0ZWxuZXQge2lwfSAyMyAmcGF1c2UiKTsKICAgICAgICAgICAgICAgIGJyZWFrOwogICAgICAgICAgICBjYXNlIEV2ZW50TmFtZS5OZXRzdGF0OgogICAgICAgICAgICAgICAgUnVuQ29tbWFuZCgkIm5ldHN0YXQgLWFubyB8IGZpbmRzdHIge2lwfSAmcGF1c2UiKTsKICAgICAgICAgICAgICAgIGJyZWFrOwogICAgICAgICAgICBjYXNlIEV2ZW50TmFtZS5BUlA6CiAgICAgICAgICAgICAgICBSdW5Db21tYW5kKCQiYXJwIC1hIHtpcH0gJnBhdXNlIik7CiAgICAgICAgICAgICAgICBicmVhazsKICAgICAgICAgICAgY2FzZSBFdmVudE5hbWUuVmlld1dlYjoKICAgICAgICAgICAgICAgIE9wZW5VcmwoImh0dHA6Ly8iICsgaXApOwogICAgICAgICAgICAgICAgYnJlYWs7CiAgICAgICAgICAgIGNhc2UgRXZlbnROYW1lLlNoYXJlOgogICAgICAgICAgICAgICAgT3BlblNoYXJlKGlwKTsKICAgICAgICAgICAgICAgIGJyZWFrOwogICAgICAgIH0KICAgIH0KCiAgICAvLy8gPHN1bW1hcnk+TGF1bmNoZXMgYSBDb250cm9sLVBhbmVsIHN0eWxlIGFwcGxldCBmcm9tIHRoZSDlv6vmjbflt6XlhbcgbGlzdC48L3N1bW1hcnk+CiAgICBwdWJsaWMgdm9pZCBSdW5CdWlsdEluVG9vbChzdHJpbmcgY29tbWFuZCkgPT4gUnVuQ29tbWFuZChjb21tYW5kKTsKCiAgICBwcml2YXRlIHN0YXRpYyB2b2lkIFNhZmVTdGFydChQcm9jZXNzU3RhcnRJbmZvIHBzaSkKICAgIHsKICAgICAgICB0cnkKICAgICAgICB7CiAgICAgICAgICAgIFByb2Nlc3MuU3RhcnQocHNpKTsKICAgICAgICB9CiAgICAgICAgY2F0Y2ggKEV4Y2VwdGlvbiBleCkKICAgICAgICB7CiAgICAgICAgICAgIExvZ2dpbmcuQXBwTG9nLkluc3RhbmNlLkxvZyhuYW1lb2YoU2hlbGxMYXVuY2hlciksICQi5ZCv5Yqo5aSx6LSlIHtwc2kuRmlsZU5hbWV9OiB7ZXguTWVzc2FnZX0iKTsKICAgICAgICB9CiAgICB9Cn0K
+using System.Diagnostics;
+using IPScaner.Core.Configuration;
+using IPScaner.Core.Net;
+
+namespace IPScaner.Core.Shell;
+
+/// <summary>
+/// Launches the external helpers the tool relies on: cmd windows (ping, tracert,
+/// netstat, arp), Explorer, and Control-Panel applets.
+/// </summary>
+/// <remarks>
+/// The original concatenated raw user text into a <c>cmd.exe /c</c> command line.
+/// Every address that reaches this class is validated as a dotted quad first, so
+/// a hostile "IP" typed into the scan box cannot inject shell metacharacters.
+/// </remarks>
+public sealed class ShellLauncher
+{
+    /// <summary>Windows tools exposed by the 快捷工具 menu (name -> command).</summary>
+    public static readonly (string Name, string Command, string Hint)[] BuiltInTools =
+    [
+        ("网络连接", "ncpa.cpl", "打开网络连接面板"),
+        ("程序和功能", "appwiz.cpl", "卸载或更改程序"),
+        ("服务", "services.msc", "管理 Windows 服务"),
+        ("设备管理器", "devmgmt.msc", "查看硬件设备"),
+        ("计算机管理", "compmgmt.msc", "磁盘、服务、事件查看器"),
+        ("任务管理器", "taskmgr", "查看运行中的进程"),
+        ("资源监视器", "resmon", "实时查看资源占用"),
+        ("控制面板", "control", "打开控制面板"),
+        ("系统信息", "msinfo32", "查看系统详细配置"),
+        ("注册表编辑器", "regedit", "编辑注册表"),
+        ("事件查看器", "eventvwr.msc", "查看系统日志"),
+        ("磁盘管理", "diskmgmt.msc", "管理磁盘分区"),
+        ("防火墙", "wf.msc", "高级安全 Windows 防火墙"),
+        ("远程桌面", "mstsc", "远程桌面连接"),
+        ("系统配置", "msconfig", "启动项与引导配置"),
+        ("命令提示符", "cmd", "打开命令提示符"),
+        ("PowerShell", "powershell", "打开 PowerShell"),
+        ("计算器", "calc", "打开计算器"),
+    ];
+
+    /// <summary>Runs a command through cmd.exe, optionally with a visible window.</summary>
+    public void RunCommand(string command, bool visible = true)
+    {
+        if (string.IsNullOrWhiteSpace(command)) return;
+
+        // A bare existing file path is launched directly, as the original did.
+        if (File.Exists(command))
+        {
+            SafeStart(new ProcessStartInfo(command) { UseShellExecute = true });
+            return;
+        }
+
+        SafeStart(new ProcessStartInfo("cmd.exe", "/c " + command)
+        {
+            UseShellExecute = true,
+            WindowStyle = visible ? ProcessWindowStyle.Normal : ProcessWindowStyle.Hidden,
+        });
+    }
+
+    /// <summary>Opens an http(s) URL in the default browser.</summary>
+    public void OpenUrl(string url)
+    {
+        if (string.IsNullOrWhiteSpace(url)) return;
+        if (!url.StartsWith("http://", StringComparison.OrdinalIgnoreCase) &&
+            !url.StartsWith("https://", StringComparison.OrdinalIgnoreCase))
+        {
+            url = "http://" + url;
+        }
+        SafeStart(new ProcessStartInfo(url) { UseShellExecute = true });
+    }
+
+    /// <summary>Opens a UNC share in Explorer.</summary>
+    public void OpenShare(string host)
+    {
+        if (!IpMath.IsValidIPv4(host)) return;
+        SafeStart(new ProcessStartInfo("explorer.exe", $@"\\{host}") { UseShellExecute = true });
+    }
+
+    /// <summary>Opens Explorer at a folder (or selects a file).</summary>
+    public void OpenFolder(string path)
+    {
+        if (string.IsNullOrWhiteSpace(path)) return;
+        var args = File.Exists(path) ? $"/select,\"{path}\"" : $"\"{path}\"";
+        SafeStart(new ProcessStartInfo("explorer.exe", args) { UseShellExecute = true });
+    }
+
+    /// <summary>
+    /// Builds and launches the command for one of the <see cref="EventName"/>
+    /// actions — the exact command lines the original used for double-click and
+    /// for the colour-block context menu.
+    /// </summary>
+    public void RunHostAction(EventName action, string ip, int pingCount = 4)
+    {
+        if (!IpMath.IsValidIPv4(ip)) return;
+
+        switch (action)
+        {
+            case EventName.Ping:
+                RunCommand($"ping {ip} -n {pingCount} &pause");
+                break;
+            case EventName.Tracert:
+                RunCommand($"tracert {ip} &pause");
+                break;
+            case EventName.Telnet:
+                RunCommand($"telnet {ip} 23 &pause");
+                break;
+            case EventName.Netstat:
+                RunCommand($"netstat -ano | findstr {ip} &pause");
+                break;
+            case EventName.ARP:
+                RunCommand($"arp -a {ip} &pause");
+                break;
+            case EventName.ViewWeb:
+                OpenUrl("http://" + ip);
+                break;
+            case EventName.Share:
+                OpenShare(ip);
+                break;
+        }
+    }
+
+    /// <summary>Launches a Control-Panel style applet from the 快捷工具 list.</summary>
+    public void RunBuiltInTool(string command) => RunCommand(command);
+
+    private static void SafeStart(ProcessStartInfo psi)
+    {
+        try
+        {
+            Process.Start(psi);
+        }
+        catch (Exception ex)
+        {
+            Logging.AppLog.Instance.Log(nameof(ShellLauncher), $"启动失败 {psi.FileName}: {ex.Message}");
+        }
+    }
+}
