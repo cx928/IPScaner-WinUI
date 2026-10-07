@@ -75,6 +75,16 @@
                         <FontIcon Glyph="&#xE9D9;" />
                     </muxc:NavigationViewItem.Icon>
                 </muxc:NavigationViewItem>
+                <muxc:NavigationViewItem Content="Hosts 管理" Tag="hosts" ToolTipService.ToolTip="一键管理 hosts 记录：添加、删除、改 IP、清理失效记录、刷新 DNS 缓存">
+                    <muxc:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE968;" />
+                    </muxc:NavigationViewItem.Icon>
+                </muxc:NavigationViewItem>
+                <muxc:NavigationViewItem Content="网络工具" Tag="tools" ToolTipService.ToolTip="DNS 一键切换、SSH/RDP 快捷连接与常用诊断命令">
+                    <muxc:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE774;" />
+                    </muxc:NavigationViewItem.Icon>
+                </muxc:NavigationViewItem>
                 <muxc:NavigationViewItemSeparator />
                 <muxc:NavigationViewItem Content="修改本地IP" Tag="localip" ToolTipService.ToolTip="修改网卡 IP、掩码、网关与 DNS">
                     <muxc:NavigationViewItem.Icon>

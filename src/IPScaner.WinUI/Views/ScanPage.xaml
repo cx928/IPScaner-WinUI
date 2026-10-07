@@ -10,131 +10,471 @@
     mc:Ignorable="d"
     NavigationCacheMode="Required">
 
-    <Grid Padding="16,12,16,12" RowSpacing="10">
+    <!--
+        主界面 — 局域网IP扫描工具.
+
+        Layout contract (measured-width rules live in the code-behind):
+          row 0  title + scan status         Auto
+          row 1  toolbar card                Auto
+          row 2  scan progress (thin bar)    Auto
+          row 3  colour legend               Auto
+          row 4  results                     star — fills what is left, scrolls internally
+
+        Only row 4 is a star, so the toolbar can never be pushed off screen at any
+        window size. Everything above it is Auto and deliberately slim.
+    -->
+
+    <Page.Resources>
+        <!-- 详细列表: comfortable rows. BasedOn keeps the stock ListViewItem template
+             (hover, focus, selection visuals) and only changes the density. -->
+        <Style x:Key="ListRowContainerStyle" TargetType="ListViewItem"
+               BasedOn="{StaticResource DefaultListViewItemStyle}">
+            <Setter Property="Padding" Value="0,9,0,9" />
+            <Setter Property="MinHeight" Value="0" />
+            <Setter Property="Margin" Value="0" />
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        </Style>
+
+        <!-- 紧凑表格: dense rows, same item template, tighter padding. -->
+        <Style x:Key="TableRowContainerStyle" TargetType="ListViewItem"
+               BasedOn="{StaticResource DefaultListViewItemStyle}">
+            <Setter Property="Padding" Value="0,3,0,3" />
+            <Setter Property="MinHeight" Value="26" />
+            <Setter Property="Margin" Value="0" />
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        </Style>
+    </Page.Resources>
+
+    <Grid x:Name="PageRoot" Padding="16,12,16,14" RowSpacing="10"
+          Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="LayoutStates">
+
+                <!-- Narrow window: single-column legend, no subtitle, tighter page frame. -->
+                <VisualState x:Name="NarrowLayout">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="PageRoot.Padding" Value="10,8,10,10" />
+                        <Setter Target="PageRoot.RowSpacing" Value="8" />
+                        <Setter Target="ToolbarCard.Padding" Value="10,8,10,8" />
+                        <Setter Target="SubtitleText.Visibility" Value="Collapsed" />
+                        <Setter Target="SummaryText.(Grid.Row)" Value="1" />
+                        <Setter Target="SummaryText.(Grid.Column)" Value="0" />
+                        <Setter Target="SummaryText.(Grid.ColumnSpan)" Value="5" />
+                    </VisualState.Setters>
+                </VisualState>
+
+                <!-- 640-1000: where the default 1180x820 window lands on this 150% display. -->
+                <VisualState x:Name="MediumLayout">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="640" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="PageRoot.Padding" Value="16,12,16,14" />
+                        <Setter Target="PageRoot.RowSpacing" Value="10" />
+                        <Setter Target="ToolbarCard.Padding" Value="12,10,12,10" />
+                        <Setter Target="SubtitleText.Visibility" Value="Visible" />
+                        <Setter Target="SummaryText.(Grid.Row)" Value="0" />
+                        <Setter Target="SummaryText.(Grid.Column)" Value="4" />
+                        <Setter Target="SummaryText.(Grid.ColumnSpan)" Value="1" />
+                    </VisualState.Setters>
+                </VisualState>
+
+                <!-- >= 1000: maximised, or a 100% display. Room for generous padding. -->
+                <VisualState x:Name="WideLayout">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="1000" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="PageRoot.Padding" Value="20,16,20,18" />
+                        <Setter Target="PageRoot.RowSpacing" Value="12" />
+                        <Setter Target="ToolbarCard.Padding" Value="14,12,14,12" />
+                        <Setter Target="SubtitleText.Visibility" Value="Visible" />
+                        <Setter Target="SummaryText.(Grid.Row)" Value="0" />
+                        <Setter Target="SummaryText.(Grid.Column)" Value="4" />
+                        <Setter Target="SummaryText.(Grid.ColumnSpan)" Value="1" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <!-- ================= toolbar ================= -->
-        <Border Grid.Row="0" Style="{StaticResource CardStyle}">
-            <StackPanel Spacing="8">
-                <StackPanel Orientation="Horizontal" Spacing="8">
-                    <TextBlock Text="IP段" Style="{StaticResource FieldLabelStyle}" />
-                    <TextBox x:Name="SegmentBox" Width="140" PlaceholderText="192.168.1"
+        <!-- ==================== title + scan status ==================== -->
+        <Grid Grid.Row="0" ColumnSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Orientation="Horizontal" Spacing="8" VerticalAlignment="Center">
+                <FontIcon Glyph="&#xE774;" FontSize="15"
+                          Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                <TextBlock Text="IP段扫描" FontSize="18" FontWeight="SemiBold" VerticalAlignment="Center" />
+            </StackPanel>
+
+            <TextBlock x:Name="SubtitleText" Grid.Column="1" VerticalAlignment="Center"
+                       Style="{StaticResource HintTextStyle}" TextWrapping="NoWrap"
+                       TextTrimming="CharacterEllipsis"
+                       Text="单击色块 = 检测并复制IP · 双击 = 执行已配置的动作 · 右击 = 更多操作"
+                       ToolTipService.ToolTip="单击色块会立即检测该地址并复制IP；双击执行在【选项配置】中设定的双击动作；右击打开该地址的完整操作菜单。" />
+
+            <StackPanel Grid.Column="2" Orientation="Horizontal" Spacing="8" VerticalAlignment="Center">
+                <ProgressRing x:Name="BusyRing" Width="16" Height="16" IsActive="False" Visibility="Collapsed" />
+                <TextBlock x:Name="ProgressText" Style="{StaticResource StatusTextStyle}"
+                           TextWrapping="NoWrap" MaxWidth="320" Text="就绪" />
+            </StackPanel>
+        </Grid>
+
+        <!-- ==================== toolbar ==================== -->
+        <Border x:Name="ToolbarCard" Grid.Row="1" Style="{StaticResource CardStyle}" Padding="12,10,12,10">
+            <Grid RowSpacing="6">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <!-- 0: segment + scan control -->
+                <Grid Grid.Row="0" ColumnSpacing="8">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock x:Name="SegmentLabel" Grid.Column="0" Text="IP段"
+                               Style="{StaticResource FieldLabelStyle}" />
+                    <TextBox x:Name="SegmentBox" Grid.Column="1" Width="130" MaxLength="15"
+                             PlaceholderText="192.168.1"
                              ToolTipService.ToolTip="输入前三段，例如 192.168.1" />
-                    <ComboBox x:Name="AdapterCombo" Width="210" PlaceholderText="选择网卡 / 网段"
+                    <Button x:Name="StartButton" Grid.Column="2" Content="开始" MinWidth="64"
+                            Style="{StaticResource AccentButtonStyle}" Click="OnStartClick"
+                            ToolTipService.ToolTip="Ping 扫描整个 /24 网段（1-254）" />
+                    <Button x:Name="StopButton" Grid.Column="3" Content="停止" MinWidth="64"
+                            IsEnabled="False" Click="OnStopClick"
+                            ToolTipService.ToolTip="取消正在进行的扫描" />
+                </Grid>
+
+                <!-- 1: adapter picker + host-name toggle + overflow menu -->
+                <Grid Grid.Row="1" ColumnSpacing="8">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <ComboBox x:Name="AdapterCombo" Grid.Column="0" MinWidth="96" MaxWidth="420"
+                              HorizontalAlignment="Stretch" PlaceholderText="选择网卡 / 网段"
                               ToolTipService.ToolTip="从本机网卡快速填入网段"
                               SelectionChanged="OnAdapterSelected" />
-                    <Button x:Name="StartButton" Content="开始" Click="OnStartClick"
-                            Style="{StaticResource AccentButtonStyle}" MinWidth="76" />
-                    <Button x:Name="StopButton" Content="停止" Click="OnStopClick" MinWidth="76" IsEnabled="False" />
-                </StackPanel>
 
-                <StackPanel Orientation="Horizontal" Spacing="8">
-                    <ToggleButton x:Name="HostNameToggle" Content="主机名查询"
+                    <ToggleButton x:Name="HostNameToggle" Grid.Column="1" Content="主机名查询"
                                   ToolTipService.ToolTip="开启后显示计算机名称与MAC，会明显降低扫描速度"
                                   Click="OnHostNameToggled" />
-                    <ToggleButton x:Name="ListViewToggle" Content="列表视图"
-                                  ToolTipService.ToolTip="在色块视图与列表视图之间切换"
-                                  Click="OnListViewToggled" />
+
+                    <Button x:Name="MoreButton" Grid.Column="2" ToolTipService.ToolTip="更多操作">
+                        <StackPanel Orientation="Horizontal" Spacing="6">
+                            <TextBlock Text="更多" />
+                            <FontIcon Glyph="&#xE70D;" FontSize="10" />
+                        </StackPanel>
+                        <Button.Flyout>
+                            <MenuFlyout>
+                                <MenuFlyoutItem Text="清空缓存" Click="OnClearCachesClick"
+                                                ToolTipService.ToolTip="清除已缓存的主机名与MAC地址" />
+                                <MenuFlyoutItem Text="导出结果" Click="OnExportClick"
+                                                ToolTipService.ToolTip="导出为 CSV / Excel" />
+                                <MenuFlyoutItem Text="复制全部正常" Click="OnCopyOnlineClick" />
+                                <MenuFlyoutSeparator />
+                                <MenuFlyoutItem Text="备注管理" Click="OnOpenMemoClick" />
+                            </MenuFlyout>
+                        </Button.Flyout>
+                    </Button>
+                </Grid>
+
+                <!-- 2: view mode + theme -->
+                <Grid Grid.Row="2" ColumnSpacing="8">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <muxc:SelectorBar x:Name="ViewSelector" Grid.Column="0" VerticalAlignment="Center"
+                                      SelectionChanged="OnViewSelectorChanged"
+                                      ToolTipService.ToolTip="结果展示方式：色块网格 / 详细列表 / 紧凑表格 / 卡片视图" />
+
+                    <ComboBox x:Name="ViewCombo" Grid.Column="0" MinWidth="150" Visibility="Collapsed"
+                              HorizontalAlignment="Left" ToolTipService.ToolTip="结果展示方式"
+                              SelectionChanged="OnViewComboChanged" />
+
+                    <DropDownButton x:Name="ThemeButton" Grid.Column="2" Content="主题"
+                                    VerticalAlignment="Center" ToolTipService.ToolTip="界面主题" />
+                </Grid>
+
+                <!-- 3: secondary actions, shown inline only when there is room for them -->
+                <StackPanel x:Name="ActionsPanel" Grid.Row="3" Orientation="Horizontal" Spacing="8">
                     <Button Content="清空缓存" Click="OnClearCachesClick"
                             ToolTipService.ToolTip="清除已缓存的主机名与MAC地址" />
                     <Button Content="导出结果" Click="OnExportClick"
                             ToolTipService.ToolTip="导出为 CSV / Excel" />
-                    <Button Content="复制全部正常" Click="OnCopyOnlineClick" />
-                    <Button Content="备注管理" Click="OnOpenMemoClick" />
-                    <TextBlock x:Name="ProgressText" Style="{StaticResource HintTextStyle}"
-                               VerticalAlignment="Center" Margin="8,0,0,0"
-                               TextTrimming="CharacterEllipsis" />
+                    <Button Content="复制全部正常" Click="OnCopyOnlineClick"
+                            ToolTipService.ToolTip="复制所有通讯【正常】的IP地址" />
+                    <Button Content="备注管理" Click="OnOpenMemoClick"
+                            ToolTipService.ToolTip="维护 IP / MAC 的备注信息" />
                 </StackPanel>
-            </StackPanel>
+            </Grid>
         </Border>
 
-        <!-- ================= legend ================= -->
-        <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="18">
-            <StackPanel Orientation="Horizontal" Spacing="6">
+        <!-- ==================== progress ==================== -->
+        <ProgressBar x:Name="ScanProgress" Grid.Row="2" Height="3" Minimum="0" Maximum="254" Value="0"
+                     VerticalAlignment="Center" />
+
+        <!-- ==================== legend ==================== -->
+        <Grid x:Name="LegendGrid" Grid.Row="3" ColumnSpacing="16" RowSpacing="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Orientation="Horizontal" Spacing="6">
                 <Border x:Name="LegendOnline" Style="{StaticResource LegendSwatchStyle}" />
-                <HyperlinkButton x:Name="OnlineLink" Click="OnCopyOnlineClick" Padding="2,0,2,0"
+                <HyperlinkButton x:Name="OnlineLink" Content="正常 0" Padding="2,0,2,0" Click="OnCopyOnlineClick"
                                  ToolTipService.ToolTip="点击复制所有通讯【正常】的IP地址" />
             </StackPanel>
-            <StackPanel Orientation="Horizontal" Spacing="6">
+
+            <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="6">
                 <Border x:Name="LegendOffline" Style="{StaticResource LegendSwatchStyle}" />
-                <HyperlinkButton x:Name="OfflineLink" Click="OnCopyOfflineClick" Padding="2,0,2,0"
+                <HyperlinkButton x:Name="OfflineLink" Content="不通 0" Padding="2,0,2,0" Click="OnCopyOfflineClick"
                                  ToolTipService.ToolTip="点击复制所有通讯【异常】的IP地址" />
             </StackPanel>
-            <StackPanel Orientation="Horizontal" Spacing="6">
+
+            <StackPanel Grid.Column="2" Orientation="Horizontal" Spacing="6">
                 <Border x:Name="LegendPending" Style="{StaticResource LegendSwatchStyle}" />
                 <TextBlock x:Name="PendingText" Style="{StaticResource StatusTextStyle}" Text="待检测 254" />
             </StackPanel>
-            <TextBlock x:Name="SummaryText" Style="{StaticResource StatusTextStyle}" Text="尚未扫描" />
-        </StackPanel>
 
-        <!-- ================= blocks ================= -->
-        <ScrollViewer x:Name="BlockScroll" Grid.Row="2" Padding="4"
-                      VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
-            <ItemsRepeater x:Name="BlockRepeater" ItemsSource="{x:Bind Blocks}">
-                <ItemsRepeater.Layout>
-                    <UniformGridLayout MinItemWidth="58" MinItemHeight="38"
-                                       MinRowSpacing="2" MinColumnSpacing="2"
-                                       ItemsStretch="None" />
-                </ItemsRepeater.Layout>
-                <ItemsRepeater.ItemTemplate>
-                    <DataTemplate x:DataType="vm:IpBlock">
-                        <Button Style="{StaticResource IpBlockButtonStyle}"
-                                Background="{x:Bind Background, Mode=OneWay}"
-                                Foreground="{x:Bind Foreground, Mode=OneWay}"
-                                Content="{x:Bind Label}"
-                                ToolTipService.ToolTip="{x:Bind Tooltip, Mode=OneWay}"
-                                Tapped="OnBlockTapped"
-                                DoubleTapped="OnBlockDoubleTapped"
-                                RightTapped="OnBlockRightTapped" />
-                    </DataTemplate>
-                </ItemsRepeater.ItemTemplate>
-            </ItemsRepeater>
-        </ScrollViewer>
+            <TextBlock x:Name="SummaryText" Grid.Column="4" Style="{StaticResource StatusTextStyle}"
+                       Text="尚未扫描" />
+        </Grid>
 
-        <!-- ================= list view ================= -->
-        <ListView x:Name="ResultList" Grid.Row="2" Visibility="Collapsed"
-                  SelectionMode="Single" IsItemClickEnabled="True"
-                  ItemClick="OnListItemClick">
-            <ListView.HeaderTemplate>
-                <DataTemplate>
-                    <Grid Padding="12,6" ColumnSpacing="12">
+        <!-- ==================== results ==================== -->
+        <Grid x:Name="ResultsHost" Grid.Row="4" SizeChanged="OnResultsHostSizeChanged">
+
+            <!-- 色块网格: the signature 254-square grid. Column count and block size are
+                 derived from the measured width — see ApplyResponsiveLayout. -->
+            <ScrollViewer x:Name="BlockScroll" VerticalScrollBarVisibility="Auto"
+                          HorizontalScrollBarVisibility="Disabled" FontSize="12"
+                          VerticalScrollMode="Auto" HorizontalScrollMode="Disabled">
+                <ItemsRepeater x:Name="BlockRepeater" ItemsSource="{x:Bind Blocks}">
+                    <ItemsRepeater.Layout>
+                        <UniformGridLayout x:Name="BlockLayout" ItemsStretch="Uniform"
+                                           MinItemWidth="48" MinItemHeight="30"
+                                           MinRowSpacing="5" MinColumnSpacing="5" />
+                    </ItemsRepeater.Layout>
+                    <ItemsRepeater.ItemTemplate>
+                        <DataTemplate x:DataType="vm:IpBlock">
+                            <Button Style="{StaticResource IpBlockButtonStyle}"
+                                    Background="{x:Bind Background, Mode=OneWay}"
+                                    Foreground="{x:Bind Foreground, Mode=OneWay}"
+                                    Content="{x:Bind Label}"
+                                    Tag="{x:Bind Ip, Mode=OneWay}"
+                                    ToolTipService.ToolTip="{x:Bind Tooltip, Mode=OneWay}"
+                                    Tapped="OnBlockTapped"
+                                    DoubleTapped="OnBlockDoubleTapped"
+                                    RightTapped="OnBlockRightTapped" />
+                        </DataTemplate>
+                    </ItemsRepeater.ItemTemplate>
+                </ItemsRepeater>
+            </ScrollViewer>
+
+            <!-- 详细列表 / 紧凑表格: sticky header + virtualised rows. -->
+            <Grid x:Name="RowsHost" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <!-- Sticky header: outside the ListView so it never scrolls away, and
+                     inset exactly like a row (8 left / 14 right) so columns line up. -->
+                <Border Grid.Row="0" BorderThickness="0,0,0,1"
+                        BorderBrush="{ThemeResource DividerStrokeColorDefaultBrush}">
+                    <Grid Margin="8,0,14,6" ColumnSpacing="8">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="140" />
-                            <ColumnDefinition Width="80" />
-                            <ColumnDefinition Width="200" />
-                            <ColumnDefinition Width="170" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
-                        <TextBlock Grid.Column="0" Text="IP" FontWeight="SemiBold" />
-                        <TextBlock Grid.Column="1" Text="状态" FontWeight="SemiBold" />
-                        <TextBlock Grid.Column="2" Text="主机名" FontWeight="SemiBold" />
-                        <TextBlock Grid.Column="3" Text="MAC" FontWeight="SemiBold" />
-                        <TextBlock Grid.Column="4" Text="备注" FontWeight="SemiBold" />
+
+                        <TextBlock Grid.Column="0" Text="IP" Width="112" Style="{StaticResource ColumnHeaderStyle}" />
+                        <TextBlock Grid.Column="1" Text="状态" Width="58" Style="{StaticResource ColumnHeaderStyle}" />
+                        <TextBlock x:Name="HeaderSource" Grid.Column="2" Text="来源" Width="46"
+                                   Style="{StaticResource ColumnHeaderStyle}" />
+                        <TextBlock x:Name="HeaderHost" Grid.Column="3" Text="主机名" Width="118"
+                                   Style="{StaticResource ColumnHeaderStyle}" />
+                        <TextBlock x:Name="HeaderMac" Grid.Column="4" Text="MAC" Width="118"
+                                   Style="{StaticResource ColumnHeaderStyle}" />
+                        <TextBlock x:Name="HeaderMemo" Grid.Column="5" Text="备注"
+                                   Style="{StaticResource ColumnHeaderStyle}" />
                     </Grid>
-                </DataTemplate>
-            </ListView.HeaderTemplate>
-            <ListView.ItemTemplate>
-                <DataTemplate x:DataType="vm:IpBlock">
-                    <Grid Padding="12,4" ColumnSpacing="12">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="140" />
-                            <ColumnDefinition Width="80" />
-                            <ColumnDefinition Width="200" />
-                            <ColumnDefinition Width="170" />
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
-                        <TextBlock Grid.Column="0" Text="{x:Bind Ip}" />
-                        <TextBlock Grid.Column="1" Text="{x:Bind StatusText, Mode=OneWay}" />
-                        <TextBlock Grid.Column="2" Text="{x:Bind HostName, Mode=OneWay}" TextTrimming="CharacterEllipsis" />
-                        <TextBlock Grid.Column="3" Text="{x:Bind Mac, Mode=OneWay}" />
-                        <TextBlock Grid.Column="4" Text="{x:Bind Memo, Mode=OneWay}" TextTrimming="CharacterEllipsis" />
-                    </Grid>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+                </Border>
+
+                <ListView x:Name="RowList" Grid.Row="1" SelectionMode="None" IsItemClickEnabled="False"
+                          ItemContainerStyle="{StaticResource ListRowContainerStyle}"
+                          ScrollViewer.HorizontalScrollMode="Disabled"
+                          ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="vm:IpBlock">
+                            <Grid Background="Transparent"
+                                  Tag="{x:Bind Ip, Mode=OneWay}"
+                                  ToolTipService.ToolTip="{x:Bind Tooltip, Mode=OneWay}"
+                                  Tapped="OnBlockTapped"
+                                  DoubleTapped="OnBlockDoubleTapped"
+                                  RightTapped="OnBlockRightTapped">
+                                <Border Background="{ThemeResource SubtleFillColorSecondaryBrush}"
+                                        Opacity="{x:Bind vm:IpBlock.Zebra(LastOctet)}"
+                                        IsHitTestVisible="False" />
+                                <Grid Margin="8,0,14,0" ColumnSpacing="8">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock Grid.Column="0" Text="{x:Bind Ip}" Width="112"
+                                               FontFamily="Consolas" FontSize="13" FontWeight="SemiBold"
+                                               VerticalAlignment="Center" TextTrimming="CharacterEllipsis" />
+
+                                    <StackPanel Grid.Column="1" Width="58" Orientation="Horizontal" Spacing="6"
+                                                VerticalAlignment="Center">
+                                        <Border Style="{StaticResource StatusDotStyle}"
+                                                Background="{x:Bind StatusBrush, Mode=OneWay}" />
+                                        <TextBlock Text="{x:Bind StatusText, Mode=OneWay}"
+                                                   VerticalAlignment="Center" TextTrimming="CharacterEllipsis" />
+                                    </StackPanel>
+
+                                    <TextBlock Grid.Column="2" Width="46" Text="{x:Bind SourceText, Mode=OneWay}"
+                                               Style="{StaticResource CellSecondaryStyle}"
+                                               Visibility="{x:Bind SourceCellVisibility, Mode=OneWay}" />
+
+                                    <TextBlock Grid.Column="3" Width="118" Text="{x:Bind HostName, Mode=OneWay}"
+                                               VerticalAlignment="Center" TextTrimming="CharacterEllipsis"
+                                               Visibility="{x:Bind HostNameCellVisibility, Mode=OneWay}" />
+
+                                    <TextBlock Grid.Column="4" Width="118" Text="{x:Bind Mac, Mode=OneWay}"
+                                               FontFamily="Consolas" FontSize="12" VerticalAlignment="Center"
+                                               TextTrimming="CharacterEllipsis"
+                                               Visibility="{x:Bind MacCellVisibility, Mode=OneWay}" />
+
+                                    <TextBlock Grid.Column="5" Text="{x:Bind Memo, Mode=OneWay}"
+                                               VerticalAlignment="Center" TextTrimming="CharacterEllipsis"
+                                               Visibility="{x:Bind MemoCellVisibility, Mode=OneWay}" />
+                                </Grid>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+
+            <!-- 卡片视图: large tiles, good for touch and for presentations. -->
+            <ScrollViewer x:Name="CardScroll" Visibility="Collapsed"
+                          VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"
+                          VerticalScrollMode="Auto" HorizontalScrollMode="Disabled">
+                <ItemsRepeater x:Name="CardRepeater" ItemsSource="{x:Bind Blocks}">
+                    <ItemsRepeater.Layout>
+                        <UniformGridLayout x:Name="CardLayout" ItemsStretch="Uniform"
+                                           MinItemWidth="240" MinItemHeight="108"
+                                           MinRowSpacing="10" MinColumnSpacing="10" />
+                    </ItemsRepeater.Layout>
+                    <ItemsRepeater.ItemTemplate>
+                        <DataTemplate x:DataType="vm:IpBlock">
+                            <Button Style="{StaticResource IpCardButtonStyle}"
+                                    Tag="{x:Bind Ip, Mode=OneWay}"
+                                    ToolTipService.ToolTip="{x:Bind Tooltip, Mode=OneWay}"
+                                    Tapped="OnBlockTapped"
+                                    DoubleTapped="OnBlockDoubleTapped"
+                                    RightTapped="OnBlockRightTapped">
+                                <Grid RowSpacing="4">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+
+                                    <Grid Grid.Row="0" ColumnSpacing="8">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Grid.Column="0" Text="{x:Bind Ip}" FontFamily="Consolas"
+                                                   FontSize="18" FontWeight="SemiBold" VerticalAlignment="Center"
+                                                   TextTrimming="CharacterEllipsis" />
+                                        <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="6"
+                                                    VerticalAlignment="Center">
+                                            <Border Style="{StaticResource StatusDotStyle}"
+                                                    Background="{x:Bind StatusBrush, Mode=OneWay}" />
+                                            <TextBlock Text="{x:Bind StatusText, Mode=OneWay}"
+                                                       Style="{StaticResource CellSecondaryStyle}" />
+                                        </StackPanel>
+                                    </Grid>
+
+                                    <TextBlock Grid.Row="1" Text="{x:Bind HostName, Mode=OneWay}"
+                                               FontWeight="SemiBold" TextTrimming="CharacterEllipsis"
+                                               Visibility="{x:Bind HostNameCellVisibility, Mode=OneWay}" />
+
+                                    <TextBlock Grid.Row="2" Text="{x:Bind Mac, Mode=OneWay}" FontFamily="Consolas"
+                                               Style="{StaticResource CellSecondaryStyle}"
+                                               Visibility="{x:Bind MacCellVisibility, Mode=OneWay}" />
+
+                                    <TextBlock Grid.Row="3" Text="{x:Bind Memo, Mode=OneWay}"
+                                               Style="{StaticResource CellSecondaryStyle}"
+                                               Visibility="{x:Bind MemoCellVisibility, Mode=OneWay}" />
+                                </Grid>
+                            </Button>
+                        </DataTemplate>
+                    </ItemsRepeater.ItemTemplate>
+                </ItemsRepeater>
+            </ScrollViewer>
+
+            <!-- Empty state: an opaque card floating above the grid, transparent to
+                 clicks so a single click still probes the block underneath it. -->
+            <Grid x:Name="EmptyState" IsHitTestVisible="False">
+                <Border Style="{StaticResource CardStyle}" CornerRadius="10" Padding="20,16,20,16"
+                        MaxWidth="420" Margin="12"
+                        HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <StackPanel Spacing="6">
+                        <FontIcon Glyph="&#xE774;" FontSize="30" HorizontalAlignment="Center"
+                                  Foreground="{ThemeResource TextFillColorTertiaryBrush}" />
+                        <TextBlock Text="尚未扫描" FontSize="16" FontWeight="SemiBold"
+                                   HorizontalAlignment="Center" />
+                        <TextBlock Style="{StaticResource HintTextStyle}" TextAlignment="Center"
+                                   Text="输入IP段（例如 192.168.1）后点击【开始】扫描整个网段；也可以直接单击任意色块，只检测那一个地址。" />
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Grid>
     </Grid>
 </Page>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="IPScaner.WinUI.Views.NetworkToolsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    NavigationCacheMode="Required">
+
+    <!--
+        网络工具 — DNS 一键切换 + SSH/RDP 快捷连接 + 常用诊断命令。
+
+        整页放在一个纵向 ScrollViewer 里：主窗口首次显示时按显示器工作区自适应，
+        但用户仍可能把窗口拉小，所以内容永远可以滚动到，不做固定高度假设。
+        DNS 预设卡片用两列 UniformGrid，单击即应用，并回显 Core 的真实
+        NetConfigResult.Message。
+    -->
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"
+                  Padding="16,12,16,12">
+        <StackPanel Spacing="10" MaxWidth="1500" HorizontalAlignment="Stretch">
+
+            <!-- ==================== 权限提示 ==================== -->
+            <InfoBar x:Name="ElevationBar" IsOpen="False" Severity="Warning"
+                     Title="需要管理员权限才能修改 DNS"
+                     Message="当前进程未提权，读取网卡与 DNS 信息正常，但切换 DNS 会被 netsh 拒绝。SSH / RDP 与诊断命令不受影响。">
+                <InfoBar.ActionButton>
+                    <Button Content="以管理员身份重启" Click="OnRestartElevatedClick"
+                            AutomationProperties.Name="以管理员身份重启" />
+                </InfoBar.ActionButton>
+            </InfoBar>
+
+            <!-- ==================== 操作结果 ==================== -->
+            <InfoBar x:Name="ResultBar" IsOpen="False" Severity="Success" Title="操作结果"
+                     IsClosable="True" />
+
+            <!-- ==================== DNS ==================== -->
+            <Border Style="{StaticResource CardStyle}">
+                <StackPanel Spacing="8">
+                    <TextBlock Text="DNS 一键切换" Style="{StaticResource SectionHeaderStyle}" Margin="0" />
+
+                    <Grid ColumnSpacing="8">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="300" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Column="0" Text="网卡:" Style="{StaticResource FieldLabelStyle}" />
+                        <ComboBox x:Name="AdapterCombo" Grid.Column="1" Height="32"
+                                  HorizontalAlignment="Stretch"
+                                  SelectionChanged="OnAdapterChanged"
+                                  AutomationProperties.Name="网卡"
+                                  ToolTipService.ToolTip="选择要修改 DNS 的网卡" />
+                        <Button x:Name="RefreshAdapterButton" Grid.Column="2" Content="刷新网卡" MinWidth="90"
+                                Height="32" Click="OnRefreshAdaptersClick" AutomationProperties.Name="刷新网卡" />
+                        <TextBlock x:Name="CurrentDnsText" Grid.Column="3" Style="{StaticResource HintTextStyle}"
+                                   VerticalAlignment="Center" TextTrimming="CharacterEllipsis"
+                                   Text="当前 DNS：读取中…" />
+                    </Grid>
+
+                    <!--
+                        预设卡片由 code-behind 按 DnsConfigurator.Presets 生成，
+                        两列等宽的 Grid 承担排版（WinUI 3 没有 UniformGrid）。
+                    -->
+                    <Grid x:Name="PresetPanel" ColumnSpacing="8" RowSpacing="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+
+                    <Grid ColumnSpacing="8" Margin="0,2,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Column="0" Text="自定义:" Style="{StaticResource FieldLabelStyle}" />
+                        <TextBox x:Name="CustomDnsBox" Grid.Column="1" Height="32"
+                                 AutomationProperties.Name="自定义 DNS"
+                                 PlaceholderText="多个 DNS 用逗号分隔，例如 223.5.5.5, 119.29.29.29"
+                                 ToolTipService.ToolTip="全角逗号、空格、分号都会被识别为分隔符" />
+                        <Button x:Name="ApplyCustomButton" Grid.Column="2" Content="应用自定义 DNS"
+                                MinWidth="128" Height="32" Click="OnApplyCustomClick"
+                                AutomationProperties.Name="应用自定义 DNS" />
+                    </Grid>
+
+                    <TextBlock Style="{StaticResource HintTextStyle}"
+                               Text="点击上面的预设卡片会立即写入该网卡；恢复自动获取会清空手动 DNS。所有结果都来自 netsh 的真实返回。" />
+                </StackPanel>
+            </Border>
+
+            <!-- ==================== SSH / RDP ==================== -->
+            <Border Style="{StaticResource CardStyle}">
+                <StackPanel Spacing="8">
+                    <TextBlock Text="SSH / RDP 快捷连接" Style="{StaticResource SectionHeaderStyle}" Margin="0" />
+
+                    <StackPanel Orientation="Horizontal" Spacing="8">
+                        <TextBlock Text="主机:" Style="{StaticResource FieldLabelStyle}" />
+                        <TextBox x:Name="HostBox" Width="200" Height="32" AutomationProperties.Name="主机"
+                                 PlaceholderText="192.168.1.10"
+                                 ToolTipService.ToolTip="目标主机的 IPv4 地址" />
+                        <Button x:Name="UseScanHostButton" Content="用扫描到的 IP" MinWidth="118" Height="32"
+                                Click="OnUseScanHostClick" AutomationProperties.Name="用扫描到的 IP"
+                                ToolTipService.ToolTip="取端口扫描页交接过来的主机地址（若没有则读剪贴板）" />
+
+                        <TextBlock Text="用户名:" Style="{StaticResource FieldLabelStyle}" />
+                        <TextBox x:Name="UserBox" Width="160" Height="32" AutomationProperties.Name="用户名"
+                                 PlaceholderText="可留空" ToolTipService.ToolTip="可留空，留空则用当前登录用户" />
+
+                        <TextBlock Text="SSH 端口:" Style="{StaticResource FieldLabelStyle}" />
+                        <TextBox x:Name="SshPortBox" Width="80" Height="32" Text="22"
+                                 AutomationProperties.Name="SSH 端口" ToolTipService.ToolTip="默认 22" />
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Spacing="8">
+                        <Button x:Name="SshButton" Content="打开 SSH" MinWidth="104" Height="32"
+                                Style="{StaticResource AccentButtonStyle}" Click="OnOpenSshClick"
+                                AutomationProperties.Name="打开 SSH" />
+                        <Button x:Name="RdpButton" Content="打开 RDP" MinWidth="104" Height="32"
+                                Click="OnOpenRdpClick" AutomationProperties.Name="打开 RDP" />
+                        <Button x:Name="RdpFileButton" Content="打开 RDP 文件" MinWidth="128" Height="32"
+                                Click="OnOpenRdpFileClick" AutomationProperties.Name="打开 RDP 文件"
+                                ToolTipService.ToolTip="生成一个临时 .rdp 文件并用远程桌面连接打开" />
+                        <TextBlock x:Name="ClientStatusText" Style="{StaticResource HintTextStyle}"
+                                   VerticalAlignment="Center" TextTrimming="CharacterEllipsis" />
+                    </StackPanel>
+
+                    <TextBlock Style="{StaticResource HintTextStyle}"
+                               Text="主机地址必须是合法的 IPv4；地址为空或格式不对时不会启动任何进程，并会在这里说明原因。" />
+                </StackPanel>
+            </Border>
+
+            <!-- ==================== 诊断命令 ==================== -->
+            <Border Style="{StaticResource CardStyle}">
+                <StackPanel Spacing="8">
+                    <TextBlock Text="快速诊断命令" Style="{StaticResource SectionHeaderStyle}" Margin="0" />
+
+                    <StackPanel Orientation="Horizontal" Spacing="6">
+                        <Button x:Name="PingButton" Content="ping" MinWidth="88" Height="32"
+                                Click="OnPingClick" AutomationProperties.Name="ping"
+                                ToolTipService.ToolTip="在新的命令窗口中 ping 目标主机" />
+                        <Button x:Name="TracertButton" Content="tracert" MinWidth="88" Height="32"
+                                Click="OnTracertClick" AutomationProperties.Name="tracert"
+                                ToolTipService.ToolTip="路由跟踪，查看在哪一跳断开" />
+                        <Button x:Name="TelnetButton" Content="telnet" MinWidth="88" Height="32"
+                                Click="OnTelnetClick" AutomationProperties.Name="telnet"
+                                ToolTipService.ToolTip="telnet 到目标主机的 23 端口（Windows 需先安装 telnet 客户端）" />
+                        <Button x:Name="NetstatButton" Content="netstat" MinWidth="88" Height="32"
+                                Click="OnNetstatClick" AutomationProperties.Name="netstat"
+                                ToolTipService.ToolTip="在本机连接列表中筛出与目标主机相关的条目" />
+                        <Button x:Name="ArpButton" Content="arp" MinWidth="88" Height="32"
+                                Click="OnArpClick" AutomationProperties.Name="arp"
+                                ToolTipService.ToolTip="查看本机 ARP 表中该地址的 MAC" />
+                        <Button x:Name="PingCountButton" Content="端口测试" MinWidth="88" Height="32"
+                                Click="OnPortTestClick" AutomationProperties.Name="端口测试"
+                                ToolTipService.ToolTip="用 PowerShell 测试目标主机的常用端口是否可达" />
+                    </StackPanel>
+
+                    <TextBlock Style="{StaticResource HintTextStyle}"
+                               Text="命令都在独立的命令行窗口中运行，执行完会 pause，方便查看输出；窗口不会阻塞本程序。" />
+                </StackPanel>
+            </Border>
+
+            <!-- ==================== 状态行 ==================== -->
+            <TextBlock x:Name="StatusText" Style="{StaticResource StatusTextStyle}"
+                       Text="程序已就绪" TextTrimming="CharacterEllipsis" />
+        </StackPanel>
+    </ScrollViewer>
+</Page>

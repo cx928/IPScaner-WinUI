@@ -187,6 +187,8 @@ public class AppConfigTests
         if (type == typeof(int)) return (int)current! + 7;
         if (type == typeof(string)) return (current as string ?? string.Empty) + "-changed";
         if (type == typeof(EventName)) return (EventName)(((int)(EventName)current! + 1) % 7);
+        if (type == typeof(ViewMode)) return (ViewMode)(((int)(ViewMode)current! + 1) % 4);
+        if (type == typeof(ThemeMode)) return (ThemeMode)(((int)(ThemeMode)current! + 1) % 3);
 
         throw new InvalidOperationException(
             $"AppConfig.{property.Name} has type {type.Name}; add it to the round-trip helpers.");

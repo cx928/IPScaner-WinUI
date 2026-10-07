@@ -11,20 +11,92 @@
     <x:Double x:Key="IpBlockWidth">54</x:Double>
     <x:Double x:Key="IpBlockHeight">34</x:Double>
 
-    <!-- The signature IP colour block: compact, flat, full-bleed background so the
-         reachability colour is the dominant signal. -->
+    <!--
+        The signature IP colour block, and the shared interaction surface for the
+        card view.
+
+        Differences from the first cut of this style:
+          * no fixed Width/Height — the scan grid derives the block size from the
+            measured width (UniformGridLayout, ItemsStretch=Uniform), so a cell must
+            be free to stretch;
+          * a custom template, because the stock Button template *replaces*
+            ContentPresenter.Background in its PointerOver/Pressed states, which
+            erases the reachability colour exactly when the user points at it. The
+            template layers translucent theme fills on top instead, so hover and
+            press read as a lift without losing the status colour;
+          * no FontSize setter: the page assigns one on the ItemsRepeater and the
+            label inherits it, so the text scales with the block.
+    -->
     <Style x:Key="IpBlockButtonStyle" TargetType="Button">
-        <Setter Property="MinWidth" Value="{StaticResource IpBlockWidth}" />
-        <Setter Property="MinHeight" Value="{StaticResource IpBlockHeight}" />
-        <Setter Property="Width" Value="{StaticResource IpBlockWidth}" />
-        <Setter Property="Height" Value="{StaticResource IpBlockHeight}" />
+        <Setter Property="MinWidth" Value="0" />
+        <Setter Property="MinHeight" Value="0" />
         <Setter Property="Padding" Value="0" />
-        <Setter Property="Margin" Value="2" />
-        <Setter Property="CornerRadius" Value="4" />
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="CornerRadius" Value="6" />
         <Setter Property="BorderThickness" Value="1" />
-        <Setter Property="FontSize" Value="12" />
+        <Setter Property="BorderBrush" Value="{ThemeResource ControlStrokeColorDefaultBrush}" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="VerticalAlignment" Value="Stretch" />
         <Setter Property="HorizontalContentAlignment" Value="Center" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid x:Name="Root"
+                          Background="{TemplateBinding Background}"
+                          BorderBrush="{TemplateBinding BorderBrush}"
+                          BorderThickness="{TemplateBinding BorderThickness}"
+                          CornerRadius="{TemplateBinding CornerRadius}">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal" />
+                                <VisualState x:Name="PointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="HoverLayer.Opacity" Value="1" />
+                                        <Setter Target="Root.Translation" Value="0,-1,0" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="HoverLayer.Opacity" Value="1" />
+                                        <Setter Target="PressLayer.Opacity" Value="0.75" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Disabled">
+                                    <VisualState.Setters>
+                                        <Setter Target="Root.Opacity" Value="0.5" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+
+                        <ContentPresenter x:Name="Presenter"
+                                          Content="{TemplateBinding Content}"
+                                          ContentTemplate="{TemplateBinding ContentTemplate}"
+                                          Foreground="{TemplateBinding Foreground}"
+                                          Padding="{TemplateBinding Padding}"
+                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+
+                        <Border x:Name="HoverLayer" Opacity="0" IsHitTestVisible="False"
+                                CornerRadius="{TemplateBinding CornerRadius}"
+                                Background="{ThemeResource LayerFillColorDefaultBrush}" />
+                        <Border x:Name="PressLayer" Opacity="0" IsHitTestVisible="False"
+                                CornerRadius="{TemplateBinding CornerRadius}"
+                                Background="{ThemeResource LayerFillColorDefaultBrush}" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- 卡片视图 tile: same interaction surface, card-like padding and radius. -->
+    <Style x:Key="IpCardButtonStyle" TargetType="Button" BasedOn="{StaticResource IpBlockButtonStyle}">
+        <Setter Property="Padding" Value="12,10,12,10" />
+        <Setter Property="CornerRadius" Value="8" />
+        <Setter Property="Background" Value="{ThemeResource CardBackgroundFillColorDefaultBrush}" />
+        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        <Setter Property="VerticalContentAlignment" Value="Top" />
     </Style>
 
     <!-- A quieter block used for the legend swatches. -->
@@ -34,6 +106,34 @@
         <Setter Property="CornerRadius" Value="3" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="BorderBrush" Value="{ThemeResource ControlStrokeColorDefaultBrush}" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
+
+    <!-- Reachability dot used by the list / table / card views: the fill is the
+         user's configured status colour, the ring keeps it legible on any theme. -->
+    <Style x:Key="StatusDotStyle" TargetType="Border">
+        <Setter Property="Width" Value="9" />
+        <Setter Property="Height" Value="9" />
+        <Setter Property="CornerRadius" Value="5" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="BorderBrush" Value="{ThemeResource ControlStrokeColorDefaultBrush}" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
+
+    <!-- Sticky column header of 详细列表 / 紧凑表格. -->
+    <Style x:Key="ColumnHeaderStyle" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="Foreground" Value="{ThemeResource TextFillColorSecondaryBrush}" />
+        <Setter Property="TextTrimming" Value="CharacterEllipsis" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
+
+    <!-- Secondary text inside a card or a table cell. -->
+    <Style x:Key="CellSecondaryStyle" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="Foreground" Value="{ThemeResource TextFillColorSecondaryBrush}" />
+        <Setter Property="TextTrimming" Value="CharacterEllipsis" />
         <Setter Property="VerticalAlignment" Value="Center" />
     </Style>
 

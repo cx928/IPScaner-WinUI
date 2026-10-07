@@ -14,6 +14,13 @@
 
   <ItemGroup>
     <PackageReference Include="System.Management" Version="8.0.0" />
+    <!--
+      PDF report export. PDFsharp is MIT licensed, chosen deliberately over
+      QuestPDF (whose community licence is revenue-capped) so the project has no
+      licensing condition attached to its exporter. It embeds a TrueType font,
+      which is what makes Chinese output possible without a system print driver.
+    -->
+    <PackageReference Include="PDFsharp" Version="6.2.4" />
   </ItemGroup>
 
 </Project>

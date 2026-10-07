@@ -5,6 +5,7 @@ using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media.Animation;
 using Microsoft.UI.Windowing;
 using Windows.Graphics;
+using Windows.Graphics.Display;
 
 namespace IPScaner.WinUI;
 
@@ -14,6 +15,17 @@ namespace IPScaner.WinUI;
 /// </summary>
 public sealed partial class MainWindow : Window
 {
+    /// <summary>Fraction of the display's working area the window aims for.</summary>
+    private const double WorkingAreaFraction = 0.90;
+
+    /// <summary>Upper bound on the initial window size, in physical pixels.</summary>
+    private const int MaxInitialWidth = 1600;
+    private const int MaxInitialHeight = 1000;
+
+    /// <summary>Lower bound on the initial window size, in physical pixels.</summary>
+    private const int MinInitialWidth = 960;
+    private const int MinInitialHeight = 640;
+
     private readonly DispatcherTimer _clockTimer = new();
     private readonly DispatcherTimer _tipTimer = new();
     private readonly DispatcherTimer _overlayTimer = new();
@@ -21,6 +33,8 @@ public sealed partial class MainWindow : Window
     private TrayIcon? _trayIcon;
     private DesktopOverlay? _desktopOverlay;
     private IntPtr _hwnd;
+    private AppWindow? _appWindow;
+    private bool _initialSizeApplied;
 
     /// <summary>
     /// Rotating hints, carried over verbatim from the original
@@ -57,6 +71,9 @@ public sealed partial class MainWindow : Window
         InitializeTrayAndOverlay();
         UpdateElevationBadge();
 
+        // Restore the saved theme (跟随系统 / 浅色 / 深色) before the first paint.
+        ThemeService.Apply(AppServices.Current.Config.ThemeMode);
+
         // Land on the scan page, like the original did.
         Nav.SelectedItem = Nav.MenuItems.OfType<NavigationViewItem>().FirstOrDefault();
     }
@@ -84,14 +101,19 @@ public sealed partial class MainWindow : Window
         {
             _hwnd = WinRT.Interop.WindowNative.GetWindowHandle(this);
             var id = Microsoft.UI.Win32Interop.GetWindowIdFromWindow(_hwnd);
-            var appWindow = AppWindow.GetFromWindowId(id);
+            _appWindow = AppWindow.GetFromWindowId(id);
 
-            // A /24 grid needs room; the original grew itself until the flow panel
-            // stopped scrolling, which usually landed around this size.
-            appWindow.Resize(new SizeInt32(1180, 820));
-            appWindow.SetIcon(Path.Combine(AppContext.BaseDirectory, "Assets", "app.ico"));
+            // The original grew itself until the 254 colour blocks stopped scrolling
+            // (see docs\re\01-mainwindow.md §1.4), which hard-coded a size that is wrong
+            // on most displays. This port asks the monitor instead: ~90 % of its working
+            // area, clamped to a sane band, centred on that monitor. The first
+            // Activated event applies it, because the window has a real DPI only once
+            // the compositor has placed it on an output.
+            Activated += OnFirstActivated;
 
-            if (appWindow.Presenter is OverlappedPresenter presenter)
+            _appWindow.SetIcon(Path.Combine(AppContext.BaseDirectory, "Assets", "app.ico"));
+
+            if (_appWindow.Presenter is OverlappedPresenter presenter)
             {
                 presenter.PreferredMinimumWidth = 900;
                 presenter.PreferredMinimumHeight = 620;
@@ -102,6 +124,67 @@ public sealed partial class MainWindow : Window
             Core.Logging.AppLog.Instance.Log(nameof(MainWindow), "配置窗口失败: " + ex.Message);
         }
     }
+
+    private void OnFirstActivated(object sender, WindowActivatedEventArgs args)
+    {
+        if (_initialSizeApplied || args.WindowActivationState == WindowActivationState.Deactivated) return;
+        _initialSizeApplied = true;
+
+        try { ApplyAdaptiveSize(); }
+        catch (Exception ex) { Core.Logging.AppLog.Instance.Log(nameof(MainWindow), "自适应窗口尺寸失败: " + ex.Message); }
+    }
+
+    /// <summary>
+    /// Sizes the window to ~90 % of the monitor's working area (capped at
+    /// 1600x1000, floored at 960x640) and centres it there.
+    /// </summary>
+    /// <remarks>
+    /// <see cref="AppWindow"/> speaks physical pixels while XAML speaks DIPs, so the
+    /// DIP target is converted through the window's own DPI before being applied —
+    /// without that, a 150 % display would get a window 1.5x larger than intended.
+    /// The work-area fraction and the caps are applied in DIPs, the cap is re-applied
+    /// after scaling so a scaled window is never larger than requested, and the result
+    /// is finally trimmed to the working area so the title bar can never end up under
+    /// the taskbar or off-screen.
+    /// </remarks>
+    private void ApplyAdaptiveSize()
+    {
+        if (_appWindow is null) return;
+
+        var display = DisplayArea.GetFromWindowId(_appWindow.Id, DisplayAreaFallback.Nearest);
+        if (display is null)
+        {
+            // No monitor information: fall back to a fixed, sensible size.
+            _appWindow.Resize(new SizeInt32(1280, 900));
+            return;
+        }
+
+        var work = display.WorkArea;
+        var dpi = GetDpiForWindow(_hwnd);
+        var scale = dpi == 0 ? 1.0 : dpi / 96.0;
+
+        var logicalWidth = Clamp((int)Math.Round(work.Width / scale * WorkingAreaFraction),
+            MinInitialWidth, MaxInitialWidth);
+        var logicalHeight = Clamp((int)Math.Round(work.Height / scale * WorkingAreaFraction),
+            MinInitialHeight, MaxInitialHeight);
+
+        var size = new SizeInt32(
+            Math.Min((int)Math.Round(logicalWidth * scale), work.Width),
+            Math.Min((int)Math.Round(logicalHeight * scale), work.Height));
+
+        var x = work.X + Math.Max(0, (work.Width - size.Width) / 2);
+        var y = work.Y + Math.Max(0, (work.Height - size.Height) / 2);
+
+        _appWindow.MoveAndResize(new RectInt32(x, y, size.Width, size.Height));
+
+        Core.Logging.AppLog.Instance.Log(nameof(MainWindow),
+            $"窗口自适应：工作区 {work.Width}x{work.Height} @({work.X},{work.Y})，DPI {dpi}，尺寸 {size.Width}x{size.Height} @({x},{y})");
+    }
+
+    private static int Clamp(int value, int min, int max) => Math.Min(Math.Max(value, min), max);
+
+    [System.Runtime.InteropServices.DllImport("user32.dll")]
+    private static extern uint GetDpiForWindow(IntPtr hwnd);
 
     private void InitializeStatusBar()
     {
@@ -165,7 +248,14 @@ public sealed partial class MainWindow : Window
         {
             _desktopOverlay = new DesktopOverlay();
             ApplyDesktopOverlay();
-            AppServices.Current.ConfigChanged += (_, _) => ApplyDesktopOverlay();
+            AppServices.Current.ConfigChanged += (_, _) =>
+            {
+                ApplyDesktopOverlay();
+                // A theme change made anywhere (选项配置 or the page toolbar) has to
+                // reach the navigation pane, title bar and status strip too — which is
+                // exactly what theming the window root does.
+                ThemeService.Apply(AppServices.Current.Config.ThemeMode);
+            };
 
             // The badge shows the machine's *live* address, and 修改本地IP can change
             // it without any configuration change, so poll gently while it is visible.
@@ -257,6 +347,8 @@ public sealed partial class MainWindow : Window
             "batch" => "IP批量扫描",
             "portscan" => "目标端口扫描",
             "localport" => "本机端口占用",
+            "hosts" => "Hosts 管理",
+            "tools" => "网络工具",
             "localip" => "修改本地IP",
             "wifi" => "WiFi密码查看",
             "calc" => "IP地址计算器",
@@ -279,6 +371,8 @@ public sealed partial class MainWindow : Window
         "batch" => typeof(BatchScanPage),
         "portscan" => typeof(PortScanPage),
         "localport" => typeof(LocalPortPage),
+        "hosts" => typeof(HostsPage),
+        "tools" => typeof(NetworkToolsPage),
         "localip" => typeof(LocalIpPage),
         "wifi" => typeof(WifiPage),
         "memo" => typeof(MemoPage),

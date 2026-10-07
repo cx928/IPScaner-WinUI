@@ -134,16 +134,27 @@ if (-not $SkipInstaller) {
     $templatePath = Join-Path $PSScriptRoot "installer\IPScaner.wxs.template"
     if (-not (Test-Path $templatePath)) { throw "missing template: $templatePath" }
 
+    # The licence/privacy page needs real RTF; regenerate it here so the installer
+    # can never drift from privacy-zh.txt.
+    $privacyScript = Join-Path $PSScriptRoot "installer\make-privacy-rtf.ps1"
+    $privacyRtf = Join-Path $PSScriptRoot "installer\privacy-zh.rtf"
+    if (Test-Path $privacyScript) { & pwsh -NoProfile -File $privacyScript | Out-Null }
+    if (-not (Test-Path $privacyRtf)) { throw "privacy RTF not generated: $privacyRtf" }
+
     $wxs = Get-Content $templatePath -Raw
     $wxs = $wxs.Replace("@VERSION@", $Version)
     $wxs = $wxs.Replace("@PAYLOAD@", $msiPayload)
     $wxs = $wxs.Replace("@ICON@", (Join-Path $msiPayload "Assets\app.ico"))
+    $wxs = $wxs.Replace("@LICENSE_RTF@", $privacyRtf)
     Set-Content -Path $wxsPath -Value $wxs -Encoding UTF8
 
     if (Test-Path $msiPath) { Remove-Item $msiPath -Force }
-    & $wix build $wxsPath -arch x64 -o $msiPath
+    # WixToolset.UI.wixext provides WixUI_InstallDir — the privacy-agreement page
+    # and the install-folder picker. Install once with:
+    #   wix extension add -g WixToolset.UI.wixext/5.0.2
+    & $wix build $wxsPath -arch x64 -ext WixToolset.UI.wixext -o $msiPath
     if ($LASTEXITCODE -ne 0) { throw "wix build failed (exit $LASTEXITCODE)" }
-    $summary["installer.msi"] = "$([math]::Round((Get-Item $msiPath).Length/1MB,1)) MB ($(Split-Path $msiPayload -Leaf) payload)"
+    $summary["installer.msi"] = "$([math]::Round((Get-Item $msiPath).Length/1MB,1)) MB ($(Split-Path $msiPayload -Leaf) payload, 含隐私协议与自定义安装路径)"
 
     # ------------------------------------------------------------ setup.exe bootstrapper
     Write-Step "exe: IExpress bootstrapper around the MSI"

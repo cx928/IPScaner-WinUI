@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using System.Xml.Serialization;
 
 namespace IPScaner.Core.Configuration;
@@ -63,6 +64,42 @@ public class AppConfig
     /// <summary>最小化时隐藏到托盘 (v1.28 option; the config UI labels this chkHideMain).</summary>
     [XmlAttribute] public bool HideMainEnabled { get; set; }
 
+    // ---------------------------------------------------------------------
+    // Settings added by this rewrite. They are declared AFTER every original
+    // attribute so the legacy prefix of the file remains byte-stable, and each
+    // one carries [DefaultValue] so XmlSerializer omits it while it still holds
+    // its default — which is what keeps a config written by the original tool
+    // round-tripping byte-for-byte.
+    // ---------------------------------------------------------------------
+
+    /// <summary>结果展示方式 (色块网格 / 详细列表 / 紧凑表格 / 卡片视图).</summary>
+    [XmlAttribute, DefaultValue(ViewMode.Blocks)]
+    public ViewMode ViewMode { get; set; }
+
+    /// <summary>界面主题 (跟随系统 / 浅色 / 深色).</summary>
+    [XmlAttribute, DefaultValue(ThemeMode.System)]
+    public ThemeMode ThemeMode { get; set; }
+
+    /// <summary>色块边长缩放百分比；0 表示自动适应窗口宽度。</summary>
+    [XmlAttribute, DefaultValue(0)]
+    public int BlockSize { get; set; }
+
+    /// <summary>网格/列表是否显示主机名列。</summary>
+    [XmlAttribute, DefaultValue(true)]
+    public bool ShowHostNameColumn { get; set; }
+
+    /// <summary>网格/列表是否显示 MAC 列。</summary>
+    [XmlAttribute, DefaultValue(true)]
+    public bool ShowMacColumn { get; set; }
+
+    /// <summary>网格/列表是否显示备注列。</summary>
+    [XmlAttribute, DefaultValue(true)]
+    public bool ShowMemoColumn { get; set; }
+
+    /// <summary>状态列是否显示本次探测的判定来源（Ping / ARP / TCP）。</summary>
+    [XmlAttribute, DefaultValue(true)]
+    public bool ShowSourceColumn { get; set; }
+
     public AppConfig() => ResetToDefaults();
 
     /// <summary>Restores every setting to the original application's factory default.</summary>
@@ -95,6 +132,14 @@ public class AppConfig
         LogEnabled = false;
         StarMenu = null;
         HideMainEnabled = false;
+
+        ViewMode = ViewMode.Blocks;
+        ThemeMode = ThemeMode.System;
+        BlockSize = 0;
+        ShowHostNameColumn = true;
+        ShowMacColumn = true;
+        ShowMemoColumn = true;
+        ShowSourceColumn = true;
     }
 
     /// <summary>Creates a detached deep copy (the config window edits a clone, then commits).</summary>
@@ -128,6 +173,13 @@ public class AppConfig
         c.LogEnabled = LogEnabled;
         c.StarMenu = StarMenu;
         c.HideMainEnabled = HideMainEnabled;
+        c.ViewMode = ViewMode;
+        c.ThemeMode = ThemeMode;
+        c.BlockSize = BlockSize;
+        c.ShowHostNameColumn = ShowHostNameColumn;
+        c.ShowMacColumn = ShowMacColumn;
+        c.ShowMemoColumn = ShowMemoColumn;
+        c.ShowSourceColumn = ShowSourceColumn;
         return c;
     }
 

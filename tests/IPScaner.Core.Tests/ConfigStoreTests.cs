@@ -315,6 +315,16 @@ public class ConfigStoreTests
         LogEnabled = true,
         StarMenu = "mnuTools",
         HideMainEnabled = true,
+
+        // Added by this rewrite. Fully qualified because the property and the enum
+        // share a name, which would otherwise be ambiguous inside an initializer.
+        ViewMode = IPScaner.Core.Configuration.ViewMode.Cards,
+        ThemeMode = IPScaner.Core.Configuration.ThemeMode.Dark,
+        BlockSize = 140,
+        ShowHostNameColumn = false,
+        ShowMacColumn = false,
+        ShowMemoColumn = false,
+        ShowSourceColumn = false,
     };
 
     private static System.Reflection.PropertyInfo[] SettableProperties() =>

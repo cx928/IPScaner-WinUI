@@ -58,6 +58,33 @@
                 </StackPanel>
             </Border>
 
+            <Border Style="{StaticResource CardStyle}">
+                <StackPanel Spacing="8">
+                    <TextBlock Text="联系方式" Style="{StaticResource SectionHeaderStyle}" />
+                    <StackPanel Orientation="Horizontal" Spacing="8">
+                        <TextBlock Text="官方网站：" Style="{StaticResource FieldLabelStyle}" />
+                        <HyperlinkButton x:Name="SiteLink" Click="OnOpenSite" Padding="2,0,2,0" />
+                        <Button Content="复制网址" FontSize="12" Click="OnCopySite" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Spacing="8">
+                        <TextBlock Text="电子邮箱：" Style="{StaticResource FieldLabelStyle}" />
+                        <HyperlinkButton x:Name="MailLink" Click="OnOpenMail" Padding="2,0,2,0" />
+                        <Button Content="复制邮箱" FontSize="12" Click="OnCopyMail" />
+                    </StackPanel>
+                    <TextBlock x:Name="RepoLine" Style="{StaticResource HintTextStyle}" />
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource CardStyle}">
+                <StackPanel Spacing="6">
+                    <TextBlock Text="开源许可" Style="{StaticResource SectionHeaderStyle}" />
+                    <TextBlock Style="{StaticResource HintTextStyle}" TextWrapping="Wrap"
+                               Text="本程序使用以下开源组件：.NET 8 与 Windows App SDK / WinUI 3（MIT）、PDFsharp（MIT）、WiX Toolset v5（MS-RL）、System.Management（MIT）。" />
+                    <TextBlock Style="{StaticResource HintTextStyle}" TextWrapping="Wrap"
+                               Text="隐私说明：本程序完全在本机运行，不含任何统计或上报代码，不会向开发者或第三方发送任何信息。详细信息见安装程序中的《隐私政策与用户须知》。" />
+                </StackPanel>
+            </Border>
+
             <TextBlock Style="{StaticResource HintTextStyle}"
                        Text="原始版本 Copyright © chenhuxiang@qq.com 2019-2025" />
         </StackPanel>

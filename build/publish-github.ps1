@@ -266,8 +266,32 @@ $assetFiles = Get-ChildItem $artifactsDir -File |
 
 if ($assetFiles.Count -eq 0) { Write-Warning "no artifacts found in $artifactsDir" }
 
+# The release may already carry assets from an earlier run; uploading the same
+# name again fails with 422 already_exists. Skip identical ones and replace
+# changed ones so the script stays re-runnable.
+$existingAssets = @()
+try { $existingAssets = (Invoke-Api -Method GET -Uri "$repoUri/releases/$($release.id)/assets").value } catch { }
+
+$headers = @{
+    Authorization          = "Bearer $Token"
+    Accept                 = "application/vnd.github+json"
+    "X-GitHub-Api-Version" = "2022-11-28"
+    "User-Agent"           = "IPScaner-Packager"
+}
+
 foreach ($asset in $assetFiles) {
     $sizeMb = [math]::Round($asset.Length / 1MB, 1)
+
+    $already = $existingAssets | Where-Object { $_.name -eq $asset.Name } | Select-Object -First 1
+    if ($already) {
+        if ($already.size -eq $asset.Length) {
+            Write-Host ("skipping {0} ({1} MB) — identical asset already published" -f $asset.Name, $sizeMb)
+            continue
+        }
+        Write-Host ("replacing {0} (published size differs)" -f $asset.Name)
+        Invoke-Api -Method DELETE -Uri "$repoUri/releases/assets/$($already.id)" -Body $null | Out-Null
+    }
+
     Write-Host ("uploading {0} ({1} MB)..." -f $asset.Name, $sizeMb)
 
     # Assets upload to a different host, and the body must be raw bytes.

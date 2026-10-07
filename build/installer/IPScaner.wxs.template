@@ -13,11 +13,12 @@
   AppPaths detects that and redirects the config, memo, history, command and log
   files to %APPDATA%\IPScaner.
 -->
-<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs"
+     xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui">
 
   <Package
       Name="局域网IP扫描工具 (IPScaner)"
-      Manufacturer="IPScaner"
+      Manufacturer="IPScaner  ·  www.xiaorin.cn"
       Version="@VERSION@.0"
       UpgradeCode="{7E4B1C9A-2D63-4F58-9A17-8C5E3B0D6F42}"
       Scope="perMachine"
@@ -25,18 +26,35 @@
       Codepage="65001"
       InstallerVersion="500">
 
+    <!--
+      Shown on the licence page of the installer (WixUI_InstallDir). Generated from
+      privacy-zh.txt by make-privacy-rtf.ps1 — the \uN? escapes matter, see that script.
+      WixVariable has to live inside Package in WiX v5.
+    -->
+    <WixVariable Id="WixUILicenseRtf" Value="@LICENSE_RTF@" />
+
     <SummaryInformation
         Description="局域网IP扫描工具 WinUI 版 —— IP段扫描、端口扫描、修改本地IP、WiFi密码查看等"
-        Manufacturer="IPScaner" />
+        Manufacturer="IPScaner  ·  www.xiaorin.cn" />
 
     <MajorUpgrade
         DowngradeErrorMessage="已安装更新版本的局域网IP扫描工具，请先卸载后再安装。" />
 
     <MediaTemplate EmbedCab="yes" CompressionLevel="high" />
 
+    <!--
+      Welcome -> 隐私政策(licence) -> 选择安装位置(InstallDir) -> 确认 -> 安装。
+      WixUI_InstallDir is what provides both the agreement page and the folder
+      picker; InstallDirectory binds the picker to INSTALLFOLDER.
+    -->
+    <ui:WixUI Id="WixUI_InstallDir" InstallDirectory="INSTALLFOLDER" />
+
     <Icon Id="AppIcon" SourceFile="@ICON@" />
     <Property Id="ARPPRODUCTICON" Value="AppIcon" />
     <Property Id="ARPCOMMENTS" Value="局域网IP扫描工具（WinUI 3 重构版）" />
+    <Property Id="ARPHELPLINK" Value="https://www.xiaorin.cn" />
+    <Property Id="ARPURLINFOABOUT" Value="https://www.xiaorin.cn" />
+    <Property Id="ARPCONTACT" Value="wanghaotian@cxdx.deu.kg" />
 
     <!--
       The app needs no elevation to run: it only requests it for 修改本地IP and

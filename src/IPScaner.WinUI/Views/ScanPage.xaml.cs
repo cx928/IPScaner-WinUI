@@ -1,6 +1,7 @@
 using System.Collections.ObjectModel;
 using IPScaner.Core.Configuration;
 using IPScaner.Core.Export;
+using IPScaner.Core.Logging;
 using IPScaner.Core.Models;
 using IPScaner.Core.Net;
 using IPScaner.WinUI.Services;
@@ -14,7 +15,7 @@ using Microsoft.UI.Xaml.Media;
 namespace IPScaner.WinUI.Views;
 
 /// <summary>
-/// 主界面 — the /24 colour-block scanner.
+/// 主界面 — the /24 colour-block scanner, in four presentations.
 /// </summary>
 /// <remarks>
 /// Interaction model carried over from the original:
@@ -28,11 +29,47 @@ namespace IPScaner.WinUI.Views;
 /// </list>
 /// Unlike the original, cancelling a scan also discards in-flight results, so a
 /// late reply can no longer recolour a block against a changed IP segment.
+///
+/// <para>
+/// Layout is adaptive in two layers, because the two have different notions of width:
+/// </para>
+/// <list type="number">
+/// <item>the <c>VisualStateManager</c> / <c>AdaptiveTrigger</c> states in the XAML
+/// react to the <i>window</i> width (&lt;640 / 640-1000 / &gt;1000) and reflow the
+/// page frame, the subtitle and the legend;</item>
+/// <item><see cref="ApplyResponsiveLayout"/> reacts to the width actually measured
+/// for the results area, which is what the block columns, the tile size and the
+/// table column set have to follow — the navigation pane takes a fixed 228 px, so
+/// window-keyed breakpoints alone would overflow the toolbar on this display.</item>
+/// </list>
 /// </remarks>
 public sealed partial class ScanPage : Page
 {
     private const int FirstHost = 1;
     private const int LastHost = 254;
+
+    // ---- measured-width thresholds (logical px), see ApplyResponsiveLayout ----
+    // 展示方式 needs the SelectorBar's four labels plus the theme button.
+    private const double SelectorBarMinWidth = 430;
+    // The secondary actions are ~380 px of buttons and gaps.
+    private const double ActionsInlineWidth = 700;
+    private const double ActionsInlineTightWidth = 480;
+    private const double ActionsInlineHeight = 540;
+    // "IP段" is decoration once the box is the only thing on that row.
+    private const double SegmentLabelMinWidth = 400;
+    // Columns are dropped before they squeeze the flexible ones to nothing.
+    private const double MacColumnMinWidth = 500;
+    private const double SourceColumnMinWidth = 640;
+
+    /// <summary>
+    /// Width handed to the overlay scrollbar inside a results ScrollViewer. The
+    /// grids are laid out from the measured width, so this has to be subtracted
+    /// first — otherwise the layout rounds down to one fewer column.
+    /// </summary>
+    private const double ScrollbarAllowance = 16;
+
+    private const double CardSpacing = 10;
+    private const double TargetCardWidth = 240;
 
     private readonly Dictionary<string, IpBlock> _byIp = new(StringComparer.OrdinalIgnoreCase);
     private readonly DispatcherTimer _singleClickTimer = new();
@@ -40,13 +77,22 @@ public sealed partial class ScanPage : Page
     private AppConfigColors _colors;
     private CancellationTokenSource? _scanCts;
     private bool _running;
+    private bool _hasResults;
+    private bool _subscribed;
     private int _icmpFailures;
     private bool _icmpWarningShown;
     private IpBlock? _pendingClickBlock;
     private IpBlock? _menuTargetBlock;
     private MenuFlyout? _blockMenu;
 
-    /// <summary>The 254 colour blocks bound to the grid.</summary>
+    private ViewMode _viewMode = ViewMode.Blocks;
+    private bool _syncingView;
+    private bool? _colHostName;
+    private bool? _colMac;
+    private bool? _colMemo;
+    private bool? _colSource;
+
+    /// <summary>The 254 colour blocks; the single source for all four views.</summary>
     public ObservableCollection<IpBlock> Blocks { get; } = [];
 
     public ScanPage()
@@ -56,11 +102,13 @@ public sealed partial class ScanPage : Page
         _colors = AppConfigColors.From(AppServices.Current.Config);
         BuildBlocks();
         BuildBlockMenu();
+        BuildViewSelector();
+        BuildThemeMenu();
 
         _singleClickTimer.Tick += OnSingleClickElapsed;
 
         Loaded += OnPageLoaded;
-        Unloaded += (_, _) => StopScan();
+        Unloaded += OnPageUnloaded;
     }
 
     // =====================================================================
@@ -75,16 +123,52 @@ public sealed partial class ScanPage : Page
         for (var i = FirstHost; i <= LastHost; i++)
         {
             var block = new IpBlock(i);
+            block.RefreshColors(_colors);
             Blocks.Add(block);
             _byIp[block.Ip] = block;
         }
     }
 
+    /// <summary>
+    /// Builds the 展示方式 pickers from <see cref="ViewModeText.All"/>, so the labels
+    /// stay in step with the configuration enum instead of being retyped.
+    /// </summary>
+    private void BuildViewSelector()
+    {
+        foreach (var (value, text, _) in ViewModeText.All)
+        {
+            ViewSelector.Items.Add(new SelectorBarItem { Text = text, Tag = value });
+            ViewCombo.Items.Add(new ComboBoxItem { Content = text, Tag = value });
+        }
+    }
+
+    private void BuildThemeMenu()
+    {
+        var flyout = new MenuFlyout();
+        foreach (var (value, text) in ThemeModeText.All)
+        {
+            var item = new RadioMenuFlyoutItem { Text = text, GroupName = "theme", Tag = value };
+            item.Click += OnThemeItemClick;
+            flyout.Items.Add(item);
+        }
+
+        ThemeButton.Flyout = flyout;
+    }
+
     private void OnPageLoaded(object sender, RoutedEventArgs e)
     {
+        Subscribe();
         ApplyConfigToUi();
-        RefreshLegend();
+        ApplyTheme(AppServices.Current.Config.ThemeMode, persist: false);
+
+        // Restore the saved presentation before the first layout pass, so the page is
+        // never shown in the wrong one.
+        ApplyViewMode(AppServices.Current.Config.ViewMode, persist: false);
+
         PopulateAdapters();
+        RefreshLegend();
+        UpdateStatusUi();
+        ApplyResponsiveLayout(ResultsHost.ActualWidth, ResultsHost.ActualHeight);
 
         if (string.IsNullOrWhiteSpace(SegmentBox.Text))
         {
@@ -93,15 +177,53 @@ public sealed partial class ScanPage : Page
         }
     }
 
+    private void OnPageUnloaded(object sender, RoutedEventArgs e)
+    {
+        StopScan();
+        Unsubscribe();
+    }
+
+    private void Subscribe()
+    {
+        if (_subscribed) return;
+        _subscribed = true;
+        AppServices.Current.ConfigChanged += OnConfigChanged;
+        ThemeService.Changed += OnThemeChanged;
+    }
+
+    private void Unsubscribe()
+    {
+        if (!_subscribed) return;
+        _subscribed = false;
+        AppServices.Current.ConfigChanged -= OnConfigChanged;
+        ThemeService.Changed -= OnThemeChanged;
+    }
+
+    /// <summary>
+    /// Re-reads everything the configuration controls. Called on load and on any
+    /// <see cref="AppServices.ConfigChanged"/>, so the 选项配置 page is reflected
+    /// here without a restart.
+    /// </summary>
     private void ApplyConfigToUi()
     {
         var config = AppServices.Current.Config;
         _colors = AppConfigColors.From(config);
+
         HostNameToggle.IsChecked = config.QueryHostNameEnabled;
         LegendOnline.Background = UiKit.BrushFromArgb(config.NetworkOKColorArgb);
         LegendOffline.Background = UiKit.BrushFromArgb(config.NetworkNGColorArgb);
         LegendPending.Background = UiKit.BrushFromArgb(config.DefaultColorArgb);
         foreach (var block in Blocks) block.RefreshColors(_colors);
+
+        ApplyResponsiveLayout(ResultsHost.ActualWidth, ResultsHost.ActualHeight);
+    }
+
+    private void OnConfigChanged(object? sender, AppConfig config)
+    {
+        ApplyConfigToUi();
+        if (config.ViewMode != _viewMode) ApplyViewMode(config.ViewMode, persist: false);
+        if (config.ThemeMode != ThemeService.Current) ApplyTheme(config.ThemeMode, persist: false);
+        RefreshLegend();
     }
 
     private void PopulateAdapters()
@@ -130,11 +252,14 @@ public sealed partial class ScanPage : Page
 
     private void OnAdapterSelected(object sender, SelectionChangedEventArgs e)
     {
-        if (AdapterCombo.SelectedItem is ComboBoxItem { Tag: string segment })
-        {
-            SegmentBox.Text = segment;
-            Resegment();
-        }
+        if (AdapterCombo.SelectedItem is not ComboBoxItem { Tag: string segment }) return;
+
+        // Re-selecting the segment already being scanned must not wipe the results —
+        // PopulateAdapters() re-creates the items every time the page is re-loaded.
+        if (string.Equals(IpMath.GetSegment(SegmentBox.Text), segment, StringComparison.OrdinalIgnoreCase)) return;
+
+        SegmentBox.Text = segment;
+        Resegment();
     }
 
     /// <summary>Re-points every block at the current segment and clears results.</summary>
@@ -152,6 +277,8 @@ public sealed partial class ScanPage : Page
         {
             block.Segment = segment;
             block.Status = HostStatus.Pending;
+            block.Source = LivenessSource.None;
+            block.TimeText = "Timeout";
             block.HostName = string.Empty;
             block.Mac = string.Empty;
             block.Memo = AppServices.Current.Memo.Lookup(null, block.Ip);
@@ -161,7 +288,239 @@ public sealed partial class ScanPage : Page
 
         _byIp.Clear();
         foreach (var block in Blocks) _byIp[block.Ip] = block;
+
+        _hasResults = false;
         RefreshLegend();
+    }
+
+    // =====================================================================
+    // adaptive layout
+    // =====================================================================
+
+    private void OnResultsHostSizeChanged(object sender, SizeChangedEventArgs e) =>
+        ApplyResponsiveLayout(e.NewSize.Width, e.NewSize.Height);
+
+    /// <summary>
+    /// Sizes the results surfaces from the width that is really available.
+    /// </summary>
+    /// <remarks>
+    /// The block grid, the card tiles and the table columns all derive from the
+    /// measured width rather than from a window breakpoint, because the navigation
+    /// pane takes a fixed 228 px: at the default window size the page only receives
+    /// ~560 logical px even though the window is ~787 logical px wide.
+    /// <para>
+    /// Column counts are computed here and handed to <c>UniformGridLayout</c> as a
+    /// minimum item size; the layout then stretches the cells to fill the row, so
+    /// the grid always ends flush with the right edge and never overflows.
+    /// </para>
+    /// </remarks>
+    private void ApplyResponsiveLayout(double width, double height)
+    {
+        if (width <= 1) return;
+
+        var config = AppServices.Current.Config;
+
+        // ---- toolbar: selector style, overflow menu, decoration ------------
+        var useSelectorBar = width >= SelectorBarMinWidth;
+        ViewSelector.Visibility = Vis(useSelectorBar);
+        ViewCombo.Visibility = Vis(!useSelectorBar);
+
+        var inlineActions = width >= ActionsInlineWidth
+                            || (width >= ActionsInlineTightWidth && height >= ActionsInlineHeight);
+        ActionsPanel.Visibility = Vis(inlineActions);
+        MoreButton.Visibility = Vis(!inlineActions);
+        SegmentLabel.Visibility = Vis(width >= SegmentLabelMinWidth);
+
+        // What a scrolling surface can really use: the overlay scrollbar sits on top
+        // of the last few pixels, so every item-size calculation stays clear of it.
+        var gridWidth = Math.Max(120, width - ScrollbarAllowance);
+
+        // ---- 色块网格: columns first, block size derived from them ----------
+        var blockWidth = Math.Clamp(gridWidth / 11.0, 38, 64);
+        if (config.BlockSize > 0)
+        {
+            // A non-zero BlockSize is a percentage scale on the automatic size. Both
+            // the scale and the result are clamped because the .cfg is hand-editable.
+            blockWidth = Math.Clamp(blockWidth * Math.Clamp(config.BlockSize, 50, 200) / 100.0, 26, 96);
+        }
+
+        var blockHeight = Math.Clamp(Math.Round(blockWidth * 0.62), 22, 46);
+        if (Math.Abs(BlockLayout.MinItemWidth - blockWidth) > 0.4
+            || Math.Abs(BlockLayout.MinItemHeight - blockHeight) > 0.4)
+        {
+            BlockLayout.MinItemWidth = Math.Max(20, blockWidth - 2);
+            BlockLayout.MinItemHeight = blockHeight;
+
+            // The label inherits this FontSize (scroll viewer → button → text), so it
+            // scales with the block. BtnFontSize stays the user's floor.
+            var smallest = Math.Clamp(config.BtnFontSize, 7, 12);
+            BlockScroll.FontSize = Math.Clamp(Math.Round(blockHeight * 0.42), smallest, 20);
+        }
+
+        // ---- 卡片视图: 1..4 tiles per row ---------------------------------
+        var cardColumns = Math.Clamp((int)(gridWidth / TargetCardWidth), 1, 4);
+        var cardWidth = (gridWidth - ((cardColumns - 1) * CardSpacing)) / cardColumns;
+        if (Math.Abs(CardLayout.MinItemWidth - cardWidth) > 0.4)
+        {
+            CardLayout.MinItemWidth = Math.Max(180, cardWidth - 2);
+            CardLayout.MinItemHeight = 108;
+        }
+
+        // ---- 详细列表 / 紧凑表格: drop the least useful columns first ------
+        ApplyColumnVisibility(
+            hostName: config.ShowHostNameColumn,
+            mac: config.ShowMacColumn && width >= MacColumnMinWidth,
+            memo: config.ShowMemoColumn,
+            source: config.ShowSourceColumn && width >= SourceColumnMinWidth);
+    }
+
+    /// <summary>
+    /// Applies one column set to the sticky header and to every host at once.
+    /// </summary>
+    /// <remarks>
+    /// Keeping the decision in one place is what stops the header and the rows from
+    /// drifting apart; a collapsed cell gives its width back to the row, because
+    /// every fixed column is an <c>Auto</c> column wrapped around a sized cell.
+    /// </remarks>
+    private void ApplyColumnVisibility(bool hostName, bool mac, bool memo, bool source)
+    {
+        if (_colHostName == hostName && _colMac == mac && _colMemo == memo && _colSource == source) return;
+
+        _colHostName = hostName;
+        _colMac = mac;
+        _colMemo = memo;
+        _colSource = source;
+
+        HeaderHost.Visibility = Vis(hostName);
+        HeaderMac.Visibility = Vis(mac);
+        HeaderMemo.Visibility = Vis(memo);
+        HeaderSource.Visibility = Vis(source);
+
+        foreach (var block in Blocks) block.ApplyColumns(hostName, mac, memo, source);
+    }
+
+    // =====================================================================
+    // view mode  (色块网格 / 详细列表 / 紧凑表格 / 卡片视图)
+    // =====================================================================
+
+    private void OnViewSelectorChanged(SelectorBar sender, SelectorBarSelectionChangedEventArgs args)
+    {
+        if (_syncingView) return;
+        if (sender.SelectedItem?.Tag is ViewMode mode && mode != _viewMode) ApplyViewMode(mode, persist: true);
+    }
+
+    private void OnViewComboChanged(object sender, SelectionChangedEventArgs e)
+    {
+        if (_syncingView) return;
+        if (ViewCombo.SelectedItem is ComboBoxItem { Tag: ViewMode mode } && mode != _viewMode)
+        {
+            ApplyViewMode(mode, persist: true);
+        }
+    }
+
+    private void ApplyViewMode(ViewMode mode, bool persist)
+    {
+        _viewMode = mode;
+
+        BlockScroll.Visibility = Vis(mode == ViewMode.Blocks);
+        CardScroll.Visibility = Vis(mode == ViewMode.Cards);
+        RowsHost.Visibility = Vis(mode is ViewMode.List or ViewMode.Table);
+
+        if (mode is ViewMode.List or ViewMode.Table)
+        {
+            var dense = mode == ViewMode.Table;
+            RowList.ItemContainerStyle = (Style)Resources[dense ? "TableRowContainerStyle" : "ListRowContainerStyle"];
+            RowList.FontSize = dense ? 12 : 13.5;
+
+            // Re-realise the containers so the new density shows immediately.
+            RowList.ItemsSource = null;
+            RowList.ItemsSource = Blocks;
+        }
+
+        SyncViewSelector(mode);
+        UpdateEmptyState();
+        if (persist) PersistViewMode(mode);
+    }
+
+    private void SyncViewSelector(ViewMode mode)
+    {
+        _syncingView = true;
+        try
+        {
+            foreach (var item in ViewSelector.Items.OfType<SelectorBarItem>())
+            {
+                if (item.Tag is ViewMode value && value == mode) { ViewSelector.SelectedItem = item; break; }
+            }
+
+            foreach (var item in ViewCombo.Items.OfType<ComboBoxItem>())
+            {
+                if (item.Tag is ViewMode value && value == mode) { ViewCombo.SelectedItem = item; break; }
+            }
+        }
+        finally
+        {
+            _syncingView = false;
+        }
+    }
+
+    private void PersistViewMode(ViewMode mode)
+    {
+        var config = AppServices.Current.Config;
+        if (config.ViewMode == mode) return;
+
+        var clone = config.Clone();
+        clone.ViewMode = mode;
+        AppServices.Current.ApplyConfig(clone);
+    }
+
+    // =====================================================================
+    // theme  (跟随系统 / 浅色 / 深色)
+    // =====================================================================
+
+    private void OnThemeItemClick(object sender, RoutedEventArgs e)
+    {
+        if (sender is RadioMenuFlyoutItem { Tag: ThemeMode mode }) ApplyTheme(mode, persist: true);
+    }
+
+    private void ApplyTheme(ThemeMode mode, bool persist)
+    {
+        // The page stamps its own root; ThemeService also stamps the shell root, so
+        // the navigation pane, title bar and status strip follow along.
+        var theme = ThemeService.ElementFor(mode);
+        RequestedTheme = theme;
+        PageRoot.RequestedTheme = theme;
+        ThemeService.Apply(mode);
+        UpdateThemeMenu(mode);
+
+        if (!persist) return;
+
+        var config = AppServices.Current.Config;
+        if (config.ThemeMode == mode) return;
+
+        var clone = config.Clone();
+        clone.ThemeMode = mode;
+        AppServices.Current.ApplyConfig(clone);
+    }
+
+    private void OnThemeChanged(object? sender, ThemeMode mode)
+    {
+        var theme = ThemeService.ElementFor(mode);
+        RequestedTheme = theme;
+        PageRoot.RequestedTheme = theme;
+        UpdateThemeMenu(mode);
+    }
+
+    private void UpdateThemeMenu(ThemeMode mode)
+    {
+        if (ThemeButton.Flyout is MenuFlyout flyout)
+        {
+            foreach (var item in flyout.Items.OfType<RadioMenuFlyoutItem>())
+            {
+                item.IsChecked = item.Tag is ThemeMode value && value == mode;
+            }
+        }
+
+        ToolTipService.SetToolTip(ThemeButton, "界面主题：" + ThemeModeText.Describe(mode));
     }
 
     // =====================================================================
@@ -186,15 +545,26 @@ public sealed partial class ScanPage : Page
         var targets = IpMath.GetSegmentHosts(segment, FirstHost, LastHost);
 
         _running = true;
+        _hasResults = true;
         StartButton.IsEnabled = false;
         StopButton.IsEnabled = true;
         SegmentBox.IsEnabled = false;
+        BusyRing.IsActive = true;
+        BusyRing.Visibility = Visibility.Visible;
+        UpdateEmptyState();
         _icmpFailures = 0;
+
+        ScanProgress.Maximum = Math.Max(1, targets.Count);
+        ScanProgress.Value = 0;
+
         var cts = new CancellationTokenSource();
         _scanCts = cts;
 
         var progress = new Progress<ScanProgress>(p =>
-            ProgressText.Text = $"正在扫描 {p.CurrentIP}  ({p.Completed}/{p.Total})");
+        {
+            ProgressText.Text = $"正在扫描 {p.CurrentIP}  ({p.Completed}/{p.Total})";
+            ScanProgress.Value = p.Completed;
+        });
 
         try
         {
@@ -226,7 +596,7 @@ public sealed partial class ScanPage : Page
         }
         catch (Exception ex)
         {
-            Core.Logging.AppLog.Instance.Log(nameof(ScanPage), "扫描失败: " + ex.Message);
+            AppLog.Instance.Log(nameof(ScanPage), "扫描失败: " + ex.Message);
             ProgressText.Text = "扫描出错：" + ex.Message;
         }
         finally
@@ -238,7 +608,10 @@ public sealed partial class ScanPage : Page
                 StartButton.IsEnabled = true;
                 StopButton.IsEnabled = false;
                 SegmentBox.IsEnabled = true;
+                BusyRing.IsActive = false;
+                BusyRing.Visibility = Visibility.Collapsed;
             }
+
             cts.Dispose();
         }
     }
@@ -255,6 +628,7 @@ public sealed partial class ScanPage : Page
 
         result.Memo = AppServices.Current.Memo.Lookup(result.Mac, result.IP);
         block.Apply(result, _colors);
+        _hasResults = true;
         RefreshLegend();
     }
 
@@ -305,15 +679,6 @@ public sealed partial class ScanPage : Page
         AppServices.Current.ApplyConfig(config);
     }
 
-    private void OnListViewToggled(object sender, RoutedEventArgs e)
-    {
-        var listMode = ListViewToggle.IsChecked == true;
-        ResultList.Visibility = listMode ? Visibility.Visible : Visibility.Collapsed;
-        BlockScroll.Visibility = listMode ? Visibility.Collapsed : Visibility.Visible;
-
-        if (listMode) ResultList.ItemsSource = Blocks;
-    }
-
     private void OnClearCachesClick(object sender, RoutedEventArgs e)
     {
         AppServices.Current.ClearCaches();
@@ -322,6 +687,20 @@ public sealed partial class ScanPage : Page
 
     private void OnOpenMemoClick(object sender, RoutedEventArgs e) =>
         App.MainWindow?.NavigateTo("memo");
+
+    private void UpdateStatusUi()
+    {
+        StartButton.IsEnabled = !_running;
+        StopButton.IsEnabled = _running;
+        SegmentBox.IsEnabled = !_running;
+        BusyRing.IsActive = _running;
+        BusyRing.Visibility = Vis(_running);
+        UpdateEmptyState();
+    }
+
+    /// <summary>Shows the 尚未扫描 card only while nothing has been probed at all.</summary>
+    private void UpdateEmptyState() =>
+        EmptyState.Visibility = Vis(!_running && !_hasResults);
 
     // =====================================================================
     // legend
@@ -339,6 +718,8 @@ public sealed partial class ScanPage : Page
         SummaryText.Text = pending == Blocks.Count
             ? "尚未扫描"
             : $"数量合计：正常 {online}，不通 {offline}";
+
+        UpdateEmptyState();
     }
 
     private async void OnCopyOnlineClick(object sender, RoutedEventArgs e) =>
@@ -368,11 +749,21 @@ public sealed partial class ScanPage : Page
     }
 
     // =====================================================================
-    // block interaction
+    // block / row / card interaction — identical in all four views
     // =====================================================================
 
-    private static IpBlock? ResolveBlock(object sender) =>
-        (sender as FrameworkElement)?.DataContext as IpBlock;
+    /// <summary>
+    /// Finds the host a tapped element belongs to. Blocks, table rows and cards all
+    /// tag themselves with their IP address, which survives the segment changes that
+    /// would make a cached DataContext stale.
+    /// </summary>
+    private IpBlock? ResolveBlock(object sender)
+    {
+        if (sender is not FrameworkElement element) return null;
+        if (element.DataContext is IpBlock fromContext) return fromContext;
+        if (element.Tag is string ip && _byIp.TryGetValue(ip, out var fromTag)) return fromTag;
+        return null;
+    }
 
     private void OnBlockTapped(object sender, TappedRoutedEventArgs e)
     {
@@ -411,11 +802,12 @@ public sealed partial class ScanPage : Page
 
             result.Memo = AppServices.Current.Memo.Lookup(result.Mac, result.IP);
             block.Apply(result, _colors);
+            _hasResults = true;
             RefreshLegend();
         }
         catch (Exception ex)
         {
-            Core.Logging.AppLog.Instance.Log(nameof(ScanPage), "单点探测失败: " + ex.Message);
+            AppLog.Instance.Log(nameof(ScanPage), "单点探测失败: " + ex.Message);
         }
     }
 
@@ -429,11 +821,6 @@ public sealed partial class ScanPage : Page
 
         var config = AppServices.Current.Config;
         AppServices.Current.Shell.RunHostAction(config.DoubleEvent, block.Ip, config.PingCount);
-    }
-
-    private void OnListItemClick(object sender, ItemClickEventArgs e)
-    {
-        if (e.ClickedItem is IpBlock block) _ = ProbeSingleBlockAsync(block);
     }
 
     // =====================================================================
@@ -471,7 +858,7 @@ public sealed partial class ScanPage : Page
     private void OnBlockRightTapped(object sender, RightTappedRoutedEventArgs e)
     {
         var block = ResolveBlock(sender);
-        if (block is null || _blockMenu is null) return;
+        if (block is null || _blockMenu is null || sender is not FrameworkElement target) return;
 
         _menuTargetBlock = block;
 
@@ -487,7 +874,7 @@ public sealed partial class ScanPage : Page
             };
         }
 
-        _blockMenu.ShowAt((FrameworkElement)sender, new FlyoutShowOptions { Position = e.GetPosition((UIElement)sender) });
+        _blockMenu.ShowAt(target, new FlyoutShowOptions { Position = e.GetPosition(target) });
         e.Handled = true;
     }
 
@@ -571,33 +958,59 @@ public sealed partial class ScanPage : Page
     // export
     // =====================================================================
 
+    /// <summary>
+    /// 导出结果 — asks for a format and destination with <see cref="ExportDialog"/>,
+    /// then renders through <see cref="ReportWriter"/>.
+    /// </summary>
+    /// <remarks>
+    /// Five formats are offered (TXT / CSV / XLSX / HTML / PDF) instead of the
+    /// original's fixed CSV, and the columns follow the same visibility settings as
+    /// the on-screen views, so what you export is what you were looking at.
+    /// </remarks>
     private async void OnExportClick(object sender, RoutedEventArgs e)
     {
         try
         {
-            var folder = ExportFolder();
-            Directory.CreateDirectory(folder);
+            var config = AppServices.Current.Config;
 
-            var headers = new[] { "IP", "状态", "主机名", "MAC", "备注" };
-            var rows = Blocks
-                .Select(b => new[] { b.Ip, HostStatusText.Short(b.Status), b.HostName, b.Mac, b.Memo })
-                .ToList();
+            var headers = new List<string> { "IP", "状态", "时间", "来源" };
+            if (config.ShowHostNameColumn) headers.Add("主机名");
+            if (config.ShowMacColumn) headers.Add("MAC");
+            if (config.ShowMemoColumn) headers.Add("备注");
 
-            var csvName = TableExporter.BuildFileName("IP扫描结果", ".csv");
-            var csvPath = Path.Combine(folder, csvName);
-            TableExporter.WriteCsv(csvPath, headers, rows);
+            var rows = new List<IReadOnlyList<string>>(Blocks.Count);
+            foreach (var block in Blocks)
+            {
+                var row = new List<string> { block.Ip, block.StatusText, block.TimeText, block.SourceText };
+                if (config.ShowHostNameColumn) row.Add(block.HostName);
+                if (config.ShowMacColumn) row.Add(block.Mac);
+                if (config.ShowMemoColumn) row.Add(block.Memo);
+                rows.Add(row);
+            }
 
-            var xlsxPath = Path.Combine(folder, TableExporter.BuildFileName("IP扫描结果", ".xlsx"));
-            TableExporter.WriteXlsx(xlsxPath, "IP扫描结果", headers, rows);
+            var choice = await ExportDialog.ShowAsync(XamlRoot, "IP扫描结果", rows.Count);
+            if (choice is null) return; // cancelled
+
+            var (format, path) = choice.Value;
+            var scanned = Blocks.Count(b => b.Status != HostStatus.Pending);
+
+            ReportWriter.Write(new ReportRequest
+            {
+                Title = "IP扫描结果",
+                Subtitle = $"网段 {IpMath.GetSegment(SegmentBox.Text)}  ·  共 {rows.Count} 条记录，已扫描 {scanned} 条",
+                Headers = headers,
+                Rows = rows,
+                Format = format,
+            }, path);
 
             var open = await UiKit.ConfirmAsync(XamlRoot, "导出成功",
-                $"已导出 {rows.Count} 条记录到：\n{folder}\n\n是否打开所在文件夹？",
+                $"已导出 {rows.Count} 条记录到：\n{path}\n\n是否打开所在文件夹？",
                 "打开文件夹", "关闭");
-            if (open) AppServices.Current.Shell.OpenFolder(folder);
+            if (open) AppServices.Current.Shell.OpenFolder(Path.GetDirectoryName(path) ?? path);
         }
         catch (Exception ex)
         {
-            Core.Logging.AppLog.Instance.Log(nameof(ScanPage), "导出失败: " + ex.Message);
+            AppLog.Instance.Log(nameof(ScanPage), "导出失败: " + ex.Message);
             await UiKit.InfoAsync(XamlRoot, "导出失败", ex.Message);
         }
     }
@@ -632,4 +1045,6 @@ public sealed partial class ScanPage : Page
 
         return Path.Combine(Path.GetTempPath(), "IPScaner", "导出");
     }
+
+    private static Visibility Vis(bool value) => value ? Visibility.Visible : Visibility.Collapsed;
 }

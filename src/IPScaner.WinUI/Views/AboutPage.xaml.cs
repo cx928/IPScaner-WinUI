@@ -1,15 +1,25 @@
 using System.Reflection;
 using IPScaner.Core.Configuration;
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 
 namespace IPScaner.WinUI.Views;
 
 /// <summary>
-/// 关于 — version, runtime facts and the release history carried over from the
-/// original readme.
+/// 关于 — version, runtime facts, contact details and the release history carried
+/// over from the original readme.
 /// </summary>
 public sealed partial class AboutPage : Page
 {
+    /// <summary>Project website, also stamped into the MSI's support link.</summary>
+    public const string Website = "https://www.xiaorin.cn";
+
+    /// <summary>Contact address shown here and in the installer's privacy policy.</summary>
+    public const string ContactEmail = "wanghaotian@cxdx.deu.kg";
+
+    /// <summary>Source repository.</summary>
+    public const string Repository = "https://github.com/cx928/IPScaner-WinUI";
+
     /// <summary>Condensed release notes, transcribed from the original readme.</summary>
     private const string Changelog = """
         版本1.28：优化检测IP在线的机制，修复部分电脑禁PING导致显示不在线的问题；
@@ -49,5 +59,27 @@ public sealed partial class AboutPage : Page
         ElevationLine.Text = services.IsElevated
             ? "当前进程：管理员权限（修改本地IP、清空ARP缓存均可用）"
             : "当前进程：普通权限（修改本地IP、清空ARP缓存需要以管理员身份重启）";
+
+        SiteLink.Content = Website;
+        MailLink.Content = ContactEmail;
+        RepoLine.Text = $"开源仓库：{Repository}";
+    }
+
+    private void OnOpenSite(object sender, RoutedEventArgs e) =>
+        Services.AppServices.Current.Shell.OpenUrl(Website);
+
+    private void OnOpenMail(object sender, RoutedEventArgs e) =>
+        Services.AppServices.Current.Shell.OpenUrl("mailto:" + ContactEmail);
+
+    private async void OnCopySite(object sender, RoutedEventArgs e)
+    {
+        Services.UiKit.CopyToClipboard(Website);
+        await Services.UiKit.InfoAsync(XamlRoot, "关于", $"已复制网址：{Website}");
+    }
+
+    private async void OnCopyMail(object sender, RoutedEventArgs e)
+    {
+        Services.UiKit.CopyToClipboard(ContactEmail);
+        await Services.UiKit.InfoAsync(XamlRoot, "关于", $"已复制邮箱：{ContactEmail}");
     }
 }

@@ -119,7 +119,6 @@ pwsh -File build\publish-github.ps1 -Repo IPScaner-WinUI -Visibility public
 ## 4. 功能对照
 
 原版 readme 列出的 11 项功能全部保留：
-
 | # | 原功能 | 新实现 | 页面 |
 |---|---|---|---|
 | 1 | IP段扫描（254 小色块） | `ScanPage` + `IpBlock`，色块背景即状态 | IP段扫描 |
@@ -136,6 +135,28 @@ pwsh -File build\publish-github.ps1 -Repo IPScaner-WinUI -Visibility public
 
 另外补回了原版的**系统托盘图标**（`TrayIcon`，`Shell_NotifyIcon` P/Invoke）与**最小化到托盘**
 （`HideMainEnabled`）行为；WinUI 3 本身不提供 `NotifyIcon`，因此以消息窗口 + `Shell_NotifyIcon` 实现。
+
+### 4.1 本次扩展新增的功能
+
+| 功能 | 实现 | 位置 |
+|---|---|---|
+| **四种结果视图**：色块网格 / 详细列表 / 紧凑表格 / 卡片视图 | `ViewMode` 配置 + `ScanPage` 多视图，选择持久化 | IP段扫描工具栏 |
+| **主题切换**：跟随系统 / 浅色 / 深色 | `Services/ThemeService.cs`，实时生效、无需重启 | 工具栏「主题」 |
+| **自适应布局** | 窗口按工作区 90% 自适应并居中（DPI 感知）；`VisualStateManager` 断点重排；色块随宽度重排 | 全局 |
+| **一键管理 hosts 记录** | `Net/HostsFileService.cs` —— 添加/批量添加/删除/改 IP/手动备份/刷新 DNS 缓存 | Hosts 管理 |
+| **一键清理失效 hosts 记录** | 先逐行预览将要删除的内容并区分「安全可删 / 不可批量删」，确认后才执行 | Hosts 管理 |
+| **一键更换 DNS** | `Net/DnsConfigurator.cs` —— 阿里/腾讯/114/百度/Cloudflare/Google 预置 + 自定义 + 恢复自动获取 | 网络工具 |
+| **SSH / RDP 快捷连接** | `Net/RemoteLauncher.cs` —— 主机名与用户名严格校验，无法注入命令行参数 | 网络工具 |
+| **五种导出格式** | `Export/ReportWriter.cs` —— TXT / CSV / XLSX / **HTML** / **PDF**，列随界面显隐设置 | 任意结果页 |
+| **安装程序：隐私协议 + 自定义安装路径** | WiX `WixUI_InstallDir` + `privacy-zh.rtf`（776 处 `\uN?` 转义，中文正常显示） | MSI / setup.exe |
+
+导出格式细节：**TXT** 按**显示宽度**对齐（中文按 2 列计），不是按字符数，否则表格会参差；
+**HTML** 是离线单文件（内联样式、无外部资源，可直接发给别人）；
+**PDF** 内嵌 SimHei 子集并带 `/ToUnicode` 映射（中文可正常显示与复制检索），超长自动分页并在续页重复表头。
+
+> 注：PDF 用 **PDFsharp（MIT）** 而非 QuestPDF —— 后者的社区许可带营收门槛。
+> 另有一个实测限制：PDFsharp 6.2.4 对 TrueType 集合（`msyh.ttc`）会抛 `NullReferenceException`，
+> 因此 PDF 导出实际使用 `simhei.ttf`。
 
 ---
 

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="IPScaner.WinUI.Views.HostsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    NavigationCacheMode="Required">
+
+    <!--
+        Hosts 管理 — 一键管理 hosts 记录。
+
+        布局要点：主窗口在首次显示时按显示器工作区的 90% 自适应（最大 1600x1000），
+        所以这一页按「工具栏 / 权限提示 / 记录表 / 状态行」四行铺满，不做任何像素
+        级魔数假设：表格行用 GridLength 星号分配，窄窗口下只会压缩备注列。
+    -->
+    <Grid Padding="16,12,16,10" RowSpacing="8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" MinHeight="220" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- ==================== 工具栏 ==================== -->
+        <Border Grid.Row="0" Style="{StaticResource CardStyle}">
+            <StackPanel Spacing="8">
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <TextBlock Text="hosts 记录管理" Style="{StaticResource SectionHeaderStyle}"
+                               Margin="0" VerticalAlignment="Center" />
+                    <Button x:Name="ReloadButton" Content="刷新" MinWidth="72" Height="32"
+                            Click="OnReloadClick" AutomationProperties.Name="刷新"
+                            ToolTipService.ToolTip="重新读取 hosts 文件（不修改任何内容）" />
+                    <CheckBox x:Name="BatchToggle" Content="批量添加" MinWidth="0" Height="32"
+                              Click="OnBatchToggled" AutomationProperties.Name="批量添加"
+                              ToolTipService.ToolTip="按行粘贴「IP 主机名」，一次写入多条记录" />
+                    <ProgressRing x:Name="BusyRing" Width="20" Height="20" IsActive="False" />
+                </StackPanel>
+
+                <!-- 单条添加 -->
+                <Grid x:Name="SingleAddPanel" ColumnSpacing="6">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="180" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="220" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Column="0" Text="IP:" Style="{StaticResource FieldLabelStyle}" />
+                    <TextBox x:Name="IpBox" Grid.Column="1" Height="32"
+                             AutomationProperties.Name="IP地址"
+                             ToolTipService.ToolTip="要映射的 IPv4 地址，例如 192.168.1.10" />
+
+                    <TextBlock Grid.Column="2" Text="主机名:" Style="{StaticResource FieldLabelStyle}" />
+                    <TextBox x:Name="HostBox" Grid.Column="3" Height="32"
+                             AutomationProperties.Name="主机名"
+                             ToolTipService.ToolTip="一个或多个主机名，多个用空格分隔" />
+
+                    <TextBlock Grid.Column="4" Text="备注:" Style="{StaticResource FieldLabelStyle}" />
+                    <TextBox x:Name="CommentBox" Grid.Column="5" Height="32"
+                             AutomationProperties.Name="备注"
+                             ToolTipService.ToolTip="可选，写入该行末尾的 # 注释" />
+
+                    <Button x:Name="AddButton" Grid.Column="6" Content="添加" MinWidth="84" Height="32"
+                            Style="{StaticResource AccentButtonStyle}" Click="OnAddClick"
+                            AutomationProperties.Name="添加" />
+                </Grid>
+
+                <!-- 批量添加 -->
+                <Grid x:Name="BatchAddPanel" ColumnSpacing="6" Visibility="Collapsed">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="220" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBox x:Name="BatchBox" Grid.Column="0" Height="86" AcceptsReturn="True"
+                             TextWrapping="NoWrap" ScrollViewer.VerticalScrollBarVisibility="Auto"
+                             AutomationProperties.Name="批量记录"
+                             PlaceholderText="每行一条：IP 主机名（也接受逗号或制表符分隔，# 开头的行会被忽略）"
+                             ToolTipService.ToolTip="直接粘贴多行文本，例如：&#x0a;192.168.1.10 nas&#x0a;192.168.1.11 printer 打印机" />
+
+                    <TextBox x:Name="BatchCommentBox" Grid.Column="1" Height="86" AcceptsReturn="True"
+                             TextWrapping="Wrap" AutomationProperties.Name="批量备注"
+                             PlaceholderText="批量备注（可选）"
+                             ToolTipService.ToolTip="写给这一批记录的注释，留空则不写" />
+
+                    <StackPanel Grid.Column="2" Spacing="6" VerticalAlignment="Top">
+                        <Button x:Name="BatchAddButton" Content="批量添加" MinWidth="96" Height="32"
+                                Style="{StaticResource AccentButtonStyle}" Click="OnBatchAddClick"
+                                AutomationProperties.Name="批量添加" />
+                        <Button x:Name="ParseButton" Content="检查格式" MinWidth="96" Height="32"
+                                Click="OnParseBatchClick" AutomationProperties.Name="检查格式"
+                                ToolTipService.ToolTip="先看看能识别出多少条，不写入文件" />
+                    </StackPanel>
+                </Grid>
+
+                <!-- 记录操作 -->
+                <StackPanel Orientation="Horizontal" Spacing="6">
+                    <Button x:Name="RemoveButton" Content="删除选中" MinWidth="90" Height="32"
+                            Click="OnRemoveClick" AutomationProperties.Name="删除选中"
+                            ToolTipService.ToolTip="删除选中行对应的主机名（hosts 文件按主机名定位记录）" />
+                    <Button x:Name="UpdateButton" Content="修改 IP" MinWidth="90" Height="32"
+                            Click="OnUpdateClick" AutomationProperties.Name="修改 IP"
+                            ToolTipService.ToolTip="把选中行的 IP 改成新地址" />
+                    <Button x:Name="BackupButton" Content="手动备份" MinWidth="90" Height="32"
+                            Click="OnBackupClick" AutomationProperties.Name="手动备份"
+                            ToolTipService.ToolTip="复制一份 hosts 文件到同目录，文件名带时间戳" />
+                    <Button x:Name="CleanButton" Content="一键清理失效记录" MinWidth="150" Height="32"
+                            Click="OnCleanClick" AutomationProperties.Name="一键清理失效记录"
+                            ToolTipService.ToolTip="粘贴一批失效 IP，先预览将被删除的行，确认后才写入" />
+                    <Button x:Name="FlushButton" Content="刷新 DNS 缓存" MinWidth="120" Height="32"
+                            Click="OnFlushClick" AutomationProperties.Name="刷新 DNS 缓存"
+                            ToolTipService.ToolTip="执行 ipconfig /flushdns，让 hosts 改动立即生效" />
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        <!-- ==================== 权限提示 + 操作结果 ==================== -->
+        <StackPanel Grid.Row="1" Spacing="6">
+            <InfoBar x:Name="ElevationBar" IsOpen="False" Severity="Warning"
+                     Title="需要管理员权限才能修改 hosts 文件"
+                     Message="当前进程未提权，可以正常查看记录，但添加、删除、修改、备份都会被系统拒绝。">
+                <InfoBar.ActionButton>
+                    <Button Content="以管理员身份重启" Click="OnRestartElevatedClick"
+                            AutomationProperties.Name="以管理员身份重启" />
+                </InfoBar.ActionButton>
+            </InfoBar>
+
+            <!-- 操作结果（成功 / 失败都会显示，绝不静默） -->
+            <InfoBar x:Name="EntryBar" IsOpen="False" Severity="Success" Title="操作成功"
+                     IsClosable="True" />
+            <InfoBar x:Name="EditingBar" IsOpen="False" Severity="Error" Title="操作失败"
+                     IsClosable="True" />
+        </StackPanel>
+
+        <!-- ==================== 记录表 ==================== -->
+        <Border Grid.Row="2" Style="{StaticResource CardStyle}" Padding="4">
+            <Grid>
+                <ListView x:Name="EntryList" SelectionMode="Single"
+                          SelectionChanged="OnSelectionChanged"
+                          DoubleTapped="OnRowDoubleTapped">
+                    <ListView.HeaderTemplate>
+                        <DataTemplate>
+                            <Grid Padding="10,6" ColumnSpacing="10" Background="Transparent">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="56" />
+                                    <ColumnDefinition Width="150" />
+                                    <ColumnDefinition Width="240" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="110" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0" Text="行号" FontWeight="SemiBold"
+                                           ToolTipService.ToolTip="hosts 文件中的真实行号，含空行与注释行" />
+                                <TextBlock Grid.Column="1" Text="IP" FontWeight="SemiBold" />
+                                <TextBlock Grid.Column="2" Text="主机名" FontWeight="SemiBold" />
+                                <TextBlock Grid.Column="3" Text="备注" FontWeight="SemiBold" />
+                                <TextBlock Grid.Column="4" Text="类型" FontWeight="SemiBold"
+                                           ToolTipService.ToolTip="屏蔽(127.0.0.1) 表示该记录把域名指向本机" />
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.HeaderTemplate>
+                </ListView>
+
+                <TextBlock x:Name="EmptyHintText" Style="{StaticResource HintTextStyle}"
+                           HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Collapsed"
+                           Text="hosts 文件里还没有任何生效的记录。可以在上方添加一条，或切换到批量添加。" />
+            </Grid>
+        </Border>
+
+        <!-- ==================== 状态行 ==================== -->
+        <StackPanel Grid.Row="3" Spacing="2">
+            <TextBlock x:Name="SummaryText" Style="{StaticResource StatusTextStyle}"
+                       Text="共 0 条有效记录" />
+            <TextBlock x:Name="PathText" Style="{StaticResource HintTextStyle}"
+                       TextTrimming="CharacterEllipsis" IsTextSelectionEnabled="True"
+                       ToolTipService.ToolTip="hosts 文件位置，可在资源管理器中直接打开" />
+            <TextBlock x:Name="BackupText" Style="{StaticResource HintTextStyle}"
+                       TextTrimming="CharacterEllipsis" IsTextSelectionEnabled="True"
+                       Text="最近备份：尚未备份" />
+        </StackPanel>
+    </Grid>
+</Page>
