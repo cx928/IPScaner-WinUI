@@ -382,10 +382,44 @@ foreach ($asset in $assetFiles) {
     Write-Host ("uploading {0} ({1} MB)..." -f $asset.Name, $sizeMb)
 
     # Assets upload to a different host, and the body must be raw bytes.
+    #
+    # Deleting an asset and immediately re-uploading the same name races GitHub's
+    # eventual consistency: the DELETE returns 204, yet the following POST is still
+    # rejected with 422 already_exists. Re-list (never reuse the cached list — it is
+    # stale after any mutation), delete whatever is still there, wait, and retry.
     $uploadUri = "https://uploads.github.com/repos/$Owner/$Repo/releases/$($release.id)/assets?name=$([uri]::EscapeDataString($asset.Name))"
-    $resp = Invoke-RestMethod -Method POST -Uri $uploadUri -Headers $headers `
-        -ContentType "application/octet-stream" -InFile $asset.FullName -TimeoutSec 1800
-    Write-Host ("  -> {0} ({1} bytes)" -f $resp.state, $resp.size)
+    $uploaded = $false
+    for ($attempt = 1; $attempt -le 6 -and -not $uploaded; $attempt++) {
+        try {
+            $resp = Invoke-RestMethod -Method POST -Uri $uploadUri -Headers $headers `
+                -ContentType "application/octet-stream" -InFile $asset.FullName -TimeoutSec 1800
+            Write-Host ("  -> {0} ({1} bytes)" -f $resp.state, $resp.size)
+            $uploaded = $true
+        }
+        catch {
+            $status = $_.Exception.Response.StatusCode.value__
+            $detail = "$($_.ErrorDetails.Message)"
+
+            if ($status -eq 422 -and $detail -match 'already_exists') {
+                Write-Host ("  still present after delete (attempt {0}/6); waiting for it to clear" -f $attempt)
+                $fresh = @()
+                try { $fresh = @(Invoke-Api -Method GET -Uri "$repoUri/releases/$($release.id)/assets") } catch { }
+                $dup = $fresh | Where-Object { $_.name -eq $asset.Name } | Select-Object -First 1
+                if ($dup) {
+                    try { Invoke-Api -Method DELETE -Uri "$repoUri/releases/assets/$($dup.id)" -Body $null | Out-Null }
+                    catch { }
+                }
+                Start-Sleep -Seconds (3 * $attempt)
+                continue
+            }
+
+            throw
+        }
+    }
+
+    if (-not $uploaded) {
+        Write-Warning "$($asset.Name) could not be uploaded after 6 attempts"
+    }
 }
 
 Write-Step "done"
