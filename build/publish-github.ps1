@@ -79,7 +79,38 @@ function Invoke-Api {
         else { $params.Body = ($Body | ConvertTo-Json -Depth 100 -Compress) }
     }
     if ($ContentType) { $params.ContentType = $ContentType }
-    return Invoke-RestMethod @params
+
+    # A publish run makes ~130 API calls (one blob per file). GitHub is reached
+    # across a heavily throttled link here, so a bare connection reset ("远程主机强迫
+    # 关闭了一个现有的连接") is routine rather than exceptional and would otherwise
+    # throw away the whole run. Retry transient failures — no HTTP status (network),
+    # 5xx, 429 — with a growing backoff. A 4xx that carries a status is a real
+    # answer (404, 422, ...) and is rethrown immediately.
+    $attempts = 5
+    for ($attempt = 1; $attempt -le $attempts; $attempt++) {
+        try {
+            return Invoke-RestMethod @params
+        }
+        catch {
+            $status = $_.Exception.Response.StatusCode.value__
+            $message = "$($_.Exception.Message)"
+
+            # 400 usually means a real client error, but GitHub answers a truncated
+            # body with "We received a malformed request from your client", and this
+            # link resets mid-request often enough that it is worth another try.
+            $isTruncated = ($status -eq 400) -and ($message -match 'malformed')
+
+            # 401/403/404/409/422 are real answers; retrying them just wastes time.
+            $permanent = $status -in @(401, 403, 404, 409, 422)
+            $transient = (-not $status) -or ($status -ge 500) -or ($status -eq 429) -or $isTruncated
+
+            if ($attempt -ge $attempts -or $permanent -or -not $transient) { throw }
+            $wait = [math]::Min(2 * $attempt, 10)
+            Write-Host ("    transient failure ({0}); retry {1}/{2} in {3}s" -f `
+                $(if ($status) { "HTTP $status" } else { "network" }), $attempt, $attempts, $wait)
+            Start-Sleep -Seconds $wait
+        }
+    }
 }
 
 # ---------------------------------------------------------------- 1. identity
@@ -161,19 +192,56 @@ Write-Host "tracked files: $($files.Count)"
 # base64 there stores the base64 string itself as the file body (which is exactly
 # what happened on the first publish — every file in the repo was its own base64
 # text). The base64 option belongs to the Blobs API, which is what we use here.
+#
+# Unchanged files reuse the blob already in the tree. That is not just an
+# optimisation: this link drops connections often, and cutting ~130 POSTs down to
+# only the files that actually changed is what makes a re-run reliable. A git blob
+# id is sha1("blob <length>\0<content>"), so it can be computed locally.
+$existingBlobs = @{}
+try {
+    $currentTree = Invoke-Api -Method GET -Uri "$repoUri/git/trees/$($ref.object.sha)?recursive=1"
+    foreach ($entry in $currentTree.tree) {
+        if ($entry.type -eq 'blob') { $existingBlobs[$entry.path] = $entry.sha }
+    }
+    Write-Host "existing blobs available for reuse: $($existingBlobs.Count)"
+} catch {
+    Write-Warning "could not read the current tree; every file will be uploaded"
+}
+
+function Get-GitBlobSha([byte[]]$bytes) {
+    $header = [System.Text.Encoding]::ASCII.GetBytes("blob $($bytes.Length)`0")
+    $buffer = New-Object byte[] ($header.Length + $bytes.Length)
+    [Array]::Copy($header, 0, $buffer, 0, $header.Length)
+    [Array]::Copy($bytes, 0, $buffer, $header.Length, $bytes.Length)
+    $sha1 = [System.Security.Cryptography.SHA1]::Create()
+    try { return (($sha1.ComputeHash($buffer) | ForEach-Object { $_.ToString('x2') }) -join '') }
+    finally { $sha1.Dispose() }
+}
+
 $tree = @()
 $blobIndex = 0
+$created = 0
+$reused = 0
 foreach ($f in $files) {
     $rel = $f.FullName.Substring($repoRoot.Length + 1) -replace '\\', '/'
     $blobIndex++
 
     $bytes = [System.IO.File]::ReadAllBytes($f.FullName)
+    $localSha = Get-GitBlobSha $bytes
+
+    if ($existingBlobs[$rel] -eq $localSha) {
+        $tree += @{ path = $rel; mode = "100644"; type = "blob"; sha = $localSha }
+        $reused++
+        continue
+    }
+
     $blob = Invoke-Api -Method POST -Uri "$repoUri/git/blobs" -Body @{
         content  = [System.Convert]::ToBase64String($bytes)
         encoding = "base64"
     }
+    $created++
 
-    if (($blobIndex % 25) -eq 0) { Write-Host "  ... $blobIndex / $($files.Count) blobs" }
+    if (($created % 10) -eq 0) { Write-Host "  ... $created new blobs ($blobIndex / $($files.Count) files)" }
 
     $tree += @{
         path = $rel
@@ -182,7 +250,7 @@ foreach ($f in $files) {
         sha  = $blob.sha
     }
 }
-Write-Host "created $($tree.Count) blobs"
+Write-Host "blobs: $created created, $reused reused -> tree of $($tree.Count) entries"
 
 $treeResult = Invoke-Api -Method POST -Uri "$repoUri/git/trees" -Body @{ tree = $tree }
 Write-Host "tree: $($treeResult.sha)"
@@ -269,8 +337,17 @@ if ($assetFiles.Count -eq 0) { Write-Warning "no artifacts found in $artifactsDi
 # The release may already carry assets from an earlier run; uploading the same
 # name again fails with 422 already_exists. Skip identical ones and replace
 # changed ones so the script stays re-runnable.
+#
+# This endpoint returns a JSON *array*, not an object with a `value` property.
+# Reading `.value` here silently yields nothing, and every re-run then dies on
+# already_exists. The @() also collapses PowerShell's single-element unwrapping
+# so the Where-Object below always sees a collection.
 $existingAssets = @()
-try { $existingAssets = (Invoke-Api -Method GET -Uri "$repoUri/releases/$($release.id)/assets").value } catch { }
+try {
+    $existingAssets = @(Invoke-Api -Method GET -Uri "$repoUri/releases/$($release.id)/assets")
+} catch {
+    Write-Warning "could not list existing release assets: $($_.Exception.Message)"
+}
 
 $headers = @{
     Authorization          = "Bearer $Token"
