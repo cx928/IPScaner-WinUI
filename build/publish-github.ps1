@@ -365,8 +365,18 @@ foreach ($asset in $assetFiles) {
             Write-Host ("skipping {0} ({1} MB) — identical asset already published" -f $asset.Name, $sizeMb)
             continue
         }
+
         Write-Host ("replacing {0} (published size differs)" -f $asset.Name)
-        Invoke-Api -Method DELETE -Uri "$repoUri/releases/assets/$($already.id)" -Body $null | Out-Null
+        try {
+            Invoke-Api -Method DELETE -Uri "$repoUri/releases/assets/$($already.id)" -Body $null | Out-Null
+        }
+        catch {
+            # A 404 here just means the asset is already gone (a previous run deleted
+            # it and then failed before re-uploading). Nothing to clean up.
+            $status = $_.Exception.Response.StatusCode.value__
+            if ($status -ne 404) { throw }
+            Write-Host "  (asset was already absent; continuing)"
+        }
     }
 
     Write-Host ("uploading {0} ({1} MB)..." -f $asset.Name, $sizeMb)
