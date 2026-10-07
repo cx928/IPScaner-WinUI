@@ -399,6 +399,7 @@ foreach ($asset in $assetFiles) {
         catch {
             $status = $_.Exception.Response.StatusCode.value__
             $detail = "$($_.ErrorDetails.Message)"
+            $message = "$($_.Exception.Message)"
 
             if ($status -eq 422 -and $detail -match 'already_exists') {
                 Write-Host ("  still present after delete (attempt {0}/6); waiting for it to clear" -f $attempt)
@@ -410,6 +411,17 @@ foreach ($asset in $assetFiles) {
                     catch { }
                 }
                 Start-Sleep -Seconds (3 * $attempt)
+                continue
+            }
+
+            # A 65-85 MB body over this link gets reset fairly often; the upload is
+            # idempotent from our side (worst case a partial asset exists and the
+            # already_exists branch cleans it up), so retry rather than abort the run.
+            $transient = (-not $status) -or ($status -ge 500) -or ($status -eq 429)
+            if ($transient -and $attempt -lt 6) {
+                Write-Host ("  upload interrupted ({0}); retry {1}/6 in {2}s" -f `
+                    $(if ($status) { "HTTP $status" } else { "network" }), $attempt, (4 * $attempt))
+                Start-Sleep -Seconds (4 * $attempt)
                 continue
             }
 
